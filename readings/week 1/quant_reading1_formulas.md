@@ -1,7 +1,7 @@
 
 *   **Interest Rate:** Real risk-free rate + Inflation premium + Default risk premium + Liquidity premium + Maturity premium
 
-*   **Holding Period Return (HPR):** $\frac{\text{Ending value} - \text{Beginning value}}{\text{Beginning value}} = \frac{P_1 - P_0 + D_1}{P_0}$
+*   **Holding Period Return (HPR):** $\frac{P_1 - P_0 + D_1}{P_0}$
     *   Where:
         *   $P_1$ = Price received for the investment
         *   $P_0$ = Original purchase price of the investment
@@ -38,7 +38,7 @@
         *   $\ln$ = Natural logarithm
         *   $HPR$ = Holding Period Return
 
-*   **Continuously Compounded Return (from price relative):** $\ln \left( \frac{\text{Ending Price}}{\text{Beginning Price}} \right)$
+*   **Continuously Compounded Return (from price relative):** $ \ln \left( \frac{\text{Ending Price}}{\text{Beginning Price}} \right) $
 
 *   **Real Return (approximate):** Nominal return - Inflation rate
 
