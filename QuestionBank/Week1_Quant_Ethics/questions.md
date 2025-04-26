@@ -72,7 +72,7 @@ An investment earns +10% in Year 1 and –5% in Year 2. What is the TWRR?
 <summary>✅ Answer & Explanation</summary>
 
 **Correct Answer: A**  
-TWRR = √(1.10 × 0.95) – 1 = 2.5%
+TWRR = √(1.10 × 0.95) – 1 = 2.0%
 
 </details>
 
