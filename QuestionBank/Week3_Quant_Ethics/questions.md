@@ -711,4 +711,103 @@ Find: P(aggressive and use derivatives)
 **Tags**: `#Quant` `#JointProbability` `#Week3` `#Hard`
 
 <details>
-<summary>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: A**  
+0.3 × 0.6 = **0.18**
+
+</details>
+
+---
+
+## 🔴 Q38 – Independence Check  
+If P(A) = 0.4, P(B) = 0.5, P(A and B) = 0.3, are A and B independent?
+
+- A) Yes  
+- B) No  
+- C) Cannot determine
+
+**Tags**: `#Quant` `#Independence` `#Week3` `#Hard`
+
+<details>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: B**  
+P(A)×P(B) = 0.2 ≠ 0.3 → Not independent
+
+</details>
+
+---
+
+## 🔴 Q39 – Probability Tree  
+In a probability tree, node B branches into C (0.3) and D (0.7). What's P(B and C)?
+
+- A) 0.21  
+- B) Depends on P(B)  
+- C) 0.3
+
+**Tags**: `#Quant` `#TreeDiagram` `#Week3` `#Hard`
+
+<details>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: B**  
+You need P(B) to calculate P(B and C)
+
+</details>
+
+---
+
+## 🟢 Q40 – Mutually Exclusive vs Independent  
+Which is true?
+
+- A) All independent events are mutually exclusive  
+- B) All mutually exclusive events are independent  
+- C) Mutually exclusive events cannot be independent
+
+**Tags**: `#Quant` `#Conceptual` `#Week3` `#Easy`
+
+<details>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: C**
+
+</details>
+
+---
+
+## 🟢 Q41 – Addition Rule  
+P(A) = 0.3, P(B) = 0.5, P(A and B) = 0.2. What is P(A or B)?
+
+- A) 0.6  
+- B) 0.8  
+- C) 0.5
+
+**Tags**: `#Quant` `#AdditionRule` `#Week3` `#Easy`
+
+<details>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: B**  
+P(A or B) = P(A) + P(B) – P(A and B) = 0.3 + 0.5 – 0.2 = **0.6**
+
+</details>
+
+---
+
+## 🟢 Q42 – Law of Total Probability  
+A portfolio manager follows Strategy A 60% of the time and B 40%. The probability of success is 0.8 under A and 0.6 under B. What is overall success probability?
+
+- A) 0.68  
+- B) 0.72  
+- C) 0.76
+
+**Tags**: `#Quant` `#TotalProbability` `#Week3` `#Easy`
+
+<details>
+<summary>✅ Answer & Explanation</summary>
+
+**Correct Answer: B**  
+0.6×0.8 + 0.4×0.6 = **0.72**
+
+</details>
