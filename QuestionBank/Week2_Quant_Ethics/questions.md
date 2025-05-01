@@ -108,7 +108,7 @@ According to the CFA Code, a member must:
 Find the FV of $5,000 after 2 years at 8% compounded semiannually.
 
 - A) $5,816.00  
-- B) $5,832.32  
+- B) $5,849.29  
 - C) $5,760.00
 
 **Tags**: `#Quantitative_Methods` `#TVM` `#Easy` `#Week2`
@@ -117,7 +117,7 @@ Find the FV of $5,000 after 2 years at 8% compounded semiannually.
 <summary>✅ Answer & Explanation</summary>
 
 **Correct Answer: B**  
-N = 4, I/Y = 4, PV = –5000 → FV = **$5,832.32**
+N = 4, I/Y = 4, PV = –5000 → FV = **$5,849.29**
 
 </details>
 
@@ -127,7 +127,7 @@ N = 4, I/Y = 4, PV = –5000 → FV = **$5,832.32**
 Find the PV of $10,000 discounted at 5% for 4 years.
 
 - A) $8,220  
-- B) $8,264.46  
+- B) $8,227.02
 - C) $8,500
 
 **Tags**: `#Quantitative_Methods` `#TVM` `#Easy` `#Week2`
@@ -136,7 +136,7 @@ Find the PV of $10,000 discounted at 5% for 4 years.
 <summary>✅ Answer & Explanation</summary>
 
 **Correct Answer: B**  
-PV = 10000 ÷ (1.05)^4 = **$8,264.46**
+PV = 10000 ÷ (1.05)^4 = **$8,227.02**
 
 </details>
 
@@ -182,7 +182,7 @@ Professionalism includes:
 What is the PV of a 5-year ordinary annuity paying $500 per year at 6%?
 
 - A) $2,105  
-- B) $2,105.10  
+- B) $2,106.  
 - C) $2,200
 
 **Tags**: `#Quantitative_Methods` `#TVM` `#Easy` `#Week2`
@@ -240,7 +240,7 @@ On BA II Plus, clearing previous TVM data uses:
 What is the FV of a 4-year annuity paying $300 annually at 7%?
 
 - A) $1,278.50  
-- B) $1,309.64  
+- B) $1,331.98
 - C) $1,355.00
 
 **Tags**: `#Quantitative_Methods` `#TVM` `#Annuity` `#Medium` `#Week2`
@@ -249,7 +249,7 @@ What is the FV of a 4-year annuity paying $300 annually at 7%?
 <summary>✅ Answer & Explanation</summary>
 
 **Correct Answer: B**  
-Use BA II Plus: N=4, I/Y=7, PMT=300, FV=?
+Use BA II Plus: N=4, I/Y=7, PMT=300, PV=0, FV=?
 
 </details>
 
@@ -278,7 +278,7 @@ PV = 120 ÷ 0.06 = **$2,000**
 Find the FV of a 3-year annuity due paying $500 annually at 5%.
 
 - A) $1,590.75  
-- B) $1,670.29  
+- B) $1,655.06 
 - C) $1,575.00
 
 **Tags**: `#Quantitative_Methods` `#TVM` `#AnnuityDue` `#Medium` `#Week2`
@@ -292,7 +292,6 @@ Set BA II Plus to BGN mode!
 </details>
 
 ---
-
 ## 📘 Q16 – Effective Annual Rate
 EAR for 8% stated rate, compounded quarterly is:
 
@@ -343,8 +342,8 @@ At 7% annual return, approximately how many years to triple?
 <details>
 <summary>✅ Answer & Explanation</summary>
 
-**Correct Answer: C**  
-Use ln(3)/ln(1.07) ≈ **15.77 years**
+**Correct Answer: B**  
+Use ln(3)/ln(1.07) ≈ **16 years**
 
 </details>
 
