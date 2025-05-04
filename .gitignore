@@ -151,3 +151,12 @@ firebase-credentials.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# SQLite database
+cfa_questions.db
+sqlite_schema.sql
+
+#credentials
+firebase-credentials.json
+gcredentials.json
+token.json
