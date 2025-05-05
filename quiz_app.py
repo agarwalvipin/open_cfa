@@ -12,6 +12,7 @@ import time
 from pathlib import Path
 import firebase_auth
 import user_stats
+import requests
 
 # Set page configuration
 st.set_page_config(
@@ -427,73 +428,143 @@ def main():
         # Load Questions page
         st.title("Load Questions")
         st.markdown("""
-        Upload markdown files containing CFA Level I questions to add them to your question bank.
+        Add CFA Level I questions to your question bank by uploading markdown files or providing a URL to a markdown file.
         
         The file should follow the standard question format with metadata, question text, options, and explanations.
         """)
-        
-        # File uploader
-        uploaded_file = st.file_uploader("Choose a markdown file", type=['md'])
         
         # Schema file selection
         schema_path = Path(__file__).parent / "database" / "sqlite_schema.sql"
         db_path = Path(__file__).parent / "database" / "cfa_questions.db"
         
-        if uploaded_file is not None:
-            # Create a temporary file to save the uploaded content
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".md") as tmp_file:
-                tmp_file.write(uploaded_file.getvalue())
-                temp_path = tmp_file.name
+        # Create tabs for different import methods
+        upload_tab, url_tab = st.tabs(["Upload File", "Import from URL"])
+        
+        # Upload File Tab
+        with upload_tab:
+            # File uploader
+            uploaded_file = st.file_uploader("Choose a markdown file", type=['md'])
             
-            # Show the import options
-            st.subheader("Import Options")
-            
-            col1, col2 = st.columns(2)
-            with col1:
-                if st.button("Preview File", use_container_width=True):
-                    with open(temp_path, 'r') as f:
-                        file_content = f.read()
-                    st.text_area("File Content Preview", file_content, height=300)
-            
-            with col2:
-                if st.button("Import Questions", type="primary", use_container_width=True):
-                    try:
-                        # Import the module
-                        import_module = import_module_from_path("import_to_sqlite", str(import_script_path))
-                        
-                        # Use functions from the imported module
-                        with st.spinner("Importing questions..."):
-                            # Create or connect to the database
-                            conn = import_module.create_database(str(db_path), str(schema_path))
+            if uploaded_file is not None:
+                # Create a temporary file to save the uploaded content
+                with tempfile.NamedTemporaryFile(delete=False, suffix=".md") as tmp_file:
+                    tmp_file.write(uploaded_file.getvalue())
+                    temp_path = tmp_file.name
+                
+                # Show the import options
+                st.subheader("Import Options")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("Preview File", use_container_width=True, key="preview_upload"):
+                        with open(temp_path, 'r') as f:
+                            file_content = f.read()
+                        st.text_area("File Content Preview", file_content, height=300)
+                
+                with col2:
+                    if st.button("Import Questions", type="primary", use_container_width=True, key="import_upload"):
+                        try:
+                            # Import the module
+                            import_module = import_module_from_path("import_to_sqlite", str(import_script_path))
                             
-                            # Parse the questions from the file
-                            questions = import_module.parse_question_file(temp_path)
+                            # Use functions from the imported module
+                            with st.spinner("Importing questions..."):
+                                # Create or connect to the database
+                                conn = import_module.create_database(str(db_path), str(schema_path))
+                                
+                                # Parse the questions from the file
+                                questions = import_module.parse_question_file(temp_path)
+                                
+                                # Import the questions to the database
+                                import_module.import_questions_to_db(questions, conn)
+                                
+                                # Close the connection
+                                conn.close()
                             
-                            # Import the questions to the database
-                            import_module.import_questions_to_db(questions, conn)
+                            # Success message
+                            st.success(f"Successfully imported {len(questions)} questions!")
                             
-                            # Close the connection
-                            conn.close()
-                        
-                        # Success message
-                        st.success(f"Successfully imported {len(questions)} questions!")
-                        
-                        # Update connection for the main app
-                        conn = connect_to_db(db_path)
-                    except Exception as e:
-                        st.error(f"Error importing questions: {str(e)}")
+                            # Update connection for the main app
+                            conn = connect_to_db(db_path)
+                        except Exception as e:
+                            st.error(f"Error importing questions: {str(e)}")
+        
+        # Import from URL Tab
+        with url_tab:
+            st.markdown("Enter the URL of a markdown file containing CFA Level I questions.")
+            url = st.text_input("URL to markdown file", placeholder="https://example.com/questions.md")
             
-            # Clean up the temporary file
-            st.markdown("""
-            #### File Format Requirements
-            
-            The markdown file should follow this structure:
-            - Question title as a heading (##)
-            - Metadata section in a details/summary HTML element
-            - Question text and options (with A), B), C) format)
-            - Answer and explanation in a details/summary HTML element
-            - Questions separated by horizontal rules (---)
-            """)
+            if url:
+                # Show the import options
+                st.subheader("Import Options")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("Preview File", use_container_width=True, key="preview_url"):
+                        try:
+                            # Fetch content from URL
+                            response = requests.get(url)
+                            if response.status_code == 200:
+                                file_content = response.text
+                                st.text_area("File Content Preview", file_content, height=300)
+                            else:
+                                st.error(f"Failed to fetch content: HTTP {response.status_code}")
+                        except Exception as e:
+                            st.error(f"Error fetching URL: {str(e)}")
+                
+                with col2:
+                    if st.button("Import Questions", type="primary", use_container_width=True, key="import_url"):
+                        try:
+                            # Fetch content from URL
+                            response = requests.get(url)
+                            if response.status_code != 200:
+                                st.error(f"Failed to fetch content: HTTP {response.status_code}")
+                                st.stop()
+                            
+                            # Save content to temporary file
+                            with tempfile.NamedTemporaryFile(delete=False, suffix=".md") as tmp_file:
+                                tmp_file.write(response.content)
+                                temp_path = tmp_file.name
+                            
+                            # Import the module
+                            import_module = import_module_from_path("import_to_sqlite", str(import_script_path))
+                            
+                            # Use functions from the imported module
+                            with st.spinner("Importing questions..."):
+                                # Create or connect to the database
+                                conn = import_module.create_database(str(db_path), str(schema_path))
+                                
+                                # Parse the questions from the file
+                                questions = import_module.parse_question_file(temp_path)
+                                
+                                # Import the questions to the database
+                                import_module.import_questions_to_db(questions, conn)
+                                
+                                # Clean up the temporary file
+                                os.unlink(temp_path)
+                                
+                                # Close the connection
+                                conn.close()
+                            
+                            # Success message
+                            st.success(f"Successfully imported {len(questions)} questions from URL!")
+                            
+                            # Update connection for the main app
+                            conn = connect_to_db(db_path)
+                        except Exception as e:
+                            st.error(f"Error importing questions: {str(e)}")
+        
+        # Display file format requirements
+        st.markdown("""
+        #### File Format Requirements
+        
+        The markdown file should follow this structure:
+        - Question title as a heading (##)
+        - Metadata section in a details/summary HTML element
+        - Question text and options (with A), B), C) format)
+        - Answer and explanation in a details/summary HTML element
+        - Questions separated by horizontal rules (---)
+        """)
     
     elif st.session_state.current_page == 'create_quiz':
         # Quiz Creation Wizard
