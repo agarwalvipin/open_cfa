@@ -11,6 +11,7 @@ import random
 import time
 from pathlib import Path
 import firebase_auth
+import user_stats
 
 # Set page configuration
 st.set_page_config(
@@ -345,60 +346,82 @@ def main():
         st.title("CFA Level I Study Dashboard")
         st.markdown(f"Welcome, {st.session_state.username}! 👋")
         
-        # Dashboard content
-        st.markdown("""
-        ### Your CFA Level I Study Portal
+        # Create tabs for dashboard sections
+        tab1, tab2 = st.tabs(["Overview", "Performance Stats"])
         
-        This dashboard provides access to study resources and practice quizzes for your CFA Level I exam preparation.
+        # Dashboard content for Overview tab
+        with tab1:
+            st.markdown("""
+            ### Your CFA Level I Study Portal
+            
+            This dashboard provides access to study resources and practice quizzes for your CFA Level I exam preparation.
+            
+            #### Available Features:
+            - **Create Quiz**: Create customized quizzes with specific filters
+            - **Take Quiz**: Test your knowledge with topic-specific quizzes
+            - **Load Questions**: Upload question files to expand your question bank
+            - **Performance Stats**: Monitor your progress in the Performance Stats tab
+            """)
+            
+            # Get question count for dashboard stats
+            cursor = conn.cursor()
+            cursor.execute("SELECT COUNT(*) as count FROM questions")
+            question_count = cursor.fetchone()['count']
+            
+            cursor.execute("SELECT COUNT(DISTINCT topic_id) as count FROM questions")
+            topic_count = cursor.fetchone()['count']
         
-        #### Available Features:
-        - **Create Quiz**: Create customized quizzes with specific filters
-        - **Take Quiz**: Test your knowledge with topic-specific quizzes
-        - **Load Questions**: Upload question files to expand your question bank
-        - **Performance Tracking**: Monitor your progress (coming soon)
-        """)
+            # Quick stats
+            st.subheader("Quick Stats")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric(label="Questions Available", value=str(question_count))
+            with col2:
+                st.metric(label="Topics Covered", value=str(topic_count))
+            with col3:
+                # Get quiz count from user stats if available
+                quiz_count = "0"
+                if 'user' in st.session_state:
+                    user_uid = st.session_state.user.get('localId')
+                    user_stats_data = user_stats.get_user_stats(user_uid)
+                    if user_stats_data:
+                        quiz_count = str(user_stats_data.get('total_quizzes_taken', 0))
+                st.metric(label="Your Quizzes Taken", value=quiz_count)
+            
+            # Call to action
+            st.markdown("""
+            <div style='text-align: center; margin-top: 2rem;'>
+                <h3>Ready to test your knowledge?</h3>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                if st.button("Create Quiz", type="primary", use_container_width=True):
+                    st.session_state.current_page = 'create_quiz'
+                    # Initialize quiz wizard state
+                    if 'quiz_wizard_step' not in st.session_state:
+                        st.session_state.quiz_wizard_step = 1
+                    st.rerun()
+            with col2:
+                if st.button("Take Quiz", type="secondary", use_container_width=True):
+                    st.session_state.current_page = 'quiz'
+                    st.rerun()
+            with col3:
+                if st.button("Load Questions", type="secondary", use_container_width=True):
+                    st.session_state.current_page = 'load_questions'
+                    st.rerun()
         
-        # Get question count for dashboard stats
-        cursor = conn.cursor()
-        cursor.execute("SELECT COUNT(*) as count FROM questions")
-        question_count = cursor.fetchone()['count']
-        
-        cursor.execute("SELECT COUNT(DISTINCT topic_id) as count FROM questions")
-        topic_count = cursor.fetchone()['count']
-        
-        # Quick stats
-        st.subheader("Quick Stats")
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.metric(label="Questions Available", value=str(question_count))
-        with col2:
-            st.metric(label="Topics Covered", value=str(topic_count))
-        with col3:
-            st.metric(label="Your Quizzes Taken", value="0")
-        
-        # Call to action
-        st.markdown("""
-        <div style='text-align: center; margin-top: 2rem;'>
-            <h3>Ready to test your knowledge?</h3>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            if st.button("Create Quiz", type="primary", use_container_width=True):
-                st.session_state.current_page = 'create_quiz'
-                # Initialize quiz wizard state
-                if 'quiz_wizard_step' not in st.session_state:
-                    st.session_state.quiz_wizard_step = 1
-                st.rerun()
-        with col2:
-            if st.button("Take Quiz", type="secondary", use_container_width=True):
-                st.session_state.current_page = 'quiz'
-                st.rerun()
-        with col3:
-            if st.button("Load Questions", type="secondary", use_container_width=True):
-                st.session_state.current_page = 'load_questions'
-                st.rerun()
+        # Performance Stats tab
+        with tab2:
+            # Only show dashboard if user is logged in
+            if 'user' in st.session_state:
+                user_uid = st.session_state.user.get('localId')
+                
+                # Display user dashboard
+                user_stats.display_user_dashboard(conn, user_uid)
+            else:
+                st.info("Please log in to view your performance statistics")
     
     elif st.session_state.current_page == 'load_questions':
         # Load Questions page
@@ -985,6 +1008,10 @@ def main():
             # Set up timer - 90 seconds per question
             st.session_state.total_time = len(question_ids) * 90  # in seconds
             st.session_state.start_time = time.time()
+            
+            # Switch to quiz page
+            st.session_state.current_page = 'quiz'
+            st.rerun()
     elif not has_selection:
         if selection_mode == "Topic":
             st.info("👈 Please select at least one topic from the sidebar to start.")
@@ -1035,7 +1062,8 @@ def main():
                     # Exit the quiz and return to dashboard
                     st.session_state.current_page = 'dashboard'
                     # Clear quiz state
-                    for key in ['quiz_started', 'question_ids', 'current_question', 'user_answers', 'show_results']:
+                    for key in ['quiz_started', 'question_ids', 'current_question', 
+                               'user_answers', 'show_results']:
                         if key in st.session_state:
                             del st.session_state[key]
                     st.rerun()
@@ -1115,9 +1143,10 @@ def main():
             )
             
             # Calculate time taken
+            time_taken_seconds = 0
             if 'start_time' in st.session_state:
-                time_taken = int(time.time() - st.session_state.start_time)
-                minutes, seconds = divmod(time_taken, 60)
+                time_taken_seconds = int(time.time() - st.session_state.start_time)
+                minutes, seconds = divmod(time_taken_seconds, 60)
                 time_info = f"Time taken: {minutes} minutes and {seconds} seconds"
             else:
                 time_info = ""
@@ -1127,6 +1156,40 @@ def main():
             st.subheader(f"Your Score: {correct_answers}/{total_questions} ({score_percentage:.1f}%)")
             if time_info:
                 st.write(time_info)
+                
+            # Save quiz results to Firestore if user is logged in
+            if 'user' in st.session_state:
+                user_uid = st.session_state.user.get('localId')
+                
+                # Format question results for Firestore
+                question_results = {}
+                for q_id, data in st.session_state.user_answers.items():
+                    question_results[q_id] = {
+                        'user_answer': data['user_answer'],
+                        'correct_answer': data['correct_answer'],
+                        'is_correct': data['user_answer'] == data['correct_answer']
+                    }
+                
+                # Save results
+                topic_ids = st.session_state.get('selected_topics', [])
+                week_ids = st.session_state.get('selected_weeks', [])
+                saved = user_stats.save_quiz_results(
+                    user_uid, 
+                    topic_ids, 
+                    week_ids, 
+                    question_results, 
+                    time_taken_seconds
+                )
+                
+                if saved:
+                    # Check for new badges
+                    new_badges = user_stats.check_and_award_badges(user_uid)
+                    if new_badges:
+                        badge_details = user_stats.get_badge_details()
+                        st.success(f"🎉 Congratulations! You've earned {len(new_badges)} new badge(s)!")
+                        for badge_id in new_badges:
+                            badge = badge_details.get(badge_id, {'name': badge_id, 'description': '', 'icon': '🏆'})
+                            st.markdown(f"{badge['icon']} **{badge['name']}**: {badge['description']}")
             
             # Results breakdown
             st.write("### Question Review")
@@ -1172,8 +1235,11 @@ def main():
                         del st.session_state[key]
                 st.rerun()
     
-    # Close database connection
-    conn.close()
+    # Note: Dashboard tab is already handled in the dashboard page section
+    
+    # Close database connection if it exists
+    if 'conn' in locals() and conn is not None:
+        conn.close()
 
 if __name__ == "__main__":
     main()
