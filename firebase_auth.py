@@ -35,8 +35,8 @@ def signup(email, password, display_name=None):
         # Initialize Firebase Admin SDK to set custom claims if needed
         try:
             initialize_firebase_admin()
-            # You can set custom claims here if needed
-            # admin_auth.set_custom_user_claims(user['localId'], {'role': 'student'})
+            # Set default role to student
+            admin_auth.set_custom_user_claims(user['localId'], {'role': 'student'})
         except Exception as admin_error:
             # Log the error but continue - admin SDK is optional
             print(f"Admin SDK error (non-critical): {admin_error}")
@@ -145,6 +145,59 @@ def get_user_role(uid):
     except Exception as e:
         print(f"Error getting user role: {e}")
         return 'student'  # Default fallback
+
+# Set user role (requires admin SDK)
+def set_user_role(uid, role):
+    """Set the role for a user
+    
+    Args:
+        uid: User's Firebase UID
+        role: Role to assign (student, instructor, admin)
+        
+    Returns:
+        Dictionary with success status and message
+    """
+    try:
+        initialize_firebase_admin()
+        # Get current claims to preserve other custom claims if they exist
+        user = admin_auth.get_user(uid)
+        current_claims = user.custom_claims or {}
+        
+        # Update the role
+        current_claims['role'] = role
+        admin_auth.set_custom_user_claims(uid, current_claims)
+        
+        return {
+            'success': True,
+            'message': f'User role updated to {role}'
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'message': f'Error updating user role: {str(e)}'
+        }
+
+# Get all available roles
+def get_available_roles():
+    """Get all available roles in the system
+    
+    Returns:
+        Dictionary of role_id -> role_name with descriptions
+    """
+    return {
+        'student': {
+            'name': 'Student',
+            'description': 'Regular user with access to quizzes and personal stats'
+        },
+        'instructor': {
+            'name': 'Instructor',
+            'description': 'Can create and manage content, view student performance'
+        },
+        'admin': {
+            'name': 'Administrator',
+            'description': 'Full access to all system features including user management'
+        }
+    }
 
 # Verify ID token (requires admin SDK)
 def verify_id_token(id_token):

@@ -9,10 +9,12 @@ import sqlite3
 import os
 import random
 import time
+import pandas as pd
 from pathlib import Path
 import firebase_auth
 import user_stats
 import requests
+import role_management
 
 # Set page configuration
 st.set_page_config(
@@ -21,6 +23,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# Import admin dashboard functions - must be after set_page_config
+from admin_dashboard import get_system_stats, get_user_activity_stats, cleanup_questions
 
 # Database connection function
 def connect_to_db(db_path):
@@ -194,12 +199,16 @@ def main():
         st.info(f"Welcome back! Using saved credentials for {st.session_state.saved_email}")
     
     # Database path
-    db_path = Path(__file__).parent / "database" / "cfa_questions.db"
+    db_path = os.path.join(Path(__file__).parent, 'database', 'cfa_questions.db')
     
-    # Connect to the database
+    # Connect to database
     conn = connect_to_db(db_path)
     if not conn:
-        st.stop()
+        return
+    
+    # Show role-based sidebar if user is logged in
+    if 'user_uid' in st.session_state:
+        role_management.show_role_based_sidebar(st.session_state['user_uid'])
     
     # Login/Signup screen if not authenticated
     if not st.session_state.authenticated:
@@ -224,15 +233,16 @@ def main():
                         
                         if result['success']:
                             st.session_state.authenticated = True
-                            st.session_state.user = result['user']
-                            st.session_state.username = firebase_auth.get_user_display_name(result['user'])
+                            st.session_state['user'] = result['user']
+                            st.session_state['user_uid'] = result['user_info']['users'][0]['localId']
                             
-                            # Save remember me preference and email if checked
-                            st.session_state.remember_me = remember_me
-                            if remember_me:
-                                st.session_state.saved_email = email
-                            else:
-                                st.session_state.saved_email = ""
+                            # Get user role
+                            user_uid = st.session_state['user_uid']
+                            user_role = firebase_auth.get_user_role(user_uid)
+                            st.session_state['user_role'] = user_role
+                            
+                            st.success(f"Login successful! You are logged in as a {user_role.capitalize()}.")
+                            time.sleep(1)
                                 
                             st.success(result['message'])
                             st.rerun()  # Rerun to show the main app
@@ -286,14 +296,16 @@ def main():
     if 'current_page' not in st.session_state:
         st.session_state.current_page = 'dashboard'
     
-    # Sidebar navigation and logout
-    st.sidebar.title("Navigation")
-    
     # Logout button in sidebar
+    st.sidebar.title("Account")
     if st.sidebar.button("Logout", key="logout_button"):
         st.session_state.authenticated = False
         st.session_state.user = None
         st.session_state.username = ""
+        if 'user_uid' in st.session_state:
+            del st.session_state['user_uid']
+        if 'user_role' in st.session_state:
+            del st.session_state['user_role']
         
         # Handle remember me preference during logout
         if not st.session_state.remember_me:
@@ -304,30 +316,9 @@ def main():
         st.session_state.current_page = 'dashboard'  # Reset to dashboard for next login
         st.rerun()
     
-    # Navigation buttons
-    if st.sidebar.button("Dashboard", type="primary" if st.session_state.current_page == 'dashboard' else "secondary"):
-        st.session_state.current_page = 'dashboard'
-        st.rerun()
-        
-    if st.sidebar.button("Create Quiz", type="primary" if st.session_state.current_page == 'create_quiz' else "secondary"):
-        st.session_state.current_page = 'create_quiz'
-        # Initialize quiz wizard state
-        if 'quiz_wizard_step' not in st.session_state:
-            st.session_state.quiz_wizard_step = 1
-        st.rerun()
-        
-    if st.sidebar.button("Take Quiz", type="primary" if st.session_state.current_page == 'quiz' else "secondary"):
-        st.session_state.current_page = 'quiz'
-        st.rerun()
-        
-    if st.sidebar.button("Load Questions", type="primary" if st.session_state.current_page == 'load_questions' else "secondary"):
-        st.session_state.current_page = 'load_questions'
-        st.rerun()
-    
     # Import the necessary modules for question import functionality
     import sys
     import tempfile
-    import os
     from importlib.util import spec_from_file_location, module_from_spec
     
     # Import the import_to_sqlite module dynamically
@@ -565,6 +556,209 @@ def main():
         - Answer and explanation in a details/summary HTML element
         - Questions separated by horizontal rules (---)
         """)
+    
+    elif st.session_state.current_page == 'admin_dashboard':
+        # Admin Dashboard page
+        st.title("Admin Dashboard")
+        
+        # Check if user has admin role
+        if not role_management.check_user_access(st.session_state['user_uid'], 'admin'):
+            st.error("You do not have permission to access this page.")
+            st.session_state.current_page = 'dashboard'
+            st.rerun()
+            return
+        
+        # System stats
+        st.header("System Statistics")
+        
+        # Create tabs for different stats
+        tab1, tab2, tab3 = st.tabs(["Question Database", "User Activity", "Database Management"])
+        
+        with tab1:
+            # Question database stats
+            system_stats = get_system_stats(conn)
+            
+            # Display total questions
+            st.subheader(f"Total Questions: {system_stats['total_questions']}")
+            
+            # Create columns for different stats
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                # Questions by topic
+                st.subheader("Questions by Topic")
+                if system_stats['questions_by_topic']:
+                    topic_data = [dict(row) for row in system_stats['questions_by_topic']]
+                    topic_df = pd.DataFrame(topic_data)
+                    st.bar_chart(topic_df.set_index('topic'))
+                    st.dataframe(topic_df, use_container_width=True)
+                else:
+                    st.info("No topic data available")
+                
+                # Questions by difficulty
+                st.subheader("Questions by Difficulty")
+                if system_stats['questions_by_difficulty']:
+                    difficulty_data = [dict(row) for row in system_stats['questions_by_difficulty']]
+                    difficulty_df = pd.DataFrame(difficulty_data)
+                    st.bar_chart(difficulty_df.set_index('difficulty'))
+                    st.dataframe(difficulty_df, use_container_width=True)
+                else:
+                    st.info("No difficulty data available")
+            
+            with col2:
+                # Questions by week
+                st.subheader("Questions by Week")
+                if system_stats['questions_by_week']:
+                    week_data = [dict(row) for row in system_stats['questions_by_week']]
+                    week_df = pd.DataFrame(week_data)
+                    st.bar_chart(week_df.set_index('week'))
+                    st.dataframe(week_df, use_container_width=True)
+                else:
+                    st.info("No week data available")
+        
+        with tab2:
+            # User activity stats
+            user_activity = get_user_activity_stats()
+            
+            # Display total users
+            st.subheader(f"Total Users: {user_activity['user_count']}")
+            
+            # Recent quiz attempts
+            st.subheader("Recent Quiz Attempts")
+            if user_activity['recent_quizzes']:
+                # Convert to DataFrame for easier display
+                quiz_df = pd.DataFrame(user_activity['recent_quizzes'])
+                
+                # Format date column
+                if 'date' in quiz_df.columns:
+                    quiz_df['date'] = quiz_df['date'].apply(lambda x: x.strftime("%Y-%m-%d %H:%M") if hasattr(x, 'strftime') else str(x))
+                
+                # Format time taken
+                if 'time_taken_seconds' in quiz_df.columns:
+                    quiz_df['time_taken'] = quiz_df['time_taken_seconds'].apply(lambda x: f"{x//60}m {x%60}s")
+                
+                # Format score as percentage
+                if 'score' in quiz_df.columns:
+                    quiz_df['score'] = quiz_df['score'].apply(lambda x: f"{x:.1f}%")
+                
+                # Display the dataframe
+                st.dataframe(quiz_df[['date', 'user_uid', 'num_questions', 'score', 'time_taken']], use_container_width=True)
+            else:
+                st.info("No recent quiz attempts")
+        
+        # Database Management tab
+        with tab3:
+            st.subheader("Database Cleanup")
+            st.warning("⚠️ Warning: This operation will permanently delete questions and related data from the database. This action cannot be undone.")
+            
+            # Create filters for cleanup
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                # Topic filter
+                cursor = conn.cursor()
+                cursor.execute("SELECT topic_id, name FROM topics ORDER BY name")
+                topics = cursor.fetchall()
+                
+                topic_options = {"All Topics": None}
+                for topic in topics:
+                    topic_options[topic['name']] = topic['topic_id']
+                
+                selected_topic_name = st.selectbox("Select Topic", options=list(topic_options.keys()))
+                selected_topic_id = topic_options[selected_topic_name]
+            
+            with col2:
+                # Week filter
+                cursor.execute("SELECT week_id, week_number FROM weeks ORDER BY week_number")
+                weeks = cursor.fetchall()
+                
+                week_options = {"All Weeks": None}
+                for week in weeks:
+                    week_options[f"Week {week['week_number']}"] = week['week_id']
+                
+                selected_week_name = st.selectbox("Select Week", options=list(week_options.keys()))
+                selected_week_id = week_options[selected_week_name]
+            
+            # Show count of questions that will be affected
+            where_clause = ""
+            params = []
+            
+            if selected_topic_id:
+                where_clause += " topic_id = ?"
+                params.append(selected_topic_id)
+            
+            if selected_week_id:
+                if where_clause:
+                    where_clause += " AND"
+                where_clause += " week_id = ?"
+                params.append(selected_week_id)
+            
+            if where_clause:
+                where_clause = " WHERE" + where_clause
+            
+            # Get count of affected questions
+            cursor.execute(f"SELECT COUNT(*) as count FROM questions{where_clause}", params)
+            affected_count = cursor.fetchone()['count']
+            
+            st.info(f"This operation will delete {affected_count} questions and their related data.")
+            
+            # Confirmation checkbox
+            confirm = st.checkbox("I understand that this operation cannot be undone and confirm the deletion")
+            
+            # Execute cleanup button
+            if st.button("Execute Cleanup", type="primary", disabled=not confirm):
+                message, success = cleanup_questions(conn, selected_topic_id, selected_week_id, confirm)
+                
+                if success:
+                    st.success(message)
+                    # Refresh stats after cleanup
+                    system_stats = get_system_stats(conn)
+                else:
+                    st.error(message)
+            
+            # Add option to clean orphaned data
+            st.subheader("Clean Orphaned Data")
+            st.info("This will remove unused topics, tags, modules, and other reference data that are not associated with any questions.")
+            
+            if st.button("Clean Orphaned Data", type="secondary"):
+                try:
+                    conn.execute("BEGIN TRANSACTION")
+                    
+                    # Delete orphaned tags
+                    cursor.execute("""
+                        DELETE FROM tags 
+                        WHERE tag_id NOT IN (SELECT DISTINCT tag_id FROM question_tags)
+                    """)
+                    tags_deleted = cursor.rowcount
+                    
+                    # Delete orphaned learning objectives
+                    cursor.execute("""
+                        DELETE FROM learning_objectives 
+                        WHERE los_id NOT IN (SELECT DISTINCT los_id FROM questions WHERE los_id IS NOT NULL)
+                    """)
+                    los_deleted = cursor.rowcount
+                    
+                    # Delete orphaned modules
+                    cursor.execute("""
+                        DELETE FROM modules 
+                        WHERE module_id NOT IN (SELECT DISTINCT module_id FROM questions WHERE module_id IS NOT NULL)
+                    """)
+                    modules_deleted = cursor.rowcount
+                    
+                    # Delete orphaned readings
+                    cursor.execute("""
+                        DELETE FROM readings 
+                        WHERE reading_id NOT IN (SELECT DISTINCT reading_id FROM questions WHERE reading_id IS NOT NULL)
+                    """)
+                    readings_deleted = cursor.rowcount
+                    
+                    conn.commit()
+                    
+                    st.success(f"Successfully cleaned up orphaned data: {tags_deleted} tags, {los_deleted} learning objectives, {modules_deleted} modules, and {readings_deleted} readings.")
+                    
+                except Exception as e:
+                    conn.rollback()
+                    st.error(f"Error cleaning orphaned data: {str(e)}")
     
     elif st.session_state.current_page == 'create_quiz':
         # Quiz Creation Wizard

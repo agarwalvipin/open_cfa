@@ -80,6 +80,8 @@ Possible next steps for the project:
 3. Add features for spaced repetition learning
 4. ✅ Develop analytics to track performance on different topics/modules (Completed with user statistics)
 5. ✅ Enhance the quiz app with additional features like timed quizzes and difficulty settings (Completed)
+6. ✅ Implement role management for users (Completed with Firebase custom claims)
+7. ✅ Add database management tools for administrators (Completed with admin dashboard cleanup functionality)
 
 ## Quiz Application
 
@@ -93,6 +95,26 @@ We've developed a Streamlit-based quiz application (`quiz_app.py`) that allows u
 6. Review their results with explanations for each question
 
 The quiz app uses the SQLite database (`cfa_questions.db`) to fetch questions and provides immediate feedback on user answers.
+
+### Admin Dashboard
+
+We've implemented an Admin Dashboard with the following features:
+
+1. **System Statistics**: Provides an overview of the question database including:
+   - Total number of questions
+   - Questions by topic (with visualizations)
+   - Questions by week (with visualizations)
+   - Questions by difficulty level (with visualizations)
+
+2. **User Activity**: Shows statistics about user engagement:
+   - Total number of users
+   - Recent quiz attempts with scores and time taken
+
+3. **Database Management**: Tools for maintaining the question database:
+   - **Question Cleanup**: Allows deleting questions filtered by topic and/or week
+   - **Orphaned Data Cleanup**: Removes unused reference data (topics, tags, modules, etc.) that aren't associated with any questions
+
+The admin dashboard is integrated into the main application and accessible only to users with admin privileges.
 
 ### Create Quiz Wizard
 
@@ -207,3 +229,74 @@ The system automatically analyzes user performance to provide insights:
    - Motivates users through the badge system
 
 This user statistics system provides valuable insights to help users focus their study efforts and track their progress toward CFA exam readiness.
+
+## Role Management System
+
+We've implemented a comprehensive role management system using Firebase Authentication custom claims to control access to different features of the application:
+
+### User Roles
+
+The system supports three distinct user roles with a hierarchical access structure:
+
+1. **Student** (default role):
+   - Access to quizzes and personal dashboard
+   - Can view their own performance statistics
+   - Cannot access administrative or instructor features
+
+2. **Instructor**:
+   - All student privileges
+   - Access to question management (browse and edit questions)
+   - Access to student progress monitoring
+   - Cannot manage users or access admin dashboard
+
+3. **Administrator**:
+   - All instructor and student privileges
+   - User management capabilities (assign/change roles)
+   - Access to system-wide statistics and admin dashboard
+   - Full access to all system features
+
+### Implementation Details
+
+1. **Firebase Custom Claims**:
+   - User roles are stored as custom claims in Firebase Authentication
+   - New users are automatically assigned the 'student' role
+   - Only administrators can change user roles
+
+2. **Role-Based Access Control**:
+   - Each page checks the user's role before allowing access
+   - Navigation options are dynamically displayed based on user role
+   - Unauthorized access attempts are redirected to the home page
+
+3. **Admin Interface**:
+   - User management page for viewing and modifying user roles
+   - Admin dashboard with system-wide statistics
+   - Monitoring of user activity and performance
+
+4. **Instructor Tools**:
+   - Question management interface for browsing and editing questions
+   - Student progress monitoring with detailed performance analytics
+   - Topic performance visualization across all students
+
+### Recent Enhancements (May 2025)
+
+1. **Improved Navigation System**:
+   - Implemented role-based sidebar navigation
+   - Dynamically shows options based on user's role
+   - Organized navigation into logical sections (main navigation, instructor tools, admin tools)
+
+2. **Admin User Management**:
+   - Created utility script (`create_admin.py`) for promoting users to admin role
+   - Implemented admin interface for managing user roles
+   - Added ability to view all users and change their roles
+
+3. **Session State Management**:
+   - Improved handling of Streamlit session state for better navigation
+   - Fixed initialization issues with session variables
+   - Enhanced logout process to properly clean up session state
+
+4. **Database Integration**:
+   - Updated all components to use the correct database file (`cfa_questions.db`)
+   - Ensured proper database connections across all application modules
+   - Implemented error handling for database connection issues
+
+This role management system ensures proper access control while providing specialized tools for different user types, enhancing both security and usability of the application. The system is fully integrated with Firebase Authentication and Firestore, providing a seamless and secure user experience.
