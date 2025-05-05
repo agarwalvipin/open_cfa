@@ -9,6 +9,7 @@ import sqlite3
 import os
 import random
 from pathlib import Path
+import firebase_auth
 
 # Set page configuration
 st.set_page_config(
@@ -174,8 +175,12 @@ def main():
     # Initialize session state variables for authentication
     if 'authenticated' not in st.session_state:
         st.session_state.authenticated = False
+    if 'user' not in st.session_state:
+        st.session_state.user = None
     if 'username' not in st.session_state:
         st.session_state.username = ""
+    if 'auth_page' not in st.session_state:
+        st.session_state.auth_page = "login"
     
     # Database path
     db_path = Path(__file__).parent / "database" / "cfa_questions.db"
@@ -185,28 +190,75 @@ def main():
     if not conn:
         st.stop()
     
-    # Login screen if not authenticated
+    # Login/Signup screen if not authenticated
     if not st.session_state.authenticated:
-        st.title("CFA Level I Quiz App - Login")
+        st.title("CFA Level I Quiz App")
         
-        # Simple login form
-        with st.form("login_form"):
-            username = st.text_input("Username")
-            password = st.text_input("Password", type="password")
-            submit_button = st.form_submit_button("Login")
+        # Tabs for login and signup
+        login_tab, signup_tab = st.tabs(["Login", "Sign Up"])
+        
+        # Login tab
+        with login_tab:
+            with st.form("login_form"):
+                email = st.text_input("Email")
+                password = st.text_input("Password", type="password")
+                submit_button = st.form_submit_button("Login")
+                
+                if submit_button:
+                    if email and password:
+                        # Use Firebase authentication
+                        result = firebase_auth.login(email, password)
+                        
+                        if result['success']:
+                            st.session_state.authenticated = True
+                            st.session_state.user = result['user']
+                            st.session_state.username = firebase_auth.get_user_display_name(result['user'])
+                            st.success(result['message'])
+                            st.rerun()  # Rerun to show the main app
+                        else:
+                            st.error(result['message'])
+                    else:
+                        st.error("Please enter both email and password")
             
-            if submit_button:
-                # For demonstration purposes - simple authentication
-                # In a real app, you would check against a database with hashed passwords
-                if username == "admin" and password == "password":
-                    st.session_state.authenticated = True
-                    st.session_state.username = username
-                    st.rerun()  # Rerun to show the main app
-                else:
-                    st.error("Invalid username or password")
+            # Password reset link
+            forgot_password = st.checkbox("Forgot Password?")
+            if forgot_password:
+                with st.form("reset_password_form"):
+                    reset_email = st.text_input("Enter your email to reset password")
+                    reset_button = st.form_submit_button("Send Reset Link")
+                    
+                    if reset_button and reset_email:
+                        reset_result = firebase_auth.reset_password(reset_email)
+                        if reset_result['success']:
+                            st.success(reset_result['message'])
+                        else:
+                            st.error(reset_result['message'])
         
-        # Registration info
-        st.info("For demonstration purposes, use username: admin, password: password")
+        # Signup tab
+        with signup_tab:
+            with st.form("signup_form"):
+                new_email = st.text_input("Email")
+                display_name = st.text_input("Display Name (optional)")
+                new_password = st.text_input("Password", type="password")
+                confirm_password = st.text_input("Confirm Password", type="password")
+                signup_button = st.form_submit_button("Sign Up")
+                
+                if signup_button:
+                    if new_email and new_password:
+                        if new_password == confirm_password:
+                            # Use Firebase authentication for signup
+                            result = firebase_auth.signup(new_email, new_password, display_name)
+                            
+                            if result['success']:
+                                st.success(result['message'])
+                                st.info("Please go to the Login tab to sign in with your new account.")
+                            else:
+                                st.error(result['message'])
+                        else:
+                            st.error("Passwords do not match")
+                    else:
+                        st.error("Please enter both email and password")
+        
         return  # Exit the function if not authenticated
     
     # Initialize page state for navigation
@@ -219,6 +271,7 @@ def main():
     # Logout button in sidebar
     if st.sidebar.button("Logout"):
         st.session_state.authenticated = False
+        st.session_state.user = None
         st.session_state.username = ""
         st.session_state.current_page = 'dashboard'  # Reset to dashboard for next login
         st.rerun()

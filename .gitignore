@@ -142,6 +142,7 @@ cython_debug/
 
 # Firebase credentials - IMPORTANT
 firebase-credentials.json
+firebase_config.py
 
 # OS generated files
 .DS_Store
