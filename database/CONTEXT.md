@@ -93,3 +93,28 @@ We've developed a Streamlit-based quiz application (`quiz_app.py`) that allows u
 6. Review their results with explanations for each question
 
 The quiz app uses the SQLite database (`cfa_questions.db`) to fetch questions and provides immediate feedback on user answers.
+
+### Create Quiz Wizard
+
+We've implemented a 'Create Quiz' feature with a step-by-step wizard that allows users to apply multiple filters to customize their quiz:
+
+1. **Topic Selection**: Choose one or more topics (e.g., Ethics, Quantitative Methods)
+2. **Week Selection**: Filter questions by specific study weeks
+3. **Difficulty Selection**: Filter by difficulty levels (e.g., Easy, Medium, Hard)
+4. **Module Selection**: Choose specific modules within topics
+5. **Tags and Quiz Size**: Select specific tags and determine the number of questions
+
+Each filter category has an 'All' option by default, allowing users to easily select all items in a category or indicate they don't want to filter by that category.
+
+The wizard shows the total number of available questions based on the selected filters and allows users to start the quiz with their customized selection.
+
+### Quiz Timer
+
+The quiz application includes a timer feature that allocates 90 seconds per question. For example, if a user selects 10 questions for their quiz, they will have 15 minutes (900 seconds) to complete it. The timer displays the remaining time in minutes and seconds during the quiz.
+
+Features of the timer include:
+
+- Automatic countdown during the quiz
+- Visual display of remaining time
+- Automatic submission when time runs out
+- Display of total time taken at the end of the quiz

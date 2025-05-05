@@ -79,19 +79,31 @@ def login(email, password):
         }
     except Exception as e:
         error_message = str(e)
-        if 'INVALID_PASSWORD' in error_message:
+        # Check for common Firebase error messages
+        if 'INVALID_PASSWORD' in error_message or 'INVALID_LOGIN_CREDENTIALS' in error_message:
             return {
                 'success': False,
-                'message': 'Invalid password. Please try again.'
+                'message': 'Invalid email or password. Please try again.'
             }
         elif 'EMAIL_NOT_FOUND' in error_message:
             return {
                 'success': False,
                 'message': 'Email not found. Please sign up first.'
             }
+        elif 'TOO_MANY_ATTEMPTS_TRY_LATER' in error_message:
+            return {
+                'success': False,
+                'message': 'Too many failed login attempts. Please try again later.'
+            }
+        elif 'USER_DISABLED' in error_message:
+            return {
+                'success': False,
+                'message': 'This account has been disabled. Please contact support.'
+            }
+        # Return a more user-friendly generic error message
         return {
             'success': False,
-            'message': f'Login error: {error_message}'
+            'message': 'Login failed. Please check your credentials and try again.'
         }
 
 # Reset Password

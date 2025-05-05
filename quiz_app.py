@@ -8,6 +8,7 @@ import streamlit as st
 import sqlite3
 import os
 import random
+import time
 from pathlib import Path
 import firebase_auth
 
@@ -181,6 +182,14 @@ def main():
         st.session_state.username = ""
     if 'auth_page' not in st.session_state:
         st.session_state.auth_page = "login"
+    if 'remember_me' not in st.session_state:
+        st.session_state.remember_me = False
+    if 'saved_email' not in st.session_state:
+        st.session_state.saved_email = ""
+        
+    # Check if user has saved credentials
+    if st.session_state.remember_me and st.session_state.saved_email and not st.session_state.authenticated:
+        st.info(f"Welcome back! Using saved credentials for {st.session_state.saved_email}")
     
     # Database path
     db_path = Path(__file__).parent / "database" / "cfa_questions.db"
@@ -200,8 +209,10 @@ def main():
         # Login tab
         with login_tab:
             with st.form("login_form"):
-                email = st.text_input("Email")
+                # Pre-fill email if remember_me was checked previously
+                email = st.text_input("Email", value=st.session_state.saved_email if st.session_state.remember_me else "")
                 password = st.text_input("Password", type="password")
+                remember_me = st.checkbox("Remember Me", value=True, help="Keep me logged in on this device")
                 submit_button = st.form_submit_button("Login")
                 
                 if submit_button:
@@ -213,6 +224,14 @@ def main():
                             st.session_state.authenticated = True
                             st.session_state.user = result['user']
                             st.session_state.username = firebase_auth.get_user_display_name(result['user'])
+                            
+                            # Save remember me preference and email if checked
+                            st.session_state.remember_me = remember_me
+                            if remember_me:
+                                st.session_state.saved_email = email
+                            else:
+                                st.session_state.saved_email = ""
+                                
                             st.success(result['message'])
                             st.rerun()  # Rerun to show the main app
                         else:
@@ -269,16 +288,30 @@ def main():
     st.sidebar.title("Navigation")
     
     # Logout button in sidebar
-    if st.sidebar.button("Logout"):
+    if st.sidebar.button("Logout", key="logout_button"):
         st.session_state.authenticated = False
         st.session_state.user = None
         st.session_state.username = ""
+        
+        # Handle remember me preference during logout
+        if not st.session_state.remember_me:
+            # If remember me is not checked, clear saved email too
+            st.session_state.saved_email = ""
+        # Otherwise keep the saved email for next login
+            
         st.session_state.current_page = 'dashboard'  # Reset to dashboard for next login
         st.rerun()
     
     # Navigation buttons
     if st.sidebar.button("Dashboard", type="primary" if st.session_state.current_page == 'dashboard' else "secondary"):
         st.session_state.current_page = 'dashboard'
+        st.rerun()
+        
+    if st.sidebar.button("Create Quiz", type="primary" if st.session_state.current_page == 'create_quiz' else "secondary"):
+        st.session_state.current_page = 'create_quiz'
+        # Initialize quiz wizard state
+        if 'quiz_wizard_step' not in st.session_state:
+            st.session_state.quiz_wizard_step = 1
         st.rerun()
         
     if st.sidebar.button("Take Quiz", type="primary" if st.session_state.current_page == 'quiz' else "secondary"):
@@ -319,7 +352,8 @@ def main():
         This dashboard provides access to study resources and practice quizzes for your CFA Level I exam preparation.
         
         #### Available Features:
-        - **Practice Quizzes**: Test your knowledge with topic-specific quizzes
+        - **Create Quiz**: Create customized quizzes with specific filters
+        - **Take Quiz**: Test your knowledge with topic-specific quizzes
         - **Load Questions**: Upload question files to expand your question bank
         - **Performance Tracking**: Monitor your progress (coming soon)
         """)
@@ -349,12 +383,19 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         
-        col1, col2 = st.columns(2)
+        col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button("Start a Quiz", type="primary", use_container_width=True):
-                st.session_state.current_page = 'quiz'
+            if st.button("Create Quiz", type="primary", use_container_width=True):
+                st.session_state.current_page = 'create_quiz'
+                # Initialize quiz wizard state
+                if 'quiz_wizard_step' not in st.session_state:
+                    st.session_state.quiz_wizard_step = 1
                 st.rerun()
         with col2:
+            if st.button("Take Quiz", type="secondary", use_container_width=True):
+                st.session_state.current_page = 'quiz'
+                st.rerun()
+        with col3:
             if st.button("Load Questions", type="secondary", use_container_width=True):
                 st.session_state.current_page = 'load_questions'
                 st.rerun()
@@ -431,11 +472,372 @@ def main():
             - Questions separated by horizontal rules (---)
             """)
     
+    elif st.session_state.current_page == 'create_quiz':
+        # Quiz Creation Wizard
+        st.title("Create Your Custom Quiz")
+        st.markdown("""
+        Follow the steps below to create a customized quiz based on your preferences.
+        """)
+        
+        # Initialize wizard state if not already done
+        if 'quiz_wizard_step' not in st.session_state:
+            st.session_state.quiz_wizard_step = 1
+        if 'quiz_filters' not in st.session_state:
+            st.session_state.quiz_filters = {
+                'topic_ids': [],
+                'week_ids': [],
+                'difficulty_ids': [],
+                'module_ids': [],
+                'tag_ids': []
+            }
+        
+        # Progress bar for the wizard
+        st.progress((st.session_state.quiz_wizard_step - 1) / 5)
+        
+        # Step 1: Topic Selection
+        if st.session_state.quiz_wizard_step == 1:
+            st.subheader("Step 1: Select Topics")
+            
+            # Get all topics
+            topics = get_topics(conn)
+            topic_options = {topic['name']: topic['topic_id'] for topic in topics}
+            
+            # Check if we have topics
+            if not topic_options:
+                st.error("No topics found in the database. Please import questions first.")
+                st.stop()
+            
+            # Add 'All' option
+            topic_options_with_all = {"All": "all"} | topic_options
+            
+            if len(topic_options) == 1:
+                # If there's only one topic, select it by default
+                only_topic = list(topic_options.keys())[0]
+                st.info(f"Currently only one topic is available: {only_topic}")
+                selected_topic_names = [only_topic]
+            else:
+                selected_topic_names = st.multiselect(
+                    "Select Topics",
+                    options=list(topic_options_with_all.keys()),
+                    default=["All"] if not st.session_state.quiz_filters['topic_ids'] else [name for name in topic_options.keys() if topic_options[name] in st.session_state.quiz_filters['topic_ids']],
+                    help="Choose one or more topics for your quiz",
+                    key="create_quiz_topics"
+                )
+            
+            # Get selected topic IDs
+            if "All" in selected_topic_names:
+                # If 'All' is selected, don't filter by topic
+                selected_topic_ids = []
+            else:
+                selected_topic_ids = [topic_options[name] for name in selected_topic_names]
+            
+            # Store selected topics in session state
+            st.session_state.quiz_filters['topic_ids'] = selected_topic_ids
+            
+            # Navigation buttons
+            col1, col2 = st.columns([1, 5])
+            if col2.button("Next: Select Weeks", type="primary"):
+                st.session_state.quiz_wizard_step = 2
+                st.rerun()
+        
+        # Step 2: Week Selection
+        elif st.session_state.quiz_wizard_step == 2:
+            st.subheader("Step 2: Select Weeks")
+            
+            # Get all weeks
+            cursor = conn.cursor()
+            cursor.execute("SELECT week_id, week_number FROM weeks ORDER BY week_number")
+            weeks = cursor.fetchall()
+            week_options = {f"Week {week['week_number']}": week['week_id'] for week in weeks}
+            
+            # Add 'All' option
+            week_options_with_all = {"All": "all"} | week_options
+            
+            if len(week_options) == 1:
+                # If there's only one week, select it by default
+                only_week = list(week_options.keys())[0]
+                st.info(f"Currently only {only_week} is available")
+                selected_week_names = [only_week]
+            else:
+                selected_week_names = st.multiselect(
+                    "Select Weeks",
+                    options=list(week_options_with_all.keys()),
+                    default=["All"] if not st.session_state.quiz_filters['week_ids'] else [name for name in week_options.keys() if week_options[name] in st.session_state.quiz_filters['week_ids']],
+                    help="Choose one or more weeks for your quiz",
+                    key="create_quiz_weeks"
+                )
+            
+            # Get selected week IDs
+            if "All" in selected_week_names:
+                # If 'All' is selected, don't filter by week
+                selected_week_ids = []
+            else:
+                selected_week_ids = [week_options[name] for name in selected_week_names]
+            
+            # Store selected weeks in session state
+            st.session_state.quiz_filters['week_ids'] = selected_week_ids
+            
+            # Navigation buttons
+            col1, col2, col3 = st.columns([1, 1, 4])
+            if col1.button("Previous: Topics", type="secondary"):
+                st.session_state.quiz_wizard_step = 1
+                st.rerun()
+            if col2.button("Next: Difficulty", type="primary"):
+                st.session_state.quiz_wizard_step = 3
+                st.rerun()
+        
+        # Step 3: Difficulty Selection
+        elif st.session_state.quiz_wizard_step == 3:
+            st.subheader("Step 3: Select Difficulty Levels")
+            
+            # Get all difficulty levels
+            cursor = conn.cursor()
+            cursor.execute("SELECT difficulty_id, name FROM difficulty_levels ORDER BY difficulty_id")
+            difficulties = cursor.fetchall()
+            difficulty_options = {diff['name']: diff['difficulty_id'] for diff in difficulties}
+            
+            # Add 'All' option
+            difficulty_options_with_all = {"All": "all"} | difficulty_options
+            
+            if difficulties:
+                selected_difficulty_names = st.multiselect(
+                    "Select Difficulty Levels",
+                    options=list(difficulty_options_with_all.keys()),
+                    default=["All"] if not st.session_state.quiz_filters['difficulty_ids'] else [name for name in difficulty_options.keys() if difficulty_options[name] in st.session_state.quiz_filters['difficulty_ids']],
+                    help="Choose one or more difficulty levels for your quiz",
+                    key="create_quiz_difficulties"
+                )
+                
+                # Get selected difficulty IDs
+                if "All" in selected_difficulty_names:
+                    # If 'All' is selected, don't filter by difficulty
+                    selected_difficulty_ids = []
+                else:
+                    selected_difficulty_ids = [difficulty_options[name] for name in selected_difficulty_names]
+                
+                # Store selected difficulties in session state
+                st.session_state.quiz_filters['difficulty_ids'] = selected_difficulty_ids
+            else:
+                st.info("No difficulty levels found in the database.")
+            
+            # Navigation buttons
+            col1, col2, col3 = st.columns([1, 1, 4])
+            if col1.button("Previous: Weeks", type="secondary"):
+                st.session_state.quiz_wizard_step = 2
+                st.rerun()
+            if col2.button("Next: Modules", type="primary"):
+                st.session_state.quiz_wizard_step = 4
+                st.rerun()
+        
+        # Step 4: Module Selection
+        elif st.session_state.quiz_wizard_step == 4:
+            st.subheader("Step 4: Select Modules")
+            
+            # Get all modules
+            cursor = conn.cursor()
+            cursor.execute("SELECT module_id, name FROM modules ORDER BY name")
+            modules = cursor.fetchall()
+            module_options = {mod['name']: mod['module_id'] for mod in modules}
+            
+            # Add 'All' option
+            module_options_with_all = {"All": "all"} | module_options
+            
+            if modules:
+                selected_module_names = st.multiselect(
+                    "Select Modules",
+                    options=list(module_options_with_all.keys()),
+                    default=["All"] if not st.session_state.quiz_filters['module_ids'] else [name for name in module_options.keys() if module_options[name] in st.session_state.quiz_filters['module_ids']],
+                    help="Choose one or more modules for your quiz",
+                    key="create_quiz_modules"
+                )
+                
+                # Get selected module IDs
+                if "All" in selected_module_names:
+                    # If 'All' is selected, don't filter by module
+                    selected_module_ids = []
+                else:
+                    selected_module_ids = [module_options[name] for name in selected_module_names]
+                
+                # Store selected modules in session state
+                st.session_state.quiz_filters['module_ids'] = selected_module_ids
+            else:
+                st.info("No modules found in the database.")
+            
+            # Navigation buttons
+            col1, col2, col3 = st.columns([1, 1, 4])
+            if col1.button("Previous: Difficulty", type="secondary"):
+                st.session_state.quiz_wizard_step = 3
+                st.rerun()
+            if col2.button("Next: Tags", type="primary"):
+                st.session_state.quiz_wizard_step = 5
+                st.rerun()
+        
+        # Step 5: Tags Selection and Quiz Size
+        elif st.session_state.quiz_wizard_step == 5:
+            st.subheader("Step 5: Select Tags and Quiz Size")
+            
+            # Get all tags
+            cursor = conn.cursor()
+            cursor.execute("SELECT tag_id, name FROM tags ORDER BY name")
+            tags = cursor.fetchall()
+            tag_options = {tag['name']: tag['tag_id'] for tag in tags}
+            
+            # Add 'All' option
+            tag_options_with_all = {"All": "all"} | tag_options
+            
+            if tags:
+                selected_tag_names = st.multiselect(
+                    "Select Tags",
+                    options=list(tag_options_with_all.keys()),
+                    default=["All"] if not st.session_state.quiz_filters['tag_ids'] else [name for name in tag_options.keys() if tag_options[name] in st.session_state.quiz_filters['tag_ids']],
+                    help="Choose one or more tags for your quiz",
+                    key="create_quiz_tags"
+                )
+                
+                # Get selected tag IDs
+                if "All" in selected_tag_names:
+                    # If 'All' is selected, don't filter by tag
+                    selected_tag_ids = []
+                else:
+                    selected_tag_ids = [tag_options[name] for name in selected_tag_names]
+                
+                # Store selected tags in session state
+                st.session_state.quiz_filters['tag_ids'] = selected_tag_ids
+            else:
+                st.info("No tags found in the database.")
+            
+            # Calculate available questions based on filters
+            query = "SELECT COUNT(DISTINCT q.question_id) as count FROM questions q"
+            conditions = []
+            params = []
+            
+            # Only add filter conditions if specific options are selected (not 'All')
+            if st.session_state.quiz_filters['topic_ids']:
+                topic_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['topic_ids'])
+                conditions.append(f"q.topic_id IN ({topic_ids_str})")
+                params.extend(st.session_state.quiz_filters['topic_ids'])
+            
+            if st.session_state.quiz_filters['week_ids']:
+                week_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['week_ids'])
+                conditions.append(f"q.week_id IN ({week_ids_str})")
+                params.extend(st.session_state.quiz_filters['week_ids'])
+            
+            if st.session_state.quiz_filters['difficulty_ids']:
+                difficulty_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['difficulty_ids'])
+                conditions.append(f"q.difficulty_id IN ({difficulty_ids_str})")
+                params.extend(st.session_state.quiz_filters['difficulty_ids'])
+            
+            if st.session_state.quiz_filters['module_ids']:
+                module_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['module_ids'])
+                conditions.append(f"q.module_id IN ({module_ids_str})")
+                params.extend(st.session_state.quiz_filters['module_ids'])
+            
+            if st.session_state.quiz_filters['tag_ids']:
+                query += " LEFT JOIN question_tags qt ON q.question_id = qt.question_id"
+                tag_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['tag_ids'])
+                conditions.append(f"qt.tag_id IN ({tag_ids_str})")
+                params.extend(st.session_state.quiz_filters['tag_ids'])
+            
+            if conditions:
+                query += " WHERE " + " AND ".join(conditions)
+            
+            cursor.execute(query, params)
+            result = cursor.fetchone()
+            question_count = result['count'] if result else 0
+            
+            # Display available questions count
+            st.info(f"Total available questions with selected filters: {question_count}")
+            
+            # Quiz size selection
+            if question_count > 0:
+                max_questions = min(question_count, 50)  # Limit to 50 questions max
+                quiz_size = st.slider(
+                    "Number of Questions",
+                    min_value=1,
+                    max_value=max_questions,
+                    value=min(10, max_questions),
+                    help="Select how many questions you want in your quiz"
+                )
+                
+                # Store quiz size in session state
+                st.session_state.quiz_size = quiz_size
+                
+                # Start quiz button
+                if st.button("Start Quiz", type="primary", key="create_quiz_start_button"):
+                    # Generate the query to get filtered questions
+                    query = "SELECT q.question_id FROM questions q"
+                    conditions = []
+                    params = []
+                    
+                    # Only add filter conditions if specific options are selected (not 'All')
+                    if st.session_state.quiz_filters['topic_ids']:
+                        topic_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['topic_ids'])
+                        conditions.append(f"q.topic_id IN ({topic_ids_str})")
+                        params.extend(st.session_state.quiz_filters['topic_ids'])
+                    
+                    if st.session_state.quiz_filters['week_ids']:
+                        week_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['week_ids'])
+                        conditions.append(f"q.week_id IN ({week_ids_str})")
+                        params.extend(st.session_state.quiz_filters['week_ids'])
+                    
+                    if st.session_state.quiz_filters['difficulty_ids']:
+                        difficulty_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['difficulty_ids'])
+                        conditions.append(f"q.difficulty_id IN ({difficulty_ids_str})")
+                        params.extend(st.session_state.quiz_filters['difficulty_ids'])
+                    
+                    if st.session_state.quiz_filters['module_ids']:
+                        module_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['module_ids'])
+                        conditions.append(f"q.module_id IN ({module_ids_str})")
+                        params.extend(st.session_state.quiz_filters['module_ids'])
+                    
+                    if st.session_state.quiz_filters['tag_ids']:
+                        query += " LEFT JOIN question_tags qt ON q.question_id = qt.question_id"
+                        tag_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['tag_ids'])
+                        conditions.append(f"qt.tag_id IN ({tag_ids_str})")
+                        params.extend(st.session_state.quiz_filters['tag_ids'])
+                    
+                    if conditions:
+                        query += " WHERE " + " AND ".join(conditions)
+                    
+                    query += " ORDER BY RANDOM() LIMIT ?"
+                    params.append(quiz_size)
+                    
+                    cursor.execute(query, params)
+                    question_ids = [row['question_id'] for row in cursor.fetchall()]
+                    
+                    if not question_ids:
+                        st.warning("No questions found with the selected filters.")
+                        st.stop()
+                    
+                    # Store quiz data in session state
+                    st.session_state.quiz_started = True
+                    st.session_state.question_ids = question_ids
+                    st.session_state.current_question = 0
+                    st.session_state.user_answers = {}
+                    st.session_state.show_results = False
+                    
+                    # Set up timer - 90 seconds per question
+                    st.session_state.total_time = len(question_ids) * 90  # in seconds
+                    st.session_state.start_time = time.time()
+                    
+                    # Switch to quiz page
+                    st.session_state.current_page = 'quiz'
+                    st.rerun()
+            else:
+                st.warning("No questions available with the current selection.")
+                st.info("Try selecting different filters or import more questions into the database.")
+            
+            # Navigation button
+            col1, col2 = st.columns([1, 5])
+            if col1.button("Previous: Modules", type="secondary"):
+                st.session_state.quiz_wizard_step = 4
+                st.rerun()
+    
     elif st.session_state.current_page == 'quiz':
         # Quiz page
         st.title("CFA Level I Quiz")
         st.markdown("""
-        Select the topics you're interested in and create a customized quiz.
+        Answer the questions below to test your knowledge.
         """)
         
         # Sidebar for quiz settings
@@ -456,18 +858,28 @@ def main():
     weeks = cursor.fetchall()
     week_options = {f"Week {week['week_number']}": week['week_id'] for week in weeks}
     
-    # Selection mode
-    selection_mode = st.sidebar.radio(
-        "Filter questions by:",
-        options=["Topic", "Week", "Both"],
-        index=0
-    )
+    # Only show filter options on quiz-related pages
+    if st.session_state.current_page not in ['dashboard', 'load_questions']:
+        # Selection mode
+        selection_mode = st.sidebar.radio(
+            "Filter questions by:",
+            options=["Topic", "Week", "Both"],
+            index=0
+        )
+        
+        selected_topic_ids = []
+        selected_week_ids = []
+    else:
+        # Default selection mode when on dashboard (won't be used)
+        selection_mode = "Topic"
+        selected_topic_ids = []
+        selected_week_ids = []
     
-    selected_topic_ids = []
-    selected_week_ids = []
-    
-    # Topic selection
-    if selection_mode in ["Topic", "Both"]:
+    # Topic selection - only show on quiz-related pages
+    if st.session_state.current_page not in ['dashboard', 'load_questions'] and selection_mode in ["Topic", "Both"]:
+        # Add 'All' option
+        topic_options_with_all = {"All": "all"} | topic_options
+        
         if len(topic_options) == 1:
             # If there's only one topic, select it by default
             only_topic = list(topic_options.keys())[0]
@@ -476,15 +888,27 @@ def main():
         else:
             selected_topic_names = st.sidebar.multiselect(
                 "Select Topics",
-                options=list(topic_options.keys()),
-                help="Choose one or more topics for your quiz"
+                options=list(topic_options_with_all.keys()),
+                default=["All"],
+                help="Choose one or more topics for your quiz",
+                key="take_quiz_topics"
             )
+    else:
+        # Default when on dashboard or not in Topic/Both mode
+        selected_topic_names = []
         
         # Get selected topic IDs
-        selected_topic_ids = [topic_options[name] for name in selected_topic_names]
+        if "All" in selected_topic_names:
+            # If 'All' is selected, don't filter by topic
+            selected_topic_ids = []
+        else:
+            selected_topic_ids = [topic_options[name] for name in selected_topic_names]
     
-    # Week selection
-    if selection_mode in ["Week", "Both"]:
+    # Week selection - only show on quiz-related pages
+    if st.session_state.current_page not in ['dashboard', 'load_questions'] and selection_mode in ["Week", "Both"]:
+        # Add 'All' option
+        week_options_with_all = {"All": "all"} | week_options
+        
         if len(week_options) == 1:
             # If there's only one week, select it by default
             only_week = list(week_options.keys())[0]
@@ -493,12 +917,21 @@ def main():
         else:
             selected_week_names = st.sidebar.multiselect(
                 "Select Weeks",
-                options=list(week_options.keys()),
-                help="Choose one or more weeks for your quiz"
+                options=list(week_options_with_all.keys()),
+                default=["All"],
+                help="Choose one or more weeks for your quiz",
+                key="take_quiz_weeks"
             )
+    else:
+        # Default when on dashboard or not in Week/Both mode
+        selected_week_names = []
         
         # Get selected week IDs
-        selected_week_ids = [week_options[name] for name in selected_week_names]
+        if "All" in selected_week_names:
+            # If 'All' is selected, don't filter by week
+            selected_week_ids = []
+        else:
+            selected_week_ids = [week_options[name] for name in selected_week_names]
     
     # Show available questions count based on selection mode
     has_selection = False
@@ -527,7 +960,7 @@ def main():
         )
         
         # Start quiz button
-        start_quiz = st.sidebar.button("Start Quiz", type="primary")
+        start_quiz = st.sidebar.button("Start Quiz", type="primary", key="sidebar_start_quiz_button_")
         
         if start_quiz:
             # Get random questions based on selected filters
@@ -548,6 +981,10 @@ def main():
             st.session_state.current_question = 0
             st.session_state.user_answers = {}
             st.session_state.show_results = False
+            
+            # Set up timer - 90 seconds per question
+            st.session_state.total_time = len(question_ids) * 90  # in seconds
+            st.session_state.start_time = time.time()
     elif not has_selection:
         if selection_mode == "Topic":
             st.info("👈 Please select at least one topic from the sidebar to start.")
@@ -569,7 +1006,46 @@ def main():
             
             # Progress bar
             st.progress(current_idx / total_questions)
+            
+            # Timer display
+            elapsed_time = int(time.time() - st.session_state.start_time)
+            remaining_time = max(0, st.session_state.total_time - elapsed_time)
+            minutes, seconds = divmod(remaining_time, 60)
+            
+            # Display question number
             st.write(f"Question {current_idx + 1} of {total_questions}")
+            
+            # Create a clickable timer button that updates when clicked and an exit button
+            timer_col, exit_col = st.columns([2, 1])
+            
+            with timer_col:
+                timer_color = "red" if remaining_time < 30 else "black"
+                timer_label = f"⏱️ {minutes}:{seconds:02d}"
+                
+                # Make the timer clickable to refresh
+                if st.button(timer_label, key="timer_button", help="Click to update timer"):
+                    # This will trigger a rerun when clicked
+                    pass
+                
+                # Add a note about clicking to update
+                st.caption("Click timer to update")
+            
+            with exit_col:
+                if st.button("Exit Quiz", key="exit_quiz_button", type="secondary"):
+                    # Exit the quiz and return to dashboard
+                    st.session_state.current_page = 'dashboard'
+                    # Clear quiz state
+                    for key in ['quiz_started', 'question_ids', 'current_question', 'user_answers', 'show_results']:
+                        if key in st.session_state:
+                            del st.session_state[key]
+                    st.rerun()
+                
+            # Auto-submit if time runs out
+            if remaining_time <= 0 and not st.session_state.show_results:
+                st.session_state.show_results = True
+                st.warning("Time's up! Your quiz has been automatically submitted.")
+                # Timer has ended
+                st.rerun()
             
             # Get current question details
             question_id = st.session_state.question_ids[current_idx]
@@ -638,9 +1114,19 @@ def main():
                 if data['user_answer'] == data['correct_answer']
             )
             
-            # Display score
+            # Calculate time taken
+            if 'start_time' in st.session_state:
+                time_taken = int(time.time() - st.session_state.start_time)
+                minutes, seconds = divmod(time_taken, 60)
+                time_info = f"Time taken: {minutes} minutes and {seconds} seconds"
+            else:
+                time_info = ""
+            
+            # Display score and time taken
             score_percentage = (correct_answers / total_questions) * 100 if total_questions > 0 else 0
             st.subheader(f"Your Score: {correct_answers}/{total_questions} ({score_percentage:.1f}%)")
+            if time_info:
+                st.write(time_info)
             
             # Results breakdown
             st.write("### Question Review")
@@ -679,7 +1165,7 @@ def main():
                         st.write(question_data['explanation'])
             
             # Restart quiz button
-            if st.button("Start New Quiz", type="primary"):
+            if st.button("Start New Quiz", type="primary", key="restart_quiz_button"):
                 for key in ['quiz_started', 'question_ids', 'current_question', 
                            'user_answers', 'show_results']:
                     if key in st.session_state:
