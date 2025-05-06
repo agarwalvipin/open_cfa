@@ -4,3 +4,6 @@ pandas==2.1.4
 python-dotenv==1.0.0
 firebase-admin==6.2.0
 requests==2.31.0
+extra-streamlit-components==0.1.60
+# Using pyrebase directly instead of pyrebase4 to avoid dependency conflicts
+pyrebase==3.0.27

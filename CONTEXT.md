@@ -40,6 +40,7 @@ This is an open-source CFA Level I exam preparation application that provides a 
 - Makefile for easier application management
 
 ## Recent Changes
+- Implemented persistent login functionality to maintain session across page refreshes
 - Added Practice Question feature that provides immediate feedback after answering each question
 - Fixed quiz starting functionality with proper handling of 'All' selection
 - Removed debug messages from sidebar

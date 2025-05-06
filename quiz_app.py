@@ -17,6 +17,10 @@ import role_management
 import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
+import json
+from datetime import datetime, timedelta
+import pickle
+import base64
 
 # Set page configuration
 st.set_page_config(
@@ -198,6 +202,73 @@ def get_question_details(conn, question_id):
         'tags': [tag['name'] for tag in tags]
     }
 
+# Function to encode session data for URL parameter
+def encode_session_data(data):
+    # Convert data to JSON string
+    json_data = json.dumps(data)
+    # Encode as base64 to make it URL-safe
+    encoded = base64.b64encode(json_data.encode()).decode()
+    return encoded
+
+# Function to decode session data from URL parameter
+def decode_session_data(encoded_data):
+    try:
+        # Decode base64 string
+        json_data = base64.b64decode(encoded_data).decode()
+        # Parse JSON data
+        data = json.loads(json_data)
+        return data
+    except Exception as e:
+        st.error(f"Error decoding session data: {e}")
+        return None
+
+# Function to save authentication data to session state
+def save_auth_to_session(user_data, remember_me=False):
+    if not remember_me:
+        return False
+    
+    # Prepare auth data
+    auth_data = {
+        'idToken': user_data.get('idToken', ''),
+        'uid': user_data.get('localId', ''),
+        'email': user_data.get('email', ''),
+        'username': user_data.get('displayName', user_data.get('email', '').split('@')[0]),
+        'role': st.session_state.get('user_role', 'student'),
+        'expiry': (datetime.now() + timedelta(days=30)).isoformat()  # 30 days expiry
+    }
+    
+    # Save to session state
+    st.session_state.auth_token = encode_session_data(auth_data)
+    return True
+
+# Function to check if auth token is valid
+def is_auth_token_valid(auth_token):
+    try:
+        auth_data = decode_session_data(auth_token)
+        if auth_data and 'expiry' in auth_data:
+            # Check if token is still valid (not expired)
+            expiry = datetime.fromisoformat(auth_data['expiry'])
+            if datetime.now() < expiry:
+                return True
+    except Exception as e:
+        st.error(f"Error validating auth token: {e}")
+    return False
+
+# Function to restore session from auth token
+def restore_session_from_token(auth_token):
+    auth_data = decode_session_data(auth_token)
+    if auth_data:
+        # Restore session state
+        st.session_state.authenticated = True
+        st.session_state.user = {'localId': auth_data.get('uid', '')}
+        st.session_state.user_uid = auth_data.get('uid', '')
+        st.session_state.user_role = auth_data.get('role', 'student')
+        st.session_state.username = auth_data.get('username', '')
+        st.session_state.remember_me = True
+        st.session_state.saved_email = auth_data.get('email', '')
+        return True
+    return False
+
 # Main app function
 def main():
     # Initialize session state variables for authentication
@@ -213,7 +284,23 @@ def main():
         st.session_state.remember_me = False
     if 'saved_email' not in st.session_state:
         st.session_state.saved_email = ""
-        
+    if 'auth_token' not in st.session_state:
+        st.session_state.auth_token = None
+    
+    # Check for auth token in URL parameters
+    query_params = st.experimental_get_query_params()
+    if 'auth' in query_params and not st.session_state.authenticated:
+        auth_token = query_params['auth'][0]
+        if is_auth_token_valid(auth_token):
+            # Restore session from token
+            if restore_session_from_token(auth_token):
+                st.success(f"Welcome back, {st.session_state.username}! You've been automatically logged in.")
+    
+    # Set auth token in URL if authenticated and remember_me is enabled
+    if st.session_state.authenticated and st.session_state.remember_me and 'auth_token' in st.session_state:
+        # Update URL with auth token
+        st.experimental_set_query_params(auth=st.session_state.auth_token)
+    
     # Check if user has saved credentials
     if st.session_state.remember_me and st.session_state.saved_email and not st.session_state.authenticated:
         st.info(f"Welcome back! Using saved credentials for {st.session_state.saved_email}")
@@ -258,6 +345,13 @@ def main():
                             user_uid = st.session_state['user_uid']
                             user_role = firebase_auth.get_user_role(user_uid)
                             st.session_state['user_role'] = user_role
+                            
+                            # Save authentication data if remember_me is checked
+                            if remember_me:
+                                st.session_state.remember_me = True
+                                st.session_state.saved_email = email
+                                # Save to session state for persistent login
+                                save_auth_to_session(result['user'], remember_me=True)
                             
                             st.success(f"Login successful! You are logged in as a {user_role.capitalize()}.")
                             time.sleep(1)
@@ -329,7 +423,11 @@ def main():
         if not st.session_state.remember_me:
             # If remember me is not checked, clear saved email too
             st.session_state.saved_email = ""
-        # Otherwise keep the saved email for next login
+        
+        # Clear auth token
+        st.session_state.auth_token = None
+        # Clear URL parameters
+        st.experimental_set_query_params()
             
         st.session_state.current_page = 'dashboard'  # Reset to dashboard for next login
         st.rerun()
