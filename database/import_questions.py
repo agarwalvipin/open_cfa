@@ -8,16 +8,18 @@ import os
 import re
 import psycopg2
 import argparse
-from psycopg2.extras import execute_values
-from pathlib import Path
+from dotenv import load_dotenv
 
-# Database connection parameters
+# Load environment variables from .env file
+load_dotenv()
+
+# Database connection parameters from environment variables
 DB_PARAMS = {
-    'dbname': 'cfa_questions',
-    'user': 'postgres',
-    'password': 'postgres',  # Change this to your actual password
-    'host': 'localhost',
-    'port': '5432'
+    'dbname': os.getenv('DB_NAME', 'cfa_db'),
+    'user': os.getenv('DB_USER', 'cfauser'),
+    'password': os.getenv('DB_PASSWORD', 'cfaPass'),
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': os.getenv('DB_PORT', '54320')  # Port mapped to Docker container
 }
 
 def connect_to_db():
@@ -302,11 +304,11 @@ def main():
         return
     
     try:
-        # Find all markdown files in the directory
+        # Find all markdown files in the directory that end with _questions.md
         question_files = []
         for root, _, files in os.walk(args.directory):
             for file in files:
-                if file.endswith('.md') and 'questions' in file.lower():
+                if file.endswith('_questions.md'):
                     question_files.append(os.path.join(root, file))
         
         print(f"Found {len(question_files)} question files")

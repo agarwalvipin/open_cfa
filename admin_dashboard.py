@@ -8,10 +8,12 @@ import streamlit as st
 import firebase_auth
 import role_management
 import user_stats
-import sqlite3
 import os
 import pandas as pd
 from pathlib import Path
+import psycopg2
+import psycopg2.extras
+from dotenv import load_dotenv
 
 # Only set page config when running this file directly, not when imported
 if __name__ == "__main__":
@@ -23,19 +25,32 @@ if __name__ == "__main__":
         initial_sidebar_state="expanded",
     )
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Database connection parameters from environment variables
+DB_PARAMS = {
+    'dbname': os.getenv('DB_NAME', 'cfa_db'),
+    'user': os.getenv('DB_USER', 'cfauser'),
+    'password': os.getenv('DB_PASSWORD', 'cfaPass'),
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': os.getenv('DB_PORT', '54320')  # Port mapped to Docker container
+}
+
 # Database connection function
-def connect_to_db(db_path):
-    """Connect to SQLite database"""
-    if not os.path.exists(db_path):
-        st.error(f"Error: Database file {db_path} not found")
-        return None
+def connect_to_db(db_path=None):
+    """Connect to PostgreSQL database
     
+    The db_path parameter is kept for backward compatibility but not used
+    """
     try:
-        conn = sqlite3.connect(db_path)
-        conn.row_factory = sqlite3.Row  # This enables column access by name
+        # Connect to PostgreSQL
+        conn = psycopg2.connect(**DB_PARAMS)
+        # Use DictCursor to enable column access by name (similar to sqlite3.Row)
+        conn.cursor_factory = psycopg2.extras.DictCursor
         return conn
     except Exception as e:
-        st.error(f"Error connecting to database: {e}")
+        st.error(f"Error connecting to PostgreSQL database: {e}")
         return None
 
 def get_system_stats(conn):
@@ -70,10 +85,10 @@ def get_system_stats(conn):
     
     # Get questions by difficulty
     cursor.execute("""
-        SELECT d.name as difficulty, COUNT(q.question_id) as count 
+        SELECT d.name as difficulty, d.difficulty_id, COUNT(q.question_id) as count 
         FROM questions q
         JOIN difficulty_levels d ON q.difficulty_id = d.difficulty_id
-        GROUP BY d.name
+        GROUP BY d.name, d.difficulty_id
         ORDER BY d.difficulty_id
     """)
     stats['questions_by_difficulty'] = cursor.fetchall()
@@ -89,20 +104,20 @@ def cleanup_questions(conn, topic_id=None, week_id=None, confirm=False):
     
     try:
         # Start a transaction
-        conn.execute("BEGIN TRANSACTION")
+        cursor.execute("BEGIN")
         
         # Build the WHERE clause based on filters
         where_clause = ""
         params = []
         
         if topic_id:
-            where_clause += " topic_id = ?"
+            where_clause += " topic_id = %s"
             params.append(topic_id)
         
         if week_id:
             if where_clause:
                 where_clause += " AND"
-            where_clause += " week_id = ?"
+            where_clause += " week_id = %s"
             params.append(week_id)
         
         # If no filters are provided, require explicit confirmation
@@ -126,7 +141,7 @@ def cleanup_questions(conn, topic_id=None, week_id=None, confirm=False):
         # but we're being explicit for safety
         
         # Delete from question_tags
-        placeholders = ','.join(['?'] * len(question_ids))
+        placeholders = ','.join(['%s'] * len(question_ids))
         cursor.execute(f"DELETE FROM question_tags WHERE question_id IN ({placeholders})", question_ids)
         tags_deleted = cursor.rowcount
         
@@ -224,9 +239,10 @@ def main():
     # Admin Dashboard
     st.title("Admin Dashboard")
     
-    # Connect to database
-    db_path = os.path.join(Path(__file__).parent, 'database', 'cfa_questions.db')
-    conn = connect_to_db(db_path)
+    # Connect to PostgreSQL database
+    conn = connect_to_db()
+    # Database connection message removed
+
     
     if not conn:
         st.error("Could not connect to database. Please check the database file.")
@@ -348,13 +364,13 @@ def main():
         params = []
         
         if selected_topic_id:
-            where_clause += " topic_id = ?"
+            where_clause += " topic_id = %s"
             params.append(selected_topic_id)
         
         if selected_week_id:
             if where_clause:
                 where_clause += " AND"
-            where_clause += " week_id = ?"
+            where_clause += " week_id = %s"
             params.append(selected_week_id)
         
         if where_clause:
@@ -384,45 +400,61 @@ def main():
         st.subheader("Clean Orphaned Data")
         st.info("This will remove unused topics, tags, modules, and other reference data that are not associated with any questions.")
         
-        if st.button("Clean Orphaned Data", type="secondary"):
+        def clean_orphaned_data(connection):
+            """Function to clean orphaned data from the database"""
             try:
-                conn.execute("BEGIN TRANSACTION")
+                # Create a new cursor
+                with connection.cursor() as curs:
+                    # Start transaction
+                    curs.execute("BEGIN")
+                    
+                    # Delete orphaned tags
+                    curs.execute("""
+                        DELETE FROM tags 
+                        WHERE tag_id NOT IN (SELECT DISTINCT tag_id FROM question_tags)
+                    """)
+                    tags_deleted = curs.rowcount
+                    
+                    # Delete orphaned learning objectives
+                    curs.execute("""
+                        DELETE FROM learning_objectives 
+                        WHERE los_id NOT IN (SELECT DISTINCT los_id FROM questions WHERE los_id IS NOT NULL)
+                    """)
+                    los_deleted = curs.rowcount
+                    
+                    # Delete orphaned modules
+                    curs.execute("""
+                        DELETE FROM modules 
+                        WHERE module_id NOT IN (SELECT DISTINCT module_id FROM questions WHERE module_id IS NOT NULL)
+                    """)
+                    modules_deleted = curs.rowcount
+                    
+                    # Delete orphaned readings
+                    curs.execute("""
+                        DELETE FROM readings 
+                        WHERE reading_id NOT IN (SELECT DISTINCT reading_id FROM questions WHERE reading_id IS NOT NULL)
+                    """)
+                    readings_deleted = curs.rowcount
                 
-                # Delete orphaned tags
-                cursor.execute("""
-                    DELETE FROM tags 
-                    WHERE tag_id NOT IN (SELECT DISTINCT tag_id FROM question_tags)
-                """)
-                tags_deleted = cursor.rowcount
+                # Commit the transaction
+                connection.commit()
                 
-                # Delete orphaned learning objectives
-                cursor.execute("""
-                    DELETE FROM learning_objectives 
-                    WHERE los_id NOT IN (SELECT DISTINCT los_id FROM questions WHERE los_id IS NOT NULL)
-                """)
-                los_deleted = cursor.rowcount
-                
-                # Delete orphaned modules
-                cursor.execute("""
-                    DELETE FROM modules 
-                    WHERE module_id NOT IN (SELECT DISTINCT module_id FROM questions WHERE module_id IS NOT NULL)
-                """)
-                modules_deleted = cursor.rowcount
-                
-                # Delete orphaned readings
-                cursor.execute("""
-                    DELETE FROM readings 
-                    WHERE reading_id NOT IN (SELECT DISTINCT reading_id FROM questions WHERE reading_id IS NOT NULL)
-                """)
-                readings_deleted = cursor.rowcount
-                
-                conn.commit()
-                
-                st.success(f"Successfully cleaned up orphaned data: {tags_deleted} tags, {los_deleted} learning objectives, {modules_deleted} modules, and {readings_deleted} readings.")
+                return True, tags_deleted, los_deleted, modules_deleted, readings_deleted
                 
             except Exception as e:
-                conn.rollback()
-                st.error(f"Error cleaning orphaned data: {str(e)}")
+                # Rollback the transaction
+                connection.rollback()
+                return False, str(e), 0, 0, 0
+        
+        if st.button("Clean Orphaned Data", type="secondary"):
+            success, *results = clean_orphaned_data(conn)
+            
+            if success:
+                tags_deleted, los_deleted, modules_deleted, readings_deleted = results
+                st.success(f"Successfully cleaned up orphaned data: {tags_deleted} tags, {los_deleted} learning objectives, {modules_deleted} modules, and {readings_deleted} readings.")
+            else:
+                error_msg = results[0]
+                st.error(f"Error cleaning orphaned data: {error_msg}")
     
     # Close database connection
     conn.close()

@@ -35,8 +35,10 @@ We've created a database system to store and query CFA Level I exam questions fr
 ### 3. Database Creation
 
 - Successfully created a SQLite database (`cfa_questions.db`)
-- Imported all 24 ethics questions from Week 3 into the database
-- Verified that the database correctly stores all question components
+- Created a PostgreSQL database (`cfa_db`) in Docker container
+- Imported all 24 ethics questions from Week 3 into the SQLite database
+- Applied PostgreSQL schema to the Docker database
+- Verified that both databases correctly store all question components
 
 ### 4. Query Tools
 
@@ -70,6 +72,42 @@ The database schema is designed to efficiently store and query the question bank
 - **answer_options**: Multiple choice options for each question
 - **explanations**: Detailed explanations for the correct answers
 - **tags**: Keywords associated with questions for easier searching
+
+## Database Implementations
+
+### SQLite Implementation
+
+- Local SQLite database file (`cfa_questions.db`) for development and testing
+- Schema defined in `sqlite_schema.sql`
+- Lightweight and requires no server setup
+
+### PostgreSQL Implementation
+
+- PostgreSQL database (`cfa_db`) running in Docker container
+- Container name: `db` running on port 54320
+- Schema defined in `schema.sql`
+- Includes performance indexes and triggers for data integrity
+- Database user: `cfauser` with password `cfaPass` has full privileges on the database
+- Connect using: `docker exec -it db psql -U cfauser -d cfa_db`
+- Successfully imported 116 questions total:
+  - 61 questions from Week 3 (24 ethics questions and 37 quantitative questions)
+  - 21 questions from Week 1
+  - 34 questions from Week 2
+
+### Environment Variables for Database Connection
+
+- Added support for loading database connection details from `.env` file
+- Updated all application files to use environment variables for database connections:
+  - `quiz_app.py`
+  - `admin_dashboard.py`
+  - `database/import_questions.py`
+- Environment variables used:
+  - `DB_NAME`: Database name (default: 'cfa_db')
+  - `DB_USER`: Database user (default: 'cfauser')
+  - `DB_PASSWORD`: Database password (default: 'cfaPass')
+  - `DB_HOST`: Database host (default: 'localhost')
+  - `DB_PORT`: Database port (default: '54320')
+- This makes the application more configurable and secure by keeping sensitive information out of the code
 
 ## Next Steps
 
@@ -298,5 +336,7 @@ The system supports three distinct user roles with a hierarchical access structu
    - Updated all components to use the correct database file (`cfa_questions.db`)
    - Ensured proper database connections across all application modules
    - Implemented error handling for database connection issues
+   - Added support for environment variables through `.env` file for database connections
+   - Improved security by removing hardcoded database credentials from code
 
 This role management system ensures proper access control while providing specialized tools for different user types, enhancing both security and usability of the application. The system is fully integrated with Firebase Authentication and Firestore, providing a seamless and secure user experience.

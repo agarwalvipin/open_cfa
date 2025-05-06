@@ -5,7 +5,6 @@ Streamlit Quiz App for CFA Level I Exam Questions
 """
 
 import streamlit as st
-import sqlite3
 import os
 import random
 import time
@@ -15,6 +14,9 @@ import firebase_auth
 import user_stats
 import requests
 import role_management
+import psycopg2
+import psycopg2.extras
+from dotenv import load_dotenv
 
 # Set page configuration
 st.set_page_config(
@@ -27,19 +29,37 @@ st.set_page_config(
 # Import admin dashboard functions - must be after set_page_config
 from admin_dashboard import get_system_stats, get_user_activity_stats, cleanup_questions
 
+# Import necessary modules for dynamic import
+from importlib.util import spec_from_file_location, module_from_spec
+import sys
+import tempfile
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Database connection parameters from environment variables
+DB_PARAMS = {
+    'dbname': os.getenv('DB_NAME', 'cfa_db'),
+    'user': os.getenv('DB_USER', 'cfauser'),
+    'password': os.getenv('DB_PASSWORD', 'cfaPass'),
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': os.getenv('DB_PORT', '54320')  # Port mapped to Docker container
+}
+
 # Database connection function
-def connect_to_db(db_path):
-    """Connect to SQLite database"""
-    if not os.path.exists(db_path):
-        st.error(f"Error: Database file {db_path} not found")
-        return None
+def connect_to_db(db_path=None):
+    """Connect to PostgreSQL database
     
+    The db_path parameter is kept for backward compatibility but not used
+    """
     try:
-        conn = sqlite3.connect(db_path)
-        conn.row_factory = sqlite3.Row  # This enables column access by name
+        # Connect to PostgreSQL
+        conn = psycopg2.connect(**DB_PARAMS)
+        # Use DictCursor to enable column access by name (similar to sqlite3.Row)
+        conn.cursor_factory = psycopg2.extras.DictCursor
         return conn
     except Exception as e:
-        st.error(f"Error connecting to database: {e}")
+        st.error(f"Error connecting to PostgreSQL database: {e}")
         return None
 
 # Get all topics from the database
@@ -62,7 +82,7 @@ def get_question_count(conn, topic_ids=None, week_ids=None):
     if topic_ids and len(topic_ids) > 1 and not week_ids:
         # For multiple topics without week filter, we want the sum of all questions in those topics
         # Use DISTINCT to avoid counting questions that belong to multiple selected topics more than once
-        topic_ids_str = ','.join('?' for _ in topic_ids)
+        topic_ids_str = ','.join('%s' for _ in topic_ids)
         query = f"SELECT COUNT(DISTINCT question_id) as count FROM questions WHERE topic_id IN ({topic_ids_str})"
         cursor.execute(query, topic_ids)
         result = cursor.fetchone()
@@ -73,12 +93,12 @@ def get_question_count(conn, topic_ids=None, week_ids=None):
     params = []
     
     if topic_ids:
-        topic_ids_str = ','.join('?' for _ in topic_ids)
+        topic_ids_str = ','.join('%s' for _ in topic_ids)
         conditions.append(f"topic_id IN ({topic_ids_str})")
         params.extend(topic_ids)
     
     if week_ids:
-        week_ids_str = ','.join('?' for _ in week_ids)
+        week_ids_str = ','.join('%s' for _ in week_ids)
         conditions.append(f"week_id IN ({week_ids_str})")
         params.extend(week_ids)
     
@@ -97,12 +117,12 @@ def get_filtered_questions(conn, topic_ids=None, week_ids=None, limit=None):
     params = []
     
     if topic_ids:
-        topic_ids_str = ','.join('?' for _ in topic_ids)
+        topic_ids_str = ','.join('%s' for _ in topic_ids)
         conditions.append(f"q.topic_id IN ({topic_ids_str})")
         params.extend(topic_ids)
     
     if week_ids:
-        week_ids_str = ','.join('?' for _ in week_ids)
+        week_ids_str = ','.join('%s' for _ in week_ids)
         conditions.append(f"q.week_id IN ({week_ids_str})")
         params.extend(week_ids)
     
@@ -114,7 +134,7 @@ def get_filtered_questions(conn, topic_ids=None, week_ids=None, limit=None):
         query += " WHERE " + " AND ".join(conditions)
     
     if limit:
-        query += " ORDER BY RANDOM() LIMIT ?"
+        query += " ORDER BY RANDOM() LIMIT %s"
         params.append(limit)
     
     cursor = conn.cursor()
@@ -138,7 +158,7 @@ def get_question_details(conn, question_id):
         JOIN difficulty_levels d ON q.difficulty_id = d.difficulty_id
         LEFT JOIN readings r ON q.reading_id = r.reading_id
         LEFT JOIN learning_objectives l ON q.los_id = l.los_id
-        WHERE q.question_id = ?
+        WHERE q.question_id = %s
     """, (question_id,))
     question = cursor.fetchone()
     
@@ -149,7 +169,7 @@ def get_question_details(conn, question_id):
     cursor.execute("""
         SELECT option_letter, option_text, is_correct
         FROM answer_options
-        WHERE question_id = ?
+        WHERE question_id = %s
         ORDER BY option_letter
     """, (question_id,))
     options = cursor.fetchall()
@@ -158,7 +178,7 @@ def get_question_details(conn, question_id):
     cursor.execute("""
         SELECT explanation_text
         FROM explanations
-        WHERE question_id = ?
+        WHERE question_id = %s
     """, (question_id,))
     explanation = cursor.fetchone()
     
@@ -167,7 +187,7 @@ def get_question_details(conn, question_id):
         SELECT t.name
         FROM tags t
         JOIN question_tags qt ON t.tag_id = qt.tag_id
-        WHERE qt.question_id = ?
+        WHERE qt.question_id = %s
     """, (question_id,))
     tags = cursor.fetchall()
     
@@ -198,11 +218,9 @@ def main():
     if st.session_state.remember_me and st.session_state.saved_email and not st.session_state.authenticated:
         st.info(f"Welcome back! Using saved credentials for {st.session_state.saved_email}")
     
-    # Database path
-    db_path = os.path.join(Path(__file__).parent, 'database', 'cfa_questions.db')
-    
-    # Connect to database
-    conn = connect_to_db(db_path)
+    # Connect to PostgreSQL database
+    conn = connect_to_db()
+    # Database connection message removed
     if not conn:
         return
     
@@ -329,8 +347,11 @@ def main():
         spec.loader.exec_module(module)
         return module
     
-    # Path to the import_to_sqlite.py file
-    import_script_path = Path(__file__).parent / "database" / "import_to_sqlite.py"
+    # Path to the import_questions.py file (PostgreSQL importer)
+    import_script_path = Path(__file__).parent / "database" / "import_questions.py"
+    
+    # Schema file selection
+    schema_path = Path(__file__).parent / "database" / "schema.sql"
     
     # Display the selected page
     if st.session_state.current_page == 'dashboard':
@@ -424,10 +445,6 @@ def main():
         The file should follow the standard question format with metadata, question text, options, and explanations.
         """)
         
-        # Schema file selection
-        schema_path = Path(__file__).parent / "database" / "sqlite_schema.sql"
-        db_path = Path(__file__).parent / "database" / "cfa_questions.db"
-        
         # Create tabs for different import methods
         upload_tab, url_tab = st.tabs(["Upload File", "Import from URL"])
         
@@ -456,15 +473,15 @@ def main():
                     if st.button("Import Questions", type="primary", use_container_width=True, key="import_upload"):
                         try:
                             # Import the module
-                            import_module = import_module_from_path("import_to_sqlite", str(import_script_path))
+                            import_module = import_module_from_path("import_questions", str(import_script_path))
                             
                             # Use functions from the imported module
                             with st.spinner("Importing questions..."):
-                                # Create or connect to the database
-                                conn = import_module.create_database(str(db_path), str(schema_path))
-                                
                                 # Parse the questions from the file
                                 questions = import_module.parse_question_file(temp_path)
+                                
+                                # Connect to PostgreSQL database
+                                conn = connect_to_db()
                                 
                                 # Import the questions to the database
                                 import_module.import_questions_to_db(questions, conn)
@@ -476,7 +493,7 @@ def main():
                             st.success(f"Successfully imported {len(questions)} questions!")
                             
                             # Update connection for the main app
-                            conn = connect_to_db(db_path)
+                            conn = connect_to_db()
                         except Exception as e:
                             st.error(f"Error importing questions: {str(e)}")
         
@@ -518,15 +535,15 @@ def main():
                                 temp_path = tmp_file.name
                             
                             # Import the module
-                            import_module = import_module_from_path("import_to_sqlite", str(import_script_path))
+                            import_module = import_module_from_path("import_questions", str(import_script_path))
                             
                             # Use functions from the imported module
                             with st.spinner("Importing questions..."):
-                                # Create or connect to the database
-                                conn = import_module.create_database(str(db_path), str(schema_path))
-                                
                                 # Parse the questions from the file
                                 questions = import_module.parse_question_file(temp_path)
+                                
+                                # Connect to PostgreSQL database
+                                conn = connect_to_db()
                                 
                                 # Import the questions to the database
                                 import_module.import_questions_to_db(questions, conn)
@@ -541,7 +558,7 @@ def main():
                             st.success(f"Successfully imported {len(questions)} questions from URL!")
                             
                             # Update connection for the main app
-                            conn = connect_to_db(db_path)
+                            conn = connect_to_db()
                         except Exception as e:
                             st.error(f"Error importing questions: {str(e)}")
         
@@ -684,13 +701,13 @@ def main():
             params = []
             
             if selected_topic_id:
-                where_clause += " topic_id = ?"
+                where_clause += " topic_id = %s"
                 params.append(selected_topic_id)
             
             if selected_week_id:
                 if where_clause:
                     where_clause += " AND"
-                where_clause += " week_id = ?"
+                where_clause += " week_id = %s"
                 params.append(selected_week_id)
             
             if where_clause:
@@ -722,8 +739,9 @@ def main():
             
             if st.button("Clean Orphaned Data", type="secondary"):
                 try:
-                    conn.execute("BEGIN TRANSACTION")
-                    
+                    cursor = conn.cursor()  # Get cursor
+                    cursor.execute("BEGIN TRANSACTION") # Use cursor
+
                     # Delete orphaned tags
                     cursor.execute("""
                         DELETE FROM tags 
@@ -1038,7 +1056,7 @@ def main():
             
             # Quiz size selection
             if question_count > 0:
-                max_questions = min(question_count, 50)  # Limit to 50 questions max
+                max_questions = min(question_count, 120)  # Limit to 120 questions max to match real CFA exam format
                 quiz_size = st.slider(
                     "Number of Questions",
                     min_value=1,
@@ -1087,7 +1105,7 @@ def main():
                     if conditions:
                         query += " WHERE " + " AND ".join(conditions)
                     
-                    query += " ORDER BY RANDOM() LIMIT ?"
+                    query += " ORDER BY RANDOM() LIMIT %s"
                     params.append(quiz_size)
                     
                     cursor.execute(query, params)
@@ -1184,13 +1202,13 @@ def main():
     else:
         # Default when on dashboard or not in Topic/Both mode
         selected_topic_names = []
-        
-        # Get selected topic IDs
-        if "All" in selected_topic_names:
-            # If 'All' is selected, don't filter by topic
-            selected_topic_ids = []
-        else:
-            selected_topic_ids = [topic_options[name] for name in selected_topic_names]
+    
+    # Get selected topic IDs
+    if "All" in selected_topic_names:
+        # If 'All' is selected, don't filter by topic
+        selected_topic_ids = []
+    else:
+        selected_topic_ids = [topic_options[name] for name in selected_topic_names if name in topic_options]
     
     # Week selection - only show on quiz-related pages
     if st.session_state.current_page not in ['dashboard', 'load_questions'] and selection_mode in ["Week", "Both"]:
@@ -1213,13 +1231,13 @@ def main():
     else:
         # Default when on dashboard or not in Week/Both mode
         selected_week_names = []
-        
-        # Get selected week IDs
-        if "All" in selected_week_names:
-            # If 'All' is selected, don't filter by week
-            selected_week_ids = []
-        else:
-            selected_week_ids = [week_options[name] for name in selected_week_names]
+    
+    # Get selected week IDs
+    if "All" in selected_week_names:
+        # If 'All' is selected, don't filter by week
+        selected_week_ids = []
+    else:
+        selected_week_ids = [week_options[name] for name in selected_week_names if name in week_options]
     
     # Show available questions count based on selection mode
     has_selection = False
