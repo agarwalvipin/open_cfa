@@ -11,9 +11,9 @@ credentials_path = Path(__file__).parent / "firebase-credentials.json"
 project_id = "your-project-id"  # Default project ID
 if os.path.exists(credentials_path):
     try:
-        with open(credentials_path, 'r') as f:
+        with open(credentials_path) as f:
             credentials = json.load(f)
-            project_id = credentials.get('project_id', project_id)
+            project_id = credentials.get("project_id", project_id)
     except Exception as e:
         print(f"Error loading Firebase credentials: {e}")
 
@@ -27,7 +27,7 @@ firebase_config = {
     "projectId": project_id,
     "storageBucket": f"{project_id}.appspot.com",
     "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",  # Replace with your actual sender ID
-    "appId": "YOUR_APP_ID"  # Replace with your actual app ID
+    "appId": "YOUR_APP_ID",  # Replace with your actual app ID
 }
 
 # Service account credentials for admin SDK

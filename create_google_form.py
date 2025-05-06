@@ -25,21 +25,18 @@ TOKEN_FILE = "token.json"
 
 # --- Markdown Parsing ---
 def fetch_markdown_content(file_path):
-    """
-    Fetches the content of a Markdown file from a local path or a GitHub URL.
-    """
+    """Fetches the content of a Markdown file from a local path or a GitHub URL."""
     if file_path.startswith("http://") or file_path.startswith("https://"):
         response = requests.get(file_path)
         if response.status_code == 200:
             return response.text
-        else:
-            print(
-                f"Error: Unable to fetch file from URL. Status code: {response.status_code}"
-            )
-            sys.exit(1)
+        print(
+            f"Error: Unable to fetch file from URL. Status code: {response.status_code}",
+        )
+        sys.exit(1)
     else:
         try:
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, encoding="utf-8") as f:
                 return f.read()
         except FileNotFoundError:
             print(f"Error: File not found at {file_path}")
@@ -47,9 +44,7 @@ def fetch_markdown_content(file_path):
 
 
 def parse_markdown_questions(file_path):
-    """
-    Parses the Markdown file to extract questions and options.
-    """
+    """Parses the Markdown file to extract questions and options."""
     questions = []
     content = fetch_markdown_content(file_path)
 
@@ -63,7 +58,9 @@ def parse_markdown_questions(file_path):
 
         # Extract question text (between </details> and the first option)
         question_match = re.search(
-            r"</details>\s*\n\n(.*?)\n\n- [A-Z]\)", block, re.DOTALL
+            r"</details>\s*\n\n(.*?)\n\n- [A-Z]\)",
+            block,
+            re.DOTALL,
         )
         if not question_match:
             print(f"Warning: Could not find question text in block:\n{block[:100]}...")
@@ -74,7 +71,7 @@ def parse_markdown_questions(file_path):
         options = re.findall(r"- ([A-Z])\) (.*?)(?=\n- [A-Z]\)|$)", block)
         if not options:
             print(
-                f"Warning: Could not find options for question: {question_text[:50]}..."
+                f"Warning: Could not find options for question: {question_text[:50]}...",
             )
             continue
 
@@ -108,10 +105,10 @@ def authenticate_google_forms():
             if not os.path.exists(CREDENTIALS_FILE):
                 print(f"Error: {CREDENTIALS_FILE} not found.")
                 print(
-                    "Please download your OAuth 2.0 client credentials from the Google Cloud Console"
+                    "Please download your OAuth 2.0 client credentials from the Google Cloud Console",
                 )
                 print(
-                    "and save the file as 'credentials.json' in the same directory as this script."
+                    "and save the file as 'credentials.json' in the same directory as this script.",
                 )
                 return None
             # Correctly indented block starts here (level 3 indentation - 12 spaces)
@@ -126,15 +123,15 @@ def authenticate_google_forms():
             print("\nPlease open the following URL in your browser to authorize:")
             # Get authorization url and state
             auth_url, _ = flow.authorization_url(
-                prompt="consent"
+                prompt="consent",
             )  # Added prompt='consent' for clarity
             print(auth_url)  # Corrected indentation (level 3)
             print(
-                "\nEnter the authorization code shown in your browser after approval:"
+                "\nEnter the authorization code shown in your browser after approval:",
             )  # Corrected indentation (level 3)
             # Get the authorization code from the user
             code = input(
-                "Paste the authorization code here: "
+                "Paste the authorization code here: ",
             ).strip()  # Corrected indentation (level 3)
             # Fetch the token using the provided code
             try:  # Corrected indentation (level 3)
@@ -161,7 +158,9 @@ def create_google_form(creds, title, questions_data):
         # Build the service objects
         forms_service = build("forms", "v1", credentials=creds)
         drive_service = build(
-            "drive", "v3", credentials=creds
+            "drive",
+            "v3",
+            credentials=creds,
         )  # Needed for initial creation
 
         # Create the initial form structure
@@ -169,7 +168,7 @@ def create_google_form(creds, title, questions_data):
             "info": {
                 "title": title,
                 "documentTitle": title,  # Sets the filename in Drive
-            }
+            },
         }
 
         # Create the form using Drive API (Forms API doesn't have a direct create method)
@@ -194,14 +193,15 @@ def create_google_form(creds, title, questions_data):
                     {
                         "deleteItem": {
                             "location": {
-                                "index": 0
-                            }  # Use index to delete the first item
-                        }
-                    }
-                ]
+                                "index": 0,
+                            },  # Use index to delete the first item
+                        },
+                    },
+                ],
             }
             forms_service.forms().batchUpdate(
-                formId=form_id, body=delete_request
+                formId=form_id,
+                body=delete_request,
             ).execute()
             print("Default 'Untitled Question' removed.")
 
@@ -213,7 +213,7 @@ def create_google_form(creds, title, questions_data):
                 opt.replace("\n", " ").strip() for opt in q_data["options"]
             ]
             sanitized_questions.append(
-                {"text": sanitized_text, "options": sanitized_options}
+                {"text": sanitized_text, "options": sanitized_options},
             )
 
         # Update form description to show the total number of questions
@@ -226,12 +226,13 @@ def create_google_form(creds, title, questions_data):
                     "updateFormInfo": {
                         "info": {"description": form_description},
                         "updateMask": "description",
-                    }
-                }
-            ]
+                    },
+                },
+            ],
         }
         forms_service.forms().batchUpdate(
-            formId=form_id, body=form_update_body
+            formId=form_id,
+            body=form_update_body,
         ).execute()
 
         # Ensure the index is properly set for each question and include question numbers
@@ -252,12 +253,12 @@ def create_google_form(creds, title, questions_data):
                                             {"value": opt} for opt in q_data["options"]
                                         ],
                                     },
-                                }
+                                },
                             },
                         },
                         "location": {"index": i},  # Correctly set the index
-                    }
-                }
+                    },
+                },
             )
 
         # Add questions to the form using Forms API batchUpdate
@@ -265,7 +266,8 @@ def create_google_form(creds, title, questions_data):
             print(f"Adding {len(requests)} questions to the form...")
             batch_update_body = {"requests": requests}
             forms_service.forms().batchUpdate(
-                formId=form_id, body=batch_update_body
+                formId=form_id,
+                body=batch_update_body,
             ).execute()
             print("Questions added successfully.")
         else:
@@ -301,7 +303,7 @@ if __name__ == "__main__":
 
     # Deduce FORM_TITLE from the Markdown file name
     if MARKDOWN_FILE_PATH.startswith("http://") or MARKDOWN_FILE_PATH.startswith(
-        "https://"
+        "https://",
     ):
         FORM_TITLE = (
             MARKDOWN_FILE_PATH.split("/")[-1]
