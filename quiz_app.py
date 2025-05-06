@@ -213,61 +213,165 @@ def encode_session_data(data):
 # Function to decode session data from URL parameter
 def decode_session_data(encoded_data):
     try:
+        # Safety check for non-string input
+        if not isinstance(encoded_data, str):
+            print(f"Invalid encoded_data type: {type(encoded_data)}")
+            return None
+            
+        # Handle potential URL encoding
+        if '%' in encoded_data:
+            import urllib.parse
+            encoded_data = urllib.parse.unquote(encoded_data)
+            
+        # Add padding if needed
+        padding_needed = len(encoded_data) % 4
+        if padding_needed:
+            encoded_data += '=' * (4 - padding_needed)
+            
         # Decode base64 string
-        json_data = base64.b64decode(encoded_data).decode()
+        try:
+            json_data = base64.b64decode(encoded_data).decode('utf-8', errors='ignore')
+        except Exception as e:
+            print(f"Base64 decoding error: {e}")
+            return None
+        
         # Parse JSON data
-        data = json.loads(json_data)
+        try:
+            data = json.loads(json_data)
+            # Explicitly check if the decoded data is a dictionary
+            if not isinstance(data, dict):
+                print(f"Decoded data is not a dictionary: {type(data)}")
+                return None
+        except Exception as e:
+            print(f"JSON parsing error: {e}")
+            return None
+        
+        # Validate data structure
+        required_fields = ['uid', 'email', 'expiry']
+        for field in required_fields:
+            if field not in data:
+                print(f"Missing required field in auth data: {field}")
+                return None
+                
         return data
     except Exception as e:
-        st.error(f"Error decoding session data: {e}")
+        # Log the error but don't show it to the user to avoid cluttering the UI
+        print(f"Error decoding session data: {e}")
         return None
 
-# Function to save authentication data to session state
+# Function to create authentication token for persistent login
+def create_auth_token(user_data):
+    try:
+        # Prepare auth data
+        auth_data = {
+            'idToken': user_data.get('idToken', ''),
+            'uid': user_data.get('localId', ''),
+            'email': user_data.get('email', ''),
+            'username': user_data.get('displayName', user_data.get('email', '').split('@')[0]),
+            'role': st.session_state.get('user_role', 'student'),
+            'expiry': (datetime.now() + timedelta(days=30)).isoformat()  # 30 days expiry
+        }
+        
+        # Encode the auth data
+        encoded_token = encode_session_data(auth_data)
+        
+        # Save to session state
+        st.session_state.auth_token = encoded_token
+        
+        # Set URL parameter for initial login
+        st.experimental_set_query_params(auth=encoded_token)
+        
+        return True
+    except Exception as e:
+        print(f"Error creating auth token: {e}")
+        return False
+
+# Function to save authentication data to session state (legacy function kept for compatibility)
 def save_auth_to_session(user_data, remember_me=False):
     if not remember_me:
         return False
-    
-    # Prepare auth data
-    auth_data = {
-        'idToken': user_data.get('idToken', ''),
-        'uid': user_data.get('localId', ''),
-        'email': user_data.get('email', ''),
-        'username': user_data.get('displayName', user_data.get('email', '').split('@')[0]),
-        'role': st.session_state.get('user_role', 'student'),
-        'expiry': (datetime.now() + timedelta(days=30)).isoformat()  # 30 days expiry
-    }
-    
-    # Save to session state
-    st.session_state.auth_token = encode_session_data(auth_data)
-    return True
+    return create_auth_token(user_data)
 
 # Function to check if auth token is valid
 def is_auth_token_valid(auth_token):
+    # Safety check for None or empty string
+    if not auth_token:
+        print("Auth token is None or empty")
+        return False
+        
     try:
+        # Check if auth_token is a valid string
+        if not isinstance(auth_token, str):
+            print(f"Invalid auth token type: {type(auth_token)}")
+            return False
+            
+        # Decode the token
         auth_data = decode_session_data(auth_token)
-        if auth_data and 'expiry' in auth_data:
-            # Check if token is still valid (not expired)
+        
+        # Validate the decoded data - check if it's a dictionary and not None
+        if not auth_data or not isinstance(auth_data, dict):
+            # Error already logged in decode_session_data if it returned None
+            if auth_data is not None:
+                 print(f"Decoded auth data is not a dictionary: {type(auth_data)}")
+            return False
+            
+        # Check if token is still valid (not expired)
+        try:
             expiry = datetime.fromisoformat(auth_data['expiry'])
-            if datetime.now() < expiry:
-                return True
+            current_time = datetime.now()
+            
+            # Check if token is expired
+            if current_time >= expiry:
+                print(f"Auth token expired at {expiry}, current time is {current_time}")
+                return False
+                
+            # Token is valid
+            print(f"Auth token valid until {expiry}")
+            return True
+        except (ValueError, TypeError) as e:
+            print(f"Invalid expiry date format: {e}")
+            return False
     except Exception as e:
-        st.error(f"Error validating auth token: {e}")
-    return False
+        # Log the error but don't show it to the user
+        print(f"Error validating auth token: {e}")
+        return False
 
 # Function to restore session from auth token
 def restore_session_from_token(auth_token):
-    auth_data = decode_session_data(auth_token)
-    if auth_data:
+    try:
+        # Decode the token
+        auth_data = decode_session_data(auth_token)
+
+        # Validate the decoded data - check if it's a dictionary and not None
+        if not auth_data or not isinstance(auth_data, dict):
+            print("Invalid auth token data")
+            return False
+
+        # Check for required fields
+        required_fields = ['uid', 'email', 'expiry']
+        for field in required_fields:
+            if field not in auth_data:
+                print(f"Missing required field in auth token: {field}")
+                return False
+
+        # Check if the token is expired
+        expiry = datetime.fromisoformat(auth_data['expiry'])
+        if expiry < datetime.now():
+            print("Auth token has expired")
+            return False
+
         # Restore session state
         st.session_state.authenticated = True
-        st.session_state.user = {'localId': auth_data.get('uid', '')}
-        st.session_state.user_uid = auth_data.get('uid', '')
+        st.session_state.user = {'localId': auth_data['uid'], 'email': auth_data['email']}
+        st.session_state.username = auth_data.get('username', auth_data['email'].split('@')[0])
         st.session_state.user_role = auth_data.get('role', 'student')
-        st.session_state.username = auth_data.get('username', '')
-        st.session_state.remember_me = True
-        st.session_state.saved_email = auth_data.get('email', '')
+
+        print("Session restored from auth token")
         return True
-    return False
+
+    except Exception as e:
+        print(f"Error in restore_session_from_token: {e}")
+        return False
 
 # Main app function
 def main():
@@ -287,19 +391,141 @@ def main():
     if 'auth_token' not in st.session_state:
         st.session_state.auth_token = None
     
-    # Check for auth token in URL parameters
-    query_params = st.experimental_get_query_params()
-    if 'auth' in query_params and not st.session_state.authenticated:
-        auth_token = query_params['auth'][0]
-        if is_auth_token_valid(auth_token):
-            # Restore session from token
-            if restore_session_from_token(auth_token):
-                st.success(f"Welcome back, {st.session_state.username}! You've been automatically logged in.")
+    # Attempt to restore session from auth token in session state first
+    if 'auth_token' in st.session_state and st.session_state.auth_token:
+        print("Found auth token in session state. Attempting to restore session...")
+        if is_auth_token_valid(st.session_state.auth_token):
+            if restore_session_from_token(st.session_state.auth_token):
+                print("Session restored from session state token.")
+            else:
+                print("Failed to restore session from session state token.")
+                # Clear invalid token from session state and potentially localStorage/URL
+                st.session_state.auth_token = None
+                st.experimental_set_query_params()
+                clear_storage_script = '''
+                <script>
+                    localStorage.removeItem('cfa_auth_token');
+                    console.log('Invalid auth token cleared from localStorage');
+                </script>
+                '''
+                st.components.v1.html(clear_storage_script, height=0)
+        else:
+            print("Auth token in session state is invalid or expired. Clearing...")
+            st.session_state.auth_token = None
+            st.experimental_set_query_params()
+            clear_storage_script = '''
+            <script>
+                localStorage.removeItem('cfa_auth_token');
+                console.log('Invalid auth token cleared from localStorage');
+            </script>
+            '''
+            st.components.v1.html(clear_storage_script, height=0)
+
+
+    # Check for auth token in URL parameters as a fallback for initial load
+    try:
+        query_params = st.experimental_get_query_params()
+        if 'auth' in query_params and not st.session_state.authenticated:
+            # Get the auth token and ensure it's a string
+            auth_param = query_params['auth']
+            if isinstance(auth_param, list) and len(auth_param) > 0:
+                auth_token = str(auth_param[0])  # Convert to string explicitly
+                print(f"Found auth token in URL parameters: {auth_token[:10]}...")
+                
+                # Validate and restore session from token
+                if is_auth_token_valid(auth_token):
+                    if restore_session_from_token(auth_token):
+                        st.success(f"Welcome back, {st.session_state.username}! You've been automatically logged in.")
+                else:
+                    # If token is invalid, clear it from URL and localStorage
+                    print("Invalid or expired auth token found in URL. Clearing...")
+                    st.experimental_set_query_params()
+                    # Clear localStorage via JavaScript
+                    clear_storage_script = '''
+                    <script>
+                        localStorage.removeItem('cfa_auth_token');
+                        console.log('Invalid auth token cleared from localStorage');
+                    </script>
+                    '''
+                    st.components.v1.html(clear_storage_script, height=0)
+
+            else:
+                print(f"Invalid auth parameter format: {auth_param}")
+    except Exception as e:
+        # Handle any errors with query parameters silently
+        print(f"Error processing query parameters: {e}")
+        # Clear problematic URL parameters
+        st.experimental_set_query_params()
     
-    # Set auth token in URL if authenticated and remember_me is enabled
-    if st.session_state.authenticated and st.session_state.remember_me and 'auth_token' in st.session_state:
-        # Update URL with auth token
-        st.experimental_set_query_params(auth=st.session_state.auth_token)
+    # Create a persistent login mechanism using localStorage
+    # Create a hidden div to store the auth token
+    auth_div_id = 'auth_token_storage'
+    
+    # JavaScript to handle localStorage persistence with improved error handling
+    js_code = f'''
+    <div id="{auth_div_id}" style="display:none;"></div>
+    <script>
+        // Function to save auth token to localStorage
+        function saveAuthToken(token) {{
+            try {{
+                if (token && typeof token === 'string') {{
+                    localStorage.setItem('cfa_auth_token', token);
+                    console.log('Auth token saved to localStorage');
+                }}
+            }} catch (e) {{
+                console.error('Error saving auth token:', e);
+            }}
+        }}
+        
+        // Function to load auth token from localStorage
+        function loadAuthToken() {{
+            try {{
+                return localStorage.getItem('cfa_auth_token');
+            }} catch (e) {{
+                console.error('Error loading auth token:', e);
+                return null;
+            }}
+        }}
+        
+        // Function to clear auth token from localStorage
+        function clearAuthToken() {{
+            try {{
+                localStorage.removeItem('cfa_auth_token');
+                console.log('Auth token cleared from localStorage');
+            }} catch (e) {{
+                console.error('Error clearing auth token:', e);
+            }}
+        }}
+        
+        // Save auth token if authenticated
+        {'' if not st.session_state.get('authenticated', False) or 'auth_token' not in st.session_state else f'saveAuthToken("{st.session_state.auth_token}");'}
+        
+        // Check if we need to restore session on page load
+        window.addEventListener('load', function() {{
+            try {{
+                const urlParams = new URLSearchParams(window.location.search);
+                const hasAuthParam = urlParams.has('auth');
+                
+                if (!hasAuthParam) {{
+                    const storedToken = loadAuthToken();
+                    if (storedToken && typeof storedToken === 'string') {{
+                        console.log('Found stored auth token, redirecting...');
+                        // Add auth token to URL and reload
+                        const currentPath = window.location.pathname;
+                        const separator = currentPath.includes('?') ? '&' : '?';
+                        const newUrl = currentPath + separator + 'auth=' + encodeURIComponent(storedToken);
+                        window.location.replace(newUrl); // Use replace instead of setting href
+                    }}
+                }}
+            }} catch (e) {{
+                console.error('Error in auth token restoration:', e);
+            }}
+        }});
+    </script>
+    '''
+    
+    # Render the JavaScript
+    st.components.v1.html(js_code, height=0)
     
     # Check if user has saved credentials
     if st.session_state.remember_me and st.session_state.saved_email and not st.session_state.authenticated:
@@ -326,7 +552,7 @@ def main():
         with login_tab:
             with st.form("login_form"):
                 # Pre-fill email if remember_me was checked previously
-                email = st.text_input("Email", value=st.session_state.saved_email if st.session_state.remember_me else "")
+                email = st.text_input("Email", value=st.session_state.get('saved_email', ''))
                 password = st.text_input("Password", type="password")
                 remember_me = st.checkbox("Remember Me", value=True, help="Keep me logged in on this device")
                 submit_button = st.form_submit_button("Login")
@@ -334,32 +560,35 @@ def main():
                 if submit_button:
                     if email and password:
                         # Use Firebase authentication
-                        result = firebase_auth.login(email, password)
-                        
-                        if result['success']:
-                            st.session_state.authenticated = True
-                            st.session_state['user'] = result['user']
-                            st.session_state['user_uid'] = result['user_info']['users'][0]['localId']
+                        try:
+                            result = firebase_auth.login(email, password)
                             
-                            # Get user role
-                            user_uid = st.session_state['user_uid']
-                            user_role = firebase_auth.get_user_role(user_uid)
-                            st.session_state['user_role'] = user_role
-                            
-                            # Save authentication data if remember_me is checked
-                            if remember_me:
-                                st.session_state.remember_me = True
-                                st.session_state.saved_email = email
-                                # Save to session state for persistent login
-                                save_auth_to_session(result['user'], remember_me=True)
-                            
-                            st.success(f"Login successful! You are logged in as a {user_role.capitalize()}.")
-                            time.sleep(1)
+                            if result['success']:
+                                st.session_state.authenticated = True
+                                st.session_state['user'] = result['user']
+                                st.session_state['user_uid'] = result['user_info']['users'][0]['localId']
                                 
-                            st.success(result['message'])
-                            st.rerun()  # Rerun to show the main app
-                        else:
-                            st.error(result['message'])
+                                # Get user role
+                                user_uid = st.session_state['user_uid']
+                                user_role = firebase_auth.get_user_role(user_uid)
+                                st.session_state['user_role'] = user_role
+                                
+                                # Set username (use display name or email)
+                                st.session_state.username = result['user'].get('displayName', email.split('@')[0])
+                                
+                                # Save authentication data if remember_me is checked
+                                if remember_me:
+                                    st.session_state.remember_me = True
+                                    st.session_state.saved_email = email
+                                    # Create auth token for persistent login
+                                    create_auth_token(result['user'])
+                                
+                                st.success(f"Login successful! You are logged in as a {user_role.capitalize()}.")
+                                st.rerun()  # Rerun to show the main app
+                            else:
+                                st.error(result['message'])
+                        except Exception as e:
+                            st.error(f"Login failed: {e}")
                     else:
                         st.error("Please enter both email and password")
             
@@ -428,6 +657,20 @@ def main():
         st.session_state.auth_token = None
         # Clear URL parameters
         st.experimental_set_query_params()
+        # Clear localStorage
+        clear_storage_script = '''
+        <script>
+            // Clear auth token from localStorage
+            localStorage.removeItem('cfa_auth_token');
+            console.log('Auth token cleared from localStorage on logout');
+            
+            // Force reload to ensure clean state
+            if (window.location.search) {
+                window.location.href = window.location.pathname;
+            }
+        </script>
+        '''
+        st.components.v1.html(clear_storage_script, height=0)
             
         st.session_state.current_page = 'dashboard'  # Reset to dashboard for next login
         st.rerun()

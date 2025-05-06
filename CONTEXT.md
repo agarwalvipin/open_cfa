@@ -40,12 +40,27 @@ This is an open-source CFA Level I exam preparation application that provides a 
 - Makefile for easier application management
 
 ## Recent Changes
-- Implemented persistent login functionality to maintain session across page refreshes
+
+### Authentication and Session Management
+- Enhanced persistent login functionality using browser localStorage and URL parameters
+- Implemented robust error handling for authentication token validation
+- Added automatic session restoration across page navigation and refreshes
+- Fixed login form functionality to properly handle authentication tokens
+- Improved logout process to properly clear authentication data
+
+### Feature Enhancements
 - Added Practice Question feature that provides immediate feedback after answering each question
 - Fixed quiz starting functionality with proper handling of 'All' selection
-- Removed debug messages from sidebar
-- Added Makefile for easier application management
+- Improved error handling throughout the application
+
+### Database and Configuration
 - Updated database connection to use environment variables from .env file
+- Switched from SQLite to PostgreSQL for better scalability
+- Set up PostgreSQL database in Docker container
+
+### Development Improvements
+- Added Makefile for easier application management
+- Removed debug messages from sidebar
 - Modified import_questions.py to only process files that end with '_questions.md'
 - Removed unused imports from import_questions.py
 - Created VS Code launch.json configuration for easier debugging
