@@ -372,6 +372,7 @@ def main():
             #### Available Features:
             - **Create Quiz**: Create customized quizzes with specific filters
             - **Take Quiz**: Test your knowledge with topic-specific quizzes
+            - **Practice Question**: Practice with individual questions and get immediate feedback
             - **Load Questions**: Upload question files to expand your question bank
             - **Performance Stats**: Monitor your progress in the Performance Stats tab
             """)
@@ -408,7 +409,7 @@ def main():
             </div>
             """, unsafe_allow_html=True)
             
-            col1, col2, col3 = st.columns(3)
+            col1, col2 = st.columns(2)
             with col1:
                 if st.button("Create Quiz", type="primary", use_container_width=True):
                     st.session_state.current_page = 'create_quiz'
@@ -420,7 +421,13 @@ def main():
                 if st.button("Take Quiz", type="secondary", use_container_width=True):
                     st.session_state.current_page = 'quiz'
                     st.rerun()
+            
+            col3, col4 = st.columns(2)
             with col3:
+                if st.button("Practice Question", type="secondary", use_container_width=True):
+                    st.session_state.current_page = 'practice_question'
+                    st.rerun()
+            with col4:
                 if st.button("Load Questions", type="secondary", use_container_width=True):
                     st.session_state.current_page = 'load_questions'
                     st.rerun()
@@ -1551,6 +1558,156 @@ def main():
                     if key in st.session_state:
                         del st.session_state[key]
                 st.rerun()
+    
+    # Practice Question page
+    elif st.session_state.current_page == 'practice_question':
+        # Practice Question page
+        st.title("CFA Level I Practice Questions")
+        st.markdown("""
+        Practice with individual questions and get immediate feedback after each answer.
+        """)
+        
+        # Initialize practice question state if not exists
+        if 'practice_question_answered' not in st.session_state:
+            st.session_state.practice_question_answered = False
+        if 'practice_current_question' not in st.session_state:
+            st.session_state.practice_current_question = None
+        if 'practice_user_answer' not in st.session_state:
+            st.session_state.practice_user_answer = None
+        
+        # Get a new question button
+        if not st.session_state.practice_question_answered:
+            if st.button("Get a New Question", type="primary", key="get_practice_question"):
+                # Get random question based on selected filters
+                if selection_mode == "Topic":
+                    # Handle 'All' selection
+                    if "All" in selected_topic_names:
+                        questions = get_filtered_questions(conn, topic_ids=list(topic_options.values()), limit=1)
+                    else:
+                        questions = get_filtered_questions(conn, topic_ids=selected_topic_ids, limit=1)
+                elif selection_mode == "Week":
+                    # Handle 'All' selection
+                    if "All" in selected_week_names:
+                        questions = get_filtered_questions(conn, week_ids=list(week_options.values()), limit=1)
+                    else:
+                        questions = get_filtered_questions(conn, week_ids=selected_week_ids, limit=1)
+                else:  # Both
+                    # Handle 'All' selection for topics
+                    if "All" in selected_topic_names:
+                        topic_ids_for_query = list(topic_options.values())
+                    else:
+                        topic_ids_for_query = selected_topic_ids
+                    
+                    # Handle 'All' selection for weeks
+                    if "All" in selected_week_names:
+                        week_ids_for_query = list(week_options.values())
+                    else:
+                        week_ids_for_query = selected_week_ids
+                    
+                    questions = get_filtered_questions(conn, topic_ids=topic_ids_for_query, week_ids=week_ids_for_query, limit=1)
+                
+                if questions:
+                    st.session_state.practice_current_question = questions[0]
+                    st.session_state.practice_question_answered = False
+                    st.session_state.practice_user_answer = None
+                    st.rerun()
+                else:
+                    st.warning("No questions found with the selected filters.")
+        
+        # Display the question if available
+        if st.session_state.practice_current_question:
+            question_id = st.session_state.practice_current_question
+            question_data = get_question_details(conn, question_id)
+            
+            if question_data:
+                # Display question
+                st.subheader(question_data['question']['title'])
+                st.write(question_data['question']['question_text'])
+                
+                # Display options and get user answer if not answered yet
+                if not st.session_state.practice_question_answered:
+                    for option in question_data['options']:
+                        option_key = f"practice_q{question_id}_{option['option_letter']}"
+                        if st.button(
+                            f"{option['option_letter']}) {option['option_text']}",
+                            key=option_key
+                        ):
+                            st.session_state.practice_user_answer = option['option_letter']
+                            st.session_state.practice_question_answered = True
+                            
+                            # Save the practice attempt to user stats if logged in
+                            if 'user' in st.session_state:
+                                user_uid = st.session_state.user.get('localId')
+                                correct_answer = next(
+                                    opt['option_letter'] for opt in question_data['options'] 
+                                    if opt['is_correct']
+                                )
+                                
+                                # Format question result for Firestore
+                                question_results = {
+                                    question_id: {
+                                        'user_answer': st.session_state.practice_user_answer,
+                                        'correct_answer': correct_answer,
+                                        'is_correct': st.session_state.practice_user_answer == correct_answer
+                                    }
+                                }
+                                
+                                # Save result
+                                topic_ids = selected_topic_ids if selected_topic_ids else []
+                                week_ids = selected_week_ids if selected_week_ids else []
+                                user_stats.save_quiz_results(
+                                    user_uid, 
+                                    topic_ids, 
+                                    week_ids, 
+                                    question_results, 
+                                    0  # No time tracking for practice questions
+                                )
+                                
+                                # Check for new badges
+                                new_badges = user_stats.check_and_award_badges(user_uid)
+                                if new_badges:
+                                    badge_details = user_stats.get_badge_details()
+                                    st.success(f"🎉 Congratulations! You've earned {len(new_badges)} new badge(s)!")
+                                    for badge_id in new_badges:
+                                        badge = badge_details.get(badge_id, {'name': badge_id, 'description': '', 'icon': '🏆'})
+                                        st.markdown(f"{badge['icon']} **{badge['name']}**: {badge['description']}")
+                            
+                            st.rerun()
+                else:
+                    # Show feedback after answering
+                    user_answer = st.session_state.practice_user_answer
+                    correct_answer = next(
+                        opt['option_letter'] for opt in question_data['options'] 
+                        if opt['is_correct']
+                    )
+                    
+                    # Display options with correct/incorrect highlighting
+                    for option in question_data['options']:
+                        if option['option_letter'] == user_answer:
+                            if option['is_correct']:
+                                st.success(f"{option['option_letter']}) {option['option_text']} ✓")
+                            else:
+                                st.error(f"{option['option_letter']}) {option['option_text']} ✗")
+                        elif option['is_correct']:
+                            st.info(f"{option['option_letter']}) {option['option_text']} (Correct Answer)")
+                        else:
+                            st.write(f"{option['option_letter']}) {option['option_text']}")
+                    
+                    # Show explanation
+                    if question_data['explanation']:
+                        st.write("#### Explanation")
+                        st.write(question_data['explanation'])
+                    
+                    # Next question button
+                    if st.button("Next Question", type="primary"):
+                        st.session_state.practice_question_answered = False
+                        st.session_state.practice_current_question = None
+                        st.session_state.practice_user_answer = None
+                        st.rerun()
+            
+        # If no question is available yet, show a message
+        if not st.session_state.practice_current_question and not st.session_state.practice_question_answered:
+            st.info("Select your filters in the sidebar and click 'Get a New Question' to start practicing.")
     
     # Note: Dashboard tab is already handled in the dashboard page section
     
