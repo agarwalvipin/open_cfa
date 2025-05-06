@@ -1,0 +1,27 @@
+services:
+  # Quiz app service
+  quiz-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: quiz-app
+    hostname: quiz-app
+    ports:
+      - "9501:8501"
+    environment:
+      - DB_NAME=cfa_db
+      - DB_USER=cfauser
+      - DB_PASSWORD=cfaPass
+      - DB_HOST=db
+      - DB_PORT=5432
+    volumes:
+      # Mount firebase credentials if needed
+      - ./firebase-credentials.json:/app/firebase-credentials.json:ro
+    restart: unless-stopped
+    networks:
+      - main_network
+
+networks:
+  main_network:
+    external: true
+    name: main_network

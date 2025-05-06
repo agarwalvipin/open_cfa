@@ -1019,28 +1019,28 @@ def main():
             
             # Only add filter conditions if specific options are selected (not 'All')
             if st.session_state.quiz_filters['topic_ids']:
-                topic_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['topic_ids'])
+                topic_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['topic_ids'])
                 conditions.append(f"q.topic_id IN ({topic_ids_str})")
                 params.extend(st.session_state.quiz_filters['topic_ids'])
             
             if st.session_state.quiz_filters['week_ids']:
-                week_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['week_ids'])
+                week_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['week_ids'])
                 conditions.append(f"q.week_id IN ({week_ids_str})")
                 params.extend(st.session_state.quiz_filters['week_ids'])
             
             if st.session_state.quiz_filters['difficulty_ids']:
-                difficulty_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['difficulty_ids'])
+                difficulty_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['difficulty_ids'])
                 conditions.append(f"q.difficulty_id IN ({difficulty_ids_str})")
                 params.extend(st.session_state.quiz_filters['difficulty_ids'])
             
             if st.session_state.quiz_filters['module_ids']:
-                module_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['module_ids'])
+                module_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['module_ids'])
                 conditions.append(f"q.module_id IN ({module_ids_str})")
                 params.extend(st.session_state.quiz_filters['module_ids'])
             
             if st.session_state.quiz_filters['tag_ids']:
                 query += " LEFT JOIN question_tags qt ON q.question_id = qt.question_id"
-                tag_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['tag_ids'])
+                tag_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['tag_ids'])
                 conditions.append(f"qt.tag_id IN ({tag_ids_str})")
                 params.extend(st.session_state.quiz_filters['tag_ids'])
             
@@ -1077,28 +1077,28 @@ def main():
                     
                     # Only add filter conditions if specific options are selected (not 'All')
                     if st.session_state.quiz_filters['topic_ids']:
-                        topic_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['topic_ids'])
+                        topic_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['topic_ids'])
                         conditions.append(f"q.topic_id IN ({topic_ids_str})")
                         params.extend(st.session_state.quiz_filters['topic_ids'])
                     
                     if st.session_state.quiz_filters['week_ids']:
-                        week_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['week_ids'])
+                        week_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['week_ids'])
                         conditions.append(f"q.week_id IN ({week_ids_str})")
                         params.extend(st.session_state.quiz_filters['week_ids'])
                     
                     if st.session_state.quiz_filters['difficulty_ids']:
-                        difficulty_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['difficulty_ids'])
+                        difficulty_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['difficulty_ids'])
                         conditions.append(f"q.difficulty_id IN ({difficulty_ids_str})")
                         params.extend(st.session_state.quiz_filters['difficulty_ids'])
                     
                     if st.session_state.quiz_filters['module_ids']:
-                        module_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['module_ids'])
+                        module_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['module_ids'])
                         conditions.append(f"q.module_id IN ({module_ids_str})")
                         params.extend(st.session_state.quiz_filters['module_ids'])
                     
                     if st.session_state.quiz_filters['tag_ids']:
                         query += " LEFT JOIN question_tags qt ON q.question_id = qt.question_id"
-                        tag_ids_str = ','.join('?' for _ in st.session_state.quiz_filters['tag_ids'])
+                        tag_ids_str = ','.join('%s' for _ in st.session_state.quiz_filters['tag_ids'])
                         conditions.append(f"qt.tag_id IN ({tag_ids_str})")
                         params.extend(st.session_state.quiz_filters['tag_ids'])
                     
@@ -1241,6 +1241,7 @@ def main():
     
     # Show available questions count based on selection mode
     has_selection = False
+    question_count = 0
     if selection_mode == "Topic" and selected_topic_ids:
         has_selection = True
         question_count = get_question_count(conn, topic_ids=selected_topic_ids)
@@ -1253,6 +1254,28 @@ def main():
         has_selection = True
         question_count = get_question_count(conn, topic_ids=selected_topic_ids, week_ids=selected_week_ids)
         st.sidebar.info(f"Total available questions: {question_count}")
+    elif selection_mode == "Topic" and len(selected_topic_names) > 0 and "All" in selected_topic_names:
+        has_selection = True
+        question_count = get_question_count(conn, topic_ids=list(topic_options.values()))
+        st.sidebar.info(f"Total available questions: {question_count}")
+    elif selection_mode == "Week" and len(selected_week_names) > 0 and "All" in selected_week_names:
+        has_selection = True
+        question_count = get_question_count(conn, week_ids=list(week_options.values()))
+        st.sidebar.info(f"Total available questions: {question_count}")
+    elif selection_mode == "Both" and ((len(selected_topic_names) > 0 and "All" in selected_topic_names) or (len(selected_week_names) > 0 and "All" in selected_week_names)):
+        has_selection = True
+        topic_ids = list(topic_options.values()) if "All" in selected_topic_names else selected_topic_ids
+        week_ids = list(week_options.values()) if "All" in selected_week_names else selected_week_ids
+        question_count = get_question_count(conn, topic_ids=topic_ids, week_ids=week_ids)
+        st.sidebar.info(f"Total available questions: {question_count}")
+    
+    # Debug mode can be enabled for troubleshooting if needed
+    debug_mode = False  # Set to True only when debugging is needed
+    if debug_mode and not has_selection:
+        st.sidebar.warning("Debug: No selection detected")
+        st.sidebar.write(f"Selection mode: {selection_mode}")
+        st.sidebar.write(f"Topic names: {selected_topic_names}")
+        st.sidebar.write(f"Week names: {selected_week_names}")
     
     if has_selection and question_count > 0:
         # Quiz size selection
@@ -1271,11 +1294,22 @@ def main():
         if start_quiz:
             # Get random questions based on selected filters
             if selection_mode == "Topic":
-                question_ids = get_filtered_questions(conn, topic_ids=selected_topic_ids, limit=quiz_size)
+                # Handle 'All' selection
+                if "All" in selected_topic_names:
+                    question_ids = get_filtered_questions(conn, topic_ids=list(topic_options.values()), limit=quiz_size)
+                else:
+                    question_ids = get_filtered_questions(conn, topic_ids=selected_topic_ids, limit=quiz_size)
             elif selection_mode == "Week":
-                question_ids = get_filtered_questions(conn, week_ids=selected_week_ids, limit=quiz_size)
+                # Handle 'All' selection
+                if "All" in selected_week_names:
+                    question_ids = get_filtered_questions(conn, week_ids=list(week_options.values()), limit=quiz_size)
+                else:
+                    question_ids = get_filtered_questions(conn, week_ids=selected_week_ids, limit=quiz_size)
             else:  # Both
-                question_ids = get_filtered_questions(conn, topic_ids=selected_topic_ids, week_ids=selected_week_ids, limit=quiz_size)
+                # Handle 'All' selection for both topics and weeks
+                topic_ids = list(topic_options.values()) if "All" in selected_topic_names else selected_topic_ids
+                week_ids = list(week_options.values()) if "All" in selected_week_names else selected_week_ids
+                question_ids = get_filtered_questions(conn, topic_ids=topic_ids, week_ids=week_ids, limit=quiz_size)
             
             if not question_ids:
                 st.warning("No questions found with the selected filters.")
