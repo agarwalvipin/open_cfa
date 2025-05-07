@@ -20,7 +20,7 @@
 
 * **Mean Absolute Deviation (MAD):**
     ```math
-    MAD = \frac{\sum_{i=1}^n \left|x_i - \bar{x}\right|}{n}
+    \text{MAD} = \frac{\sum_{i=1}^n \left|x_i - \bar{x}\right|}{n}
     ```
     [cite: 3789]
 
