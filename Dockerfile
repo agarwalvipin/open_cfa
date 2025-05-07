@@ -20,6 +20,7 @@ RUN uv pip install --system -r requirements.txt
 COPY quiz_app.py .
 COPY admin_dashboard.py .
 COPY firebase_auth.py .
+COPY firebase_config.py .
 COPY user_stats.py .
 COPY role_management.py .
 COPY .env .
