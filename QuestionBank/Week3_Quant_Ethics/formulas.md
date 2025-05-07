@@ -1,97 +1,66 @@
-# CFA Level 1 - Week 3 Formula Sheet
+# 📘 CFA Level 1 - Week 3 Formula Sheet
 
-## Reading 3: Statistical Measures of Asset Returns
+## 📗 Reading 3: Statistical Measures of Asset Returns
 
-### Measures of Central Tendency
+### 🔹 Measures of Central Tendency
 
-* **Arithmetic Mean (Sample):**
-    ```math
-    \bar{x} = \frac{\sum_{i=1}^n x_i}{n}
-    ```
-    [cite: 3747]
+**Arithmetic Mean (Sample):**  
+**x̄ = (Σ xᵢ) / n**
 
-### Measures of Dispersion
+---
 
-* **Range:**
-    ```math
-    \text{Range} = \text{Maximum Value} - \text{Minimum Value}
-    ```
-    [cite: 3788]
+### 🔹 Measures of Dispersion
 
-* **Mean Absolute Deviation (MAD):**
-    ```math
-    \text{MAD} = \frac{\sum_{i=1}^n \left|x_i - \bar{x}\right|}{n}
-    ```
-    [cite: 3789]
+**Range:**  
+**Range = Maximum Value – Minimum Value**
 
-* **Sample Variance ($s^2$):**
-    ```math
-    s^2 = \frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1}
-    ```
-    [cite: 3793]
+**Mean Absolute Deviation (MAD):**  
+**MAD = Σ |xᵢ – x̄| / n**
 
-* **Sample Standard Deviation (s):**
-    ```math
-    s = \sqrt{\frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1}}
-    ```
-    [cite: 3806]
+**Sample Variance (s²):**  
+**s² = Σ (xᵢ – x̄)² / (n – 1)**
 
-* **Coefficient of Variation (CV):**
-    ```math
-    CV = \frac{s}{\bar{x}}
-    ```
-    [cite: 3814]
+**Sample Standard Deviation (s):**  
+**s = √[Σ (xᵢ – x̄)² / (n – 1)]**
 
-* **Target Downside Deviation (Target Semideviation, $s_{target}$):**
-    ```math
-    s_{\text{target}} = \sqrt{\frac{\sum_{\{i: x_i \leq R_T\}} (x_i - R_T)^2}{n-1}}
-    ```
-    *Where $R_T$ is the target return.* [cite: 3825]
+**Coefficient of Variation (CV):**  
+**CV = s / x̄**
 
-### Skewness and Kurtosis (Approximate Formulas for Large Samples)
+**Target Downside Deviation (Target Semideviation):**  
+**s_target = √[Σ (xᵢ – R_T)² / (n – 1)], for all xᵢ ≤ R_T**  
+(*R_T = target return*)
 
-* **Sample Skewness (Sk):**
-    ```math
-    \text{Sk} \approx \frac{1}{n} \cdot \frac{\sum_{i=1}^n (x_i - \bar{x})^3}{s^3}
-    ```
-    [cite: 3857]
+---
 
-* **Sample Kurtosis (K):**
-    ```math
-    K \approx \frac{1}{n} \cdot \frac{\sum_{i=1}^n (x_i - \bar{x})^4}{s^4}
-    ```
-    *Note: Excess Kurtosis = Sample Kurtosis - 3.* [cite: 3879]
+### 🔹 Skewness and Kurtosis (Approximate for Large Samples)
 
-### Covariance and Correlation
+**Sample Skewness (Sk):**  
+**Sk ≈ (1/n) × [Σ (xᵢ – x̄)³ / s³]**
 
-* **Sample Covariance ($Cov_{XY}$):**
-    ```math
-    \text{Cov}_{XY} = s_{XY} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{n-1}
-    ```
-    [cite: 3888]
+**Sample Kurtosis (K):**  
+**K ≈ (1/n) × [Σ (xᵢ – x̄)⁴ / s⁴]**  
+*Excess Kurtosis = Sample Kurtosis – 3*
 
-* **Correlation Coefficient ($\rho_{XY}$ or $r_{XY}$):**
-    ```math
-    \rho_{XY} = r_{XY} = \frac{\text{Cov}_{XY}}{s_X s_Y}
-    ```
-    [cite: 3895]
+---
 
-## Reading 4: Probability Trees and Conditional Expectations
+### 🔹 Covariance and Correlation
 
-* **Expected Value of a Random Variable X (from probability model):**
-    ```math
-    E(X) = \sum_{i=1}^n P(x_i) x_i
-    ```
-    [cite: 3959]
+**Sample Covariance (Covₓᵧ):**  
+**Covₓᵧ = Σ (xᵢ – x̄)(yᵢ – ȳ) / (n – 1)**
 
-* **Variance of a Random Variable X (from probability model):**
-    ```math
-    \sigma^2(X) = E[(X - E(X))^2] = \sum_{i=1}^n P(x_i) [x_i - E(X)]^2
-    ```
-    [cite: 3962, 3967]
+**Correlation Coefficient (ρₓᵧ or rₓᵧ):**  
+**ρₓᵧ = Covₓᵧ / (sₓ × sᵧ)**
 
-* **Bayes' Formula:**
-    ```math
-    P(\text{Event}|\text{Information}) = \frac{P(\text{Information}|\text{Event}) \cdot P(\text{Event})}{P(\text{Information})}
-    ```
-    *Used to update a prior probability, P(Event), given new Information.* [cite: 3984]
+---
+
+## 📗 Reading 4: Probability Trees and Conditional Expectations
+
+**Expected Value of X:**  
+**E(X) = Σ P(xᵢ) × xᵢ**
+
+**Variance of X:**  
+**σ²(X) = Σ P(xᵢ) × [xᵢ – E(X)]²**
+
+**Bayes’ Formula:**  
+**P(Event | Info) = [P(Info | Event) × P(Event)] / P(Info)**  
+*Used to update prior probabilities given new information.*
