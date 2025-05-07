@@ -213,6 +213,14 @@ def show_role_based_sidebar(user_uid):
         ):
             st.session_state.current_page = "quiz"
             st.rerun()
+            
+        if st.sidebar.button(
+            "Practice Question",
+            type="primary" if st.session_state.current_page == "practice_question" else "secondary",
+            key="nav_practice_question",
+        ):
+            st.session_state.current_page = "practice_question"
+            st.rerun()
 
         if st.sidebar.button(
             "Load Questions",
