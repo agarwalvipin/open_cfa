@@ -62,18 +62,39 @@ def connect_to_db(db_path=None):
         conn = psycopg2.connect(**DB_PARAMS)
         # Use DictCursor to enable column access by name (similar to sqlite3.Row)
         conn.cursor_factory = psycopg2.extras.DictCursor
+        # Set isolation level to autocommit for better error handling
+        conn.set_session(autocommit=False)
+        # Test the connection with a simple query
+        cursor = conn.cursor()
+        cursor.execute("SELECT 1")
+        cursor.close()
         return conn
-    except Exception as e:
+    except psycopg2.Error as e:
         st.error(f"Error connecting to PostgreSQL database: {e}")
+        return None
+    except Exception as e:
+        st.error(f"Unexpected error connecting to database: {e}")
         return None
 
 
 # Get all topics from the database
 def get_topics(conn):
     """Get all topics from the database"""
-    cursor = conn.cursor()
-    cursor.execute("SELECT topic_id, name FROM topics")
-    return cursor.fetchall()
+    try:
+        # Check if the connection is in a failed transaction state
+        cursor = conn.cursor()
+        # Try to execute a simple query to check connection status
+        cursor.execute("SELECT 1")
+        # If that works, proceed with the actual query
+        cursor.execute("SELECT topic_id, name FROM topics")
+        return cursor.fetchall()
+    except psycopg2.Error as e:
+        # If there's an error, try to reset the connection
+        conn.rollback()
+        # Try again after rollback
+        cursor = conn.cursor()
+        cursor.execute("SELECT topic_id, name FROM topics")
+        return cursor.fetchall()
 
 
 # Get question count by filter criteria
@@ -304,7 +325,7 @@ def create_auth_token(user_data):
         st.session_state.auth_token = encoded_token
 
         # Set URL parameter for initial login
-        st.experimental_set_query_params(auth=encoded_token)
+        st.query_params.set_param("auth", encoded_token)
 
         return True
     except Exception as e:
@@ -435,7 +456,7 @@ def main():
                 print("Failed to restore session from session state token.")
                 # Clear invalid token from session state and potentially localStorage/URL
                 st.session_state.auth_token = None
-                st.experimental_set_query_params()
+                st.query_params.clear()
                 clear_storage_script = """
                 <script>
                     localStorage.removeItem('cfa_auth_token');
@@ -446,7 +467,7 @@ def main():
         else:
             print("Auth token in session state is invalid or expired. Clearing...")
             st.session_state.auth_token = None
-            st.experimental_set_query_params()
+            st.query_params.clear()
             clear_storage_script = """
             <script>
                 localStorage.removeItem('cfa_auth_token');
@@ -457,7 +478,7 @@ def main():
 
     # Check for auth token in URL parameters as a fallback for initial load
     try:
-        query_params = st.experimental_get_query_params()
+        query_params = st.query_params
         if "auth" in query_params and not st.session_state.authenticated:
             # Get the auth token and ensure it's a string
             auth_param = query_params["auth"]
@@ -474,7 +495,7 @@ def main():
                 else:
                     # If token is invalid, clear it from URL and localStorage
                     print("Invalid or expired auth token found in URL. Clearing...")
-                    st.experimental_set_query_params()
+                    st.query_params.clear()
                     # Clear localStorage via JavaScript
                     clear_storage_script = """
                     <script>
@@ -490,7 +511,7 @@ def main():
         # Handle any errors with query parameters silently
         print(f"Error processing query parameters: {e}")
         # Clear problematic URL parameters
-        st.experimental_set_query_params()
+        st.query_params.clear()
 
     # Create a persistent login mechanism using localStorage
     # Create a hidden div to store the auth token
@@ -711,7 +732,7 @@ def main():
         # Clear auth token
         st.session_state.auth_token = None
         # Clear URL parameters
-        st.experimental_set_query_params()
+        st.query_params.clear()
         # Clear localStorage
         clear_storage_script = """
         <script>
@@ -1218,7 +1239,7 @@ def main():
             if st.button("Clean Orphaned Data", type="secondary"):
                 try:
                     cursor = conn.cursor()  # Get cursor
-                    cursor.execute("BEGIN TRANSACTION")  # Use cursor
+                    cursor.execute("BEGIN")  # Use PostgreSQL transaction syntax
 
                     # Delete orphaned tags
                     cursor.execute("""
