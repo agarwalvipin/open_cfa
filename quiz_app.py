@@ -36,6 +36,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# Configure Streamlit server settings for better cookie handling
+# These will be picked up when run with streamlit run
+if 'STREAMLIT_SERVER_ENABLE_CORS' not in os.environ:
+    os.environ['STREAMLIT_SERVER_ENABLE_CORS'] = 'true'
+if 'STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION' not in os.environ:
+    os.environ['STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION'] = 'false'
 
 
 # Load environment variables from .env file
@@ -521,35 +527,111 @@ def main():
     js_code = f'''
     <div id="{auth_div_id}" style="display:none;"></div>
     <script>
-        // Function to save auth token to localStorage
+        // Get the current domain for storage key prefixing
+        const domain = window.location.hostname;
+        const isProduction = domain.includes('marsbot.in');
+        const storageKeyPrefix = isProduction ? 'cfa_prod_' : 'cfa_dev_';
+        const AUTH_TOKEN_KEY = storageKeyPrefix + 'auth_token';
+        
+        // Debug information for troubleshooting
+        console.log('Domain:', domain);
+        console.log('Is Production:', isProduction);
+        console.log('Storage Key:', AUTH_TOKEN_KEY);
+        
+        // Function to save auth token to localStorage with enhanced error handling
         function saveAuthToken(token) {{
             try {{
                 if (token && typeof token === 'string') {{
+                    // Save with domain-specific prefix
+                    localStorage.setItem(AUTH_TOKEN_KEY, token);
+                    // Also save to the old key for backward compatibility
                     localStorage.setItem('cfa_auth_token', token);
-                    console.log('Auth token saved to localStorage');
+                    // Use session storage as a fallback (works better with some proxy setups)
+                    sessionStorage.setItem(AUTH_TOKEN_KEY, token);
+                    console.log('Auth token saved to storage with key:', AUTH_TOKEN_KEY);
+                    
+                    // Set a cookie as another fallback method (helpful with Nginx Proxy Manager)
+                    document.cookie = AUTH_TOKEN_KEY + '=' + encodeURIComponent(token) + '; path=/; max-age=' + (60*60*24*30) + '; SameSite=Lax';
+                    console.log('Auth token also saved as cookie');
+                    
+                    return true;
                 }}
+                return false;
             }} catch (e) {{
                 console.error('Error saving auth token:', e);
+                return false;
             }}
         }}
         
-        // Function to load auth token from localStorage
+        // Function to get a cookie by name
+        function getCookie(name) {{
+            const value = '; ' + document.cookie;
+            const parts = value.split('; ' + name + '=');
+            if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+            return null;
+        }}
+        
+        // Function to load auth token from all possible storage locations
         function loadAuthToken() {{
             try {{
-                return localStorage.getItem('cfa_auth_token');
+                // Try multiple storage methods in order of preference
+                
+                // 1. Try domain-specific localStorage first
+                let token = localStorage.getItem(AUTH_TOKEN_KEY);
+                if (token) {{
+                    console.log('Token found in domain-specific localStorage');
+                    return token;
+                }}
+                
+                // 2. Try old localStorage key
+                token = localStorage.getItem('cfa_auth_token');
+                if (token) {{
+                    console.log('Token found in old localStorage key, migrating...');
+                    localStorage.setItem(AUTH_TOKEN_KEY, token);
+                    return token;
+                }}
+                
+                // 3. Try sessionStorage
+                token = sessionStorage.getItem(AUTH_TOKEN_KEY);
+                if (token) {{
+                    console.log('Token found in sessionStorage, migrating to localStorage...');
+                    localStorage.setItem(AUTH_TOKEN_KEY, token);
+                    return token;
+                }}
+                
+                // 4. Try cookie as last resort (helpful with Nginx Proxy Manager)
+                token = getCookie(AUTH_TOKEN_KEY);
+                if (token) {{
+                    console.log('Token found in cookie, migrating to localStorage...');
+                    localStorage.setItem(AUTH_TOKEN_KEY, token);
+                    return token;
+                }}
+                
+                console.log('No auth token found in any storage location');
+                return null;
             }} catch (e) {{
                 console.error('Error loading auth token:', e);
                 return null;
             }}
         }}
         
-        // Function to clear auth token from localStorage
+        // Function to clear auth token from all storage locations
         function clearAuthToken() {{
             try {{
+                // Clear from all possible locations
+                localStorage.removeItem(AUTH_TOKEN_KEY);
                 localStorage.removeItem('cfa_auth_token');
-                console.log('Auth token cleared from localStorage');
+                sessionStorage.removeItem(AUTH_TOKEN_KEY);
+                
+                // Clear cookie
+                document.cookie = AUTH_TOKEN_KEY + '=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax';
+                document.cookie = 'cfa_auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax';
+                
+                console.log('Auth token cleared from all storage locations');
+                return true;
             }} catch (e) {{
                 console.error('Error clearing auth token:', e);
+                return false;
             }}
         }}
         
@@ -570,7 +652,11 @@ def main():
                         const currentPath = window.location.pathname;
                         const separator = currentPath.includes('?') ? '&' : '?';
                         const newUrl = currentPath + separator + 'auth=' + encodeURIComponent(storedToken);
-                        window.location.replace(newUrl); // Use replace instead of setting href
+                        
+                        // Use a small delay to ensure console logs are visible
+                        setTimeout(() => {{
+                            window.location.replace(newUrl);
+                        }}, 100);
                     }}
                 }}
             }} catch (e) {{

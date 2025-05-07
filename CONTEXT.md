@@ -50,6 +50,7 @@ This is an open-source CFA Level I exam preparation application that provides a 
 
 ### Feature Enhancements
 - Added Practice Question feature that provides immediate feedback after answering each question
+- Added Practice Question option to the sidebar navigation for easier access
 - Fixed quiz starting functionality with proper handling of 'All' selection
 - Improved error handling throughout the application
 

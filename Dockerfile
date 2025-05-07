@@ -27,8 +27,8 @@ COPY .env .
 COPY firebase-credentials.json .
 COPY database/ ./database/
 
-# Create .streamlit directory
-RUN mkdir -p .streamlit
+# Copy .streamlit directory with configuration
+COPY .streamlit/ ./.streamlit/
 
 # Expose the port Streamlit runs on
 EXPOSE 8501
