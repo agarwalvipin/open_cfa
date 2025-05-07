@@ -374,10 +374,10 @@ def get_topic_names(conn, topic_ids):
         topic_names = {}
 
         for topic_id in topic_ids:
-            cursor.execute("SELECT name FROM topics WHERE topic_id = ?", (topic_id,))
+            cursor.execute("SELECT name FROM topics WHERE topic_id = %s", (topic_id,))
             result = cursor.fetchone()
             if result:
-                topic_names[str(topic_id)] = result["name"]
+                topic_names[str(topic_id)] = result[0]  # Access first column in the tuple
             else:
                 topic_names[str(topic_id)] = f"Topic {topic_id}"
 
