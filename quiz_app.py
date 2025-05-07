@@ -88,7 +88,7 @@ def get_topics(conn):
         # If that works, proceed with the actual query
         cursor.execute("SELECT topic_id, name FROM topics")
         return cursor.fetchall()
-    except psycopg2.Error as e:
+    except psycopg2.Error:
         # If there's an error, try to reset the connection
         conn.rollback()
         # Try again after rollback
