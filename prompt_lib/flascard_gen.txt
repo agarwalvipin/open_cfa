@@ -1,0 +1,7 @@
+- can you generate week3 flash cards. Validate these cards for 100% correctness.
+
+- following format must be used, for example:
+    What is the formula for the arithmetic mean?;\(\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}\)<br>Average of all values.;Week3 Quant Mean
+    What is the formula for a weighted mean?;\(\bar{x}_w = \sum_{i=1}^n w_i x_i\)<br>Weights must sum to 1.;Week3 Quant Mean Weighted
+
+- All of this is within CFA level 1 syllabus and as per topics of pdf shared.
