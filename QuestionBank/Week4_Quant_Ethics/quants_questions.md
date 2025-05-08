@@ -32,6 +32,8 @@ Which of the following statements best describes the covariance between the retu
 
 </details>
 
+---
+
 ## 🟢 Q2 – Portfolio Mathematics - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -65,6 +67,8 @@ If the correlation coefficient between the returns of Asset X and Asset Y is -1.
   **(LOS: 5.a)**
 
 </details>
+
+---
 
 ## 🟢 Q3 – Portfolio Mathematics - Concepts
 <details>
@@ -134,6 +138,8 @@ Shortfall risk is best defined as:
 
 </details>
 
+---
+
 ## 🟢 Q5 – Portfolio Mathematics - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -167,6 +173,8 @@ If two assets have a correlation of 0, it means that:
   **(LOS: 5.a)**
 
 </details>
+
+---
 
 ## 🟠 Q6 – Portfolio Mathematics - Calculations
 <details>
@@ -205,6 +213,8 @@ A portfolio consists of two assets, Asset A and Asset B. Asset A has an expected
   **(LOS: 5.a)**
 
 </details>
+
+---
 
 ## 🟠 Q7 – Portfolio Mathematics - Calculations
 <details>
@@ -278,6 +288,8 @@ A portfolio is composed of 30% invested in Stock X and 70% in Stock Y. The varia
   **(LOS: 5.a)** *Note: Assumed $\sigma_Y^2 = 0.10$ due to discrepancy between calculated value and options.*
 
 </details>
+
+---
 
 ## 🟠 Q8 – Portfolio Mathematics - Calculations
 <details>
@@ -353,6 +365,8 @@ A portfolio is composed of 60% invested in Asset P and 40% in Asset Q. The stand
   **(LOS: 5.a)** *Note: Assumed $\rho_{PQ} = 0.3$ due to discrepancy between calculated value and options.*
 
 </details>
+
+---
 
 ## 🟠 Q9 – Portfolio Mathematics - Calculations
 <details>
@@ -481,6 +495,8 @@ The covariance of returns between Asset X and Asset Y is closest to:
 
 </details>
 
+---
+
 ## 🟠 Q10 – Portfolio Mathematics - Calculations
 <details>
 <summary>Meta Data</summary>
@@ -569,6 +585,8 @@ Which portfolio should the manager choose?
 
 </details>
 
+---
+
 ## 🟠 Q12 – Portfolio Mathematics - Calculations
 <details>
 <summary>Meta Data</summary>
@@ -655,6 +673,8 @@ Using the joint probability function from Question 9 (with the adjusted Y return
 
 </details>
 
+---
+
 ## 🔴 Q13 – Portfolio Mathematics - Calculations
 <details>
 <summary>Meta Data</summary>
@@ -733,6 +753,8 @@ The portfolio variance is closest to:
   **(LOS: 5.a)**
 
 </details>
+
+---
 
 ## 🔴 Q14 – Portfolio Mathematics - Calculations
 <details>
@@ -828,6 +850,8 @@ The portfolio standard deviation is closest to:
 
 </details>
 
+---
+
 ## 🔴 Q15 – Portfolio Mathematics - Application
 <details>
 <summary>Meta Data</summary>
@@ -910,6 +934,8 @@ According to Roy's safety-first criterion, which portfolio is optimal, and why?
 
 </details>
 
+---
+
 ## 🟢 Q1 – Simulation Methods - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -944,6 +970,8 @@ A key characteristic of the lognormal distribution, which makes it distinct from
 
 </details>
 
+---
+
 ## 🟢 Q2 – Simulation Methods - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -977,6 +1005,8 @@ The lognormal distribution is often preferred over the normal distribution for m
   **(LOS: 6.a)**
 
 </details>
+
+---
 
 ## 🟢 Q3 – Simulation Methods - Concepts
 <details>
@@ -1046,6 +1076,8 @@ Bootstrap resampling is a simulation method that primarily relies on:
 
 </details>
 
+---
+
 ## 🟢 Q5 – Simulation Methods - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -1079,6 +1111,8 @@ A useful property of continuously compounded rates of return is that they are:
   **(LOS: 6.a)**
 
 </details>
+
+---
 
 ## 🟠 Q6 – Simulation Methods - Application
 <details>
@@ -1114,6 +1148,8 @@ If the continuously compounded return on an asset over a period is assumed to be
 
 </details>
 
+---
+
 ## 🟠 Q7 – Simulation Methods - Application
 <details>
 <summary>Meta Data</summary>
@@ -1147,6 +1183,8 @@ An investment firm wants to estimate the probability of experiencing a portfolio
   **(LOS: 6.b)**
 
 </details>
+
+---
 
 ## 🟠 Q8 – Simulation Methods - Concepts
 <details>
@@ -1182,6 +1220,8 @@ A significant limitation of Monte Carlo simulation is that the quality of the ou
 
 </details>
 
+---
+
 ## 🟠 Q9 – Simulation Methods - Concepts
 <details>
 <summary>Meta Data</summary>
@@ -1215,6 +1255,8 @@ An advantage of using Monte Carlo simulation compared to methods relying solely 
   **(LOS: 6.b)**
 
 </details>
+
+---
 
 ## 🟠 Q10 – Simulation Methods - Concepts
 <details>
@@ -1250,6 +1292,8 @@ Which of the following is a crucial first step when performing a Monte Carlo sim
 
 </details>
 
+---
+
 ## 🟠 Q11 – Simulation Methods - Comparison
 <details>
 <summary>Meta Data</summary>
@@ -1283,6 +1327,8 @@ A key difference between Monte Carlo simulation and bootstrap resampling lies in
   **(LOS: 6.b, 6.c)**
 
 </details>
+
+---
 
 ## 🟠 Q12 – Simulation Methods - Concepts
 <details>
@@ -1318,6 +1364,8 @@ A potential limitation of using bootstrap resampling for financial simulations i
 
 </details>
 
+---
+
 ## 🔴 Q13 – Simulation Methods - Comparison
 <details>
 <summary>Meta Data</summary>
@@ -1351,6 +1399,8 @@ Comparing the limitations of Monte Carlo simulation and bootstrap resampling, wh
   **(LOS: 6.b, 6.c)**
 
 </details>
+
+---
 
 ## 🔴 Q14 – Simulation Methods - Application
 <details>
@@ -1386,6 +1436,8 @@ The justification for assuming that a future asset price follows a lognormal dis
 
 </details>
 
+---
+
 ## 🔴 Q15 – Simulation Methods - Application
 <details>
 <summary>Meta Data</summary>
@@ -1419,3 +1471,6 @@ An analyst wants to simulate the potential value of a complex derivative whose p
   **(LOS: 6.b, 6.c)**
 
 </details>
+
+---
+

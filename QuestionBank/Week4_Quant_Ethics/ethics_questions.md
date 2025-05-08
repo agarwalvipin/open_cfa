@@ -32,6 +32,8 @@ Standard IV(A) Loyalty requires that in matters related to their employment, mem
 
 </details>
 
+---
+
 ## 🟢 Q2 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
 <summary>Meta Data</summary>
@@ -65,6 +67,8 @@ A member is offered a significant cash payment by a client for achieving a speci
   **(LOS: Guidance for Standard IV(B))**
 
 </details>
+
+---
 
 ## 🟢 Q3 – Ethical & Professional Standards - Standard V - Investment Analysis, Recommendations, and Actions
 <details>
@@ -100,6 +104,8 @@ Standard V(A) Diligence and Reasonable Basis requires members and candidates to:
 
 </details>
 
+---
+
 ## 🟢 Q4 – Ethical & Professional Standards - Standard V - Investment Analysis, Recommendations, and Actions
 <details>
 <summary>Meta Data</summary>
@@ -133,6 +139,8 @@ In the absence of specific regulatory guidance or firm policies, Standard V(C) R
   **(LOS: Guidance for Standard V(C))**
 
 </details>
+
+---
 
 ## 🟢 Q5 – Ethical & Professional Standards - Standard VI - Conflicts of Interest
 <details>
@@ -168,6 +176,8 @@ According to Standard VI(B) Priority of Transactions, which transactions should 
 
 </details>
 
+---
+
 ## 🟢 Q6 – Ethical & Professional Standards - Standard VI - Conflicts of Interest
 <details>
 <summary>Meta Data</summary>
@@ -201,6 +211,8 @@ If a member receives a fee for recommending the services of another investment m
   **(LOS: Guidance for Standard VI(C))**
 
 </details>
+
+---
 
 ## 🟢 Q7 – Ethical & Professional Standards - Standard VII - Responsibilities as Member/Candidate
 <details>
@@ -236,6 +248,8 @@ Which statement is a violation of Standard VII(B) Reference to CFA Institute, th
 
 </details>
 
+---
+
 ## 🟠 Q8 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
 <summary>Meta Data</summary>
@@ -269,6 +283,8 @@ Anna is leaving her current employer, Firm A, to join a competitor, Firm B. Befo
   **(LOS: Guidance for Standard IV(A))**
 
 </details>
+
+---
 
 ## 🟠 Q9 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
@@ -304,6 +320,8 @@ Ben, a full-time analyst at an investment bank, is asked by his neighbor to mana
 
 </details>
 
+---
+
 ## 🟠 Q10 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
 <summary>Meta Data</summary>
@@ -337,6 +355,8 @@ Maria supervises a team of junior analysts. She discovers that the firm's compli
   **(LOS: Guidance for Standard IV(C))**
 
 </details>
+
+---
 
 ## 🟠 Q11 – Ethical & Professional Standards - Standard V - Investment Analysis, Recommendations, and Actions
 <details>
@@ -372,6 +392,8 @@ An analyst uses a complex quantitative model developed by a third party to gener
 
 </details>
 
+---
+
 ## 🟠 Q12 – Ethical & Professional Standards - Standard V - Investment Analysis, Recommendations, and Actions
 <details>
 <summary>Meta Data</summary>
@@ -405,6 +427,8 @@ An analyst issues a research report stating, "Based on our discounted cash flow 
   **(LOS: Guidance for Standard V(B))**
 
 </details>
+
+---
 
 ## 🟠 Q13 – Ethical & Professional Standards - Standard V - Investment Analysis, Recommendations, and Actions
 <details>
@@ -440,6 +464,8 @@ A portfolio manager primarily invests in micro-cap stocks, which often have very
 
 </details>
 
+---
+
 ## 🟠 Q14 – Ethical & Professional Standards - Standard VI - Conflicts of Interest
 <details>
 <summary>Meta Data</summary>
@@ -473,6 +499,8 @@ James Lee, CFA, an analyst, owns shares in Company XYZ. His firm asks him to wri
   **(LOS: Guidance for Standard VI(A))**
 
 </details>
+
+---
 
 ## 🟠 Q15 – Ethical & Professional Standards - Standard VI - Conflicts of Interest
 <details>
@@ -508,6 +536,8 @@ A portfolio manager plans to buy shares of a specific stock for several client a
 
 </details>
 
+---
+
 ## 🟠 Q16 – Ethical & Professional Standards - Standard VII - Responsibilities as Member/Candidate
 <details>
 <summary>Meta Data</summary>
@@ -541,6 +571,8 @@ After taking the Level I CFA exam, a candidate discusses specific, difficult que
   **(LOS: Guidance for Standard VII(A))**
 
 </details>
+
+---
 
 ## 🔴 Q17 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
@@ -576,6 +608,8 @@ An analyst discovers her employer is systematically engaging in illegal activiti
 
 </details>
 
+---
+
 ## 🔴 Q18 – Ethical & Professional Standards - Standard IV - Duties to Employers
 <details>
 <summary>Meta Data</summary>
@@ -610,6 +644,8 @@ Standard IV(C) Responsibilities of Supervisors requires supervisors to make reas
 
 </details>
 
+---
+
 ## 🔴 Q19 – Ethical & Professional Standards - Standard VI - Conflicts of Interest
 <details>
 <summary>Meta Data</summary>
@@ -643,6 +679,8 @@ An analyst is preparing a "Buy" recommendation for a stock, which is expected to
   **(LOS: Guidance for Standard VI(B))**
 
 </details>
+
+---
 
 ## 🔴 Q20 – Ethical & Professional Standards - Standard VII - Responsibilities as Member/Candidate
 <details>

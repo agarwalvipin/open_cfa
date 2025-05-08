@@ -108,16 +108,39 @@ def parse_question_file(file_path):
     with open(file_path, encoding="utf-8") as file:
         content = file.read()
 
-    # Split the file by horizontal rule to get individual questions
-    questions_raw = content.split("---")
+    # Find all starting positions of '## '
+    question_starts = [match.start() for match in re.finditer(r"^## ", content, re.MULTILINE)]
+
+    questions_raw = []
+    if not question_starts and content.strip():
+        # If no "## " is found but the file has content, this could be an issue
+        # or a format not adhering to the "## " convention for each question.
+        # For now, we'll log a warning if this happens, as it deviates from the expected delimiter.
+        # Depending on requirements, one might treat the whole file as one question,
+        # or skip it. Let's assume for now questions *must* be delimited by "## ".
+        print(f"Warning: File {file_path} has content but no '## ' delimiters. Skipping.")
+        return [] # Return empty list if no '## ' and content exists, or handle as error
+
+    for i, start_index in enumerate(question_starts):
+        end_index = question_starts[i+1] if i+1 < len(question_starts) else len(content)
+        # Ensure q_raw starts with "## " as the title extraction relies on it.
+        # The re.finditer ensures start_index is at "## ".
+        q_raw = content[start_index:end_index]
+        if q_raw.strip(): # Process only if the segment is not just whitespace
+            questions_raw.append(q_raw)
+
+    if not questions_raw and content.strip() and not question_starts:
+        # This case is if the file has content but no "## " was found.
+        # This was handled by the warning above, so this block might be redundant
+        # or could be used for a different fallback.
+        # For consistency with the warning, we'll ensure it results in no questions.
+        pass
 
     questions = []
     for q_raw in questions_raw:
-        if not q_raw.strip():
-            continue
-
-        # Extract title
-        title_match = re.search(r"##\s*(.*?)\n", q_raw)
+        # q_raw now correctly starts with "## " due to the splitting logic
+        # The existing title extraction should work:
+        title_match = re.search(r"^##\s*(.*?)\n", q_raw) # Ensure it matches start of q_raw
         title = title_match.group(1).strip() if title_match else ""
 
         # Extract metadata
@@ -196,6 +219,24 @@ def import_questions_to_db(questions, conn):
     cursor = conn.cursor()
 
     for question in questions:
+        # Check if question with the same external_id already exists and delete it
+        if "id" in question["metadata"]:
+            external_id = question["metadata"]["id"]
+            cursor.execute(
+                """SELECT question_id FROM questions WHERE external_id = %s""",
+                (external_id,)
+            )
+            result = cursor.fetchone()
+            
+            if result:
+                question_id = result[0]
+                # Delete related records first (foreign key constraints)
+                cursor.execute("DELETE FROM question_tags WHERE question_id = %s", (question_id,))
+                cursor.execute("DELETE FROM explanations WHERE question_id = %s", (question_id,))
+                cursor.execute("DELETE FROM answer_options WHERE question_id = %s", (question_id,))
+                cursor.execute("DELETE FROM questions WHERE question_id = %s", (question_id,))
+                print(f"  Deleted existing question with external_id: {external_id}")
+                conn.commit()
         # Get or create topic
         topic_id = None
         if "topic" in question["metadata"]:
