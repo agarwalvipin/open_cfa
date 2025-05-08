@@ -84,11 +84,21 @@
     $$
     [cite: 3959]
 
+* **Law of Total Expectation:**
+    $$
+    E(X) = \sum_{i=1}^n E(X|B_i) P(B_i)
+    $$
+
 * **Variance of a Random Variable X (from probability model):**
     $$
     \sigma^2(X) = E[(X - E(X))^2] = \sum_{i=1}^n P(x_i) [x_i - E(X)]^2
     $$
     [cite: 3962, 3967]
+
+* **Law of Total Probability:**
+    $$
+    P(A) = \sum_{i=1}^n P(A|B_i) P(B_i)
+    $$
 
 * **Bayes' Formula:**
     $$
