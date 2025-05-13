@@ -75,6 +75,156 @@ A structured 7-month plan built for working professionals, starting April 2025 a
 
 ---
 
+## 🗓️ June 2025 – Economics + Financial Reporting & Analysis (FRA, Part 1)
+
+### Weekly Goals
+
+- **Week 1 (June 1–7)**  
+  - 📘 Economics Reading 12–13: Firms & Market Structures, Business Cycles  
+  - 📘 FRA Reading 27: Introduction to Financial Statement Analysis  
+  - 📝 Practice: 40 questions
+
+- **Week 2 (June 8–14)**  
+  - 📘 Economics Reading 14–15: Fiscal and Monetary Policy  
+  - 📘 FRA Reading 28: Income Statement Analysis (Rev. & Exp. recognition)  
+  - 📝 Practice: 50 questions + income statement ratios
+
+- **Week 3 (June 15–21)**  
+  - 📘 Economics Reading 16–19: Geopolitics, FX, Trade, Exchange Rate Calculations  
+  - 📘 FRA Reading 29: Balance Sheet Analysis  
+  - 📝 Practice: FX conversions, ratios, and quiz
+
+- **Week 4 (June 22–30)**  
+  - 📘 FRA Reading 30–31: Cash Flow Statements I & II  
+  - 🔁 Review: All June topics  
+  - 📝 Practice: 75+ questions (mixed Econ + FRA)
+
+---
+
+## 🗓️ July 2025 – Finish FRA + Corporate Issuers + Portfolio Management
+
+### Weekly Goals
+
+- **Week 1 (July 1–7)**  
+  - 📘 FRA Reading 32–33: Inventories, Long-Term Assets  
+  - 📘 Corp Issuers Reading 20–21: Organizational Forms, Stakeholders  
+  - 📝 Practice: 50+ questions
+
+- **Week 2 (July 8–14)**  
+  - 📘 FRA Reading 34–35: Leases, Taxes  
+  - 📘 Corp Issuers Reading 22: Corporate Governance  
+  - 📝 Practice: Tax accounting, lease classification
+
+- **Week 3 (July 15–21)**  
+  - 📘 FRA Reading 36–38: Reporting Quality, Ratio Analysis, Modeling  
+  - 📘 Portfolio Mgmt Reading 83–85: Risk & Return, Portfolio Overview  
+  - 📝 Practice: FRA quiz (all topics), 60 questions
+
+- **Week 4 (July 22–31)**  
+  - 📘 Corp Issuers Reading 23–26: Working Capital, Capital Allocation & Structure  
+  - 📘 Portfolio Mgmt Reading 86: IPS and Asset Allocation  
+  - 🔁 Review: FRA, Corp Issuers  
+  - 📝 Practice: 80+ questions + mini mock
+
+---
+
+## 🗓️ August 2025 – Equity + Fixed Income + Derivatives
+
+### Weekly Goals
+
+- **Week 1 (Aug 1–7)**  
+  - 📘 Equity Reading 39–41: Market Structure, Indexes, Efficiency  
+  - 📘 Fixed Income Reading 47–49: Bond Features, Cash Flows  
+  - 📝 Practice: 50+ questions
+
+- **Week 2 (Aug 8–14)**  
+  - 📘 Equity Reading 42–44: Equity Securities, Industry Analysis  
+  - 📘 Fixed Income Reading 50–52: Corporate/Gov. Issuers, Bond Valuation  
+  - 📝 Practice: 60 questions + bond pricing problems
+
+- **Week 3 (Aug 15–21)**  
+  - 📘 Equity Reading 45–46: Forecasting, Equity Valuation  
+  - 📘 Fixed Income Reading 53–56: Yield Measures, Term Structure  
+  - 📝 Practice: DDM, comparables, TVM drills
+
+- **Week 4 (Aug 22–31)**  
+  - 📘 Derivatives Reading 66–68: Deriv. Basics, Forwards, Risks  
+  - 🔁 Review: Equity + Fixed Income  
+  - 📝 Practice: 80+ questions + mini mock
+
+---
+
+## 🗓️ September 2025 – Derivatives (continued), Alternatives, Ethics Refresh
+
+### Weekly Goals
+
+- **Week 1 (Sept 1–7)**  
+  - 📘 Derivatives Reading 69–71: Pricing Forwards & Futures  
+  - 📘 Alternatives Reading 76–77: AI Structures & Returns  
+  - 📝 Practice: 40–50 questions
+
+- **Week 2 (Sept 8–14)**  
+  - 📘 Derivatives Reading 72–75: Swaps, Options, Binomial Models  
+  - 📘 Alternatives Reading 78–80: Private Capital, Real Estate, Commodities  
+  - 📝 Practice: Derivatives pricing drills
+
+- **Week 3 (Sept 15–21)**  
+  - 📘 Alternatives Reading 81–82: Hedge Funds, Digital Assets  
+  - 📘 Portfolio Mgmt Reading 87–88: Behavioral Biases, Risk Mgmt  
+  - 📝 Ethics: Refresh Standards I–VII  
+  - 📝 Practice: 80+ questions
+
+- **Week 4 (Sept 22–30)**  
+  - 📘 Ethics Reading 91–93: GIPS & Ethics Case Practice  
+  - 🔁 Review: All September topics  
+  - 📝 Mini mock exam (~60 questions)
+
+---
+
+## 🗓️ October 2025 – Full Review + Mock Exams
+
+### Weekly Goals
+
+- **Week 1 (Oct 1–7)**  
+  - 📘 Mock Exam #1 (Full 180 questions)  
+  - 🔁 Review all weak topics (esp. FRA, Fixed Income, Ethics)
+
+- **Week 2 (Oct 8–14)**  
+  - 📘 Mock Exam #2  
+  - 📝 Topic-based revision (focus on mistakes)
+
+- **Week 3 (Oct 15–21)**  
+  - 📘 Mock Exam #3  
+  - 🔁 Flashcards: Formulas, Ethics Standards, GIPS  
+  - 📝 QBank: 100 questions random
+
+- **Week 4 (Oct 22–31)**  
+  - 📘 Mock Exam #4 + #5  
+  - 🧠 Review goal: score 70%+ in every topic  
+  - 🔁 Make a “Cheat Sheet” of last-minute reminders
+
+---
+
+## 🗓️ November 2025 – Final Review + Exam Week
+
+### Final Prep Plan
+
+- **Nov 1–7**  
+  - 🧠 Light daily revision (Ethics, FRA, Formula Sheet)  
+  - 📝 Daily 30-question mini mocks  
+  - 😴 Sleep, hydration, exercise
+
+- **Nov 8–9**  
+  - 📘 Final flashcard review  
+  - 🚫 No new topics  
+  - ✅ Pack essentials for exam day
+
+- **Exam Day – Around Nov 10**  
+  - Arrive early, calm mind  
+  - Trust your training!
+
+---
+
 ## 🎯 Study Milestones
 
 | Date       | Milestone Description                                |
