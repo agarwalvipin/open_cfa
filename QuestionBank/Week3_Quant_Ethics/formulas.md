@@ -100,8 +100,21 @@
     P(A) = \sum_{i=1}^n P(A|B_i) P(B_i)
     $$
 
+* **Definition of Conditional Probability:**
+    $$
+    P(A|B) = \frac{P(A \cap B)}{P(B)}
+    $$
+
+    In specific cases, for example:
+    $$
+    P(B|S) = \frac{P(B \cap S)}{P(S)}
+    $$
+
+    *This is the fundamental definition of conditional probability, which Bayes' Theorem is based on.*
+
 * **Bayes' Formula:**
     $$
     P(\text{Event}|\text{Information}) = \frac{P(\text{Information}|\text{Event})}{P(\text{Information})} \times P(\text{Event})
     $$
     *Used to update a prior probability, P(Event), given new Information.* [cite: 3984]
+

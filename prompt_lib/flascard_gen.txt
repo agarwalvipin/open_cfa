@@ -1,4 +1,4 @@
-- can you generate week 4 flash cards in markdown code. Validate these cards for 100% correctness.
+- can you generate week 6 flash cards in markdown code. Validate these cards for 100% correctness.
 
 - following format must be used, for example:
     What is the formula for the arithmetic mean?;\(\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}\)<br>Average of all values.;Week3 Quant Mean

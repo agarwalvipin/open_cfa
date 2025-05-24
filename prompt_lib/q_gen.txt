@@ -1,4 +1,4 @@
-Generate 20 questions for CFA Level 1 exam in November 2025 to comprehensively cover Week 4 "Ethics Reading 91 – Standards IV to VII" topics. The question must be 35% easy, 45% medium and 20% hard, show the markdown source code.
+Generate 20 questions for CFA Level 1 exam in November 2025 to comprehensively cover "Economics Reading 12–13: Firms & Market Structures, Business Cycles" topics. The question must be 35% easy, 45% medium and 20% hard, show the markdown source code.
 Validate these questions for correctness before presenting it to the user in a cleaned and crisp format. Do not mention Kaplan or Schweser or any publicly known company anywhere so no copyright infringements.
 
 for example:

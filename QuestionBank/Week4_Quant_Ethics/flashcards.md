@@ -2,11 +2,11 @@ What is the formula for the expected return of a two-asset portfolio?;\(E(R_p) =
 
 What is the formula for the variance of a two-asset portfolio using covariance?;<br>\(\sigma_p^2 = w_A^2 \sigma_A^2 + w_B^2 \sigma_B^2 + 2 w_A w_B Cov_{AB}\)<br>Measures total portfolio risk considering how assets move together.;WK4 Quant Portfolio Variance Cov
 
-What is the formula for the variance of a two-asset portfolio using correlation?;<br>\(\sigma_p^2 = w_A^2 \sigma_A^2 + w_B^2 \sigma_B^2 + 2 w_A w_B \sigma_A \sigma_B \rho_{AB}\)<br>Correlation ($\rho$) scales covariance; useful when standard deviations are known.;WK4 Quant Portfolio Variance Corr
+What is the formula for the variance of a two-asset portfolio using correlation?;<br>\(\sigma_p^2 = w_A^2 \sigma_A^2 + w_B^2 \sigma_B^2 + 2 w_A w_B \sigma_A \sigma_B \rho_{AB}\)<br>Correlation (\(\rho\)) scales covariance; useful when standard deviations are known.;WK4 Quant Portfolio Variance Corr
 
 How is covariance calculated from a joint probability function?;<br>\(Cov(R_A, R_B) = \sum P(S_i) [R_{A,i} - E(R_A)] [R_{B,i} - E(R_B)]\)<br>Weighted average of the product of deviations from expected returns for each state.;WK4 Quant Covariance JointProb
 
-What does Roy's safety-first criterion seek to achieve?;Minimize the probability that portfolio return falls below a minimum acceptable level ($R_L$).<br>Choose the portfolio with the highest Safety-First Ratio (SFR).;WK4 Quant Roys Criterion
+What does Roy's safety-first criterion seek to achieve?;Minimize the probability that portfolio return falls below a minimum acceptable level ($$R_L$$).<br>Choose the portfolio with the highest Safety-First Ratio (SFR).;WK4 Quant Roys Criterion
 
 What is the formula for the Safety-First Ratio (SFR)?;<br>\(SFR = \frac{E(R_p) - R_L}{\sigma_p}\)<br>Measures excess return over threshold per unit of portfolio risk.;WK4 Quant SFR
 

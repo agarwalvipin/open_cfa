@@ -38,10 +38,10 @@ st.set_page_config(
 
 # Configure Streamlit server settings for better cookie handling
 # These will be picked up when run with streamlit run
-if 'STREAMLIT_SERVER_ENABLE_CORS' not in os.environ:
-    os.environ['STREAMLIT_SERVER_ENABLE_CORS'] = 'true'
-if 'STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION' not in os.environ:
-    os.environ['STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION'] = 'false'
+if "STREAMLIT_SERVER_ENABLE_CORS" not in os.environ:
+    os.environ["STREAMLIT_SERVER_ENABLE_CORS"] = "true"
+if "STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION" not in os.environ:
+    os.environ["STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION"] = "false"
 
 
 # Load environment variables from .env file
@@ -316,7 +316,8 @@ def create_auth_token(user_data):
             "uid": user_data.get("localId", ""),
             "email": user_data.get("email", ""),
             "username": user_data.get(
-                "displayName", user_data.get("email", "").split("@")[0],
+                "displayName",
+                user_data.get("email", "").split("@")[0],
             ),
             "role": st.session_state.get("user_role", "student"),
             "expiry": (
@@ -422,7 +423,8 @@ def restore_session_from_token(auth_token):
             "email": auth_data["email"],
         }
         st.session_state.username = auth_data.get(
-            "username", auth_data["email"].split("@")[0],
+            "username",
+            auth_data["email"].split("@")[0],
         )
         st.session_state.user_role = auth_data.get("role", "student")
 
@@ -432,6 +434,23 @@ def restore_session_from_token(auth_token):
     except Exception as e:
         print(f"Error in restore_session_from_token: {e}")
         return False
+
+
+# Function to fetch a new question for practice mode
+def get_new_question():
+    """
+    Fetch a new question for practice mode.
+    This function should query the database or logic to retrieve a random or filtered question.
+    """
+    conn = connect_to_db()  # Assuming a function to get DB connection exists
+    cursor = conn.cursor()
+
+    # Example query to fetch a random question
+    cursor.execute("SELECT * FROM questions ORDER BY RANDOM() LIMIT 1")
+    question = cursor.fetchone()
+
+    conn.close()
+    return question
 
 
 # Main app function
@@ -701,11 +720,14 @@ def main():
             with st.form("login_form"):
                 # Pre-fill email if remember_me was checked previously
                 email = st.text_input(
-                    "Email", value=st.session_state.get("saved_email", ""),
+                    "Email",
+                    value=st.session_state.get("saved_email", ""),
                 )
                 password = st.text_input("Password", type="password")
                 remember_me = st.checkbox(
-                    "Remember Me", value=True, help="Keep me logged in on this device",
+                    "Remember Me",
+                    value=True,
+                    help="Keep me logged in on this device",
                 )
                 submit_button = st.form_submit_button("Login")
 
@@ -729,7 +751,8 @@ def main():
 
                                 # Set username (use display name or email)
                                 st.session_state.username = result["user"].get(
-                                    "displayName", email.split("@")[0],
+                                    "displayName",
+                                    email.split("@")[0],
                                 )
 
                                 # Save authentication data if remember_me is checked
@@ -778,7 +801,9 @@ def main():
                         if new_password == confirm_password:
                             # Use Firebase authentication for signup
                             result = firebase_auth.signup(
-                                new_email, new_password, display_name,
+                                new_email,
+                                new_password,
+                                display_name,
                             )
 
                             if result["success"]:
@@ -928,13 +953,17 @@ def main():
             col3, col4 = st.columns(2)
             with col3:
                 if st.button(
-                    "Practice Question", type="secondary", use_container_width=True,
+                    "Practice Question",
+                    type="secondary",
+                    use_container_width=True,
                 ):
                     st.session_state.current_page = "practice_question"
                     st.rerun()
             with col4:
                 if st.button(
-                    "Load Questions", type="secondary", use_container_width=True,
+                    "Load Questions",
+                    type="secondary",
+                    use_container_width=True,
                 ):
                     st.session_state.current_page = "load_questions"
                     st.rerun()
@@ -970,7 +999,8 @@ def main():
             if uploaded_file is not None:
                 # Create a temporary file to save the uploaded content
                 with tempfile.NamedTemporaryFile(
-                    delete=False, suffix=".md",
+                    delete=False,
+                    suffix=".md",
                 ) as tmp_file:
                     tmp_file.write(uploaded_file.getvalue())
                     temp_path = tmp_file.name
@@ -981,7 +1011,9 @@ def main():
                 col1, col2 = st.columns(2)
                 with col1:
                     if st.button(
-                        "Preview File", use_container_width=True, key="preview_upload",
+                        "Preview File",
+                        use_container_width=True,
+                        key="preview_upload",
                     ):
                         with open(temp_path) as f:
                             file_content = f.read()
@@ -997,7 +1029,8 @@ def main():
                         try:
                             # Import the module
                             import_module = import_module_from_path(
-                                "import_questions", str(import_script_path),
+                                "import_questions",
+                                str(import_script_path),
                             )
 
                             # Use functions from the imported module
@@ -1030,7 +1063,8 @@ def main():
                 "Enter the URL of a markdown file containing CFA Level I questions.",
             )
             url = st.text_input(
-                "URL to markdown file", placeholder="https://example.com/questions.md",
+                "URL to markdown file",
+                placeholder="https://example.com/questions.md",
             )
 
             if url:
@@ -1040,7 +1074,9 @@ def main():
                 col1, col2 = st.columns(2)
                 with col1:
                     if st.button(
-                        "Preview File", use_container_width=True, key="preview_url",
+                        "Preview File",
+                        use_container_width=True,
+                        key="preview_url",
                     ):
                         try:
                             # Fetch content from URL
@@ -1048,7 +1084,9 @@ def main():
                             if response.status_code == 200:
                                 file_content = response.text
                                 st.text_area(
-                                    "File Content Preview", file_content, height=300,
+                                    "File Content Preview",
+                                    file_content,
+                                    height=300,
                                 )
                             else:
                                 st.error(
@@ -1075,14 +1113,16 @@ def main():
 
                             # Save content to temporary file
                             with tempfile.NamedTemporaryFile(
-                                delete=False, suffix=".md",
+                                delete=False,
+                                suffix=".md",
                             ) as tmp_file:
                                 tmp_file.write(response.content)
                                 temp_path = tmp_file.name
 
                             # Import the module
                             import_module = import_module_from_path(
-                                "import_questions", str(import_script_path),
+                                "import_questions",
+                                str(import_script_path),
                             )
 
                             # Use functions from the imported module
@@ -1251,7 +1291,8 @@ def main():
                     topic_options[topic["name"]] = topic["topic_id"]
 
                 selected_topic_name = st.selectbox(
-                    "Select Topic", options=list(topic_options.keys()),
+                    "Select Topic",
+                    options=list(topic_options.keys()),
                 )
                 selected_topic_id = topic_options[selected_topic_name]
 
@@ -1267,7 +1308,8 @@ def main():
                     week_options[f"Week {week['week_number']}"] = week["week_id"]
 
                 selected_week_name = st.selectbox(
-                    "Select Week", options=list(week_options.keys()),
+                    "Select Week",
+                    options=list(week_options.keys()),
                 )
                 selected_week_id = week_options[selected_week_name]
 
@@ -1290,7 +1332,8 @@ def main():
 
             # Get count of affected questions
             cursor.execute(
-                f"SELECT COUNT(*) as count FROM questions{where_clause}", params,
+                f"SELECT COUNT(*) as count FROM questions{where_clause}",
+                params,
             )
             affected_count = cursor.fetchone()["count"]
 
@@ -1306,7 +1349,10 @@ def main():
             # Execute cleanup button
             if st.button("Execute Cleanup", type="primary", disabled=not confirm):
                 message, success = cleanup_questions(
-                    conn, selected_topic_id, selected_week_id, confirm,
+                    conn,
+                    selected_topic_id,
+                    selected_week_id,
+                    confirm,
                 )
 
                 if success:
@@ -1710,7 +1756,8 @@ def main():
             # Quiz size selection
             if question_count > 0:
                 max_questions = min(
-                    question_count, 120,
+                    question_count,
+                    120,
                 )  # Limit to 120 questions max to match real CFA exam format
                 quiz_size = st.slider(
                     "Number of Questions",
@@ -1725,7 +1772,9 @@ def main():
 
                 # Start quiz button
                 if st.button(
-                    "Start Quiz", type="primary", key="create_quiz_start_button",
+                    "Start Quiz",
+                    type="primary",
+                    key="create_quiz_start_button",
                 ):
                     # Generate the query to get filtered questions
                     query = "SELECT q.question_id FROM questions q"
@@ -1935,7 +1984,9 @@ def main():
     elif selection_mode == "Both" and (selected_topic_ids or selected_week_ids):
         has_selection = True
         question_count = get_question_count(
-            conn, topic_ids=selected_topic_ids, week_ids=selected_week_ids,
+            conn,
+            topic_ids=selected_topic_ids,
+            week_ids=selected_week_ids,
         )
         st.sidebar.info(f"Total available questions: {question_count}")
     elif (
@@ -1945,7 +1996,8 @@ def main():
     ):
         has_selection = True
         question_count = get_question_count(
-            conn, topic_ids=list(topic_options.values()),
+            conn,
+            topic_ids=list(topic_options.values()),
         )
         st.sidebar.info(f"Total available questions: {question_count}")
     elif (
@@ -1972,7 +2024,9 @@ def main():
             else selected_week_ids
         )
         question_count = get_question_count(
-            conn, topic_ids=topic_ids, week_ids=week_ids,
+            conn,
+            topic_ids=topic_ids,
+            week_ids=week_ids,
         )
         st.sidebar.info(f"Total available questions: {question_count}")
 
@@ -1997,7 +2051,9 @@ def main():
 
         # Start quiz button
         start_quiz = st.sidebar.button(
-            "Start Quiz", type="primary", key="sidebar_start_quiz_button_",
+            "Start Quiz",
+            type="primary",
+            key="sidebar_start_quiz_button_",
         )
 
         if start_quiz:
@@ -2006,21 +2062,29 @@ def main():
                 # Handle 'All' selection
                 if "All" in selected_topic_names:
                     question_ids = get_filtered_questions(
-                        conn, topic_ids=list(topic_options.values()), limit=quiz_size,
+                        conn,
+                        topic_ids=list(topic_options.values()),
+                        limit=quiz_size,
                     )
                 else:
                     question_ids = get_filtered_questions(
-                        conn, topic_ids=selected_topic_ids, limit=quiz_size,
+                        conn,
+                        topic_ids=selected_topic_ids,
+                        limit=quiz_size,
                     )
             elif selection_mode == "Week":
                 # Handle 'All' selection
                 if "All" in selected_week_names:
                     question_ids = get_filtered_questions(
-                        conn, week_ids=list(week_options.values()), limit=quiz_size,
+                        conn,
+                        week_ids=list(week_options.values()),
+                        limit=quiz_size,
                     )
                 else:
                     question_ids = get_filtered_questions(
-                        conn, week_ids=selected_week_ids, limit=quiz_size,
+                        conn,
+                        week_ids=selected_week_ids,
+                        limit=quiz_size,
                     )
             else:  # Both
                 # Handle 'All' selection for both topics and weeks
@@ -2035,7 +2099,10 @@ def main():
                     else selected_week_ids
                 )
                 question_ids = get_filtered_questions(
-                    conn, topic_ids=topic_ids, week_ids=week_ids, limit=quiz_size,
+                    conn,
+                    topic_ids=topic_ids,
+                    week_ids=week_ids,
+                    limit=quiz_size,
                 )
 
             if not question_ids:
@@ -2101,7 +2168,9 @@ def main():
 
                 # Make the timer clickable to refresh
                 if st.button(
-                    timer_label, key="timer_button", help="Click to update timer",
+                    timer_label,
+                    key="timer_button",
+                    help="Click to update timer",
                 ):
                     # This will trigger a rerun when clicked
                     pass
@@ -2345,28 +2414,38 @@ def main():
         # Get a new question button
         if not st.session_state.practice_question_answered:
             if st.button(
-                "Get a New Question", type="primary", key="get_practice_question",
+                "Get a New Question",
+                type="primary",
+                key="get_practice_question",
             ):
                 # Get random question based on selected filters
                 if selection_mode == "Topic":
                     # Handle 'All' selection
                     if "All" in selected_topic_names:
                         questions = get_filtered_questions(
-                            conn, topic_ids=list(topic_options.values()), limit=1,
+                            conn,
+                            topic_ids=list(topic_options.values()),
+                            limit=1,
                         )
                     else:
                         questions = get_filtered_questions(
-                            conn, topic_ids=selected_topic_ids, limit=1,
+                            conn,
+                            topic_ids=selected_topic_ids,
+                            limit=1,
                         )
                 elif selection_mode == "Week":
                     # Handle 'All' selection
                     if "All" in selected_week_names:
                         questions = get_filtered_questions(
-                            conn, week_ids=list(week_options.values()), limit=1,
+                            conn,
+                            week_ids=list(week_options.values()),
+                            limit=1,
                         )
                     else:
                         questions = get_filtered_questions(
-                            conn, week_ids=selected_week_ids, limit=1,
+                            conn,
+                            week_ids=selected_week_ids,
+                            limit=1,
                         )
                 else:  # Both
                     # Handle 'All' selection for topics
@@ -2512,8 +2591,9 @@ def main():
 
                     # Next question button
                     if st.button("Next Question", type="primary"):
+                        # Fetch a new question directly without resetting the state
+                        st.session_state.practice_current_question = get_new_question()
                         st.session_state.practice_question_answered = False
-                        st.session_state.practice_current_question = None
                         st.session_state.practice_user_answer = None
                         st.rerun()
 

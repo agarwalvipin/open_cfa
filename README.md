@@ -63,13 +63,14 @@ A structured 7-month plan built for working professionals, starting April 2025 a
 
 ### Week 5 (May 20–26)
 - 📕 Ethics Readings 92–93 – GIPS & Application Scenarios
-- 📘 Quant Reading 7 – Sampling & CLT
+- 📘 Quant Reading 7 – Estimation & Inferencing6
 - 📘 Quant Reading 8 – Hypothesis Testing
 - 📝 Practice: 50+ questions + Mini Ethics quiz
 
 ### Week 6 (May 27–31)
 - 📘 Quant Reading 9 – Parametric/Nonparametric Tests
 - 📘 Quant Reading 10 – Regression Basics
+- 📘 Quant Reading 11: Big Data & Fintech Techniques 
 - 🔁 Review: All Ethics + Quant
 - 📝 Practice: Full-length quiz (~60 questions)
 
