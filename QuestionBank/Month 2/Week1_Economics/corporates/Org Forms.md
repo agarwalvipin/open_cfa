@@ -1,4 +1,4 @@
-### 🟢 Q1 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+## 🟢 Q1 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -33,7 +33,10 @@ Which of the following business structures exposes an owner to unlimited liabili
 **(LOS: 20.a)**
 </details>
 
-### 🟢 Q2 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟢 Q2 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -68,7 +71,10 @@ In a limited partnership, which partner type is responsible for the day-to-day o
 **(LOS: 20.a)**
 </details>
 
-### 🟢 Q3 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟢 Q3 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -103,7 +109,10 @@ What is a primary characteristic that distinguishes a public corporation from a 
 **(LOS: 20.c)**
 </details>
 
-### 🟢 Q4 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟢 Q4 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -138,7 +147,10 @@ The feature that ensures a shareholder of a corporation can only lose their init
 **(LOS: 20.b)**
 </details>
 
-### 🟢 Q5 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟢 Q5 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -173,7 +185,10 @@ A private company can become a public company by being acquired by a publicly tr
 **(LOS: 20.c)**
 </details>
 
-### 🟢 Q6 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟢 Q6 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -208,7 +223,10 @@ In a corporation, who is typically responsible for hiring the senior managers wh
 **(LOS: 20.b)**
 </details>
 
-### 🟡 Q7 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q7 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -243,7 +261,10 @@ An analyst is comparing the tax treatment of a general partnership and a corpora
 **(LOS: 20.a)**
 </details>
 
-### 🟡 Q8 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q8 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -278,7 +299,10 @@ Compared to a publicly owned corporate issuer, a privately owned corporate issue
 **(LOS: 20.c)**
 </details>
 
-### 🟡 Q9 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q9 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -313,7 +337,10 @@ A key difference between a company going public via an Initial Public Offering (
 **(LOS: 20.c)**
 </details>
 
-### 🟡 Q10 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q10 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -348,7 +375,10 @@ A limited liability partnership (LLP) differs from a general partnership primari
 **(LOS: 20.a)**
 </details>
 
-### 🟡 Q11 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q11 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -383,7 +413,10 @@ The "free float" of a public company's stock is best described as the shares tha
 **(LOS: 20.c)**
 </details>
 
-### 🟡 Q12 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q12 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -418,7 +451,10 @@ The issue of "double taxation" for a corporation refers to which of the followin
 **(LOS: 20.b)**
 </details>
 
-### 🟡 Q13 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q13 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -453,7 +489,10 @@ From the perspective of raising capital and distributing risk, the corporate for
 **(LOS: 20.a)**
 </details>
 
-### 🟡 Q14 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🟡 Q14 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -488,7 +527,10 @@ A private company typically raises equity capital through private placements whi
 **(LOS: 20.c)**
 </details>
 
-### 🔴 Q15 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🔴 Q15 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -540,7 +582,10 @@ A corporation earns $20 million in pretax profits. The corporate tax rate is 20%
 **(LOS: 20.b)**
 </details>
 
-### 🔴 Q16 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🔴 Q16 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -657,7 +702,7 @@ A corporation earns $10 million in pretax profits. The corporate tax rate is 25%
 This now works. I will proceed with this adjusted question.
 
 **(Final Answer Generation):**
-### 🔴 Q16 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+## 🔴 Q16 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -711,7 +756,10 @@ A corporation earns $10 million in pretax profits. The corporate tax rate is 25%
 **(LOS: 20.b)**
 </details>
 
-### 🔴 Q17 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🔴 Q17 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -746,7 +794,10 @@ A publicly traded company is consistently underperforming, and its management be
 **(LOS: 20.c)**
 </details>
 
-### 🔴 Q18 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
+---
+
+
+## 🔴 Q18 – Corp Issuers - Organizational Forms, Corporate Issuer Features, and Ownership
 <details>
 <summary>Meta Data</summary>
 
@@ -782,3 +833,5 @@ This question requires synthesizing multiple factors: capital needs, risk, and l
 
 **(LOS: 20.a)**
 </details>
+
+---
