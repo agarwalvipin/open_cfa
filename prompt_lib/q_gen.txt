@@ -1,39 +1,42 @@
-Generate 20 questions for CFA Level 1 exam in November 2025 to comprehensively cover "Economics Reading 12–13: Firms & Market Structures, Business Cycles" topics. The question must be 35% easy, 45% medium and 20% hard, show the markdown source code.
+Generate 18 questions for CFA Level 1 exam in November 2025 to comprehensively cover "Corp Issuers Reading 20: Organizational Forms" topics. The question must be 35% easy, 45% medium and 20% hard, show the markdown source code.
 Validate these questions for correctness before presenting it to the user in a cleaned and crisp format. Do not mention Kaplan or Schweser or any publicly known company anywhere so no copyright infringements.
 
-for example:
-## 🟢 Q1 –  Ethical & Professional Standards - Standard I - Professionalism
-<details>
-<summary>Meta Data</summary>
+- i need markdown format, so that i can copy it into md file
+- validate them for correctness
+- 🟢 should be colored based on difficulty levels
 
-- id: ETHICS_L1_W3_1
-- level: 1
-- reading: 91
-- topic: Ethical & Professional Standards
-- module: ??
-- los_text: I(A) Knowledge of the Law
-- question_type: mcq
-- difficulty: medium
-- tags: [Ethics, Professionalism, Knowledge of the Law]
-</details>
+- example:
+  ## 🟢 Q1 – Economics - Understanding Business Cycles
+  <details>
+  <summary>Meta Data</summary>
 
-Sarah is a CFA candidate working as a junior analyst at an investment bank. Her supervisor asks her to change some figures in a client's performance report to make the returns look more appealing before sending it out. Sarah is uncomfortable with this request. According to CFA Institute's Code of Ethics and Standards of Professional Conduct, what is Sarah's most appropriate course of action?
+  - id: ECON_L1_R13_S1_Q1
+  - level: 1
+  - reading: 13
+  - topic: Economics
+  - module: 13.1
+  - los_text: 13.a Describe the business cycle and its phases.
+  - question_type: mcq
+  - difficulty: easy
+  - tags: [Business Cycles, Economic Phases, Trough]
+  </details>
 
-- A) Follow her supervisor's instructions as he is more experienced.
-- B) Resign from her position immediately to avoid any association with unethical behavior.
-- C) Refuse to comply with her supervisor's request and report the issue to a higher authority within the firm or to the CFA Institute if necessary.
+  Which phase of the business cycle is characterized by real GDP ceasing to decline and starting to expand?
 
+  - A) Peak
+  - B) Trough
+  - C) Contraction
 
-<details>
-<summary>✅ Answer & Explanation</summary>
+  <details>
+  <summary>✅ Answer & Explanation</summary>
 
-  **Correct Answer: C**
+  **Correct Answer: B**
 
   **Explanation:**
 
-  Standard I(A) Knowledge of the Law requires CFA members and candidates to understand and comply with all applicable laws, rules, and regulations, and the CFA Institute Code of Ethics and Standards of Professional Conduct. In case of conflict, the more strict rule applies. Sarah has a responsibility to uphold the integrity of capital markets and protect client interests, which outweighs following unethical instructions from a supervisor. She should first attempt to address the issue within her firm through proper channels. If that fails, reporting to the CFA Institute might be necessary.
-  
-  **(LOS: Guidance for Standards I(A) and I(B))** [cite: 4]
+  * **B is correct** because the trough is the lowest point of a business cycle. It marks the end of the contraction phase and the beginning of the expansion (or recovery) phase. At this point, real GDP stops falling and begins to rise.
+  * **A is incorrect** because the peak is the highest point of a business cycle, where real GDP stops expanding and begins to decline.
+  * **C is incorrect** because a contraction is the entire phase during which real GDP is declining from its peak.
 
-</details>
-
+  **(LOS: 13.a)**
+  </details>
