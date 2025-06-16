@@ -1,7 +1,12 @@
-Generate 18 questions for CFA Level 1 exam in November 2025 to comprehensively cover "Corp Issuers Reading 20: Organizational Forms" topics. The question must be 35% easy, 45% medium and 20% hard, show the markdown source code.
-Validate these questions for correctness before presenting it to the user in a cleaned and crisp format. Do not mention Kaplan or Schweser or any publicly known company anywhere so no copyright infringements.
+1. Generate 25 questions for CFA Level 1 exam in November 2025 to comprehensively cover "Economics Reading 17: International Trade" topics. 
+2. **I need markdown code on canvas, so that i can copy it from canvas.
+3. The question must be 35% easy, 45% medium and 20% hard.
+4. Whenever possible, 60% of overall questions should be designed as descrbed in cfa_q_format.md
+5. Validate these questions for correctness before presenting it to the user in a cleaned and crisp format.
+6. Do not mention Kaplan or Schweser or any publicly known company anywhere so no copyright infringements.
 
-- i need markdown format, so that i can copy it into md file
+
+- i need it in markdown file, so that i can copy it into md file
 - validate them for correctness
 - 🟢 should be colored based on difficulty levels
 
@@ -40,3 +45,5 @@ Validate these questions for correctness before presenting it to the user in a c
 
   **(LOS: 13.a)**
   </details>
+
+---
