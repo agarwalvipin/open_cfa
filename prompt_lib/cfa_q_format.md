@@ -34,6 +34,16 @@ The CFA Level I exam tests foundational knowledge across 10 topic areas. The exa
 
 ---
 
+## 🔹 3a. `More Accurately`
+
+- **Purpose:** Tests your ability to refine or improve upon a statement, identifying which option is more precise or correct.
+- **Example:**
+  > Which of the following statements **more accurately** explains the relationship between risk and return?
+
+- **Tip:** Look for subtle improvements in accuracy or completeness over other options.
+
+---
+
 ## 🔹 4. `Except`
 
 - **Purpose:** Requires identifying the incorrect item in a list of mostly correct statements.
