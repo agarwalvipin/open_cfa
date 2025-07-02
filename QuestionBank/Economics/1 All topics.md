@@ -1,13 +1,3 @@
-Of course, Vipin. It's great that you're starting your preparation for the November 2025 exam so early. Consistent practice is the key to success.
-
-As your CFA expert and teacher, I've prepared a 40-question quiz based on the topics you've outlined. This quiz is designed to test your understanding of the core concepts in Economics and Corporate Issuers, with a mix of difficulties to challenge you appropriately.
-
-Remember to analyze the explanations for both correct and incorrect answers. This will deepen your understanding and help you identify areas that need more attention. Good luck\!
-
------
-
-Here is your daily quiz.
-
 ## Economics & Corporate Issuers Quiz
 
 ### 🟢 Q1 – Firms and Market Structures
