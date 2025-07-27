@@ -260,3 +260,10 @@ $$
 $$
 
 ---
+
+## 🔥 Exam-Day Quick Pointers
+
+- You must know formulas (Sharpe, Treynor, Jensen’s Alpha, Beta, CAPM, CML).
+- Sharpe/SML (Security Market Line) vs. CML (Capital Market Line): SML plots expected return vs. Beta; CML vs. standard deviation.
+- Know the difference between systematic and unsystematic risk—diversification only eliminates unsystematic risk.
+- Be able to interpret and calculate alpha.
