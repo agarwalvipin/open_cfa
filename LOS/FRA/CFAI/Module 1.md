@@ -1,20 +1,40 @@
 ### **Reading 1: Introduction to Financial Statement Analysis**
 
+#### **Overview Diagram**
 ```mermaid
-%%{init: {"flowchart": {"htmlLabels": false}, "theme": "base", "themeVariables": {"fontSize": "16px", "fontFamily": "arial", "primaryColor": "#fff", "primaryTextColor": "#000", "primaryBorderColor": "#000", "lineColor": "#000"}}}%%
 flowchart TD
     A["📊 Financial Statement Analysis<br/>Foundation Reading"] --> B["🔄 6-Phase Framework<br/>Structured Analysis Process"]
     A --> C["📋 Information Sources<br/>Data Collection Methods"]
     A --> D["📝 Reporting Systems<br/>Global Standards"]
     
-    B --> B1["1️⃣ Purpose & Context<br/>Define Analysis Goals"]
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef phaseNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+    
+    class A mainNode
+    class B,C,D phaseNode
+```
+
+#### **6-Phase Framework Detail**
+```mermaid
+flowchart TD
+    B["🔄 6-Phase Framework"] --> B1["1️⃣ Purpose & Context<br/>Define Analysis Goals"]
     B --> B2["2️⃣ Collect Data<br/>Gather Information"]
     B --> B3["3️⃣ Process Data<br/>Calculate & Adjust"]
     B --> B4["4️⃣ Analyze & Interpret<br/>Extract Insights"]
     B --> B5["5️⃣ Conclusions & Recommendations<br/>Form & Communicate Results"]
     B --> B6["6️⃣ Follow-Up<br/>Monitor & Update"]
     
-    C --> C1["🏛️ Regulatory Filings<br/>Official Documents"]
+    classDef phaseNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+    classDef sourceNode fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px,color:#000
+    
+    class B phaseNode
+    class B1,B2,B3,B4,B5,B6 sourceNode
+```
+
+#### **Information Sources Detail**
+```mermaid
+flowchart TD
+    C["📋 Information Sources"] --> C1["🏛️ Regulatory Filings<br/>Official Documents"]
     C --> C2["📄 Financial Statement Notes<br/>Accounting Details"]
     C --> C3["💬 Management Commentary<br/>MD&A Insights"]
     C --> C4["✅ Auditor Reports<br/>Independent Opinions"]
@@ -28,7 +48,19 @@ flowchart TD
     C4 --> C43["❌ Adverse Opinion<br/>Material Misstatements"]
     C4 --> C44["❓ Disclaimer of Opinion<br/>Unable to Opine"]
     
-    D --> D1["🇺🇸 U.S. GAAP<br/>American Standards"]
+    classDef phaseNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+    classDef sourceNode fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px,color:#000
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    
+    class C phaseNode
+    class C1,C2,C3,C4 sourceNode
+    class C11,C12,C13,C41,C42,C43,C44 detailNode
+```
+
+#### **Reporting Systems Detail**
+```mermaid
+flowchart TD
+    D["📝 Reporting Systems"] --> D1["🇺🇸 U.S. GAAP<br/>American Standards"]
     D --> D2["🌍 IFRS<br/>International Standards"]
     D --> D3["🇮🇳 Ind AS<br/>Indian Standards"]
     
@@ -41,17 +73,14 @@ flowchart TD
     D2 --> D23["✅ Permits Write-down Reversals<br/>Under Conditions"]
     
     D3 --> D31["🔗 Converged with IFRS<br/>Aligned Standards"]
-
-    %% Enhanced styling for better visibility
-    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000,font-size:18px
-    classDef phaseNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000,font-size:16px
-    classDef sourceNode fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px,color:#000,font-size:14px
-    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000,font-size:12px
     
-    class A mainNode
-    class B,C,D phaseNode
-    class B1,B2,B3,B4,B5,B6,C1,C2,C3,C4,D1,D2,D3 sourceNode
-    class C11,C12,C13,C41,C42,C43,C44,D11,D12,D13,D21,D22,D23,D31 detailNode
+    classDef phaseNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+    classDef sourceNode fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px,color:#000
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    
+    class D phaseNode
+    class D1,D2,D3 sourceNode
+    class D11,D12,D13,D21,D22,D23,D31 detailNode
 ```
 
 This reading serves as the foundation for the entire topic area. It introduces the "why" and "how" of financial statement analysis, setting the stage for the more technical readings that follow.
