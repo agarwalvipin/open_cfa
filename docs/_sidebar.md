@@ -1,0 +1,81 @@
+# Sidebar
+
+- [Home](/README.md)
+- LOS
+  - Quantitative Methods
+    - [Reading 1: Rates and Returns](LOS/PM/Reading%201.md)
+    - [Reading 2: The Time Value of Money in Finance](LOS/PM/Reading%202.md)
+    - [Reading 2_supplement](LOS/PM/Reading%202_supplement.md)
+    - [Reading 3: Statistical Measures of Asset Returns](LOS/PM/Reading%203.md)
+    - [Reading 4: Probability Trees and Conditional Expectations](LOS/PM/Reading%204.md)
+    - [Reading 5: Portfolio Mathematics](LOS/PM/Reading%205.md)
+    - [Reading 6: Simulation Methods](LOS/PM/Reading%206.md)
+  - Economics
+    - [Reading 12: Firms and Market Structures](LOS/Economics/Reading%2012.md)
+    - [Reading 13: Understanding Business Cycles](LOS/Economics/Reading%2013.md)
+    - [Reading 14: Fiscal Policy](LOS/Economics/Reading%2014.md)
+    - [Reading 15: Monetary Policy](LOS/Economics/Reading%2015.md)
+    - [Reading 16: Introduction to Geopolitics](LOS/Economics/Reading%2016.md)
+    - [Reading 17: International Trade](LOS/Economics/Reading%2017.md)
+    - [Reading 18: Capital Flows and the FX Market](LOS/Economics/Reading%2018.md)
+    - [Reading 19: Exchange Rate Calculations](LOS/Economics/Reading%2019.md)
+  - Corporate Issuers
+    - [Reading 20: Organizational Forms, Corporate Issuer Features, and Ownership](LOS/Corporate%20Issuer/Reading%2020.md)
+    - [Reading 21: Investors and Other Stakeholders](LOS/Corporate%20Issuer/Reading%2021.md)
+    - [Reading 22: Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits](LOS/Corporate%20Issuer/Reading%2022.md)
+    - [Reading 23: Working Capital and Liquidity](LOS/Corporate%20Issuer/Reading%2023.md)
+    - [Reading 24: Capital Investments and Capital Allocation](LOS/Corporate%20Issuer/Reading%2024.md)
+    - [Reading 25: Capital Structure](LOS/Corporate%20Issuer/Reading%2025.md)
+    - [Reading 26: Business Models](LOS/Corporate%20Issuer/Reading%2026.md)
+  - Financial Statement Analysis
+    - [Reading 27: Introduction to Financial Statement Analysis](LOS/FRA/Reading%2027.md)
+    - [Reading 28: Analyzing Income Statements](LOS/FRA/Reading%2028.md)
+    - [Reading 28_gpt](LOS/FRA/Reading%2028_gpt.md)
+    - [Reading 28_pre-read](LOS/FRA/Reading%2028_pre-read.md)
+    - [Reading 29: Analyzing Balance Sheets](LOS/FRA/Reading%2029.md)
+    - [Reading 30: Analyzing Statements of Cash Flows I](LOS/FRA/Reading%2030.md)
+    - [Reading 31: Analyzing Statements of Cash Flows II](LOS/FRA/Reading%2031.md)
+    - [Reading 32: Analysis of Inventories](LOS/FRA/Reading%2032.md)
+    - [Reading 33: Analysis of Long-Term Assets](LOS/FRA/Reading%2033.md)
+    - [Reading 34: Topics in Long-Term Liabilities and Equity](LOS/FRA/Reading%2034.md)
+    - [Reading 35: Analysis of Income Taxes](LOS/FRA/Reading%2035.md)
+    - [Reading 36: Financial Reporting Quality](LOS/FRA/Reading%2036.md)
+    - [Reading 37: Financial Analysis Techniques](LOS/FRA/Reading%2037.md)
+    - [Reading 38: Introduction to Financial Statement Modeling](LOS/FRA/Reading%2038.md)
+    - CFAI
+      - [Module 1](LOS/FRA/CFAI/Module%201.md)
+      - [Module 2](LOS/FRA/CFAI/Module%202.md)
+      - [Module 3](LOS/FRA/CFAI/Module%203.md)
+      - [Module 4](LOS/FRA/CFAI/Module%204.md)
+      - [Module 5](LOS/FRA/CFAI/Module%205.md)
+      - [Module 6](LOS/FRA/CFAI/Module%206.md)
+      - [Module 7](LOS/FRA/CFAI/Module%207.md)
+      - [Module 8](LOS/FRA/CFAI/Module%208.md)
+      - [Module 9](LOS/FRA/CFAI/Module%209.md)
+      - [Module 10](LOS/FRA/CFAI/Module%2010.md)
+  - Equity Investments
+    - [Reading 46: Equity Valuation: Concepts and Basic Tools](LOS/Equity/Reading%2046.md)
+  - Fixed Income
+    # No readings listed in _sidebar.md; add here if available
+  - Derivatives
+    - [Reading 66: Derivative Instrument and Derivative Market Features](LOS/Derivatives/Reading%2066.md)
+    - [Reading 67: Forward Commitment and Contingent Claim Features and Instruments](LOS/Derivatives/Reading%2067.md)
+    - [Reading 68: Derivative Benefits, Risks, and Issuer and Investor Uses](LOS/Derivatives/Reading%2068.md)
+    - [Reading 69: Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives](LOS/Derivatives/Reading%2069.md)
+    - [Reading 70: Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities](LOS/Derivatives/Reading%2070.md)
+    - [Reading 71: Pricing and Valuation of Futures Contracts](LOS/Derivatives/Reading%2071.md)
+    - [Reading 72: Pricing and Valuation of Interest Rates and Other Swaps](LOS/Derivatives/Reading%2072.md)
+    - [Reading 73: Pricing and Valuation of Options](LOS/Derivatives/Reading%2073.md)
+    - [Reading 74: Option Replication Using Put–Call Parity](LOS/Derivatives/Reading%2074.md)
+    - [Reading 75: Valuing a Derivative Using a One-Period Binomial Model](LOS/Derivatives/Reading%2075.md)
+  - Alternative Investments
+    - [Reading 76: Alternative Investment Features, Methods, and Structures](LOS/Alts/Reading%2076.md)
+    - [Reading 77: Alternative Investment Performance and Returns](LOS/Alts/Reading%2077.md)
+    - [Reading 78: Investments in Private Capital: Equity and Debt](LOS/Alts/Reading%2078.md)
+    - [Reading 79: Real Estate and Infrastructure](LOS/Alts/Reading%2079.md)
+    - [Reading 80: Natural Resources](LOS/Alts/Reading%2080.md)
+    - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
+  - Portfolio Management
+    # No readings listed in _sidebar.md; Quantitative readings are above
+  - Ethical and Professional Standards
+    # No readings listed in _sidebar.md; add here if available

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -7,16 +8,116 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+  <style>
+    .content {
+      margin-top: 8px !important;
+      padding-top: 0 !important;
+    }
+
+    .markdown-section {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0.5em !important;
+    }
+  </style>
 </head>
+
 <body>
   <div id="app"></div>
+  <!-- Dark/Light mode toggle button -->
+  <div id="docsify-darklight-theme"></div>
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      mermaid: {
+        theme: 'default'
+      },
+      darklightTheme: {
+        defaultTheme: 'light',
+        toggle: true
+      },
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        depth: 4
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            // Re-render MathJax after each page load
+            if (window.MathJax && window.MathJax.typesetPromise) {
+              window.MathJax.typesetPromise();
+            }
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Sidebar Collapse Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- MathJax configuration for Docsify -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(() => {
+            // Re-render math when Docsify content changes
+            const observer = new MutationObserver(() => {
+              MathJax.typesetPromise();
+            });
+            observer.observe(document.getElementById('app'), {
+              childList: true,
+              subtree: true
+            });
+          });
+        }
+      }
+    };
+  </script>
+  <!-- MathJax for math rendering -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@latest/dist/docsify-mermaid.min.js"></script>
+  <!-- Dark theme -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3.2.0/dist/index.min.js"></script>
+  <!-- Docsify search plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- Docsify print plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-print@1.2.0/dist/docsify-print.min.js"></script>
+  <!-- Docsify zoom image plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-zoom-image/dist/docsify-zoom-image.min.js"></script>
 </body>
+
 </html>
