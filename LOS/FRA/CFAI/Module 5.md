@@ -156,7 +156,7 @@ There are two main types of Free Cash Flow:
 
   * **Indian Context:** Imagine **Asian Paints**. Its strong, predictable CFO allows it to fund its new paint factories (Capital Expenditures). The cash that's left over is its Free Cash Flow. It can use this FCFE to pay dividends to its shareholders or to buy back its own stock.
 
-  * **CFA Exam Tip:** You **must** know the formulas for FCFF and FCFE and the logic behind them. The exam will give you the components from a company's financial statements and ask you to calculate one of these measures. These are high-probability questions.
+  * **<mark>EXAM TIP:</mark>:** You **must** know the formulas for FCFF and FCFE and the logic behind them. The exam will give you the components from a company's financial statements and ask you to calculate one of these measures. These are high-probability questions.
 
 -----
 

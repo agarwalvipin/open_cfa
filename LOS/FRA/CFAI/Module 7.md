@@ -75,7 +75,7 @@ We've touched on this, but this reading goes deeper. The accounting treatment fo
 **Indian Context Example:**
 When **Sun Pharma** acquires another pharmaceutical company, it will record the fair value of the acquired company's drug patents as identifiable intangible assets on its balance sheet. If Sun Pharma spends money internally on research for a new drug, those costs are expensed. However, once the drug enters the development phase (e.g., clinical trials), under IFRS/Ind AS, those costs can be capitalized if future economic benefits are probable.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > The different accounting treatments for purchased vs. internally developed intangibles are critical. An analyst must be aware that a company's balance sheet may not reflect the true value of its internally developed brands or patents because the related costs were expensed. The R&D capitalization difference between IFRS and U.S. GAAP is a recurring exam theme.
 
 ---
@@ -98,7 +98,7 @@ When **Sun Pharma** acquires another pharmaceutical company, it will record the 
 **Indian Context Example:**
 Suppose a telecom company like **Vodafone Idea** has mobile network equipment (PP&E) with a carrying value of ₹100 crore. Due to intense competition and new technology, it determines that the recoverable amount of this equipment is only ₹60 crore. It must record an impairment loss of ₹40 crore, which will reduce its net income and the value of its PP&E on the balance sheet.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > Know the key differences in impairment testing between IFRS and U.S. GAAP (recoverable amount vs. two-step test) and the rule on reversals (allowed under IFRS, prohibited under U.S. GAAP). An impairment loss is a non-cash charge that reduces net income, similar to depreciation.
 
 ---
@@ -121,7 +121,7 @@ Analysts can use this information to calculate metrics that assess the efficienc
 **Indian Context Example:**
 An analyst comparing two airlines, **IndiGo** and **SpiceJet**, would look at the disclosures about their aircraft fleets. By calculating the average age of their fleets, the analyst can infer which airline might need to spend more on new aircraft in the near future. A higher fixed asset turnover for IndiGo would suggest it is generating more revenue per aircraft than SpiceJet, indicating greater operational efficiency.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > Be familiar with the formulas for the asset age ratios. A question might provide the necessary data (accumulated depreciation, depreciation expense, net PP&E) and ask you to calculate the average age or remaining life. Understand that a lower remaining life might imply higher future capex.
 
 ***

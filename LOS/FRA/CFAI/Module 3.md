@@ -117,7 +117,7 @@ These are assets you can't physically touch, but they can be incredibly valuable
 
 <!-- end list -->
 
-  * **CFA Exam Tip:** The different treatments for Research vs. Development costs under IFRS and US GAAP is a classic, high-probability exam topic. Remember: IFRS can capitalize development; US GAAP generally expenses it.
+  * **<mark>EXAM TIP:</mark>:** The different treatments for Research vs. Development costs under IFRS and US GAAP is a classic, high-probability exam topic. Remember: IFRS can capitalize development; US GAAP generally expenses it.
 
 -----
 
@@ -157,7 +157,7 @@ There are two primary ways to measure these assets after they are initially purc
 
   * **Indian Context:** Think of the massive investment portfolio of a bank like **ICICI Bank**. They hold government bonds that they might classify as "held to maturity" (amortized cost). They also have a portfolio of stocks for trading (FVTPL) and another portfolio of strategic bonds they might sell before maturity (FVOCI). An analyst needs to understand these classifications to assess the volatility and quality of the bank's earnings.
 
-  * **CFA Exam Tip:** This is a critical topic. You must know where unrealized gains/losses are reported for each classification. **FVTPL -> Income Statement (Volatile NI)**. **FVOCI -> OCI in Equity (Stable NI)**. This is a very common source of exam questions.
+  * **<mark>EXAM TIP:</mark>:** This is a critical topic. You must know where unrealized gains/losses are reported for each classification. **FVTPL -> Income Statement (Volatile NI)**. **FVOCI -> OCI in Equity (Stable NI)**. This is a very common source of exam questions.
 
 -----
 
@@ -184,7 +184,7 @@ This section covers a company's long-term obligations. We'll focus on one of the
         The difference between these two is the **Deferred Tax Liability**.
       * **Indian Context:** A manufacturing company like **Bharat Forge** might buy a new machine. For its tax filings, it uses accelerated depreciation to lower its current tax bill. For its annual report to investors, it uses straight-line depreciation to show smoother, higher profits. This difference creates a DTL on its balance sheet.
 
-  * **CFA Exam Tip:** Understand that a DTL is created when accounting income > taxable income due to a temporary difference. The classic example is the difference in depreciation methods.
+  * **<mark>EXAM TIP:</mark>:** Understand that a DTL is created when accounting income > taxable income due to a temporary difference. The classic example is the difference in depreciation methods.
 
 -----
 
@@ -217,7 +217,7 @@ Now we apply our analytical tools to the balance sheet.
           * **Debt-to-Equity Ratio** = `Total Debt / Total Shareholders' Equity`. Shows how much debt a company is using to finance its assets relative to equity. A higher ratio means higher risk.
           * **Financial Leverage Ratio** = `Average Total Assets / Average Total Equity`. Shows the extent to which assets are financed by debt.
 
-  * **CFA Exam Tip:** You need to be able to calculate and, more importantly, *interpret* these key ratios. The exam will give you the numbers and ask what a change in a ratio implies about the company's risk or performance.
+  * **<mark>EXAM TIP:</mark>:** You need to be able to calculate and, more importantly, *interpret* these key ratios. The exam will give you the numbers and ask what a change in a ratio implies about the company's risk or performance.
 
 -----
 

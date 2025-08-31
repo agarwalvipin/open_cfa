@@ -91,7 +91,7 @@ The quality of reporting can be seen on a spectrum:
 **Indian Context Example:**
 The case of **Satyam Computer Services** in 2009 is a classic Indian example of the lowest point on the spectrum: fraudulent reporting. The company fabricated revenue and bank balances for years. This was an issue of extremely low **financial reporting quality**. An analyst looking at the fraudulent statements would have been unable to determine the true (and very poor) **quality of the company's actual earnings**.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > Understand the difference between financial reporting quality (about the information) and earnings quality (about the earnings themselves). High-quality reporting is a prerequisite for being able to assess earnings quality.
 
 ---
@@ -113,7 +113,7 @@ The case of **Satyam Computer Services** in 2009 is a classic Indian example of 
     * **Auditors:** Provide independent verification.
     * **Private Contracting:** Lenders and investors can write covenants and other clauses into contracts to protect themselves.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > Be aware of the common motivations for earnings management, especially pressure to meet earnings targets and bonus incentives.
 
 ---
@@ -138,7 +138,7 @@ Analysts can look for several red flags that might indicate low-quality reportin
 **Indian Context Example:**
 An analyst notices that an Indian retail company's **accounts receivable are growing at 30% per year, while its sales are only growing at 10%**. This is a significant warning sign. It could mean the company is extending very liberal credit terms to boost sales, or worse, it might be booking sales that are not genuine. The analyst would then scrutinize the company's cash flow from operations to see if the reported profits are turning into cash.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > The relationship between revenue, accounts receivable, inventory, and CFO is a critical area for exam questions. Be ready to identify warning signs from a set of data. The most common red flags are:
 > * **Receivables growing faster than sales.**
 > * **Net income consistently higher than CFO.**

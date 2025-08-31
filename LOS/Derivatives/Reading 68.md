@@ -51,7 +51,7 @@ Investors (like mutual funds, hedge funds, and insurance companies) use derivati
 * **Hedging a Portfolio:** An investor holding a large portfolio of stocks can buy put options on the Nifty 50 index. This acts like insurance, protecting the portfolio from a market crash while allowing it to benefit from any upside.
 * **Modifying Portfolio Characteristics:** A bond fund manager who thinks interest rates will fall can increase their portfolio's duration (interest rate sensitivity) by entering a swap to receive a fixed rate and pay a floating rate. This will magnify their gains if rates do indeed fall.
 
-> **CFA Exam Tip:** A very common exam question will present a scenario and ask you to identify the primary motivation or the most appropriate derivative strategy. Remember this key distinction: **Issuers hedge business operations risk. Investors modify portfolio risk.**
+> **<mark>EXAM TIP:</mark>:** A very common exam question will present a scenario and ask you to identify the primary motivation or the most appropriate derivative strategy. Remember this key distinction: **Issuers hedge business operations risk. Investors modify portfolio risk.**
 
 
 ***

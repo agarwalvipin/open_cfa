@@ -33,7 +33,7 @@ Where:
   * $p_0$ = price of the European put today
   * $S_0$ = price of the underlying stock today
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 **This is one of the most important formulas in Level 1 Derivatives.** You MUST memorize it and be comfortable with its algebraic rearrangements. It's tested very frequently, both directly and indirectly.
 
 #### Synthetic Equivalents ⛓️
@@ -101,7 +101,7 @@ $$p_0 + F_0(T)(1+R_f)^{-T} = c_0 + X(1+R_f)^{-T}$$
 
 This is the **put-call-forward parity** relationship. It connects the prices of puts and calls to the **forward price** of the underlying, rather than the spot price.
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 This is less common on the exam than standard put-call parity, but it's straightforward. Just remember the key substitution: replace $S_0$ with the present value of the forward price, $F_0(T)(1+R_f)^{-T}$.
 
 -----

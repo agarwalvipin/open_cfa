@@ -79,7 +79,7 @@ When a company buys inventory at different prices over a period, it needs a cost
 **Indian Context Example:**
 **Ind AS (and IFRS) prohibits the use of LIFO.** Therefore, an Indian retailer like **DMart (Avenue Supermarts)** would use either FIFO or the Weighted-Average Cost method. If an analyst wants to compare DMart to a U.S. retailer like **Costco (which uses LIFO)**, they must use the LIFO reserve disclosed by Costco to convert its inventory and COGS figures to a FIFO basis before making a meaningful comparison of profit margins or inventory turnover.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > This is a classic and very important topic. You **must know the impact of LIFO vs. FIFO on financial statements and ratios during periods of rising and falling prices**. The table below summarizes the most common scenario (rising prices):
 >
 > | Item | FIFO | LIFO |
@@ -111,7 +111,7 @@ Inventory cannot be carried on the balance sheet at an amount greater than its r
 **Indian Context Example:**
 A fashion retailer like **Trent (Westside)** might find that a line of clothing from the winter season is out of style by the time spring arrives. The cost of this clothing might be ₹1 crore, but they estimate they can only sell it for ₹60 lakh after marketing costs. They must write down the inventory by ₹40 lakh, which increases their COGS and lowers their profit for the period. If, under IFRS/Ind AS, there is an unexpected surge in demand for that style later, they could reverse the write-down.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > The difference in the treatment of write-down reversals between IFRS (allowed) and U.S. GAAP (prohibited) is a key testable point. Also, be aware of the impact of a write-down on ratios - it makes profitability look worse but can make inventory turnover look deceptively better.
 
 ---
@@ -133,7 +133,7 @@ Analysts use several ratios to evaluate how efficiently a company is managing it
 **Indian Context Example:**
 An analyst looking at **Maruti Suzuki's** annual report would analyze the breakdown of its inventory between raw materials (steel, components), work-in-progress (cars on the assembly line), and finished goods (cars ready for sale). A buildup in finished goods inventory relative to sales could be a red flag, suggesting that production is outpacing demand, which might lead to future price cuts and lower margins. They would compare Maruti's DOH to that of competitors like Tata Motors to gauge relative efficiency.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > Be ready to calculate Inventory Turnover and DOH. The formulas are key. Also, be able to interpret what these ratios signify. For example, a declining inventory turnover (and rising DOH) can be a sign of obsolete inventory or slowing sales.
 
 ***

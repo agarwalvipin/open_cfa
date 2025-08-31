@@ -78,7 +78,7 @@ For a **finance lease** (under both standards), the principal portion of the lea
 **Indian Context Example:**
 Most Indian retailers, like **Shoppers Stop**, do not own their store locations; they lease them. Under Ind AS (based on IFRS), for each store lease, Shoppers Stop must record a Right-of-Use Asset and a Lease Liability on its balance sheet. On its income statement, it will show depreciation on the ROU asset and interest expense on the liability. This increases assets, liabilities, and makes metrics like EBITDA appear higher (since depreciation and interest are excluded).
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > The most important takeaway is the impact of lease accounting on financial statements. For a lessee, putting leases on the balance sheet increases assets and liabilities. The IFRS vs. U.S. GAAP difference in income statement presentation for an operating lease is a key testable point. Under U.S. GAAP, an operating lease results in a single lease expense, which is an operating expense. Under IFRS, it results in depreciation and interest expense, which are often classified below operating profit. This means **EBITDA will be higher under IFRS than under U.S. GAAP for an identical operating lease.**
 
 ---
@@ -108,7 +108,7 @@ This is compensation given to employees in the form of equity, like stock grants
 * Many large, established Indian companies like **State Bank of India (SBI)** have **defined benefit pension plans** for their long-serving employees, resulting in significant pension liabilities on their balance sheets.
 * Indian tech companies like **Infosys** and startups extensively use **Employee Stock Options (ESOPs)**. Infosys must estimate the fair value of the ESOPs it grants each year and recognize this amount as a compensation expense on its income statement over the years the options vest.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > For pensions, understand the difference between Defined Contribution (simple accounting, employee bears risk) and Defined Benefit (complex accounting, employer bears risk). Know that the **funded status** of a DB plan is reported on the balance sheet. For share-based compensation, remember that it is a **non-cash expense** based on the **fair value at the grant date**, and it's allocated over the **vesting period**.
 
 ***

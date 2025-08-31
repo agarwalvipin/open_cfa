@@ -37,7 +37,7 @@ $$\frac{F_0(T)}{1.07} = S_0 = ₹3,000$$
 Solving for the no-arbitrage forward price:
 $$F_0(T) = ₹3,000 \times (1.07) = ₹3,210$$
 
-> **CFA Exam Tip:** This is a cornerstone formula. For an underlying asset with no costs or benefits of holding, the no-arbitrage forward price is simply the spot price compounded at the risk-free rate.
+> **<mark>EXAM TIP:</mark>:** This is a cornerstone formula. For an underlying asset with no costs or benefits of holding, the no-arbitrage forward price is simply the spot price compounded at the risk-free rate.
 > $$F_0(T) = S_0(1 + R_f)^T$$
 > **Memorize this relationship.** It's built on the idea that you should be indifferent between buying the asset today and holding it, or agreeing to buy it in the future and investing the money risk-free in the meantime.
 
@@ -76,7 +76,7 @@ $$F_0(T) = (₹3,000 - ₹28.99) \times (1.07)^1 = ₹2,971.01 \times 1.07 \appr
 
 Notice the forward price is lower than the ₹3,210 we calculated earlier because the benefit of the dividend makes it cheaper to carry the asset.
 
-> **CFA Exam Tip:** Understand the intuition behind the cost of carry model. Don't just memorize the formula. **Costs of holding the asset increase the forward price, while benefits of holding it decrease the forward price.** This is a very testable concept. The exam might ask you to identify which factor would increase or decrease a forward price.
+> **<mark>EXAM TIP:</mark>:** Understand the intuition behind the cost of carry model. Don't just memorize the formula. **Costs of holding the asset increase the forward price, while benefits of holding it decrease the forward price.** This is a very testable concept. The exam might ask you to identify which factor would increase or decrease a forward price.
 
 Excellent. Here are the final takeaways for Reading 69.
 

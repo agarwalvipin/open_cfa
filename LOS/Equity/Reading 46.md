@@ -28,7 +28,7 @@ Imagine it's early 2024, and **Tata Motors** is trading at ₹900 per share. As 
 
 Since your estimated value is higher than the market price, you would conclude that Tata Motors is **undervalued** and recommend a **Buy**.
 
-> **⭐ CFA Exam Tip:** Valuation is as much an art as it is a science. Your inputs (like growth rates) are estimates, and small changes can significantly alter the final value. The exam will test your ability to apply the models and interpret the output. Always be clear about the relationship: if your calculated value is greater than the market price, it's a buy (undervalued).
+> **⭐ <mark>EXAM TIP:</mark>:** Valuation is as much an art as it is a science. Your inputs (like growth rates) are estimates, and small changes can significantly alter the final value. The exam will test your ability to apply the models and interpret the output. Always be clear about the relationship: if your calculated value is greater than the market price, it's a buy (undervalued).
 
 -----
 
@@ -83,7 +83,7 @@ This is a critical and frequently tested concept.
   * **Holder-of-Record Date:** The company checks its records to see who the official shareholders are on this date. If you're on the list, you get paid. This is typically one or two business days after the ex-dividend date.
   * **Payment Date:** The day the dividend is actually paid to shareholders.
 
-> **⭐ CFA Exam Tip:** The relationship between the **ex-dividend date** and the **record date** is crucial. The market enforces the ex-date rule. If you buy on the ex-date, the seller's name is still on the records on the record date, so the seller gets the dividend. That's why the stock price drops on the ex-date—the share is now worth less because it no longer carries the right to that specific upcoming dividend.
+> **⭐ <mark>EXAM TIP:</mark>:** The relationship between the **ex-dividend date** and the **record date** is crucial. The market enforces the ex-date rule. If you buy on the ex-date, the seller's name is still on the records on the record date, so the seller gets the dividend. That's why the stock price drops on the ex-date—the share is now worth less because it no longer carries the right to that specific upcoming dividend.
 
 -----
 
@@ -119,7 +119,7 @@ The valuation model is similar, just substituting FCFE for Dividends:
 
 $$V_0 = \sum_{t=1}^{\infty} \frac{\text{FCFE}_t}{(1+k_e)^t} \text{ }$$
 
-> **⭐ CFA Exam Tip:** For Level 1, you must understand the *rationale* for both DDM and FCFE.
+> **⭐ <mark>EXAM TIP:</mark>:** For Level 1, you must understand the *rationale* for both DDM and FCFE.
 > \* **DDM** is best for mature, profitable companies with a stable history of dividend payments (e.g., **ITC, Coal India, Power Grid Corp**).
 > \* **FCFE** is more flexible and can be used for companies that don't pay dividends or have an unpredictable dividend policy (e.g., most tech startups, high-growth companies).
 
@@ -168,7 +168,7 @@ Where:
   * $k_e$ = Required rate of return on equity
   * $g$ = The constant, perpetual dividend growth rate
 
-> **⚠️ VERY IMPORTANT CFA Exam Tip:** This formula is tested heavily. Pay close attention to whether the question gives you $D_0$ (the dividend *just paid*) or $D_1$ (the dividend *expected next year*), 2767].
+> **⚠️ VERY IMPORTANT <mark>EXAM TIP:</mark>:** This formula is tested heavily. Pay close attention to whether the question gives you $D_0$ (the dividend *just paid*) or $D_1$ (the dividend *expected next year*), 2767].
 >
 >   * If you are given $D_0$, you **must** calculate $D_1$ first: $D_1 = D_0 \times (1+g)$.
 >     \* The model also has two key assumptions: the growth rate '$g$' is constant forever, and **$k_e$ must be greater than $g$** for the formula to work.
@@ -216,7 +216,7 @@ A common version is the **Two-Stage DDM**. Here's the process:
 4.  **Discount** the terminal value back to the present.
 5.  **Sum** the present values from steps 2 and 4 to get the intrinsic value of the stock.
 
-> **⭐ CFA Exam Tip:** This looks complex, but it's just a multi-step time value of money problem. Draw a timeline on your scrap paper during the exam to keep track of the cash flows. The most common mistake is forgetting to discount the terminal value back to today.
+> **⭐ <mark>EXAM TIP:</mark>:** This looks complex, but it's just a multi-step time value of money problem. Draw a timeline on your scrap paper during the exam to keep track of the cash flows. The most common mistake is forgetting to discount the terminal value back to today.
 
 -----
 
@@ -253,7 +253,7 @@ This powerful formula shows that a company's P/E ratio is determined by three fu
 2.  **Higher Growth Rate (g)** $\\rightarrow$ Higher P/E
 3.  **Lower Required Return ($k_e$)** (i.e., lower risk) $\\rightarrow$ Higher P/E
 
-> **⭐ CFA Exam Tip:** This is a crucial concept. The exam will test you on *why* one company deserves a higher multiple than another. The answer will always lie in its fundamentals: higher expected growth, a better payout policy, or lower perceived risk.
+> **⭐ <mark>EXAM TIP:</mark>:** This is a crucial concept. The exam will test you on *why* one company deserves a higher multiple than another. The answer will always lie in its fundamentals: higher expected growth, a better payout policy, or lower perceived risk.
 
 -----
 
@@ -289,7 +289,7 @@ The most common EV multiple is **EV/EBITDA**.
 
   * **Why EBITDA?** Because EV represents the value to *all* capital providers, the denominator should be a flow available to all providers. EBITDA is perfect because it's earnings *before* interest and taxes.
 
-> **⭐ CFA Exam Tip:** EV multiples are excellent for comparing companies with different capital structures or tax rates. They provide a more "apples-to-apples" comparison of the underlying business's valuation.
+> **⭐ <mark>EXAM TIP:</mark>:** EV multiples are excellent for comparing companies with different capital structures or tax rates. They provide a more "apples-to-apples" comparison of the underlying business's valuation.
 
 -----
 

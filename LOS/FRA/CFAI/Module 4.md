@@ -148,7 +148,7 @@ This is a **critical** area for the exam. The choice of method *only* affects th
           * Cash paid for interest & taxes
       * **Why it's better for analysts but rarely used:** It gives more insight into the company's cash-generating ability. However, companies don't have to provide it, and the indirect method is easier to prepare from existing accounting records.
 
-  * **CFA Exam Tip:** You **must** be able to calculate CFO using the indirect method. A typical exam question will give you a Net Income figure and a list of changes in balance sheet accounts and ask you to compute CFO. Master the rules for adjusting for working capital changes.
+  * **<mark>EXAM TIP:</mark>:** You **must** be able to calculate CFO using the indirect method. A typical exam question will give you a Net Income figure and a list of changes in balance sheet accounts and ask you to compute CFO. Master the rules for adjusting for working capital changes.
 
 -----
 
@@ -180,7 +180,7 @@ Here are the key formulas to calculate the major components of a direct method C
         2.  Add the increase in inventory (you must have bought more than you sold, which is a cash use).
         3.  Subtract the increase in accounts payable (you didn't pay cash for all your purchases, which is a cash source).
 
-  * **CFA Exam Tip:** You are unlikely to be asked to do a full conversion on the exam, but you could very well be asked to calculate a single component, especially "Cash Collected from Customers" or "Cash Paid to Suppliers". Memorize these two formulas.
+  * **<mark>EXAM TIP:</mark>:** You are unlikely to be asked to do a full conversion on the exam, but you could very well be asked to calculate a single component, especially "Cash Collected from Customers" or "Cash Paid to Suppliers". Memorize these two formulas.
 
 -----
 
@@ -210,7 +210,7 @@ This table is one of the most important things to memorize for the SCF section o
 
   * **Taxes:** Under US GAAP, taxes paid are always CFO. Under IFRS, they are generally CFO, but can be allocated between CFO, CFI, and CFF if the tax can be directly tied to an investing or financing activity (e.g., tax paid on the gain from selling a factory).
 
-  * **CFA Exam Tip:** You will almost certainly get a question on this. They will describe a company reporting under IFRS that classified, for example, dividends paid as CFF, and ask what the impact on CFO would have been if they reported under US GAAP (in this case, CFO would be the same, since US GAAP also classifies dividends paid as CFF). They could also ask the reverse. Know this table inside and out.
+  * **<mark>EXAM TIP:</mark>:** You will almost certainly get a question on this. They will describe a company reporting under IFRS that classified, for example, dividends paid as CFF, and ask what the impact on CFO would have been if they reported under US GAAP (in this case, CFO would be the same, since US GAAP also classifies dividends paid as CFF). They could also ask the reverse. Know this table inside and out.
 
 -----
 

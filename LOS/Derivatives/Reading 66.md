@@ -46,7 +46,7 @@ These are private contracts negotiated directly between two parties, away from a
 * **Counterparty Risk:** This is the primary risk. Because it's a private deal, you are exposed to the risk that your counterparty might go bankrupt and be unable to fulfill their side of the agreement.
 * **Less Transparent & Liquid:** The terms of the deal are private, and it can be difficult to exit or transfer the contract to someone else.
 
-> **CFA Exam Tip:** This comparison between ETD and OTC markets is a very common exam topic. Know the trade-offs: ETDs offer security and liquidity at the cost of flexibility. OTC markets offer flexibility at the cost of higher counterparty risk and lower liquidity.
+> **<mark>EXAM TIP:</mark>:** This comparison between ETD and OTC markets is a very common exam topic. Know the trade-offs: ETDs offer security and liquidity at the cost of flexibility. OTC markets offer flexibility at the cost of higher counterparty risk and lower liquidity.
 
 
 ***

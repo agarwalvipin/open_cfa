@@ -47,7 +47,7 @@ Interest rate futures, like those based on the Mumbai Interbank Offered Rate (MI
   * **Price Quotation:** The price is quoted as `100 - Annualized Interest Rate (%)`. A price of 96.50 implies an interest rate of $100 - 96.50 = 3.50%$.
   * **Basis Point Value (BPV):** This is a critical concept that measures the change in a contract's value for a one-basis-point (0.01%) change in the interest rate. It quantifies the contract's sensitivity.
 
-> **💡 Exam Tip:** Remember the inverse relationship for interest rate futures: as interest rates go **up** 📈, the futures price goes **down** 📉, and vice-versa.
+> **💡 <mark>EXAM TIP:</mark>:** Remember the inverse relationship for interest rate futures: as interest rates go **up** 📈, the futures price goes **down** 📉, and vice-versa.
 
 -----
 

@@ -103,7 +103,7 @@ Imagine you are an equity analyst at HDFC Securities, and your manager asks you 
 * **Phase 2 (Data Collection):** You download TCS's annual reports from their website, their filings from the SEBI (Securities and Exchange Board of India) website, listen to their quarterly investor calls, and gather industry reports on the Indian IT sector from NASSCOM.
 * **Phase 3-6:** You would then process this data (calculating ratios like net profit margin), analyze it (comparing TCS's margin trends to Infosys's), communicate your findings in a research report, and update it every quarter when new results are released.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > For the exam, **memorize the six steps of the framework in order**. You are more likely to be tested on the sequence of the steps or the activities performed in a specific step rather than minute details. For instance, a question might ask, "In which phase of the financial statement analysis framework would an analyst calculate financial ratios?" The answer is "Process Data."
 
 ---
@@ -134,7 +134,7 @@ An analyst covering **Reliance Industries Ltd. (RIL)** would use these sources:
 * **Auditor's Report:** The auditor's report for RIL would be checked to ensure it's an unqualified opinion. Any "Key Audit Matters" highlighted by the auditor would be examined closely. For example, the auditor might discuss the complexity of valuing RIL's massive oil and gas assets.
 * **MD&A:** This section in RIL's annual report would offer insights into the performance of its different segments like O2C (Oil to Chemicals), Retail, and Digital Services (Jio).
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > * Know the different types of audit opinions. An **unqualified opinion is the most desirable**.
 > * Understand that the **MD&A is not audited** and can contain management's biased perspective.
 > * Remember that financial statement **notes are a required and integral part** of the financial statements. Questions often test on where you would find specific information (e.g., information on accounting policies is found in the notes).
@@ -158,7 +158,7 @@ While there is a push for global convergence, there are still differences betwee
 **Indian Context Example:**
 Indian companies use **Ind AS (Indian Accounting Standards)**, which are largely converged with IFRS. So, an analyst comparing **Infosys (which reports under Ind AS/IFRS)** with a U.S.-based competitor like **Accenture (which reports under U.S. GAAP)** needs to be mindful of these differences. For instance, if Accenture uses LIFO for any part of its inventory (unlikely for a service firm, but a good example), its reported profit margins might not be directly comparable to Infosys's during periods of changing costs.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > The differences between IFRS and U.S. GAAP are a **highly testable topic**. The prohibition of LIFO under IFRS is a classic exam question. Also, remember the differences in how impairment loss reversals and development costs are treated.
 
 ***

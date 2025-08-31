@@ -27,7 +27,7 @@ Let's look at some real-world applications in the Indian context:
 
   * **Aggressive vs. Conservative Recognition:** Be wary of companies that recognize revenue too aggressively. For example, a company might ship goods to a distributor at the end of a quarter and recognize revenue, even if the distributor has the right to return the goods. This is a red flag.
   * **Disclosures are Key:** Always read the revenue recognition policy in the notes to the financial statements. It provides crucial details about the company's accounting choices.
-  * **Exam Tip:** The CFA exam will likely test your understanding of the five-step model and its application to different scenarios. Be prepared to identify the correct timing of revenue recognition. The distinction between recognizing revenue at a point in time versus over time is a common exam topic.
+  * **<mark>EXAM TIP:</mark>:** The CFA exam will likely test your understanding of the five-step model and its application to different scenarios. Be prepared to identify the correct timing of revenue recognition. The distinction between recognizing revenue at a point in time versus over time is a common exam topic.
 
 -----
 
@@ -67,7 +67,7 @@ This is a critical concept.
 ### **Implications for Financial Analysis & Exam Tips**
 
   * **Comparability:** Companies in the same industry may have different capitalization policies. An analyst must be aware of these differences to make meaningful comparisons. For instance, some software companies might capitalize development costs while others expense them, leading to different reported profits and asset bases.
-  * **Exam Tip:** The exam loves to test the impact of capitalizing vs. expensing on financial statements and ratios. Be sure to memorize the table above. You should be able to state, for example, that capitalizing a cost leads to higher net income in the first year but lower net income in subsequent years compared to expensing.
+  * **<mark>EXAM TIP:</mark>:** The exam loves to test the impact of capitalizing vs. expensing on financial statements and ratios. Be sure to memorize the table above. You should be able to state, for example, that capitalizing a cost leads to higher net income in the first year but lower net income in subsequent years compared to expensing.
 
 -----
 
@@ -89,7 +89,7 @@ These are items that are not expected to occur regularly. They are important for
 ### **Implications for Financial Analysis & Exam Tips**
 
   * **"Below-the-line" vs. "Above-the-line":** Discontinued operations are reported "below the line" (i.e., after income from continuing operations). Unusual or infrequent items are "above the line."
-  * **Exam Tip:** The distinction between retrospective and prospective application is a key exam topic. Remember: changes in principle are retrospective, while changes in estimate are prospective.
+  * **<mark>EXAM TIP:</mark>:** The distinction between retrospective and prospective application is a key exam topic. Remember: changes in principle are retrospective, while changes in estimate are prospective.
 
 -----
 
@@ -124,7 +124,7 @@ This is calculated for companies with a **complex capital structure** (i.e., wit
 ### **Implications for Financial Analysis & Exam Tips**
 
   * **Diluted EPS is More Conservative:** For companies with complex capital structures, diluted EPS is a more conservative measure of profitability than basic EPS.
-  * **Exam Tip:** The CFA exam will definitely have questions on calculating basic and diluted EPS. You need to be comfortable with the formulas and the treasury stock method. Remember to check if securities are dilutive or antidilutive before including them in the calculation.
+  * **<mark>EXAM TIP:</mark>:** The CFA exam will definitely have questions on calculating basic and diluted EPS. You need to be comfortable with the formulas and the treasury stock method. Remember to check if securities are dilutive or antidilutive before including them in the calculation.
 
 -----
 
@@ -148,7 +148,7 @@ For example, by looking at the common-size income statement of **Maruti Suzuki**
 ### **Implications for Financial Analysis & Exam Tips**
 
   * **Drill Down:** If a company's net profit margin is declining, a common-size income statement can help you pinpoint the reason. Is it due to a lower gross margin, higher operating expenses, or a higher tax rate?
-  * **Exam Tip:** Be prepared to calculate and interpret common-size statements and the key profitability ratios. The exam will likely ask you to compare two companies or analyze a company's performance over time using these tools.
+  * **<mark>EXAM TIP:</mark>:** Be prepared to calculate and interpret common-size statements and the key profitability ratios. The exam will likely ask you to compare two companies or analyze a company's performance over time using these tools.
 
 -----
 

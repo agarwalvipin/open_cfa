@@ -76,7 +76,7 @@ flowchart TD
     E --> E3["Diluted EPS"]
     E3 --> E31["Assume Conversion of Dilutive Securities"]
     E3 --> E32["Antidilutive Securities: Excluded"]
-    E --> E4["CFA Exam Tip: Diluted EPS ≤ Basic EPS"]
+    E --> E4["<mark>EXAM TIP:</mark>: Diluted EPS ≤ Basic EPS"]
 
     classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
     class E,E1,E11,E12,E2,E21,E3,E31,E32,E4 detailNode
@@ -136,7 +136,7 @@ Revenue is the lifeblood of a company. How and when a company reports this reven
           * When a third-party seller uses Flipkart's platform to sell the same phone for ₹10,000, Flipkart is the **agent**. It might earn a 15% commission (₹1,500). Flipkart records only ₹1,500 as revenue, not the full ₹10,000.
       * **Implications:** An agent has lower revenue but a much higher profit margin percentage. An analyst must understand the mix of principal vs. agent sales to forecast margins correctly.
 
-  * **CFA Exam Tip:** You must know the 5 steps in the revenue recognition model. Questions will test your conceptual understanding, not just rote memorization. They might describe a scenario and ask you when revenue should be recognized.
+  * **<mark>EXAM TIP:</mark>:** You must know the 5 steps in the revenue recognition model. Questions will test your conceptual understanding, not just rote memorization. They might describe a scenario and ask you when revenue should be recognized.
 
 -----
 
@@ -167,7 +167,7 @@ Just as important as recognizing revenue is recognizing the costs incurred to ge
       * **Capitalizing:** Leads to **higher** profits, **higher** assets, and **higher** equity in the current period. Cash Flow from Operations (CFO) is also higher because the cash paid is classified as a Cash Flow from Investing (CFI) outflow. However, future profits will be lower due to ongoing depreciation expense.
       * **Expensing:** Leads to **lower** profits, **lower** assets, and **lower** equity in the current period. CFO is lower. However, future profits will be higher as there is no future depreciation.
 
-  * **CFA Exam Tip:** Exam questions frequently ask you to compare two companies based on their accounting choices. A company that capitalizes aggressively will appear more profitable and have a stronger balance sheet (e.g., lower debt-to-assets ratio) in the short run than a company that expenses costs. You need to be able to identify and analyze the impact of these choices.
+  * **<mark>EXAM TIP:</mark>:** Exam questions frequently ask you to compare two companies based on their accounting choices. A company that capitalizes aggressively will appear more profitable and have a stronger balance sheet (e.g., lower debt-to-assets ratio) in the short run than a company that expenses costs. You need to be able to identify and analyze the impact of these choices.
 
 -----
 
@@ -226,7 +226,7 @@ EPS is probably the single most-watched number for a public company. It represen
       * **Concept:** It calculates EPS as if all dilutive securities were exercised or converted into common shares.  By definition, **Diluted EPS ≤ Basic EPS**.
       * **Antidilutive Securities:** If the conversion of a security would *increase* EPS (e.g., if the interest saved on converting a bond is higher than the EPS dilution), that security is "antidilutive" and is ignored in the calculation of Diluted EPS. 
 
-  * **CFA Exam Tip:** You must know the Basic EPS formula. For Diluted EPS, the exam is more likely to test your conceptual understanding (what it represents, which securities are dilutive, the effect on the numerator/denominator) than complex calculations. For example, converting a bond adds the after-tax interest expense back to the numerator and adds the new shares to the denominator.
+  * **<mark>EXAM TIP:</mark>:** You must know the Basic EPS formula. For Diluted EPS, the exam is more likely to test your conceptual understanding (what it represents, which securities are dilutive, the effect on the numerator/denominator) than complex calculations. For example, converting a bond adds the after-tax interest expense back to the numerator and adds the new shares to the denominator.
 
 -----
 

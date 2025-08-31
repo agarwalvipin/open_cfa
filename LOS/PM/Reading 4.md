@@ -78,7 +78,7 @@ Defining mix of asset classes (equity, debt, real estate, gold, cash) based on t
   - 20% in gold (SGB, Gold ETFs),  
   - 20% in PPF/FDs/bonds.
 
-**Exam Tip:**
+**<mark>EXAM TIP:</mark>:**
 You will see MCQs with pie charts or percentage allocations — practice constructing these based on a given scenario.
 
 ---

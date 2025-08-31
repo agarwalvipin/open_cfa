@@ -52,7 +52,7 @@ The formula that ties everything together is:
 $$\text{Option Premium} = \text{Exercise Value} + \text{Time Value}$$
 At expiration, there is no time left, so the **time value is zero**. The option's price becomes equal to its exercise value.
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 For the CFA Level 1 exam, you must be able to instantly identify an option's moneyness and calculate its exercise value and time value from its premium. This is a foundational concept that gets tested frequently.
 
 -----
@@ -79,7 +79,7 @@ These boundaries define the "rules" for option prices. If an option's price fall
   * A put option gives you the right to sell a stock for price X. Even if the stock price drops to zero, the most you can get is X, and you only get it at expiration. So, its value can **never exceed the present value of the exercise price**.
   * The lower bounds ensure that the option is worth at least its exercise value, after accounting for the time value of money on the exercise price.
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 You are unlikely to be asked to derive these bounds on the exam. However, you should **memorize the formulas for the bounds** and understand the logic behind them. A common question might test whether you can identify if an option is mispriced based on these rules.
 
 -----
@@ -102,7 +102,7 @@ Six primary factors influence the price of an option. Understanding their impact
 **Indian Context Example (Volatility):**
 Think about options on Infosys (INFY) versus options on Adani Enterprises (ADANIENT). Historically, Adani stocks have shown higher volatility. Therefore, all else being equal, an option on ADANIENT would be more expensive than a similar option on INFY because there's a greater perceived chance of a large price swing.
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 **This table is pure gold for the exam.** Questions asking "what happens to a call/put value if X increases?" are extremely common. Memorize this table and the logic behind each relationship. The effect of volatility is a particularly important and frequently tested concept.
 
 -----

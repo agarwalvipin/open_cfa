@@ -25,7 +25,7 @@
 > _Example (India):_  
 Suppose from 2004–2024, Nifty 50 gave a **historical return** of about 12% p.a. You are now investing in 2025, but your **expected return** may be 9%-10% due to current interest rates and government policy.
 
-**Exam Tip:**  
+**<mark>EXAM TIP:</mark>:**  
 CFA may test both how to calculate historical returns (using past data) and how to conceptually distinguish from expected returns. You must know that past returns do not guarantee future results.
 
 ---
@@ -72,7 +72,7 @@ To compute **historical mean return**:
 ]  
 Where \(R_i\) = return in year \(i\), \(n\) = number of years.
 
-**Exam Tip:**  
+**<mark>EXAM TIP:</mark>:**  
 You may be asked to calculate variance, standard deviation or mean using return data series (practice doing this quickly without a calculator).
 
 ---
@@ -106,7 +106,7 @@ Indian equity returns occasionally show “fat tails”—extreme moves (e.g., 2
 > _Example:_  
 Trading penny stocks in India may expose you to wider “bid-ask spreads.”
 
-**Exam Tip:**  
+**<mark>EXAM TIP:</mark>:**  
 Remember that non-normality (skewness, kurtosis) increases true risk; liquidity matters especially for large transactions.
 
 ---
@@ -136,7 +136,7 @@ Where \(U\): utility, \(E(r)\): expected return, \(A\): risk aversion coefficien
 > _Example (India):_  
 Someone might demand a 5% higher return than FD to consider even investing in an equity NFO.
 
-**Exam Tip:**  
+**<mark>EXAM TIP:</mark>:**  
 Be able to sketch or identify which indifference curves suit risk-averse, risk-neutral, and risk-seeking investors; and relate utility formula to risk attitudes.
 
 ---

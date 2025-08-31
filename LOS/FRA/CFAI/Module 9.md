@@ -86,7 +86,7 @@ Temporary differences give rise to deferred tax items on the balance sheet.
 **Indian Context Example:**
 Suppose an Indian company, **Mahindra & Mahindra**, buys a new factory machine. For its tax filings, it uses an accelerated depreciation method allowed by the Indian Income Tax Act to get a larger tax deduction upfront. For its annual report to shareholders, it uses the straight-line method over the machine's useful life. In the early years, the tax deduction will be greater than the accounting depreciation expense. This temporary difference creates a **Deferred Tax Liability** on Mahindra's balance sheet.
 
-> **CFA Exam Tip:**
+> **<mark>EXAM TIP:</mark>:**
 > This is a conceptually challenging topic. Focus on the core drivers.
 > * **DTL:** Pay less tax now, pay more later. Often caused by `Carrying Amount of Asset > Tax Base`.
 > * **DTA:** Pay more tax now, pay less later. Often caused by `Carrying Amount of Asset < Tax Base`.

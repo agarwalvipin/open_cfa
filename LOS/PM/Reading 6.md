@@ -24,7 +24,7 @@ Risk management is the practice of identifying, assessing, and addressing all ty
 #### *Indian Example*:  
 A mutual fund in Mumbai assesses portfolio exposure to USD/INR currency movements if it invests internationally.
 
-#### *Exam Tip*:  
+#### *<mark>EXAM TIP:</mark>*:  
 Process order is frequently tested. Don’t mix up risk *identification* with risk *assessment*.
 
 ---

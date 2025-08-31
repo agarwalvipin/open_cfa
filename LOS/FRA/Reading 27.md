@@ -9,7 +9,7 @@ This reading is your entry point into the world of analyzing companies. Think of
 
 This LOS is about the structured process that analysts follow to ensure their analysis is thorough, logical, and repeatable. It's a six-step process.
 
-**CFA Exam Tip:** The exam frequently tests the *order* of these steps. Memorize them and understand what each step entails.
+**<mark>EXAM TIP:</mark>:** The exam frequently tests the *order* of these steps. Memorize them and understand what each step entails.
 
 **The 6-Step Framework:**
 
@@ -31,7 +31,7 @@ This LOS is about the structured process that analysts follow to ensure their an
 
 5.  **Report the Conclusions and Recommendations:**
     * **Explanation:** Your analysis is only useful if it's communicated effectively. This step involves preparing a report or presentation that summarizes your findings and provides a clear recommendation (e.g., buy/sell/hold, approve loan). The report must be well-supported by the data and analysis.
-    * **CFA Exam Tip:** A good analytical report is unbiased and objective. It clearly distinguishes between facts and opinions. This is a core part of the CFA Institute Code of Ethics and Standards of Professional Conduct.
+    * **<mark>EXAM TIP:</mark>:** A good analytical report is unbiased and objective. It clearly distinguishes between facts and opinions. This is a core part of the CFA Institute Code of Ethics and Standards of Professional Conduct.
 
 6.  **Update the Analysis:**
     * **Explanation:** The world doesn't stand still. Companies release new information (like quarterly earnings), industry dynamics change, and economic conditions evolve. This step involves periodically reviewing and updating your analysis to ensure it remains relevant.
@@ -54,7 +54,7 @@ Financial statement analysis isn't just for one type of professional. It's a ver
 
 The three main financial statements are just the tip of the iceberg. The real story is often in the surrounding documents.
 
-**CFA Exam Tip:** This is a **highly testable** area. Know the purpose of each of these components, especially the auditor's report and the notes to financial statements.
+**<mark>EXAM TIP:</mark>:** This is a **highly testable** area. Know the purpose of each of these components, especially the auditor's report and the notes to financial statements.
 
 * **Regulatory Filings (e.g., Annual/Quarterly Reports):**
     * **Importance:** These are the official, audited documents that companies are legally required to file. They provide the most comprehensive and reliable information.
@@ -66,7 +66,7 @@ The three main financial statements are just the tip of the iceberg. The real st
 
 * **Management's Commentary (or Management's Discussion & Analysis - MD&A):**
     * **Importance:** This is the narrative part of the report where management tells their side of the story. They discuss the company's performance, key trends, future outlook, and risks.
-    * **CFA Exam Tip:** Be critical when reading the MD&A. It is **unaudited** and can be biased. Management will naturally want to present the company in the best possible light. Look for a discussion that is candid about both positive and negative factors. A good MD&A provides insight into management's strategy and thinking.
+    * **<mark>EXAM TIP:</mark>:** Be critical when reading the MD&A. It is **unaudited** and can be biased. Management will naturally want to present the company in the best possible light. Look for a discussion that is candid about both positive and negative factors. A good MD&A provides insight into management's strategy and thinking.
 
 * **Audit Reports:**
     * **Importance:** The audit report is an independent opinion on the fairness and reliability of the financial statements. It's provided by an external auditor (a Chartered Accountant firm).
@@ -85,7 +85,7 @@ Accounting is not a single global language; it has different dialects.
     * **IFRS (International Financial Reporting Standards):** Used by more than 140 countries, including the European Union, Australia, and Canada. India has adopted **Ind AS**, which is largely converged with IFRS. IFRS is considered more **principles-based**, meaning it provides general guidelines and requires more professional judgment.
     * **US GAAP (Generally Accepted Accounting Principles):** Used primarily by companies in the United States. It is considered more **rules-based**, providing very specific rules for how to account for transactions.
     * **Implications for Analysts:** You cannot directly compare a company using IFRS with a company using US GAAP without making adjustments. For example, the treatment of R&D costs or inventory valuation can be different, affecting reported profit and assets.
-    * **CFA Exam Tip:** You don't need to be an expert on all the differences, but you **must** know that these differences exist and that IFRS is principles-based while US GAAP is rules-based.
+    * **<mark>EXAM TIP:</mark>:** You don't need to be an expert on all the differences, but you **must** know that these differences exist and that IFRS is principles-based while US GAAP is rules-based.
 
 * **Monitoring Developments:**
     * **Importance:** Accounting standards are always evolving. The bodies that set them (**IASB** for IFRS and **FASB** for US GAAP) constantly issue new standards. These changes can have a major impact on a company's reported financials.

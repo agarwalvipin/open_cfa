@@ -61,7 +61,7 @@ The initial cost of setting up the portfolio was $V_0 = hS_0 - c_0$. We can now 
 $$330.88 = (0.4412 \times 850) - c_0$$$$330.88 = 375.02 - c_0$$$$c_0 = 375.02 - 330.88 = \text{₹14.14}$$
 The no-arbitrage price of the call option today is **₹14.14**.
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 The exam will likely test your understanding of the process rather than just formula memorization. Practice the 5 steps: (1) Find Payoffs, (2) Find Hedge Ratio, (3) Find Portfolio Future Value, (4) Find Portfolio Present Value, (5) Solve for Option Price.
 
 -----
@@ -114,7 +114,7 @@ The no-arbitrage price of the call option today is **₹44.14**.
 
 The two methods now produce the same result (slight rounding difference). This is a critical insight: **both the hedging method and the risk-neutral probability method are built on the same no-arbitrage foundation and will always give the same answer.**
 
-**Exam Tip 📝**
+**<mark>EXAM TIP:</mark> 📝**
 The risk-neutral method is often faster for calculations on the exam. The key is understanding *why* you can discount at the risk-free rate. It's because the probabilities are specifically calibrated to remove any risk premium, making the risk-free rate the appropriate discount rate for the expected payoff.
 
 -----

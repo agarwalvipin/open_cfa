@@ -1,7 +1,4 @@
 ### Reading 28 – **Analyzing Income Statements**
-
-*(CFA Level I, 2025 curriculum – Kaplan Schweser Book 2)*&#x20;
-
 ---
 
 ## LOS 28.a Revenue recognition

@@ -189,7 +189,7 @@ A **contingent claim** is a contract where the payoff is *contingent* on a futur
       * **Options** (Calls and Puts)
       * **Credit Derivatives** (like a CDS, which only pays out *if* a default event occurs) 
 
-**Exam Tip:** The easiest way to distinguish them is to ask: "Does a party have a choice to act?" If yes, it's a contingent claim. If no (both are obligated), it's a forward commitment.
+**<mark>EXAM TIP:</mark>:** The easiest way to distinguish them is to ask: "Does a party have a choice to act?" If yes, it's a contingent claim. If no (both are obligated), it's a forward commitment.
 
 This decision-making process can be visualized as follows:
 

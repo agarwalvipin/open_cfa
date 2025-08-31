@@ -49,7 +49,7 @@ This is the most intuitive way to think about swap valuation. A swap is equivale
   * **Fixed-Rate Payer (Receives Floating):** This position is the same as being **short a fixed-rate bond** (you have an obligation to make fixed payments) and **long a floating-rate note (FRN)** (you are entitled to receive floating payments).
   * **Floating-Rate Payer (Receives Fixed):** This position is the same as being **long a fixed-rate bond** and **short an FRN**.
 
-> **💡 Exam Tip:** This bond analogy is the key to understanding swap valuation on the exam. If you can remember that a swap is just a portfolio of two bonds, the valuation logic becomes much simpler.
+> **💡 <mark>EXAM TIP:</mark>:** This bond analogy is the key to understanding swap valuation on the exam. If you can remember that a swap is just a portfolio of two bonds, the valuation logic becomes much simpler.
 
 -----
 
