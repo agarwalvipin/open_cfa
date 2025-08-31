@@ -56,7 +56,6 @@
   - Equity Investments
     - [Reading 46: Equity Valuation: Concepts and Basic Tools](LOS/Equity/Reading%2046.md)
   - Fixed Income
-    # No readings listed in _sidebar.md; add here if available
   - Derivatives
     - [Reading 66: Derivative Instrument and Derivative Market Features](LOS/Derivatives/Reading%2066.md)
     - [Reading 67: Forward Commitment and Contingent Claim Features and Instruments](LOS/Derivatives/Reading%2067.md)
@@ -76,6 +75,4 @@
     - [Reading 80: Natural Resources](LOS/Alts/Reading%2080.md)
     - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
   - Portfolio Management
-    # No readings listed in _sidebar.md; Quantitative readings are above
   - Ethical and Professional Standards
-    # No readings listed in _sidebar.md; add here if available

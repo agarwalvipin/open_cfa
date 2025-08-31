@@ -1,120 +1,108 @@
-## MODULE 74.1: Put-Call Parity
+## Summary of Reading 74: Option Replication Using Put–Call Parity
 
-This module introduces one of the most fundamental and powerful no-arbitrage relationships in derivatives pricing. It's a concept that connects the prices of puts, calls, the underlying asset, and risk-free borrowing/lending.
+### 🎯 Introduction
 
-### ✅ LOS 74.a: Explain put–call parity for European options.
+Welcome to one of the most elegant concepts in finance\! Think of financial assets like LEGO® bricks. You can build the exact same model in different ways using different combinations of bricks. **Put-Call Parity** shows us how we can build the exact same financial payoff using two different sets of "bricks": one combination using a call option, and another using a put option. Because they build the same thing, they must cost the same. If they don't, there's a risk-free profit opportunity, and in finance, those don't last long\! This reading unlocks the magic of how options, stocks, and bonds are all mathematically linked. 🔗
 
-**Put-call parity** is a cornerstone equation that shows the precise relationship between the price of a European call option and a European put option with the **same underlying asset, exercise price (X), and expiration date (T)**. ⚖️
+### Part 1: The Master Equation: What is Put-Call Parity? ⚖️ (LOS 74.a)
 
-The relationship is built on the principle that if two different portfolios have the exact same payoffs at expiration, they must have the exact same price today. If they don't, a risk-free arbitrage profit is possible.
+**Put-Call Parity** is a fundamental relationship that links the prices of European call options, put options, the underlying stock, and a risk-free bond. It's built on the principle of **no-arbitrage**—meaning no risk-free lunch\! 🥪
 
-To derive this, we create two special portfolios:
+To understand it, let's create two special portfolios that have the *exact same payoff* at expiration.
 
-1.  **Fiduciary Call 📞+💰:** This portfolio consists of:
+1.  **Portfolio A: The Fiduciary Call** 📞+ 🏦
 
-      * A long **call** option.
-      * A risk-free, zero-coupon **bond** that pays the exercise price ($X$) at expiration.
-      * **Payoff at Expiration:** If the stock price ($S_T$) is above X, the call is exercised, and the payoff is $(S_T - X) + X = S_T$. If $S_T$ is below X, the call expires worthless, and the payoff is just from the bond, which is $X$. So, the payoff is **Max($S_T$, X)**.
+      * **What it is:** A long **call option** combined with a long position in a **risk-free zero-coupon bond** that pays the exercise price (X) at expiration.
+      * **Analogy:** You have the *right to buy* a stock at price X, and you also have the *cash (X)* ready from the bond to make the purchase if you decide to.
 
-2.  **Protective Put 🛡️+📈:** This portfolio consists of:
+2.  **Portfolio B: The Protective Put** 🛡️+ 📈
 
-      * A long **put** option.
-      * A long position in the underlying **stock**.
-      * **Payoff at Expiration:** If the stock price ($S_T$) is below X, the put is exercised, and the payoff is $(X - S_T) + S_T = X$. If $S_T$ is above X, the put expires worthless, and the payoff is just the value of the stock, which is $S_T$. So, the payoff is also **Max($S_T$, X)**.
+      * **What it is:** A long **put option** combined with a long position in one share of the **underlying stock**.
+      * **Analogy:** You *own the stock*, but you also have an *insurance policy* (the put) that lets you sell it for at least price X, protecting you from any downside.
 
-Since both portfolios have identical payoffs, their values today must be equal. This gives us the famous **put-call parity equation**:
+#### Why They Are Equal: The Payoff Showdown
 
-$$c_0 + X(1 + R_f)^{-T} = p_0 + S_0$$
+Since these two portfolios have identical payoffs no matter what happens to the stock price, their initial costs must be the same.
+
+-----
+
+##### **Payoff at Expiration**
+
+Let's see what each portfolio is worth at expiration (Time T), where **S<sub>T</sub>** is the stock price at expiration and **X** is the exercise price.
+
+| Scenario | Payoff of Fiduciary Call (Call + Bond) | Payoff of Protective Put (Stock + Put) | Result |
+| :--- | :--- | :--- | :--- |
+| **Stock price is high (S<sub>T</sub> ≥ X)** | (S<sub>T</sub> - X) + X = **S<sub>T</sub>** | S<sub>T</sub> + 0 = **S<sub>T</sub>** | Identical\! ✅ |
+| **Stock price is low (S<sub>T</sub> < X)** | 0 + X = **X** | S<sub>T</sub> + (X - S<sub>T</sub>) = **X** | Identical\! ✅ |
+
+-----
+
+Because their payoffs are always the same, the Law of One Price says their values today must be equal. This gives us the famous **Put-Call Parity equation**:
+
+$$c_0 + X(1+R_f)^{-T} = S_0 + p_0$$
 
 Where:
 
-  * $c_0$ = price of the European call today
-  * $X(1 + R_f)^{-T}$ = price of the risk-free bond today (present value of X)
-  * $p_0$ = price of the European put today
-  * $S_0$ = price of the underlying stock today
+  * **c<sub>0</sub>** = Price of the European call option today
+  * **X(1+R<sub>f</sub>)<sup>-T</sup>** = Price of the risk-free bond today (PV of X)
+  * **S<sub>0</sub>** = Price of the underlying stock today
+  * **p<sub>0</sub>** = Price of the European put option today
 
-**<mark>EXAM TIP:</mark> 📝**
-**This is one of the most important formulas in Level 1 Derivatives.** You MUST memorize it and be comfortable with its algebraic rearrangements. It's tested very frequently, both directly and indirectly.
+#### Building Synthetic Assets 🤖
 
-#### Synthetic Equivalents ⛓️
-
-The real power of put-call parity is that if you have three of the assets, you can perfectly replicate the payoff of the fourth one. This is called creating a **synthetic** position.
-
-By rearranging the main formula, we can create:
+The real power of this equation is that if you know the prices of any three of these assets, you can solve for the fourth. You can create a **synthetic** version of any asset using the other three.
 
 ```mermaid
 graph TD
-    subgraph Replicating Assets using Put-Call Parity
-        A(Long Stock) --> B(Long Call + Short Put + Long Bond)
-        C(Long Call) --> D(Long Stock + Long Put + Short Bond)
-        E(Long Put) --> F(Long Call + Short Stock + Long Bond)
-        G(Long Bond) --> H(Long Stock + Long Put + Short Call)
+    subgraph Synthetic Stock
+        A[Long Call] --> S;
+        B[Short Put] --> S;
+        C[Long Bond] --> S;
     end
+    subgraph Synthetic Call
+        D[Long Stock] --> Ca;
+        E[Long Put] --> Ca;
+        F[Short Bond] --> Ca;
+    end
+    S[= Long Stock Position]
+    Ca[= Long Call Position]
 ```
 
-  * **Synthetic Stock:** $S_0 = c_0 - p_0 + X(1 + R_f)^{-T}$
-  * **Synthetic Call:** $c_0 = p_0 + S_0 - X(1 + R_f)^{-T}$
-  * **Synthetic Put:** $p_0 = c_0 - S_0 + X(1 + R_f)^{-T}$
-  * **Synthetic Bond:** $X(1 + R_f)^{-T} = p_0 + S_0 - c_0$
+**Synthetic Stock:** `Long Call + Short Put + Long Bond` = `A share of stock`
 
-**Indian Context Example (Arbitrage):**
-Suppose for Nifty 50 options expiring in 3 months:
+> [\!TIP]
+> **CFA Exam Tip ✍️:** Memorize the core put-call parity formula: **c + PV(X) = S + p**. A simple mnemonic is "cops," but with the stock and put together: **c + bond = Stock + p**. You will be tested on your ability to rearrange this formula to solve for any of the four components or to identify arbitrage opportunities if the equation doesn't hold.
 
-  * Nifty Spot ($S_0$) = 23,500
-  * 23,500 Strike Call ($c_0$) = ₹700
-  * 23,500 Strike Put ($p_0$) = ₹500
-  * Risk-free rate ($R_f$) = 7% per year.
+### Part 2: The Forward Twist: What is Put-Call-Forward Parity? ⏩ (LOS 74.b)
 
-Let's check if parity holds.
+This is a neat variation of the main formula. What if instead of dealing with the actual stock, we use a **forward contract** on the stock?
 
-Value of Fiduciary Call side: $c_0 + X(1 + R_f)^{-T} = 700 + 23,500(1.07)^{-0.25} = 700 + 23,099 = \text{₹23,799}$
+Remember, a long position in a stock (**S<sub>0</sub>**) can be replicated by:
 
-Value of Protective Put side: $p_0 + S_0 = 500 + 23,500 = \text{₹24,000}$
+1.  Entering a **long forward contract** (which costs nothing today).
+2.  Buying a **risk-free bond** that will be worth the forward price (**F<sub>0</sub>(T)**) at expiration. The cost of this bond today is the present value of the forward price.
 
-The protective put side is overpriced\! An arbitrageur would **sell the expensive side (protective put) and buy the cheap side (fiduciary call)**.
+So, we can replace the stock (**S<sub>0</sub>**) in our original parity formula with the cost of its synthetic equivalent: **F<sub>0</sub>(T)(1 + R<sub>f</sub>)<sup>-T</sup>**.
 
-  * **Sell:** Short the stock (sell Nifty futures) and sell the put.
-  * **Buy:** Buy the call and buy the risk-free bond (invest cash).
-    This series of trades would lock in a risk-free profit.
+This gives us the **Put-Call-Forward Parity equation**:
 
------
+$$F_0(T)(1+R_f)^{-T} + p_0 = c_0 + X(1+R_f)^{-T}$$
 
-Ready to see how this relationship works with forward contracts?
+This relationship links the prices of puts, calls, and risk-free bonds to the **forward price** of the underlying, rather than its spot price. It's incredibly useful for pricing options on assets that primarily trade in the forward or futures markets, like commodities or currencies.
 
-### ✅ LOS 74.b: Explain put–call forward parity for European options.
+### 🧪 Formula Summary
 
-This is a simple but elegant extension of the main parity relationship. What if instead of holding the actual stock, our portfolio was based on a **forward contract**?
+  * **Put-Call Parity:**
+    $$c_0 + X(1+R_f)^{-T} = S_0 + p_0$$
 
-First, we need to create a **synthetic underlying asset** using a forward. How can we do that?
+  * **Put-Call-Forward Parity:**
+    $$F_0(T)(1+R_f)^{-T} + p_0 = c_0 + X(1+R_f)^{-T}$$
 
-  * Enter a **long forward contract** to buy the asset at price $F_0(T)$ at time T. (Cost today = 0)
-  * Buy a **risk-free bond** that will be worth $F_0(T)$ at time T. (Cost today = $F_0(T)(1+R_f)^{-T}$)
-
-At expiration (T), the bond matures, giving you exactly enough cash to fulfill your forward contract and buy the asset. The payoff is the asset itself, $S_T$.
-So, the value of this synthetic asset today is simply the present value of the forward price: $F_0(T)(1+R_f)^{-T}$.
-
-Now, we just take the original put-call parity equation:
-$c_0 + X(1 + R_f)^{-T} = p_0 + S_0$
-
-And we **replace the stock ($S_0$) with our synthetic stock**:
-$$p_0 + F_0(T)(1+R_f)^{-T} = c_0 + X(1+R_f)^{-T}$$
-
-This is the **put-call-forward parity** relationship. It connects the prices of puts and calls to the **forward price** of the underlying, rather than the spot price.
-
-**<mark>EXAM TIP:</mark> 📝**
-This is less common on the exam than standard put-call parity, but it's straightforward. Just remember the key substitution: replace $S_0$ with the present value of the forward price, $F_0(T)(1+R_f)^{-T}$.
-
------
-
-### 📜 Formula Summary for Reading 74
-
-  * **Put-Call Parity:** $c_0 + X(1 + R_f)^{-T} = p_0 + S_0$
-  * **Put-Call-Forward Parity:** $p_0 + F_0(T)(1+R_f)^{-T} = c_0 + X(1+R_f)^{-T}$
-
-### 🎯 Quick Exam-Day Pointers
-
-  * **Memorize the Put-Call Parity formula: $c_0 + X(1 + R_f)^{-T} = p_0 + S_0$**. You should be able to write it down from memory in seconds.
-  * Be able to **algebraically rearrange** the formula to solve for any of the four components ($c_0, p_0, S_0, X(1+R_f)^{-T}$).
-  * Remember the names of the two portfolios: **Fiduciary Call** (call + bond) and **Protective Put** (put + stock). They have identical payoffs, which is the foundation of the relationship.
-  * If the two sides of the equation are not equal, an arbitrage opportunity exists. The strategy is always **"Buy Low, Sell High"**.
-  * For put-call-forward parity, just remember to swap out the spot price ($S_0$) for the present value of the forward price ($F_0(T)(1+R_f)^{-T}$).
+> [\!IMPORTANT]
+>
+> ### 🎯 Quick Exam-Day Pointers
+>
+>   * **European Options Only:** This parity relationship *only* holds for **European options** because they can only be exercised at expiration. American options, with their early exercise feature, break this simple equivalence.
+>   * **It's All About No-Arbitrage:** The entire concept is built on the idea that two portfolios with identical future payoffs must have the same price today. If they don't, you can buy the cheap one, sell the expensive one, and lock in a risk-free profit.
+>   * **Know Your Synthetics:** Be ready to identify the combination of assets needed to replicate a stock, a bond, a call, or a put. Rearranging the main formula is a key exam skill.
+>   * **Same X, Same T:** For the parity to hold, the call and put must have the **same exercise price (X)** and the **same expiration date (T)**.

@@ -1,136 +1,120 @@
-## MODULE 75.1: Binomial Model for Option Values
+## Reading 75: Valuing a Derivative Using a One-Period Binomial Model 🌳
 
-This module introduces a foundational method for pricing options: the **binomial model**. It simplifies the complex reality of asset price movements into a simple, two-path scenario, yet it provides powerful insights into the logic of option valuation through no-arbitrage principles. 🌳
+🎯 **Introduction**
 
-### ✅ LOS 75.a: Explain how to value a derivative using a one-period binomial model.
+Imagine you're at a fork in the road where a path splits into two—one goes up a hill, the other goes down. You know exactly where each path leads. The **one-period binomial model** is a lot like that! It's a powerful tool that simplifies a complex world by assuming an asset's price can only move to one of two possible values in the next period: up or down. By knowing these two potential outcomes, we can perfectly calculate what an option is worth today. This reading will show you two ways to do this: by building a risk-free portfolio and by using a clever shortcut called risk-neutral pricing.
 
-The **one-period binomial model** assumes that over a single period, the price of an underlying asset will move from its current value ($S_0$) to one of two possible future values: an **up-move** ($S^+$) or a **down-move** ($S^-$).
+---
 
-We can determine the price of an option today ($c_0$ or $p_0$) without knowing the *actual* probability of the up or down move. Instead, we use a **no-arbitrage approach** by constructing a perfect hedge.
+### Part 1: How Do We Value an Option with Two Possible Futures? 🤔
 
-#### The Hedging Approach (No-Arbitrage Method)
+The core idea here is **replication** and **no-arbitrage**. We can create a portfolio of the underlying stock and a loan that perfectly mimics the option's payoffs. Since the portfolio and the option have identical future payoffs, they must have the same price today. Otherwise, a risk-free profit opportunity (arbitrage) would exist.
 
-The goal is to create a portfolio consisting of the underlying stock and the option that has the **exact same value** at expiration, regardless of whether the stock price goes up or down. Because this portfolio's future value is certain, its present value can be found by discounting at the risk-free rate.
+To do this, we need to build a risk-free (perfectly hedged) portfolio. The key ingredient is the **hedge ratio (h)**, which tells us how many shares of the underlying asset we need to hold for each option we write to make our portfolio's value immune to the stock's movement.
 
-**Step-by-Step Valuation of a Call Option:**
+#### **Valuing a Call Option**
 
-Let's use an example. We want to value a one-period European call option on State Bank of India (SBIN).
+Let's say we want to find the value of a European call option. We'll create a portfolio by buying `h` shares of the stock and selling one call option.
 
-  * **Current Stock Price ($S_0$):** ₹850
-  * **Exercise Price ($X$):** ₹860
-  * **Up-Move Stock Price ($S^+$):** ₹935 (+10%)
-  * **Down-Move Stock Price ($S^-$):** ₹765 (-10%)
-  * **Risk-Free Rate ($R_f$):** 2% for the period
+* **Goal:** Make the portfolio's value the same whether the stock price goes up or down.
+* **Portfolio Value at Expiration:**
+    * If price goes up: $V^+ = hS^+ - c^+$
+    * If price goes down: $V^- = hS^- - c^-$
+* **Hedge Ratio Formula:** To make $V^+ = V^-$, the hedge ratio must be:
+    $h = \frac{c^+ - c^-}{S^+ - S^-}$
 
-**1. Calculate Option Payoffs at Expiration:**
-First, we map out the possible outcomes for the stock and the call option.
+Since this portfolio is now risk-free, its return must be the **risk-free rate ($R_f$)**.
 
-  * Up-Move Call Value ($c^+$): $Max(0, S^+ - X) = Max(0, 935 - 860) = \\text{₹75}$
-  * Down-Move Call Value ($c^-$): $Max(0, S^- - X) = Max(0, 765 - 860) = \\text{₹0}$
+> **Example Time! 🧮**
+>
+> An HDFC Bank stock is currently trading at **$S_0 = \$50$**. In one period, it can either go up to **$S^+ = \$60$** or down to **$S^- = \$42$**. We want to value a call option with an exercise price of **$X = \$55$**. The risk-free rate is **3%**, 3303].
+>
+> 1.  **Find Option Payoffs:**
+>     * If stock goes up to $60: c^+ = \text{Max}(0, 60 - 55) = \$5$.
+>     * If stock goes down to $42: c^- = \text{Max}(0, 42 - 55) = \$0$.
+>
+> 2.  **Calculate Hedge Ratio (h):**
+>     $h = \frac{5 - 0}{60 - 42} = \frac{5}{18} = 0.278$.
+>     This means we buy 0.278 shares for every 1 call option we sell.
+>
+> 3.  **Find the Portfolio's Future Value:**
+>     The portfolio will be worth the same amount in either scenario. Let's use the "up" state:
+>     $V^+ = (0.278 \times \$60) - \$5 = \$16.68 - \$5 = \$11.68$.
+>
+> 4.  **Discount to Find Today's Value:**
+>     The portfolio's value today must be the future value discounted at the risk-free rate:
+>     $V_0 = \frac{\$11.68}{1.03} = \$11.34$.
+>
+> 5.  **Solve for the Call Price ($c_0$):**
+>     The initial cost of setting up the portfolio was $V_0 = hS_0 - c_0$.
+>     $\$11.34 = (0.278 \times \$50) - c_0$
+>     $\$11.34 = \$13.90 - c_0 \implies c_0 = \$2.56$.
+>
+> The fair price of the call option today is **$2.56**.
 
-<!-- end list -->
+#### **Valuing a Put Option**
 
-```mermaid
-graph TD
-    subgraph Binomial Tree
-        S0(Stock = ₹850) --> S_up(Stock = ₹935);
-        S0 --> S_down(Stock = ₹765);
-        C0(Call = ?) --> C_up(Call = ₹75);
-        C0 --> C_down(Call = ₹0);
-    end
-```
+The process for a put option is almost identical, but our hedged portfolio consists of buying `h` shares and **buying** one put option.
 
-**2. Calculate the Hedge Ratio (h):**
-The **hedge ratio (h)** is the number of shares you need to hold for each option you write (sell) to create a riskless portfolio.
-$$h = \frac{c^+ - c^-}{S^+ - S^-} = \frac{75 - 0}{935 - 765} = \frac{75}{170} \approx 0.4412$$
-This means if you buy 0.4412 shares of SBIN for every 1 call option you sell, your portfolio's value will be the same in either future state.
+* **Hedge Ratio Formula:** The formula for `h` is the same:
+    $h = \frac{p^+ - p^-}{S^+ - S^-}$
 
-**3. Calculate the Certain Payoff of the Hedged Portfolio:**
-Let's check this. The value of our portfolio at expiration will be $hS - c$.
+> [!TIP]
+> **CFA Exam Tip ✍️:** Notice the hedge ratio for a put will be negative. This means you should *short* `h` shares for every put option you buy to create the risk-free hedge. For the exam, focus on understanding the *process* of creating a risk-free portfolio and discounting its value.
 
-  * Value if stock goes up: $(0.4412 \times 935) - 75 = 412.5 - 75 = \\text{₹337.5}$
-  * Value if stock goes down: $(0.4412 \times 765) - 0 = \\text{₹337.5}$
-    The future payoff is certain: ₹337.5.
+---
 
-**4. Discount the Payoff to Find the Portfolio's Present Value:**
-Because the payoff is risk-free, we discount it using the risk-free rate.
-$$V_0 = \frac{V^+}{(1 + R_f)} = \frac{337.5}{1.02} = \text{₹330.88}$$
+### Part 2: What is "Risk-Neutral" Pricing? ⚖️
 
-**5. Solve for the Call Option Price ($c_0$):**
-The initial cost of setting up the portfolio was $V_0 = hS_0 - c_0$. We can now solve for the unknown call price.
-$$330.88 = (0.4412 \times 850) - c_0$$$$330.88 = 375.02 - c_0$$$$c_0 = 375.02 - 330.88 = \text{₹14.14}$$
-The no-arbitrage price of the call option today is **₹14.14**.
+**Risk-neutral pricing** is a powerful and elegant alternative. It's a mathematical shortcut that says, "Since we can build a perfect hedge, we don't need to worry about an investor's risk appetite. We can just pretend everyone is risk-neutral." 
 
-**<mark>EXAM TIP:</mark> 📝**
-The exam will likely test your understanding of the process rather than just formula memorization. Practice the 5 steps: (1) Find Payoffs, (2) Find Hedge Ratio, (3) Find Portfolio Future Value, (4) Find Portfolio Present Value, (5) Solve for Option Price.
+In this pretend world, the expected return on any asset is simply the risk-free rate. We use this idea to calculate **risk-neutral probabilities** (often shown as $\pi$), which are pseudo-probabilities that make this true.
 
------
+The valuation process becomes simpler:
+1.  Calculate the option's payoffs if the price goes up ($c^+$) or down ($c^-$).
+2.  Calculate the risk-neutral probabilities for the up-move ($\pi_{up}$) and down-move ($\pi_{down}$).
+3.  Calculate the expected value of the option's payoff: $E(\text{Payoff}) = (\pi_{up} \times c^+) + (\pi_{down} \times c^-)$.
+4.  Discount this expected value back to today at the risk-free rate.
 
-Are you ready to learn about the risk-neutral approach to the same problem?
+$c_0 = \frac{(\pi_{up} \times c^+) + (\pi_{down} \times c^-)}{1 + R_f}$
 
-### ✅ LOS 75.b: Describe the concept of risk neutrality in derivatives pricing.
+> **Example with Risk-Neutral Probabilities! 🧮**
+>
+> Let's use a new example. A stock is at **$S_0 = \$30$**. It can go up to **$S^+ = \$34.50$** or down to **$S^- = \$26.10$**. The risk-free rate is **7%**. We want to value a call option with **X = $30**.
+>
+> 1.  **Find Option Payoffs:**
+>     * $c^+ = \text{Max}(0, 34.50 - 30) = \$4.50$.
+>     * $c^- = \text{Max}(0, 26.10 - 30) = \$0$.
+>
+> 2.  **Calculate Risk-Neutral Probabilities:**
+>     * $\pi_{up} = \frac{(1+R_f)S_0 - S^-}{S^+ - S^-} = \frac{(1.07 \times 30) - 26.10}{34.50 - 26.10} = \frac{6}{8.4} = 0.715$.
+>     * $\pi_{down} = 1 - 0.715 = 0.285$.
+>
+> 3.  **Find Expected Future Value:**
+>     $E(\text{Payoff}) = (0.715 \times \$4.50) + (0.285 \times \$0) = \$3.22$.
+>
+> 4.  **Discount to Find Today's Value:**
+>     $c_0 = \frac{\$3.22}{1.07} = \$3.01$.
+>
+> The fair price of the call option today is **$3.01**.
 
-This is an alternative, often quicker, way to solve the same problem. It relies on a powerful idea called **risk neutrality**.
+---
 
-**What is Risk Neutrality? 🤔**
-Imagine a world where investors are indifferent to risk. In this world, they don't demand a risk premium for holding risky assets. Therefore, the expected return on *any* asset (including our stock) must be the **risk-free rate**. This isn't how the real world works, but it's a clever mathematical trick that simplifies option pricing.
+### 🧪 Formula Summary
 
-We calculate "pseudo-probabilities" for the up and down moves, called **risk-neutral probabilities**, that force the stock's expected return to equal the risk-free rate.
+* **Hedge Ratio (h):**
+    $h = \frac{\text{Payoff}_{\text{up}} - \text{Payoff}_{\text{down}}}{\text{Underlying}_{\text{up}} - \text{Underlying}_{\text{down}}}$
+* **Risk-Neutral Probability (Up-move):**
+    $\pi_{up} = \frac{(1+R_f)S_0 - S^-}{S^+ - S^-}$
+* **Option Value using Risk-Neutral Probabilities:**
+    $\text{Option}_0 = \frac{(\pi_{up} \times \text{Payoff}^+) + (\pi_{down} \times \text{Payoff}^-)}{1 + R_f}$
 
-#### The Risk-Neutral Probability Approach
+---
 
-**Step-by-Step Valuation using Risk-Neutral Probabilities:**
-
-Using the same SBIN example:
-
-**1. Calculate Risk-Neutral Probabilities ($\\pi$):**
-The formula for the risk-neutral probability of an up-move is:
-$$\pi_{up} = \frac{(1 + R_f) - d}{u - d}$$Where $u = S^+/S_0 = 935/850 = 1.10$ and $d = S^-/S_0 = 765/850 = 0.90$.$$\pi_{up} = \frac{(1.02) - 0.90}{1.10 - 0.90} = \frac{0.12}{0.20} = 0.60$$
-The probability of a down-move is simply $\\pi_{down} = 1 - \\pi_{up} = 1 - 0.60 = 0.40$.
-
-**2. Calculate the Expected Payoff of the Option:**
-Using these probabilities, find the expected value of the call option at expiration.
-$$E(\text{Payoff}) = (\pi_{up} \times c^+) + (\pi_{down} \times c^-)$$
-$$E(\text{Payoff}) = (0.60 \times ₹75) + (0.40 \times ₹0) = \text{₹45}$$
-
-**3. Discount the Expected Payoff at the Risk-Free Rate:**
-Since we used risk-neutral probabilities, we can discount this expected payoff using the risk-free rate to find the option's value today.
-$$c_0 = \frac{E(\text{Payoff})}{(1 + R_f)} = \frac{45}{1.02} = \text{₹44.12}$$
-
-Wait, this value (₹44.12) is different from the one calculated before (₹14.14). Let me recheck the calculations.
-
-  * Hedge Ratio: (75 - 0) / (935 - 765) = 75 / 170 = 0.441176
-  * Portfolio Value (Up): 0.441176 \* 935 - 75 = 412.5 - 75 = 337.5
-  * Portfolio Value (Down): 0.441176 \* 765 - 0 = 337.5
-  * PV of Portfolio: 337.5 / 1.02 = 330.882
-  * Initial Portfolio: V0 = h\*S0 - c0 => 330.882 = 0.441176 \* 850 - c0 => 330.882 = 375 - c0 => c0 = 375 - 330.882 = **44.118**
-
-Ah, there was a calculation error in my previous explanation of the hedging approach. My apologies. Let me correct the text.
-
-**Corrected Step 5 of the Hedging Approach:**
-The initial cost of setting up the portfolio was $V_0 = hS_0 - c_0$. We can now solve for the unknown call price.
-$$330.88 = (0.4412 \times 850) - c_0$$$$330.88 = 375.02 - c_0$$$$c_0 = 375.02 - 330.88 = \text{₹44.14}$$
-The no-arbitrage price of the call option today is **₹44.14**.
-
-The two methods now produce the same result (slight rounding difference). This is a critical insight: **both the hedging method and the risk-neutral probability method are built on the same no-arbitrage foundation and will always give the same answer.**
-
-**<mark>EXAM TIP:</mark> 📝**
-The risk-neutral method is often faster for calculations on the exam. The key is understanding *why* you can discount at the risk-free rate. It's because the probabilities are specifically calibrated to remove any risk premium, making the risk-free rate the appropriate discount rate for the expected payoff.
-
------
-
-### 📜 Formula Summary for Reading 75
-
-  * **Hedge Ratio (h):** $h = \\frac{\\text{Payoff}*{up} - \\text{Payoff}*{down}}{\\text{Price}*{up} - \\text{Price}*{down}}$
-  * **Hedged Portfolio Value:** $V_0 = \\frac{hS^+ - c^+}{1 + R_f}$ or $V_0 = \\frac{hS^- - c^-}{1 + R_f}$
-  * **Call Option Price (Hedge Method):** $c_0 = hS_0 - V_0$
-  * **Risk-Neutral Probability of Up-Move ($\\pi_{up}$):** $\\pi_{up} = \\frac{(1 + R_f) - d}{u - d}$ (where u and d are the up/down factors)
-  * **Option Price (Risk-Neutral Method):** $c_0 = \\frac{(\\pi_{up} \times c^+) + (\\pi_{down} \times c^-)}{1 + R_f}$
-
-### 🎯 Quick Exam-Day Pointers
-
-  * The binomial model is a tool to find a **no-arbitrage** option price.
-  * You can use two methods: **hedging** or **risk-neutral probabilities**. They always give the same answer.
-  * The **hedge ratio (h)** is the number of shares per option needed to create a risk-free (perfectly hedged) portfolio.
-  * **Risk-neutral probabilities** are *not* real-world probabilities. They are artificial constructs that allow us to discount expected future payoffs at the risk-free rate.
-  * For the Level 1 exam, focus on understanding the *process* of both methods. The risk-neutral approach is usually computationally faster if the probabilities are given.
+> [!IMPORTANT]
+> ### 🎯 Quick Exam-Day Pointers
+>
+> * The binomial model values an option using **no-arbitrage** principles. It assumes the underlying's price can only go to one of two known values in the next period.
+> * **Method 1: Replication.** Create a risk-free portfolio by combining the underlying asset and the option. The key is calculating the **hedge ratio (h)**. The value of this risk-free portfolio, discounted at the risk-free rate, allows you to solve for the option's price.
+> * **Method 2: Risk-Neutral Pricing.** This is a mathematical shortcut. You calculate special **risk-neutral probabilities** and use them to find the expected payoff of the option. Then, you discount that expected payoff at the **risk-free rate**.
+> * Remember, "risk-neutral" doesn't describe investors; it's a technique that works *because* of the no-arbitrage principle. You're valuing the derivative in a hypothetical world where its expected return is the risk-free rate.
