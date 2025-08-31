@@ -1,6 +1,65 @@
 ### **Reading 6: Analysis of Inventories**
 
 For companies that sell physical goods (manufacturers and retailers), inventory is a significant asset on the balance sheet and the Cost of Goods Sold (COGS) is a major expense on the income statement. How inventory is accounted for can have a huge impact on reported financial performance.
+#### **Inventory Analysis Overview Diagram**
+#### **Inventory Valuation Methods Detail**
+```mermaid
+flowchart TD
+    B["🧮 Inventory Valuation Methods"] --> B1["FIFO<br/>First-In, First-Out"]
+    B --> B2["LIFO<br/>Last-In, First-Out"]
+    B --> B3["Weighted-Average Cost"]
+    B2 --> B21["Permitted: U.S. GAAP"]
+    B2 --> B22["Prohibited: IFRS/Ind AS"]
+    B1 --> B11["Lower COGS, Higher NI, Higher Inventory"]
+    B2 --> B12["Higher COGS, Lower NI, Lower Inventory"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class B,B1,B2,B3 detailNode
+    class B21,B22,B11,B12 detailNode
+```
+
+#### **Inventory Write-Downs & NRV Detail**
+```mermaid
+flowchart TD
+    C["⚠️ Inventory Write-Downs & NRV"] --> C1["NRV = Estimated Selling Price - Costs"]
+    C --> C2["Write-Down: If NRV < Cost"]
+    C2 --> C21["Expense on Income Statement"]
+    C2 --> C22["Reduces Inventory Value"]
+    C --> C3["Reversal of Write-Downs"]
+    C3 --> C31["IFRS: Allowed"]
+    C3 --> C32["U.S. GAAP: Prohibited"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class C,C1,C2,C3 detailNode
+    class C21,C22,C31,C32 detailNode
+```
+
+#### **Presentation, Disclosures & Ratios Detail**
+```mermaid
+flowchart TD
+    D["📑 Presentation, Disclosures & Ratios"] --> D1["Cost Flow Method Used"]
+    D --> D2["Inventory Breakdown<br/>Raw Materials, WIP, Finished Goods"]
+    D --> D3["Inventory Turnover"]
+    D3 --> D31["= COGS / Avg Inventory"]
+    D --> D4["Days of Inventory on Hand (DOH)"]
+    D4 --> D41["= 365 / Inventory Turnover"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class D,D1,D2,D3,D4 detailNode
+    class D31,D41 detailNode
+```
+```mermaid
+flowchart TD
+    A["📦 Inventory Analysis<br/>Module 6 Overview"] --> B["🧮 Valuation Methods (FIFO, LIFO, Weighted-Average)"]
+    A --> C["⚠️ Inventory Write-Downs & NRV"]
+    A --> D["📑 Presentation, Disclosures & Ratios"]
+
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef topicNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+
+    class A mainNode
+    class B,C,D topicNode
+```
 
 #### **1. Inventory Valuation Methods**
 

@@ -89,31 +89,31 @@ These are assets you can't physically touch, but they can be incredibly valuable
 
 -----
 
-_**Intangible Assets** are identifiable, non-monetary assets without physical substance[cite: 141]. _Goodwill is a special type of intangible asset that is not separately identifiable[cite: 141].
+**Intangible Assets** are identifiable, non-monetary assets without physical substance. Goodwill is a special type of intangible asset that is not separately identifiable.
 
 **How they are accounted for depends on how they are acquired:**
 
 1.  **Purchased Intangibles:**
 
       * **What they are:** Buying a patent or a software license from another company.
-      * _**Accounting:** They are recorded on the balance sheet at their purchase cost (which is assumed to be their fair value)[cite: 259].
+      * **Accounting:** They are recorded on the balance sheet at their purchase cost (which is assumed to be their fair value).
 
 2.  **Internally Developed Intangibles:**
 
       * **What they are:** Creating a brand or technology from scratch through internal efforts.
       * **Accounting (A Major IFRS vs. US GAAP difference):**
-          * _**Research Phase:** Under both IFRS and US GAAP, costs in the 'research' phase (e.g., searching for new knowledge) must be **expensed** as incurred[cite: 142, 259].
+          * **Research Phase:** Under both IFRS and US GAAP, costs in the 'research' phase (e.g., searching for new knowledge) must be **expensed** as incurred.
           * **Development Phase:** This is the application of research findings (e.g., designing and testing a prototype).
-              * _**IFRS:** Allows companies to **capitalize** development costs as an intangible asset if they meet specific criteria (e.g., technical feasibility, intent to sell the asset)[cite: 142].
-              * _**US GAAP:** Requires development costs to also be **expensed**, with a major exception for software development costs, which are capitalized after technological feasibility is established[cite: 142].
+              * **IFRS:** Allows companies to **capitalize** development costs as an intangible asset if they meet specific criteria (e.g., technical feasibility, intent to sell the asset).
+              * **US GAAP:** Requires development costs to also be **expensed**, with a major exception for software development costs, which are capitalized after technological feasibility is established.
       * **Indian Context:** Consider **Dr. Reddy's Laboratories**. The money they spend in their labs trying to discover a new drug molecule is 'research' and is expensed. Once they have a promising molecule and start the expensive process of clinical trials to get it ready for production, IFRS would allow them to capitalize these 'development' costs. A similar US-based pharma company would have to expense them.
       * **Effect:** The IFRS-reporting company (Dr. Reddy's) would report higher assets and higher net income during the development phase compared to its US counterpart.
 
 3.  **Goodwill:**
 
-      * **What it is:** This is a unique intangible asset that is only created during an acquisition. _It is the amount an acquirer pays *in excess of* the fair value of the identifiable net assets (Assets - Liabilities) of the company it buys[cite: 145]. It represents things like brand reputation, customer relationships, and synergies that you can't put a finger on individually.
+      * **What it is:** This is a unique intangible asset that is only created during an acquisition. It is the amount an acquirer pays *in excess of* the fair value of the identifiable net assets (Assets - Liabilities) of the company it buys. It represents things like brand reputation, customer relationships, and synergies that you can't put a finger on individually.
       * **Indian Context:** When **Tata Motors** acquired **Jaguar Land Rover (JLR)**, they paid a price that was significantly higher than the fair value of JLR's factories, inventory, and patents. That huge excess amount was recorded on Tata Motors' balance sheet as **Goodwill**.
-      * **Accounting:** Goodwill is **not amortized** (expensed over time). _Instead, it is tested for **impairment** at least annually[cite: 145]. If its value is deemed to have fallen, the company takes a one-time impairment charge (an expense) on the income statement.
+      * **Accounting:** Goodwill is **not amortized** (expensed over time). Instead, it is tested for **impairment** at least annually. If its value is deemed to have fallen, the company takes a one-time impairment charge (an expense) on the income statement.
 
 <!-- end list -->
 
@@ -134,24 +134,24 @@ This refers to a company's investments in assets like stocks and bonds of other 
 
 -----
 
-_A **Financial Instrument** is a contract that creates a financial asset for one company and a financial liability (or equity) for another[cite: 147]. Here, we focus on financial assets (investments).
+A **Financial Instrument** is a contract that creates a financial asset for one company and a financial liability (or equity) for another. Here, we focus on financial assets (investments).
 
 There are two primary ways to measure these assets after they are initially purchased:
 
 1.  **Amortized Cost:**
 
-      * _**What it's for:** Debt instruments (like bonds) that the company has both the intent and ability to hold until they mature[cite: 148].
+      * **What it's for:** Debt instruments (like bonds) that the company has both the intent and ability to hold until they mature.
       * **Accounting:** The investment is recorded at cost, and any discount or premium is gradually amortized over the bond's life. Market value fluctuations are ignored. This results in a very stable value on the balance sheet and predictable interest income.
 
 2.  **Fair Value (Market Value):**
 
       * This is where it gets interesting. If an asset is measured at fair value, what happens to the unrealized gains or losses when the market price changes?
       * **Fair Value Through Profit or Loss (FVTPL):**
-          * _**What it's for:** Used for securities held for trading and most equity investments[cite: 148].
-          * _**Accounting:** Any change in the market value (unrealized gain or loss) is reported on the **Income Statement**[cite: 148]. This makes the company's net income more volatile.
+          * **What it's for:** Used for securities held for trading and most equity investments.
+          * **Accounting:** Any change in the market value (unrealized gain or loss) is reported on the **Income Statement**. This makes the company's net income more volatile.
       * **Fair Value Through Other Comprehensive Income (FVOCI):**
-          * _**What it's for:** Used for certain debt instruments where the strategy is to both hold them for interest and sell them if needed[cite: 148].
-          * **Accounting:** The unrealized gains and losses **bypass the Income Statement**. _Instead, they are reported in a separate section of Shareholder's Equity called **Other Comprehensive Income (OCI)**[cite: 148]. This keeps the income statement stable, but equity will fluctuate.
+          * **What it's for:** Used for certain debt instruments where the strategy is to both hold them for interest and sell them if needed.
+          * **Accounting:** The unrealized gains and losses **bypass the Income Statement**. Instead, they are reported in a separate section of Shareholder's Equity called **Other Comprehensive Income (OCI)**. This keeps the income statement stable, but equity will fluctuate.
 
 <!-- end list -->
 
@@ -174,7 +174,7 @@ This section covers a company's long-term obligations. We'll focus on one of the
 
 -----
 
-  * **Long-Term Financial Liabilities:** This includes bonds and long-term bank loans. _They are typically reported at **amortized cost** on the balance sheet[cite: 153].
+  * **Long-Term Financial Liabilities:** This includes bonds and long-term bank loans. They are typically reported at **amortized cost** on the balance sheet.
 
   * **Deferred Tax Liabilities (DTLs):**
 
@@ -203,7 +203,7 @@ Now we apply our analytical tools to the balance sheet.
 
   * **Vertical Common-Size Balance Sheet:**
 
-      * _**What it is:** Every item on the balance sheet is expressed as a percentage of **Total Assets**[cite: 155]. This allows you to see the company's structure and strategy, irrespective of its size.
+      * **What it is:** Every item on the balance sheet is expressed as a percentage of **Total Assets**. This allows you to see the company's structure and strategy, irrespective of its size.
       * **Indian Context:**
           * **NTPC (National Thermal Power Corporation):** A common-size balance sheet would show a very large percentage for Property, Plant, & Equipment, as it's a capital-intensive power utility.
           * **Infosys:** A common-size balance sheet would show a very high percentage for Current Assets (like cash and receivables) and a very low percentage for PPE, reflecting its asset-light, service-based business model.
@@ -211,11 +211,11 @@ Now we apply our analytical tools to the balance sheet.
   * **Key Balance Sheet Ratios:**
 
       * **Liquidity Ratios (Short-term health):**
-          * **Current Ratio** = `Current Assets / Current Liabilities`. _A measure of a company's ability to cover its short-term bills[cite: 162].
-          * **Quick Ratio (Acid-Test)** = `(Cash + Marketable Securities + Receivables) / Current Liabilities`. _A stricter liquidity test that excludes less liquid inventory[cite: 162].
+          * **Current Ratio** = `Current Assets / Current Liabilities`. A measure of a company's ability to cover its short-term bills.
+          * **Quick Ratio (Acid-Test)** = `(Cash + Marketable Securities + Receivables) / Current Liabilities`. A stricter liquidity test that excludes less liquid inventory.
       * **Solvency Ratios (Long-term health):**
-          * **Debt-to-Equity Ratio** = `Total Debt / Total Shareholders' Equity`. _Shows how much debt a company is using to finance its assets relative to equity[cite: 162]. A higher ratio means higher risk.
-          * **Financial Leverage Ratio** = `Average Total Assets / Average Total Equity`. _Shows the extent to which assets are financed by debt[cite: 162].
+          * **Debt-to-Equity Ratio** = `Total Debt / Total Shareholders' Equity`. Shows how much debt a company is using to finance its assets relative to equity. A higher ratio means higher risk.
+          * **Financial Leverage Ratio** = `Average Total Assets / Average Total Equity`. Shows the extent to which assets are financed by debt.
 
   * **CFA Exam Tip:** You need to be able to calculate and, more importantly, *interpret* these key ratios. The exam will give you the numbers and ask what a change in a ratio implies about the company's risk or performance.
 
@@ -228,11 +228,11 @@ Now we apply our analytical tools to the balance sheet.
 ### **Key Formulas for Analyzing Balance Sheets**
 
   * **Accounting Equation:** `Assets = Liabilities + Equity`
-  * _**Current Ratio:** `Current Assets / Current Liabilities` [cite: 162]
-  * _**Quick Ratio:** `(Cash + Marketable Securities + Receivables) / Current Liabilities` [cite: 162]
-  * _**Debt-to-Equity Ratio:** `Total Debt / Total Equity` [cite: 162]
-  * _**Debt-to-Assets Ratio:** `Total Debt / Total Assets` [cite: 467]
-  * _**Financial Leverage:** `Average Total Assets / Average Total Equity` [cite: 162]
+  * **Current Ratio:** `Current Assets / Current Liabilities` 
+  * **Quick Ratio:** `(Cash + Marketable Securities + Receivables) / Current Liabilities` 
+  * **Debt-to-Equity Ratio:** `Total Debt / Total Equity` 
+  * **Debt-to-Assets Ratio:** `Total Debt / Total Assets` 
+  * **Financial Leverage:** `Average Total Assets / Average Total Equity` 
 
 ### **Quick Exam-Day Pointers**
 

@@ -1,5 +1,3 @@
-Of course, Vipin. Let's dive into the **Statement of Cash Flows**. This is arguably one of the most important statements for analysts because it cuts through all the accounting estimates and accruals to show the real cash movements. A company can show a profit on its income statement, but if it isn't generating cash, it will not survive.
-
 ### **Reading 4: Analyzing Statements of Cash Flows I**
 
 The Statement of Cash Flows (SCF) explains the change in a company's cash balance from the beginning to the end of a period by categorizing all cash transactions into three buckets: Operating, Investing, and Financing.

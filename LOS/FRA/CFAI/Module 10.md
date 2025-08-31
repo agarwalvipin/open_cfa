@@ -1,6 +1,73 @@
 ### **Reading 10: Financial Reporting Quality**
 
 This reading is about being a skeptical and discerning user of financial statements. It explores the difference between high-quality and low-quality reporting, the motivations for managing earnings, and the warning signs analysts should look for.
+#### **Financial Reporting Quality Overview Diagram**
+#### **Reporting vs. Earnings Quality Detail**
+```mermaid
+flowchart TD
+    B["🎯 Reporting vs. Earnings Quality"] --> B1["Financial Reporting Quality<br/>Compliant, Decision-Useful, Transparent"]
+    B --> B2["Earnings Quality<br/>Sustainable, Adequate Return"]
+    B --> B3["Low Reporting Quality<br/>Biased, Non-Compliant, Fraudulent"]
+    B --> B4["Low Earnings Quality<br/>Unsustainable, Inflated by One-Time Events"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class B,B1,B2,B3,B4 detailNode
+```
+
+#### **Motivations & Mechanisms for Low-Quality Reporting Detail**
+```mermaid
+flowchart TD
+    C["⚠️ Motivations & Mechanisms"] --> C1["Meet/Beat Forecasts"]
+    C --> C2["Compensation Incentives"]
+    C --> C3["Avoid Debt Covenant Violations"]
+    C --> C4["Mask Poor Performance"]
+    C --> C5["Fraud Triangle"]
+    C5 --> C51["Opportunity"]
+    C5 --> C52["Motivation/Pressure"]
+    C5 --> C53["Rationalization"]
+    C --> C6["Disciplining Mechanisms"]
+    C6 --> C61["Regulators (SEBI, SEC)"]
+    C6 --> C62["Auditors"]
+    C6 --> C63["Private Contracting"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class C,C1,C2,C3,C4,C5,C6 detailNode
+    class C51,C52,C53,C61,C62,C63 detailNode
+```
+
+#### **Warning Signs & Detection Detail**
+```mermaid
+flowchart TD
+    D["🚩 Warning Signs & Detection"] --> D1["Revenue Recognition Issues"]
+    D1 --> D11["Aggressive Policies"]
+    D1 --> D12["Receivables Growing Faster than Revenue"]
+    D --> D2["Inventory Issues"]
+    D2 --> D21["Inventory Growing Faster than Revenue"]
+    D2 --> D22["Declining Inventory Turnover"]
+    D --> D3["Capitalization Policies"]
+    D3 --> D31["Aggressive Capitalization"]
+    D --> D4["Cash Flow vs. Net Income"]
+    D4 --> D41["Net Income > CFO"]
+    D --> D5["Use of Non-GAAP Measures"]
+    D5 --> D51["Adjusted/Pro Forma Earnings"]
+    D --> D6["Fourth-Quarter Surprises"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class D,D1,D2,D3,D4,D5,D6 detailNode
+    class D11,D12,D21,D22,D31,D41,D51 detailNode
+```
+```mermaid
+flowchart TD
+    A["📑 Financial Reporting Quality<br/>Module 10 Overview"] --> B["🎯 Reporting vs. Earnings Quality"]
+    A --> C["⚠️ Motivations & Mechanisms for Low-Quality Reporting"]
+    A --> D["🚩 Warning Signs & Detection"]
+
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef topicNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+
+    class A mainNode
+    class B,C,D topicNode
+```
 
 #### **1. Financial Reporting Quality vs. Quality of Reported Results**
 

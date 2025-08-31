@@ -107,15 +107,15 @@ Revenue is the lifeblood of a company. How and when a company reports this reven
 
 -----
 
-**Core Principle:** Revenue is recognized when a company satisfies a performance obligation by transferring a promised good or service to a customer. [cite: 74] The amount recognized is what the company *expects to be entitled to receive*. [cite: 74, 76]
+**Core Principle:** Revenue is recognized when a company satisfies a performance obligation by transferring a promised good or service to a customer.  The amount recognized is what the company *expects to be entitled to receive*. 
 
 **The 5-Step Model for Recognizing Revenue:**
 
-1.  **Identify the contract(s) with a customer.** [cite: 76] A contract is an agreement that creates enforceable rights and obligations. [cite: 76]
-2.  **Identify the performance obligations in the contract.** A performance obligation is a promise to transfer a *distinct* good or service. [cite: 76]
-3.  **Determine the transaction price.** This is the amount of consideration a company expects to receive. [cite: 76]
+1.  **Identify the contract(s) with a customer.**  A contract is an agreement that creates enforceable rights and obligations. 
+2.  **Identify the performance obligations in the contract.** A performance obligation is a promise to transfer a *distinct* good or service. 
+3.  **Determine the transaction price.** This is the amount of consideration a company expects to receive. 
 4.  **Allocate the transaction price to the performance obligations.** If a contract has multiple performance obligations, the price is allocated based on their standalone selling prices.
-5.  **Recognize revenue when (or as) the entity satisfies a performance obligation.** [cite: 76]
+5.  **Recognize revenue when (or as) the entity satisfies a performance obligation.** 
 
 <!-- end list -->
 
@@ -153,13 +153,13 @@ Just as important as recognizing revenue is recognizing the costs incurred to ge
 
 -----
 
-  * **Matching Principle:** This principle dictates that expenses should be recognized in the same period as the revenues they helped generate. [cite: 74, 82] For example, the cost of the goods you sold this year should be expensed this year. [cite: 82]
+  * **Matching Principle:** This principle dictates that expenses should be recognized in the same period as the revenues they helped generate.  For example, the cost of the goods you sold this year should be expensed this year. 
 
   * **Capitalize vs. Expense:** This is one of the most important judgments management makes.
 
-      * **Capitalize:** If an expenditure is expected to provide a benefit for *more than one* accounting period, its cost is recorded as an asset on the balance sheet (capitalized) and then expensed over its useful life via depreciation or amortization. [cite: 83]
+      * **Capitalize:** If an expenditure is expected to provide a benefit for *more than one* accounting period, its cost is recorded as an asset on the balance sheet (capitalized) and then expensed over its useful life via depreciation or amortization. 
           * **Indian Context:** When **Reliance Industries** builds a new refinery for ₹50,000 crore, that cost is capitalized as Property, Plant, & Equipment (PPE). A portion of that cost is then expensed as depreciation each year for many years.
-      * **Expense:** If an expenditure benefits only the *current* period, it is expensed immediately on the income statement. [cite: 83]
+      * **Expense:** If an expenditure benefits only the *current* period, it is expensed immediately on the income statement. 
           * **Indian Context:** The salary paid to the manager of a **Big Bazaar** store for the month of July is expensed in July.
 
   * **Impact on Financial Statements & Ratios:**
@@ -184,16 +184,16 @@ A key task for an analyst is to separate sustainable performance from one-off ev
 
 -----
 
-  * **Discontinued Operations:** When a company sells or shuts down a major part of its business, the profits or losses from that segment are reported separately on the income statement, *net of taxes*, after income from continuing operations. [cite: 75, 101]
+  * **Discontinued Operations:** When a company sells or shuts down a major part of its business, the profits or losses from that segment are reported separately on the income statement, *net of taxes*, after income from continuing operations. 
 
       * **Indian Context:** If the **Tata Group** were to sell its entire stake in Tata Steel, the profit or loss from Tata Steel's operations for the year, and the gain/loss on the sale itself, would be shown separately as a "discontinued operation." This allows an analyst to easily see the performance of the remaining Tata Group businesses.
 
-  * **Unusual or Infrequent Items:** These are events that are material but still considered part of the company's normal business activities. [cite: 99] Examples include costs from a major restructuring (like shutting down a few factories) or a gain from selling an old office building. These are shown separately on the income statement but *before tax* and within income from continuing operations. [cite: 99]
+  * **Unusual or Infrequent Items:** These are events that are material but still considered part of the company's normal business activities.  Examples include costs from a major restructuring (like shutting down a few factories) or a gain from selling an old office building. These are shown separately on the income statement but *before tax* and within income from continuing operations. 
 
   * **Changes in Accounting Policies:**
 
-      * When a company changes an accounting *principle* (e.g., switches inventory method), it must apply the change **retrospectively**. [cite: 101] This means restating all prior period financial statements shown in the annual report as if the new policy had always been used. [cite: 102] This preserves comparability.
-      * When a company changes an accounting *estimate* (e.g., changes the estimated useful life of a machine from 10 years to 12 years), the change is applied **prospectively**. [cite: 103] Only current and future financial statements are affected. No restatement of past results is done.
+      * When a company changes an accounting *principle* (e.g., switches inventory method), it must apply the change **retrospectively**.  This means restating all prior period financial statements shown in the annual report as if the new policy had always been used.  This preserves comparability.
+      * When a company changes an accounting *estimate* (e.g., changes the estimated useful life of a machine from 10 years to 12 years), the change is applied **prospectively**.  Only current and future financial statements are affected. No restatement of past results is done.
 
 -----
 
@@ -212,19 +212,19 @@ EPS is probably the single most-watched number for a public company. It represen
 
   * **Simple vs. Complex Capital Structure:**
 
-      * A company has a **simple** capital structure if it only has common stock and non-convertible debt/preferred stock. [cite: 81]
-      * It has a **complex** capital structure if it has potentially dilutive securities outstanding—like stock options, warrants, or convertible bonds/preferred stock—that could turn into common shares and dilute the ownership of existing shareholders. [cite: 81]
+      * A company has a **simple** capital structure if it only has common stock and non-convertible debt/preferred stock. 
+      * It has a **complex** capital structure if it has potentially dilutive securities outstanding—like stock options, warrants, or convertible bonds/preferred stock—that could turn into common shares and dilute the ownership of existing shareholders. 
 
   * **Basic EPS:** This is the straightforward calculation for all companies.
 
-      * **Formula:** `(Net Income - Preferred Dividends) / Weighted Average Number of Common Shares Outstanding` [cite: 82]
+      * **Formula:** `(Net Income - Preferred Dividends) / Weighted Average Number of Common Shares Outstanding` 
       * The numerator is the income available to common shareholders. Preferred dividends are subtracted because they are paid before common shareholders get anything.
       * The denominator is the average number of shares that were outstanding during the period, weighted by the time they were outstanding.
 
   * **Diluted EPS:** This is a "what-if," more conservative measure required for companies with complex capital structures.
 
-      * **Concept:** It calculates EPS as if all dilutive securities were exercised or converted into common shares. [cite: 81] By definition, **Diluted EPS ≤ Basic EPS**.
-      * **Antidilutive Securities:** If the conversion of a security would *increase* EPS (e.g., if the interest saved on converting a bond is higher than the EPS dilution), that security is "antidilutive" and is ignored in the calculation of Diluted EPS. [cite: 89]
+      * **Concept:** It calculates EPS as if all dilutive securities were exercised or converted into common shares.  By definition, **Diluted EPS ≤ Basic EPS**.
+      * **Antidilutive Securities:** If the conversion of a security would *increase* EPS (e.g., if the interest saved on converting a bond is higher than the EPS dilution), that security is "antidilutive" and is ignored in the calculation of Diluted EPS. 
 
   * **CFA Exam Tip:** You must know the Basic EPS formula. For Diluted EPS, the exam is more likely to test your conceptual understanding (what it represents, which securities are dilutive, the effect on the numerator/denominator) than complex calculations. For example, converting a bond adds the after-tax interest expense back to the numerator and adds the new shares to the denominator.
 
@@ -243,15 +243,15 @@ This module brings us back to the tools we use to analyze the income statement n
 
 -----
 
-  * **Common-Size Income Statement:** An incredibly useful tool where every line item is expressed as a percentage of total revenue. [cite: 75, 114] This removes the effect of size, making it easy to compare companies and to spot trends over time. [cite: 114]
+  * **Common-Size Income Statement:** An incredibly useful tool where every line item is expressed as a percentage of total revenue.  This removes the effect of size, making it easy to compare companies and to spot trends over time. 
 
       * **Indian Context:** We could compare **HUL** and **Dabur**. We might find that HUL has a gross margin of 53% while Dabur's is 49%. This could lead us to investigate differences in their product mix or supply chain efficiency. We might also see that Dabur spends 12% of its revenue on advertising, while HUL spends 10%, reflecting different brand-building strategies.
 
   * **Key Profitability Ratios (Return on Sales):**
 
-      * **Gross Profit Margin** = `Gross Profit / Revenue`. [cite: 117] This shows the basic profitability of the product itself before other expenses. A higher margin is better.
-      * **Operating Profit Margin** = `Operating Profit / Revenue`. [cite: 118] This shows how well the company manages its entire business operations.
-      * **Net Profit Margin** = `Net Income / Revenue`. [cite: 117] This is the "bottom line" margin, showing how much of every rupee of sales is left for shareholders after all expenses, including interest and taxes, are paid.
+      * **Gross Profit Margin** = `Gross Profit / Revenue`.  This shows the basic profitability of the product itself before other expenses. A higher margin is better.
+      * **Operating Profit Margin** = `Operating Profit / Revenue`.  This shows how well the company manages its entire business operations.
+      * **Net Profit Margin** = `Net Income / Revenue`.  This is the "bottom line" margin, showing how much of every rupee of sales is left for shareholders after all expenses, including interest and taxes, are paid.
 
 -----
 
@@ -261,12 +261,13 @@ This module brings us back to the tools we use to analyze the income statement n
 
 ### **Key Formulas for Analyzing Income Statements**
 
-  * **Basic EPS** = `(Net Income – Preferred Dividends) / Weighted Average Common Shares Outstanding` [cite: 82]
-  * **Diluted EPS (for Convertible Debt)** = `[Net Income + After-tax Interest on Debt – Preferred Dividends] / [Weighted Avg. Shares + New Shares from Conversion]` [cite: 109]
-  * **Diluted EPS (for Convertible Preferred Stock)** = `Net Income / [Weighted Avg. Shares + New Shares from Conversion]` [cite: 108]
-  * **Gross Profit Margin** = `Gross Profit / Revenue` [cite: 117]
-  * **Operating Profit Margin** = `Operating Income / Revenue` [cite: 118]
-  * **Net Profit Margin** = `Net Income / Revenue` [cite: 117]
+  * **Basic EPS** = `(Net Income – Preferred Dividends) / Weighted Average Common Shares Outstanding` 
+  * **Diluted EPS (for Convertible Debt)** = `[Net Income + After-tax Interest on Debt – Preferred Dividends] / [Weighted Avg. Shares + New Shares from Conversion]` 
+  * **Diluted EPS (for Convertible Preferred Stock)** = `Net Income / [Weighted Avg. Shares + New Shares from Conversion]` 
+  * **Treasury Stock Method (Incremental Shares)** = `Num of Options × (Average Price – Strike Price) / Average Price`
+  * **Gross Profit Margin** = `Gross Profit / Revenue` 
+  * **Operating Profit Margin** = `Operating Income / Revenue` 
+  * **Net Profit Margin** = `Net Income / Revenue` 
 
 ### **Quick Exam-Day Pointers**
 

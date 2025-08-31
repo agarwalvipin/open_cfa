@@ -1,6 +1,64 @@
 ### **Reading 7: Analysis of Long-Term Assets**
 
 This reading covers the accounting and analysis of long-term assets, which include tangible assets like Property, Plant, and Equipment (PP&E) and intangible assets like patents and goodwill. These assets are crucial as they form the productive base of a company.
+#### **Long-Term Asset Analysis Overview Diagram**
+#### **Acquisition of Intangible Assets Detail**
+```mermaid
+flowchart TD
+    B["💡 Acquisition of Intangible Assets"] --> B1["Purchased: Capitalized"]
+    B --> B2["Internally Developed"]
+    B2 --> B21["IFRS: Expense Research, Capitalize Development"]
+    B2 --> B22["GAAP: Expense R&D"]
+    B --> B3["Business Combination: Allocate Purchase Price, Goodwill"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class B,B1,B2,B3 detailNode
+    class B21,B22 detailNode
+```
+
+#### **Impairment & Derecognition Detail**
+```mermaid
+flowchart TD
+    C["⚠️ Impairment & Derecognition"] --> C1["Impairment Test"]
+    C1 --> C11["IFRS: Recoverable Amount"]
+    C1 --> C12["GAAP: Two-Step Test"]
+    C --> C2["Impairment Reversal"]
+    C2 --> C21["IFRS: Allowed (except Goodwill)"]
+    C2 --> C22["GAAP: Prohibited"]
+    C --> C3["Derecognition: Sale, Exchange, Abandonment"]
+    C3 --> C31["Gain/Loss = Sale Proceeds - Carrying Amount"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class C,C1,C2,C3 detailNode
+    class C11,C12,C21,C22,C31 detailNode
+```
+
+#### **Disclosures & Asset Age Ratios Detail**
+```mermaid
+flowchart TD
+    D["📑 Disclosures & Asset Age Ratios"] --> D1["Depreciation/Amortization Methods"]
+    D --> D2["Asset Breakdown by Type"]
+    D --> D3["Asset Age Ratios"]
+    D3 --> D31["Fixed Asset Turnover = Revenue / Avg Net Fixed Assets"]
+    D3 --> D32["Average Age = Accumulated Depreciation / Depreciation Expense"]
+    D3 --> D33["Average Remaining Life = Net PP&E / Depreciation Expense"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class D,D1,D2,D3 detailNode
+    class D31,D32,D33 detailNode
+```
+```mermaid
+flowchart TD
+    A["🏢 Long-Term Asset Analysis<br/>Module 7 Overview"] --> B["💡 Acquisition of Intangible Assets"]
+    A --> C["⚠️ Impairment & Derecognition"]
+    A --> D["📑 Disclosures & Asset Age Ratios"]
+
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef topicNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+
+    class A mainNode
+    class B,C,D topicNode
+```
 
 #### **1. Acquisition of Intangible Assets**
 

@@ -1,6 +1,62 @@
 ### **Reading 8: Topics in Long-Term Liabilities and Equity**
 
 This reading delves into some of the more complex liabilities and equity items on the balance sheet: leases, pensions, and share-based compensation. These are significant items for many companies and require careful analysis.
+#### **Long-Term Liabilities & Equity Overview Diagram**
+#### **Leases Detail**
+```mermaid
+flowchart TD
+    B["🏠 Leases"] --> B1["Lessee: ROU Asset & Lease Liability"]
+    B --> B2["IFRS: Single Model (Finance Lease)"]
+    B2 --> B21["Depreciation & Interest Expense"]
+    B --> B3["U.S. GAAP: Dual Model"]
+    B3 --> B31["Finance Lease: Depreciation & Interest"]
+    B3 --> B32["Operating Lease: Single Lease Expense"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class B,B1,B2,B3 detailNode
+    class B21,B31,B32 detailNode
+```
+
+#### **Postemployment Benefits (Pensions) Detail**
+```mermaid
+flowchart TD
+    C["👥 Postemployment Benefits"] --> C1["Defined Contribution Plan"]
+    C1 --> C11["Simple Accounting"]
+    C1 --> C12["Employee Bears Risk"]
+    C --> C2["Defined Benefit Plan"]
+    C2 --> C21["Complex Accounting"]
+    C2 --> C22["Employer Bears Risk"]
+    C2 --> C23["Funded Status = Plan Assets - PBO"]
+    C2 --> C24["Net Pension Asset/Liability"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class C,C1,C2 detailNode
+    class C11,C12,C21,C22,C23,C24 detailNode
+```
+
+#### **Share-Based Compensation Detail**
+```mermaid
+flowchart TD
+    D["🎁 Share-Based Compensation"] --> D1["Stock Grants & Options"]
+    D --> D2["Expense = Fair Value at Grant Date"]
+    D --> D3["Recognized Over Vesting Period"]
+    D --> D4["Non-Cash Expense (Added Back in CFO)"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class D,D1,D2,D3,D4 detailNode
+```
+```mermaid
+flowchart TD
+    A["� Long-Term Liabilities & Equity<br/>Module 8 Overview"] --> B["🏠 Leases (IFRS vs. U.S. GAAP)"]
+    A --> C["👥 Postemployment Benefits (Pensions)"]
+    A --> D["🎁 Share-Based Compensation"]
+
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef topicNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+
+    class A mainNode
+    class B,C,D topicNode
+```
 
 #### **1. Leases**
 

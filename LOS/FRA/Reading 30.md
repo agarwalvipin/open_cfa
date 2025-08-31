@@ -1,14 +1,10 @@
-Of course. Here is a detailed, LOS-by-LOS explanation of Reading 30: Analyzing Statements of Cash Flows I, tailored for your CFA Level 1 preparation.
-
----
-
 ### **Reading 30: Analyzing Statements of Cash Flows I**
 
 The Statement of Cash Flows is arguably one of the most critical financial statements for an analyst. While the income statement can be influenced by accounting choices and estimates, the cash flow statement shows the real cash moving in and out of a company. It bridges the gap between the accrual-based income statement and the cash-based reality of a business.
 
 ---
 
-### [cite_start]**LOS a: describe how the cash flow statement is linked to the income statement and the balance sheet.** [cite: 36]
+### **LOS a: describe how the cash flow statement is linked to the income statement and the balance sheet.** 
 
 #### **Explanation**
 
@@ -16,7 +12,7 @@ The three main financial statements are intrinsically linked. Think of it this w
 
 * The **Income Statement** shows performance over a period (e.g., a year).
 * The **Balance Sheet** shows financial position at a single point in time (the beginning and end of that period).
-* [cite_start]The **Statement of Cash Flows** explains the change in the cash balance on the balance sheet from the beginning to the end of the period, by categorizing cash flows into operating, investing, and financing activities. [cite: 214]
+* The **Statement of Cash Flows** explains the change in the cash balance on the balance sheet from the beginning to the end of the period, by categorizing cash flows into operating, investing, and financing activities. 
 
 The fundamental link is the following equation:
 
@@ -24,11 +20,11 @@ The fundamental link is the following equation:
 
 Here's how they connect:
 
-* [cite_start]**Income Statement & CFO:** Net income is the starting point for the indirect method of calculating Cash Flow from Operations (CFO). [cite: 218] [cite_start]We then make adjustments for non-cash items (like depreciation) and changes in working capital (like accounts receivable and payable) to arrive at CFO. [cite: 213, 220]
+* **Income Statement & CFO:** Net income is the starting point for the indirect method of calculating Cash Flow from Operations (CFO).  We then make adjustments for non-cash items (like depreciation) and changes in working capital (like accounts receivable and payable) to arrive at CFO. 
 * **Balance Sheet & Cash Flow Statement:**
-    * [cite_start]**Operating Activities (CFO)** are generally linked to changes in current assets and current liabilities (e.g., inventory, accounts receivable, accounts payable). [cite: 220, 244]
-    * [cite_start]**Investing Activities (CFI)** are typically related to changes in non-current assets (e.g., buying or selling property, plant, and equipment). [cite: 221, 244]
-    * [cite_start]**Financing Activities (CFF)** are usually connected to changes in non-current liabilities and equity (e.g., issuing bonds, repurchasing stock, paying dividends). [cite: 221, 245]
+    * **Operating Activities (CFO)** are generally linked to changes in current assets and current liabilities (e.g., inventory, accounts receivable, accounts payable). 
+    * **Investing Activities (CFI)** are typically related to changes in non-current assets (e.g., buying or selling property, plant, and equipment). 
+    * **Financing Activities (CFF)** are usually connected to changes in non-current liabilities and equity (e.g., issuing bonds, repurchasing stock, paying dividends). 
 
 #### **Real-World Examples**
 
@@ -42,15 +38,15 @@ Here's how they connect:
     * **Balance Sheet:** Cash goes down, PP&E goes up.
     * **Cash Flow Statement:** It's a use of cash in Investing Activities (CFI).
     * **Income Statement:** No immediate impact, but depreciation will be an expense in future periods.
-* Remember that Net Income does **not** equal Cash Flow from Operations. The difference is accruals. [cite_start]High-quality earnings are backed by strong cash flow. [cite: 215, 216]
+* Remember that Net Income does **not** equal Cash Flow from Operations. The difference is accruals. High-quality earnings are backed by strong cash flow. 
 
 ---
 
-### [cite_start]**LOS b: describe the steps in the preparation of direct and indirect cash flow statements, including how cash flows can be computed using income statement and balance sheet data.** [cite: 37]
+### **LOS b: describe the steps in the preparation of direct and indirect cash flow statements, including how cash flows can be computed using income statement and balance sheet data.** 
 
 #### **Explanation**
 
-The only difference between the direct and indirect methods is in the presentation of **Cash Flow from Operations (CFO)**. [cite_start]CFI and CFF are presented identically under both methods. [cite: 225]
+The only difference between the direct and indirect methods is in the presentation of **Cash Flow from Operations (CFO)**. CFI and CFF are presented identically under both methods. 
 
 1.  **Indirect Method (Most Common):**
     * **Starts with Net Income.**
@@ -83,11 +79,11 @@ The only difference between the direct and indirect methods is in the presentati
 * **Direct Method Calculations:**
     * **Cash Collected from Customers** = Sales - Increase in Accounts Receivable
     * **Cash Paid to Suppliers** = Cost of Goods Sold + Increase in Inventory - Increase in Accounts Payable
-* [cite_start]**The final CFO figure is the same under both methods.** This is a critical check figure. [cite: 225]
+* **The final CFO figure is the same under both methods.** This is a critical check figure. 
 
 ---
 
-### [cite_start]**LOS c: demonstrate the conversion of cash flows from the indirect to direct method.** [cite: 38, 224]
+### **LOS c: demonstrate the conversion of cash flows from the indirect to direct method.** 
 
 #### **Explanation**
 
@@ -110,7 +106,7 @@ To convert the CFO section from the indirect method to the direct method, you es
 
 ---
 
-### [cite_start]**LOS d: contrast cash flow statements prepared under International Financial Reporting Standards (IFRS) and US generally accepted accounting principles (US GAAP).** [cite: 39, 232]
+### **LOS d: contrast cash flow statements prepared under International Financial Reporting Standards (IFRS) and US generally accepted accounting principles (US GAAP).** 
 
 #### **Explanation**
 
@@ -124,11 +120,11 @@ This is a major topic for Level 1. While largely similar, there are key differen
 | **Dividends Received**| Operating (CFO)                                              | Operating (CFO) or Investing (CFI)                              |
 | **Taxes Paid** | Operating (CFO) (Always)                                     | Operating (CFO), unless can be specifically identified with a CFI or CFF transaction. |
 
-**The Big Picture:** IFRS provides more flexibility, allowing companies to classify these items based on the nature of their business. [cite_start]US GAAP is more rigid. [cite: 235]
+**The Big Picture:** IFRS provides more flexibility, allowing companies to classify these items based on the nature of their business. US GAAP is more rigid. 
 
 #### **Real-World Examples**
 
-* **Global Context:** A European manufacturing company (reporting under IFRS) might classify interest paid on its factory construction loan as a financing outflow (CFF), arguing it's a cost of financing. [cite_start]An identical US company (under US GAAP) *must* classify that same interest payment as an operating outflow (CFO). [cite: 233] This can make direct comparison of CFO between the two companies misleading without adjustment.
+* **Global Context:** A European manufacturing company (reporting under IFRS) might classify interest paid on its factory construction loan as a financing outflow (CFF), arguing it's a cost of financing. An identical US company (under US GAAP) *must* classify that same interest payment as an operating outflow (CFO).  This can make direct comparison of CFO between the two companies misleading without adjustment.
 * **Indian Context (Ind-AS):** Indian Accounting Standards (Ind-AS) are largely converged with IFRS. Therefore, Indian companies have the same flexibility as IFRS-reporting companies regarding the classification of interest and dividends. This is an important distinction from US companies.
 
 #### **CFA Level 1 Exam Tips**

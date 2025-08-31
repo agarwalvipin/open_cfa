@@ -1,6 +1,60 @@
 ### **Reading 9: Analysis of Income Taxes**
 
 This reading deals with the complexities of accounting for income taxes. The tax expense shown on the income statement is often different from the actual cash taxes paid to the government due to differences between accounting rules and tax laws.
+#### **Income Tax Analysis Overview Diagram**
+#### **Accounting Profit vs. Taxable Income Detail**
+```mermaid
+flowchart TD
+    B["🔀 Accounting Profit vs. Taxable Income"] --> B1["Accounting Profit<br/>(Pretax Income)"]
+    B --> B2["Taxable Income"]
+    B --> B3["Income Tax Expense"]
+    B --> B4["Taxes Payable"]
+    B --> B5["Permanent Differences"]
+    B --> B6["Temporary Differences<br/>Origin of DTA/DTL"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class B,B1,B2,B3,B4,B5,B6 detailNode
+```
+
+#### **Deferred Tax Assets & Liabilities Detail**
+```mermaid
+flowchart TD
+    C["📊 Deferred Tax Assets & Liabilities"] --> C1["Deferred Tax Liability (DTL)"]
+    C1 --> C11["Pay Less Tax Now, More Later"]
+    C1 --> C12["Origin: Accelerated Depreciation"]
+    C --> C2["Deferred Tax Asset (DTA)"]
+    C2 --> C21["Pay More Tax Now, Less Later"]
+    C2 --> C22["Origin: Asset Write-Downs"]
+    C2 --> C23["Valuation Allowance<br/>Reduces DTA"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class C,C1,C2 detailNode
+    class C11,C12,C21,C22,C23 detailNode
+```
+
+#### **Tax Rates & Disclosures Detail**
+```mermaid
+flowchart TD
+    D["📈 Tax Rates & Disclosures"] --> D1["Statutory Tax Rate"]
+    D --> D2["Effective Tax Rate = Tax Expense / Pretax Income"]
+    D --> D3["Cash Tax Rate = Cash Taxes Paid / Pretax Income"]
+    D --> D4["Tax Reconciliation Note"]
+
+    classDef detailNode fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    class D,D1,D2,D3,D4 detailNode
+```
+```mermaid
+flowchart TD
+    A["🧾 Income Tax Analysis<br/>Module 9 Overview"] --> B["🔀 Accounting Profit vs. Taxable Income"]
+    A --> C["📊 Deferred Tax Assets & Liabilities"]
+    A --> D["📈 Tax Rates & Disclosures"]
+
+    classDef mainNode fill:#e3f2fd,stroke:#0d47a1,stroke-width:4px,color:#000
+    classDef topicNode fill:#f3e5f5,stroke:#4a148c,stroke-width:3px,color:#000
+
+    class A mainNode
+    class B,C,D topicNode
+```
 
 #### **1. Differences between Accounting Profit and Taxable Income**
 
