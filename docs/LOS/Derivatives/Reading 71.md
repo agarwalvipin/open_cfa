@@ -34,10 +34,10 @@ graph TD
 **🇮🇳 Indian Example:** An investor buys one Nifty 50 futures contract on the National Stock Exchange (NSE) at a price of 19,500. The lot size is 50.
 
   * **Day 1:** The Nifty futures settlement price is 19,600. The investor has a gain of 100 points.
-      * *Gain:* $100 \times 50 = ₹5,000$. This amount is credited to their margin account.
+      * *Gain:* $100 \times 50 = 5000$. This amount is credited to their margin account.
       * The contract's value is reset to zero, and the new price for the next day is 19,600.
   * **Day 2:** The settlement price falls to 19,550. The investor has a loss of 50 points from the new price.
-      * *Loss:* $50 \times 50 = ₹2,500$. This amount is debited from their margin account.
+      * *Loss:* $50 \times 50 = 2500$. This amount is debited from their margin account.
       * The contract's value is again reset to zero, and the new price is 19,550.
 
 #### **Interest Rate Futures**

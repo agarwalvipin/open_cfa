@@ -32,10 +32,10 @@ We can use replication to figure this out. Consider two portfolios:
 
 Since both portfolios have the exact same payoff in one year (one RIL share), their costs today must be equal to prevent arbitrage.
 
-$$\frac{F_0(T)}{1.07} = S_0 = ₹3,000$$
+$$\frac{F_0(T)}{1.07} = S_0 = 3000$$
 
 Solving for the no-arbitrage forward price:
-$$F_0(T) = ₹3,000 \times (1.07) = ₹3,210$$
+$$F_0(T) = 3000 \times (1.07) = 3210$$
 
 > **<mark>EXAM TIP:</mark>:** This is a cornerstone formula. For an underlying asset with no costs or benefits of holding, the no-arbitrage forward price is simply the spot price compounded at the risk-free rate.
 > $$F_0(T) = S_0(1 + R_f)^T$$
@@ -67,14 +67,14 @@ $$F_0(T) = [S_0 + PV_0(\text{Costs}) - PV_0(\text{Benefits})](1 + R_f)^T$$
 Let's go back to our RIL example. Suppose RIL is expected to pay a dividend of ₹30 in six months.
 * $S_0$ = ₹3,000
 * $R_f$ = 7% per year
-* Present Value of Dividend ($PV_0(\text{Benefit})$) = $\frac{₹30}{(1.07)^{0.5}} \approx ₹28.99$
+* Present Value of Dividend ($PV_0(\text{Benefit})$) = $\frac{30}{(1.07)^{0.5}} \approx 28.99$
 
 Now, the no-arbitrage forward price is calculated on the spot price *minus* the present value of the dividend. Why? Because if you buy the share today to replicate the forward, you'll receive that dividend, which offsets part of your initial cost.
 
 $$F_0(T) = (S_0 - PV_0(\text{Benefit})) \times (1 + R_f)^T$$
-$$F_0(T) = (₹3,000 - ₹28.99) \times (1.07)^1 = ₹2,971.01 \times 1.07 \approx ₹3,179$$
+$$F_0(T) = (3000 - 28.99) \times (1.07)^1 = 2971.01 \times 1.07 \approx 3179$$
 
-Notice the forward price is lower than the ₹3,210 we calculated earlier because the benefit of the dividend makes it cheaper to carry the asset.
+Notice the forward price is lower than the 3,210 we calculated earlier because the benefit of the dividend makes it cheaper to carry the asset.
 
 > **<mark>EXAM TIP:</mark>:** Understand the intuition behind the cost of carry model. Don't just memorize the formula. **Costs of holding the asset increase the forward price, while benefits of holding it decrease the forward price.** This is a very testable concept. The exam might ask you to identify which factor would increase or decrease a forward price.
 

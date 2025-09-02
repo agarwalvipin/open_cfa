@@ -100,25 +100,11 @@ You sell the call, hoping the price of TCS stays below ₹3,500. Your maximum ga
 
 ```mermaid
 xychart-beta
-  title "Call Option Profit/Loss -Exercise Price = ₹3,500"
-  x-axis "TCS Stock Price at Expiration" [3300, 3400, 3500, 3600, 3700, 3800]
-  y-axis "Profit / Loss (₹)" [-200, -100, 0, 100, 200, 300]
-  line "Long Call" [
-    {x: 3300, y: -100},
-    {x: 3400, y: -100},
-    {x: 3500, y: -100},
-    {x: 3600, y: 0},
-    {x: 3700, y: 100},
-    {x: 3800, y: 200}
-  ]
-  line "Short Call" [
-    {x: 3300, y: 100},
-    {x: 3400, y: 100},
-    {x: 3500, y: 100},
-    {x: 3600, y: 0},
-    {x: 3700, y: -100},
-    {x: 3800, y: -200}
-  ]
+  title "Call Option Profit/Loss - Exercise Price = ₹3,500"
+  x-axis "TCS Stock Price at Expiration (₹)" [3300, 3400, 3500, 3600, 3700, 3800]
+  y-axis "Profit / Loss (₹)"
+  line "Long Call (Buyer)" [-100, -100, -100, 0, 100, 200]
+  line "Short Call (Seller)" [100, 100, 100, 0, -100, -200]
 ```
 
 #### Put Options
@@ -142,24 +128,10 @@ You sell the put, hoping the price of TCS stays above ₹3,500. Your maximum gai
 ```mermaid
 xychart-beta
   title "Put Option Profit/Loss (Exercise Price = ₹3,500)"
-  x-axis "TCS Stock Price at Expiration" [3200, 3300, 3420, 3500, 3600, 3700]
-  y-axis "Profit / Loss (₹)" [-300, -200, -100, 0, 100, 200]
-  line "Long Put" [
-    {x: 3200, y: 220},
-    {x: 3300, y: 120},
-    {x: 3420, y: 0},
-    {x: 3500, y: -80},
-    {x: 3600, y: -80},
-    {x: 3700, y: -80}
-  ]
-  line "Short Put" [
-    {x: 3200, y: -220},
-    {x: 3300, y: -120},
-    {x: 3420, y: 0},
-    {x: 3500, y: 80},
-    {x: 3600, y: 80},
-    {x: 3700, y: 80}
-  ]
+  x-axis "TCS Stock Price at Expiration (₹)" [3200, 3300, 3420, 3500, 3600, 3700]
+  y-axis "Profit / Loss (₹)"
+  line "Long Put (Buyer)" [220, 120, 0, -80, -80, -80]
+  line "Short Put (Seller)" [-220, -120, 0, 80, 80, 80]
 ```
 
 -----
@@ -195,12 +167,12 @@ This decision-making process can be visualized as follows:
 
 ```mermaid
 graph TD
-    subgraph Forward Commitment (e.g., Forward Contract)
+    subgraph "Forward Commitment (e.g., Forward Contract)"
         A[Start] --> B{Settlement Date Arrives};
         B --> C[Buyer MUST Buy, Seller MUST Sell];
     end
 
-    subgraph Contingent Claim (e.g., Call Option)
+    subgraph "Contingent Claim (e.g., Call Option)"
         D[Start] --> E{Settlement Date Arrives};
         E --> F{Is Price > Exercise Price?};
         F -- Yes --> G[Buyer CHOOSES to Exercise];

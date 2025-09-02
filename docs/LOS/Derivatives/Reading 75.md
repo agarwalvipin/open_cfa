@@ -103,11 +103,20 @@ $c_0 = \frac{(\pi_{up} \times c^+) + (\pi_{down} \times c^-)}{1 + R_f}$
 ### 🧪 Formula Summary
 
 * **Hedge Ratio (h):**
-    $h = \frac{\text{Payoff}_{\text{up}} - \text{Payoff}_{\text{down}}}{\text{Underlying}_{\text{up}} - \text{Underlying}_{\text{down}}}$
+    $$h = \frac{\text{Payoff}^+ - \text{Payoff}^-}{\text{Underlying}^+ - \text{Underlying}^-}$$
 * **Risk-Neutral Probability (Up-move):**
-    $\pi_{up} = \frac{(1+R_f)S_0 - S^-}{S^+ - S^-}$
+    $$\pi_{up} = \frac{(1+R_f)S_0 - S^-}{S^+ - S^-}$$
 * **Option Value using Risk-Neutral Probabilities:**
-    $\text{Option}_0 = \frac{(\pi_{up} \times \text{Payoff}^+) + (\pi_{down} \times \text{Payoff}^-)}{1 + R_f}$
+
+$$C_0 = \frac{\pi_u \times C_u + \pi_d \times C_d}{1 + r}$$
+
+Where:
+- $C_0$ = Option value today
+- $\pi_u$ = Risk-neutral probability of up move
+- $\pi_d$ = Risk-neutral probability of down move  
+- $C_u$ = Option payoff if price goes up
+- $C_d$ = Option payoff if price goes down
+- $r$ = Risk-free rate
 
 ---
 

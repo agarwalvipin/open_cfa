@@ -26,7 +26,7 @@ $$V_T(T) = S_T - F_0(T)$$
     * You enter a 6-month forward contract to buy one share of TCS at a forward price ($F_0(T)$) of ₹3,900. At initiation, the value is ₹0.
     * Three months later (t=0.25 years, T-t=0.25 years), the spot price of TCS ($S_t$) has risen to ₹4,000. Let's say the risk-free rate is 6%.
     * The value of your long position is now:
-        $V_t(T) = ₹4,000 - \frac{₹3,900}{(1.06)^{(0.25)}} \approx ₹4,000 - ₹3,843 = +₹57$.
+        $V_t(T) = 4000 - \frac{3900}{(1.06)^{(0.25)}} \approx 4000 - 3843 = +57$.
     * You have an unrealized gain of ₹57 because the asset is now worth more than your discounted obligation.
 
 > **<mark>EXAM TIP:</mark>:** Calculating the value of a forward contract *during its life* is a very common exam question. Memorize the formula $V_t(T) = S_t - PV(F_0(T))$ and understand its logic.
