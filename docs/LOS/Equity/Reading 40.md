@@ -12,14 +12,20 @@ A security index has a numerical value calculated from the prices of its constit
 * **Price Return:** This measures the performance using only the price changes of the securities in the index. It's like judging a company's stock performance based only on its price going from ₹100 to ₹110, 3673].
 * **Total Return:** This measures performance by including both price changes *and* the income received from the securities, such as dividends or interest payments. This is a more complete picture of the investment's performance.
 
-> **Example 🧮**
-> Imagine an index with two stocks, A and B.
-> * Stock A's price goes from $90 to $95.
-> * Stock B's price goes from $110 to $112, and it pays a $3 dividend.
->
-> **Price Return** would only look at the price changes: ($95 + $112) / ($90 + $110) - 1 = 3.5%.
-> **Total Return** would include the dividend: ($95 + $112 + $3) / ($90 + $110) - 1 = 5.0%.
-> As you can see, the **total return** is always higher than (or equal to) the **price return**.
+```
+Example 🧮
+Imagine an index with two stocks, A and B.
+• Stock A's price goes from $90 to $95.
+• Stock B's price goes from $110 to $112, and it pays a $3 dividend.
+
+Price Return calculation:
+($95 + $112) / ($90 + $110) - 1 = 207/200 - 1 = 3.5%
+
+Total Return calculation:
+($95 + $112 + $3) / ($90 + $110) - 1 = 210/200 - 1 = 5.0%
+
+As you can see, the total return is always higher than (or equal to) the price return.
+```
 
 ***
 
@@ -50,8 +56,22 @@ A **price-weighted index** gives more weight to stocks with higher prices. It's 
     * **Global:** Dow Jones Industrial Average (DJIA)
     * **India:** BSE Sensex
 
-> **Example 🧮**
-> If Stock A is at $90 and Stock B is at $10, a $1 move in Stock A has 9 times the impact on the index as a $1 move in Stock B.
+```
+Example 🧮
+Price-Weighted Index Impact:
+
+Stock A: $90 price
+Stock B: $10 price
+
+If both stocks move by $1:
+• Stock A: $90 → $91 (1.11% change)
+• Stock B: $10 → $11 (10% change)
+
+Index Impact:
+• Stock A contributes 9x more to the index value than Stock B
+• This is because price-weighted indexes simply add the prices
+• Higher-priced stocks have disproportionate influence regardless of company size
+```
 
 #### **Equal-Weighted**
 
