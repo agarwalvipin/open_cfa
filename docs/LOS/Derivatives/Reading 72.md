@@ -88,11 +88,17 @@ For a **fixed-rate payer**:
 While this reading focuses on concepts, the valuation framework is expressed as:
 
 1.  **Swap Value (Fixed-Rate Payer's Perspective):**
-    $$\text{Value}_{\text{swap}} = \text{PV}(\text{Expected Floating Payments}) - \text{PV}(\text{Fixed Payments})$$
+    $$V_{swap} = PV(\text{Expected Floating Payments}) - PV(\text{Fixed Payments})$$
     
 
 2.  **Swap Value using Bond Analogy (Fixed-Rate Payer's Perspective):**
-    $$\text{Value}_{\text{swap}} = \text{Value}_{\text{FRN}} - \text{Value}_{\text{Fixed-Rate Bond}}$$
+    $$V_{swap} = V_{FRN} - V_{Fixed}$$
+
+Where:
+- $V_{swap}$ = Value of the swap
+- $V_{FRN}$ = Value of the floating-rate note
+- $V_{Fixed}$ = Value of the fixed-rate bond
+- $PV$ = Present value
 
 -----
 
