@@ -101,7 +101,10 @@ Within an industry, how does a company compete? Michael Porter identified three 
   * **Herfindahl-Hirschman Index (HHI):**
     $HHI = \\sum_{i=1}^{n} (MS_i)^2 \\times 10,000$
     (Where $MS_i$ is the market share of firm *i* as a decimal)
-
+    * **HHI Classification Ranges:**
+      * **< 1,500:** Unconcentrated (competitive market)
+      * **1,500 - 2,500:** Moderately concentrated
+      * **> 2,500:** Highly concentrated
 -----
 
 > [\!IMPORTANT]

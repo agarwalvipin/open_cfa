@@ -47,6 +47,15 @@ $V_p = \frac{D_p}{k_p}$
 
 > **Example 🧮**
 > A preferred stock from Tata Steel pays a fixed annual dividend of ₹80. If your required return ($k_p$) is 10%, its value is ₹80 / 0.10 = **₹800**.
+```
+Example 🧮
+Preferred Stock Valuation:
+A preferred stock from Tata Steel pays a fixed annual dividend of ₹80.
+Required return ($k_p$) is 10%.
+Calculation:
+₹80 / 0.10 = ₹800
+Key takeaway: Value of a perpetuity is dividend divided by required return.
+```
 
 #### The Gordon Growth Model (Constant Growth DDM)
 This is the most famous DDM. It assumes dividends will grow at a **constant rate (g)** forever.
@@ -67,6 +76,18 @@ Where:
 > A stock just paid a dividend of $2.00 ($D_0$). Dividends are expected to grow at 5% forever (g), and the required return is 10% (kₑ).
 > 1.  First, find next year's dividend: $D_1 = \$2.00 \times (1.05) = \$2.10$.
 > 2.  Now, plug it into the model: $V_0 = \frac{\$2.10}{0.10 - 0.05} = \frac{\$2.10}{0.05} = \textbf{\$42.00}$
+```
+Example 🧮
+Gordon Growth Model Calculation:
+A stock just paid a dividend of $2.00 ($D_0$).
+Dividends are expected to grow at 5% forever (g).
+Required return is 10% (kₑ).
+Step 1: Find next year's dividend:
+$D_1 = $2.00 × 1.05 = $2.10
+Step 2: Plug into the model:
+$V_0 = $2.10 / (0.10 - 0.05) = $2.10 / 0.05 = $42.00
+Key takeaway: Always use next year's dividend ($D_1$) in the numerator.
+```
 
 The **sustainable growth rate (SGR)** can be estimated as:
 **SGR (g) = (1 - Dividend Payout Ratio) × ROE**
