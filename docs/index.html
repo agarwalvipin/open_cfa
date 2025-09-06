@@ -59,6 +59,12 @@
         noData: 'No Results!',
         depth: 4
       },
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true
+      },
       plugins: [
         function (hook, vm) {
           hook.doneEach(function () {
@@ -118,6 +124,8 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-print@1.2.0/dist/docsify-print.min.js"></script>
   <!-- Docsify zoom image plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-zoom-image/dist/docsify-zoom-image.min.js"></script>
+  <!-- Docsify pagination plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 
 </html>
