@@ -90,20 +90,19 @@ A bond's price is a living thing—it changes based on a few key factors. Unders
 3.  **Price and Maturity:** The longer the time to maturity, the **more sensitive** the bond's price is to changes in YTM. A 30-year bond's price will swing much more wildly than a 2-year bond's price for the same change in interest rates.
 
 4.  **The Convexity Kicker:** The price-yield relationship isn't a straight line; it's **convex** (curved). This means:
-
-      * For a 1% drop in yield, the price increase is *larger* than the price decrease from a 1% rise in yield. It's a sweet bonus for bondholders\!
-
-<!-- end list -->
+* For a 1% drop in yield, the price increase is *larger* than the price decrease from a 1% rise in yield. It's a sweet bonus for bondholders!
 
 ```mermaid
 ---
 title: The Convex Price-Yield Relationship
 ---
 xychart-beta
-    x-axis ["6%", "7%", "8%", "9%", "10%"]
-    y-axis "Bond Value" 80 --> 120
-    line [116, 108, 100, 93, 87]
+  x-axis "Yield to Maturity" ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%"]
+  y-axis "Bond Value" 70 --> 140
+  line [135, 125, 116, 108, 100, 93, 87, 81, 76]
 ```
+
+> **💡 Notice the Curve:** See how the line curves? When yields drop from 8% to 7% (1% decrease), the price jumps from ₹100 to ₹108 (+8%). But when yields rise from 8% to 9% (1% increase), the price only falls from ₹100 to ₹93 (-7%). That's convexity working in your favor!
 
 #### The Inevitable Pull to Par 🧲
 

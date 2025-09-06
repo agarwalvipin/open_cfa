@@ -15,18 +15,9 @@ The **financial system** has three core jobs:
 
 Assets and markets can be classified in several ways:
 
-> **Assets 💰**
-> *	**Financial Assets** vs. **Real Assets**: **Financial assets** are claims on future income, like stocks and bonds. **Real assets** are physical items like real estate, airplanes, or gold, 3492].
-> *	**Debt** vs. **Equity**: **Debt securities** are loans that must be repaid (e.g., a government bond). **Equity securities** represent ownership (e.g., shares of Tata Motors).
-> *	**Public** vs. **Private**: **Public securities** trade on open exchanges like the NYSE or NSE and are regulated. **Private securities** are not publicly traded and have less regulation.
-> *	**Physical** vs. **Financial Derivatives**: **Derivative contracts** get their value from another asset. **Financial derivatives** are based on stocks, bonds, or currencies, while **physical derivatives** are based on assets like oil or wheat, 3459].
 
-> **Markets 🏦**
-> *	**Spot Markets**: For immediate delivery of an asset.
-> *	**Futures/Forwards Markets**: For delivery at a future date.
-> *	**Money Markets**: For debt securities with maturities of one year or less (e.g., commercial paper), 3464].
-> *	**Capital Markets**: For longer-term debt and equity securities.
-> *	**Traditional Investment Markets** vs. **Alternative Markets**: Traditional includes stocks and bonds. Alternative includes real estate, commodities, and hedge funds.
+
+
 
 #### The Cast of Characters: Securities, Contracts, and Intermediaries
 

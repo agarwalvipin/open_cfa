@@ -1,6 +1,9 @@
 # Sidebar
 
 - [Home](/README.md)
+- Formulas
+  - [Fixed Income](Formulas/Fixed%20Income.md)
+  - [Derivatives](Formulas/Derivatives.md)
 - LOS
   - Quantitative Methods
     - [Reading 1: Rates and Returns](LOS/PM/Reading%201.md)
@@ -82,6 +85,8 @@
     - [Reading 63: Fixed-Income Securitization](LOS/Fixed%20Income/Reading%2063.md)
     - [Reading 64: Asset-Backed Security (ABS) Instrument and Market Features](LOS/Fixed%20Income/Reading%2064.md)
     - [Reading 65: Mortgage-Backed Security (MBS) Instrument and Market Features](LOS/Fixed%20Income/Reading%2065.md)
+  - Formulas
+    - [Fixed Income](Formulas/Fixed%20Income.md)
   - Derivatives
     - [Reading 66: Derivative Instrument and Derivative Market Features](LOS/Derivatives/Reading%2066.md)
     - [Reading 67: Forward Commitment and Contingent Claim Features and Instruments](LOS/Derivatives/Reading%2067.md)
