@@ -59,22 +59,26 @@ To compare these different money market instruments fairly, we must convert thei
 
 **Bond Equivalent Yield (BEY)** is defined as an **add-on yield** based on a **365-day year**.
 
-> **Example Time! From Discount to BEY 🧮**
-> A 90-day U.S. T-bill with a $1,000 face value is quoted at a **discount yield of 1.2%**. What is its bond equivalent yield?
->
-> 1.  **Calculate the Dollar Discount:**
->     Discount = $1,000 \times 1.2\% \times \frac{90}{360} = \$3.00$
->
-> 2.  **Calculate the Price of the T-bill:**
->     Price = $1,000 - \$3.00 = \$997.00$
->
-> 3.  **Calculate the Holding Period Yield (HPY):**
->     HPY = $\frac{\$3.00}{\$997.00} = 0.3009\%$
->
-> 4.  **Convert to Bond Equivalent Yield (annualize for 365 days):**
->     BEY = $0.3009\% \times \frac{365}{90} = 1.2203\%$
->
-> Notice that the BEY (1.22%) is higher than the initial discount yield (1.2%), because it's based on the actual price paid and a 365-day year.
+
+```text
+Example Time! From Discount to BEY 🧮
+
+A 90-day U.S. T-bill with a $1,000 face value is quoted at a discount yield of 1.2%. What is its bond equivalent yield?
+
+1. Calculate the Dollar Discount:
+    Discount = $1,000 × 1.2% × (90/360) = $3.00
+
+2. Calculate the Price of the T-bill:
+    Price = $1,000 - $3.00 = $997.00
+
+3. Calculate the Holding Period Yield (HPY):
+    HPY = $3.00 / $997.00 = 0.3009%
+
+4. Convert to Bond Equivalent Yield (annualize for 365 days):
+    BEY = 0.3009% × (365/90) = 1.2203%
+
+Notice that the BEY (1.22%) is higher than the initial discount yield (1.2%), because it's based on the actual price paid and a 365-day year.
+```
 
 ---
 

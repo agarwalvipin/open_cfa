@@ -32,12 +32,22 @@ The negative sign is crucial! It captures the inverse relationship between price
 >
 > The bond's price is expected to fall by approximately 1.75%.
 
-#### **Don't Know Macaulay? No Problem!**
-We can also estimate ModDur directly by "shocking" the bond's price. We calculate the bond's price for a small yield increase ($V_+$) and a small yield decrease ($V_-$) and plug them into this formula:
+```text
+Example Time! 🧮
 
-**Formula: Approximate Modified Duration**
-$\text{Approximate ModDur} = \frac{V_- - V_+}{2 \times V_0 \times \Delta\text{YTM}}$
-where $V_0$ is the initial price.
+A bond has a Modified Duration of 3.50. If its YTM suddenly increases by 0.50% (50 basis points), what is the estimated percentage change in its price?
+
+%ΔPrice ≈ -3.50 × (+0.005) = -0.0175 = -1.75%
+
+The bond's price is expected to fall by approximately 1.75%.
+
+Don't Know Macaulay? No Problem!
+We can also estimate ModDur directly by "shocking" the bond's price. Calculate the bond's price for a small yield increase (V+) and a small yield decrease (V-) and plug them into this formula:
+
+Formula: Approximate Modified Duration
+Approx. ModDur = (V_- - V_+) / (2 × V_0 × ΔYTM)
+where V_0 is the initial price.
+```
 
 ---
 

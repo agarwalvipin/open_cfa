@@ -48,13 +48,13 @@ The difference between the sale price and the repurchase price is the interest o
 
 ```mermaid
 graph LR
-    subgraph Opening Leg (Today)
+    subgraph "Opening Leg Today"
         A[Security Seller / Cash Borrower] -- Collateral --> B[Security Buyer / Cash Lender];
-        B -- Cash (Loan Amount) --> A;
+        B -- Cash Loan Amount --> A;
     end
-    subgraph Closing Leg (At Maturity)
+    subgraph "Closing Leg At Maturity"
         B -- Collateral --> A;
-        A -- Cash + Interest (Repurchase Price) --> B;
+        A -- Cash + Interest Repurchase Price --> B;
     end
 ```
 

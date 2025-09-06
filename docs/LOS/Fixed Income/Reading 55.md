@@ -20,16 +20,20 @@ Instead of using one single YTM to discount all of a bond's cash flows, the most
 $\\text{Price} = \\frac{\\text{CPN}_1}{(1+S_1)^1} + \\frac{\\text{CPN}_2}{(1+S_2)^2} + \\dots + \\frac{\\text{CPN}_N + \\text{Principal}}{(1+S_N)^N}$
 where $S_N$ is the N-year spot rate.
 
-> **Example Time\! 🧮**
-> We want to price a 3-year, 5% annual coupon bond. The spot rates are:
->
->   * 1-year (S₁): 3%
->   * 2-year (S₂): 4%
->   * 3-year (S₃): 5%
->
-> Price = $\\frac{5}{(1.03)^1} + \\frac{5}{(1.04)^2} + \\frac{105}{(1.05)^3} = 4.85 + 4.62 + 90.71 = $100.18$
->
-> Because each cash flow is discounted at the appropriate market rate for its timing, this price ensures no risk-free arbitrage is possible.
+
+```text
+Example Time! 🧮
+
+We want to price a 3-year, 5% annual coupon bond. The spot rates are:
+
+  * 1-year (S1): 3%
+  * 2-year (S2): 4%
+  * 3-year (S3): 5%
+
+Price = 5/(1.03)^1 + 5/(1.04)^2 + 105/(1.05)^3 = 4.85 + 4.62 + 90.71 = $100.18
+
+Because each cash flow is discounted at the appropriate market rate for its timing, this price ensures no risk-free arbitrage is possible.
+```
 
 -----
 

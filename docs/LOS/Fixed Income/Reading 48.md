@@ -18,11 +18,13 @@ Not all bonds pay back their principal at the end. The structure of cash flows c
     * **Fully Amortizing:** The loan is completely paid off with the final periodic payment. There is no lump-sum principal payment at the end.
     * **Partially Amortizing with a Balloon Payment:** Each payment includes some principal, but not enough to pay it off entirely. A large lump-sum of the remaining principal, called a **balloon payment**, is due at maturity.
 
-> **Example: Fully vs. Partially Amortizing 🧮**
-> A 5-year, $1,000 bond with a 5% interest rate.
-> * **Fully Amortizing:** The issuer would make 5 equal annual payments of $230.97. After the last payment, the loan is fully paid off. *(Calculator: N=5, I/Y=5, PV=1000, FV=0, CPT PMT)*
-> * **Partially Amortizing (with $200 balloon):** The issuer would make 5 smaller annual payments of $194.78, and the final payment would also include the $200 balloon payment. *(Calculator: N=5, I/Y=5, PV=1000, FV=-200, CPT PMT)*
+```text
+Example: Fully vs. Partially Amortizing 🧮
 
+A 5-year, $1,000 bond with a 5% interest rate.
+* Fully Amortizing: The issuer would make 5 equal annual payments of $230.97. After the last payment, the loan is fully paid off. (Calculator: N=5, I/Y=5, PV=1000, FV=0, CPT PMT)
+* Partially Amortizing (with $200 balloon): The issuer would make 5 smaller annual payments of $194.78, and the final payment would also include the $200 balloon payment. (Calculator: N=5, I/Y=5, PV=1000, FV=-200, CPT PMT)
+```
 * **Sinking Fund Provisions:** 📉
     To reduce the risk of not being able to make a huge principal payment at maturity, an issuer might use a **sinking fund**. This provision requires the issuer to set aside money and periodically retire a portion of the bond issue before maturity.
     * **Good for Investors:** Lowers credit risk because the final principal payment is smaller.

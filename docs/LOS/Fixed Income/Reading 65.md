@@ -43,20 +43,24 @@ This is the simplest MBS structure. An investor buys a share in a pool of mortga
 * **Weighted Average Coupon (WAC):** The weighted average of the interest rates of all mortgages in the pool.
 * **Weighted Average Maturity (WAM):** The weighted average of the remaining months to maturity of all mortgages in the pool.
 
-> **Example: Calculating WAC and WAM 🧮**
-> A pass-through MBS is created from three mortgages:
-> 
-> | Mortgage | Interest Rate | Current Balance ($000s) | Months to Maturity |
-> | :--- | :--- | :--- | :--- |
-> | A | 2.67% | 90 | 270 |
-> | B | 3.10% | 72 | 190 |
-> | C | 5.14% | 247 | 280 |
-> 
-> * **Total Balance** = 90 + 72 + 247 = $409k
-> * **WAM Calculation:**
->     WAM = $270 \times (\frac{90}{409}) + 190 \times (\frac{72}{409}) + 280 \times (\frac{247}{409}) = 59.4 + 33.4 + 169.3 = \textbf{262.1 months}$ 
-> * **WAC Calculation:**
->     WAC = $2.67\% \times (\frac{90}{409}) + 3.10\% \times (\frac{72}{409}) + 5.14\% \times (\frac{247}{409}) = 0.588\% + 0.546\% + 3.106\% = \textbf{4.24\%}$ 
+
+```text
+Example: Calculating WAC and WAM 🧮
+
+A pass-through MBS is created from three mortgages:
+
+Mortgage | Interest Rate | Current Balance ($000s) | Months to Maturity
+--- | --- | ---: | ---:
+A | 2.67% | 90 | 270
+B | 3.10% | 72 | 190
+C | 5.14% | 247 | 280
+
+Total Balance = 90 + 72 + 247 = $409k
+WAM Calculation:
+    WAM = 270*(90/409) + 190*(72/409) + 280*(247/409) = 59.4 + 33.4 + 169.3 = 262.1 months
+WAC Calculation:
+    WAC = 2.67%*(90/409) + 3.10%*(72/409) + 5.14%*(247/409) = 0.588% + 0.546% + 3.106% = 4.24%
+```
 
 #### **Collateralized Mortgage Obligations (CMOs)**
 A CMO is a more complex structure created by taking the cash flows from a pool of pass-through securities and redirecting them to different tranches with different risk profiles. The main purpose of a CMO is to reapportion the prepayment risk among different classes of investors to better suit their needs, 2838].

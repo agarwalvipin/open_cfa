@@ -41,8 +41,12 @@ Credit analysts use a core set of financial ratios to assess a company's capacit
 | **Leverage** | Debt to EBITDA | Debt / EBITDA | Lower ratio ✅ |
 | **Leverage** | RCF to Net Debt | RCF / (Debt - Cash) | Higher ratio ✅ |
 
-> **Example: Comparing Two Companies**
-> By comparing these key ratios between two companies in the same industry, an analyst can quickly get a sense of their relative creditworthiness. A company with higher margins, better interest coverage, and lower leverage is generally the better credit risk.
+
+```text
+Example: Comparing Two Companies
+
+By comparing these key ratios between two companies in the same industry, an analyst can quickly get a sense of their relative creditworthiness. A company with higher margins, better interest coverage, and lower leverage is generally the better credit risk.
+```
 
 ---
 

@@ -16,14 +16,17 @@ To accurately compare bonds with different coupon frequencies, we must convert t
 $\text{Effective Annual Yield} = \left(1 + \frac{\text{Quoted YTM}}{n}\right)^n - 1$
 where `n` is the periodicity.
 
-> **Example Time! 🧮**
-> A bond has a quoted YTM of 10%.
-> * **If it pays semi-annually (n=2):**
->     Effective Annual Yield = $(1 + \frac{0.10}{2})^2 - 1 = (1.05)^2 - 1 = 10.25\%$
-> * **If it pays quarterly (n=4):**
->     Effective Annual Yield = $(1 + \frac{0.10}{4})^4 - 1 = (1.025)^4 - 1 = 10.38\%$
->
-> As you can see, the more frequent the compounding, the higher the true annual return!
+
+```text
+Example Time! 🧮
+A bond has a quoted YTM of 10%.
+* If it pays semi-annually (n=2):
+    Effective Annual Yield = (1 + 0.10/2)^2 - 1 = (1.05)^2 - 1 = 10.25%
+* If it pays quarterly (n=4):
+    Effective Annual Yield = (1 + 0.10/4)^4 - 1 = (1.025)^4 - 1 = 10.38%
+
+As you can see, the more frequent the compounding, the higher the true annual return!
+```
 
 ---
 

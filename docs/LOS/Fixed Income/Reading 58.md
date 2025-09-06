@@ -54,6 +54,22 @@ $\%\Delta \text{Price} \approx \underbrace{[- \text{ModDur} \times \Delta\text{Y
 >
 > As you can see, the convexity adjustment adds to the price increase, giving us a more accurate (and higher) final price estimate.
 
+```text
+Example Time! 🧮
+A bond has a ModDur of 3.50 and a Convexity of 16.9. Let's estimate the price change for a 50 basis point (0.50%) decrease in its YTM.
+
+1. Duration Effect:
+    -3.50 × (-0.005) = +0.0175 or +1.75%
+
+2. Convexity Adjustment:
+    0.5 × 16.9 × (-0.005)^2 = +0.000211 or +0.021%
+
+3. Total Estimated Change:
+    +1.75% + 0.021% = +1.771%
+
+As you can see, the convexity adjustment adds to the price increase, giving a more accurate (and slightly higher) final price estimate.
+```
+
 Just like with duration, we can also calculate **Money Convexity** to see the impact in currency terms.
 $\text{Money Convexity} = \text{Annual Convexity} \times \text{Full Price of Bond Position}$
 
