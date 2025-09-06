@@ -100,18 +100,9 @@ A bond's price is a living thing—it changes based on a few key factors. Unders
 title: The Convex Price-Yield Relationship
 ---
 xychart-beta
-    x-axis [
-      "6%", "7%", "8%", "9%", "10%"
-    ]
-    y-axis "Bond Value"
-    line [
-      {
-        "data": [116, 108, 100, 93, 87]
-      }
-    ]
-    annotation "line" "Par Value (YTM = Coupon)" [{ x: "8%", y: 100 }]
-    annotation "line" "Premium" [{ x: "6%", y: 108, dx: -20, dy: -20 }]
-    annotation "line" "Discount" [{ x: "10%", y: 93, dx: -20, dy: 20 }]
+    x-axis ["6%", "7%", "8%", "9%", "10%"]
+    y-axis "Bond Value" 80 --> 120
+    line [116, 108, 100, 93, 87]
 ```
 
 #### The Inevitable Pull to Par 🧲
