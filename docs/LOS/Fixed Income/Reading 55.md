@@ -64,8 +64,8 @@ The forward, spot, and par curves are all related. The **forward curve is the fu
 
 ```mermaid
 graph TD
-    A[Forward Curve (Implied Future Rates)] --> B[Spot Curve (Geometric Average of Forwards)];
-    B --> C[Par Curve (Complex Average of Spots)];
+    A[Forward Curve -Implied Future Rates] --> B[Spot Curve -Geometric Average of Forwards];
+    B --> C[Par Curve -Complex Average of Spots];
 ```
 
 Here’s how they stack up in different market environments:

@@ -16,7 +16,7 @@ Lending money, at its core, is an act of trust. **Credit risk** is the unfortuna
 Combining these two gives us the **Expected Loss**.
 
 **Formula: Expected Loss**
-$\text{Expected Loss} (\%) = \text{Probability of Default} (\%) \times \text{Loss Given Default} (\%)$
+$$\text{Expected Loss} = \text{Probability of Default} \times \text{Loss Given Default}$$
 
 This Expected Loss serves as a good approximation for the **credit spread** an investor should demand over a risk-free bond. It's the extra yield you need as compensation for taking on the credit risk.
 

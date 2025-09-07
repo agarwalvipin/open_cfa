@@ -68,6 +68,11 @@ The **duration gap** measures the mismatch between your investment horizon and t
 * **Macaulay Duration:**
     $\text{MacDur} = \sum_{t=1}^{N} \left[ \frac{\frac{\text{CF}_t}{(1+y)^t}}{\text{Price}} \times t \right]$
     (Conceptually: The weighted-average time to receipt of cash flows)
+
+* **Macaulay Duration for Perpetuals:**
+    $\text{MacDur}_{\text{perpetual}} = \frac{1 + y}{y}$
+    (Where y is the yield per period)
+
 * **Duration Gap:**
     $\text{Duration Gap} = \text{Macaulay Duration} - \text{Investment Horizon}$
 

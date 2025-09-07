@@ -38,21 +38,7 @@ where:
 To get a much more precise estimate of a bond's price change, we combine the linear estimate from duration with a second-order adjustment for convexity.
 
 **Formula: Full Percentage Price Change Estimate**
-$\%\Delta \text{Price} \approx \underbrace{[- \text{ModDur} \times \Delta\text{YTM}]}_{\text{Duration Effect (1st Order)}} + \underbrace{[ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]}_{\text{Convexity Adjustment (2nd Order)}}$
-
-> **Example Time! 🧮**
-> A bond has a **ModDur of 3.50** and a **Convexity of 16.9**. Let's estimate the price change for a **50 basis point (0.50%) decrease** in its YTM.
->
-> 1.  **Duration Effect:**
->     $-3.50 \times (-0.005) = +0.0175$ or **+1.75%**
->
-> 2.  **Convexity Adjustment:**
->     $0.5 \times 16.9 \times (-0.005)^2 = +0.000211$ or **+0.021%**
->
-> 3.  **Total Estimated Change:**
->     $+1.75\% + 0.021\% = \boldsymbol{+1.771\%}$
->
-> As you can see, the convexity adjustment adds to the price increase, giving us a more accurate (and higher) final price estimate.
+$\%\Delta \text{Price} \approx \underbrace{[- \text{ModDur} \times \Delta\text{YTM}]}_\text{Duration Effect (1st Order)} + \underbrace{[ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]}_\text{Convexity Adjustment (2nd Order)}$
 
 ```text
 Example Time! 🧮
@@ -92,7 +78,7 @@ The weighted-average approach has one major weakness: it assumes that when inter
 ---
 
 ### 🧪 Formula Summary
-
+* **Convexity of a Single Cash Flow:** $\text{Convexity}_t = \frac{t(t+1)}{(1+r)^{2}}$
 * **Approximate Convexity:** $\text{Convexity} = \frac{V_- + V_+ - (2V_0)}{(\Delta\text{YTM})^2 \times V_0}$
 * **Percentage Price Change (with Convexity):**
     $\%\Delta \text{Price} \approx [- \text{ModDur} \times \Delta\text{YTM}] + [ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]$
