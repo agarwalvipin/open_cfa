@@ -116,7 +116,7 @@
 - 📐 **Matrix Pricing (Linear Interpolation):**
   >
   $$
-  \text{Interpolated YTM} = \text{YTM}_{\text{short}} + \left(\frac{\text{Maturity}_{\text{target}} - \text{Maturity}_{\text{short}}}{\text{Maturity}_{\text{long}} - \text{Maturity}_{\text{short}}}\right) \times (\text{YTM}_{\text{long}} - \text{YTM}_{\text{short}})
+  \text{Interpolated YTM} = \text{YTM}_\text{short} + \left(\frac{\text{Maturity}_\text{target} - \text{Maturity}_\text{short}}{\text{Maturity}_\text{long} - \text{Maturity}_\text{short}}\right) \times (\text{YTM}_\text{long} - \text{YTM}_\text{short})
   $$
 
 ---

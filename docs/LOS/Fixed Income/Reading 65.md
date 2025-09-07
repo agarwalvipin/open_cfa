@@ -24,7 +24,7 @@ Unlike most other loans, mortgages can be paid back early, at any time, with lit
 * **Why it's bad for investors:** Your principal is now stuck in a lower-yielding MBS for longer than you expected, while new bonds are being issued at much more attractive, higher rates. This is a form of **opportunity cost**.
     * **Example:** Your 5% MBS is now less attractive compared to new MBS being issued at 7%, and your cash is tied up for longer than you anticipated.
 
-To manage these risks, issuers can use **time tranching**, which creates different bond classes that receive principal payments sequentially. The first tranche to be paid off has the most protection against extension risk, while the last tranche has the most protection against contraction risk, 2816].
+To manage these risks, issuers can use **time tranching**, which creates different bond classes that receive principal payments sequentially. The first tranche to be paid off has the most protection against extension risk, while the last tranche has the most protection against contraction risk.
 
 ---
 
@@ -34,8 +34,8 @@ To manage these risks, issuers can use **time tranching**, which creates differe
 
 * **Key Loan Features:**
     * **Recourse vs. Non-Recourse:** In a **recourse loan**, the lender can go after the borrower's other assets if the sale of the foreclosed home doesn't cover the loan balance. In a **non-recourse loan**, the lender can only seize the house.
-    * **Loan-to-Value (LTV) Ratio:** The percentage of the property's value that is loaned. A lower LTV means the homeowner has more equity and is less likely to default, 2820].
-    * **Debt-to-Income (DTI) Ratio:** The borrower's total monthly debt payments as a percentage of their income. A lower DTI indicates a higher ability to repay, 2824].
+    * **Loan-to-Value (LTV) Ratio:** The percentage of the property's value that is loaned. A lower LTV means the homeowner has more equity and is less likely to default.
+    * **Debt-to-Income (DTI) Ratio:** The borrower's total monthly debt payments as a percentage of their income. A lower DTI indicates a higher ability to repay.
 
 #### **Mortgage Pass-Through Securities**
 This is the simplest MBS structure. An investor buys a share in a pool of mortgages and receives a pro-rata share of all cash flows (interest and any principal prepayments). All investors in the pool share the prepayment risk equally. Two key metrics describe the pool:
@@ -44,26 +44,26 @@ This is the simplest MBS structure. An investor buys a share in a pool of mortga
 * **Weighted Average Maturity (WAM):** The weighted average of the remaining months to maturity of all mortgages in the pool.
 
 
-```text
-Example: Calculating WAC and WAM 🧮
+**Example: Calculating WAC and WAM 🧮**
 
 A pass-through MBS is created from three mortgages:
 
-Mortgage | Interest Rate | Current Balance ($000s) | Months to Maturity
---- | --- | ---: | ---:
-A | 2.67% | 90 | 270
-B | 3.10% | 72 | 190
-C | 5.14% | 247 | 280
+| Mortgage | Interest Rate | Current Balance (\\$000s) | Months to Maturity |
+|----------|---------------|---------------------------|-------------------|
+| A        | 2.67%         | 90                        | 270               |
+| B        | 3.10%         | 72                        | 190               |
+| C        | 5.14%         | 247                       | 280               |
 
-Total Balance = 90 + 72 + 247 = $409k
-WAM Calculation:
-    WAM = 270*(90/409) + 190*(72/409) + 280*(247/409) = 59.4 + 33.4 + 169.3 = 262.1 months
-WAC Calculation:
-    WAC = 2.67%*(90/409) + 3.10%*(72/409) + 5.14%*(247/409) = 0.588% + 0.546% + 3.106% = 4.24%
-```
+Total Balance = 90 + 72 + 247 = \\$409k
+
+**WAM Calculation:**
+WAM = 270×(90/409) + 190×(72/409) + 280×(247/409) = 59.4 + 33.4 + 169.3 = **262.1 months**
+
+**WAC Calculation:**
+WAC = 2.67%×(90/409) + 3.10%×(72/409) + 5.14%×(247/409) = 0.588% + 0.546% + 3.106% = **4.24%**
 
 #### **Collateralized Mortgage Obligations (CMOs)**
-A CMO is a more complex structure created by taking the cash flows from a pool of pass-through securities and redirecting them to different tranches with different risk profiles. The main purpose of a CMO is to reapportion the prepayment risk among different classes of investors to better suit their needs, 2838].
+A CMO is a more complex structure created by taking the cash flows from a pool of pass-through securities and redirecting them to different tranches with different risk profiles. The main purpose of a CMO is to reapportion the prepayment risk among different classes of investors to better suit their needs.
 
 ---
 
