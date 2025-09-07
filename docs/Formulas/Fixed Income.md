@@ -380,7 +380,7 @@
 - 📉 **Loss Given Default (LGD%):**
   >
   $$
-  \text{LGD}\% = \text{Expected Exposure} \times (1 - \text{Recovery Rate})
+  \text{LGD} = 1 - \text{Recovery Rate}
   $$
 
 - 📊 **Credit Spread Approximation:**
