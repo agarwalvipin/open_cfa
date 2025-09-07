@@ -35,9 +35,9 @@ The structure of a securitization involves several key parties and a specific fl
 
 ```mermaid
 graph TD
-    A[Borrowers (e.g., Car Buyers)] -- Loan Payments --> B((Servicer));
-    C[Originator / Seller<br>(e.g., Auto Finance Co.)] -- Sells Pool of Loans --> D{Special Purpose Entity (SPE)};
-    D -- Issues ABS --> E[Investors (e.g., Pension Funds)];
+    A[Borrowers -e.g., Car Buyers] -- Loan Payments --> B((Servicer));
+    C[Originator / Seller<br>e.g., Auto Finance Co.] -- Sells Pool of Loans --> D{Special Purpose Entity -SPE};
+    D -- Issues ABS --> E[Investors e.g., Pension Funds];
     E -- Cash Proceeds --> D;
     D -- Cash Proceeds --> C;
     B -- Forwards Payments --> D;
