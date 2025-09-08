@@ -258,7 +258,7 @@
 - 📊 **Approximate Percentage Price Change:**
   >
   $$
-  \%\Delta\text{Price} \approx -\text{ModDur} \times \Delta\text{YTM}
+  \Delta\text{Price} \,(\%) \approx -\text{ModDur} \times \Delta\text{YTM}
   $$
 
 - 📏 **Approximate Modified Duration:**
@@ -317,7 +317,7 @@
 - 📊 **Percentage Price Change (with Duration and Convexity):**
   >
   $$
-  \%\Delta \text{Price} \approx (-\text{Annual ModDur} \times \Delta\text{YTM}) + \left(\frac{1}{2} \times \text{Annual Convexity} \times (\Delta\text{YTM})^2\right)
+  \Delta \text{Price} \,(\%) \approx (-\text{Annual ModDur} \times \Delta\text{YTM}) + \left(\frac{1}{2} \times \text{Annual Convexity} \times (\Delta\text{YTM})^2\right)
   $$
 
 - 💰 **Money Convexity:**
@@ -358,13 +358,13 @@
 - 📊 **Percentage Price Change (with Effective Duration and Convexity):**
   >
   $$
-  \%\Delta \text{Price} \approx (-\text{EffDur} \times \Delta\text{Curve}) + \left(\frac{1}{2} \times \text{EffCon} \times (\Delta\text{Curve})^2\right)
+  \Delta \text{Price} \,(\%) \approx (-\text{EffDur} \times \Delta\text{Curve}) + \left(\frac{1}{2} \times \text{EffCon} \times (\Delta\text{Curve})^2\right)
   $$
 
 - 🎯 **Total Price Change from Key Rate Durations:**
   >
   $$
-  \%\Delta \text{Portfolio Value} \approx \sum_{i=1}^{k} (-\text{Key Rate Duration}_i \times \Delta\text{Yield}_i)
+  \Delta \text{Portfolio Value} \,(\%) \approx \sum_{i=1}^{k} (-\text{Key Rate Duration}_i \times \Delta\text{Yield}_i)
   $$
 
 ---
@@ -409,7 +409,7 @@
 - 📊 **Percentage Price Change from Spread Change:**
   >
   $$
-  \%\Delta \text{Price} \approx (-\text{ModDur} \times \Delta\text{Spread}) + \left(\frac{1}{2} \times \text{Convexity} \times (\Delta\text{Spread})^2\right)
+  \Delta \text{Price} \,(\%) \approx (-\text{ModDur} \times \Delta\text{Spread}) + \left(\frac{1}{2} \times \text{Convexity} \times (\Delta\text{Spread})^2\right)
   $$
 
 ---
