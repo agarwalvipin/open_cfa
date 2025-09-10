@@ -2,8 +2,9 @@
 
 - [Home](/README.md)
 - Formulas
-  - [Fixed Income](Formulas/Fixed%20Income.md)
   - [Derivatives](Formulas/Derivatives.md)
+  - [Equity](Formulas/Equity.md)
+  - [Fixed Income](Formulas/Fixed%20Income.md)
 - LOS
   - Quantitative Methods
     - [Reading 1: Rates and Returns](LOS/PM/Reading%201.md)

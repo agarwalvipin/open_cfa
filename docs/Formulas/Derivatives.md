@@ -50,7 +50,7 @@ This reading is descriptive and does not contain mathematical formulas.
 
 - 🌍 **No-arbitrage forward exchange rate (interest rate parity):**
 
-  $$\text{Forward}_{\text{p/b}} = \text{Spot}_{\text{p/b}} \times \frac{1 + i_p}{1 + i_b}$$
+  $$\text{Forward}_{p/b} = \text{Spot}_{p/b} \times \frac{1 + i_p}{1 + i_b}$$
 
   where p/b is price currency per base currency, and i_p and i_b are the interest rates for the price and base currencies respectively.
 
