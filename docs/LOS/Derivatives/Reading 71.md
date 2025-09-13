@@ -101,7 +101,7 @@ This difference in payoff structure is called **convexity bias**. The attractive
 ### **Formulas Used in This Reading 🧮**
 
 1.  **Interest Rate Futures Price:**
-    $$\text{Price} = 100 - \text{Annualized Interest Rate} (\%)$$
+  $$\text{Price} = 100 - \text{Annualized Interest Rate} (\%)$$
     
 
 2.  **Basis Point Value (BPV):**
