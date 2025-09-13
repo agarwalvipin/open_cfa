@@ -56,17 +56,18 @@ This is the most common legal structure for global hedge funds. It's designed fo
 
 ```mermaid
 graph TD
-    A["🌍 Non-US & Tax-Exempt Investors"] --> B["Offshore Feeder Fund (e.g., in Cayman Islands)"]
-    C["🇺🇸 US Taxable Investors"] --> D["Onshore Feeder Fund (e.g., in Delaware)"]
-    B --> E["MASTER FUND - All assets are held and managed here"]
-    D --> E
+      A["🌍 Non-US & Tax-Exempt Investors"] --> B["Offshore Feeder Fund<br/>(e.g., in Cayman Islands)"]
+      C["🇺🇸 US Taxable Investors"] --> D["Onshore Feeder Fund<br/>(e.g., in Delaware)"]
+      B --> E["MASTER FUND<br/>All assets are held and managed here"]
+      D --> E
 
-    style A fill:#cce5ff,stroke:#0056b3,stroke-width:2px
-    style C fill:#cce5ff,stroke:#0056b3,stroke-width:2px
-    style B fill:#fff3cd,stroke:#856404,stroke-width:2px
-    style D fill:#fff3cd,stroke:#856404,stroke-width:2px
-    style E fill:#d4edda,stroke:#155724,stroke-width:3px
+      style A fill:#cce5ff,stroke:#0056b3,stroke-width:2px
+      style C fill:#cce5ff,stroke:#0056b3,stroke-width:2px
+      style B fill:#fff3cd,stroke:#856404,stroke-width:2px
+      style D fill:#fff3cd,stroke:#856404,stroke-width:2px
+      style E fill:#d4edda,stroke:#155724,stroke-width:3px
 ```
+
 
   * It allows the manager to run just one central portfolio (the **Master Fund**) while accommodating investors from different legal and tax jurisdictions through separate **Feeder Funds**.
 
