@@ -108,3 +108,15 @@
     - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
   - Portfolio Management
   - Ethical and Professional Standards
+    - [Reading 89](LOS/Ethics/Reading%2089.md)
+    - [Reading 90](LOS/Ethics/Reading%2090.md)
+    - [Reading 91.1](LOS/Ethics/Reading%2091.1.md)
+    - [Reading 91.2](LOS/Ethics/Reading%2091.2.md)
+    - [Reading 91.3](LOS/Ethics/Reading%2091.3.md)
+    - [Reading 91.4](LOS/Ethics/Reading%2091.4.md)
+    - [Reading 91.5](LOS/Ethics/Reading%2091.5.md)
+    - [Reading 91.6](LOS/Ethics/Reading%2091.6.md)
+    - [Reading 91.7](LOS/Ethics/Reading%2091.7.md)
+    - [Reading 91.8](LOS/Ethics/Reading%2091.8.md)
+    - [Reading 91.9](LOS/Ethics/Reading%2091.9.md)
+    - [Reading 92](LOS/Ethics/Reading%2092.md)

@@ -92,6 +92,7 @@ Private debt isn't one-size-fits-all. It ranges from safer senior loans to riski
 | Category | Who It's For | Seniority in Capital Structure | Key Features |
 | :--- | :--- | :--- | :--- |
 | **Direct Lending** | Mature, stable companies needing capital for growth or acquisitions. | **Senior & Secured** (first in line to get paid) | Similar to a bank loan, with fixed payment schedules. Can include **leveraged loans**. |
+| **Unitranche** | Mid-market companies seeking simplified financing structure. | **Blended Senior & Subordinated** (single loan with mixed characteristics) | One lender provides the entire debt package instead of multiple tranches. Higher rate than pure senior debt but simpler structure and faster execution. |
 | **Venture Debt** | Early-stage startups that already have VC equity funding. | Senior, but risky due to the company's stage. | A way for founders to get more funding without giving up more equity. |
 | **Mezzanine Debt** | Companies in buyouts or expansion phases. | **Subordinated** (behind senior debt but ahead of equity) | A hybrid of debt and equity. It's riskier, so it demands higher interest rates and often comes with equity "kickers" like **warrants** (the right to buy equity later). |
 | **Distressed Debt** | Companies in or near bankruptcy. | Varies, but the goal is to control the company through its debt. | High-risk, high-reward. Investors aim to profit from a successful restructuring. Think of buying Jet Airways' bonds at a deep discount, betting on a turnaround. |
