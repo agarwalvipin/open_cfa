@@ -120,3 +120,11 @@
     - [Reading 91.8](LOS/Ethics/Reading%2091.8.md)
     - [Reading 91.9](LOS/Ethics/Reading%2091.9.md)
     - [Reading 92](LOS/Ethics/Reading%2092.md)
+    - Standards
+      - [1. Professionalism](LOS/Standards/1_Professionalism.md)
+      - [2. Integrity of Capital Markets](LOS/Standards/2_Integritiy_of_capital_markets.md)
+      - [3. Duties to Clients](LOS/Standards/3_Duties_to_clients.md)
+      - [4. Duties to Employer](LOS/Standards/4_Duties_to_employer.md)
+      - [5. Investment Analysis, Recommendations, and Actions](LOS/Standards/5_Investment_analysis_recomm_actions.md)
+      - [6. Conflicts of Interest](LOS/Standards/6_conflict_of_interest.md)
+      - [7. Responsibilities as a CFA Member](LOS/Standards/7_Responsibilities_cfa_member.md)
