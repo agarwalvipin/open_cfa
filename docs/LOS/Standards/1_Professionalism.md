@@ -1,5 +1,3 @@
-Understood.
-
 ## Standard I: Professionalism
 
 ### 🎯 Introduction

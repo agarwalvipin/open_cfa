@@ -1,9 +1,3 @@
-Of course. It's time to shift our focus from our clients to our employers. This standard is all about navigating your professional responsibilities within your firm.
-
-Here is the summary for the next standard.
-
------
-
 ## Standard IV: Duties to Employers
 
 ### 🎯 Introduction

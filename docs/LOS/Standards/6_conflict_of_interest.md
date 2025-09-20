@@ -1,9 +1,3 @@
-Of course. We've reached a critical topic that permeates every aspect of the financial industry: conflicts of interest. Let's dive in.
-
-Here is the summary for the next standard.
-
----
-
 ## Standard VI: Conflicts of Interest
 
 ### 🎯 Introduction

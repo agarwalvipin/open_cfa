@@ -1,9 +1,3 @@
-Excellent. Let's move on to the "how-to" of our profession—the process of analyzing investments and communicating our ideas.
-
-Here is the summary for the next standard.
-
----
-
 ## Standard V: Investment Analysis, Recommendations, and Actions
 
 ### 🎯 Introduction

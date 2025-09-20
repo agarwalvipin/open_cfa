@@ -1,9 +1,3 @@
-Of course, let's continue our journey through the CFA Code and Standards. Next up is the bedrock of fair and efficient markets.
-
-Here is the summary for the next standard.
-
------
-
 ## Standard II: Integrity of Capital Markets
 
 ### 🎯 Introduction

@@ -1,9 +1,3 @@
-Of course. We have arrived at the final standard, which governs our responsibilities not just to the market, clients, or employers, but to the CFA Institute itself. Let's finish strong!
-
-Here is the summary for the final standard.
-
----
-
 ## Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate
 
 ### 🎯 Introduction

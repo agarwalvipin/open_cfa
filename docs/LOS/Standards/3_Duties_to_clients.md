@@ -1,9 +1,3 @@
-You got it. Let's move on to the most important relationship in our profession: the one we have with our clients.
-
-Here is the summary for the next standard.
-
------
-
 ## Standard III: Duties to Clients
 
 ### 🎯 Introduction
