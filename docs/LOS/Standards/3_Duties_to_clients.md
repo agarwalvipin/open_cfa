@@ -54,7 +54,7 @@ It's also crucial when it comes to IPOs and new issues. These are often oversubs
 graph TD
     A[A hot IPO is available] --> B{How to allocate shares?};
     B -- Unfair Method ❌ --> C[Give all shares to the largest or most profitable clients first.];
-    B -- Fair Method ✅ --> D[Allocate on a pro-rata basis (e.g., based on asset size) or another predetermined, objective system.];
+    B -- Fair Method ✅ --> D[Allocate on a pro-rata basis based on asset size or another predetermined objective system.];
     C --> E[Violation of Fair Dealing!];
     D --> F[No Violation ✅];
 ```
