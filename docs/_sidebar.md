@@ -107,6 +107,12 @@
     - [Reading 80: Natural Resources](LOS/Alts/Reading%2080.md)
     - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
   - Portfolio Management
+    - [Reading 83](LOS/PM/Reading%2083.md)
+    - [Reading 84](LOS/PM/Reading%2084.md)
+    - [Reading 85](LOS/PM/Reading%2085.md)
+    - [Reading 86](LOS/PM/Reading%2086.md)
+    - [Reading 87](LOS/PM/Reading%2087.md)
+    - [Reading 88](LOS/PM/Reading%2088.md)
   - Ethical and Professional Standards
     - [Reading 89](LOS/Ethics/Reading%2089.md)
     - [Reading 90](LOS/Ethics/Reading%2090.md)
