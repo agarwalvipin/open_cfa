@@ -24,7 +24,7 @@ Under the assumption that all investors have the same expectations (**homogeneou
   * **Borrowing Portfolios:** Feeling bold? You can *borrow* money at the risk-free rate and invest *more than 100%* of your own capital into the market portfolio. Your portfolio lies on the CML to the right of the market portfolio, offering higher expected returns for higher risk.
 
 > [\!TIP]
-> **CFA Exam Tip ✍️:** The CML is a straight line showing the risk-return trade-off for **efficient portfolios only**. The risk measure on the x-axis is **total risk** (standard deviation, $\sigma$). Individual stocks or poorly diversified portfolios will always lie *below* the CML.
+> **CFA Exam Tip ✍️:** The CML is a straight line showing the risk-return trade-off for **efficient portfolios only**. The risk measure on the x-axis is **total risk** (standard deviation, σ). Individual stocks or poorly diversified portfolios will always lie *below* the CML.
 
 -----
 
@@ -71,10 +71,10 @@ The **Security Market Line (SML)** is the graphical representation of the **Capi
 $$E(R_i) = R_f + \beta_i [E(R_m) - R_f]$$
 Where:
 
-  * $E(R_i)$ = Expected (or required) return on asset i
-  * $R_f$ = Risk-free rate
-  * $\beta_i$ = Beta of asset i
-  * $[E(R_m) - R_f]$ = **Market Risk Premium**
+* E(Ri) = Expected (or required) return on asset i
+* Rf = Risk-free rate
+* βi = Beta of asset i
+* [E(Rm) - Rf] = Market Risk Premium
 
 #### **Theory 🧠**
 
@@ -86,10 +86,10 @@ The SML is the "fair price" line for risk. Any asset's expected return should fa
 
 #### **Example 🧮**
 
-Let's say the risk-free rate ($R_f$) is 4% and the expected market return ($E(R_m)$) is 10%. We are looking at a stock, "Zenith Corp," with a beta ($\beta$) of 1.2.
+Let's say the risk-free rate (Rf) is 4% and the expected market return E(Rm) is 10%. We are looking at a stock, "Zenith Corp," with a beta (β) of 1.2.
 
 **1. What is the required return for Zenith Corp?**
-$E(R) = 4\% + 1.2 \times (10\% - 4\%) = 4\% + 1.2 \times (6\%) = 4\% + 7.2\% = \mathbf{11.2\%}$
+$$E(R) = 4\% + 1.2(10\% - 4\%) = 4\% + 1.2(6\%) = 4\% + 7.2\% = 11.2\%$$
 The SML tells us that for a stock with a beta of 1.2, a return of 11.2% is fair compensation.
 
 **2. An analyst forecasts Zenith Corp will return 13%. Is it a good investment?**
@@ -101,12 +101,12 @@ Yes\! The forecasted return (13%) is *higher* than the required return (11.2%). 
 
 How do you know if a portfolio manager did a good job? You need to measure their **risk-adjusted performance**. Here are four key tools.
 
-| Ratio              | Formula                                            | Risk Measure Used      | Best For...                                                                                                 |
-| ------------------ | -------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Sharpe Ratio** | $\frac{R_p - R_f}{\sigma_p}$                       | **Total Risk** ($\sigma$)  | Evaluating a portfolio that represents the investor's entire holding (i.e., it's not well-diversified).      |
-| **M-squared ($M^2$)** | Measures what the portfolio *would have earned* if it had the same total risk as the market. It is derived from the Sharpe Ratio. | **Total Risk** ($\sigma$)  | Comparing portfolios to the market. It's more intuitive than the Sharpe ratio as it is stated in percentages. |
-| **Treynor Ratio** | $\frac{R_p - R_f}{\beta_p}$                        | **Systematic Risk** ($\beta$) | Evaluating a well-diversified fund that is part of a larger, diversified portfolio.                         |
-| **Jensen's Alpha ($\alpha$)** | $R_p - [R_f + \beta_p(E(R_m) - R_f)]$            | **Systematic Risk** ($\beta$) | Measuring the manager's value-add. A positive alpha means the manager beat the return predicted by the CAPM. |
+| Ratio | Formula | Risk Measure | Best For |
+|-------|----------|--------------|-----------|
+| Sharpe Ratio | $$(R_p - R_f)/\sigma_p$$ | Total Risk (σ) | Evaluating a portfolio that represents the investor's entire holding (i.e., it's not well-diversified) |
+| M-squared (M²) | Measures what the portfolio *would have earned* if it had the same total risk as the market | Total Risk (σ) | Comparing portfolios to the market. More intuitive than Sharpe ratio as it's stated in percentages |
+| Treynor Ratio | $$(R_p - R_f)/\beta_p$$ | Systematic Risk (β) | Evaluating a well-diversified fund that is part of a larger, diversified portfolio |
+| Jensen's Alpha (α) | $$R_p - [R_f + \beta_p(R_m - R_f)]$$ | Systematic Risk (β) | Measuring the manager's value-add. A positive alpha means the manager beat the return predicted by the CAPM |
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** Use this simple mnemonic to remember which risk measure to use:
@@ -118,18 +118,17 @@ How do you know if a portfolio manager did a good job? You need to measure their
 
 ### 🧪 Formula Summary
 
-  * **Capital Asset Pricing Model (CAPM):**
-    $$E(R_i) = R_f + \beta_i [E(R_m) - R_f]$$
-  * **Beta ($\beta$):**
-    $$\beta_{i} = \frac{\text{Cov}_{im}}{\sigma_{m}^{2}} = \rho_{im}\left(\frac{\sigma_{i}}{\sigma_{m}}\right)$$
-  * **Sharpe Ratio:**
-    $$\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}$$
-  * **Treynor Measure:**
-    $$\text{Treynor measure} = \frac{R_p - R_f}{\beta_p}$$
-  * **Jensen's Alpha ($\alpha_p$):**
-    $$\alpha_p = R_p - \left[R_f + \beta_p(R_m - R_f)\right]$$
-  * **M-squared ($M^2$):**
-    $$M^2 = R_f + \frac{\sigma_M}{\sigma_p}(R_p - R_f)$$
+* Capital Asset Pricing Model (CAPM): $$E(R_i) = R_f + \beta_i[E(R_m) - R_f]$$
+
+* Beta (β): $$\beta_i = \frac{Cov_{im}}{\sigma_m^2} = \rho_{im}(\frac{\sigma_i}{\sigma_m})$$
+
+* Sharpe Ratio: $$Sharpe = \frac{R_p - R_f}{\sigma_p}$$
+
+* Treynor Measure: $$Treynor = \frac{R_p - R_f}{\beta_p}$$
+
+* Jensen's Alpha (α): $$\alpha_p = R_p - [R_f + \beta_p(R_m - R_f)]$$
+
+* M-squared (M²): $$M^2 = R_f + \frac{\sigma_M}{\sigma_p}(R_p - R_f)$$
 
 -----
 
@@ -137,7 +136,7 @@ How do you know if a portfolio manager did a good job? You need to measure their
 >
 > ### 🎯 Quick Exam-Day Pointers
 >
->   * **CML vs. SML is a critical distinction\!** CML uses **total risk ($\sigma$)** and applies only to **efficient** portfolios. SML uses **systematic risk ($\beta$)** and applies to **all** individual assets and portfolios.
+>   * **CML vs. SML is a critical distinction\!** CML uses **total risk (σ)** and applies only to **efficient** portfolios. SML uses **systematic risk (β)** and applies to **all** individual assets and portfolios.
 >   * The market only rewards **systematic (nondiversifiable) risk**. You get no extra expected return for taking on unsystematic risk.
 >   * A stock plotting **ABOVE** the SML is **UNDERVALUED** (a good deal). A stock plotting **BELOW** the SML is **OVERVALUED** (a bad deal).
 >   * When to use which performance measure? If the portfolio is not well-diversified, use **Sharpe/M²**. If it is well-diversified and part of a larger portfolio, use **Treynor/Jensen's Alpha**.

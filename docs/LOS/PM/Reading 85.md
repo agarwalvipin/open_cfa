@@ -119,8 +119,7 @@ ETFs are like a hybrid of mutual funds and stocks.
 
 ### 🧪 Formula Summary
 
-  * **Diversification Ratio:**
-    $$\text{Diversification Ratio} = \frac{\sigma_{\text{portfolio}}}{\sigma_{\text{asset}}}$$
+* Diversification Ratio: $$DR = \frac{\sigma_p}{\sigma_a}$$
 
 *(Note: This reading is primarily conceptual; the diversification ratio is the main quantitative concept introduced.)*
 

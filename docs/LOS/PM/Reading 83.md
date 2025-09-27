@@ -49,7 +49,7 @@ Your **optimal portfolio** is the one that lands you on your highest possible in
 
 The risk of a portfolio isn't just the average risk of the assets inside it. The magic ingredient is **correlation**, which measures how two assets move together.
 
-  * **Correlation ($\rho$)** is a standardized measure that ranges from -1.0 to +1.0.
+  * **Correlation (ρ)** is a standardized measure that ranges from -1.0 to +1.0.
       * **+1.0 (Perfect Positive Correlation):** The assets move in perfect lockstep. When one goes up, the other goes up by a proportional amount. There is **NO diversification benefit**.
       * **-1.0 (Perfect Negative Correlation):** The assets are perfect opposites. When one zigs, the other zags. This provides the **MAXIMUM diversification benefit**. You could even build a zero-risk portfolio\!
       * **0 (Uncorrelated):** The movement of one asset tells you nothing about the movement of the other.
@@ -62,24 +62,24 @@ The risk (standard deviation) of a two-asset portfolio is calculated with this c
 
 $$\sigma_{portfolio} = \sqrt{w_A^2\sigma_A^2 + w_B^2\sigma_B^2 + 2w_A w_B \rho_{AB} \sigma_A \sigma_B}$$
 
-Notice that correlation ($\rho_{AB}$) term. The lower the correlation, the smaller the portfolio's standard deviation will be.
+Notice that correlation (ρ) term. The lower the correlation, the smaller the portfolio's standard deviation will be.
 
 #### **Example 🧮**
 
 Let's build a portfolio with two stocks:
 
-  * **Global Tech (Stock A):** Expected Return = 15%, Standard Deviation ($\sigma_A$) = 25%
-  * **India Staples (Stock B):** Expected Return = 8%, Standard Deviation ($\sigma_B$) = 15%
+  * **Global Tech (Stock A):** 
+    * Expected Return = 15%
+    * Standard Deviation (σ) = 25%
+  * **India Staples (Stock B):** 
+    * Expected Return = 8%
+    * Standard Deviation (σ) = 15%
 
-We'll invest 50% in each ($w_A = 0.5, w_B = 0.5$). Let's see how the portfolio's risk changes with different correlations.
+We'll invest 50% in each ($w_A = w_B = 0.5$). Let's see how the portfolio's risk changes with different correlations.
 
-  * **Case 1: Correlation ($\rho$) = +1.0 (No Diversification)**
-    The risk is just a weighted average: $0.5(25\%) + 0.5(15\%) = \mathbf{20.0\%}$
+  * **Case 1: Correlation (ρ = +1.0)** **(No Diversification)** $$Risk = 0.5(25\%) + 0.5(15\%) = 20.0\%$$
 
-  * **Case 2: Correlation ($\rho$) = +0.2 (Realistic Diversification)**
-    Using the full formula:
-    $\sigma_p = \sqrt{(0.5^2)(0.25^2) + (0.5^2)(0.15^2) + 2(0.5)(0.5)(0.2)(0.25)(0.15)}$
-    $\sigma_p = \sqrt{0.015625 + 0.005625 + 0.00375} = \sqrt{0.025} = \mathbf{15.8\%}$
+  * **Case 2: Correlation (ρ = +0.2)** **(Realistic Diversification)** $$\sigma_p = \sqrt{(0.5)^2(0.25)^2 + (0.5)^2(0.15)^2 + 2(0.5)(0.5)(0.2)(0.25)(0.15)} = \sqrt{0.015625 + 0.005625 + 0.00375} = \sqrt{0.025} = 15.8\%$$
     Look at that\! The risk dropped from 20% to 15.8% just by combining assets that weren't perfectly correlated. That's the magic of diversification\!
 
 -----
@@ -108,16 +108,13 @@ graph TD
 
 ### 🧪 Formula Summary
 
-  * **Sample Variance:**
-    $$s^2 = \frac{\sum_{t=1}^{T}(R_t - \bar{R})^2}{T-1}$$
-  * **Sample Covariance:**
-    $$\text{Cov}_{1,2} = \frac{\sum_{t=1}^{n}\{[R_{t,1}-\bar{R}_{1}][R_{t,2}-\bar{R}_{2}]\}}{n-1}$$
-  * **Correlation:**
-    $$\rho_{1,2} = \frac{\text{Cov}_{1,2}}{\sigma_1 \sigma_2}$$
-  * **Standard Deviation of a 2-Asset Portfolio:**
-    $$\sigma_{portfolio} = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,2}\sigma_1\sigma_2}$$
+* Sample Variance: $$s^2 = \frac{\sum(R_t - \bar{R})^2}{T-1}$$
 
------
+* Sample Covariance: $$Cov_{12} = \frac{\sum (R_{t1}-\bar{R}1)(R_{t2}-\bar{R}2)}{n-1}$$
+
+* Correlation: $$\rho_{12} = \frac{Cov_{12}}{\sigma_1\sigma_2}$$
+
+* Standard Deviation of a 2-Asset Portfolio: $$\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2}$$-----
 
 > [\!IMPORTANT]
 >
