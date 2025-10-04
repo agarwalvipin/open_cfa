@@ -108,13 +108,42 @@ graph TD
 
 ### 🧪 Formula Summary
 
-* Sample Variance: $$s^2 = \frac{\sum(R_t - \bar{R})^2}{T-1}$$
+* Utility Function: $$U = E(R) - \frac{1}{2}A\sigma^2$$  
+  Where:  
+  - $U$ = Utility (investor's satisfaction)  
+  - $E(R)$ = Expected return of the portfolio  
+  - $A$ = Risk aversion coefficient (higher $A$ means more risk-averse)  
+  - $\sigma^2$ = Variance of portfolio returns
 
-* Sample Covariance: $$Cov_{12} = \frac{\sum (R_{t1}-\bar{R}1)(R_{t2}-\bar{R}2)}{n-1}$$
+* Sample Variance: $$s^2 = \frac{\sum(R_t - \bar{R})^2}{T-1}$$  
+  Where:  
+  - $s^2$ = Sample variance  
+  - $R_t$ = Return in period $t$  
+  - $\bar{R}$ = Mean (average) return  
+  - $T$ = Number of periods
 
-* Correlation: $$\rho_{12} = \frac{Cov_{12}}{\sigma_1\sigma_2}$$
+* Sample Covariance: $$Cov_{12} = \frac{\sum (R_{t1}-\bar{R}_1)(R_{t2}-\bar{R}_2)}{n-1}$$  
+  Where:  
+  - $Cov_{12}$ = Covariance between asset 1 and asset 2  
+  - $R_{t1}$ = Return of asset 1 in period $t$  
+  - $R_{t2}$ = Return of asset 2 in period $t$  
+  - $\bar{R}_1$ = Mean return of asset 1  
+  - $\bar{R}_2$ = Mean return of asset 2  
+  - $n$ = Number of paired observations
 
-* Standard Deviation of a 2-Asset Portfolio: $$\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2}$$-----
+* Correlation: $$\rho_{12} = \frac{Cov_{12}}{\sigma_1\sigma_2}$$  
+  Where:  
+  - $\rho_{12}$ = Correlation coefficient between asset 1 and asset 2  
+  - $Cov_{12}$ = Covariance between asset 1 and asset 2  
+  - $\sigma_1$ = Standard deviation of asset 1  
+  - $\sigma_2$ = Standard deviation of asset 2
+
+* Standard Deviation of a 2-Asset Portfolio: $$\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2}$$  
+  Where:  
+  - $\sigma_p$ = Standard deviation of the portfolio  
+  - $w_1$, $w_2$ = Portfolio weights for asset 1 and asset 2  
+  - $\sigma_1$, $\sigma_2$ = Standard deviations of asset 1 and asset 2  
+  - $\rho_{12}$ = Correlation coefficient between asset 1 and asset 2
 
 > [\!IMPORTANT]
 >

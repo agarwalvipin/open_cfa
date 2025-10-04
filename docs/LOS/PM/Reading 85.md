@@ -133,3 +133,4 @@ ETFs are like a hybrid of mutual funds and stocks.
 >   * Know the difference between pension plans cold: In a **Defined Contribution (DC)** plan, the **employee** takes the risk. In a **Defined Benefit (DB)** plan, the **employer** takes the risk.
 >   * For investor types, remember the relationship between **time horizon** and **risk tolerance/liquidity needs**. Long horizons (endowments, DB plans) usually mean high risk tolerance and low liquidity needs. Short horizons (banks) mean the opposite.
 >   * **ETFs vs. Mutual Funds:** The key difference is that ETFs trade on an exchange throughout the day like stocks, while mutual funds are priced only once a day at NAV.
+>   * **Lower Diversification Ratio is Better:** A lower diversification ratio indicates greater risk reduction through diversification, making your portfolio safer compared to holding a single security.

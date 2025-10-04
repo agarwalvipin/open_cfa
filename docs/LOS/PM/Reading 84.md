@@ -118,6 +118,9 @@ How do you know if a portfolio manager did a good job? You need to measure their
 
 ### 🧪 Formula Summary
 
+* Market Model: $$R_i = \alpha_i + \beta_i R_m + \epsilon_i$$
+  * Where $R_i$ is the return on asset $i$, $\alpha_i$ is the asset's intercept (alpha), $\beta_i$ is the asset's sensitivity to the market, $R_m$ is the market return, and $\epsilon_i$ is the asset-specific error term.
+
 * Capital Asset Pricing Model (CAPM): $$E(R_i) = R_f + \beta_i[E(R_m) - R_f]$$
 
 * Beta (β): $$\beta_i = \frac{Cov_{im}}{\sigma_m^2} = \rho_{im}(\frac{\sigma_i}{\sigma_m})$$
