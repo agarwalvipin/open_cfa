@@ -85,24 +85,28 @@
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['\\(', '\\)']],
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        tags: 'ams',
+        macros: {
+          RR: "{\\bf R}",
+          bold: ["{\\bf #1}", 1]
+        },
         processEscapes: true,
-        processEnvironments: true,
-        processRefs: false
+        processEnvironments: true
       },
       options: {
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process',
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        ignoreHtmlClass: 'tex2jax_ignore'
       },
       startup: {
         ready: () => {
           MathJax.startup.defaultReady();
           MathJax.startup.promise.then(() => {
-            // Re-render math when Docsify content changes
             const observer = new MutationObserver(() => {
-              MathJax.typesetPromise();
+              if (MathJax.typesetPromise) {
+                MathJax.typesetPromise();
+              }
             });
             observer.observe(document.getElementById('app'), {
               childList: true,

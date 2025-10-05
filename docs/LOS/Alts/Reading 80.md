@@ -1,7 +1,4 @@
-# Reading 80: Natural Resource    2.  **Biological Growth**: Trees get bigger and more valuable every year, all on their own!
-    3.  **Lumber Prices**: The price of timber in the market.
-    4.  **Land Appreciation**: The underlying land value.
-  * **Key Feature**: **Flexible Harvest Cycle** ✅. This is timberland's superpower. It acts as both a **factory** (growing trees) and a **warehouse** (storing them on the stump). If lumber prices are low, the owner can simply wait, letting the trees continue to grow and become even more valuable for a future harvest.
+# Reading 80: Natural Resource
 
 ### 🎯 Introduction
 
