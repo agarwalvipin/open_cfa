@@ -106,7 +106,7 @@
     - [Reading 79: Real Estate and Infrastructure](LOS/Alts/Reading%2079.md)
     - [Reading 80: Natural Resources](LOS/Alts/Reading%2080.md)
     - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
-    - [Reading 81: Introduction to Digital Assets](LOS/Alts/Reading%2082.md)
+    - [Reading 82: Introduction to Digital Assets](LOS/Alts/Reading%2082.md)
   - Portfolio Management
     - [Reading 83](LOS/PM/Reading%2083.md)
     - [Reading 84](LOS/PM/Reading%2084.md)
