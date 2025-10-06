@@ -41,7 +41,7 @@ The same dollar of profit gets taxed twice\!
 
 ##### **Example 🧮**
 
-ABC Corporation has pre-tax earnings of $10 million. [cite\_start]The corporate tax rate is 25%, and shareholders pay a 20% tax on dividends[cite: 3436].
+ABC Corporation has pre-tax earnings of $10 million. The corporate tax rate is 25%, and shareholders pay a 20% tax on dividends.
 
   * **Case 1: 100% Dividend Payout**
 
@@ -50,7 +50,7 @@ ABC Corporation has pre-tax earnings of $10 million. [cite\_start]The corporate 
     3.  Dividends Paid = $7.5M
     4.  Shareholder Tax on Dividends = $7.5M × 20% = $1.5M
     5.  **Total Tax Paid** = $2.5M + $1.5M = $4.0M
-    6.  [cite\_start]**Effective Tax Rate** = $4.0M / $10M = **40%** [cite: 3438]
+    6.  **Effective Tax Rate** = $4.0M / $10M = **40%** 
 
   * **Case 2: 40% Dividend Payout**
 
@@ -58,7 +58,7 @@ ABC Corporation has pre-tax earnings of $10 million. [cite\_start]The corporate 
     2.  Dividends Paid = $7.5M × 40% = $3.0M
     3.  Shareholder Tax on Dividends = $3.0M × 20% = $0.6M
     4.  **Total Tax Paid** = $2.5M + $0.6M = $3.1M
-    5.  [cite\_start]**Effective Tax Rate** = $3.1M / $10M = **31%** [cite: 3438]
+    5.  **Effective Tax Rate** = $3.1M / $10M = **31%** 
 
 Notice how reinvesting profits instead of paying them all out as dividends lowers the overall effective tax rate.
 
@@ -73,7 +73,7 @@ Corporations can be either private or public. The biggest difference is whether 
 
 ##### **Public Companies 🌍**
 
-[cite\_start]**Public limited companies**, like Apple, Google, or Reliance Industries, have their shares listed on a stock exchange[cite: 3452].
+**Public limited companies**, like Apple, Google, or Reliance Industries, have their shares listed on a stock exchange.
 
   * **Pros:**
       * ✅ **Access to Capital:** Can raise huge amounts of money from the public.
@@ -81,21 +81,21 @@ Corporations can be either private or public. The biggest difference is whether 
       * ✅ **Visibility:** Higher public profile can attract talent and customers.
   * **Cons:**
       * ❌ **Heavy Regulation:** Must comply with strict rules from regulators like the SEC in the US or SEBI in India.
-      * [cite\_start]❌ **Mandatory Disclosure:** Must publicly disclose detailed financial information, which competitors can see[cite: 3440].
+      * ❌ **Mandatory Disclosure:** Must publicly disclose detailed financial information, which competitors can see.
       * ❌ **Short-Term Focus:** Pressure from the market and analysts can lead to a focus on quarterly results rather than long-term strategy.
 
 ##### **Private Companies 🤫**
 
-**Private limited companies** are not listed on a public exchange. [cite\_start]Their shares are held by a smaller group of investors (like founders, employees, and venture capitalists)[cite: 3439].
+**Private limited companies** are not listed on a public exchange. Their shares are held by a smaller group of investors (like founders, employees, and venture capitalists).
 
   * **Pros:**
-      * [cite\_start]✅ **Less Regulation:** Fewer regulatory and disclosure requirements[cite: 3440].
-      * [cite\_start]✅ **Long-Term View:** Can focus on long-term goals without pressure from public markets[cite: 3441].
+      * ✅ **Less Regulation:** Fewer regulatory and disclosure requirements.
+      * ✅ **Long-Term View:** Can focus on long-term goals without pressure from public markets.
       * ✅ **Confidentiality:** No need to disclose sensitive information to competitors.
   * **Cons:**
       * ❌ **Limited Capital:** Harder to raise large sums of money.
-      * [cite\_start]❌ **Illiquidity:** Investors can't easily sell their shares; they often have to wait for an acquisition or for the company to go public[cite: 3439].
-      * [cite\_start]❌ **Fewer Investors:** Capital is typically raised through **private placements** to accredited, wealthy investors[cite: 3442, 3443].
+      * ❌ **Illiquidity:** Investors can't easily sell their shares; they often have to wait for an acquisition or for the company to go public.
+      * ❌ **Fewer Investors:** Capital is typically raised through **private placements** to accredited, wealthy investors, 3443].
 
 #### **The Journey to Going Public**
 
@@ -109,9 +109,9 @@ graph TD
     B --> E["3. SPAC Acquisition: A 'blank check' company that is already public (SPAC) acquires the private company, making it public."];
 ```
 
-1.  **Initial Public Offering (IPO):** This is the traditional route. [cite\_start]The company hires an investment bank to help it issue brand new shares to the public[cite: 3445]. This process raises fresh capital for the company. The IPOs of companies like Zomato in India are great examples.
-2.  **Direct Listing:** In a direct listing, no new shares are created. [cite\_start]The company simply facilitates the sale of existing shares from insiders (like founders and early investors) directly to the public on an exchange[cite: 3448]. This provides liquidity for insiders but doesn't raise capital for the company itself.
-3.  [cite\_start]**Special Purpose Acquisition Company (SPAC):** A **SPAC** is a shell company that goes public with the sole purpose of finding and merging with a private company[cite: 3444]. When the SPAC acquires the private company, the private company effectively becomes public. It's often seen as a faster way to go public than a traditional IPO.
+1.  **Initial Public Offering (IPO):** This is the traditional route. The company hires an investment bank to help it issue brand new shares to the public. This process raises fresh capital for the company. The IPOs of companies like Zomato in India are great examples.
+2.  **Direct Listing:** In a direct listing, no new shares are created. The company simply facilitates the sale of existing shares from insiders (like founders and early investors) directly to the public on an exchange. This provides liquidity for insiders but doesn't raise capital for the company itself.
+3.  **Special Purpose Acquisition Company (SPAC):** A **SPAC** is a shell company that goes public with the sole purpose of finding and merging with a private company. When the SPAC acquires the private company, the private company effectively becomes public. It's often seen as a faster way to go public than a traditional IPO.
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** Be able to clearly distinguish between an IPO, a direct listing, and a SPAC. The key difference is how capital is raised and whose shares are being sold. **IPO** = new shares, new capital. **Direct Listing** = existing shares, no new capital. **SPAC** = a merger with an already-public shell company.

@@ -27,8 +27,8 @@ The **Net Present Value (NPV)** is the difference between the present value of a
 
 **The Rule:**
 
-  * If **NPV \> 0**, ✅ Accept the project. It creates value.
-  * If **NPV \< 0**, ❌ Reject the project. It destroys value.
+  * If **NPV > 0**, ✅ Accept the project. It creates value.
+  * If **NPV < 0**, ❌ Reject the project. It destroys value.
 
 ##### **Theory 🧠**
 
@@ -65,8 +65,8 @@ The **Internal Rate of Return (IRR)** is the discount rate that makes the NPV of
 
 **The Rule:**
 
-  * If **IRR \> Cost of Capital**, ✅ Accept the project. It earns more than it costs to fund.
-  * If **IRR \< Cost of Capital**, ❌ Reject the project.
+  * If **IRR > Cost of Capital**, ✅ Accept the project. It earns more than it costs to fund.
+  * If **IRR < Cost of Capital**, ❌ Reject the project.
 
 Using the same example as above, after entering the cash flows, you would simply press `IRR` then `CPT` on your calculator to get **19.44%**. Since 19.44% is greater than the 9% cost of capital, you accept the project.
 
@@ -86,8 +86,8 @@ While NPV and IRR are for *projects*, **Return on Invested Capital (ROIC)** meas
 
 **The Rule:**
 
-  * If **ROIC \> WACC**, the company is creating value.
-  * If **ROIC \< WACC**, the company is destroying value.
+  * If **ROIC > WACC**, the company is creating value.
+  * If **ROIC < WACC**, the company is destroying value.
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** **NPV IS KING\!** This is one of the most important takeaways in all of corporate finance. If a question asks you to choose between two mutually exclusive projects and NPV and IRR give different answers, **always choose the project with the higher NPV**.
@@ -154,7 +154,7 @@ Sometimes, a project's simple NPV doesn't tell the whole story. Many projects co
 >
 > ### 🎯 Quick Exam-Day Pointers
 >
->   * **NPV is the Ultimate Decider:** When in doubt, trust NPV. Accept projects with NPV \> 0. For competing projects, pick the one with the highest NPV.
->   * **IRR is the Project's Return:** The IRR is the project's percentage return. Accept if IRR \> Cost of Capital. Be wary of its reinvestment assumption.
+>   * **NPV is the Ultimate Decider:** When in doubt, trust NPV. Accept projects with NPV > 0. For competing projects, pick the one with the highest NPV.
+>   * **IRR is the Project's Return:** The IRR is the project's percentage return. Accept if IRR > Cost of Capital. Be wary of its reinvestment assumption.
 >   * **Cash Flow is King:** Your analysis must be based on **incremental, after-tax cash flows**. Remember to include opportunity costs and externalities but ignore sunk costs.
 >   * **Don't Forget Real Options:** Real options (to wait, abandon, expand, or change) add hidden value to a project that a basic NPV analysis might miss. A project with a small negative NPV could be a "go" if it has a valuable real option attached.
