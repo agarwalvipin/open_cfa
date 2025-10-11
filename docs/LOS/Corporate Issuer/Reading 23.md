@@ -152,5 +152,6 @@ Analysts use several ratios to measure a company's liquidity, each one stricter 
 >
 >   * **CCC is King:** The Cash Conversion Cycle (DOH + DSO - DPO) is the most important metric in this reading. A shorter cycle is better as it frees up cash.
 >   * **Know Your Ratios:** Be able to calculate and interpret the Current, Quick, and Cash ratios. Remember they get progressively more conservative by excluding less liquid assets (Inventory, then Receivables).
+>   * **The higher the current ratio, the more liquid the company.**
 >   * **Primary vs. Secondary Liquidity:** Primary sources are for normal business. Tapping into secondary sources (like selling assets) is a major red flag that signals potential financial distress.
 >   * **Aggressive vs. Conservative:** This is a classic risk/return trade-off. An aggressive strategy uses cheap, risky short-term debt. A conservative strategy uses expensive, safe long-term capital.
