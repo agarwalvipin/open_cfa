@@ -29,7 +29,7 @@ Let's see how **Return on Equity (ROE)** is impacted by leverage.
 
 ##### **Example: The Good Times 😊**
 
-A company has $10M in assets and earns a 15% return on those assets ($1.5M profit). The cost of debt is 10%.
+A company has \\$10M in assets and earns a 15% return on those assets ($1.5M profit). The cost of debt is 10%.
 
   * **Scenario 1: No Debt (100% Equity)**
 

@@ -45,18 +45,18 @@ ABC Corporation has pre-tax earnings of $10 million. The corporate tax rate is 2
 
   * **Case 1: 100% Dividend Payout**
 
-    1.  Corporate Tax = $10M × 25% = $2.5M
+    1.  Corporate Tax = $10M × 25\\% = $2.5M
     2.  Profit After Tax = $10M - $2.5M = $7.5M
     3.  Dividends Paid = $7.5M
-    4.  Shareholder Tax on Dividends = $7.5M × 20% = $1.5M
+    4.  Shareholder Tax on Dividends = $7.5M × 20\\% = $1.5M
     5.  **Total Tax Paid** = $2.5M + $1.5M = $4.0M
     6.  **Effective Tax Rate** = $4.0M / $10M = **40%** 
 
   * **Case 2: 40% Dividend Payout**
 
     1.  Corporate Tax is the same: $2.5M
-    2.  Dividends Paid = $7.5M × 40% = $3.0M
-    3.  Shareholder Tax on Dividends = $3.0M × 20% = $0.6M
+    2.  Dividends Paid = $7.5M × 40\\% = $3.0M
+    3.  Shareholder Tax on Dividends = $3.0M × 20\\% = $0.6M
     4.  **Total Tax Paid** = $2.5M + $0.6M = $3.1M
     5.  **Effective Tax Rate** = $3.1M / $10M = **31%** 
 

@@ -141,6 +141,8 @@ Analysts use several ratios to measure a company's liquidity, each one stricter 
     $$\text{Quick Ratio} = \frac{\text{Cash} + \text{Marketable Securities} + \text{Receivables}}{\text{Current Liabilities}}$$
   * **Cash Ratio:**
     $$\text{Cash Ratio} = \frac{\text{Cash} + \text{Marketable Securities}}{\text{Current Liabilities}}$$
+  * **EAR of supplier financing:**
+    $$ \text{EAR} = \left(1 + \frac{\text{Discount \%}}{1 - \text{Discount \%}}\right)^{\frac{365}{\text{Full Payment Days} - \text{Discount Days}}} - 1 $$
 
 -----
 
