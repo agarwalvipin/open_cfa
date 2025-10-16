@@ -89,13 +89,17 @@ graph TD
       * **Formal Dollarization:** A country gives up its currency and adopts the currency of another country (e.g., Ecuador uses the US dollar). It completely gives up monetary policy independence.
       * **Monetary Union:** Several countries share a common currency and a single central bank (e.g., the Eurozone).
 
-2.  **Countries With Their Own Currency (Fixed & Floating):**
+2.  **Countries With Their Own Currency:**
 
-      * **Currency Board:** A very rigid peg where the domestic currency is fully backed by a foreign currency at a fixed rate (e.g., Hong Kong's link to the USD).
-      * **Conventional Fixed Peg:** The country pegs its currency to another currency or a basket of currencies within a narrow band of ±1%.
-      * **Crawling Peg:** The peg is adjusted periodically, usually to account for inflation differences.
-      * **Managed Float:** The central bank actively intervenes to influence the exchange rate without a specific target. This is what countries like India and China practice.
-      * **Independently Floating:** The exchange rate is determined purely by market forces of supply and demand. The central bank rarely intervenes. (e.g., USD, JPY).
+      *   **Fixed Regimes:**
+          *   **Currency Board:** A very rigid peg where the domestic currency is fully backed by a foreign currency at a fixed rate (e.g., Hong Kong's link to the USD).
+          *   **Conventional Fixed Peg:** The country pegs its currency to another currency or a basket of currencies within a narrow band of ±1%.
+          *   **Target Zone:** A fixed peg with a wider band (e.g., ±2%).
+          *   **Crawling Peg:** The peg is adjusted periodically, usually to account for inflation differences.
+
+      *   **Floating Regimes:**
+          *   **Managed Float:** The central bank actively intervenes to influence the exchange rate without a specific target. This is what countries like India and China practice.
+          *   **Independently Floating:** The exchange rate is determined purely by market forces of supply and demand. The central bank rarely intervenes (e.g., USD, JPY).
 
 -----
 
