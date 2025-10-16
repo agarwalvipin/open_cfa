@@ -30,10 +30,10 @@ The **foreign exchange market** is where currencies are traded. Its participants
 2.  **Real Exchange Rate:** This tells the real story about purchasing power. It's the nominal rate adjusted for inflation in both countries. It answers the question: "How many baskets of Indian goods can I buy for one basket of American goods?"
 
 **The Formula:**
-$$\text{Real Exchange Rate (d/f)} = S_{\text{(d/f)}} \times \left( \frac{CPI_f}{CPI_d} \right)$$
+$$\text{Real Exchange Rate} = S \times \left( \frac{CPI_f}{CPI_d} \right)$$
 Where:
 
-  * $S_{d/f}$ is the nominal spot rate (domestic/foreign).
+  * $S$ is the nominal spot rate (domestic/foreign).
   * $CPI_f$ is the Consumer Price Index of the foreign country.
   * $CPI_d$ is the Consumer Price Index of the domestic country.
 
@@ -139,10 +139,10 @@ Governments sometimes impose **capital restrictions** to limit the flow of inves
 
 ### 🧪 Formula Summary
 
-  * **Real Exchange Rate:**
-    $$\text{Real Exchange Rate (d/f)} = \text{Nominal Rate (d/f)} \times \left( \frac{\text{CPI}_{\text{Foreign}}}{\text{CPI}_{\text{Domestic}}} \right)$$
+  * **Real Exchange Rate (d/f):**
+    $$\text{Real Exchange Rate (d/f)} = \text{Nominal Rate (d/f)} \times \left( \frac{CPI_{f}}{CPI_{d}} \right)$$
   * **Percentage Change in Currency Value:**
-    $$\% \Delta = \left( \frac{\text{Ending Rate}}{\text{Beginning Rate}} \right) - 1$$
+    $$\Delta = \left( \frac{Rate_{end}}{Rate_{begin}} \right) - 1$$
   * **Macroeconomic Balance Equation:**
     $$X - M = (S - I) + (T - G)$$
 
