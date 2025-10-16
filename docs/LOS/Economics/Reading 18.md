@@ -101,6 +101,21 @@ graph TD
           *   **Managed Float:** The central bank actively intervenes to influence the exchange rate without a specific target. This is what countries like India and China practice.
           *   **Independently Floating:** The exchange rate is determined purely by market forces of supply and demand. The central bank rarely intervenes (e.g., USD, JPY).
 
+### Mnemonic for Exchange Rate Regimes
+
+A helpful mnemonic to remember the order of regimes from most rigid to most flexible is:
+
+**D**ogs **M**ust **C**arry **C**ats **T**o **C**atch **M**ice **I**ndividually
+
+*   **D**ogs = **D**ollarization
+*   **M**ust = **M**onetary Union
+*   **C**arry = **C**urrency Board
+*   **C**ats = **C**onventional Fixed Peg
+*   **T**o = **T**arget Zone
+*   **C**atch = **C**rawling Peg
+*   **M**ice = **M**anaged Float
+*   **I**ndividually = **I**ndependently Floating
+
 -----
 
 ### Part 3: The Domino Effect - Exchange Rates and the Economy 💥
