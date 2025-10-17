@@ -178,14 +178,41 @@ graph TD
 
 ### 🧪 Formula Summary
 
-  * **Weighted-Average Cost of Capital (WACC):**
+* **Weighted-Average Cost of Capital (WACC):** The blended cost of all capital sources.
     $$WACC = (w_d \times r_d \times (1-t)) + (w_e \times r_e)$$
-  * **MM Proposition I (With Taxes) - Value of a Levered Firm:**
-    $$V_L = V_U + (t \times D)$$
-    Where $V_L$ is the value of the levered firm, $V_U$ is the value of the unlevered firm, $t$ is the tax rate, and $D$ is the market value of debt.
-  * **Static Tradeoff Theory - Value of a Levered Firm:**
-    $$V_L = V_U + (t \times D) - PV(\text{Costs of Financial Distress})$$
+    Where:
+    * $w_d, w_e$ = weights of debt and equity
+    * $r_d, r_e$ = costs of debt and equity
+    * $t$ = corporate tax rate
 
+* **Valuing a Perpetuity (No-Growth) with WACC:** For a company with stable cash flows expected to continue indefinitely (a perpetuity), its total value can be estimated by dividing its free cash flow to the firm (FCFF) by its WACC.
+    $$V_L = \frac{FCFF_1}{WACC}$$
+    Where:
+    * $V_L$ = value of the levered firm
+    * $FCFF_1$ = free cash flow to the firm in the first period
+
+* **MM Proposition II (No Taxes) - Cost of Equity:** Shows how the cost of equity rises with leverage in a world without taxes[cite: 3865].
+    $$r_e = r_0 + (r_0 - r_d)\frac{D}{E}$$
+    Where:
+    * $r_e$ = cost of equity
+    * $r_0$ = cost of capital for a company with no debt
+    * $r_d$ = cost of debt
+    * $D/E$ = debt-to-equity ratio
+
+* **MM Proposition I (With Taxes) - Value of a Levered Firm:** The value of a firm with debt is the value of an all-equity firm plus the present value of the tax shield[cite: 3865].
+    $$V_L = V_U + (t \times D)$$
+    Where:
+    * $V_L$ = value of the levered firm
+    * $V_U$ = value of the unlevered (all-equity) firm
+    * $t$ = tax rate
+    * $D$ = market value of debt
+
+* **MM Proposition II (With Taxes) - WACC:** Shows that the WACC declines as leverage increases due to the tax shield[cite: 3865].
+    $$WACC = r_0 \left[1 - \left(t \times \frac{D}{D+E}\right)\right]$$
+
+* **Static Tradeoff Theory - Value of a Levered Firm:** The value of a levered firm is the value of an all-equity firm plus the tax shield benefit, minus the present value of financial distress costs[cite: 3865].
+    $$V_L = V_U + (t \times D) - PV(\text{costs of financial distress})$$
+    
 -----
 
 > [\> IMPORTANT]
