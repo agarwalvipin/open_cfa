@@ -43,7 +43,7 @@ What if you want to compare the risk of two very different assets, like a high-g
 
 The **Coefficient of Variation (CV)** solves this. It measures the amount of risk (standard deviation) *per unit of return* (mean). A lower CV is better—it means you're getting more return for the risk you're taking. 
 
-$$CV = \frac{Standard~Deviation~of~X}{Average~Value~of~X}$$
+$$CV = \frac{\text{Standard Deviation of X}}{\text{Average Value of X}}$$
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** The **standard deviation** is the single most important measure of risk in the Level 1 curriculum. You must be able to calculate it and understand what it represents. The **CV** is the go-to tool for comparing risk between two investments on an "apples-to-apples" basis.
@@ -101,12 +101,12 @@ An analyst might find that the stock price of Maruti Suzuki (an Indian car compa
 
 ### 🧪 Formula Summary
 
-* **Sample Mean**: $$\bar{X} = \frac{\sum_{i=1}^{n} X_i}{n}$$
-* **Sample Variance**: $$s^2 = \frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n-1}$$
-* **Sample Standard Deviation**: $$s = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n-1}}$$
+* **Sample Mean**: $$\bar{X} = \frac{\sum\_{i=1}^{n} X\_i}{n}$$
+* **Sample Variance**: $$s^2 = \frac{\sum\_{i=1}^{n} (X\_i - \bar{X})^2}{n-1}$$
+* **Sample Standard Deviation**: $$s = \sqrt{\frac{\sum\_{i=1}^{n} (X\_i - \bar{X})^2}{n-1}}$$
 * **Coefficient of Variation (CV)**: $$CV = \frac{s}{\bar{X}}$$
-* **Covariance**: $$s_{XY} = \frac{\sum_{i=1}^{n} \{[X_i - \bar{X}][Y_i - \bar{Y}]\}}{n-1}$$
-* **Correlation**: $$\rho_{XY} = \frac{s_{XY}}{s_X s_Y}$$
+* **Covariance**: $$s\_{XY} = \frac{\sum\_{i=1}^{n} \{[X\_i - \bar{X}][Y\_i - \bar{Y}]\}}{n-1}$$
+* **Correlation**: $$\rho\_{XY} = \frac{s\_{XY}}{s\_X s\_Y}$$
 
 ***
 

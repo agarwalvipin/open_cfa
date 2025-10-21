@@ -51,7 +51,7 @@ Let's say you invested in a stock with the following annual returns:
 * Year 2: -10%
 * Year 3: +15%
 
-**Arithmetic Mean**: $\frac{(20\% - 10\% + 15\%)}{3} = 8.33\%$
+**Arithmetic Mean**: `(20% - 10% + 15%) / 3 = 8.33%`
 
 **Geometric Mean**: $\sqrt[3]{(1+0.20)(1-0.10)(1+0.15)} - 1 = \sqrt[3]{(1.2)(0.9)(1.15)} - 1 = 7.46\%$
 
@@ -59,7 +59,7 @@ Notice the geometric mean is lower! It reflects the true compounded growth of yo
 
 Now, imagine you invest ₹1,000 each month in a mutual fund. The prices per unit are ₹10, ₹12, and ₹14. What's the average price you paid?
 
-**Harmonic Mean**: $\frac{3}{\frac{1}{10}+\frac{1}{12}+\frac{1}{14}} = \frac{3}{0.1 + 0.0833 + 0.0714} = ₹11.75$
+**Harmonic Mean**: $\frac{3}{\frac{1}{10} + \frac{1}{12} + \frac{1}{14}} = \frac{3}{0.1 + 0.0833 + 0.0714} \approx 11.75$
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** For returns over time, the **geometric mean** is the more accurate measure of past performance. The **arithmetic mean** is statistically the best estimator of the *next* period's return. The exam loves to test this distinction. Also, remember the hierarchy: For volatile returns, **Arithmetic Mean > Geometric Mean > Harmonic Mean**.
@@ -113,7 +113,7 @@ To compare investments or understand performance properly, we often need to adju
     * **Gross Return vs. Net Return**: **Gross return** is the total return *before* deducting management fees and administrative costs. **Net return** is what's left *after* those fees are taken out. Trading commissions are deducted for both.
     * **Pretax vs. After-Tax Return**: Returns can be stated before or after taxes are paid.
     * **Real Return vs. Nominal Return**: **Nominal return** is the simple percentage gain. **Real return** is the nominal return adjusted for inflation, showing the true increase in your purchasing power.
-        $$Real~Return \approx Nominal~Return - Inflation~Rate$$
+        $$\text{Real Return} \approx \text{Nominal Return} - \text{Inflation Rate}$$
     * **Leveraged Return**: This is the return on a position that was funded with borrowed money (leverage). Leverage magnifies both gains and losses. A common example is buying real estate with a mortgage.
 
 #### **Global & Local Context 🌍**
@@ -124,14 +124,15 @@ If you earned a **nominal return** of 12% on your investment in the Nifty 50 ind
 
 ### 🧪 Formula Summary
 
-* **Holding Period Return (HPR)**: $$HPR = \frac{P_1 - P_0 + Div_1}{P_0}$$
-* **Arithmetic Mean Return**: $$\bar{R} = \frac{\sum_{i=1}^{n} R_i}{n}$$
-* **Geometric Mean Return**: $$R_G = [\prod_{i=1}^{n} (1+R_i)]^{1/n} - 1$$
-* **Harmonic Mean**: $$\bar{X}_H = \frac{N}{\sum_{i=1}^{N} \frac{1}{X_i}}$$
+* **Holding Period Return (HPR)**: $$HPR = \frac{P\_1 - P\_0 + Div\_1}{P\_0}$$
+* **Arithmetic Mean Return**: $$\bar{R} = \frac{\sum\_{i=1}^{n} R\_i}{n}$$
+* **Geometric Mean Return**: $$R_G = [\prod\_{i=1}^{n} (1+R\_i)]^{1/n} - 1$$
+* **Harmonic Mean**: $$\bar{X}\_H = \frac{N}{\sum\_{i=1}^{N} \frac{1}{X\_i}}$$
 * **Annualized Return**: $$Annualized~Return = (1 + HPR)^{\frac{365}{days}} - 1$$
 * **Continuously Compounded Return**: $$R_{cc} = \ln(1+HPR)$$
-* **Exact Real Return**: $$Real~Return = \frac{(1 + Nominal~Return)}{(1 + Inflation~Rate)} - 1$$
-* **Leveraged Return (on equity)**: $$Leveraged~Return = \frac{r(V_0 + V_B) - r_B V_B}{V_0}$$
+ FV = PVerN
+* **Exact Real Return**: $$\text{Real Return} = \frac{(1 + \text{Nominal Return})}{(1 + \text{Inflation Rate})} - 1$$
+* **Leveraged Return (on equity)**: $$Leveraged~Return = \frac{r(V\_0 + V\_B) - r\_B V\_B}{V\_0}$$
 
 ***
 

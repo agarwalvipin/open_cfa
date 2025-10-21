@@ -24,7 +24,7 @@ Think of a bond as a formal loan. You lend money, and in return, you get interes
   * **Zero-Coupon Bond**: This is the simplest bond. It pays no interest. You buy it at a discount today and get its full face value back at maturity. The interest is the difference between what you paid and what you get back.
   * **Fixed-Coupon Bond**: This is the classic bond. It pays a fixed interest payment (the **coupon**) every period (usually annually or semi-annually) and repays the principal (**face value**) at maturity.
   * **Perpetuity**: A super rare bond that never matures\! It pays a fixed coupon forever. Its value is incredibly simple to calculate:
-    $$PV_{Perpetuity} = \frac{Payment}{r}$$
+    $$PV\_{Perpetuity} = \frac{\text{Payment}}{r}$$
 
 #### **Example 🧮**
 
@@ -81,7 +81,7 @@ graph TD
 
 Sometimes, we know the price of an asset and its cash flows, but we want to figure out the **implied return** (or yield) the market is demanding. This just means rearranging our PV formulas to solve for `r`.
 
-#### **For Bonds 債券**
+#### For Bonds
 
 For a bond, the implied return is its **yield to maturity (YTM)**. This is the single discount rate that makes the present value of all future cash flows (coupons + principal) equal to the bond's current market price. You almost always solve for this using a financial calculator.
 
@@ -95,7 +95,7 @@ For a bond, the implied return is its **yield to maturity (YTM)**. This is the s
 
 The implied return, or YTM, is 8.69%.
 
-#### **For Stocks 株式**
+#### For Stocks
 
 For a stock, we can use the market price to back out the **implied required return** or the **implied growth rate**. Using the Gordon Growth Model:
 
@@ -147,6 +147,7 @@ This principle is the bedrock for pricing many financial instruments.
 >
 >   * **Valuation is PV\!** The value of ANY asset is the present value of its expected future cash flows, discounted at a rate that reflects its risk. This is the central idea of this reading.
 >   * **Calculator is Your Best Friend:** Master the TVM keys on your financial calculator (N, I/Y, PV, PMT, FV) and the cash flow (CF) worksheet. You do not have time to solve these problems by hand. Remember to use opposite signs for inflows (what you get) and outflows (what you pay).
+TODO - know the Begin and END concept in calculator for Annuity
 >   * **Price vs. Yield is a See-Saw:** Bond prices and yields move in opposite directions. This relationship is fundamental.
 >   * **Gordon Growth Model is a Must-Know:** The formula $V_0 = D_1 / (k-g)$ and its rearrangement $k = (D_1/V_0) + g$ are tested frequently. Know what each variable means and how to solve for any of them.
 >   * **No Free Lunch:** The **no-arbitrage principle** is the logic behind forward rate and FX calculations. Understand that identical future cash flows must have identical present values.
