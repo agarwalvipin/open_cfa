@@ -13,26 +13,26 @@ Welcome, future charterholder! Imagine you notice that every time ice cream sale
 When we calculate a **correlation coefficient** from a sample of data, we get a number like +0.4 or -0.6. But that's just for our sample. The big question is: is the true correlation for the *entire population* actually zero? We need a formal hypothesis test to find out.
 
 The setup is always:
-* [cite_start]**Null Hypothesis ($H_0$)**: The true population correlation is zero ($H_0: \rho = 0$). [cite: 2521]
+* **Null Hypothesis ($H_0$)**: The true population correlation is zero ($H_0: \rho = 0$). 
 * **Alternative Hypothesis ($H_a$)**: The true population correlation is not zero ($H_a: \rho \neq 0$).
 
 #### **Parametric Test (The t-Test)**
 
-[cite_start]This is the standard test for correlation, but it comes with a key assumption: both variables must be **normally distributed**. [cite: 2522]
+This is the standard test for correlation, but it comes with a key assumption: both variables must be **normally distributed**. 
 
-[cite_start]The test statistic follows a **t-distribution** with **n-2 degrees of freedom**: [cite: 2523]
+The test statistic follows a **t-distribution** with **n-2 degrees of freedom**: 
 $$t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}$$
 Where:
 * $r$ = sample correlation coefficient
 * $n$ = sample size
 
-**Intuition**: The t-statistic gets larger (and more significant) if the sample correlation (`r`) is far from zero, or if the sample size (`n`) is large. [cite_start]A large sample gives us more confidence that the correlation we're seeing isn't just a fluke. [cite: 2524]
+**Intuition**: The t-statistic gets larger (and more significant) if the sample correlation (`r`) is far from zero, or if the sample size (`n`) is large. A large sample gives us more confidence that the correlation we're seeing isn't just a fluke. 
 
 #### **Nonparametric Test (Spearman Rank Correlation)**
 
-What if your data isn't normally distributed, or what if you're dealing with ranks instead of actual values (e.g., ranking fund performance from 1st to 10th)? [cite_start]The **Spearman rank correlation test** comes to the rescue! [cite: 2531]
+What if your data isn't normally distributed, or what if you're dealing with ranks instead of actual values (e.g., ranking fund performance from 1st to 10th)? The **Spearman rank correlation test** comes to the rescue! 
 
-[cite_start]It works by converting the data for each variable into ranks and then testing if those ranks are correlated. [cite: 2532] The formula looks complex, but the idea is simple: it measures the consistency of the rankings between two variables. [cite_start]For large samples (n > 30), you can use a t-test to check if the Spearman correlation is statistically significant. [cite: 2533]
+It works by converting the data for each variable into ranks and then testing if those ranks are correlated.  The formula looks complex, but the idea is simple: it measures the consistency of the rankings between two variables. For large samples (n > 30), you can use a t-test to check if the Spearman correlation is statistically significant. 
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** The key takeaway is knowing *when* to use each test. See normally distributed data? Use the standard **t-test for correlation**. See data that is ranked or does not meet the normality assumption? Think **Spearman rank correlation**. And remember, the degrees of freedom for the standard correlation t-test is **n-2**.
@@ -43,16 +43,16 @@ What if your data isn't normally distributed, or what if you're dealing with ran
 
 Sometimes, our data isn't numerical but categorical (e.g., "Low," "Medium," "High"). The **Chi-square ($\chi^2$) test** helps us determine if there's a relationship between two categorical variables. We want to know: is being in one category independent of being in another?
 
-[cite_start]The tool for this test is a **contingency table**, which shows the number of observations that fall into each combination of categories. [cite: 2534]
+The tool for this test is a **contingency table**, which shows the number of observations that fall into each combination of categories. 
 
-[cite_start]**The Logic**: The test works by comparing the actual frequencies we *observe* in our sample with the *expected* frequencies we would see if the two variables were perfectly independent. [cite: 2537]
+**The Logic**: The test works by comparing the actual frequencies we *observe* in our sample with the *expected* frequencies we would see if the two variables were perfectly independent. 
 
 * **Null Hypothesis ($H_0$)**: The two variables are independent.
 * **Alternative Hypothesis ($H_a$)**: The two variables are dependent.
 
 #### **Theory & Calculation 🧮**
 
-[cite_start]Let's use an example of 324 firms categorized by Earnings Growth and Dividend Yield. [cite: 2534]
+Let's use an example of 324 firms categorized by Earnings Growth and Dividend Yield. 
 
 **Observed Frequencies Table** 
 
@@ -67,7 +67,7 @@ Sometimes, our data isn't numerical but categorical (e.g., "Low," "Medium," "Hig
 If the variables were independent, the expected count for any cell would be:
 $$E_{ij} = \frac{(\text{Total for Row i}) \times (\text{Total for Column j})}{\text{Total Sample Size}}$$
 For example, the expected count for "Medium Growth" and "Medium Yield" is:
-[cite_start]$E_{2,2} = \frac{104 \times 110}{324} = 35.3$ [cite: 2541]
+$E_{2,2} = \frac{104 \times 110}{324} = 35.3$ 
 
 **Step 2: Calculate the Chi-Square Test Statistic.**
 This statistic sums up the differences between observed and expected values for all cells.
@@ -75,7 +75,7 @@ $$\chi^2 = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$$
 A large value means the observed and expected counts are very different, suggesting the variables are *not* independent.
 
 **Step 3: Compare to the Critical Value.**
-[cite_start]The test statistic follows a **chi-square distribution** with **(r-1) x (c-1)** degrees of freedom, where 'r' is the number of rows and 'c' is the number of columns. [cite: 2539] If your calculated $\chi^2$ statistic is bigger than the critical value from the table, you **reject the null hypothesis** and conclude the variables are dependent.
+The test statistic follows a **chi-square distribution** with **(r-1) x (c-1)** degrees of freedom, where 'r' is the number of rows and 'c' is the number of columns.  If your calculated $\chi^2$ statistic is bigger than the critical value from the table, you **reject the null hypothesis** and conclude the variables are dependent.
 
 #### **Global & Local Context 🌍**
 

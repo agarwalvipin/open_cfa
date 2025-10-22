@@ -32,9 +32,9 @@ $$\sigma_p^2 = w_A^2\sigma_A^2 + w_B^2\sigma_B^2 + 2w_A w_B \rho_{AB} \sigma_A \
 ```mermaid
 graph TD
     subgraph "Portfolio Variance Components"
-        A["Risk of Asset A<br>(w_A^2 * σ_A^2)"]
-        B["Risk of Asset B<br>(w_B^2 * σ_B^2)"]
-        C{"Interaction Effect<br>(2 * w_A * w_B * Cov_AB)"}
+  A["Risk of Asset A<br/>(w<sub>A</sub><sup>2</sup> × &sigma;<sub>A</sub><sup>2</sup>)"]
+  B["Risk of Asset B<br/>(w<sub>B</sub><sup>2</sup> × &sigma;<sub>B</sub><sup>2</sup>)"]
+  C{"Interaction Effect<br/>(2 × w<sub>A</sub> × w<sub>B</sub> × Cov<sub>AB</sub>)"}
     end
     A --> D["Total Portfolio Risk"];
     B --> D;

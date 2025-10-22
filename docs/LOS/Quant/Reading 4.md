@@ -27,26 +27,25 @@ This is the probability-weighted sum of the squared deviations from the expected
 
 Let's forecast the returns for a tech stock like Tata Consultancy Services (TCS) based on the state of the economy.
 
-| Economic Scenario | Probability | Return ($R_A$) |
+| Economic Scenario | Probability | Return (R_A) |
 | :--- | :---: | :---: |
 | Boom | 30% | 20% |
 | Normal | 50% | 12% |
 | Slow | 20% | 5% |
 
 1.  **Calculate Expected Return E(R)**:
-    $E(R) = (0.30 \times 20\%) + (0.50 \times 12\%) + (0.20 \times 5\%) = 6\% + 6\% + 1\% = \mathbf{13\%}$
+  E(R) = (0.30 × 20%) + (0.50 × 12%) + (0.20 × 5%) = 6% + 6% + 1% = **13%**
 
-2.  **Calculate Variance ($\sigma^2$)**:
+2.  **Calculate Variance (σ²)**:
 
-      * Boom: $0.30 \times (20\% - 13\%)^2 = 0.30 \times (7\%)^2 = 0.00147$
-      * Normal: $0.50 \times (12\% - 13\%)^2 = 0.50 \times (-1\%)^2 = 0.00005$
-      * Slow: $0.20 \times (5\% - 13\%)^2 = 0.20 \times (-8\%)^2 = 0.00128$
-      * **Variance** = $0.00147 + 0.00005 + 0.00128 = \mathbf{0.00280}$
+    * Boom: 0.30 × (20% − 13%)² = 0.30 × (7%)² = 0.00147
+    * Normal: 0.50 × (12% − 13%)² = 0.50 × (−1%)² = 0.00005
+    * Slow: 0.20 × (5% − 13%)² = 0.20 × (−8%)² = 0.00128
+    * **Variance** = 0.00147 + 0.00005 + 0.00128 = **0.00280**
 
-3.  **Calculate Standard Deviation ($\sigma$)**:
-    $\sigma = \sqrt{0.00280} = \mathbf{5.29\%}$
+3.  **Calculate Standard Deviation (σ)**:
+  σ = √0.00280 = **5.29%**
 
------
 
 ### Part 2: Mapping the Future: Probability Trees & Conditional Expectations 🌳
 
@@ -54,23 +53,24 @@ A **probability tree** is a fantastic visual tool for mapping out sequential eve
 
 ```mermaid
 graph TD
-    subgraph "Probability Tree for EPS"
-        direction LR
-        A(Start) -->|Prob. of Good Economy = 60%| B(Good Econ);
-        A -->|Prob. of Poor Economy = 40%| C(Poor Econ);
+  subgraph "Probability Tree for EPS"
+    direction LR
+    A(Start) -->|Prob. of Good Economy = 60\%| B(Good Econ)
+    A -->|Prob. of Poor Economy = 40\%| C(Poor Econ)
 
-        B -->|Prob. of Good Results = 30%| D[EPS = $1.80 <br> Joint Prob = 18%];
-        B -->|Prob. of Poor Results = 70%| E[EPS = $1.70 <br> Joint Prob = 42%];
+    B -->|Prob. of Good Results = 30\%| D[EPS = \$1.80<br/>Joint Prob = 18\%]
+    B -->|Prob. of Poor Results = 70\%| E[EPS = \$1.70<br/>Joint Prob = 42\%]
 
-        C -->|Prob. of Good Results = 60%| F[EPS = $1.30 <br> Joint Prob = 24%];
-        C -->|Prob. of Poor Results = 40%| G[EPS = $1.00 <br> Joint Prob = 16%];
-    end
+    C -->|Prob. of Good Results = 60\%| F[EPS = \$1.30<br/>Joint Prob = 24\%]
+    C -->|Prob. of Poor Results = 40\%| G[EPS = \$1.00<br/>Joint Prob = 16\%]
+  end
 ```
 
 To find the **joint probability** of any final outcome, you just multiply the probabilities along its path. For example, the probability of a good economy *and* good company results is $60\% \times 30\% = 18\%$.
 
 The overall **expected value** is the sum of each outcome multiplied by its joint probability:
-$E(EPS) = (0.18 \times \$1.80) + (0.42 \times \$1.70) + (0.24 \times \$1.30) + (0.16 \times \$1.00) = \$1.51$
+$$E(\mathrm{EPS}) = (0.18 \times 1.80) + (0.42 \times 1.70) + (0.24 \times 1.30) + (0.16 \times 1.00) = 1.51$$
+(So EPS = \$1.51.)
 
 #### **Conditional Expectations 🤔**
 
@@ -82,13 +82,16 @@ $E(EPS) = (0.18 \times \$1.80) + (0.42 \times \$1.70) + (0.24 \times \$1.30) + (
 -----
 
 ### Part 3: The Detective's Formula: Updating Beliefs with Bayes' Formula 💡
+This is where you become a true financial detective. Bayes' formula updates your prior belief about an event after observing new evidence.
 
-This is where you become a true financial detective. **Bayes' formula** is a mathematical rule for updating your initial beliefs (prior probabilities) with new evidence to arrive at a new, more informed belief (updated probability).
+Symbolic formula:
+$$P(\text{Event} \mid \text{New Info}) = \frac{P(\text{New Info} \mid \text{Event}) \times P(\text{Event})}{P(\text{New Info})}$$
 
-The conceptual formula is:
-$$Updated~Probability = \frac{P(\text{New Info | Event})}{P(\text{New Info})} \times P(\text{Event})$$
+Worded formula:
+Updated probability of the event given the new information = (likelihood of seeing the new information if the event is true × prior probability of the event) divided by (total probability of seeing the new information under all possible events).
 
-Let's break it down with an example.
+Put another way:
+Updated belief = (How consistent the evidence is with the event × how likely the event was originally) ÷ (how likely the evidence is overall).
 
 #### **Theory 🧠**
 

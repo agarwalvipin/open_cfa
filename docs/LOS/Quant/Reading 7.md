@@ -60,8 +60,8 @@ Here are the three key properties of the CLT:
 
 This leads to a crucial concept: the **standard error of the sample mean**. This is NOT the standard deviation of your data; it's the standard deviation of all the *sample means*. It tells you how precise your estimate of the population mean is.
 
-* If population standard deviation ($\sigma$) is known: $$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
-* If population standard deviation is unknown (which is almost always the case), we use the sample standard deviation ($s$): $$s_{\bar{x}} = \frac{s}{\sqrt{n}}$$
+* If population standard deviation ($\sigma$) is known: $$\sigma\_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
+* If population standard deviation is unknown (which is almost always the case), we use the sample standard deviation ($s$): $$s\_{\bar{x}} = \frac{s}{\sqrt{n}}$$
 
 Notice the $\sqrt{n}$ in the denominator. This is huge! It means that as your **sample size (n) increases, the standard error decreases**. A larger sample size gives you a more precise estimate of the true population mean.
 
@@ -84,8 +84,8 @@ What if your sample size is small (less than 30) or you have doubts about the da
 
 ### 🧪 Formula Summary
 
-* **Standard Error of the Sample Mean (Population $\sigma$ known)**: $$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
-* **Standard Error of the Sample Mean (Population $\sigma$ unknown)**: $$s_{\bar{x}} = \frac{s}{\sqrt{n}}$$
+* **Standard Error of the Sample Mean (Population $\sigma$ known)**: $$\sigma\_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
+* **Standard Error of the Sample Mean (Population $\sigma$ unknown)**: $$s\_{\bar{x}} = \frac{s}{\sqrt{n}}$$
 
 ***
 

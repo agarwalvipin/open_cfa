@@ -18,15 +18,27 @@ graph TD
     D --> E["5. Collect Data & Calculate the Test Statistic"];
     E --> F["6. Make a Decision: Reject or Fail to Reject H₀"];
 ```
+  * **Null Hypothesis ($H\_0$)**: This is the initial belief or the "statement of no effect" that you are trying to disprove. It **always** includes the "equal to" sign (=, ≤, or ≥). Example: $H\_0: \mu = 0$.
+  * **Alternative Hypothesis ($H\_a$)**: This is what you conclude if you reject the null. It's usually what you're trying to prove. Example: $H\_a: \mu \neq 0$.
 
-  * **Null Hypothesis ($H_0$)**: This is the initial belief or the "statement of no effect" that you are trying to disprove. It **always** includes the "equal to" sign (=, ≤, or ≥). Example: $H_0: \mu = 0$.
-  * **Alternative Hypothesis ($H_a$)**: This is what you conclude if you reject the null. It's usually what you're trying to prove. Example: $H_a: \mu \neq 0$.
+### Mnemonic: Hungry Tigers Always Roam Catching Deer
+
+Hungry Tigers Always Roam Catching Deer — Hypotheses → Test → Alpha → Rule → Compute → Decision
+
+- Hypotheses: state H₀ and Hₐ  
+- Test: choose the test statistic (z, t, χ², F)  
+- Alpha: set the significance level (α)  
+- Rule: state the decision rule / critical value  
+- Compute: collect data and calculate the test statistic  
+- Decision: reject or fail to reject H₀
 
 #### **Making a Decision: Test Statistic vs. Critical Value**
 
 Your **test statistic** is calculated from your sample data. It measures how far your sample result is from the value claimed in the null hypothesis.
 
-$$Test~Statistic = \frac{Sample~Statistic - Hypothesized~Value}{Standard~Error~of~the~Sample~Statistic}$$
+<div style="background-color:#fff4f4;padding:10px;border:none;border-radius:6px;display:inline-block">
+<p style="margin:0;text-align:center">$$\frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$</p>
+</div>
 
 The **critical value** is your threshold for proof. It's determined by your chosen **significance level ($\alpha$)**, which is the probability of making a Type I error. Common levels are 5% (0.05) or 1% (0.01). If your test statistic is more extreme than your critical value, you have enough evidence to reject the null hypothesis.
 
@@ -34,10 +46,10 @@ The **critical value** is your threshold for proof. It's determined by your chos
 
 Just like in a real trial, you can make mistakes.
 
-| Decision | True Condition: $H_0$ is True | True Condition: $H_0$ is False |
+| Decision | True Condition: $H\_0$ is True | True Condition: $H\_0$ is False |
 | :--- | :--- | :--- |
-| **Do not reject $H_0$** | Correct Decision ✅ (Confidence = 1-α) | **Type II Error** ❌ (Letting a guilty person go free) |
-| **Reject $H_0$** | **Type I Error** ❌ (Convicting an innocent person) | Correct Decision ✅ (**Power of the Test**) |
+| **Do not reject $H\_0$** | Correct Decision ✅ (Confidence = 1-α) | **Type II Error** ❌ (Letting a guilty person go free) |
+| **Reject $H\_0$** | **Type I Error** ❌ (Convicting an innocent person) | Correct Decision ✅ (**Power of the Test**) |
 
   * **Type I Error**: Rejecting a true null hypothesis. The probability of this is your **significance level, $\alpha$**.
   * **Type II Error**: Failing to reject a false null hypothesis. The probability of this is $\beta$.
@@ -57,9 +69,9 @@ Different questions require different statistical tools. Here are the main tests
 | Hypothesis Test of... | Use as Test Statistic | With Degrees of Freedom (df): |
 | :--- | :--- | :--- |
 | **One** population **mean** | t-statistic (or z-statistic for large n) | $n-1$ |
-| **Two** population **means** | t-statistic | Varies ($n_1+n_2-2$ or more complex) |
+| **Two** population **means** | t-statistic | Varies ($n\_1+n\_2-2$ or more complex) |
 | **One** population **variance** | Chi-square statistic ($\chi^2$) | $n-1$ |
-| **Two** population **variances** | F-statistic | $n_1-1$ (numerator), $n_2-1$ (denominator) |
+| **Two** population **variances** | F-statistic | $n\_1-1$ (numerator), $n\_2-1$ (denominator) |
 
 #### **Tests for Population Means (t-tests)**
 

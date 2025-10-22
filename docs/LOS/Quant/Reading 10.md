@@ -13,13 +13,13 @@ Welcome, future charterholder! Imagine you're trying to predict how much ice cre
 **Simple linear regression** aims to explain the variation in one variable (the dependent variable, Y) using the variation in a single other variable (the independent variable, X).
 
 The model is described by a simple equation:
-$$Y_i = b_0 + b_1X_i + \epsilon_i$$
+$$Y\_i = b\_0 + b\_1X\_i + \epsilon\_i$$
 Where:
-* $Y_i$ = The actual value of the dependent variable for observation `i`.
-* $X_i$ = The value of the independent variable for observation `i`.
-* $b_0$ = The **intercept**, the value of Y when X is zero.
-* $b_1$ = The **slope coefficient**, the change in Y for a one-unit change in X.
-* $\epsilon_i$ = The **error term** or **residual**, the part of Y that the model can't explain.
+* $Y\_i$ = The actual value of the dependent variable for observation `i`.
+* $X\_i$ = The value of the independent variable for observation `i`.
+* $b\_0$ = The **intercept**, the value of Y when X is zero.
+* $b\_1$ = The **slope coefficient**, the change in Y for a one-unit change in X.
+* $\epsilon\_i$ = The **error term** or **residual**, the part of Y that the model can't explain.
 
 To find the "best fit" line, we use the **least squares criterion**. This method chooses the intercept ($\hat{b}_0$) and slope ($\hat{b}_1$) that **minimize the sum of the squared errors (SSE)**. This is why it's often called **Ordinary Least Squares (OLS)**.
 
@@ -94,10 +94,10 @@ Given a forecast for our independent variable ($X_p$), we can easily calculate t
 $$\hat{Y} = \hat{b}_0 + \hat{b}_1 X_p$$
 
 But this is just a point estimate. It's more useful to create a **prediction interval**, which gives a range that we're confident the actual future Y value will fall into.
-$$\text{Prediction Interval} = \hat{Y} \pm (t_c \times s_f)$$
+$$\text{Prediction Interval} = \hat{Y} \pm (t\_c \times s\_f)$$
 Where:
-* $t_c$ = The critical t-value (with n-2 df).
-* $s_f$ = The standard error of the forecast.
+* $t\_c$ = The critical t-value (with n-2 df).
+* $s\_f$ = The standard error of the forecast.
 
 #### **Different Functional Forms**
 
@@ -114,14 +114,29 @@ What if the relationship isn't a straight line? We can often transform the varia
 
 ### 🧪 Formula Summary
 
-* **Regression Model**: $Y_i = b_0 + b_1X_i + \epsilon_i$
-* **Estimated Regression Line**: $\hat{Y}_i = \hat{b}_0 + \hat{b}_1X_i$
-* **Slope Coefficient**: $\hat{b}_1 = \frac{Cov_{XY}}{Var_X}$
-* **Intercept Coefficient**: $\hat{b}_0 = \bar{Y} - \hat{b}_1\bar{X}$
-* **Total Variation**: $SST = SSR + SSE$
-* **Coefficient of Determination**: $R^2 = \frac{SSR}{SST}$
-* **t-Statistic for Slope**: $t = \frac{\hat{b}_1 - b_1}{s_{\hat{b}_1}}$ (with df = n-2)
-* **Prediction Interval**: $\hat{Y} \pm (t_c \times s_f)$
+* **Regression Model**:
+    $$Y\_i = b\_0 + b\_1 X\_i + \epsilon\_i$$
+
+* **Estimated Regression Line**:
+    $$\hat{Y}\_i = \hat{b}\_0 + \hat{b}\_1 X\_i$$
+
+* **Slope Coefficient**:
+    $$\hat{b}\_1 = \frac{Cov\_{XY}}{Var\_X}$$
+
+* **Intercept Coefficient**:
+    $$\hat{b}\_0 = \bar{Y} - \hat{b}\_1 \bar{X}$$
+
+* **Total Variation**:
+    $$SST = SSR + SSE$$
+
+* **Coefficient of Determination**:
+    $$R^2 = \frac{SSR}{SST}$$
+
+* **t-Statistic for Slope** (df = n-2):
+    $$t = \frac{\hat{b}\_1 - b\_1}{s\_{\hat{b}\_1}}$$
+
+* **Prediction Interval**:
+    $$\hat{Y} \pm (t\_c \times s\_f)$$
 
 ***
 
