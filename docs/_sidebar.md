@@ -2,10 +2,12 @@
 
 - [Home](/README.md)
 - Formulas
-  - [Derivatives](Formulas/Derivatives.md)
-  - [Equity](Formulas/Equity.md)
-  - [Fixed Income](Formulas/Fixed%20Income.md)
-  - [Quants](Formulas/Quants.md)
+  - Formulas
+    - [Most Important](Formulas/MostImportant.md)
+    - [Derivatives](Formulas/Derivatives.md)
+    - [Equity](Formulas/Equity.md)
+    - [Fixed Income](Formulas/Fixed%20Income.md)
+    - [Quants](Formulas/Quants.md)
 - LOS
   - Quantitative Methods
     - [Reading 1: Rates and Returns](LOS/Quant/Reading%201.md)
@@ -39,8 +41,6 @@
   - Financial Statement Analysis
     - [Reading 27: Introduction to Financial Statement Analysis](LOS/FRA/Reading%2027.md)
     - [Reading 28: Analyzing Income Statements](LOS/FRA/Reading%2028.md)
-    - [Reading 28_gpt](LOS/FRA/Reading%2028_gpt.md)
-    - [Reading 28_pre-read](LOS/FRA/Reading%2028_pre-read.md)
     - [Reading 29: Analyzing Balance Sheets](LOS/FRA/Reading%2029.md)
     - [Reading 30: Analyzing Statements of Cash Flows I](LOS/FRA/Reading%2030.md)
     - [Reading 31: Analyzing Statements of Cash Flows II](LOS/FRA/Reading%2031.md)

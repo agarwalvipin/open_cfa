@@ -10,7 +10,7 @@
 
   $$\text{Nominal Rate} = \text{Real Risk-Free Rate} + \text{Inflation Premium} + \text{Default Risk Premium} + \text{Liquidity Premium} + \text{Maturity Premium}$$
 
-- 🎯 **Holding Period Return (HPR):**
+- 🎯 **Holding Period Return (HPR):** ⭐ **KEY FORMULA**
 
   $$\text{HPR} = \frac{\text{End Value}}{\text{Beginning Value}} - 1$$
   
@@ -58,11 +58,11 @@
 
 ## 💰 Reading 2: The Time Value of Money in Finance
 
-- 🔮 **Future Value (FV):**
+- 🔮 **Future Value (FV):** ⭐ **KEY FORMULA**
 
   $$FV = PV(1 + r)^t$$
 
-- 📊 **Present Value (PV):**
+- 📊 **Present Value (PV):** ⭐ **KEY FORMULA**
 
   $$PV = \frac{FV}{(1 + r)^t} = FV(1 + r)^{-t}$$
 
@@ -86,7 +86,7 @@
 
   $$\text{Value} = \frac{D_p}{k_p}$$
 
-- 🌱 **Constant Growth DDM (Gordon Growth Model):**
+- 🌱 **Constant Growth DDM (Gordon Growth Model):** ⭐ **KEY FORMULA**
 
   $$V_0 = \frac{D_1}{k_e - g_c}$$
 
@@ -130,11 +130,11 @@
 
   $$\text{MAD} = \frac{\sum_{i=1}^{n} |X_i - \bar{X}|}{n}$$
 
-- 📐 **Sample Variance:**
+- 📐 **Sample Variance:** ⭐ **KEY FORMULA**
 
   $$s^2 = \frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n - 1}$$
 
-- 📊 **Sample Standard Deviation:**
+- 📊 **Sample Standard Deviation:** ⭐ **KEY FORMULA**
 
   $$s = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n - 1}}$$
 
@@ -204,7 +204,7 @@
 
 ## 📈 Reading 5: Portfolio Mathematics
 
-- 💼 **Expected Return of a Portfolio:**
+- 💼 **Expected Return of a Portfolio:** ⭐ **KEY FORMULA**
 
   $$E(R_p) = \sum_{i=1}^{n} w_i E(R_i)$$
 
@@ -222,7 +222,7 @@
   
   where superscripts denote asset indices and subscript $t$ denotes time period
 
-- 📉 **Variance of a 2-Asset Portfolio:**
+- 📉 **Variance of a 2-Asset Portfolio:** ⭐ **KEY FORMULA**
 
   $$\sigma_P^2 = w_A^2 \sigma_A^2 + w_B^2 \sigma_B^2 + 2 w_A w_B \mathrm{Cov}(A,B)$$
   
@@ -266,11 +266,11 @@
 
   $$\text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$
 
-- 🔍 **Test Statistic for Population Mean (Large Sample or Known Pop Var):**
+- 🔍 **Test Statistic for Population Mean (Large Sample or Known Pop Var):** ⭐ **KEY FORMULA**
 
   $$z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}} \quad \text{or} \quad z = \frac{\bar{x} - \mu_0}{s/\sqrt{n}} \text{ (if n large)}$$
 
-- 📊 **Test Statistic for Population Mean (Small Sample, Unknown Pop Var):**
+- 📊 **Test Statistic for Population Mean (Small Sample, Unknown Pop Var):** ⭐ **KEY FORMULA**
 
   $$t_{n-1} = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}$$
 
@@ -318,15 +318,15 @@
 
 ## 📈 Reading 10: Simple Linear Regression
 
-- 📊 **Simple Linear Regression Model:**
+- 📊 **Simple Linear Regression Model:** ⭐ **KEY FORMULA**
 
   $$Y_i = b_0 + b_1 X_i + \epsilon_i$$
 
-- 📈 **Estimated Regression Line:**
+- 📈 **Estimated Regression Line:** ⭐ **KEY FORMULA**
 
   $$\hat{Y}_i = \hat{b}_0 + \hat{b}_1 X_i$$
 
-- 🔧 **Estimated Slope Coefficient:**
+- 🔧 **Estimated Slope Coefficient:** ⭐ **KEY FORMULA**
 
   $$\hat{b}_1 = \frac{\mathrm{Cov}(X, Y)}{\mathrm{Var}(X)} = r \frac{s_Y}{s_X}$$
   
@@ -366,7 +366,7 @@
 
   $$\text{SEE} = s_{\epsilon} = \sqrt{\text{MSE}}$$
 
-- 📊 **Coefficient of Determination (R²):**
+- 📊 **Coefficient of Determination (R²):** ⭐ **KEY FORMULA**
 
   $$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}$$
 

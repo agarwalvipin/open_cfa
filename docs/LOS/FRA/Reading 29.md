@@ -1,222 +1,212 @@
-### **Reading 29: Analyzing Balance Sheets**
+Okay, let's dissect the Balance Sheet with Reading 29\! ⚔️
 
-This reading is fundamental. The balance sheet provides a snapshot of a company's financial health at a single point in time. For the exam, you'll need to know not just what's on the balance sheet, but also how to analyze the relationships between the items.
+## Reading 29: Analyzing Balance Sheets 🚀
 
----
+### 🎯 Introduction
 
-### **LOS a: explain the financial reporting and disclosures related to intangible assets.**
+Imagine the **Balance Sheet** as a company's financial photograph 📸 taken at a specific moment in time. On one side, you see everything the company *owns* (**Assets**). On the other side, you see how it *paid* for those things – either by borrowing (**Liabilities**) or through owner contributions and retained profits (**Equity**). It's the fundamental equation: Assets = Liabilities + Equity. This reading teaches us how to analyze this snapshot, looking beyond the surface to understand the value of unseen assets (like brands), the classification of investments, long-term debts, and ultimately, a company's financial structure, liquidity (short-term health), and solvency (long-term staying power). Let's develop our X-ray vision for the balance sheet\! ✨
 
-#### **Explanation**
+-----
 
-**Intangible assets** are assets that are not physical in nature. They represent a company's legal or intellectual rights and competitive advantages. Think of them as valuable things you can't touch. There are two main categories:
+### Part 1: Intangible Assets - The Invisible Value 🤔 (LOS 29.a)
 
-1.  **Identifiable Intangibles:** These can be separated from the company and sold. Examples include:
-    * **Patents:** Exclusive rights to an invention.
-    * **Trademarks:** A symbol, word, or words legally registered or established by use as representing a company or product.
-    * **Copyrights:** The exclusive legal right to print, publish, perform, film, or record literary, artistic, or musical material.
-    * **Franchise Agreements:** A contract that allows a business to use the name and operating system of another business.
+**Intangible assets** are assets you can't physically touch, like patents, trademarks, copyrights, and goodwill. They lack physical substance but can be incredibly valuable.
 
-2.  **Unidentifiable Intangibles:** These cannot be separated from the company. The most common example is **goodwill**, which we will cover in the next LOS.
+**Types:**
 
-**Financial Reporting:**
+  * **Identifiable Intangibles:** Can be separated from the company or arise from contractual/legal rights (e.g., patents, trademarks, copyrights) -1383]. Think of the brand value of Coca-Cola or Apple's patents.
+  * **Unidentifiable Intangibles:** Cannot be separated from the company (e.g., **goodwill**) -1384].
 
-* **Purchased Intangibles:** If a company buys an intangible asset from another party, it is recorded on the balance sheet at its fair value at the time of purchase.
-* **Internally Developed Intangibles:** Most costs associated with developing intangible assets internally are expensed as they are incurred. For example, marketing costs to build a brand are expensed. **This is a key distinction and a common exam question!** The rationale is that it's difficult to determine the future economic benefits of these costs with certainty.
+**Accounting Treatment:**
 
-**Amortization and Impairment:**
+  * **Purchased Intangibles:**
+      * *IFRS:* Can use the **cost model** (cost less amortization/impairment) or **revaluation model** (fair value, if active market exists - rare for intangibles).
+      * *U.S. GAAP:* Only the **cost model** is allowed.
+  * **Internally Created Intangibles:**
+      * *U.S. GAAP:* Most costs (like internal R\&D) are expensed immediately. Exception: Certain software development costs.
+      * *IFRS:* Distinguishes between research and development:
+          * **Research Costs:** Expensed as incurred (discovery phase), 1390].
+          * **Development Costs:** *Can be capitalized* (recorded as an asset) if specific criteria are met (technical feasibility, intent to complete, ability to use/sell, future economic benefits likely, etc.) -1391].
 
-* **Finite-Life Intangibles:** Intangible assets with a limited useful life (e.g., patents, copyrights) are **amortized** over their useful life. Amortization is similar to depreciation for tangible assets.
-* **Indefinite-Life Intangibles:** Intangible assets with an indefinite useful life (e.g., trademarks) are not amortized. Instead, they are tested for **impairment** at least annually. Impairment occurs when the carrying value of the asset on the balance sheet is greater than its recoverable amount.
+<!-- end list -->
 
-#### **Real-World Examples**
+```mermaid
+graph TD
+    A["Start R&D Project under IFRS"] --> B{"Research Phase?<br/>(Discovering new knowledge)"}
+    B -->|Yes| C["Expense Costs Immediately 💸"]
+    B -->|No| D{"Development Phase?<br/>(Applying research findings)"}
+    D -->|Yes| E{"Meet Capitalization Criteria?<br/>(Feasible, Intent, Resources, Market...)"}
+    E -->|Yes| F["Capitalize Costs as Intangible Asset ✅"]
+    E -->|No| C
+    D -->|No| G["Other Costs like Training, Advertising?"]
+    G -->|Yes| C
+```
 
-* **Global Context (Apple Inc.):** Apple's brand is one of the most valuable in the world. However, you won't see the full value of the Apple brand on its balance sheet because it was developed internally. The costs associated with creating that brand (marketing, advertising) were expensed as they were incurred. What you *will* see are the patents for their technology, which are identifiable intangible assets.
-* **Indian Context (Dr. Reddy's Laboratories):** As a pharmaceutical company, Dr. Reddy's holds numerous patents for its drugs. These patents are valuable intangible assets that give the company the exclusive right to produce and sell those drugs for a certain period. When Dr. Reddy's acquires a patent from another company, it will be recorded on its balance sheet.
+  * **Finite vs. Indefinite Life:**
+      * **Finite Life (e.g., Patent):** **Amortized** (like depreciation) over its useful life. Tested for impairment if indicators exist.
+      * **Indefinite Life (e.g., some Trademarks, Goodwill):** Not amortized. Tested for **impairment** (a write-down if value drops below carrying amount) at least annually.
 
-#### **CFA Level 1 Exam Tips**
+**Costs Always Expensed (IFRS & U.S. GAAP):** Start-up, training, admin overhead, advertising, relocation, termination costs -1400].
 
-* **Focus on the distinction between purchased and internally developed intangibles.** The exam loves to test this. Remember: purchased intangibles are capitalized; internally developed intangibles are expensed (with some exceptions under IFRS for development costs).
-* **Know the difference between amortization and impairment.** Finite-life intangibles are amortized and tested for impairment. Indefinite-life intangibles are *not* amortized but are tested for impairment.
-* **Pay attention to the footnotes.** The disclosures in the financial statements will provide details about the company's intangible assets, their useful lives, and the amortization methods used.
+**Analysis:** Capitalizing costs (like IFRS development) results in higher assets and higher initial net income compared to expensing (like U.S. GAAP R\&D). Analysts need to be aware of these differences when comparing companies. Some analysts adjust financials by removing intangible assets, but it's crucial to consider their real economic value -1402].
 
-**\*\*IMPORTANT\*\***: The treatment of research and development (R&D) costs is a classic exam topic. Under US GAAP, both research and development costs are expensed. Under IFRS, research costs are expensed, but development costs may be capitalized if certain criteria are met. This is a frequently tested difference between IFRS and US GAAP.
+> [\!TIP]
+> **CFA Exam Tip ✍️:** Remember the key IFRS vs. U.S. GAAP difference for R\&D: IFRS *can* capitalize development costs if criteria are met; U.S. GAAP generally expenses both research and development. Know that indefinite-lived intangibles (like goodwill) are *not* amortized but *are* tested for impairment annually.
 
----
+-----
 
-### **LOS b: explain the financial reporting and disclosures related to goodwill.**
+### Part 2: Goodwill - Paying More Than Meets the Eye? 🤝 (LOS 29.b)
 
-#### **Explanation**
+**Goodwill** is a specific type of unidentifiable intangible asset created *only* during a business acquisition, 1431].
 
-**Goodwill** is an unidentifiable intangible asset that arises when one company acquires another for a price greater than the fair value of its net identifiable assets (identifiable assets minus liabilities). It represents the non-physical assets that are not individually identifiable, such as a strong brand reputation, a loyal customer base, and good employee relations.
+**Creation:** It's the amount the acquiring company pays *in excess* of the fair value of the identifiable net assets (Assets - Liabilities) of the company it buys -1422].
 
-**Creation of Goodwill:**
+*Purchase Price - Fair Value of Identifiable Net Assets = Goodwill*
 
-Goodwill is *only* created in an acquisition. It is calculated as:
+**Why pay extra?**
 
-> **Goodwill = Purchase Price - Fair Value of Net Identifiable Assets**
+  * Unrecognized assets (brand reputation, customer relationships) -1424].
+  * Synergies expected from the combination (cost savings, enhanced revenues) -1427].
 
-**Financial Reporting:**
+**Accounting:**
 
-* Goodwill is recorded as an asset on the acquirer's balance sheet.
-* Goodwill is considered to have an **indefinite life** and is therefore **not amortized**.
-* It must be tested for **impairment** at least annually. If the carrying value of the reporting unit (the part of the company that contains the goodwill) exceeds its fair value, an impairment loss must be recognized.
+  * Goodwill is *not* amortized because it's considered to have an indefinite life.
+  * It *must* be tested for **impairment** at least annually. If its value is deemed impaired (less than its carrying amount), the company records an impairment loss on the income statement and reduces the goodwill asset on the balance sheet. This loss is a non-cash charge.
+  * **Bargain Purchase:** If the purchase price is *less* than the fair value of net assets, the difference is recognized immediately as a gain on the acquirer's income statement -1430].
 
-#### **Real-World Examples**
+**Analysis:**
 
-* **Global Context (Microsoft's acquisition of LinkedIn):** In 2016, Microsoft acquired LinkedIn for approximately $26.2 billion. A significant portion of this purchase price was allocated to goodwill. This goodwill represented the value of LinkedIn's professional network, its brand reputation, and its user data – things that were not listed as individual assets on LinkedIn's balance sheet.
-* **Indian Context (Tata Steel's acquisition of Corus):** In 2007, Tata Steel acquired the Anglo-Dutch steelmaker Corus. The purchase price was significantly higher than the fair value of Corus's tangible assets. The difference was recorded as goodwill on Tata Steel's balance sheet, representing Corus's established position in the European market, its customer relationships, and its skilled workforce.
+  * **Manipulation Risk:** Management might allocate more purchase price to goodwill (which isn't amortized) and less to identifiable assets (which are depreciated/amortized) to inflate future reported earnings -1436]. ⚠️
+  * **Economic vs. Accounting Goodwill:** Accounting goodwill arises from acquisitions. Economic goodwill relates to a company's expected future performance. They are not the same.
+  * **Impairment as a Signal:** Goodwill impairments indicate that past acquisitions haven't performed as expected – the acquirer likely overpaid or synergies didn't materialize, 1441].
+  * **Comparability:** Analysts often remove goodwill from assets and impairment charges from income when calculating ratios to improve comparability between companies.
 
-#### **CFA Level 1 Exam Tips**
+-----
 
-* **Remember that goodwill is only created during an acquisition.** A company cannot create goodwill on its own.
-* **Know how to calculate goodwill.** It's a simple formula, but you need to be sure you're using the *fair value* of the net identifiable assets, not the book value.
-* **Goodwill is not amortized.** This is a key point. It is tested for impairment.
-* **An impairment of goodwill can be a red flag.** It suggests that the acquiring company overpaid for the acquisition or that the acquired company's performance has declined.
+### Part 3: Financial Assets - Investments on the Books 📈 (LOS 29.c)
 
-**\*\*IMPORTANT\*\***: Be able to distinguish goodwill from other intangible assets. Goodwill is a residual amount and is unidentifiable. Other intangibles, like patents, are identifiable.
+**Financial instruments** are contracts creating a financial asset for one party and a financial liability or equity for another. On the asset side, this includes investments like stocks and bonds, derivatives, loans, and receivables. How they're valued depends on their classification, which differs between U.S. GAAP and IFRS.
 
----
+#### **U.S. GAAP Classifications 🇺🇸**
 
-### **LOS c: explain the financial reporting and disclosures related to financial instruments.**
+  * **Held-to-Maturity (HTM) Securities:** *Debt securities* the company intends and is able to hold until maturity.
+      * *Measurement:* **Amortized Cost** (original cost adjusted for principal payments and amortization of any discount or premium). Market value changes are ignored unless impaired.
+  * **Trading Securities:** *Debt or Equity* bought primarily for short-term trading profit.
+      * *Measurement:* **Fair Value** (Market Value).
+      * *Unrealized Gains/Losses (Changes in Fair Value):* Reported directly on the **Income Statement**.
+  * **Available-for-Sale (AFS) Securities:** *Debt securities* not classified as HTM or Trading. (Note: Under current U.S. GAAP, equity securities generally cannot be AFS ).
+      * *Measurement:* **Fair Value**.
+      * *Unrealized Gains/Losses:* Reported in **Other Comprehensive Income (OCI)** – part of Shareholders' Equity, bypassing the Income Statement until sold -1462].
+  * **Other:** Loans, receivables, unquoted equity are typically at historical or amortized cost. Derivatives are usually at Fair Value through Income Statement, 1457].
 
-#### **Explanation**
+#### **IFRS Classifications 🌍**
 
-A **financial instrument** is a contract that gives rise to a financial asset of one entity and a financial liability or equity instrument of another entity. In simpler terms, they are assets that you can trade.
+  * **Amortized Cost:** *Debt securities* held to collect contractual cash flows (principal and interest). (Similar to HTM).
+  * **Fair Value through Other Comprehensive Income (FVOCI):**
+      * *Debt securities* held to collect cash flows *and* potentially sell. (Similar to AFS debt). Unrealized G/L go to OCI.
+      * *Equity securities* if an *irrevocable election* is made at purchase to report Unrealized G/L in OCI. (No AFS equivalent for equity in U.S. GAAP).
+  * **Fair Value through Profit or Loss (FVPL):** Default category for anything else. Includes securities held for trading, derivatives, and *most equity securities*. An irrevocable election can be made to classify *any* financial asset as FVPL. (Similar to Trading).
+      * *Measurement:* **Fair Value**.
+      * *Unrealized Gains/Losses:* Reported directly on the **Income Statement (Profit & Loss)**.
 
-**Financial Assets:**
+#### **Common Ground 🤝**
 
-These are assets like:
+  * For *all* classifications under both standards, **interest income**, **dividend income**, and **realized gains/losses** (when the security is actually sold) are reported on the Income Statement.
 
-* **Cash and cash equivalents**
-* **Marketable securities:** Stocks and bonds of other companies.
-* **Receivables:** Money owed to the company by its customers.
+> [\!TIP]
+> **CFA Exam Tip ✍️:** Focus on where *unrealized* gains and losses go:
+>
+>   * Trading (U.S. GAAP) / FVPL (IFRS): Income Statement.
+>   * Available-for-Sale Debt (U.S. GAAP) / FVOCI (IFRS): Other Comprehensive Income (Equity).
+>     Remember IFRS has the FVOCI option for equity (if elected), which U.S. GAAP generally lacks.
 
-**Classification of Financial Assets:**
+-----
 
-This is a complex area, but for Level 1, you need to understand the basic classifications:
+### Part 4: Non-Current Liabilities - Long-Term Obligations ⏳ (LOS 29.d)
 
-1.  **Amortized Cost:** The asset is recorded at its cost, and interest income is recognized over time.
-2.  **Fair Value Through Other Comprehensive Income (FVOCI):** Changes in the fair value of the asset are recorded in other comprehensive income (OCI), which is a separate section of the income statement.
-3.  **Fair Value Through Profit or Loss (FVTPL):** Changes in the fair value of the asset are recorded directly on the income statement.
+These are obligations due beyond one year or the operating cycle. Common examples include bonds payable, long-term notes payable, and **deferred tax liabilities**.
 
-**Financial Liabilities:**
+**Measurement:**
 
-These are obligations to pay another entity, such as:
+  * **Amortized Cost:** Most common for bonds and loans. If issued at a price different from face value (par), the discount or premium is amortized over the liability's life, adjusting the interest expense each period. The carrying value gradually moves towards the face value by maturity -1501].
+  * **Fair Value:** Used for certain liabilities like derivatives and those held for trading (e.g., short positions) -1503].
 
-* **Accounts payable:** Money the company owes to its suppliers.
-* **Notes payable and bonds payable:** Money the company has borrowed.
+**Deferred Tax Liabilities (DTLs):** 📝
 
-**Disclosures:**
+  * Arise from **temporary differences** between accounting rules and tax rules.
+  * Specifically, a DTL is created when **Income Tax Expense** (on the income statement) is *greater than* **Taxes Payable** (amount owed per tax return) in the current period, and this difference is expected to reverse later, 1504].
+  * **Common Causes:**
+      * Using accelerated depreciation for tax purposes but straight-line for financial reporting (more depreciation expense on tax return initially = lower taxable income = lower taxes payable now, but higher tax expense on IS anticipating higher future taxes payable).
+      * Recognizing revenue on the income statement before it's taxable.
+  * DTLs represent expected *future* cash outflows when the temporary differences reverse and taxes become payable.
 
-Companies must provide detailed disclosures about their financial instruments, including:
+-----
 
-* Their carrying values and fair values.
-* The risks associated with them (e.g., credit risk, liquidity risk, market risk).
+### Part 5: Sizing Up the Snapshot - Common-Size & Ratios 📏 (LOS 29.e)
 
-#### **Real-World Examples**
+Analyzing the raw numbers on a balance sheet can be misleading if comparing companies of different sizes.
 
-* **Global Context (JPMorgan Chase):** As a major bank, JPMorgan Chase's balance sheet is dominated by financial instruments. On the asset side, it has loans to customers, investments in government and corporate bonds, and trading securities. On the liability side, it has customer deposits and debt it has issued.
-* **Indian Context (HDFC Bank):** HDFC Bank's balance sheet is similar. It has a large portfolio of loans to individuals and businesses (financial assets) and has taken in deposits from customers (financial liabilities). It also invests in government securities (G-Secs) and corporate bonds.
+  * **Vertical Common-Size Balance Sheet:** Expresses every item as a **percentage of Total Assets**.
+      * **Purpose:** Eliminates size differences, making it easy to compare a company's balance sheet structure over time (trends) or against competitors (cross-sectional) -1556].
+      * **Insights:** Reveals reliance on different asset types (e.g., inventory vs. fixed assets) and financing sources (e.g., debt vs. equity).
 
-#### **CFA Level 1 Exam Tips**
+**Key Balance Sheet Ratios:**
 
-* **Understand the definitions of financial assets and financial liabilities.**
-* **Focus on the different classifications of financial assets and how they affect the financial statements.** The key is to know where the changes in fair value are reported (income statement vs. OCI).
-* **Read the questions carefully.** They will often specify the classification of the financial instrument.
-* **Don't get bogged down in the details.** Level 1 tests the high-level concepts. You don't need to be an expert on the intricacies of financial instrument accounting.
+#### **Liquidity Ratios (Short-Term Health)**
 
-**\*\*IMPORTANT\*\***: The classification of financial assets determines how they are valued and how changes in value are reported. This has a direct impact on a company's reported earnings and its financial ratios.
+Measure the ability to meet short-term obligations. Generally, higher is better, but *too* high might indicate inefficient asset use.
 
----
+  * **Current Ratio:**
+    $$\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}$$
+      * Most common measure.
+  * **Quick Ratio (Acid-Test Ratio):** Excludes inventory (less liquid).
+    $$\text{Quick Ratio} = \frac{\text{Cash + Marketable Securities + Receivables}}{\text{Current Liabilities}}$$
+      * A more conservative measure than the current ratio.
+  * **Cash Ratio:** Excludes inventory and receivables.
+    $$\text{Cash Ratio} = \frac{\text{Cash + Marketable Securities}}{\text{Current Liabilities}}$$
+      * Most conservative measure.
 
-### **LOS d: explain the financial reporting and disclosures related to non-current liabilities.**
+#### **Solvency Ratios (Long-Term Stability & Leverage)**
 
-#### **Explanation**
+Measure the ability to meet long-term obligations and the extent of financial leverage -1598]. Higher leverage implies higher risk.
 
-**Non-current liabilities** (or long-term liabilities) are obligations that are due more than one year from the balance sheet date. They represent a company's long-term financing. Common examples include:
+  * **Debt Ratios:** (Note: "Total Debt" typically refers to interest-bearing liabilities, but definitions can vary )
+      * **Long-Term Debt-to-Equity:**
+        $$\text{LT Debt-to-Equity} = \frac{\text{Long-Term Debt}}{\text{Total Equity}}$$
+      * **Total Debt-to-Equity:**
+        $$\text{Debt-to-Equity} = \frac{\text{Total Debt}}{\text{Total Equity}}$$
+      * **Debt Ratio (Debt-to-Assets):**
+        $$\text{Debt Ratio} = \frac{\text{Total Debt}}{\text{Total Assets}}$$
+  * **Financial Leverage Ratio:** Measures how much assets are financed by equity.
+    $$\text{Financial Leverage} = \frac{\text{Total Assets}}{\text{Total Equity}}$$
 
-* **Bonds Payable:** A form of long-term debt where the company issues bonds to investors.
-* **Long-Term Notes Payable:** Similar to bonds but often issued to a single lender, like a bank.
-* **Lease Liabilities:** The obligation to make payments on a lease.
-* **Deferred Tax Liabilities:** The amount of income tax payable in future periods in respect of taxable temporary differences.
+**Limitations of Ratio Analysis:** Ratios need context (comparison to history, industry peers), are affected by different accounting choices, can be hard to interpret for diversified firms, and the balance sheet is just a snapshot at one point in time -1619].
 
-**Financial Reporting:**
+-----
 
-* Non-current liabilities are typically reported at their **present value**, which is the discounted value of their future cash flows.
-* The disclosures in the footnotes are crucial. They provide information on:
-    * The interest rates on the debt.
-    * The maturity dates.
-    * Any covenants (restrictions placed on the borrower).
+### 🧪 Formula Summary
 
-#### **Real-World Examples**
+  * **Liquidity Ratios:**
+      * Current Ratio: $\frac{\text{Current Assets}}{\text{Current Liabilities}}$
+      * Quick Ratio: $\frac{\text{Cash + Marketable Securities + Receivables}}{\text{Current Liabilities}}$
+      * Cash Ratio: $\frac{\text{Cash + Marketable Securities}}{\text{Current Liabilities}}$
+  * **Solvency Ratios:**
+      * LT Debt-to-Equity: $\frac{\text{Long-Term Debt}}{\text{Total Equity}}$
+      * Debt-to-Equity: $\frac{\text{Total Debt}}{\text{Total Equity}}$
+      * Debt Ratio: $\frac{\text{Total Debt}}{\text{Total Assets}}$
+      * Financial Leverage: $\frac{\text{Total Assets}}{\text{Total Equity}}$
+  * **Goodwill Calculation:**
+    $$\text{Goodwill} = \text{Purchase Price} - \text{Fair Value of Identifiable Net Assets Acquired}$$
 
-* **Global Context (AT&T):** A telecommunications giant like AT&T requires massive infrastructure investments. It finances these investments by issuing a large amount of long-term debt (bonds). You will find billions of dollars in non-current liabilities on its balance sheet.
-* **Indian Context (Reliance Industries Ltd.):** Reliance has undertaken huge capital-intensive projects, such as the Jamnagar refinery and the Jio network. To fund these, it has raised significant amounts of long-term debt from both domestic and international markets.
+-----
 
-#### **CFA Level 1 Exam Tips**
-
-* **Understand the different types of non-current liabilities.** Be able to identify them on a balance sheet.
-* **Focus on bond terminology.** Know what par value, coupon rate, and maturity date mean.
-* **Pay attention to covenants.** A violation of a debt covenant can be a serious issue for a company and may lead to the debt becoming due immediately.
-* **Deferred tax liabilities can be tricky.** For Level 1, have a basic understanding of what they are and why they arise (differences between accounting income and taxable income).
-
-**\*\*IMPORTANT\*\***: A company's mix of long-term debt and equity is its capital structure. Analyzing the non-current liabilities is key to understanding a company's leverage and its financial risk.
-
----
-
-### **LOS e: calculate and interpret common-size balance sheets and related financial ratios.**
-
-#### **Explanation**
-
-**Common-size analysis** is a technique used to standardize financial statements, allowing for easier comparison across time and between companies of different sizes.
-
-* **Common-Size Balance Sheet:** Each item on the balance sheet is expressed as a percentage of **total assets**. This helps to see the composition of assets, liabilities, and equity. For example, you can see what percentage of a company's assets are financed by debt versus equity.
-
-**Financial Ratios:**
-
-Balance sheet ratios help to assess a company's liquidity, solvency, and overall financial health. Key ratios include:
-
-* **Liquidity Ratios:** Measure a company's ability to meet its short-term obligations.
-    * **Current Ratio:** Current Assets / Current Liabilities
-    * **Quick Ratio (Acid-Test Ratio):** (Current Assets - Inventory) / Current Liabilities
-* **Solvency Ratios:** Measure a company's ability to meet its long-term obligations.
-    * **Debt-to-Assets Ratio:** Total Debt / Total Assets
-    * **Debt-to-Equity Ratio:** Total Debt / Total Equity
-
-#### **Real-World Examples**
-
-* **Global Context (Comparing Walmart and Target):** If you just look at the dollar values on their balance sheets, it's hard to compare Walmart and Target because Walmart is much larger. But if you create common-size balance sheets, you can see, for example, what percentage of each company's assets is tied up in inventory. This allows for a more meaningful comparison of their inventory management efficiency.
-* **Indian Context (Comparing Infosys and TCS):** Both are major IT companies in India. A common-size balance sheet would allow you to compare their capital structures. For example, you could see what percentage of their assets is financed by debt, which can be an indicator of their risk appetite.
-
-#### **CFA Level 1 Exam Tips**
-
-* **You must know how to calculate and interpret the key ratios.** Memorize the formulas!
-* **Understand what each ratio tells you.** Don't just calculate the number; be able to explain what it means about the company's financial health.
-* **Common-size analysis is a powerful tool.** Be prepared to see a common-size balance sheet on the exam and be asked to draw conclusions from it.
-* **Look for trends.** When you are given multiple years of data, calculate the ratios for each year and see how they are changing over time.
-
-**\*\*IMPORTANT\*\***: Ratios are most useful when they are compared to something else – either the company's own historical ratios or the ratios of its competitors (industry analysis).
-
----
-
-### **Summary of Formulas**
-
-* **Goodwill:** Purchase Price - Fair Value of Net Identifiable Assets
-* **Current Ratio:** Current Assets / Current Liabilities
-* **Quick Ratio:** (Cash + Marketable Securities + Accounts Receivable) / Current Liabilities OR (Current Assets - Inventory) / Current Liabilities
-* **Debt-to-Assets Ratio:** Total Debt / Total Assets
-* **Debt-to-Equity Ratio:** Total Debt / Total Shareholders' Equity
-* **Total Debt:** Total of interest-bearing short-term and long-term debt (check the vignette for specifics)
-
----
-
-### **Quick Exam-Day Pointers**
-
-1.  **Read the Vignette Carefully:** The information you need will be in the case study provided. Pay close attention to the footnotes of the financial statements.
-2.  **IFRS vs. US GAAP:** Be aware of the key differences, especially regarding the treatment of R&D costs and the revaluation of assets.
-3.  **Don't Confuse Amortization and Impairment:** Finite-life intangibles are amortized; indefinite-life intangibles (including goodwill) are tested for impairment.
-4.  **Ratio Calculations:** Write out the formula before you plug in the numbers to avoid careless errors.
-5.  **Common-Size Analysis is Your Friend:** If you're asked to compare two companies of different sizes, think about using a common-size approach in your analysis.
-6.  **"Best" Answer:** Sometimes, more than one answer choice may seem plausible. Choose the one that is most directly supported by the information in the vignette.
-
-I hope this detailed breakdown is helpful for your CFA Level 1 preparation. Remember, practice is key. Work through as many practice problems as you can to solidify your understanding of these concepts. Good luck!
+> [\!IMPORTANT]
+>
+> ### 🎯 Quick Exam-Day Pointers
+>
+>   * **Intangibles:** Know Purchased vs. Internally Created rules. IFRS can capitalize *Development* costs; U.S. GAAP usually expenses R\&D. Indefinite-life intangibles (inc. Goodwill) are NOT amortized but tested annually for impairment.
+>   * **Goodwill:** Created *only* in acquisitions (Price > FV Net Assets). Not amortized, tested for impairment. Impairment signals overpayment or poor performance of acquisition.
+>   * **Financial Assets:** Know the measurement (Amortized Cost vs. Fair Value) and where *unrealized* G/L go: Trading/FVPL -> Income Stmt; AFS(Debt)/FVOCI -> OCI (Equity).
+>   * **DTLs:** Arise when Taxable Income < Accounting Profit (temporarily). Often due to accelerated tax depreciation. Represent future taxes payable.
+>   * **Common-Size Balance Sheet:** Expresses everything as % of Total Assets. Crucial for comparing different-sized companies or analyzing trends.
+>   * **Key Ratios:** Understand what Liquidity ratios (Current, Quick, Cash) and Solvency ratios (Debt-to-Equity, Debt-to-Assets, Leverage) measure about a company's financial health and risk.

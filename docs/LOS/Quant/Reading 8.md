@@ -26,7 +26,7 @@ Welcome, future charterholder\! Imagine you're a detective in a courtroom drama.
 
 Your **test statistic** is calculated from your sample data. It measures how far your sample result is from the value claimed in the null hypothesis.
 
-$$Test~Statistic = \frac{Sample~Statistic - Hypothesized~Value}{Standard~Error~of~the~Sample~Statistic}$$
+$$\text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$
 
 The **critical value** is your threshold for proof. It's determined by your chosen **significance level ($\alpha$)**, which is the probability of making a Type I error. Common levels are 5% (0.05) or 1% (0.01). If your test statistic is more extreme than your critical value, you have enough evidence to reject the null hypothesis.
 
@@ -123,7 +123,8 @@ While less powerful than parametric tests when assumptions are met, they are ess
 ### 🧪 Formula Summary
 
   * **General Test Statistic Structure**:
-    $$Test~Statistic = \frac{Sample~Statistic - Hypothesized~Value}{Standard~Error~of~the~Sample~Statistic}$$
+
+$$\text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$
 
 -----
 
