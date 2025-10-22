@@ -76,6 +76,135 @@ Okay, highlighting the *most* important formulas for CFA Level 1 involves focusi
     *(Simplified: WACC = $w_d k_d (1-t) + w_e k_e$ if no preferred stock)*
 
 ***
+Okay, here's a list of the most important formulas found in Book 2 (Financial Statement Analysis and Equity Investments) for the CFA Level 1 exam, based on the provided SchweserNotes PDF.
 
+### Financial Ratio Analysis Formulas
+
+1.  **Basic Earnings Per Share (EPS)**
+    * Measures profitability per common share.
+    * $$\text{Basic EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Number of Common Shares Outstanding}}$$
+
+2.  **Diluted Earnings Per Share (EPS)**
+    * Measures profitability per common share, considering all potentially dilutive securities.
+    * $$\text{Diluted EPS} = \frac{(\text{Net Income} - \text{Preferred Dividends}) + \text{Conv. Pref. Dividends} + \text{Conv. Debt Interest}(1-t)}{\text{Weighted Avg Shares} + \text{Shares from Conv. of Pref. Shares} + \text{Shares from Conv. of Debt} + \text{Shares Issuable from Options/Warrants}}$$
+    * *Note: Adjustment for options/warrants uses the Treasury Stock Method.*
+
+3.  **DuPont Analysis (Original 3-Part)**
+    * Decomposes Return on Equity (ROE).
+    * $$\text{ROE} = \left( \frac{\text{Net Income}}{\text{Sales}} \right) \times \left( \frac{\text{Sales}}{\text{Average Total Assets}} \right) \times \left( \frac{\text{Average Total Assets}}{\text{Average Total Equity}} \right)$$
+    * $$\text{ROE} = (\text{Net Profit Margin}) \times (\text{Total Asset Turnover}) \times (\text{Financial Leverage})$$
+
+4.  **DuPont Analysis (Extended 5-Part)**
+    * Further decomposes ROE.
+    * $$\text{ROE} = \left( \frac{\text{Net Income}}{\text{EBT}} \right) \times \left( \frac{\text{EBT}}{\text{EBIT}} \right) \times \left( \frac{\text{EBIT}}{\text{Sales}} \right) \times \left( \frac{\text{Sales}}{\text{Average Total Assets}} \right) \times \left( \frac{\text{Average Total Assets}}{\text{Average Total Equity}} \right)$$
+    * $$\text{ROE} = (\text{Tax Burden}) \times (\text{Interest Burden}) \times (\text{EBIT Margin}) \times (\text{Total Asset Turnover}) \times (\text{Financial Leverage})$$
+
+5.  **Current Ratio**
+    * Measures short-term liquidity.
+    * $$\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}$$
+
+6.  **Quick Ratio (Acid-Test Ratio)**
+    * A stricter measure of short-term liquidity.
+    * $$\text{Quick Ratio} = \frac{\text{Cash} + \text{Marketable Securities} + \text{Accounts Receivable}}{\text{Current Liabilities}}$$
+
+7.  **Inventory Turnover**
+    * Measures efficiency of inventory management.
+    * $$\text{Inventory Turnover} = \frac{\text{Cost of Goods Sold}}{\text{Average Inventory}}$$
+
+8.  **Receivables Turnover**
+    * Measures efficiency of collecting receivables.
+    * $$\text{Receivables Turnover} = \frac{\text{Revenue}}{\text{Average Accounts Receivable}}$$
+
+9.  **Total Asset Turnover**
+    * Measures efficiency of using assets to generate sales.
+    * $$\text{Total Asset Turnover} = \frac{\text{Revenue}}{\text{Average Total Assets}}$$
+
+10. **Debt-to-Equity Ratio**
+    * Measures financial leverage (solvency).
+    * $$\text{Debt-to-Equity} = \frac{\text{Total Debt}}{\text{Total Equity}}$$
+    * *Note: Definition of "Total Debt" can vary (e.g., includes all liabilities vs. only interest-bearing debt). Be mindful of context.*
+
+11. **Interest Coverage Ratio**
+    * Measures ability to cover interest payments from earnings.
+    * $$\text{Interest Coverage} = \frac{\text{EBIT}}{\text{Interest Expense}}$$
+
+12. **Gross Profit Margin**
+    * Measures profitability after direct production costs.
+    * $$\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Revenue}}$$
+
+13. **Net Profit Margin**
+    * Measures overall profitability after all expenses and taxes.
+    * $$\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}}$$
+
+14. **Return on Assets (ROA)**
+    * Measures profitability relative to total assets.
+    * $$\text{ROA} = \frac{\text{Net Income}}{\text{Average Total Assets}}$$
+
+15. **Return on Equity (ROE)**
+    * Measures profitability relative to shareholders' equity.
+    * $$\text{ROE} = \frac{\text{Net Income}}{\text{Average Total Equity}}$$
+
+### Equity Valuation Formulas
+
+16. **Dividend Discount Model (DDM) - General Form**
+    * Values a stock as the present value of its future dividends.
+    * $$V_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+k_e)^t}$$
+
+17. **Gordon Growth Model (Constant Growth DDM)**
+    * Values a stock assuming dividends grow at a constant rate forever.
+    * $$V_0 = \frac{D_1}{k_e - g} = \frac{D_0 (1+g)}{k_e - g}$$
+    * *Requires $k_e > g$*
+
+18. **Sustainable Growth Rate (g)**
+    * The rate at which earnings/dividends can grow indefinitely without changing leverage.
+    * $$g = \text{Retention Rate} \times \text{ROE} = (1 - \text{Dividend Payout Ratio}) \times \text{ROE}$$
+
+19. **Preferred Stock Valuation**
+    * Values preferred stock as a perpetuity.
+    * $$V_p = \frac{D_p}{k_p}$$
+
+20. **Price-to-Earnings (P/E) Ratio**
+    * Compares stock price to earnings per share. Can be trailing (using past EPS) or leading (using forecast EPS).
+    * $$\text{P/E} = \frac{\text{Price per Share}}{\text{Earnings per Share}}$$
+
+21. **Justified P/E Ratio (Leading, based on Gordon Growth)**
+    * Relates P/E ratio to fundamentals.
+    * $$\frac{P_0}{E_1} = \frac{D_1 / E_1}{k_e - g} = \frac{\text{Payout Ratio}}{k_e - g}$$
+
+22. **Price-to-Book (P/B) Ratio**
+    * Compares stock price to book value per share.
+    * $$\text{P/B} = \frac{\text{Price per Share}}{\text{Book Value per Share}}$$
+
+23. **Price-to-Sales (P/S) Ratio**
+    * Compares stock price to sales per share.
+    * $$\text{P/S} = \frac{\text{Price per Share}}{\text{Sales per Share}}$$
+
+24. **Enterprise Value (EV)**
+    * Represents the total value of the company attributable to all investors.
+    * $$\text{EV} = \text{Market Value of Common Equity} + \text{Market Value of Debt} + \text{Market Value of Preferred Stock} - \text{Cash and Cash Equivalents}$$
+
+25. **EV/EBITDA Multiple**
+    * Compares enterprise value to earnings before interest, taxes, depreciation, and amortization.
+    * $$\text{EV/EBITDA} = \frac{\text{Enterprise Value}}{\text{EBITDA}}$$
+
+### Other Key Formulas
+
+26. **Free Cash Flow to the Firm (FCFF) - starting from Net Income**
+    * Cash available to all investors (debt and equity).
+    * $$\text{FCFF} = \text{NI} + \text{NCC} + [\text{Int} \times (1 - \text{tax rate})] - \text{FCInv} - \text{WCInv}$$
+
+27. **Free Cash Flow to the Firm (FCFF) - starting from CFO**
+    * $$\text{FCFF} = \text{CFO} + [\text{Int} \times (1 - \text{tax rate})] - \text{FCInv}$$
+
+28. **Free Cash Flow to Equity (FCFE)**
+    * Cash available to common shareholders.
+    * $$\text{FCFE} = \text{CFO} - \text{FCInv} + \text{Net Borrowing}$$
+
+29. **Margin Call Price (Long Position)**
+    * The price at which a margin call occurs.
+    * $$P_0 \times \frac{(1 - \text{Initial Margin})}{(1 - \text{Maintenance Margin})}$$
+
+This list covers many of the core calculation-based concepts in FSA and Equity for Level 1. Remember to understand the *interpretation* of these formulas, not just how to calculate them\!
+***
 > [!TIP]
 > **CFA Exam Tip ✍️:** Focus on *understanding* the concepts behind these formulas, not just memorizing them. Level 1 often tests application and interpretation. Know when to use which formula and what the result means! Practice using your calculator efficiently for TVM, stats, and NPV/IRR.
