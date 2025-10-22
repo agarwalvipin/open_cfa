@@ -23,6 +23,11 @@ Differences arise from two main sources:
     * Permanent differences cause the company's **effective tax rate** to differ from the **statutory tax rate**, but they **do not create DTA or DTL**. 🚫
 2.  **Temporary Differences:** These are the crucial ones\! They occur when accounting rules and tax rules recognize income or expenses in *different time periods*. These differences *will* reverse in the future. They are the origin of DTAs and DTLs.
 
+> **💡 MNEMONIC: "DTL = Defer Tax to Later; DTA = Defer Tax Advantage"**
+> - **DTL**: Tax **L**ater (pay less now, more later) - when Accounting Income > Taxable Income
+> - **DTA**: Tax **A**dvantage later (pay more now, less later) - when Taxable Income > Accounting Income
+> - Think: **L**ater vs **A**dvantage
+
 #### **Deferred Tax Liabilities (DTLs): Paying Less Tax Now, More Later ⏳**
 
 A **Deferred Tax Liability (DTL)** arises when:

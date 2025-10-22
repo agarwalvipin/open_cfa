@@ -49,6 +49,12 @@ Imagine Company A has Sales of ₹1,000 Cr and Net Income of ₹100 Cr. Company 
 
 Ratios are typically grouped by what they measure:
 
+> **💡 MNEMONIC: "ALPS" for Main Ratio Categories**
+> - **A**ctivity (efficiency/turnover ratios)
+> - **L**iquidity (short-term solvency)
+> - **P**rofitability (margins & returns)
+> - **S**olvency (long-term leverage & coverage)
+
 #### **Activity Ratios (Efficiency/Turnover)**
 
 These show how efficiently a company manages its assets. Generally, higher turnover is better (means assets are working harder to generate sales), but context is key.
@@ -156,6 +162,13 @@ Let's say Company X has:
 -----
 
 ### Part 4: Decomposing ROE: The DuPont Analysis ✨ (LOS 37.d)
+
+> **💡 MNEMONIC: "ROE = PaTaL" (3-Part DuPont)**
+> - **P**rofitability (Net Profit Margin)
+> - **T**urnover (Asset Turnover - efficiency)
+> - **L**everage (Financial Leverage/Equity Multiplier)
+> 
+> For 5-Part, add: **T**ax burden + **I**nterest burden before margins
 
 **DuPont analysis** breaks down Return on Equity (ROE) into its component parts, showing *how* a company achieves its return.
 

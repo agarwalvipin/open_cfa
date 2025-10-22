@@ -105,6 +105,14 @@ When inventory purchase prices change over time (due to inflation or deflation),
   * **Concept:** Averages the cost of all items available for sale during the period.
   * **COGS, Ending Inventory, Profit, Taxes:** Generally fall *between* FIFO and LIFO values.
 
+> **💡 MNEMONIC: "LIFO = LITE" (During Inflation)**
+> - **L**ower **I**ncome (Net Income lower due to higher COGS)
+> - **L**ower **I**nventory (older, cheaper costs on Balance Sheet)
+> - **L**ower **T**axes (lower taxable income = tax savings!)
+> - **E**xpenses match current costs (COGS reflects recent prices)
+> 
+> **FIFO = The opposite**: Higher Income, Inventory, Taxes; Lower expense matching
+
 **Summary Table (Assuming Rising Prices 🔥 & Stable/Increasing Inventory):**
 
 | Item              | FIFO    | LIFO     | Weighted-Average |

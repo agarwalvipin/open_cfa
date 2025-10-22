@@ -59,6 +59,11 @@ Assets don't always hold their value. Sometimes, their worth drops unexpectedly 
 
 **Impairment: When Value Plummets 📉**
 
+> **💡 MNEMONIC: "IFRS: 1-Step & REVERSES; US GAAP: 2-Steps & NO Reversals"**
+> - **IFRS**: **O**ne-step test (CV vs Recoverable), **R**eversals allowed (except Goodwill)
+> - **US GAAP**: **T**wo-step test (Recoverability then FV), **N**o reversals
+> - Think: "**OR**" for IFRS, "**TN**" for US GAAP (Tennessee = no reversals!)
+
 An asset is **impaired** if its carrying value (book value) on the balance sheet is higher than its recoverable amount. Both IFRS and U.S. GAAP require writing down impaired assets, but the process differs slightly.
 
 #### **IFRS Impairment**

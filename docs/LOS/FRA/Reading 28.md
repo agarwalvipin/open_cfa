@@ -14,6 +14,13 @@ When does a company actually get to record a sale? It's not always when the cash
 
 IFRS and U.S. GAAP have converged on a principles-based, five-step process:
 
+> **💡 MNEMONIC: "I Promise To Always Recognize"**
+> - **I**dentify the Contract
+> - **P**erformance obligations (identify)
+> - **T**ransaction price (determine)
+> - **A**llocate price to obligations
+> - **R**ecognize revenue when obligation satisfied
+
 ```mermaid
 graph TD
     A["1. Identify the Contract(s) 📜<br/>Agreement with rights & obligations.<br/>Collectability must be probable."] --> B["2. Identify Performance Obligations 🎯<br/>What distinct goods/services are promised?"]
@@ -60,6 +67,11 @@ Just like revenue, expenses aren't always recorded when cash is paid. The **matc
 
 **How Expenses are Recognized:**
 
+> **💡 MNEMONIC: "DPC" (Direct-Period-Capitalize)**
+> - **D**irect Matching: Match costs to revenue (COGS, Warranty)
+> - **P**eriod Costs: Expense when incurred (Rent, Admin salaries)
+> - **C**apitalize: Spread over time via depreciation/amortization (PP&E)
+
 1.  **Direct Matching (Product Costs):** Costs directly tied to the revenue are expensed when the revenue is recognized.
       * *Example:* The **Cost of Goods Sold (COGS)** for inventory is expensed when the inventory is sold, not when it was purchased, 711]. Estimated warranty costs are also expensed at the time of sale, 713].
 2.  **Expensing in Period Incurred (Period Costs):** Costs not directly linked to specific revenues are expensed in the period they occur.
@@ -72,6 +84,11 @@ Just like revenue, expenses aren't always recorded when cash is paid. The **matc
   * **Expense:** Expenditures providing benefits only in the *current* period or where future benefits are uncertain (e.g., routine maintenance, training costs, most R\&D under U.S. GAAP), 776, 796, 798]. Expensing is generally more conservative initially.
 
 #### **Impact of Capitalizing vs. Expensing ⚖️**
+
+> **💡 MNEMONIC: "CAP is HIGH early, LOW later"**
+> - **Capitalizing** = **HIGH** early: Assets, Equity, Net Income (Year 1), CFO, ROA/ROE
+> - **Capitalizing** = **LOW** later: Net Income (Years 2-4), Variability, Debt ratios
+> - *Remember:* Total Net Income & Total Cash Flow are SAME over asset life!
 
 Let's compare buying a £12,000 machine with a 4-year life.
 
@@ -106,6 +123,11 @@ Let's compare buying a £12,000 machine with a 4-year life.
 -----
 
 ### Part 3: One-Off Events & Accounting Changes 📊➡️📉 (LOS 28.c)
+
+> **💡 MNEMONIC: "RPP" for Accounting Changes Application**
+> - **R**etrospective: Policy changes & Prior-period Errors (restate past)
+> - **P**rospective: Estimate changes (only future affected)
+> - Remember: **R** = **R**estate, **P** = **P**roceed forward only
 
 Not everything on the income statement reflects normal, repeatable business operations. Analysts need to identify and handle nonrecurring items and accounting changes appropriately.
 

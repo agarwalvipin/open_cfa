@@ -21,6 +21,15 @@ Sometimes, instead of buying a big asset like a building or machinery, a company
 
 The crucial first step is classifying the lease. Does it *feel* more like ownership (a **finance lease**) or just temporary use (an **operating lease**)?
 
+> **💡 MNEMONIC: "OWL-TV-SPecialized" for Finance Lease Criteria**
+> - **O**wnership transfers
+> - **W**onder price (Bargain purchase option)
+> - **L**ife (Major part of asset's useful life)
+> - **T**otal value (PV ≈ Fair Value, substantially all)
+> - **V**ery specialized (only lessee can use)
+> 
+> If **ANY ONE** applies → **Finance Lease**
+
 A lease is generally a **finance lease** if *any* of these are met:
 
 1.  Ownership transfers to lessee at the end. 🎁
@@ -138,6 +147,10 @@ The lessor also classifies the lease as **finance** or **operating** using the s
 Companies often compensate employees not just with salary today, but with promises for the future – like retirement benefits or company stock.
 
 **Pension Plans: Retirement Promises**
+
+> **💡 MNEMONIC: "DC = Direct & Clear; DB = Daunting & Burdensome"**
+> - **DC** (Defined **C**ontribution): **C**ompany risk is **C**lear & limited, Employee bears investment risk
+> - **DB** (Defined **B**enefit): Company **B**ears the **B**urden, complex accounting with **B**alance sheet impact
 
 **1. Defined Contribution (DC) Plans:**
 

@@ -45,6 +45,13 @@ graph TD
 
 ### Part 2: Watch Out\! How Biases Affect Forecasts 🧠 (LOS 38.b)
 
+> **💡 MNEMONIC: "OIC-RC" for Common Forecasting Biases**
+> - **O**verconfidence (too sure of accuracy)
+> - **I**llusion of control (think you can control more than you can)
+> - **C**onservatism (anchoring to old views, slow to update)
+> - **R**epresentativeness (small samples = big conclusions)
+> - **C**onfirmation (seek only supporting evidence)
+
 Analysts are human, and psychological biases can creep into forecasts, making them less accurate. Being aware is the first step to mitigation\!
 
   * **Overconfidence Bias:** Believing your forecasts are more accurate than they really are, 3372]. Leads to narrow confidence intervals. Analysts going against consensus may be more prone.

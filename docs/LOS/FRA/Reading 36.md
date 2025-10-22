@@ -34,6 +34,14 @@ It's crucial to understand that high-quality *reporting* doesn't automatically m
 
 ### Part 2: The Reporting Quality Spectrum: From Saintly to Sketchy 😇➡️😈 (LOS 36.b)
 
+> **💡 MNEMONIC: "GOOD → BAD → BANNED → FRAUD" (6 Levels)**
+> 1. **G**reat: GAAP compliant + Quality earnings ✨
+> 2. **O**kay reports, **O**dd earnings: GAAP but unsustainable 📉
+> 3. **B**iased within GAAP 🤨
+> 4. **A**ggressive management within GAAP 🎭
+> 5. **D**eparted from GAAP (Non-compliant) 🚫
+> 6. **F**raud (Fictitious transactions) ☠️
+
 Think of financial reporting quality as a spectrum, ranging from ideal to outright fraudulent.
 
 ```mermaid
@@ -76,6 +84,13 @@ Within the bounds of GAAP/IFRS, managers have choices. These choices can lean to
 -----
 
 ### Part 4: Why Bend the Rules? Motivations & Opportunities for Low Quality 🤫 (LOS 36.d)
+
+> **💡 MNEMONIC: "MOR" - The Fraud Triangle**
+> - **M**otivation (pressure to perform - bonuses, targets)
+> - **O**pportunity (weak controls, flexible standards)
+> - **R**ationalization (justifying the behavior)
+> 
+> All 3 typically present for financial fraud/manipulation
 
 Why would managers intentionally issue low-quality reports? It usually boils down to three factors: Motivation, Opportunity, and Rationalization.
 

@@ -57,7 +57,12 @@ Understanding these links is vital for building the CFO section and spotting pot
 
 ### Part 2: Building the CFO Section - Direct vs. Indirect 🏗️ (LOS 30.b)
 
-The Cash Flow Statement is divided into three sections: **Operating (CFO)**, **Investing (CFI)**, and **Financing (CFF)**. CFI and CFF are presented the same way regardless, but there are two methods to present the crucial CFO section: **Direct** and **Indirect**.
+The Statement of Cash Flows is divided into three sections: **Operating (CFO)**, **Investing (CFI)**, and **Financing (CFF)**. CFI and CFF are presented the same way regardless, but there are two methods to present the crucial CFO section: **Direct** and **Indirect**.
+
+> **💡 MNEMONIC: "ALOUD" for Cash Flow Rules**
+> - **A**ssets UP = cash **D**own (USE of cash -)
+> - **L**iabilities/equity UP = cash UP (SOURCE of cash +)
+> - Think: "Say it ALOUD" - Assets & Liabilities move Opposite to cash (Usually)
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** Key Rules to Remember:
@@ -116,6 +121,11 @@ Let's use the example data from the reading:
 #### **The Indirect Method: Net Income Reconciliation 🔄**
 
 The Indirect Method starts with **Net Income** and adjusts it to arrive at CFO. It reconciles the accrual-based Net Income to the cash-based CFO by removing noncash items and accounting for changes in operating working capital. It's the method most companies use.
+
+> **💡 MNEMONIC: "NI + NCC - WCInv" (Pronounce: "Nigh Nick Winks")**
+> - **NI** = Net Income (starting point)
+> - **NCC** = Noncash Charges (add back depreciation, losses; subtract gains)
+> - **WCInv** = Working Capital Investment (subtract if WC increases)
 
 **Formula:** $\text{CFO} = \text{Net Income} + \text{Noncash Charges} - \text{Investment in Working Capital}$
 
@@ -197,6 +207,13 @@ Using the same data:
 ### Part 4: IFRS vs. US GAAP Differences 🌍🇺🇸 (LOS 30.d)
 
 While the overall structure is similar, IFRS allows more flexibility than US GAAP in classifying certain cash flows, especially for interest and dividends. Taxes also get different treatment.
+
+> **💡 MNEMONIC: "IFRS is FLEXIBLE - US GAAP is FIXED"**
+> - **U.S. GAAP**: Interest & Dividends RECEIVED = **CFO**, Dividends PAID = **CFF**, Interest PAID = **CFO**
+> - **IFRS**: Has OPTIONS (more flexible):
+>   - **"ID-RIFF"** for IFRS choices:
+>     - **I**nterest/**D**ividends **R**eceived = CFO or CF**I** (Investing)
+>     - **I**nterest/**D**ividends Paid = CFO or CF**F** (Financing)
 
 | Cash Flow Item      | US GAAP Classification | IFRS Classification             | Why the Difference?                                                                 |
 | :------------------ | :--------------------- | :------------------------------ | :---------------------------------------------------------------------------------- |

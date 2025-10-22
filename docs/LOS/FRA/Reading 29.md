@@ -28,6 +28,11 @@ Imagine the **Balance Sheet** as a company's financial photograph 📸 taken at 
           * **Research Costs:** Expensed as incurred (discovery phase), 1390].
           * **Development Costs:** *Can be capitalized* (recorded as an asset) if specific criteria are met (technical feasibility, intent to complete, ability to use/sell, future economic benefits likely, etc.) -1391].
 
+> **💡 MNEMONIC: "IFRS: Research Runs away (expensed), Development Delivers (can capitalize)"**
+> - **Research** = **Expense** (like money running away)
+> - **Development** = **Capitalize** (if criteria met - delivers an asset)
+> - **U.S. GAAP**: Both R&D usually **Expensed** (simpler rule)
+
 <!-- end list -->
 
 ```mermaid
@@ -89,6 +94,11 @@ graph TD
 
 #### **U.S. GAAP Classifications 🇺🇸**
 
+> **💡 MNEMONIC: "HTA" for U.S. GAAP Financial Assets**
+> - **H**eld-to-Maturity = **A**mortized Cost (stable, ignore market)
+> - **T**rading = Fair Value through **I**ncome Statement (volatile, hits profit)
+> - **A**vailable-for-Sale = Fair Value through **O**CI (middle ground, hits equity)
+
   * **Held-to-Maturity (HTM) Securities:** *Debt securities* the company intends and is able to hold until maturity.
       * *Measurement:* **Amortized Cost** (original cost adjusted for principal payments and amortization of any discount or premium). Market value changes are ignored unless impaired.
   * **Trading Securities:** *Debt or Equity* bought primarily for short-term trading profit.
@@ -100,6 +110,11 @@ graph TD
   * **Other:** Loans, receivables, unquoted equity are typically at historical or amortized cost. Derivatives are usually at Fair Value through Income Statement, 1457].
 
 #### **IFRS Classifications 🌍**
+
+> **💡 MNEMONIC: "IFRS: APO" (like Apollo rocket - 3 stages)**
+> - **A**mortized Cost = Held to collect (like HTM)
+> - **P**&L (FVPL) = Fair Value through Income (default, like Trading)
+> - **O**CI (FVOCI) = Fair Value through Equity (middle option)
 
   * **Amortized Cost:** *Debt securities* held to collect contractual cash flows (principal and interest). (Similar to HTM).
   * **Fair Value through Other Comprehensive Income (FVOCI):**
@@ -155,6 +170,11 @@ Analyzing the raw numbers on a balance sheet can be misleading if comparing comp
 #### **Liquidity Ratios (Short-Term Health)**
 
 Measure the ability to meet short-term obligations. Generally, higher is better, but *too* high might indicate inefficient asset use.
+
+> **💡 MNEMONIC: "CQC" - Getting more Conservative (Current → Quick → Cash)**
+> - **C**urrent Ratio = All Current Assets ÷ Current Liabilities (Least conservative)
+> - **Q**uick Ratio = (Current Assets - Inventory) ÷ CL (More conservative - "Acid test")
+> - **C**ash Ratio = Only Cash & Marketable Securities ÷ CL (Most conservative)
 
   * **Current Ratio:**
     $$\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}$$

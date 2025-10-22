@@ -12,6 +12,14 @@ Before diving into numbers, every good analyst needs a structured approach. The 
 
 Here are the six steps:
 
+> **💡 MNEMONIC: "So Good Professionals Always Report Updates"**
+> - **S**tate the Objective
+> - **G**ather Data
+> - **P**rocess the Data
+> - **A**nalyze & Interpret
+> - **R**eport Conclusions
+> - **U**pdate the Analysis
+
 ```mermaid
 graph TD
     A["Step 1: State the Objective & Context<br/>🎯 What question are you answering?<br/>⏰ How much time/resource?"] --> B["Step 2: Gather Data<br/>📚 Financial statements, industry info,<br/>news, management discussions"]
@@ -61,6 +69,14 @@ The main financial statements (Income Statement, Balance Sheet, Cash Flow Statem
 
 Public companies must file detailed reports. Knowing these helps you find crucial information:
 
+> **💡 MNEMONIC: "Some KQP Deals Evaporate"**
+> - **S**-1: IPO/New Securities (Stock offering)
+> - **K**: 10-K Annual (Comprehensive, Audited)
+> - **Q**: 10-Q Quarterly (Quick updates, Unaudited)
+> - **P**roxy: DEF-14A (Voting matters, Proxy statement)
+> - **D**aily events: 8-K (material events Daily/As they happen)
+> - **E**xecutive: Forms 3,4,5 (Executive/insider trading)
+
   * **Form S-1:** Registration statement for new securities offerings (IPOs). Includes financials, risks, use of proceeds.
   * **Form 10-K:** *Annual* report. Very detailed, includes business description, risks, management discussion, and **audited** financial statements. (Similar to the Annual Report required by SEBI in India). Foreign equivalents: Form 40-F (Canada), Form 20-F (others).
   * **Form 10-Q:** *Quarterly* report. Less detailed than 10-K, **unaudited** financials, updates on significant events. Foreign equivalent: Form 6-K (often semiannual).
@@ -102,6 +118,12 @@ The **standard auditor's opinion** states:
 3.  The statements comply with applicable accounting principles (IFRS or GAAP), and the estimates used are reasonable.
 
 **Types of Audit Opinions:**
+
+> **💡 MNEMONIC: "U-QAD" (You QUAD - like 4 types)**
+> - **U**nqualified (Clean - Best ✅)
+> - **Q**ualified (Exception noted ⚠️)
+> - **A**dverse (Bad - Not fairly presented ❌)
+> - **D**isclaimer (Cannot form opinion ❓)
 
   * ✅ **Unqualified Opinion (Clean Opinion):** The best type. Auditor believes statements are free from material errors and omissions.
   * ⚠️ **Qualified Opinion:** Mostly okay, but auditor notes a specific exception to accounting principles.
