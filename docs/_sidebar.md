@@ -5,6 +5,7 @@
   - [Derivatives](Formulas/Derivatives.md)
   - [Equity](Formulas/Equity.md)
   - [Fixed Income](Formulas/Fixed%20Income.md)
+  - [Quants](Formulas/Quants.md)
 - LOS
   - Quantitative Methods
     - [Reading 1: Rates and Returns](LOS/Quant/Reading%201.md)
