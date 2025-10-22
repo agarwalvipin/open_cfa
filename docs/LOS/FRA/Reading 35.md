@@ -17,10 +17,15 @@ The core issue is the difference between profit reported to shareholders and pro
 
 Differences arise from two main sources:
 
+#### **1.1 Permanent Differences**
+
 1.  **Permanent Differences:** These are items that affect either accounting profit *or* taxable income, but **never both**. They don't reverse over time.
     * *Example (Global):* Interest income from municipal bonds in the US might be included in accounting profit but is often tax-exempt.
     * *Example (Global):* Fines or penalties might reduce accounting profit but are often not tax-deductible.
     * Permanent differences cause the company's **effective tax rate** to differ from the **statutory tax rate**, but they **do not create DTA or DTL**. 🚫
+
+#### **1.2 Temporary Differences**
+
 2.  **Temporary Differences:** These are the crucial ones\! They occur when accounting rules and tax rules recognize income or expenses in *different time periods*. These differences *will* reverse in the future. They are the origin of DTAs and DTLs.
 
 > **💡 MNEMONIC: "DTL = Defer Tax to Later; DTA = Defer Tax Advantage"**
@@ -49,13 +54,11 @@ This typically happens when:
 * A company recognizes revenue or gains for tax purposes *before* they are recognized in the income statement. (e.g., rent received in advance might be taxed immediately but recognized as revenue over the lease term)
 * A company expenses costs in the income statement *before* they are tax-deductible.
     * *Classic Example:* Estimating and expensing warranty costs when products are sold (accrual accounting), but only getting the tax deduction later when the actual warranty claims are paid. This means paying more cash tax now, creating a future benefit (asset) – the right to pay less tax later. 📈➡️📉
-* **Tax Loss Carryforwards:** If a company has losses for tax purposes, it might be able to use those losses to reduce taxable income (and thus taxes payable) in *future* profitable years. This future tax benefit is recognized as a DTA.
+  * **Tax Loss Carryforwards:** If a company has losses for tax purposes, it might be able to use those losses to reduce taxable income (and thus taxes payable) in *future* profitable years. This future tax benefit is recognized as a DTA.
 
 > **Think of it like this:** You paid *more* tax today than your income statement suggests you should have, perhaps because tax rules made you recognize income early or delayed an expense deduction. This overpayment creates a future benefit – the DTA – representing expected tax savings later.
 
-#### **The Core Equation & Tax Rate Changes 🔄**
-
-The link between these items is captured by:
+#### **1.3 The Core Equation & Tax Rate Changes 🔄**The link between these items is captured by:
 
 $$\text{Income Tax Expense} = \text{Taxes Payable} + \Delta \text{DTL} - \Delta \text{DTA}$$
 
@@ -106,7 +109,7 @@ Let's look at the warranty liability from the PDF example.
     * Carrying Value ($3k) > Tax Base ($0). The difference is $3,000.
     * Result: DTA = $3,000 \times \text{Tax Rate}$. If Tax Rate = 30%, DTA = $900.
 
-#### **Realizability of Deferred Tax Assets: Will We Get the Benefit? 🤔**
+#### **2.1 Realizability of Deferred Tax Assets: Will We Get the Benefit? 🤔**
 
 A DTA represents a *future* tax saving. But what if the company doesn't expect to have enough *taxable income* in the future to actually realize those savings?
 
@@ -117,7 +120,7 @@ A DTA represents a *future* tax saving. But what if the company doesn't expect t
     * *Decreasing* the valuation allowance *increases* net income (by decreasing tax expense).
 * **Analyst Alert:** Changes in the valuation allowance can be used to manage earnings\! Look for large or unusual changes. 🧐
 
-#### **Analytical Adjustments: How Should We Treat DTA/DTL? ⚖️**
+#### **2.2 Analytical Adjustments: How Should We Treat DTA/DTL? ⚖️**
 
 Analysts often adjust financial statements for deferred taxes:
 
@@ -134,7 +137,7 @@ Analysts often adjust financial statements for deferred taxes:
 
 Understanding a company's tax situation requires looking beyond just the income tax expense line.
 
-#### **Key Tax Rates**
+#### **3.1 Key Tax Rates**
 
 * **Statutory Tax Rate:** The official corporate tax rate in the company's home country.
 * **Effective Tax Rate (ETR):** 
@@ -144,7 +147,7 @@ Understanding a company's tax situation requires looking beyond just the income 
   $$\text{Cash Tax Rate} = \frac{\text{Cash Taxes Paid}}{\text{Accounting Profit (Pretax Income)}}$$ 
   This measures the cash taxes paid relative to accounting profit.
 
-#### **The Tax Rate Reconciliation**
+#### **3.2 The Tax Rate Reconciliation**
 
 Companies are required to show a reconciliation explaining *why* their effective tax rate differs from the statutory rate. This is super useful for analysts\! 🤓
 
@@ -159,7 +162,7 @@ Companies are required to show a reconciliation explaining *why* their effective
     * Track trends in reconciliation items to better forecast future ETR.
     * Assess the sustainability of low tax rates (e.g., reliance on expiring tax holidays).
 
-#### **Required Disclosures & Analyst Use**
+#### **3.3 Required Disclosures & Analyst Use**
 
 Footnotes provide crucial details about deferred taxes:
 

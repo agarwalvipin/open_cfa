@@ -59,6 +59,8 @@ Understanding these links is vital for building the CFO section and spotting pot
 
 The Statement of Cash Flows is divided into three sections: **Operating (CFO)**, **Investing (CFI)**, and **Financing (CFF)**. CFI and CFF are presented the same way regardless, but there are two methods to present the crucial CFO section: **Direct** and **Indirect**.
 
+#### **2.1 The Direct Method: Just the Cash Facts 🕵️‍♀️**
+
 > **💡 MNEMONIC: "ALOUD" for Cash Flow Rules**
 > - **A**ssets UP = cash **D**own (USE of cash -)
 > - **L**iabilities/equity UP = cash UP (SOURCE of cash +)
@@ -118,7 +120,7 @@ Let's use the example data from the reading:
 
 *Note: DTL = Deferred Tax Liability. Changes in deferred taxes adjust tax expense to get cash taxes paid.*
 
-#### **The Indirect Method: Net Income Reconciliation 🔄**
+#### **2.2 The Indirect Method: Net Income Reconciliation 🔄**
 
 The Indirect Method starts with **Net Income** and adjusts it to arrive at CFO. It reconciles the accrual-based Net Income to the cash-based CFO by removing noncash items and accounting for changes in operating working capital. It's the method most companies use.
 

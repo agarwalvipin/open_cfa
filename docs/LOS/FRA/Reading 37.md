@@ -49,13 +49,15 @@ Imagine Company A has Sales of ₹1,000 Cr and Net Income of ₹100 Cr. Company 
 
 Ratios are typically grouped by what they measure:
 
+#### **2.1 Ratio Categories Overview**
+
 > **💡 MNEMONIC: "ALPS" for Main Ratio Categories**
 > - **A**ctivity (efficiency/turnover ratios)
 > - **L**iquidity (short-term solvency)
-> - **P**rofitability (margins & returns)
-> - **S**olvency (long-term leverage & coverage)
+- **P**rofitability (margins & returns)
+- **S**olvency (long-term leverage & coverage)
 
-#### **Activity Ratios (Efficiency/Turnover)**
+#### **2.2 Activity Ratios (Efficiency/Turnover)**
 
 These show how efficiently a company manages its assets. Generally, higher turnover is better (means assets are working harder to generate sales), but context is key.
 
@@ -78,7 +80,7 @@ These show how efficiently a company manages its assets. Generally, higher turno
 * **Total Asset Turnover:** `Revenue / Average Total Assets`
     * Overall efficiency in using all assets to generate sales.
 
-#### **Liquidity Ratios**
+#### **2.3 Liquidity Ratios**
 
 These measure the company's ability to meet its short-term obligations. 💧
 
@@ -93,7 +95,7 @@ These measure the company's ability to meet its short-term obligations. 💧
 * **Cash Conversion Cycle (CCC):** `DOH + DSO - Number of Days of Payables`
     * Length of time from paying cash for inventory to receiving cash from customers. Shorter is generally better (less cash tied up).
 
-#### **Solvency Ratios (Leverage)**
+#### **2.4 Solvency Ratios (Leverage)**
 
 These measure the company's ability to meet long-term obligations and its use of debt financing. 🏛️
 
@@ -109,7 +111,7 @@ These measure the company's ability to meet long-term obligations and its use of
     * **Fixed Charge Coverage Ratio:** `(EBIT + Lease Payments) / (Interest Payments + Lease Payments)`
         * Broader measure including lease payments (another fixed obligation). Higher is better.
 
-#### **Profitability Ratios**
+#### **2.5 Profitability Ratios**
 
 These measure the company's ability to generate profits from its sales and investments. 💰
 

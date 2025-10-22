@@ -63,7 +63,7 @@ Just like with the Income Statement and Balance Sheet, creating **common-size ca
 
 Beyond the three main sections, analysts calculate specific metrics to assess cash generation and coverage.
 
-#### **Free Cash Flow (FCF): The Discretionary Cash 💸**
+#### **2.1 Free Cash Flow (FCF): The Discretionary Cash 💸**
 
 > **💡 MNEMONIC: "FCFF vs FCFE - Firm First, Equity Ends"**
 > - **FCFF** = Free Cash to **FIRM** (all capital providers - debt & equity)
@@ -117,7 +117,7 @@ $$\text{FCFE} = \text{FCFF} - [\text{Int} \times (1 - \text{Tax Rate})] + \text{
 $$\text{FCFE} = \$50,300 - [\$500 \times (1 - 0.40)] + \$5,000$$
 $$\text{FCFE} = \$50,300 - \$300 + \$5,000 = \$55,000$$ ✅
 
-#### **Cash Flow Ratios: Performance & Coverage Metrics 📊**
+#### **2.2 Cash Flow Ratios: Performance & Coverage Metrics 📊**
 
 These ratios use cash flow data (mainly CFO) to provide insights comparable to traditional income-statement or balance-sheet ratios.
 

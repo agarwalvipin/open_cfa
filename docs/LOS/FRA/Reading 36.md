@@ -69,6 +69,8 @@ graph LR
 
 Within the bounds of GAAP/IFRS, managers have choices. These choices can lean towards being conservative or aggressive.
 
+#### **3.1 Accounting Choice Spectrum**
+
   * **Conservative Accounting:** Choices tend to decrease reported earnings and financial position in the *current* period. Think of deferring revenue recognition or accelerating expense recognition.
       * Example: Expensing R\&D costs immediately (required by US GAAP) is more conservative than capitalizing some development costs (allowed by IFRS under certain conditions).
       * Impact: Lower current profits, potentially higher future profits. Can lead to **earnings smoothing**.
@@ -136,6 +138,8 @@ Several mechanisms help discipline financial reporting quality, although none ar
 2.  **Auditing:** Independent auditors provide **reasonable assurance** that financial statements are fairly presented according to accounting standards. However, auditors are hired and paid by the company, creating a potential conflict. An unqualified ("clean") opinion doesn't guarantee the absence of fraud. US regulations (Sarbanes-Oxley) require auditors to opine on internal controls.
 3.  **Private Contracts:** Lenders often include **covenants** in loan agreements that require borrowers to meet specific financial ratios or conditions, incentivizing adherence to agreed-upon accounting standards.
 
+#### **5.1 Limitations of Oversight Mechanisms**
+
 **Limitations:** Auditors face limitations (e.g., information asymmetry, fee pressure). Regulators may lack resources for thorough oversight. Accounting standards themselves can be complex or offer too much leeway.
 
 > [\!TIP]
@@ -173,7 +177,7 @@ Regulators (like the SEC) require companies using non-GAAP measures to:
 
 Managers can use various accounting choices and estimates to manage earnings, cash flows, and balance sheet items.
 
-**Managing Earnings:**
+#### **7.1 Managing Earnings**
 
   * **Revenue Recognition:**
       * Timing: Choosing FOB shipping point vs. destination; accelerating shipments (**channel stuffing**) or delaying them.
@@ -184,7 +188,7 @@ Managers can use various accounting choices and estimates to manage earnings, ca
       * Estimates: Lowering estimates for bad debt reserves or warranty expenses increases current income.
   * **Valuation Allowance:** Reducing the **valuation allowance** against a deferred tax asset increases current income.
 
-**Managing Cash Flow:**
+#### **7.2 Managing Cash Flow**
 
   * **Stretching Payables:** Delaying payments to suppliers increases **Cash Flow from Operations (CFO)** in the current period (but decreases it later).
   * **Financing Payables:** Using banks to pay suppliers early might reclassify the outflow from CFO to CFF (Cash Flow from Financing).

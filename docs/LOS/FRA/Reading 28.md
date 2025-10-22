@@ -124,6 +124,8 @@ Let's compare buying a £12,000 machine with a 4-year life.
 
 ### Part 3: One-Off Events & Accounting Changes 📊➡️📉 (LOS 28.c)
 
+#### **3.1 Nonrecurring Items and Discontinued Operations**
+
 > **💡 MNEMONIC: "RPP" for Accounting Changes Application**
 > - **R**etrospective: Policy changes & Prior-period Errors (restate past)
 > - **P**rospective: Estimate changes (only future affected)
@@ -141,6 +143,8 @@ Not everything on the income statement reflects normal, repeatable business oper
 
       * *Reporting:* Income/loss from the component (including gain/loss on disposal) is reported **separately**, **net of tax**, *after* income from continuing operations. Prior-period statements are restated.
       * *Analysis:* Exclude from forecasts of future *continuing* earnings, but the disposal itself might provide cash flow insights, 941].
+
+#### **3.2 Accounting Changes and Error Corrections**
 
   * **Changes in Accounting Policies:** Switching from one acceptable method to another (e.g., changing inventory method from weighted average to FIFO).
 

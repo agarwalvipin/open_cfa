@@ -57,7 +57,7 @@ Imagine a company is like a factory. 🏭 **Long-term assets** are the big, impo
 
 Assets don't always hold their value. Sometimes, their worth drops unexpectedly (**impairment**), or the company gets rid of them (**derecognition**).
 
-**Impairment: When Value Plummets 📉**
+#### **2.1 Impairment: When Value Plummets 📉**
 
 > **💡 MNEMONIC: "IFRS: 1-Step & REVERSES; US GAAP: 2-Steps & NO Reversals"**
 > - **IFRS**: **O**ne-step test (CV vs Recoverable), **R**eversals allowed (except Goodwill)
@@ -99,7 +99,7 @@ An asset is **impaired** if its carrying value (book value) on the balance sheet
     $$\text{Impairment Loss} = \text{Carrying Value} - \text{Fair Value}$$
   * **Reversals:** NO!
 
-**Financial Statement & Ratio Impact of Impairment:**
+#### **2.2 Financial Statement & Ratio Impact of Impairment**
 
   * **Income Statement:** Loss recognized -> Lower Net Income in the impairment year.
   * **Balance Sheet:** Asset carrying value reduced -> Lower Total Assets, Lower Equity (via Retained Earnings).
@@ -112,7 +112,7 @@ An asset is **impaired** if its carrying value (book value) on the balance sheet
       * **Profitability (ROA, ROE):** Increase (NI is higher due to lower future depreciation/amortization; Assets/Equity are lower).
       * Depreciation/Amortization expense will be lower because it's based on the new, lower carrying value.
 
-**Derecognition: Getting Rid of Assets 🗑️**
+#### **2.3 Derecognition: Getting Rid of Assets 🗑️**
 
 This happens when an asset is sold, abandoned, exchanged, or spun off.
 

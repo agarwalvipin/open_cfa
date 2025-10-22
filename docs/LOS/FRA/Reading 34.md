@@ -40,6 +40,8 @@ A lease is generally a **finance lease** if *any* of these are met:
 
 If none of these conditions are met, it's an **operating lease**.
 
+#### **1.1 Lease Classification Criteria**
+
 ```mermaid
 graph TD
     A["Lease Agreement"] --> B{"Ownership Transfer?"}
@@ -55,11 +57,11 @@ graph TD
     G -->|No| H["Operating Lease"]
 ```
 
-#### **Lessee Accounting: How the User Reports It**
+#### **1.2 Lessee Accounting: How the User Reports It**
 
 This is where IFRS and U.S. GAAP have some key differences.
 
-**IFRS Lessee Accounting:**
+##### **1.2.1 IFRS Lessee Accounting**
 
   * **Simple Approach:** IFRS treats *almost all* leases by lessees as **finance leases**. ✅
   * **Balance Sheet:**
@@ -74,7 +76,7 @@ This is where IFRS and U.S. GAAP have some key differences.
       * Principal portion of payment -> CFF.
   * **Exception:** Very short-term leases (<12 months) or low-value assets can be expensed straight-line, off-balance sheet.
 
-**U.S. GAAP Lessee Accounting:**
+##### **1.2.2 U.S. GAAP Lessee Accounting**
 
   * **Dual Approach:** U.S. GAAP maintains the distinction between **finance leases** and **operating leases** for reporting. ✌️
   * **Balance Sheet (Both Types):** Similar to IFRS, both finance and operating leases result in an **ROU Asset** and a **Lease Liability** based on the PV of lease payments.
@@ -85,7 +87,7 @@ This is where IFRS and U.S. GAAP have some key differences.
       * **Finance Lease:** Interest portion -> CFO; Principal portion -> CFF (similar to IFRS CFF classification).
       * **Operating Lease:** The *entire* lease payment is classified as **CFO**.
 
-#### **Theory: IFRS vs. U.S. GAAP Lessee**
+#### **1.3 Theory: IFRS vs. U.S. GAAP Lessee**
 
 | Item                   | IFRS (Finance Lease Only) | U.S. GAAP (Finance Lease) | U.S. GAAP (Operating Lease) |
 | :--------------------- | :------------------------ | :------------------------ | :-------------------------- |
@@ -94,7 +96,9 @@ This is where IFRS and U.S. GAAP have some key differences.
 | **Total Expense Trend**| Higher early, Lower later | Higher early, Lower later | Constant                    |
 | **Cash Flow Stmt** | Int (CFO/CFF), Prin (CFF) | Int (CFO), Prin (CFF)     | Entire Payment (CFO)        |
 | **Effect vs Operating**| Lower CFO, Higher CFF     | Lower CFO, Higher CFF     | Higher CFO, Lower CFF       |
-| **Effect vs Operating**| Lower EBIT early on       | Lower EBIT early on       | Higher EBIT                 |
+| **Effect vs Operating**| Higher EBIT                 |
+
+#### **1.4 Example 🧮** Lower EBIT early on       | Higher EBIT                 |
 
 #### **Example 🧮**
 
@@ -112,7 +116,7 @@ Affordable Co. leases a machine for 4 years (its entire useful life) with $10,00
   * **Year 1 CF:** Entire Payment ($10,000) -> CFO.
   * **Year 1 BS:** ROU Asset = $27,233; Lease Liability = $27,233. (ROU Asset = Lease Liability throughout the lease).
 
-#### **Lessor Accounting: How the Owner Reports It**
+#### **1.5 Lessor Accounting: How the Owner Reports It**
 
 The lessor also classifies the lease as **finance** or **operating** using the same criteria.
 
@@ -146,7 +150,7 @@ The lessor also classifies the lease as **finance** or **operating** using the s
 
 Companies often compensate employees not just with salary today, but with promises for the future – like retirement benefits or company stock.
 
-**Pension Plans: Retirement Promises**
+#### **2.1 Pension Plans: Retirement Promises**
 
 > **💡 MNEMONIC: "DC = Direct & Clear; DB = Daunting & Burdensome"**
 > - **DC** (Defined **C**ontribution): **C**ompany risk is **C**lear & limited, Employee bears investment risk
@@ -177,7 +181,9 @@ Companies often compensate employees not just with salary today, but with promis
               * **Past Service Costs (U.S. GAAP):** Recorded in OCI and amortized to Income Statement over employee service life.
       * **Key Idea:** The *total* economic cost is the same under both standards, but *where* it's reported (IS vs. OCI) differs, affecting reported Net Income vs. Comprehensive Income.
 
-**Share-Based Compensation: Paying with Stock 📈**
+      * **The Rule:** Inventory is reported at whichever value is *lower* – its original **Cost** or the calculated **Market** value (within its ceiling and floor).
+
+#### **2.2 Share-Based Compensation: Paying with Stock 📈**
 
 Aligns employee and shareholder interests.
 

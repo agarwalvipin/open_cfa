@@ -92,7 +92,7 @@ graph TD
 
 **Financial instruments** are contracts creating a financial asset for one party and a financial liability or equity for another. On the asset side, this includes investments like stocks and bonds, derivatives, loans, and receivables. How they're valued depends on their classification, which differs between U.S. GAAP and IFRS.
 
-#### **U.S. GAAP Classifications 🇺🇸**
+#### **3.1 U.S. GAAP Classifications 🇺🇸**
 
 > **💡 MNEMONIC: "HTA" for U.S. GAAP Financial Assets**
 > - **H**eld-to-Maturity = **A**mortized Cost (stable, ignore market)
@@ -109,7 +109,7 @@ graph TD
       * *Unrealized Gains/Losses:* Reported in **Other Comprehensive Income (OCI)** – part of Shareholders' Equity, bypassing the Income Statement until sold -1462].
   * **Other:** Loans, receivables, unquoted equity are typically at historical or amortized cost. Derivatives are usually at Fair Value through Income Statement, 1457].
 
-#### **IFRS Classifications 🌍**
+#### **3.2 IFRS Classifications 🌍**
 
 > **💡 MNEMONIC: "IFRS: APO" (like Apollo rocket - 3 stages)**
 > - **A**mortized Cost = Held to collect (like HTM)
@@ -124,7 +124,7 @@ graph TD
       * *Measurement:* **Fair Value**.
       * *Unrealized Gains/Losses:* Reported directly on the **Income Statement (Profit & Loss)**.
 
-#### **Common Ground 🤝**
+#### **3.3 Common Ground 🤝**
 
   * For *all* classifications under both standards, **interest income**, **dividend income**, and **realized gains/losses** (when the security is actually sold) are reported on the Income Statement.
 

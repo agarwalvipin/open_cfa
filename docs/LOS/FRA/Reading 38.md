@@ -128,14 +128,14 @@ Changes in price levels affect both revenues and costs.
 
 How far into the future should you forecast?
 
-**Choosing the Forecast Horizon:**
+#### **5.1 Choosing the Forecast Horizon**
 
   * **Holding Period:** For buy-side analysts, it might match the expected time horizon for holding the stock.
   * **Cyclical Companies:** Forecast horizon should ideally extend beyond the current cycle phase to estimate **normalized earnings** (mid-cycle earnings), 3407, 3408].
   * **Company-Specific Factors:** Major events like mergers, acquisitions, or restructurings may require a longer horizon to see the expected benefits realized.
   * **Analyst Limitations:** Forecast accuracy generally decreases further into the future. Many detailed forecasts only go out 3-5 years.
 
-**Projecting Beyond the Short Term:**
+#### **5.2 Projecting Beyond the Short Term**
 
 Detailed forecasts eventually become less reliable. Analysts often transition to broader assumptions:
 

@@ -55,7 +55,7 @@ Essentially, analysts dissect past performance and current financial health to p
 
 The main financial statements (Income Statement, Balance Sheet, Cash Flow Statement, Statement of Changes in Equity) are just the headlines. The real insights often come from the supporting details.
 
-#### **The Rule Makers and Enforcers 🏛️**
+#### **3.1 The Rule Makers and Enforcers 🏛️**
 
   * **Standard-Setting Bodies:** These are independent groups that create the accounting rules (**financial reporting standards**).
       * **IASB (International Accounting Standards Board):** Sets **IFRS (International Financial Reporting Standards)**, used in many countries globally, including India (Ind AS is converged with IFRS). Older standards are called **IAS**.
@@ -65,7 +65,7 @@ The main financial statements (Income Statement, Balance Sheet, Cash Flow Statem
       * **SEBI (Securities and Exchange Board of India):** The primary regulator in India.
       * **IOSCO (International Organization of Securities Commissions):** An umbrella body whose members regulate most of the world's financial markets. They promote investor protection, fair markets, and reduced systemic risk.
 
-#### **Key Regulatory Filings (Using U.S. SEC as Example)**
+#### **3.2 Key Regulatory Filings (Using U.S. SEC as Example)**
 
 Public companies must file detailed reports. Knowing these helps you find crucial information:
 
@@ -84,7 +84,7 @@ Public companies must file detailed reports. Knowing these helps you find crucia
   * **Form 8-K:** Reports *material* corporate events (acquisitions, disposals, management changes, accounting changes) as they happen. Provides timely updates.
   * **Forms 3, 4, 5:** Detail stock ownership and trading by company insiders (officers and directors). Useful for tracking insider sentiment.
 
-#### **Financial Statement Notes (Footnotes) 📝**
+#### **3.3 Financial Statement Notes (Footnotes) 📝**
 
 These are absolutely essential reading\! They provide critical details behind the numbers on the main statements. Footnotes:
 
@@ -95,7 +95,7 @@ These are absolutely essential reading\! They provide critical details behind th
 
 **Segment Data:** Companies often operate in different business lines or geographic regions. IFRS and U.S. GAAP require disclosure for segments that exceed 10% of revenue, assets, or profit. Analyzing **business segments** (like Tata Group's diverse businesses - Steel, Motors, Consultancy) or **geographic segments** separately can reveal strengths and weaknesses hidden in consolidated numbers.
 
-#### **Management Commentary (MD\&A) 🗣️**
+#### **3.4 Management Commentary (MD\&A) 🗣️**
 
 Also known as **Management Discussion and Analysis (MD\&A)** or Operating and Financial Review. This is management's narrative view on:
 
@@ -107,7 +107,7 @@ Also known as **Management Discussion and Analysis (MD\&A)** or Operating and Fi
   * Off-balance-sheet obligations and contractual commitments.
   * Critical accounting policies requiring significant judgment. ⚠️ *Be aware that some parts of MD\&A might be unaudited.*
 
-#### **The Audit Report 🧐✅**
+#### **3.5 The Audit Report 🧐✅**
 
 An **audit** is an independent review of the financial statements by a certified public accounting firm. Its goal is to provide an opinion on the **fairness and reliability** of the statements.
 

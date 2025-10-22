@@ -84,7 +84,7 @@ When inventory purchase prices change over time (due to inflation or deflation),
 
 **Assume Rising Prices (Inflation) 🔥:**
 
-#### **FIFO (First-In, First-Out)**
+#### **2.1 FIFO (First-In, First-Out)**
 
   * **Concept:** Assumes the *first* (oldest, cheapest) items purchased are the *first* ones sold.
   * **COGS:** Lower (reflects older, cheaper costs).
@@ -92,7 +92,7 @@ When inventory purchase prices change over time (due to inflation or deflation),
   * **Gross Profit & Net Income:** Higher (because COGS is lower).
   * **Taxes:** Higher (because reported income is higher).
 
-#### **LIFO (Last-In, First-Out)**
+#### **2.2 LIFO (Last-In, First-Out)**
 
   * **Concept:** Assumes the *last* (newest, most expensive) items purchased are the *first* ones sold. (Note: LIFO is **prohibited** under IFRS but allowed under U.S. GAAP).
   * **COGS:** Higher (reflects recent, more expensive costs – better matches current revenues with current costs).
@@ -100,7 +100,7 @@ When inventory purchase prices change over time (due to inflation or deflation),
   * **Gross Profit & Net Income:** Lower (because COGS is higher).
   * **Taxes:** Lower (because reported income is lower – a primary reason firms use LIFO in the US).
 
-#### **Weighted-Average Cost**
+#### **2.3 Weighted-Average Cost**
 
   * **Concept:** Averages the cost of all items available for sale during the period.
   * **COGS, Ending Inventory, Profit, Taxes:** Generally fall *between* FIFO and LIFO values.
@@ -127,7 +127,7 @@ When inventory purchase prices change over time (due to inflation or deflation),
 
 *(Effects are reversed during periods of falling prices ❄️)*
 
-#### **The LIFO Reserve Bridge 🌉 (U.S. GAAP)**
+#### **2.4 The LIFO Reserve Bridge 🌉 (U.S. GAAP)**
 
 Companies using LIFO must disclose a **LIFO reserve**. This is the amount by which LIFO inventory is *lower* than FIFO inventory. It acts as a bridge to compare LIFO firms with FIFO firms.
 
@@ -152,7 +152,7 @@ Companies using LIFO must disclose a **LIFO reserve**. This is the amount by whi
 |                  | Total Asset Turnover  | LIFO > FIFO          | Lower Total Assets under LIFO              |
 | **Solvency** | Debt-to-Equity        | LIFO > FIFO          | Lower Equity under LIFO                    |
 
-#### **LIFO Liquidation 💧➡️💨**
+#### **2.5 LIFO Liquidation 💧➡️💨**
 
 This occurs when a LIFO firm sells more units than it purchases, causing older, lower-cost inventory layers to be liquidated and flow through COGS.
 
