@@ -17,7 +17,7 @@ The basic formulas are:
 
 Let's see how this applies to different types of securities.
 
-#### **Fixed-Income Securities (Bonds) 債券**
+#### **Fixed-Income Securities (Bonds)**
 
 Think of a bond as a formal loan. You lend money, and in return, you get interest payments and your original loan amount back.
 
@@ -44,7 +44,7 @@ The bond is worth ₹1,134.20 today. Because the coupon rate (10%) is higher tha
 
 A US Treasury bond is a classic example of a fixed-coupon bond, considered one of the safest investments globally. A **zero-coupon bond** is like a US Treasury STRIP. In India, a government bond (G-Sec) also works like a fixed-coupon bond. The concept of a **perpetuity** is rare, but some bonds issued in the UK, called consols, have this feature.
 
-#### **Equity Securities (Stocks) 株式**
+#### **Equity Securities (Stocks)**
 
 Stocks are trickier because their cash flows (dividends) are not guaranteed and they have no maturity date. We use **dividend discount models (DDMs)** to estimate their value.
 
