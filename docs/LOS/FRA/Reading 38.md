@@ -54,15 +54,15 @@ graph TD
 
 Analysts are human, and psychological biases can creep into forecasts, making them less accurate. Being aware is the first step to mitigation\!
 
-  * **Overconfidence Bias:** Believing your forecasts are more accurate than they really are, 3372]. Leads to narrow confidence intervals. Analysts going against consensus may be more prone.
-      * *Remedy:* Get critiques from others, review past forecast errors, use scenario analysis, 3377].
+  * **Overconfidence Bias:** Believing your forecasts are more accurate than they really are. Leads to narrow confidence intervals. Analysts going against consensus may be more prone.
+      * *Remedy:* Get critiques from others, review past forecast errors, use scenario analysis.
   * **Illusion of Control Bias:** Thinking you can control outcomes more than you actually can. Often seen when analysts feel they have deep knowledge.
       * *Remedy:* Acknowledge uncertainty, focus on objective data.
   * **Conservatism Bias (Anchoring):** Being slow to update forecasts even when new information warrants it. Anchoring on previous views.
       * *Remedy:* Continually evaluate assumptions, react promptly to new, credible information.
   * **Representativeness Bias:** Overweighting small samples or recent trends, assuming they represent the long-term reality. "This hot streak will last forever\!"
       * *Remedy:* Consider longer time periods, be skeptical of extrapolating short-term trends.
-  * **Confirmation Bias:** Seeking out or overweighting information that confirms your existing beliefs, while ignoring contradictory evidence. Especially risky when evaluating management comments, 3381].
+  * **Confirmation Bias:** Seeking out or overweighting information that confirms your existing beliefs, while ignoring contradictory evidence. Especially risky when evaluating management comments.
       * *Remedy:* Actively seek out dissenting opinions, rigorously question information that supports your view.
 
 #### **Global & Local Context 🌍**
@@ -106,7 +106,7 @@ Changes in price levels affect both revenues and costs.
 
   * Identify key **input costs** (e.g., oil for airlines, coffee beans for cafes).
   * Assess the company's exposure:
-      * Does it use **hedging** (derivatives, fixed-price contracts)? This delays the impact of price changes, 3390].
+      * Does it use **hedging** (derivatives, fixed-price contracts)? This delays the impact of price changes.
       * Is it **vertically integrated** (owns its suppliers)? This reduces exposure.
   * Estimate how quickly input cost changes flow through to COGS.
 
@@ -131,7 +131,7 @@ How far into the future should you forecast?
 #### **5.1 Choosing the Forecast Horizon**
 
   * **Holding Period:** For buy-side analysts, it might match the expected time horizon for holding the stock.
-  * **Cyclical Companies:** Forecast horizon should ideally extend beyond the current cycle phase to estimate **normalized earnings** (mid-cycle earnings), 3407, 3408].
+  * **Cyclical Companies:** Forecast horizon should ideally extend beyond the current cycle phase to estimate **normalized earnings** (mid-cycle earnings).
   * **Company-Specific Factors:** Major events like mergers, acquisitions, or restructurings may require a longer horizon to see the expected benefits realized.
   * **Analyst Limitations:** Forecast accuracy generally decreases further into the future. Many detailed forecasts only go out 3-5 years.
 
@@ -141,7 +141,7 @@ Detailed forecasts eventually become less reliable. Analysts often transition to
 
 1.  **Trend Growth:** Assume revenue growth continues at a historical average rate or converges towards the long-run nominal GDP growth rate.
 2.  **Terminal Value Estimation:** Used in valuation models (like DCF). Beyond the detailed forecast period, estimate a **terminal value** based on:
-      * **Multiples Approach:** Assume the company will trade at some benchmark multiple (e.g., industry average P/E) applied to a terminal year forecast (e.g., EPS in year 5), 3414]. Ensure the multiple is consistent with long-term growth and risk assumptions.
+      * **Multiples Approach:** Assume the company will trade at some benchmark multiple (e.g., industry average P/E) applied to a terminal year forecast (e.g., EPS in year 5). Ensure the multiple is consistent with long-term growth and risk assumptions.
       * **Discounted Cash Flow (DCF) Approach:** Assume cash flows grow at a constant, sustainable rate indefinitely (like the Gordon Growth Model concept) and calculate the present value.
 
 > [\!TIP]

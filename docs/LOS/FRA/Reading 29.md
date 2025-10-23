@@ -14,8 +14,8 @@ Imagine the **Balance Sheet** as a company's financial photograph 📸 taken at 
 
 **Types:**
 
-  * **Identifiable Intangibles:** Can be separated from the company or arise from contractual/legal rights (e.g., patents, trademarks, copyrights) -1383]. Think of the brand value of Coca-Cola or Apple's patents.
-  * **Unidentifiable Intangibles:** Cannot be separated from the company (e.g., **goodwill**) -1384].
+  * **Identifiable Intangibles:** Can be separated from the company or arise from contractual/legal rights (e.g., patents, trademarks, copyrights). Think of the brand value of Coca-Cola or Apple's patents.
+  * **Unidentifiable Intangibles:** Cannot be separated from the company (e.g., **goodwill**).
 
 **Accounting Treatment:**
 
@@ -25,8 +25,8 @@ Imagine the **Balance Sheet** as a company's financial photograph 📸 taken at 
   * **Internally Created Intangibles:**
       * *U.S. GAAP:* Most costs (like internal R\&D) are expensed immediately. Exception: Certain software development costs.
       * *IFRS:* Distinguishes between research and development:
-          * **Research Costs:** Expensed as incurred (discovery phase), 1390].
-          * **Development Costs:** *Can be capitalized* (recorded as an asset) if specific criteria are met (technical feasibility, intent to complete, ability to use/sell, future economic benefits likely, etc.) -1391].
+          * **Research Costs:** Expensed as incurred (discovery phase).
+          * **Development Costs:** *Can be capitalized* (recorded as an asset) if specific criteria are met (technical feasibility, intent to complete, ability to use/sell, future economic benefits likely, etc.).
 
 > **💡 MNEMONIC: "IFRS: Research Runs away (expensed), Development Delivers (can capitalize)"**
 > - **Research** = **Expense** (like money running away)
@@ -51,9 +51,9 @@ graph TD
       * **Finite Life (e.g., Patent):** **Amortized** (like depreciation) over its useful life. Tested for impairment if indicators exist.
       * **Indefinite Life (e.g., some Trademarks, Goodwill):** Not amortized. Tested for **impairment** (a write-down if value drops below carrying amount) at least annually.
 
-**Costs Always Expensed (IFRS & U.S. GAAP):** Start-up, training, admin overhead, advertising, relocation, termination costs -1400].
+**Costs Always Expensed (IFRS & U.S. GAAP):** Start-up, training, admin overhead, advertising, relocation, termination costs.
 
-**Analysis:** Capitalizing costs (like IFRS development) results in higher assets and higher initial net income compared to expensing (like U.S. GAAP R\&D). Analysts need to be aware of these differences when comparing companies. Some analysts adjust financials by removing intangible assets, but it's crucial to consider their real economic value -1402].
+**Analysis:** Capitalizing costs (like IFRS development) results in higher assets and higher initial net income compared to expensing (like U.S. GAAP R\&D). Analysts need to be aware of these differences when comparing companies. Some analysts adjust financials by removing intangible assets, but it's crucial to consider their real economic value.
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** Remember the key IFRS vs. U.S. GAAP difference for R\&D: IFRS *can* capitalize development costs if criteria are met; U.S. GAAP generally expenses both research and development. Know that indefinite-lived intangibles (like goodwill) are *not* amortized but *are* tested for impairment annually.
@@ -62,28 +62,28 @@ graph TD
 
 ### Part 2: Goodwill - Paying More Than Meets the Eye? 🤝 (LOS 29.b)
 
-**Goodwill** is a specific type of unidentifiable intangible asset created *only* during a business acquisition, 1431].
+**Goodwill** is a specific type of unidentifiable intangible asset created *only* during a business acquisition.
 
-**Creation:** It's the amount the acquiring company pays *in excess* of the fair value of the identifiable net assets (Assets - Liabilities) of the company it buys -1422].
+**Creation:** It's the amount the acquiring company pays *in excess* of the fair value of the identifiable net assets (Assets - Liabilities) of the company it buys.
 
 *Purchase Price - Fair Value of Identifiable Net Assets = Goodwill*
 
 **Why pay extra?**
 
-  * Unrecognized assets (brand reputation, customer relationships) -1424].
-  * Synergies expected from the combination (cost savings, enhanced revenues) -1427].
+  * Unrecognized assets (brand reputation, customer relationships).
+  * Synergies expected from the combination (cost savings, enhanced revenues).
 
 **Accounting:**
 
   * Goodwill is *not* amortized because it's considered to have an indefinite life.
   * It *must* be tested for **impairment** at least annually. If its value is deemed impaired (less than its carrying amount), the company records an impairment loss on the income statement and reduces the goodwill asset on the balance sheet. This loss is a non-cash charge.
-  * **Bargain Purchase:** If the purchase price is *less* than the fair value of net assets, the difference is recognized immediately as a gain on the acquirer's income statement -1430].
+  * **Bargain Purchase:** If the purchase price is *less* than the fair value of net assets, the difference is recognized immediately as a gain on the acquirer's income statement.
 
 **Analysis:**
 
-  * **Manipulation Risk:** Management might allocate more purchase price to goodwill (which isn't amortized) and less to identifiable assets (which are depreciated/amortized) to inflate future reported earnings -1436]. ⚠️
+  * **Manipulation Risk:** Management might allocate more purchase price to goodwill (which isn't amortized) and less to identifiable assets (which are depreciated/amortized) to inflate future reported earnings. ⚠️
   * **Economic vs. Accounting Goodwill:** Accounting goodwill arises from acquisitions. Economic goodwill relates to a company's expected future performance. They are not the same.
-  * **Impairment as a Signal:** Goodwill impairments indicate that past acquisitions haven't performed as expected – the acquirer likely overpaid or synergies didn't materialize, 1441].
+  * **Impairment as a Signal:** Goodwill impairments indicate that past acquisitions haven't performed as expected – the acquirer likely overpaid or synergies didn't materialize.
   * **Comparability:** Analysts often remove goodwill from assets and impairment charges from income when calculating ratios to improve comparability between companies.
 
 -----
@@ -106,8 +106,8 @@ graph TD
       * *Unrealized Gains/Losses (Changes in Fair Value):* Reported directly on the **Income Statement**.
   * **Available-for-Sale (AFS) Securities:** *Debt securities* not classified as HTM or Trading. (Note: Under current U.S. GAAP, equity securities generally cannot be AFS ).
       * *Measurement:* **Fair Value**.
-      * *Unrealized Gains/Losses:* Reported in **Other Comprehensive Income (OCI)** – part of Shareholders' Equity, bypassing the Income Statement until sold -1462].
-  * **Other:** Loans, receivables, unquoted equity are typically at historical or amortized cost. Derivatives are usually at Fair Value through Income Statement, 1457].
+      * *Unrealized Gains/Losses:* Reported in **Other Comprehensive Income (OCI)** – part of Shareholders' Equity, bypassing the Income Statement until sold.
+  * **Other:** Loans, receivables, unquoted equity are typically at historical or amortized cost. Derivatives are usually at Fair Value through Income Statement.
 
 #### **3.2 IFRS Classifications 🌍**
 
@@ -143,13 +143,13 @@ These are obligations due beyond one year or the operating cycle. Common example
 
 **Measurement:**
 
-  * **Amortized Cost:** Most common for bonds and loans. If issued at a price different from face value (par), the discount or premium is amortized over the liability's life, adjusting the interest expense each period. The carrying value gradually moves towards the face value by maturity -1501].
-  * **Fair Value:** Used for certain liabilities like derivatives and those held for trading (e.g., short positions) -1503].
+  * **Amortized Cost:** Most common for bonds and loans. If issued at a price different from face value (par), the discount or premium is amortized over the liability's life, adjusting the interest expense each period. The carrying value gradually moves towards the face value by maturity.
+  * **Fair Value:** Used for certain liabilities like derivatives and those held for trading (e.g., short positions).
 
 **Deferred Tax Liabilities (DTLs):** 📝
 
   * Arise from **temporary differences** between accounting rules and tax rules.
-  * Specifically, a DTL is created when **Income Tax Expense** (on the income statement) is *greater than* **Taxes Payable** (amount owed per tax return) in the current period, and this difference is expected to reverse later, 1504].
+  * Specifically, a DTL is created when **Income Tax Expense** (on the income statement) is *greater than* **Taxes Payable** (amount owed per tax return) in the current period, and this difference is expected to reverse later.
   * **Common Causes:**
       * Using accelerated depreciation for tax purposes but straight-line for financial reporting (more depreciation expense on tax return initially = lower taxable income = lower taxes payable now, but higher tax expense on IS anticipating higher future taxes payable).
       * Recognizing revenue on the income statement before it's taxable.
@@ -162,7 +162,7 @@ These are obligations due beyond one year or the operating cycle. Common example
 Analyzing the raw numbers on a balance sheet can be misleading if comparing companies of different sizes.
 
   * **Vertical Common-Size Balance Sheet:** Expresses every item as a **percentage of Total Assets**.
-      * **Purpose:** Eliminates size differences, making it easy to compare a company's balance sheet structure over time (trends) or against competitors (cross-sectional) -1556].
+      * **Purpose:** Eliminates size differences, making it easy to compare a company's balance sheet structure over time (trends) or against competitors (cross-sectional).
       * **Insights:** Reveals reliance on different asset types (e.g., inventory vs. fixed assets) and financing sources (e.g., debt vs. equity).
 
 **Key Balance Sheet Ratios:**
@@ -188,7 +188,7 @@ Measure the ability to meet short-term obligations. Generally, higher is better,
 
 #### **Solvency Ratios (Long-Term Stability & Leverage)**
 
-Measure the ability to meet long-term obligations and the extent of financial leverage -1598]. Higher leverage implies higher risk.
+Measure the ability to meet long-term obligations and the extent of financial leverage. Higher leverage implies higher risk.
 
   * **Debt Ratios:** (Note: "Total Debt" typically refers to interest-bearing liabilities, but definitions can vary )
       * **Long-Term Debt-to-Equity:**
@@ -200,7 +200,7 @@ Measure the ability to meet long-term obligations and the extent of financial le
   * **Financial Leverage Ratio:** Measures how much assets are financed by equity.
     $$\text{Financial Leverage} = \frac{\text{Total Assets}}{\text{Total Equity}}$$
 
-**Limitations of Ratio Analysis:** Ratios need context (comparison to history, industry peers), are affected by different accounting choices, can be hard to interpret for diversified firms, and the balance sheet is just a snapshot at one point in time -1619].
+**Limitations of Ratio Analysis:** Ratios need context (comparison to history, industry peers), are affected by different accounting choices, can be hard to interpret for diversified firms, and the balance sheet is just a snapshot at one point in time.
 
 -----
 
