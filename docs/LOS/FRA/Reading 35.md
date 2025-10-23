@@ -94,20 +94,20 @@ The relationship is:
 
 #### **Example 🧮**
 
-Let's revisit the machine from Part 1 ($30,000 cost).
+Let's revisit the machine from Part 1 (`$30,000` cost).
 * **End of Year 1:**
-    * Accounting Depreciation = $5,000 ->$ Carrying Value = $25,000
-    * Tax Depreciation = $10,000 ->$ Tax Base = $20,000
-    * Carrying Value ($25k) > Tax Base ($20k). The difference is $5,000.
-    * Result: DTL = $5,000 \times \text{Tax Rate}$. If Tax Rate = 30%, DTL = $1,500.
+    * Accounting Depreciation = `$5,000` -> Carrying Value = `$25,000`
+    * Tax Depreciation = `$10,000` -> Tax Base = `$20,000`
+    * Carrying Value (`$25k`) > Tax Base (`$20k`). The difference is `$5,000`.
+    * Result: DTL = $5,000 \times \text{Tax Rate}$. If Tax Rate = 30%, DTL = `$1,500`.
 
 Let's look at the warranty liability from the PDF example.
 * **End of Year 1:**
-    * Warranty Provision = $5,000; Actual Expenditure = $2,000 ->$ Carrying Value = $3,000.
-    * Tax rules don't allow deduction until paid -> Future deductible amount = $3,000.
-    * Tax Base = Carrying Value - Future Deductible Amount = $3,000 - $3,000 = $0.
-    * Carrying Value ($3k) > Tax Base ($0). The difference is $3,000.
-    * Result: DTA = $3,000 \times \text{Tax Rate}$. If Tax Rate = 30%, DTA = $900.
+    * Warranty Provision = `$5,000`; Actual Expenditure = `$2,000` -> Carrying Value = `$3,000`.
+    * Tax rules don't allow deduction until paid -> Future deductible amount = `$3,000`.
+    * Tax Base = Carrying Value - Future Deductible Amount = `$3,000` - `$3,000` = `$0`.
+    * Carrying Value (`$3k`) > Tax Base (`$0`). The difference is `$3,000`.
+    * Result: DTA = $3,000 \times \text{Tax Rate}$. If Tax Rate = 30%, DTA = `$900`.
 
 #### **2.1 Realizability of Deferred Tax Assets: Will We Get the Benefit? 🤔**
 

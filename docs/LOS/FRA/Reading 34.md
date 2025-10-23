@@ -102,19 +102,19 @@ This is where IFRS and U.S. GAAP have some key differences.
 
 #### **Example 🧮**
 
-Affordable Co. leases a machine for 4 years (its entire useful life) with $10,000 annual payments. The implicit interest rate is 5%. PV of payments = $35,460.
+Affordable Co. leases a machine for 4 years (its entire useful life) with `$10,000` annual payments. The implicit interest rate is 5%. PV of payments = `$35,460`.
 
 **IFRS / U.S. GAAP Finance Lease:**
 
-  * **Year 1 IS:** Interest = $1,773 ($35,460 \* 5%); Amortization = $8,865 ($35,460 / 4). Total Exp = $10,638.
-  * **Year 1 CF:** Interest ($1,773) -> CFO/CFF (IFRS) or CFO (US GAAP); Principal ($10,000 - $1,773 = $8,227) -> CFF.
-  * **Year 1 BS:** ROU Asset = $26,595 ($35,460 - $8,865); Lease Liability = $27,233 ($35,460 - $8,227).
+  * **Year 1 IS:** Interest = `$1,773` (`$35,460` \* 5%); Amortization = `$8,865` (`$35,460` / 4). Total Exp = `$10,638`.
+  * **Year 1 CF:** Interest (`$1,773`) -> CFO/CFF (IFRS) or CFO (US GAAP); Principal (`$10,000` - `$1,773` = `$8,227`) -> CFF.
+  * **Year 1 BS:** ROU Asset = `$26,595` (`$35,460` - `$8,865`); Lease Liability = `$27,233` (`$35,460` - `$8,227`).
 
 **U.S. GAAP Operating Lease:**
 
-  * **Year 1 IS:** Single Lease Expense = $10,000.
-  * **Year 1 CF:** Entire Payment ($10,000) -> CFO.
-  * **Year 1 BS:** ROU Asset = $27,233; Lease Liability = $27,233. (ROU Asset = Lease Liability throughout the lease).
+  * **Year 1 IS:** Single Lease Expense = `$10,000`.
+  * **Year 1 CF:** Entire Payment (`$10,000`) -> CFO.
+  * **Year 1 BS:** ROU Asset = `$27,233`; Lease Liability = `$27,233`. (ROU Asset = Lease Liability throughout the lease).
 
 #### **1.5 Lessor Accounting: How the Owner Reports It**
 

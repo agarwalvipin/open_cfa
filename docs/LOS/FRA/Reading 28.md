@@ -224,8 +224,8 @@ $$\text{Diluted EPS} = \frac{(\text{Net Income} - \text{Preferred Divs}) + \text
   * Calculate the "per share impact" for each potentially dilutive security:
       * Convertible Preferred: Preferred Dividend / New Shares 
       * Convertible Debt: After-Tax Interest / New Shares 
-      * Options/Warrants: Numerator impact is $0.
-  * Compare each security's per-share impact to Basic EPS. If the impact < Basic EPS, it's dilutive. (For options, the impact is $0, so they are dilutive if Exercise Price < Average Market Price).
+      * Options/Warrants: Numerator impact is `$0`.
+  * Compare each security's per-share impact to Basic EPS. If the impact < Basic EPS, it's dilutive. (For options, the impact is `$0`, so they are dilutive if Exercise Price < Average Market Price).
   * If multiple dilutive securities exist, they are ranked and included sequentially from most dilutive (lowest per-share impact) to least, checking if EPS remains diluted at each step. (Detailed ranking is less common at Level 1).
 
 > [\!TIP]
@@ -239,7 +239,7 @@ Comparing the raw income statements of two companies of different sizes (like co
 
   * **Vertical Common-Size Income Statement:** Expresses each line item as a **percentage of total revenue**.
       * This eliminates size effects, allowing for easy comparison of cost structure and profitability over time (**time-series analysis**) or between companies (**cross-sectional analysis**).
-      * *Example:* Company A has COGS of $70M on $100M revenue (70%). Company B has COGS of $15M on $50M revenue (30%). Common-size shows Company B has a much better gross margin structure, even though its absolute profit is lower.
+      * *Example:* Company A has COGS of `$70M` on `$100M` revenue (70%). Company B has COGS of `$15M` on `$50M` revenue (30%). Common-size shows Company B has a much better gross margin structure, even though its absolute profit is lower.
       * *Exception:* Income tax expense is often analyzed as a percentage of *pretax income* (the **effective tax rate**) rather than revenue.
 
 **Key Income Statement Ratios (Margins):**

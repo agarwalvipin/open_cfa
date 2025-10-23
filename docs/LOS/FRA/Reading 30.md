@@ -108,15 +108,15 @@ Let's use the example data from the reading:
 
 | Item                     | Calculation                                                | Cash Flow   |
 | :----------------------- | :--------------------------------------------------------- | :---------- |
-| **Cash from Customers** | Sales ($104k) - Incr. in AR ($1k) + Incr. in Unearned Rev ($4k) | $107,000   |
-| **Cash paid to Suppliers** | COGS (-$40k) + Decr. in Inventory ($2k) + Incr. in AP ($4k) | ($34,000)  |
-| **Wages Paid** | Wage Expense (-$5k) - Decr. in Wages Payable ($3.5k)       | ($8,500)   |
-| **Interest Paid** | Interest Expense (-$1k) + Incr. in Interest Payable ($0.5k)  | ($500)     |
-| **Taxes Paid** | Tax Expense (-$20k) + Incr. in Taxes Payable ($1k) + Incr. in DTL ($5k) | ($14,000)  |
-| **Depreciation** | *Ignored (Noncash)* | $0         |
-| **Gain on Land Sale** | *Ignored (Investing Activity related)* | $0         |
-| **Loss on PP\&E Disposal**| *Ignored (Investing Activity related)* | $0         |
-| **Total CFO** | **Sum of above** | **$50,000\*\* |
+| **Cash from Customers** | Sales (`$104k`) - Incr. in AR (`$1k`) + Incr. in Unearned Rev (`$4k`) | `$107,000`   |
+| **Cash paid to Suppliers** | COGS (`-$40k`) + Decr. in Inventory (`$2k`) + Incr. in AP (`$4k`) | `($34,000)`  |
+| **Wages Paid** | Wage Expense (`-$5k`) - Decr. in Wages Payable (`$3.5k`)       | `($8,500)`   |
+| **Interest Paid** | Interest Expense (`-$1k`) + Incr. in Interest Payable (`$0.5k`)  | `($500)`     |
+| **Taxes Paid** | Tax Expense (`-$20k`) + Incr. in Taxes Payable (`$1k`) + Incr. in DTL (`$5k`) | `($14,000)`  |
+| **Depreciation** | *Ignored (Noncash)* | `$0`         |
+| **Gain on Land Sale** | *Ignored (Investing Activity related)* | `$0`         |
+| **Loss on PP\&E Disposal**| *Ignored (Investing Activity related)* | `$0`         |
+| **Total CFO** | **Sum of above** | **`$50,000`** |
 
 *Note: DTL = Deferred Tax Liability. Changes in deferred taxes adjust tax expense to get cash taxes paid.*
 
@@ -149,25 +149,25 @@ Using the same data:
 
 | Item                           | Adjustment   | Amount      |
 | :----------------------------- | :----------- | :---------- |
-| **Net Income** | Starting Pt  | $39,000    |
+| **Net Income** | Starting Pt  | `$39,000`    |
 | **Noncash Adjustments:** |              |             |
-| Depreciation                   | + Add Back   | $7,000     |
-| Increase in DTL                | + Add Back   | $5,000     |
-| Loss on PP\&E Disposal          | + Add Back   | $2,000     |
-| Gain on Land Sale              | - Subtract   | ($10,000)  |
-| *Subtotal after NCC* |              | *$43,000* |
+| Depreciation                   | + Add Back   | `$7,000`     |
+| Increase in DTL                | + Add Back   | `$5,000`     |
+| Loss on PP\&E Disposal          | + Add Back   | `$2,000`     |
+| Gain on Land Sale              | - Subtract   | `($10,000)`  |
+| *Subtotal after NCC* |              | *`$43,000`* |
 | **Working Capital Adjustments:** |              |             |
-| Increase in Accounts Receivable| - Subtract   | ($1,000)   |
-| Decrease in Inventory          | + Add        | $2,000     |
-| Increase in Accounts Payable   | + Add        | $4,000     |
-| Decrease in Wages Payable      | - Subtract   | ($3,500)   |
-| Increase in Interest Payable   | + Add        | $500       |
-| Increase in Unearned Revenue   | + Add        | $4,000     |
-| Increase in Taxes Payable      | + Add        | $1,000     |
-| *Subtotal WC Adjustments* |              | *$7,000* |
-| **Total CFO** | **Sum** | **$50,000** |
+| Increase in Accounts Receivable| - Subtract   | `($1,000)`   |
+| Decrease in Inventory          | + Add        | `$2,000`     |
+| Increase in Accounts Payable   | + Add        | `$4,000`     |
+| Decrease in Wages Payable      | - Subtract   | `($3,500)`   |
+| Increase in Interest Payable   | + Add        | `$500`       |
+| Increase in Unearned Revenue   | + Add        | `$4,000`     |
+| Increase in Taxes Payable      | + Add        | `$1,000`     |
+| *Subtotal WC Adjustments* |              | *`$7,000`* |
+| **Total CFO** | **Sum** | **`$50,000`** |
 
-*Result is the same $50,000 as the Direct Method\!* ✅
+*Result is the same `$50,000` as the Direct Method\!* ✅
 
 While GAAP/IFRS encourage the Direct Method for its clarity on actual cash movements, the Indirect Method is more common because it directly links Net Income to CFO, highlighting the **quality of earnings**. US GAAP requires companies using the Direct Method to also provide the Indirect Method reconciliation in the footnotes.
 
@@ -188,21 +188,21 @@ Sometimes analysts want the detail of the Direct Method even if the company repo
 Using the same data:
 
 1.  **Aggregate:**
-      * Total Revenues & Gains = $104k (Sales) + $10k (Gain) = $114k
-      * Total Expenses & Losses = $40k (COGS) + $5k (Wages) + $7k (Depr) + $1k (Int) + $2k (Loss) + $20k (Tax) = $75k
-      * *Check:* $114k - $75k = $39k (Net Income) 👍
+      * Total Revenues & Gains = `$104k` (Sales) + `$10k` (Gain) = `$114k`
+      * Total Expenses & Losses = `$40k` (COGS) + `$5k` (Wages) + `$7k` (Depr) + `$1k` (Int) + `$2k` (Loss) + `$20k` (Tax) = `$75k`
+      * *Check:* `$114k` - `$75k` = `$39k` (Net Income) 👍
 2.  **Remove Noncash/Non-Operating & Disaggregate:**
-      * Cash-Based Revenues = $114k - $10k (Gain) = $104k (This is just Sales)
-      * Cash-Based Expenses = $75k - $7k (Depr) - $2k (Loss) - $5k (ΔDTL part of Tax Exp) = $61k
-          * Disaggregate $61k into: COGS ($40k), Wages ($5k), Interest ($1k), Cash Taxes Payable\* ($15k). *Total = $61k.*
-          * \*Cash Taxes Payable = Tax Expense ($20k) - Increase in DTL ($5k) = $15k. We deal with the Taxes Payable *liability* change in the next step.
+      * Cash-Based Revenues = `$114k` - `$10k` (Gain) = `$104k` (This is just Sales)
+      * Cash-Based Expenses = `$75k` - `$7k` (Depr) - `$2k` (Loss) - `$5k` (ΔDTL part of Tax Exp) = `$61k`
+          * Disaggregate `$61k` into: COGS (`$40k`), Wages (`$5k`), Interest (`$1k`), Cash Taxes Payable\* (`$15k`). *Total = `$61k`.*
+          * \*Cash Taxes Payable = Tax Expense (`$20k`) - Increase in DTL (`$5k`) = `$15k`. We deal with the Taxes Payable *liability* change in the next step.
 3.  **Convert to Cash Flows:**
-      * Cash from Customers = $104k (Sales) - $1k (ΔAR) + $4k (ΔUnearned Rev) = $107k
-      * Cash to Suppliers = -$40k (COGS) + $2k (ΔInv) + $4k (ΔAP) = -$34k
-      * Cash Wages Paid = -$5k (Wages Exp) - $3.5k (ΔWages Pay) = -$8.5k
-      * Cash Interest Paid = -$1k (Int Exp) + $0.5k (ΔInt Pay) = -$0.5k
-      * Cash Taxes Paid = -$15k (Cash Taxes Payable from Step 2) + $1k (ΔTaxes Pay) = -$14k
-      * **Total CFO** = $107k - $34k - $8.5k - $0.5k - $14k = **$50k\*\* 🎉
+      * Cash from Customers = `$104k` (Sales) - `$1k` (ΔAR) + `$4k` (ΔUnearned Rev) = `$107k`
+      * Cash to Suppliers = `-$40k` (COGS) + `$2k` (ΔInv) + `$4k` (ΔAP) = `-$34k`
+      * Cash Wages Paid = `-$5k` (Wages Exp) - `$3.5k` (ΔWages Pay) = `-$8.5k`
+      * Cash Interest Paid = `-$1k` (Int Exp) + `$0.5k` (ΔInt Pay) = `-$0.5k`
+      * Cash Taxes Paid = `-$15k` (Cash Taxes Payable from Step 2) + `$1k` (ΔTaxes Pay) = `-$14k`
+      * **Total CFO** = `$107k` - `$34k` - `$8.5k` - `$0.5k` - `$14k` = **`$50k`** 🎉
 
 -----
 
@@ -230,10 +230,10 @@ While the overall structure is similar, IFRS allows more flexibility than US GAA
 > **CFA Exam Tip ✍️:** Memorize this table\! The classification differences for **Interest Paid/Received** and **Dividends Paid/Received** are classic exam questions. Know the US GAAP rule and the IFRS flexibility.
 
 **Example: Tax Allocation under IFRS**
-A company sells land (Investing Activity) for $1M and pays $160k in taxes on the gain.
+A company sells land (Investing Activity) for `$1M` and pays `$160k` in taxes on the gain.
 
-  * **US GAAP:** CFI = +$1M inflow. CFO = -$160k outflow (tax paid).
-  * **IFRS:** Can report CFI = +$840k net inflow (allocating the tax to the investing activity).
+  * **US GAAP:** CFI = +`$1M` inflow. CFO = -`$160k` outflow (tax paid).
+  * **IFRS:** Can report CFI = +`$840k` net inflow (allocating the tax to the investing activity).
 
 -----
 

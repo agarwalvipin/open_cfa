@@ -114,10 +114,10 @@ Changes in price levels affect both revenues and costs.
 
 #### **Example 🧮**
 
-  * Base Year: Sales = 100 units \* $10/unit = $1000. COGS = 100 units \* $4/unit = $400. Gross Profit = $600. Gross Margin = 60%.
-  * Next Year: Input cost rises to $5/unit (+ $1).
-      * **Scenario A (Full Pass-Through):** Price rises to $11/unit. Sales = 100 \* $11 = $1100. COGS = 100 \* $5 = $500. Gross Profit = $600. Gross Margin = $600 / $1100 = **54.5%** (Margin falls).
-      * **Scenario B (Partial Pass-Through & Volume Loss):** Price rises to $10.50. Sales = 95 units \* $10.50 = $997.50. COGS = 95 \* $5 = $475. Gross Profit = $522.50. Gross Margin = $522.50 / $997.50 = **52.4%** (Margin falls more).
+  * Base Year: Sales = 100 units \* `$10`/unit = `$1000`. COGS = 100 units \* `$4`/unit = `$400`. Gross Profit = `$600`. Gross Margin = 60%.
+  * Next Year: Input cost rises to `$5`/unit (+ `$1`).
+      * **Scenario A (Full Pass-Through):** Price rises to `$11`/unit. Sales = 100 \* `$11` = `$1100`. COGS = 100 \* `$5` = `$500`. Gross Profit = `$600`. Gross Margin = `$600` / `$1100` = **54.5%** (Margin falls).
+      * **Scenario B (Partial Pass-Through & Volume Loss):** Price rises to `$10.50`. Sales = 95 units \* `$10.50` = `$997.50`. COGS = 95 \* `$5` = `$475`. Gross Profit = `$522.50`. Gross Margin = `$522.50` / `$997.50` = **52.4%** (Margin falls more).
 
 > [\!TIP]
 > **CFA Exam Tip ✍️:** Focus on the pass-through effect. Can the company raise prices to cover cost increases? How will this affect volume? Understand the difference between gross *profit* (absolute amount) and gross *margin* (percentage) when prices change.

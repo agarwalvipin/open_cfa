@@ -202,12 +202,12 @@ $$\text{ROE} = (\text{Tax Burden}) \times (\text{Interest Burden}) \times (\text
 
 #### **Example: 3-Part DuPont 🧮**
 
-Company Y has: Net Income = $10M, Revenue = $100M, Avg Assets = $50M, Avg Equity = $20M.
+Company Y has: Net Income = `$10M`, Revenue = `$100M`, Avg Assets = `$50M`, Avg Equity = `$20M`.
 
-* ROE = $10M / $20M = 50%
-* Net Profit Margin = $10M / $100M = 10%
-* Total Asset Turnover = $100M / $50M = 2.0x
-* Financial Leverage = $50M / $20M = 2.5x
+* ROE = `$10M` / `$20M` = 50%
+* Net Profit Margin = `$10M` / `$100M` = 10%
+* Total Asset Turnover = `$100M` / `$50M` = 2.0x
+* Financial Leverage = `$50M` / `$20M` = 2.5x
 * DuPont Check: 10% * 2.0 * 2.5 = 50%
 
 #### **Global & Local Context 🌍**
