@@ -44,6 +44,7 @@
     - [Reading 29: Analyzing Balance Sheets](LOS/FRA/Reading%2029.md)
     - [Reading 30: Analyzing Statements of Cash Flows I](LOS/FRA/Reading%2030.md)
     - [Reading 31: Analyzing Statements of Cash Flows II](LOS/FRA/Reading%2031.md)
+    - [Reading 30.1: Analyzing Cash Flow from Operations (CFO)](LOS/FRA/Reading%2030.1.md)
     - [Reading 32: Analysis of Inventories](LOS/FRA/Reading%2032.md)
     - [Reading 33: Analysis of Long-Term Assets](LOS/FRA/Reading%2033.md)
     - [Reading 34: Topics in Long-Term Liabilities and Equity](LOS/FRA/Reading%2034.md)
