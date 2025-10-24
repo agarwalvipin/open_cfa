@@ -218,13 +218,13 @@ An analyst might see inventory turnover dramatically increase. Instead of just a
   * **Inventory Valuation Rule (IFRS; US GAAP FIFO/Avg Cost):** Report at Lower of Cost or NRV.
   * **Inventory Valuation Rule (US GAAP LIFO/Retail):** Report at Lower of Cost or Market.
   * **Inventory (FIFO from LIFO):** 
-    $$\text{Inventory}_{\text{FIFO}} = \text{Inventory}_{\text{LIFO}} + \text{LIFO Reserve}$$
+    $$\text{Inventory}_{FIFO} = \text{Inventory}_{LIFO} + \text{LIFO Reserve}$$
   * **COGS (FIFO from LIFO):** 
-    $$\text{COGS}_{\text{FIFO}} = \text{COGS}_{\text{LIFO}} - (\text{Ending LIFO Reserve} - \text{Beginning LIFO Reserve})$$
+    $$\text{COGS}_{FIFO} = \text{COGS}_{LIFO} - (\text{Ending LIFO Reserve} - \text{Beginning LIFO Reserve})$$
   * **Net Income (FIFO from LIFO):** 
-    $$\text{NI}_{\text{FIFO}} = \text{NI}_{\text{LIFO}} + \Delta \text{LIFO Reserve} \times (1 - \text{Tax Rate})$$
+    $$\text{NI}_{FIFO} = \text{NI}_{LIFO} + \Delta \text{LIFO Reserve} \times (1 - \text{Tax Rate})$$
   * **Retained Earnings (FIFO from LIFO):** 
-    $$\text{RE}_{\text{FIFO}} = \text{RE}_{\text{LIFO}} + \text{Ending LIFO Reserve} \times (1 - \text{Tax Rate})$$
+    $$\text{RE}_{FIFO} = \text{RE}_{LIFO} + \text{Ending LIFO Reserve} \times (1 - \text{Tax Rate})$$
   * **Inventory Turnover:** 
     $$\text{Inv. Turnover} = \frac{\text{COGS}}{\text{Average Inventory}}$$
   * **Days of Inventory on Hand (DOH):** 
