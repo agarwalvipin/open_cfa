@@ -2,7 +2,7 @@
 
 ### 🎯 Introduction
 
-Imagine a company is like a factory. 🏭 **Long-term assets** are the big, important machines inside – the property, plant, and equipment (**PP&E**) that churn out products, plus the invisible but valuable stuff like patents and brand names (**intangible assets**). This reading is your guide to understanding how companies account for these crucial assets, from buying them to using them up (depreciation/amortization), figuring out if they've lost value (**impairment**), and finally getting rid of them (**derecognition**). Mastering this helps you assess how efficiently a company uses its core operational resources\!
+Imagine a company is like a factory. 🏭 **Long-term assets** are the big, important machines inside – the property, plant, and equipment (**PP&E**) that churn out products, plus the invisible but valuable stuff like patents and brand names (**intangible assets**). This reading is your guide to understanding how companies account for these crucial assets, from buying them to using them up (depreciation/amortization), figuring out if they've lost value (**impairment**), and finally getting rid of them (**derecognition**). Mastering this helps you assess how efficiently a company uses its core operational resources!
 
 -----
 
@@ -40,13 +40,13 @@ Imagine a company is like a factory. 🏭 **Long-term assets** are the big, impo
 * **Accounting:**
   * All identifiable intangible assets (patents, brands, customer lists, etc.) of the acquired company are recorded on the *acquirer's* balance sheet at their **fair value** at the acquisition date.
   * Any *excess* purchase price paid over the fair value of the acquired company's *net identifiable assets* (Assets - Liabilities) is recorded as **Goodwill**.
-    
+
     <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
+
     $$\text{Goodwill} = \text{Purchase Price} - \text{Fair Value of Net Identifiable Assets Acquired}$$
-    
+
     </div>
-    
+
   * **Goodwill** is an **unidentifiable intangible asset** with an **indefinite life**. It's not amortized but must be tested for impairment annually.
 
 #### <span style="color: #00838F;">1.4 Global & Local Context 🌍</span>
@@ -91,13 +91,13 @@ An asset is **impaired** if its carrying value (book value) on the balance sheet
     * **Value in Use:** Present value (PV) of expected future cash flows from using the asset + disposal.
     * **Fair Value less Costs to Sell:** What you could sell it for, minus transaction costs.
 * **Impairment Loss:** If Carrying Value > Recoverable Amount, then:
-  
+
   <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
+
   $$\text{Impairment Loss} = \text{Carrying Value} - \text{Recoverable Amount}$$
-  
+
   </div>
-  
+
   The loss is recognized on the **Income Statement** (reduces profit), and the asset's carrying value on the **Balance Sheet** is reduced.
 * **Reversals:** YES! If the recoverable amount increases later, the impairment loss can be reversed (up to the original carrying value before impairment). The reversal increases income. (Reversals NOT allowed for Goodwill).
 
@@ -109,15 +109,15 @@ An asset is **impaired** if its carrying value (book value) on the balance sheet
      * If YES, the asset *is* impaired. Proceed to Step 2.
      * If NO, the asset is *not* impaired. Stop.
   2. **Loss Measurement:** If impaired (failed Step 1), calculate the loss:
-     
-     <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-     
-     $$\text{Impairment Loss} = \text{Carrying Value} - \text{Fair Value}$$
-     
-     </div>
-     
-     (Fair value is the market price or PV of future cash flows if market price unavailable).
-     The loss hits the **Income Statement**, and the asset is written down to **Fair Value** on the **Balance Sheet**.
+
+    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+    $$\text{Impairment Loss} = \text{Carrying Value} - \text{Fair Value}$$
+
+    </div>
+
+    (Fair value is the market price or PV of future cash flows if market price unavailable).
+    The loss hits the **Income Statement**, and the asset is written down to **Fair Value** on the **Balance Sheet**.
 * **Reversals:** NO! Once written down, impairment losses cannot be reversed, even if the value recovers.
 
 ##### <span style="color: #E65100;">2.1.3 U.S. GAAP Impairment (Indefinite-Life Intangibles)</span>
@@ -125,19 +125,19 @@ An asset is **impaired** if its carrying value (book value) on the balance sheet
 * **When to Test:** Annually.
 * **Test:** Similar to Step 2 above (no recoverability test). Compare **Carrying Value** directly to **Fair Value**.
 * **Impairment Loss:** If Carrying Value > Fair Value, then:
-  
+
   <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
+
   $$\text{Impairment Loss} = \text{Carrying Value} - \text{Fair Value}$$
-  
+
   </div>
-  
+
 * **Reversals:** NO!
 
 #### <span style="color: #6A1B9A;">2.2 Financial Statement & Ratio Impact of Impairment</span>
 
-* **Income Statement:** Loss recognized -> Lower Net Income in the impairment year.
-* **Balance Sheet:** Asset carrying value reduced -> Lower Total Assets, Lower Equity (via Retained Earnings).
+* **Income Statement:** Loss recognized → Lower Net Income in the impairment year.
+* **Balance Sheet:** Asset carrying value reduced → Lower Total Assets, Lower Equity (via Retained Earnings).
 * **Cash Flow Statement:** No immediate cash impact (non-cash charge), but future cash flows might be lower if the asset is less productive.
 * **Ratios (Year of Impairment):**
   * **Profitability (ROA, ROE):** Decrease (lower NI, lower Assets/Equity).
@@ -155,13 +155,13 @@ This happens when an asset is sold, abandoned, exchanged, or spun off.
   * Cash received = **Investing Cash Inflow (CFI)**.
   * Asset (carrying value) removed from the balance sheet.
   * **Gain or Loss** recognized on Income Statement:
-    
+
     <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
+
     $$\text{Gain/Loss} = \text{Sale Proceeds} - \text{Carrying Value}$$
-    
+
     </div>
-    
+
 * **Abandonment:**
   * No cash received.
   * Asset (carrying value) removed from the balance sheet.
@@ -200,27 +200,27 @@ The footnotes are where the real details about long-term assets hide. Analysts n
 
 * **Assess Depreciation/Amortization Choices:** Are the methods and useful lives reasonable compared to industry peers? Aggressive choices (long lives, high salvage values) can inflate current profits but lead to problems later.
 * **Estimate Average Age & Remaining Life:** Useful for judging asset efficiency and predicting future capital expenditures.
-  
+
   <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
+
   $$\text{Average Age} \approx \frac{\text{Accumulated Depreciation}}{\text{Annual Depreciation Expense}}$$
-  
+
   $$\text{Average Depreciable Life (Total Useful Life)} \approx \frac{\text{Ending Gross Investment}}{\text{Annual Depreciation Expense}}$$
-  
+
   $$\text{Remaining Useful Life} \approx \frac{\text{Ending Net Investment}}{\text{Annual Depreciation Expense}}$$
-  
+
   </div>
-  
+
   *(Note: These are rough estimates, best for straight-line depreciation).*
 * **Evaluate Capital Expenditures:** Is the company investing enough to maintain its asset base (CapEx relative to depreciation)? Is it investing for growth?
 * **Calculate Fixed Asset Turnover:** Measures efficiency in using fixed assets to generate sales.
-  
+
   <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
+
   $$\text{Fixed Asset Turnover} = \frac{\text{Revenue}}{\text{Average Net Fixed Assets}}$$
-  
+
   </div>
-  
+
 * **Identify Impairment Trends:** Recurring impairments might signal poor investment decisions or deteriorating industry conditions.
 * **Understand Goodwill:** Large or growing goodwill suggests growth through acquisitions. Subsequent impairments indicate potential overpayment or poor integration.
 

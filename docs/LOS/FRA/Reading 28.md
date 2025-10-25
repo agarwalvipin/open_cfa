@@ -1,25 +1,27 @@
-Okay, CFA Samurai is ready to forge a sharp summary for Reading 28\! ⚔️
-
 ## Reading 28: Analyzing Income Statements 🚀
 
 ### 🎯 Introduction
 
-Think of the **Income Statement** as the company's report card for a specific period 📝. It tells us how much **revenue** (sales) the company earned and what **expenses** it incurred to generate that revenue, ultimately revealing the **net income** (profit or loss). But just like a report card, the grades (numbers) don't tell the whole story. How did the company *really* earn that revenue? Were the expenses recognized properly? Were there any unusual events? This reading helps us dissect the income statement to understand the true quality and sustainability of a company's earnings. Let's sharpen our analytical skills\!
+Think of the **Income Statement** as the company's report card for a specific period 📝. It tells us how much **revenue** (sales) the company earned and what **expenses** it incurred to generate that revenue, ultimately revealing the **net income** (profit or loss). But just like a report card, the grades (numbers) don't tell the whole story. How did the company *really* earn that revenue? Were the expenses recognized properly? Were there any unusual events? This reading helps us dissect the income statement to understand the true quality and sustainability of a company's earnings. Let's sharpen our analytical skills!
 
 -----
 
-### Part 1: Show Me the Money\! Revenue Recognition Principles 💰 (LOS 28.a)
-
-When does a company actually get to record a sale? It's not always when the cash changes hands\! **Revenue recognition** follows specific rules to ensure companies report earnings when they're truly *earned*.
+### <span style="color: #1565C0;">Part 1: Show Me the Money! Revenue Recognition Principles 💰 (LOS 28.a)</span>
 
 IFRS and U.S. GAAP have converged on a principles-based, five-step process:
 
-> **💡 MNEMONIC: "I Promise To Always Recognize"**
-> - **I**dentify the Contract
-> - **P**erformance obligations (identify)
-> - **T**ransaction price (determine)
-> - **A**llocate price to obligations
-> - **R**ecognize revenue when obligation satisfied
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 MNEMONIC: "I Promise To Always Recognize"**
+  - **I**dentify the Contract
+  - **P**erformance obligations (identify)
+  - **T**ransaction price (determine)
+  - **A**llocate price to obligations
+  - **R**ecognize revenue when obligation satisfied
+
+</div>
+</div>
 
 ```mermaid
 graph TD
@@ -29,7 +31,7 @@ graph TD
     D --> E["5. Recognize Revenue When Obligation Satisfied ✅<br/>Record revenue as control of good/service transfers."]
 ```
 
-**Key Concepts:**
+#### <span style="color: #6A1B9A;">1.1 Key Concepts</span>
 
   * **Accrual Accounting:** Revenue is recognized when *earned*, not necessarily when cash is received.
   * **Contract:** An agreement defining rights and obligations.
@@ -37,58 +39,75 @@ graph TD
   * **Transaction Price:** The amount expected in exchange for the goods/services, which can be fixed or variable.
   * **Control Transfer:** Revenue is recognized when the customer gains control (e.g., physical possession, legal title, risks/rewards of ownership).
 
-#### **Specific Applications 🌍**
+#### <span style="color: #00838F;">1.2 Global & Local Context 🌍</span>
 
   * **Long-Term Contracts (e.g., Construction):** Revenue is recognized over time based on progress towards completion (like % of costs incurred or milestones achieved).
-      * *Global Example:* A company like Bechtel building a massive infrastructure project recognizes revenue gradually as construction progresses.
-      * *Indian Example:* L\&T building a metro rail line would recognize revenue based on the percentage of the project completed each year.
+    * *Global Example:* A company like Bechtel building a massive infrastructure project recognizes revenue gradually as construction progresses.
+    * *Indian Example:* L&T building a metro rail line would recognize revenue based on the percentage of the project completed each year.
   * **Acting as Agent vs. Principal:**
-      * **Principal:** Recognizes the *gross* amount of the sale as revenue and the cost of goods as an expense (e.g., Amazon selling its own Echo device).
-      * **Agent:** Recognizes only the *net* commission received as revenue (e.g., a travel agent booking a flight). The gross profit margin calculation differs significantly\!
+    * **Principal:** Recognizes the *gross* amount of the sale as revenue and the cost of goods as an expense (e.g., Amazon selling its own Echo device).
+    * **Agent:** Recognizes only the *net* commission received as revenue (e.g., a travel agent booking a flight). The gross profit margin calculation differs significantly!
   * **Franchising:** Fees for initial rights are often deferred and recognized over the contract life; ongoing royalty fees (like % of sales) are recognized as earned.
-      * *Example:* McDonald's recognizes initial franchise fees over the franchise term and ongoing royalties from its franchisees each period.
+    * *Example:* McDonald's recognizes initial franchise fees over the franchise term and ongoing royalties from its franchisees each period.
   * **Software Licenses:**
-      * *Right to Use (Sold "as is"):* Revenue recognized upfront. Support/updates are separate obligations recognized over time.
-      * *Right to Access (Supplier updates/Cloud):* Revenue recognized over the contract life.
+    * *Right to Use (Sold "as is"):* Revenue recognized upfront. Support/updates are separate obligations recognized over time.
+    * *Right to Access (Supplier updates/Cloud):* Revenue recognized over the contract life.
   * **Bill-and-Hold Arrangements:** Customer is billed but the seller retains possession. Revenue *can* be recognized before delivery *only* if strict criteria are met (customer requested it, goods identified & ready, seller cannot redirect). This area carries high risk for manipulation ⚠️.
 
-#### **Required Disclosures 📢**
+#### <span style="color: #6A1B9A;">1.3 Required Disclosures 📢</span>
 
-Companies must disclose details about their contracts, performance obligations, transaction prices allocated, and significant judgments used in revenue recognition. Analysts should scrutinize these notes\!
+Companies must disclose details about their contracts, performance obligations, transaction prices allocated, and significant judgments used in revenue recognition. Analysts should scrutinize these notes!
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Understand the 5-step framework. Be able to differentiate between agent and principal reporting – look at who bears inventory risk and credit risk. For long-term contracts, know that revenue recognition aligns with the progress made.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Understand the 5-step framework. Be able to differentiate between agent and principal reporting – look at who bears inventory risk and credit risk. For long-term contracts, know that revenue recognition aligns with the progress made.
+
+</div>
+</div>
 
 -----
 
-### Part 2: Matching Expenses with Revenues 🤝 (LOS 28.b)
+### <span style="color: #1565C0;">Part 2: Matching Expenses with Revenues 🤝 (LOS 28.b)</span>
 
 Just like revenue, expenses aren't always recorded when cash is paid. The **matching principle** is key: expenses incurred to generate revenue should be recognized in the *same period* as that revenue.
 
-**How Expenses are Recognized:**
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-> **💡 MNEMONIC: "DPC" (Direct-Period-Capitalize)**
-> - **D**irect Matching: Match costs to revenue (COGS, Warranty)
-> - **P**eriod Costs: Expense when incurred (Rent, Admin salaries)
-> - **C**apitalize: Spread over time via depreciation/amortization (PP&E)
+**💡 MNEMONIC: "DPC" (Direct-Period-Capitalize)**
+  - **D**irect Matching: Match costs to revenue (COGS, Warranty)
+  - **P**eriod Costs: Expense when incurred (Rent, Admin salaries)
+  - **C**apitalize: Spread over time via depreciation/amortization (PP&E)
 
-1.  **Direct Matching (Product Costs):** Costs directly tied to the revenue are expensed when the revenue is recognized.
-      * *Example:* The **Cost of Goods Sold (COGS)** for inventory is expensed when the inventory is sold, not when it was purchased. Estimated warranty costs are also expensed at the time of sale.
-2.  **Expensing in Period Incurred (Period Costs):** Costs not directly linked to specific revenues are expensed in the period they occur.
-      * *Example:* Administrative salaries, rent expense.
-3.  **Capitalization (Systematic Allocation):** For long-lived assets (like machinery or buildings), the cost is initially recorded as an **asset** on the balance sheet (**capitalized**) and then spread systematically as **depreciation** (tangible assets) or **amortization** (intangible assets) expense over the asset's useful life.
+</div>
+</div>
 
-**Capitalize vs. Expense Decision:**
+#### <span style="color: #6A1B9A;">2.1 Expense Recognition Methods</span>
+
+  * **Direct Matching (Product Costs):** Costs directly tied to the revenue are expensed when the revenue is recognized.
+    * *Example:* The **Cost of Goods Sold (COGS)** for inventory is expensed when the inventory is sold, not when it was purchased. Estimated warranty costs are also expensed at the time of sale.
+  * **Expensing in Period Incurred (Period Costs):** Costs not directly linked to specific revenues are expensed in the period they occur.
+    * *Example:* Administrative salaries, rent expense.
+  * **Capitalization (Systematic Allocation):** For long-lived assets (like machinery or buildings), the cost is initially recorded as an **asset** on the balance sheet (**capitalized**) and then spread systematically as **depreciation** (tangible assets) or **amortization** (intangible assets) expense over the asset's useful life.
+
+#### <span style="color: #6A1B9A;">2.2 Capitalize vs. Expense Decision</span>
 
   * **Capitalize:** Expenditures providing *future* economic benefits over multiple periods (e.g., buying a new machine, major improvements). Capitalizing is generally seen as less conservative initially.
-  * **Expense:** Expenditures providing benefits only in the *current* period or where future benefits are uncertain (e.g., routine maintenance, training costs, most R\&D under U.S. GAAP). Expensing is generally more conservative initially.
+  * **Expense:** Expenditures providing benefits only in the *current* period or where future benefits are uncertain (e.g., routine maintenance, training costs, most R&D under U.S. GAAP). Expensing is generally more conservative initially.
 
-#### **Impact of Capitalizing vs. Expensing ⚖️**
+#### <span style="color: #E65100;">2.3 Impact of Capitalizing vs. Expensing ⚖️</span>
 
-> **💡 MNEMONIC: "CAP is HIGH early, LOW later"**
-> - **Capitalizing** = **HIGH** early: Assets, Equity, Net Income (Year 1), CFO, ROA/ROE
-> - **Capitalizing** = **LOW** later: Net Income (Years 2-4), Variability, Debt ratios
-> - *Remember:* Total Net Income & Total Cash Flow are SAME over asset life!
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 MNEMONIC: "CAP is HIGH early, LOW later"**
+  - **Capitalizing** = **HIGH** early: Assets, Equity, Net Income (Year 1), CFO, ROA/ROE
+  - **Capitalizing** = **LOW** later: Net Income (Years 2-4), Variability, Debt ratios
+  - *Remember:* Total Net Income & Total Cash Flow are SAME over asset life!
+
+</div>
+</div>
 
 Let's compare buying a £12,000 machine with a 4-year life.
 
@@ -108,94 +127,103 @@ Let's compare buying a £12,000 machine with a 4-year life.
 
 *(Note: Total Net Income and Total Cash Flow over the asset's entire life are the same under both methods, assuming consistent tax treatment)*
 
-#### **Specific Expense Areas 🧐**
+#### <span style="color: #00838F;">2.4 Specific Expense Areas 🧐</span>
 
   * **Capitalized Interest:** Interest costs incurred during the construction of an asset (for own use or sometimes resale) are added to the asset's cost, not expensed immediately. This interest then gets expensed over time via depreciation. It also shifts the cash outflow from Operating (CFO) to Investing (CFI). Analysts should add back capitalized interest (and related depreciation) when calculating coverage ratios.
-  * **Research & Development (R\&D):**
-      * *U.S. GAAP:* Generally expensed as incurred  (Exception: certain software development costs after technological feasibility is established ).
-      * *IFRS:* Research costs are expensed. Development costs *can be capitalized* if criteria (technical feasibility, intent/ability to complete & sell/use, future benefits probable) are met.
-      * *Impact:* Capitalizing R\&D (under IFRS) leads to higher assets, higher initial net income, and lower CFO compared to expensing (under U.S. GAAP).
+  * **Research & Development (R&D):**
+    * *U.S. GAAP:* Generally expensed as incurred  (Exception: certain software development costs after technological feasibility is established ).
+    * *IFRS:* Research costs are expensed. Development costs *can be capitalized* if criteria (technical feasibility, intent/ability to complete & sell/use, future benefits probable) are met.
+    * *Impact:* Capitalizing R&D (under IFRS) leads to higher assets, higher initial net income, and lower CFO compared to expensing (under U.S. GAAP).
   * **Bad Debt & Warranty Expenses:** The matching principle requires firms to *estimate* and expense potential bad debts (from credit sales) and future warranty costs in the period the related revenue is recognized.
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Capitalizing results in higher initial profits, higher assets, higher equity, higher CFO, and lower CFI compared to expensing. However, profits will be lower in subsequent years due to depreciation/amortization. Know the IFRS vs. U.S. GAAP difference for R\&D costs – IFRS allows capitalization of development costs, U.S. GAAP generally expenses both.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Capitalizing results in higher initial profits, higher assets, higher equity, higher CFO, and lower CFI compared to expensing. However, profits will be lower in subsequent years due to depreciation/amortization. Know the IFRS vs. U.S. GAAP difference for R&D costs – IFRS allows capitalization of development costs, U.S. GAAP generally expenses both.
+
+</div>
+</div>
 
 -----
 
-### Part 3: One-Off Events & Accounting Changes 📊➡️📉 (LOS 28.c)
+### <span style="color: #1565C0;">Part 3: One-Off Events & Accounting Changes 📊➡️📉 (LOS 28.c)</span>
 
-#### **3.1 Nonrecurring Items and Discontinued Operations**
+#### <span style="color: #6A1B9A;">3.1 Nonrecurring Items and Discontinued Operations</span>
 
-> **💡 MNEMONIC: "RPP" for Accounting Changes Application**
-> - **R**etrospective: Policy changes & Prior-period Errors (restate past)
-> - **P**rospective: Estimate changes (only future affected)
-> - Remember: **R** = **R**estate, **P** = **P**roceed forward only
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-Not everything on the income statement reflects normal, repeatable business operations. Analysts need to identify and handle nonrecurring items and accounting changes appropriately.
+**💡 MNEMONIC: "RPP" for Accounting Changes Application**
+  - **R**etrospective: Policy changes & Prior-period Errors (restate past)
+  - **P**rospective: Estimate changes (only future affected)
+  - Remember: **R** = **R**estate, **P** = **P**roceed forward only
+
+</div>
+</div>
 
   * **Unusual or Infrequent Items:** Events that are either unusual in nature *or* infrequent in occurrence, and material.
-
-      * *Examples:* Gains/losses from selling non-operating assets, impairments, write-offs, restructuring costs.
-      * *Reporting:* Included in **income from continuing operations**, reported **before tax**.
-      * *Analysis:* Assess if they are truly "one-off" or recurring in disguise. A company with "unusual" losses every year might have underlying issues.
-
+    * *Examples:* Gains/losses from selling non-operating assets, impairments, write-offs, restructuring costs.
+    * *Reporting:* Included in **income from continuing operations**, reported **before tax**.
+    * *Analysis:* Assess if they are truly "one-off" or recurring in disguise. A company with "unusual" losses every year might have underlying issues.
   * **Discontinued Operations:** A component of the business that management has decided to dispose of (or has already disposed of). Must be physically and operationally distinct.
+    * *Reporting:* Income/loss from the component (including gain/loss on disposal) is reported **separately**, **net of tax**, *after* income from continuing operations. Prior-period statements are restated.
+    * *Analysis:* Exclude from forecasts of future *continuing* earnings, but the disposal itself might provide cash flow insights.
 
-      * *Reporting:* Income/loss from the component (including gain/loss on disposal) is reported **separately**, **net of tax**, *after* income from continuing operations. Prior-period statements are restated.
-      * *Analysis:* Exclude from forecasts of future *continuing* earnings, but the disposal itself might provide cash flow insights.
-
-#### **3.2 Accounting Changes and Error Corrections**
+#### <span style="color: #6A1B9A;">3.2 Accounting Changes and Error Corrections</span>
 
   * **Changes in Accounting Policies:** Switching from one acceptable method to another (e.g., changing inventory method from weighted average to FIFO).
-
-      * *Application:* Requires **retrospective application** – restate prior period statements as if the new policy had always been used. Enhances comparability.
-      * *Exception:* Sometimes **modified retrospective** application is allowed (adjust beginning balances, no full restatement).
-
+    * *Application:* Requires **retrospective application** – restate prior period statements as if the new policy had always been used. Enhances comparability.
+    * *Exception:* Sometimes **modified retrospective** application is allowed (adjust beginning balances, no full restatement).
   * **Changes in Accounting Estimates:** Revising estimates based on new information (e.g., changing an asset's useful life or salvage value).
-
-      * *Application:* Applied **prospectively** – only affects current and future periods, no restatement of past periods.
-      * *Analysis:* Understand the reason for the change. Does it reflect genuine changes or earnings management? Usually no cash flow impact.
-
+    * *Application:* Applied **prospectively** – only affects current and future periods, no restatement of past periods.
+    * *Analysis:* Understand the reason for the change. Does it reflect genuine changes or earnings management? Usually no cash flow impact.
   * **Correction of Prior-Period Errors:** Fixing mistakes made in previous financial statements.
-
-      * *Application:* Requires **retrospective application** – restate prior period statements and disclose the nature/impact of the error.
-      * *Analysis:* May indicate weaknesses in internal controls. Usually no cash flow impact.
-
+    * *Application:* Requires **retrospective application** – restate prior period statements and disclose the nature/impact of the error.
+    * *Analysis:* May indicate weaknesses in internal controls. Usually no cash flow impact.
   * **Changes in Scope / Exchange Rates:** Acquisitions/divestitures significantly impact comparability. Fluctuating exchange rates affect reported figures for companies with international operations. While not explicitly "accounting changes," analysts must be aware of their impact.
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Know where items are reported: Unusual/Infrequent = Pre-tax, within Continuing Operations. Discontinued Ops = Net of tax, *below* Continuing Operations. Understand retrospective (policy changes, errors) vs. prospective (estimate changes) application. Discontinued Ops should be excluded from future earnings forecasts.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Know where items are reported: Unusual/Infrequent = Pre-tax, within Continuing Operations. Discontinued Ops = Net of tax, *below* Continuing Operations. Understand retrospective (policy changes, errors) vs. prospective (estimate changes) application. Discontinued Ops should be excluded from future earnings forecasts.
+
+</div>
+</div>
 
 -----
 
-### Part 4: Slicing the Pie - Earnings Per Share (EPS) 🍕 (LOS 28.d)
+### <span style="color: #1565C0;">Part 4: Slicing the Pie - Earnings Per Share (EPS) 🍕 (LOS 28.d)</span>
 
 **Earnings Per Share (EPS)** is a widely used measure of profitability for companies with publicly traded common stock. It shows how much net income is attributable to each share of common stock.
 
-**Capital Structure:**
+#### <span style="color: #6A1B9A;">4.1 Capital Structure</span>
 
   * **Simple Capital Structure:** Contains *no* potentially dilutive securities (like options, warrants, convertible bonds/preferred stock). Only reports **Basic EPS**.
   * **Complex Capital Structure:** Contains potentially dilutive securities. Must report *both* **Basic EPS** and **Diluted EPS**.
 
-#### **Basic EPS Calculation**
+#### <span style="color: #6A1B9A;">4.2 Basic EPS Calculation</span>
 
 Shows earnings available to common shareholders on shares currently outstanding.
 
+<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
 $$\text{Basic EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Number of Common Shares Outstanding}}$$
+
+</div>
 
   * **Numerator:** Subtract preferred dividends (because EPS is for *common* shareholders). Common dividends are *not* subtracted.
   * **Denominator (Weighted Average Shares):** Accounts for changes in the number of shares outstanding during the year (e.g., due to share issuance or buybacks).
-      * Shares are weighted by the portion of the year they were outstanding.
-      * **Stock Splits & Stock Dividends:** These increase the number of shares but don't change a shareholder's proportional ownership. They are applied *retroactively* to the beginning of the period and to all prior periods presented, adjusting the weighted average share count.
+    * Shares are weighted by the portion of the year they were outstanding.
+    * **Stock Splits & Stock Dividends:** These increase the number of shares but don't change a shareholder's proportional ownership. They are applied *retroactively* to the beginning of the period and to all prior periods presented, adjusting the weighted average share count.
 
 *Example: Weighted Average Shares*
 10,000 shares outstanding Jan 1. Issued 4,000 on Apr 1 (9 months outstanding). 10% stock dividend on Jul 1. Repurchased 3,000 on Sep 1 (4 months *not* outstanding).
-Jan 1 shares: $10,000 \times 1.10 \times (12/12) = 11,000$ 
-Apr 1 shares: $4,000 \times 1.10 \times (9/12) = 3,300$ 
-Sep 1 repurchase: $-3,000 \times (4/12) = -1,000$ (No 1.10 factor as it's after dividend) 
-Weighted Avg Shares = $11,000 + 3,300 - 1,000 = 13,300$ 
+Jan 1 shares: $10,000 \times 1.10 \times (12/12) = 11,000$  
+Apr 1 shares: $4,000 \times 1.10 \times (9/12) = 3,300$  
+Sep 1 repurchase: $-3,000 \times (4/12) = -1,000$ (No 1.10 factor as it's after dividend)  
+Weighted Avg Shares = $11,000 + 3,300 - 1,000 = 13,300$  
 
-#### **Diluted EPS Calculation**
+#### <span style="color: #6A1B9A;">4.3 Diluted EPS Calculation</span>
 
 Shows the "worst-case" EPS if all dilutive securities were exercised or converted. **Diluted EPS ≤ Basic EPS**.
 
@@ -204,92 +232,164 @@ Shows the "worst-case" EPS if all dilutive securities were exercised or converte
 
 **Adjustments for Diluted EPS (If-Converted Method):**
 
-$$\text{Diluted EPS} = \frac{(\text{Net Income} - \text{Preferred Divs}) + \text{Adjustments for Dilutive Securities}}{\text{Weighted Avg Shares} + \text{New Shares from Dilutive Securities}}$$
+<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-1.  **Numerator Adjustments:**
+$$\text{Diluted EPS} = \frac{(\text{Net Income} - \text{Preferred Dividends}) + \text{Convertible Preferred Dividends} + (\text{Convertible Debt Interest})(1 - t)}{(\text{Weighted Average Shares}) + (\text{Shares from Conversion of Conv. Pfd Shares}) + (\text{Shares from Conversion of Conv. Debt}) + (\text{Shares Issuable from Stock Options})}$$
+
+</div>
+
+  1.  **Numerator Adjustments:**
       * **Convertible Preferred Stock:** Add back the preferred dividends (since they wouldn't be paid if converted).
       * **Convertible Debt:** Add back the after-tax interest expense (Interest Expense × (1 - Tax Rate)). Interest wouldn't be paid, but the tax shield from interest deduction is also lost.
       * **Options/Warrants:** No numerator adjustment.
-2.  **Denominator Adjustments:**
+  2.  **Denominator Adjustments:**
       * **Convertible Preferred/Debt:** Add the number of *new common shares* that would be issued upon conversion. If issued mid-year, weight the new shares.
       * **Options/Warrants (Treasury Stock Method):** Assumes the company receives cash from the exercise and uses it to buy back shares at the average market price for the period.
-          * New Shares Added = Shares Issued from Exercise - Shares Repurchased with Proceeds.
-          * Proceeds = Exercise Price × Number of Options.
-          * Shares Repurchased = Proceeds / Average Market Price.
-          * *Shortcut Formula:* New Shares = $N \times \frac{AMP - EP}{AMP}$, where N=options, AMP=Avg Mkt Price, EP=Exercise Price.
-          * Only include options if Exercise Price < Average Market Price (i.e., they are "in-the-money" on average).
+        * New Shares Added = Shares Issued from Exercise - Shares Repurchased with Proceeds.
+        * Proceeds = Exercise Price × Number of Options.
+        * Shares Repurchased = Proceeds / Average Market Price.
+        * *Shortcut Formula:* New Shares = $N \times \frac{AMP - EP}{AMP}$, where N=options, AMP=Avg Mkt Price, EP=Exercise Price.
+        * Only include options if Exercise Price < Average Market Price (i.e., they are "in-the-money" on average).
 
 **Testing for Dilution:**
 
   * Calculate the "per share impact" for each potentially dilutive security:
-      * Convertible Preferred: Preferred Dividend / New Shares 
-      * Convertible Debt: After-Tax Interest / New Shares 
-      * Options/Warrants: Numerator impact is `$0`.
+    * Convertible Preferred: Preferred Dividend / New Shares 
+    * Convertible Debt: After-Tax Interest / New Shares 
+    * Options/Warrants: Numerator impact is `$0`.
   * Compare each security's per-share impact to Basic EPS. If the impact < Basic EPS, it's dilutive. (For options, the impact is `$0`, so they are dilutive if Exercise Price < Average Market Price).
   * If multiple dilutive securities exist, they are ranked and included sequentially from most dilutive (lowest per-share impact) to least, checking if EPS remains diluted at each step. (Detailed ranking is less common at Level 1).
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Master Basic EPS (Net Income - Preferred Div / Weighted Avg Shares). Remember to adjust weighted avg shares for splits/stock dividends *retroactively*. For Diluted EPS, know the numerator/denominator adjustments for convertible securities (add back pref div / after-tax interest; add new shares) and the treasury stock method for options (add net new shares = Issued - Repurchased). Only include securities if they are dilutive (impact < Basic EPS).
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Master Basic EPS (Net Income - Preferred Div / Weighted Avg Shares). Remember to adjust weighted avg shares for splits/stock dividends *retroactively*. For Diluted EPS, know the numerator/denominator adjustments for convertible securities (add back pref div / after-tax interest; add new shares) and the treasury stock method for options (add net new shares = Issued - Repurchased). Only include securities if they are dilutive (impact < Basic EPS).
+
+</div>
+</div>
 
 -----
 
-### Part 5: Standardizing for Comparison - Common-Size Statements & Margins 📏 (LOS 28.e)
+### <span style="color: #1565C0;">Part 5: Standardizing for Comparison - Common-Size Statements & Margins 📏 (LOS 28.e)</span>
 
-Comparing the raw income statements of two companies of different sizes (like comparing Apple to a small tech startup) isn't very useful. **Common-size analysis** fixes this.
+**Common-size analysis** fixes the issue of comparing companies of different sizes.
 
   * **Vertical Common-Size Income Statement:** Expresses each line item as a **percentage of total revenue**.
-      * This eliminates size effects, allowing for easy comparison of cost structure and profitability over time (**time-series analysis**) or between companies (**cross-sectional analysis**).
-      * *Example:* Company A has COGS of `$70M` on `$100M` revenue (70%). Company B has COGS of `$15M` on `$50M` revenue (30%). Common-size shows Company B has a much better gross margin structure, even though its absolute profit is lower.
-      * *Exception:* Income tax expense is often analyzed as a percentage of *pretax income* (the **effective tax rate**) rather than revenue.
+    * This eliminates size effects, allowing for easy comparison of cost structure and profitability over time (**time-series analysis**) or between companies (**cross-sectional analysis**).
+    * *Example:* Company A has COGS of `$70M` on `$100M` revenue (70%). Company B has COGS of `$15M` on `$50M` revenue (30%). Common-size shows Company B has a much better gross margin structure, even though its absolute profit is lower.
+    * *Exception:* Income tax expense is often analyzed as a percentage of *pretax income* (the **effective tax rate**) rather than revenue.
 
-**Key Income Statement Ratios (Margins):**
+#### <span style="color: #6A1B9A;">5.1 Key Income Statement Ratios (Margins)</span>
 
 These are directly visible on a common-size income statement.
 
   * **Gross Profit Margin:** Measures profitability after direct production costs.
-    $$\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Revenue}} = \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}}$$
-      * Higher margin indicates better control over production costs or stronger pricing power (perhaps due to differentiation, brand strength).
-  * **Operating Profit Margin:** Measures profitability after production and operating expenses (like SG\&A). Often uses EBIT as a proxy for operating profit.
-    $$\text{Operating Profit Margin} = \frac{\text{Operating Profit (or EBIT)}}{\text{Revenue}}$$ 
-  * **Pretax Margin:** Profitability before taxes.
-    $$\text{Pretax Margin} = \frac{\text{Pretax Income (EBT)}}{\text{Revenue}}$$ 
-  * **Net Profit Margin:** Measures overall profitability after all expenses, including interest and taxes.
-    $$\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}}$$
-      * Reflects the combined impact of operational efficiency, financing costs, and taxes.
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Common-size income statements (everything as % of Revenue) are essential for comparing companies of different sizes or analyzing trends within one company. Know the formulas for Gross Profit Margin and Net Profit Margin and what they indicate about a company's performance.
+    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+    $$\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Revenue}} = \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}}$$
+
+    </div>
+
+    * Higher margin indicates better control over production costs or stronger pricing power (perhaps due to differentiation, brand strength).
+  * **Operating Profit Margin:** Measures profitability after production and operating expenses (like SG&A). Often uses EBIT as a proxy for operating profit.
+
+    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+    $$\text{Operating Profit Margin} = \frac{\text{Operating Profit (or EBIT)}}{\text{Revenue}}$$ 
+
+    </div>
+
+  * **Pretax Margin:** Profitability before taxes.
+
+    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+    $$\text{Pretax Margin} = \frac{\text{Pretax Income (EBT)}}{\text{Revenue}}$$ 
+
+    </div>
+
+  * **Net Profit Margin:** Measures overall profitability after all expenses, including interest and taxes.
+
+    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+    $$\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}}$$
+
+    </div>
+
+    * Reflects the combined impact of operational efficiency, financing costs, and taxes.
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Common-size income statements (everything as % of Revenue) are essential for comparing companies of different sizes or analyzing trends within one company. Know the formulas for Gross Profit Margin and Net Profit Margin and what they indicate about a company's performance.
+
+</div>
+</div>
 
 -----
 
 ### 🧪 Formula Summary
 
-  * **Basic EPS:**
-    $$\text{Basic EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Common Shares Outstanding}}$$
-  * **Diluted EPS (Conceptual):**
-    $$\text{Diluted EPS} = \frac{\text{Adjusted Income Available for Common Shares}}{\text{Weighted Average Common Shares + Potential Common Shares Outstanding}}$$
-  * **Diluted EPS Numerator Adjustments:**
-      * Convertible Preferred: Add back Preferred Dividends.
-      * Convertible Debt: Add back Interest Expense $\times (1 - \text{Tax Rate})$.
-  * **Diluted EPS Denominator Adjustments (Treasury Stock Method - Options/Warrants):**
-    $$\text{Additional Shares} = N - \left( \frac{N \times EP}{AMP} \right) = N \times \left( \frac{AMP - EP}{AMP} \right)$$
-    (Where N = shares from exercise, EP = exercise price, AMP = average market price)
-  * **Gross Profit Margin:**
-    $$\text{Gross Profit Margin} = \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}}$$
-  * **Net Profit Margin:**
-    $$\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}}$$
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Basic EPS:**  
+$$\text{Basic EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Common Shares Outstanding}}$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Diluted EPS:**  
+$$\text{Diluted EPS} = \frac{(\text{Net Income} - \text{Preferred Dividends}) + \text{Convertible Preferred Dividends} + (\text{Convertible Debt Interest})(1 - t)}{(\text{Weighted Average Shares}) + (\text{Shares from Conversion of Conv. Pfd Shares}) + (\text{Shares from Conversion of Conv. Debt}) + (\text{Shares Issuable from Stock Options})}$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Diluted EPS Numerator Adjustments:**  
+  * Convertible Preferred: Add back Preferred Dividends.
+  * Convertible Debt: Add back Interest Expense $\times (1 - \text{Tax Rate})$.
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Diluted EPS Denominator Adjustments (Treasury Stock Method - Options/Warrants):**  
+$$\text{Additional Shares} = N - \left( \frac{N \times EP}{AMP} \right) = N \times \left( \frac{AMP - EP}{AMP} \right)$$  
+(Where N = shares from exercise, EP = exercise price, AMP = average market price)
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Gross Profit Margin:**  
+$$\text{Gross Profit Margin} = \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}}$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Net Profit Margin:**  
+$$\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}}$$
+
+</div>
 
 -----
 
-> [\!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **Revenue Recognition:** Know the 5 steps. Recognize revenue when *control* transfers. Agent (Net Revenue) vs. Principal (Gross Revenue).
->   * **Expense Recognition:** **Matching Principle** is key (match expense to revenue). Capitalize (future benefit) vs. Expense (current benefit/uncertainty). Capitalizing boosts initial income & assets but lowers future income.
->   * **IFRS vs. GAAP (Key Income Stmt):** IFRS allows capitalizing *development* costs; U.S. GAAP mostly expenses R\&D.
->   * **Nonrecurring Items:** Unusual/Infrequent (Pre-tax, Continuing Ops) vs. Discontinued Ops (Net-of-tax, Separate line item). Exclude Discontinued Ops from forecasts.
->   * **Accounting Changes:** Policy Change/Error = Retrospective. Estimate Change = Prospective.
->   * **EPS:** Basic = (NI - Pref Div) / WAvg Shares. Diluted = Adjusts for convertibles (add back div/after-tax interest, add shares) & options (treasury stock method). Diluted ≤ Basic. Ignore antidilutive securities.
->   * **Common-Size:** Everything as % of Revenue. Essential for comparability.
->   * **Margins:** Gross Margin (Rev - COGS)/Rev. Net Margin (NI/Rev). Know what drives them.
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Revenue Recognition:** Know the 5 steps. Recognize revenue when *control* transfers. Agent (Net Revenue) vs. Principal (Gross Revenue).
+* **Expense Recognition:** **Matching Principle** is key (match expense to revenue). Capitalize (future benefit) vs. Expense (current benefit/uncertainty). Capitalizing boosts initial income & assets but lowers future income.
+* **IFRS vs. GAAP (Key Income Stmt):** IFRS allows capitalizing *development* costs; U.S. GAAP mostly expenses R&D.
+* **Nonrecurring Items:** Unusual/Infrequent (Pre-tax, Continuing Ops) vs. Discontinued Ops (Net-of-tax, Separate line item). Exclude Discontinued Ops from forecasts.
+* **Accounting Changes:** Policy Change/Error = Retrospective. Estimate Change = Prospective.
+* **EPS:** Basic = (NI - Pref Div) / WAvg Shares. Diluted = Adjusts for convertibles (add back div/after-tax interest, add shares) & options (treasury stock method). Diluted ≤ Basic. Ignore antidilutive securities.
+* **Common-Size:** Everything as % of Revenue. Essential for comparability.
+* **Margins:** Gross Margin (Rev - COGS)/Rev. Net Margin (NI/Rev). Know what drives them.
+
+</div>
+</div>
