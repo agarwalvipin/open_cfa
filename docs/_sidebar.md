@@ -52,6 +52,8 @@
     - [Reading 36: Financial Reporting Quality](LOS/FRA/Reading%2036.md)
     - [Reading 37: Financial Analysis Techniques](LOS/FRA/Reading%2037.md)
     - [Reading 38: Introduction to Financial Statement Modeling](LOS/FRA/Reading%2038.md)
+    - [FRA Formulas Organization Guide](LOS/FRA/Formulas.md)
+    - [IFRS vs US GAAP Differences](LOS/FRA/Differences.md)
     - CFAI
       - [Module 1](LOS/FRA/CFAI/Module%201.md)
       - [Module 2](LOS/FRA/CFAI/Module%202.md)
