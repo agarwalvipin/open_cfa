@@ -12,14 +12,14 @@ Accounting standards require companies to be prudent. If inventory loses value *
 
 There are two main rules for this "markdown," depending on the accounting standards and inventory method used:
 
-#### **IFRS: Lower of Cost or Net Realizable Value (LCNRV)**
+#### **1.1 IFRS: Lower of Cost or Net Realizable Value (LCNRV)**
 
   * **Cost:** What the company originally paid for the inventory, plus costs to get it ready for sale.
   * **Net Realizable Value (NRV):** The estimated selling price *minus* any estimated selling costs (like finishing the product or paying sales commissions).
     $$\text{NRV} = \text{Estimated Selling Price} - \text{Estimated Selling Costs}$$
   * **The Rule:** Inventory is reported on the balance sheet at whichever value is *lower* – its original **Cost** or its **NRV**.
 
-#### **U.S. GAAP: Depends on Method...**
+#### **1.2 U.S. GAAP: Depends on Method...**
 
   * **For FIFO & Average Cost:** Same as IFRS – use **LCNRV**.
   * **For LIFO & Retail Method:** Use **Lower of Cost or Market (LCM)**.
@@ -49,7 +49,7 @@ graph TD
     end
 ```
 
-#### **Financial Statement Impact of Write-Downs 📉**
+#### **1.3 Financial Statement Impact of Write-Downs 📉**
 
 When inventory is written down (because Market or NRV is lower than Cost):
 
@@ -66,7 +66,7 @@ When inventory is written down (because Market or NRV is lower than Cost):
       * **Activity Ratios** (**Inventory Turnover** increases, **Days of Inventory on Hand** decreases) because COGS is higher and/or Inventory is lower.
       * **Solvency Ratios** (Debt-to-Assets, Debt-to-Equity) increase (lower assets/equity).
 
-#### **Inventory Write-Ups ⬆️ (IFRS Only)**
+#### **1.4 Inventory Write-Ups ⬆️ (IFRS Only)**
 
   * Under **IFRS**, if the value of previously written-down inventory recovers, a company *can* write the value back *up*.
   * **Limitation:** The write-up is limited to the amount of the original write-down. The inventory value cannot exceed its original cost.
@@ -218,13 +218,13 @@ An analyst might see inventory turnover dramatically increase. Instead of just a
   * **Inventory Valuation Rule (IFRS; US GAAP FIFO/Avg Cost):** Report at Lower of Cost or NRV.
   * **Inventory Valuation Rule (US GAAP LIFO/Retail):** Report at Lower of Cost or Market.
   * **Inventory (FIFO from LIFO):** 
-    $$\text{Inventory}_{FIFO} = \text{Inventory}_{LIFO} + \text{LIFO Reserve}$$
+    $$\text{Inventory}_\text{FIFO} = \text{Inventory}_\text{LIFO} + \text{LIFO Reserve}$$
   * **COGS (FIFO from LIFO):** 
-    $$\text{COGS}_{FIFO} = \text{COGS}_{LIFO} - (\text{Ending LIFO Reserve} - \text{Beginning LIFO Reserve})$$
+    $$\text{COGS}_\text{FIFO} = \text{COGS}_\text{LIFO} - (\text{Ending LIFO Reserve} - \text{Beginning LIFO Reserve})$$
   * **Net Income (FIFO from LIFO):** 
-    $$\text{NI}_{FIFO} = \text{NI}_{LIFO} + \Delta \text{LIFO Reserve} \times (1 - \text{Tax Rate})$$
+    $$\text{NI}_\text{FIFO} = \text{NI}_\text{LIFO} + \Delta \text{LIFO Reserve} \times (1 - \text{Tax Rate})$$
   * **Retained Earnings (FIFO from LIFO):** 
-    $$\text{RE}_{FIFO} = \text{RE}_{LIFO} + \text{Ending LIFO Reserve} \times (1 - \text{Tax Rate})$$
+    $$\text{RE}_\text{FIFO} = \text{RE}_\text{LIFO} + \text{Ending LIFO Reserve} \times (1 - \text{Tax Rate})$$
   * **Inventory Turnover:** 
     $$\text{Inv. Turnover} = \frac{\text{COGS}}{\text{Average Inventory}}$$
   * **Days of Inventory on Hand (DOH):** 
