@@ -6,43 +6,50 @@ Imagine you're deciding which sports league to play in. Your success depends not
 
 -----
 
-### Part 1: Sizing Up the Competition: Industry Analysis 101 🗺️
+### <span style="color: #1565C0;">Part 1: Sizing Up the Competition: Industry Analysis 101 🗺️</span>
 
 **Industry analysis** helps us understand the long-term profit potential of an industry. The process involves a few key steps: defining the industry, surveying its characteristics, and analyzing its structure.
 
-#### How Are Industries Classified? 📂
+#### <span style="color: #6A1B9A;">1.1 How Are Industries Classified? 📂</span>
 
-Companies are grouped into industries to allow for comparison. While governments have systems, commercial providers offer more frequently updated classifications.
-
+* Companies are grouped into industries to allow for comparison. While governments have systems, commercial providers offer more frequently updated classifications.
   * **Commercial Classifications:**
-      * **Global Industry Classification Standard (GICS):** Developed by S\&P and MSCI.
-      * **Thomson Reuters Business Classification (TRBC):** A system by Thomson Reuters.
-      * **Industry Classification Benchmark (ICB):** Developed by FTSE Russell.
+    * **Global Industry Classification Standard (GICS):** Developed by S&P and MSCI.
+    * **Thomson Reuters Business Classification (TRBC):** A system by Thomson Reuters.
+    * **Industry Classification Benchmark (ICB):** Developed by FTSE Russell.
 
-These systems group firms based on their **principal business activity**, usually determined by the source of the majority of their revenue. For example, both Maruti Suzuki and Tata Motors are in the "Automobiles" industry under GICS.
+* These systems group firms based on their **principal business activity**, usually determined by the source of the majority of their revenue. For example, both Maruti Suzuki and Tata Motors are in the "Automobiles" industry under GICS.
 
-#### Measuring Industry Characteristics
+#### <span style="color: #6A1B9A;">1.2 Measuring Industry Characteristics</span>
 
-  * **Industry Size:** Typically measured by the total revenue of all participating firms over a period (e.g., a year).
+* **Industry Size:** Typically measured by the total revenue of all participating firms over a period (e.g., a year).
+* **Industry Growth:** Is the industry in its early growth phase (like AI development), a mature phase (like car manufacturing), or in decline (like print newspapers)?
+* **Industry Profitability:** How profitable are the companies in this industry, on average?
+* **Industry Concentration:** Is the industry dominated by a few large players (concentrated) or filled with many small players (fragmented)? We can measure this with the **Herfindahl-Hirschman Index (HHI)**.
 
-  * **Industry Growth:** Is the industry in its early growth phase (like AI development), a mature phase (like car manufacturing), or in decline (like print newspapers)?
+  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+  
+  $$HHI = \sum_{i=1}^{n} (MS_i)^2 \times 10,000$$
+  
+  where $MS_i$ is the market share of firm *i*.
+  
+  </div>
 
-  * **Industry Profitability:** How profitable are the companies in this industry, on average?
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-  * **Industry Concentration:** Is the industry dominated by a few large players (concentrated) or filled with many small players (fragmented)? We can measure this with the **Herfindahl-Hirschman Index (HHI)**.
+**🧮 Example:**  
+An industry has three firms with market shares of 50%, 30%, and 20%.  
+HHI = (0.50² + 0.30² + 0.20²) × 10,000  
+HHI = (0.25 + 0.09 + 0.04) × 10,000 = **3,800**  
+Since this is greater than 2,500, the industry is considered **highly concentrated**. High concentration often implies less competition and higher pricing power for the dominant firms.
 
-    $HHI = \\sum_{i=1}^{n} (MS_i)^2 \\times 10,000$
-    where $MS_i$ is the market share of firm *i*.
-
-> **Example 🧮**
-> An industry has three firms with market shares of 50%, 30%, and 20%.
-> HHI = (0.50² + 0.30² + 0.20²) × 10,000
-> HHI = (0.25 + 0.09 + 0.04) × 10,000 = **3,800**
-> Since this is greater than 2,500, the industry is considered **highly concentrated**. High concentration often implies less competition and higher pricing power for the dominant firms.
+</div>
+</div>
 
 -----
 
-### Part 2: Who Holds the Power? Porter's Five Forces ⚖️
+### <span style="color: #1565C0;">Part 2: Who Holds the Power? Porter's Five Forces ⚖️</span>
 
 Developed by Michael Porter, this framework is the cornerstone of industry analysis. It helps identify the forces that determine the average profitability of an industry.
 
@@ -57,62 +64,109 @@ graph TD
     style C fill:#ff9999,stroke:#333,stroke-width:2px
 ```
 
-1.  **Threat of New Entrants 🚪:** How easy is it for new companies to enter the industry? If **barriers to entry** are low (e.g., opening a coffee shop), competition is high and profits are low. If barriers are high (e.g., starting a new airline like IndiGo), existing firms are protected.
-2.  **Threat of Substitutes 🔄:** Are there other products that can do the same job? Taxis face a substitute threat from ride-sharing apps like Uber and Ola. The more substitutes available, the less pricing power firms have.
-3.  **Bargaining Power of Buyers 🛒:** How much power do customers have to drive down prices? If there are many sellers and few large buyers (e.g., Walmart buying from its suppliers), buyers have high power, which hurts industry profits.
-4.  **Bargaining Power of Suppliers 🚚:** How much power do suppliers have to raise their prices? If there are only a few suppliers for a critical component (e.g., Intel for high-end CPUs), they have high power, which squeezes the industry's profits.
-5.  **Rivalry Among Existing Competitors 🔥:** How intense is the competition between existing firms? Industries with many players, high fixed costs, and low product differentiation (like the global airline industry) tend to have intense rivalry, leading to price wars and lower profitability.
+#### <span style="color: #6A1B9A;">2.1 Porter's Five Forces Explained</span>
+
+1. **Threat of New Entrants 🚪:** How easy is it for new companies to enter the industry? If **barriers to entry** are low (e.g., opening a coffee shop), competition is high and profits are low. If barriers are high (e.g., starting a new airline like IndiGo), existing firms are protected.
+2. **Threat of Substitutes 🔄:** Are there other products that can do the same job? Taxis face a substitute threat from ride-sharing apps like Uber and Ola. The more substitutes available, the less pricing power firms have.
+3. **Bargaining Power of Buyers 🛒:** How much power do customers have to drive down prices? If there are many sellers and few large buyers (e.g., Walmart buying from its suppliers), buyers have high power, which hurts industry profits.
+4. **Bargaining Power of Suppliers 🚚:** How much power do suppliers have to raise their prices? If there are only a few suppliers for a critical component (e.g., Intel for high-end CPUs), they have high power, which squeezes the industry's profits.
+5. **Rivalry Among Existing Competitors 🔥:** How intense is the competition between existing firms? Industries with many players, high fixed costs, and low product differentiation (like the global airline industry) tend to have intense rivalry, leading to price wars and lower profitability.
 
 -----
 
-### Part 3: Beyond the Industry: External Influences (PESTLE Analysis) 🌍
+### <span style="color: #1565C0;">Part 3: Beyond the Industry: External Influences (PESTLE Analysis) 🌍</span>
 
 Industries don't exist in a vacuum. Broader, macro-level factors can have a huge impact. A **PESTLE analysis** is a framework for examining these external influences.
 
-  * **P**olitical: Government stability, tax policy, trade regulations.
-  * **E**conomic: GDP growth, inflation, interest rates, business cycles.
-  * **S**ocial: Demographics, consumer trends, lifestyle changes.
-  * **T**echnological: New innovations, disruption from technology.
-  * **L**egal: Laws and regulations (e.g., labor laws, environmental regulations).
-  * **E**nvironmental: Climate change, sustainability issues.
+#### <span style="color: #6A1B9A;">3.1 PESTLE Factors</span>
 
-> **Example 🌍**
-> The rise of **Electric Vehicles (EVs)** is a perfect example of PESTLE forces at work. **Political** pressure for cleaner energy, **Technological** advances in battery tech, **Social** demand for sustainability, and **Legal** regulations on emissions are all reshaping the global auto industry.
+* **P**olitical: Government stability, tax policy, trade regulations.
+* **E**conomic: GDP growth, inflation, interest rates, business cycles.
+* **S**ocial: Demographics, consumer trends, lifestyle changes.
+* **T**echnological: New innovations, disruption from technology.
+* **L**egal: Laws and regulations (e.g., labor laws, environmental regulations).
+* **E**nvironmental: Climate change, sustainability issues.
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**🌍 Example:**  
+The rise of **Electric Vehicles (EVs)** is a perfect example of PESTLE forces at work. **Political** pressure for cleaner energy, **Technological** advances in battery tech, **Social** demand for sustainability, and **Legal** regulations on emissions are all reshaping the global auto industry.
+
+</div>
+</div>
+
+#### <span style="color: #00838F;">3.2 Global & Local Context 🌍</span>
+
+* **Global Example:** The shift to electric vehicles is driven by global regulatory pressure and technological innovation.
+* **Indian Example:** India's auto industry faces unique challenges from local regulations and consumer preferences, such as the push for affordable EVs and government incentives.
 
 -----
 
-### Part 4: What's the Winning Strategy? Cost, Quality, or Niche? 🎯
+### <span style="color: #1565C0;">Part 4: What's the Winning Strategy? Cost, Quality, or Niche? 🎯</span>
 
 Within an industry, how does a company compete? Michael Porter identified three generic competitive strategies. A company must choose one to succeed; trying to do everything often leads to failure ("stuck in the middle").
 
 | Strategy | How to Win | Key Requirements | Example |
 | :--- | :--- | :--- | :--- |
 | **Cost Leadership** 💸 | Be the lowest-cost producer. | High volume, operational efficiency, tight cost controls. | **Walmart (Global)**, **IndiGo Airlines (India)** |
-| **Product Differentiation** ✨ | Offer a unique product or service that commands a premium price. | Strong brand, R\&D, superior quality, customer service. | **Apple (Global)**, **Taj Hotels (India)** |
+| **Product Differentiation** ✨ | Offer a unique product or service that commands a premium price. | Strong brand, R&D, superior quality, customer service. | **Apple (Global)**, **Taj Hotels (India)** |
 | **Focus** 🎯 | Dominate a specific niche market, either through low cost or differentiation. | Deep understanding of a narrow market segment. | **Ferrari (Global - high-end sports cars)**, **A local organic food store (niche market)** |
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Be able to identify a company's strategy based on a description of its operations. A company that invests heavily in branding and R\&D is likely pursuing **differentiation**. A company obsessed with process efficiency and scale is likely a **cost leader**.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:**  
+Be able to identify a company's strategy based on a description of its operations.  
+- A company that invests heavily in branding and R&D is likely pursuing **differentiation**.  
+- A company obsessed with process efficiency and scale is likely a **cost leader**.
+
+</div>
+</div>
 
 -----
 
 ### 🧪 Formula Summary
 
-  * **Herfindahl-Hirschman Index (HHI):**
-    $HHI = \\sum_{i=1}^{n} (MS_i)^2 \\times 10,000$
-    (Where $MS_i$ is the market share of firm *i* as a decimal)
-    * **HHI Classification Ranges:**
-      * **< 1,500:** Unconcentrated (competitive market)
-      * **1,500 - 2,500:** Moderately concentrated
-      * **> 2,500:** Highly concentrated
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Herfindahl-Hirschman Index (HHI):**
+
+$$HHI = \sum_{i=1}^{n} (MS_i)^2 \times 10,000$$
+
+(Where $MS_i$ is the market share of firm *i* as a decimal)
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**HHI Classification Ranges:**
+
+* **< 1,500:** Unconcentrated (competitive market)
+* **1,500 - 2,500:** Moderately concentrated
+* **> 2,500:** Highly concentrated
+
+</div>
+
 -----
 
-> [\!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **Industry Matters:** A company's long-term profitability is heavily influenced by the structure and attractiveness of its industry.
->   * **Porter's Five Forces is Key:** Understand each of the five forces and how they impact industry profitability. Weak competitive forces mean higher profit potential.
->   * **Barriers to Entry are a Moat:** High barriers to entry protect existing firms from new competitors and are a sign of a potentially attractive industry.
->   * **Concentration & Profitability:** Highly concentrated industries (high HHI, dominated by a few firms) tend to be more profitable than fragmented industries (low HHI, many small firms).
->   * **Pick a Strategy, Any Strategy:** To succeed, a company needs a clear competitive strategy: be the cheapest (**cost leadership**), be unique (**differentiation**), or own a niche (**focus**). Being stuck in the middle is dangerous.
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Industry Matters:**  
+  * **A company's long-term profitability is heavily influenced by the structure and attractiveness of its industry.**
+* **Porter's Five Forces is Key:**  
+  * **Understand each of the five forces and how they impact industry profitability.**  
+  * **Weak competitive forces mean higher profit potential.**
+* **Barriers to Entry are a Moat:**  
+  * **High barriers to entry protect existing firms from new competitors and are a sign of a potentially attractive industry.**
+* **Concentration & Profitability:**  
+  * **Highly concentrated industries (high HHI, dominated by a few firms) tend to be more profitable than fragmented industries (low HHI, many small firms).**
+* **Pick a Strategy, Any Strategy:**  
+  * **To succeed, a company needs a clear competitive strategy: be the cheapest (**cost leadership**), be unique (**differentiation**), or own a niche (**focus**). Being stuck in the middle is dangerous.**
+
+</div>
+</div>

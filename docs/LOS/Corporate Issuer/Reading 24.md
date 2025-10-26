@@ -46,7 +46,7 @@ Where:
 
 ##### <span style="color: #E65100;">1.1.2 Example 🧮</span>
 
-A company is considering a project that costs $10,000 today (CF₀ = -$10,000). It will generate cash flows of $5,000, $4,000, and $3,000 over the next three years. The company's cost of capital is 9%.
+A company is considering a project that costs `$10,000` today (CF₀ = `-$10,000`). It will generate cash flows of `$5,000`, `$4,000`, and `$3,000` over the next three years. The company's cost of capital is `9%`.
 
 **Calculation on your TI BA II Plus™:**
 
@@ -59,9 +59,9 @@ A company is considering a project that costs $10,000 today (CF₀ = -$10,000). 
 * `↓ C03 = 3000 ENTER`
 * `↓ F03 = 1 ENTER`
 * Press `NPV`, `I = 9 ENTER`
-* `↓ CPT` → <b>$883.33</b>
+* `↓ CPT` → <b>$270.42</b>
 
-Since the NPV is positive, the company should accept the project. It is expected to increase the company's value by $883.33.
+Since the NPV is positive, the company should accept the project. It is expected to increase the company's value by $270.42.
 
 #### <span style="color: #6A1B9A;">1.2 Internal Rate of Return (IRR): The Project's "Interest Rate" %</span>
 
@@ -71,7 +71,7 @@ The <b>Internal Rate of Return (IRR)</b> is the discount rate that makes the NPV
   * If <b>IRR > Cost of Capital</b>, ✅ Accept the project. It earns more than it costs to fund.
   * If <b>IRR < Cost of Capital</b>, ❌ Reject the project.
 
-Using the same example as above, after entering the cash flows, you would simply press `IRR` then `CPT` on your calculator to get <b>19.44%</b>. Since 19.44% is greater than the 9% cost of capital, you accept the project.
+Using the same example as above, after entering the cash flows, you would simply press `IRR` then `CPT` on your calculator to get <b>10.65%</b>. Since 10.65% is greater than the 9% cost of capital, you accept the project.
 
 #### <span style="color: #6A1B9A;">1.3 NPV vs. IRR: The Final Showdown</span>
 
@@ -149,7 +149,7 @@ Sometimes, a project's simple NPV doesn't tell the whole story. Many projects co
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** A key insight is that real options can turn a negative NPV project into a positive one. If a project has an NPV of -$1 million but contains an expansion option valued at +$3 million, the total project value is +$2 million and it should be accepted.
+**💡 CFA Exam Tip ✍️:** A key insight is that real options can turn a negative NPV project into a positive one. If a project has an NPV of `-$1 million` but contains an expansion option valued at `+$3 million`, the total project value is `+$2 million` and it should be accepted.
 
 </div>
 </div>

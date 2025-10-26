@@ -1,4 +1,4 @@
-# Reading 81: Hedge Funds 🦎
+## Reading 81: Hedge Funds 🦎
 
 ### 🎯 Introduction
 
@@ -8,49 +8,54 @@ It's incredibly flexible, operated by elite pilots (managers), uses powerful too
 
 -----
 
-### Part 1: The Hedge Fund Playbook - Strategies Explained 📜
+### <span style="color: #1565C0;">Part 1: The Hedge Fund Playbook - Strategies Explained (LOS 81.a)</span>
 
 First, let's bust a myth: the name "hedge fund" is misleading. While the original funds aimed to "hedge" or protect against market downturns, today's funds employ a vast array of strategies. They are defined by their *flexible approach*, not the assets they hold.
 
 Here are the main categories of strategies you need to know.
 
-##### **Equity Hedge**
+#### <span style="color: #6A1B9A;">1.1 Equity Hedge</span>
 
-This is the classic hedge fund strategy, focused on the stock market.
+* **What:** Classic hedge fund strategies focused on equities.
+* **Examples:**
+  * **Long/Short Equity:** Managers buy (**long**) stocks they believe are undervalued and sell (**short**) stocks they believe are overvalued. The goal is to profit from stock-picking skill rather than market direction.
+  * **Market Neutral:** A type of long/short strategy targeting portfolio **beta ≈ 0** so returns come from **alpha** (manager skill). Often uses **leverage** to enhance returns.
+  * **Short Biased:** Net short positions; profitable when markets fall but challenging in prolonged bull markets.
 
-  * **Long/Short Equity**: The bread and butter. Managers buy (**long**) stocks they believe are undervalued and sell (**short**) stocks they believe are overvalued. The goal is to profit from their stock-picking skill, not just the overall market rising.
-  * **Market Neutral**: A special type of long/short strategy that aims to have a portfolio **beta** of zero. This means the fund should be insensitive to the market's overall movements. Returns are generated purely from **alpha** (manager skill). Because the net exposure is zero, these funds often use **leverage** to generate meaningful returns.
-  * **Short Biased**: These funds are net short the market, betting that prices will fall. It's a tough strategy during a bull market like the one seen for much of the last decade.
+#### <span style="color: #6A1B9A;">1.2 Event-Driven</span>
 
-##### **Event-Driven**
+* **What:** Strategies that profit from corporate events or special situations.
+* **Examples:**
+  * **Merger Arbitrage:** Buy the target (Company B) and short the acquirer (Company A) to capture the deal spread; biggest risk is the deal failing.
+  * **Distressed/Restructuring:** Invest in securities (often debt) of companies in/near bankruptcy, betting on turnaround or asset value in liquidation.
+  * **Activist:** Acquire a stake to influence management/board and unlock shareholder value (e.g., Carl Icahn's involvement with Hertz).
 
-These strategies seek to profit from specific corporate events or "special situations."
+#### <span style="color: #6A1B9A;">1.3 Relative Value</span>
 
-  * **Merger Arbitrage**: When Company A announces it will buy Company B, Company B's stock price will jump but usually trade at a small discount to the deal price until the merger is finalized. The fund manager buys Company B's stock and shorts Company A's stock, aiming to capture this small "deal spread." The biggest risk is the deal falling through.
-  * **Distressed/Restructuring**: Investing in the securities (usually debt) of companies that are in or near bankruptcy. The manager is betting on a successful turnaround or that the value of the company's assets in a liquidation is higher than the distressed price of its debt.
-  * **Activist**: The manager buys a large enough stake in a company to get a board seat and actively push for changes—like selling off an unprofitable division or replacing the CEO—to unlock shareholder value. The text provides the classic example of Carl Icahn's involvement with Hertz.
+* **What:** Exploit small pricing differences between related securities; often market-neutral and highly leveraged.
+* **Examples:**
+  * **Convertible Bond Arbitrage:** Buy mispriced convertible bonds and short the underlying stock to profit from convergence.
+  * **Fixed-Income Arbitrage:** Exploit inefficiencies between bonds (government vs. corporate) or along the yield curve.
 
-##### **Relative Value**
+#### <span style="color: #6A1B9A;">1.4 Opportunistic (Macro)</span>
 
-These strategies try to exploit small pricing differences between related securities. They are often market-neutral and require significant leverage to make the small price differences profitable.
+* **What:** Top-down bets on markets, economies, or currencies.
+* **Examples:**
+  * **Global Macro:** Large bets on rates, FX, commodities, equities based on macro views (e.g., Soros vs. the Bank of England).
+  * **Managed Futures (CTAs):** Systematic, trend-following models trading futures across markets; often perform well during sustained stress when trends form.
 
-  * **Convertible Bond Arbitrage**: A convertible bond can be converted into common stock. Sometimes, the price of the bond gets out of sync with the price of the underlying stock. A manager might buy the "cheap" convertible bond and short the "expensive" underlying stock to profit from the price convergence.
-  * **Fixed-Income Arbitrage**: Exploiting pricing inefficiencies between various bonds, such as the spread between a government bond and a corporate bond, or differences along the yield curve.
+#### <span style="color: #00838F;">1.4 Global & Local Context 🌍</span>
 
-##### **Opportunistic (Macro)**
-
-These are "top-down" strategies that make broad bets on the direction of entire markets, economies, or currencies.
-
-  * **Global Macro**: The most famous (and riskiest) strategy. Managers make bets on interest rates, currencies, commodities, and stock markets based on their analysis of global economic trends. George Soros "breaking the Bank of England" is the legendary example.
-  * **Managed Futures (CTAs)**: **Commodity Trading Advisors (CTAs)** use systematic, trend-following models to trade in futures markets across commodities, currencies, and stock indices. They are known for performing well during periods of sustained market stress when strong trends emerge.
+* **Global example:** Global Macro funds capitalizing on central bank policy divergence (e.g., Fed vs. ECB) by taking positions in rates and FX.
+* **India example:** Indian event-driven funds may target merger arbitrage opportunities when large corporates (e.g., Tata Group acquisitions) are announced, capturing deal spreads in local equity markets.
 
 -----
 
-### Part 2: How to Invest - Structures and Vehicles 🏛️
+### <span style="color: #1565C0;">Part 2: How to Invest - Structures and Vehicles (LOS 81.b)</span>
 
 You can't buy a hedge fund on an exchange. Access is private and structured to serve sophisticated investors while giving managers maximum flexibility.
 
-#### The Master-Feeder Structure
+#### <span style="color: #6A1B9A;">2.1 The Master-Feeder Structure</span>
 
 This is the most common legal structure for global hedge funds. It's designed for tax efficiency and to pool assets from different types of investors.
 
@@ -68,72 +73,97 @@ graph TD
       style E fill:#d4edda,stroke:#155724,stroke-width:3px
 ```
 
+* It allows the manager to run one central portfolio (the **Master Fund**) while accommodating investors from different legal/tax jurisdictions through separate **Feeder Funds**.
 
-  * It allows the manager to run just one central portfolio (the **Master Fund**) while accommodating investors from different legal and tax jurisdictions through separate **Feeder Funds**.
+#### <span style="color: #6A1B9A;">2.2 Forms of Investment: Direct vs. Indirect</span>
 
-#### Forms of Investment: Direct vs. Indirect
+##### <span style="color: #E65100;">2.2.1 Direct Investment</span>
 
-##### **Direct Investment**
+* **Who:** Large, institutional investors.
+* **Structures:**
+  * **Limited Partnership:** Standard model where investor is a Limited Partner (LP).
+  * **Separately Managed Account (SMA):** A "fund of one" — highly customized for a very large investor.
+    * **Pros ✅:** Customization, transparency, control, often lower fees.
+    * **Cons ❌:** Operational complexity, high capital requirement.
 
-This is for large, institutional investors.
+##### <span style="color: #E65100;">2.2.2 Indirect Investment</span>
 
-  * **Limited Partnership**: The standard model where you become a Limited Partner (LP).
-  * **Separately Managed Account (SMA)**: A "fund of one." A very large investor gets a dedicated account managed by the hedge fund manager.
-      * **Pros ✅**: Highly customizable, greater transparency, more control, and often lower fees.
-      * **Cons ❌**: Operationally complex and requires significant capital.
+* **Who:** Smaller (but accredited) investors seeking access.
+* **Options:**
+  * **Fund of Hedge Funds (FoHF):**
+    * **Pros ✅:** Diversification, access to closed funds.
+    * **Cons ❌:** Double layer of fees (major returns drag).
+  * **Hedge Fund Replication ETFs:** Use quant models and liquid assets to mimic hedge fund return patterns with lower fees and greater liquidity.
 
-##### **Indirect Investment**
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-This is how smaller (but still accredited) investors can get access.
+**💡 CFA Exam Tip ✍️:** Be able to classify strategies quickly:
+* If a question mentions a corporate merger → think **Event-Driven**.
+* Small pricing gap between related bonds → **Relative Value**.
+* Big macro bet on a currency → **Global Macro**.
+* **Fund of Funds** major drawback → **double layer of fees** (remember as a key exam phrase).
 
-  * **Fund of Hedge Funds (FoHF)**: This is a mutual fund of hedge funds. A manager of a FoHF selects a diversified portfolio of different hedge funds for you.
-      * **Pros ✅**: Provides instant diversification and access to funds that might be closed to new investors.
-      * **Cons ❌**: The dreaded **double layer of fees**! You pay fees to the underlying hedge funds *and* you pay a management and performance fee to the FoHF manager. This is a major drag on returns.
-  * **Hedge Fund Replication ETFs**: These are publicly traded ETFs that use quantitative models and liquid assets (like stocks and futures) to try and replicate the *return patterns* of various hedge fund strategies, without the high fees and illiquidity.
-
-> [!TIP]
-> **CFA Exam Tip ✍️:** Be able to classify strategies! If a question talks about a merger, think **Event-Driven**. A small price gap between related bonds? **Relative Value**. A big bet on the Euro? **Global Macro**. Also, know that the biggest knock against a **Fund of Funds** is the **double layer of fees**.
+</div>
+</div>
 
 -----
 
-### Part 3: The Real Story - Risk, Return, and Diversification 🎯
+### <span style="color: #1565C0;">Part 3: The Real Story - Risk, Return, and Diversification (LOS 81.c)</span>
 
-#### Sources of Return: The Alpha Hunt
+#### <span style="color: #6A1B9A;">3.1 Sources of Return: The Alpha Hunt</span>
 
-Traditional funds get most of their return from **market beta** (the market going up). Hedge funds aim to be different. They focus on generating:
+* **Alpha (α)** 🌟: Manager skill (security selection) returns.
+* **Strategy Beta:** Returns from risk factors inherent to a strategy (e.g., deal spread risk in merger arbitrage).
 
-  * **Alpha (α)** 🌟: Returns generated from a manager's unique skill in security selection. This is the holy grail.
-  * **Strategy Beta**: Returns from the specific risk factors of the strategy itself (e.g., the "deal spread" risk in merger arbitrage).
+#### <span style="color: #6A1B9A;">3.2 The Problem with Performance Data: Biases</span>
 
-#### The Problem with Performance Data: Biases!
+Hedge fund performance indexes often overstate returns due to biases:
 
-Hedge fund performance indexes should be viewed with skepticism. They are often artificially inflated due to two major biases:
+* **Survivorship Bias:** Poor performers that close are removed from indexes, inflating average returns.
+* **Backfill Bias:** Managers report past strong performance selectively, creating a history of winners.
 
-  * **Survivorship Bias**: Funds that perform poorly and shut down are deleted from the index. The index only shows the "survivors," making the average return look much higher than reality.
-  * **Backfill Bias**: A manager starts a new fund. If it does well, they start reporting its performance to an index and "backfill" the great historical returns. If it does poorly, they never report it. The index ends up with a history full of self-selected winners.
+#### <span style="color: #6A1B9A;">3.3 The Diversification Benefit</span>
 
-#### The Diversification Benefit
+* Historically, hedge funds show **low correlation** to traditional stocks and bonds.
+* Adding hedge funds to a 60/40 portfolio can **reduce volatility** and **improve Sharpe ratio**.
+* Note: correlations have risen recently, but diversification benefits—especially in crises—remain a key rationale.
 
-This is the number one reason institutions invest in hedge funds today.
+#### <span style="color: #00838F;">3.4 Global & Local Context 🌍</span>
 
-  * Historically, hedge funds have shown a **low correlation** to traditional stocks and bonds.
-  * Adding a sleeve of hedge funds to a traditional 60/40 stock/bond portfolio has been shown to **reduce overall portfolio volatility** and **increase the Sharpe ratio** (risk-adjusted return).
-  * While recent performance has been less stellar and correlations to equities have risen, their ability to provide diversification, especially during market crises, remains their key selling point.
+* **Global example:** Institutional investors use hedge funds to diversify portfolios during global crises (e.g., 2008/2020), capturing uncorrelated returns from CTAs and macro funds.
+* **India example:** Indian pension or endowment funds may allocate small sleeves to FoHFs or domestic long/short managers for diversification while managing regulatory and liquidity constraints.
 
 -----
 
 ### 🧪 Formula Summary
 
-This reading is all about the strategies and structures. No new formulas to memorize! 👍
+This reading is all about strategies and structures. No new formulas to memorize! 👍
 
 -----
 
-> [!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
-> * **Hedge Funds are defined by their flexible strategy**, not the assets they hold. Their goal is often **absolute return**.
-> * **Key Strategies:** Equity Hedge (long/short), Event-Driven (mergers, bankruptcy), Relative Value (arbitrage), and Macro (top-down economic bets).
-> * **Fund of Funds (FoHF) Key Trade-off:** You get easy diversification and access, but you pay a costly **double layer of fees**.
-> * **Hedge Fund Indexes are Biased!** Remember **Survivorship Bias** and **Backfill Bias** make reported returns look better than they really are.
-> * **The #1 Benefit of Hedge Funds:** **Portfolio diversification**. They can lower a portfolio's overall risk and improve its risk-adjusted return (Sharpe ratio).
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Definition & Goal**
+  * **Hedge Funds = flexible strategy**, not asset type → aim for **absolute return**. → **Focus on strategy**, not label.
+* **Key Strategies**
+  * **Equity Hedge:** long/short, market neutral, short-biased.
+  * **Event-Driven:** merger arbitrage, distressed, activist.
+  * **Relative Value:** convertible arbitrage, fixed-income arbitrage.
+  * **Macro/CTAs:** top-down bets, managed futures.
+* **Fund Structures & Access**
+  * **Master-Feeder:** central MASTER FUND + feeder funds for tax/jurisdictional efficiency.
+  * **Direct (LP, SMA):** Pros ✅ customization/fees; Cons ❌ complexity/capital.
+  * **Indirect (FoHF, ETFs):** Pros ✅ diversification/access; Cons ❌ double fees (FoHF).
+* **Performance Data Caveats**
+  * **Survivorship Bias** → reported returns biased upward.
+  * **Backfill Bias** → selective historical reporting.
+* **Primary Benefit**
+  * **Portfolio Diversification:** can lower overall portfolio risk and improve risk-adjusted returns (Sharpe). ✅
+
+</div>
+</div>
