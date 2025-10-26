@@ -8,29 +8,34 @@ Think of it as the secret recipe for a Michelin-star restaurant. It details the 
 
 -----
 
-### Part 1: The Anatomy of a Business Model - The 5 Key Questions 🗺️
+### <span style="color: #1565C0;">Part 1: The Anatomy of a Business Model - The 5 Key Questions 🗺️</span>
 
 A solid **business model** provides clear answers to five fundamental questions. It's the blueprint that explains how a company intends to operate and make a profit.
 
 | Key Question | What It Asks | Core Concepts & Examples |
 | :--- | :--- | :--- |
 | **1. WHO?** 🎯 | Who are your target customers? | • **B2C (Business-to-Consumer):** Selling directly to individuals (e.g., Netflix, Amazon).<br>• **B2B (Business-to-Business):** Selling to other companies (e.g., Salesforce, Tata Consultancy Services). |
-| **2. WHAT?** 🎁 | What product/service are you offering and why is it valuable? | • **Value Proposition:** The unique value a company promises to deliver. Why should customers choose you? (e.g., Apple's is design, ecosystem, and premium experience).<br>• **Value Chain:** All the activities (R\&D, production, marketing, service) the firm undertakes to deliver on its value proposition. |
+| **2. WHAT?** 🎁 | What product/service are you offering and why is it valuable? | • **Value Proposition:** The unique value a company promises to deliver. Why should customers choose you? (e.g., Apple's is design, ecosystem, and premium experience).<br>• **Value Chain:** All the activities (R&D, production, marketing, service) the firm undertakes to deliver on its value proposition. |
 | **3. HOW?** ⚙️ | How do you create and deliver your product/service? | • This involves the company's key resources, assets, and organizational structure. |
 | **4. WHERE?** 🚚 | How do you reach your customers? | • **Channel Strategy:** The plan for getting the product to the customer. This can be through **direct sales** (like Tesla's showrooms), retail partners (like Hindustan Unilever's network of `kirana` stores), or online platforms. |
 | **5. HOW MUCH?** 💰 | What is your pricing strategy? | • **Price Takers:** Commodity producers (e.g., oil & gas) with no pricing power.<br>• **Price Makers:** Companies with differentiated products (e.g., patented drugs) that have pricing power. |
 
-#### **A Closer Look at Pricing Strategies**
+#### <span style="color: #6A1B9A;">1.1 A Closer Look at Pricing Strategies</span>
 
   * **Price Discrimination:** Charging different prices to different customers for the same product. Examples include student discounts or peak/off-peak airline ticket prices.
   * **Dynamic Pricing:** Prices change in real-time based on demand. Uber's "surge pricing" during rush hour is a classic example.
 
-> [!TIP]
-> **CFA Exam Tip ✍️:** The **value proposition** is the heart and soul of any business model. For the exam, always ask yourself, "What fundamental problem is this company solving for its customer, and why is its solution better than the competition's?"
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** The **value proposition** is the heart and soul of any business model. For the exam, always ask yourself, "**What fundamental problem is this company solving for its customer, and why is its solution better than the competition's?**"
+
+</div>
+</div>
 
 -----
 
-### Part 2: Common Business Model Blueprints 🏗️
+### <span style="color: #1565C0;">Part 2: Common Business Model Blueprints 🏗️</span>
 
 While every company is unique, most business models fall into several common patterns. Understanding these blueprints will help you quickly analyze how a company operates.
 
@@ -54,27 +59,53 @@ graph TD
     end
 ```
 
-> [!TIP]
-> **CFA Exam Tip ✍️:** Expect scenario-based questions where you'll be given a short description of a company and asked to identify its business model. For example, "A company gives away its software for free but charges for customer support and advanced features." You should immediately recognize this as the **Freemium** model.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** Expect scenario-based questions where you'll be given a short description of a company and asked to identify its business model.  
+For example:  
+"A company gives away its software for free but charges for customer support and advanced features."  
+You should immediately recognize this as the **Freemium** model.
+
+</div>
+</div>
 
 -----
 
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">Part 3: Formula Summary</span>
 
 This reading is entirely conceptual. There are **no formulas** you need to memorize. Your focus should be on understanding the definitions, frameworks, and different types of business models.
 
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+**Formula Summary:**  
+No formulas required for this reading.
+</div>
+
 -----
 
-> [!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **The 5 Questions:** Every business model must answer: WHO are the customers? WHAT is the value? HOW is it created? WHERE is it delivered? and HOW MUCH does it cost?
->   * **Value Proposition is Core:** It's the "why" behind a customer's choice.
->   * **Know Your Models (Quick Reference):**
->       * **Subscription:** Pay-as-you-go access (Netflix).
->       * **Freemium:** Free basic, pay for pro (LinkedIn).
->       * **Razors-and-Blades:** Sell the razor cheap, make money on the blades (Gillette, HP Printers).
->       * **Network Effect:** More users = more value (Facebook, Uber).
->       * **Crowdsourcing:** Value is created by the users (Wikipedia, Waze).
->   * **B2B vs. B2C:** Instantly identify if the company's primary customer is another business or an individual consumer. This is a fundamental starting point for analysis.
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **The 5 Questions:**  
+  * WHO are the customers?  
+  * WHAT is the value?  
+  * HOW is it created?  
+  * WHERE is it delivered?  
+  * HOW MUCH does it cost?
+* **Value Proposition is Core:**  
+  * It's the "**why**" behind a customer's choice.
+* **Know Your Models (Quick Reference):**
+  * **Subscription:** Pay-as-you-go access (Netflix).
+  * **Freemium:** Free basic, pay for pro (LinkedIn).
+  * **Razors-and-Blades:** Sell the razor cheap, make money on the blades (Gillette, HP Printers).
+  * **Network Effect:** More users = more value (Facebook, Uber).
+  * **Crowdsourcing:** Value is created by the users (Wikipedia, Waze).
+* **B2B vs. B2C:**  
+  * Instantly identify if the company's primary customer is another business or an individual consumer.  
+  * This is a fundamental starting point for analysis.
+
+</div>
+</div>

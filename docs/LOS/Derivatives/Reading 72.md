@@ -1,13 +1,17 @@
-### **Swaps vs. a Series of Forward Contracts (LOS 72.a) 🤝**
+-----
+## <span style="color: #1565C0;">Reading 72: Swaps—Valuation and Pricing</span>
 
-An interest rate swap can be understood in two powerful ways: as a package of forward contracts or as a combination of two different bonds.
+### 🎯 Introduction
+Swaps can be understood as a series of forward contracts or as a combination of two bonds. This reading covers both perspectives and the critical distinction between swap price and value.
 
-#### **1. A Swap as a Bundle of Forwards**
+-----
+### <span style="color: #1565C0;">Part 1: Swaps vs. a Series of Forward Contracts (LOS 72.a)</span>
 
-Think of an interest rate swap as a series of Forward Rate Agreements (FRAs) bundled together. In a swap, you agree to exchange a fixed interest payment for a floating one over multiple periods. This is economically the same as entering into a separate FRA for each of those periods, all with the same fixed rate.
+#### <span style="color: #6A1B9A;">1.1 A Swap as a Bundle of Forwards</span>
+Think of an interest rate swap as a series of Forward Rate Agreements (FRAs) bundled together. In a swap, you exchange a fixed interest payment for a floating one over multiple periods—economically equivalent to entering a separate FRA for each period, all with the same fixed rate.
 
-**🇮🇳 Indian Example:** Imagine Infosys enters a 1-year swap to pay a fixed rate and receive the floating MIBOR quarterly on a notional amount of ₹50 crore. This is like simultaneously entering into four separate FRAs:
-
+**🇮🇳 Indian Example:**  
+Imagine Infosys enters a 1-year swap to pay a fixed rate and receive the floating MIBOR quarterly on a notional amount of ₹50 crore. This is like simultaneously entering into four separate FRAs:
   * An FRA that settles in 3 months.
   * An FRA that settles in 6 months.
   * An FRA that settles in 9 months.
@@ -42,70 +46,122 @@ graph TD
     style D fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-#### **2. A Swap as a Combination of Bonds**
-
+#### <span style="color: #6A1B9A;">1.2 A Swap as a Combination of Bonds</span>
 This is the most intuitive way to think about swap valuation. A swap is equivalent to buying one type of bond and selling another.
 
-  * **Fixed-Rate Payer (Receives Floating):** This position is the same as being **short a fixed-rate bond** (you have an obligation to make fixed payments) and **long a floating-rate note (FRN)** (you are entitled to receive floating payments).
-  * **Floating-Rate Payer (Receives Fixed):** This position is the same as being **long a fixed-rate bond** and **short an FRN**.
+  * **Fixed-Rate Payer (Receives Floating):**  
+    * Same as being **short a fixed-rate bond** (obligation to make fixed payments) and **long a floating-rate note (FRN)** (entitled to receive floating payments).
+  * **Floating-Rate Payer (Receives Fixed):**  
+    * Same as being **long a fixed-rate bond** and **short an FRN**.
 
-> **💡 <mark>EXAM TIP:</mark>:** This bond analogy is the key to understanding swap valuation on the exam. If you can remember that a swap is just a portfolio of two bonds, the valuation logic becomes much simpler.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:**  
+This bond analogy is the key to understanding swap valuation on the exam. If you remember that a swap is just a portfolio of two bonds, the valuation logic becomes much simpler.
+
+</div>
+</div>
 
 -----
+### <span style="color: #1565C0;">Part 2: The Price vs. The Value of a Swap (LOS 72.b)</span>
 
-### **The Price vs. The Value of a Swap (LOS 72.b) ⚖️**
+#### <span style="color: #6A1B9A;">2.1 Price of a Swap</span>
+The **price** of a swap is simply the **fixed interest rate** specified in the contract. This rate, often called the **par swap rate**, is carefully calculated at the start to ensure the contract is fair for both parties.
 
-It is critical not to confuse the price of a swap with its value.
-
-#### **Price of a Swap**
-
-The **"price"** of a swap is simply the **fixed interest rate** specified in the contract. This rate, often called the **par swap rate**, is carefully calculated at the start to ensure the contract is fair for both parties.
-
-#### **Value of a Swap**
-
+#### <span style="color: #6A1B9A;">2.2 Value of a Swap</span>
 The **value** of a swap is its net worth at any given point in time.
 
-  * **At Initiation:** The swap rate is set so that the present value of the fixed payments equals the present value of the expected floating payments. Therefore, the initial value of a swap is **zero**.
-  * **During its Life:** As market interest rates change, the expected future floating payments will change, causing the value of the swap to move away from zero.
-      * If interest rates **rise**, the floating payments will be higher than originally expected. This benefits the person receiving floating (the fixed-rate payer), and the swap will have a **positive value** for them.
-      * If interest rates **fall**, the floating payments will be lower. This hurts the fixed-rate payer, and the swap will have a **negative value** for them.
+  * **At Initiation:**  
+    * The swap rate is set so that the present value of the fixed payments equals the present value of the expected floating payments.  
+    * Therefore, the initial value of a swap is **zero**.
+  * **During its Life:**  
+    * As market interest rates change, the expected future floating payments will change, causing the value of the swap to move away from zero.
+      * If interest rates **rise**, the floating payments will be higher than originally expected.  
+        * ✅ Benefits the person receiving floating (the fixed-rate payer), and the swap will have a **positive value** for them.
+      * If interest rates **fall**, the floating payments will be lower.  
+        * ❌ Hurts the fixed-rate payer, and the swap will have a **negative value** for them.
 
 Valuing the swap is straightforward using the bond analogy:
 
-`Value of the Swap = Value of the Asset You Own - Value of the Liability You Owe`
+<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
+$$\text{Value of the Swap} = \text{Value of the Asset You Own} - \text{Value of the Liability You Owe}$$
+
+</div>
 
 For a **fixed-rate payer**:
-`Value = Value of the FRN - Value of the Fixed-Rate Bond`
 
-> ⭐ **Exam Highlight:** A huge shortcut for valuation is knowing that on any coupon reset date, the value of a floating-rate note (FRN) is always equal to its par value (e.g., ₹10 crore). So, on a reset date, the valuation for a fixed-rate payer simplifies to:
->
-> `Value = Par Value - Current Market Value of the Fixed-Rate Bond`
+<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
------
+$$\text{Value} = \text{Value of the FRN} - \text{Value of the Fixed-Rate Bond}$$
 
-### **Formulas Used in This Reading 🧮**
+</div>
 
-While this reading focuses on concepts, the valuation framework is expressed as:
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-1.  **Swap Value (Fixed-Rate Payer's Perspective):**
-    $$V_{swap} = PV(\text{Expected Floating Payments}) - PV(\text{Fixed Payments})$$
-    
+### 🎯 Quick Exam-Day Pointers
 
-2.  **Swap Value using Bond Analogy (Fixed-Rate Payer's Perspective):**
-    $$V_{swap} = V_{FRN} - V_{Fixed}$$
+<div style="color: #000000; font-weight: 500;">
 
-Where:
-- $V_{swap}$ = Value of the swap
-- $V_{FRN}$ = Value of the floating-rate note
-- $V_{Fixed}$ = Value of the fixed-rate bond
-- $PV$ = Present value
+* **Key Shortcut:**  
+  * On any coupon reset date, the value of a floating-rate note (FRN) is always equal to its par value (e.g., ₹10 crore).
+  * So, on a reset date, the valuation for a fixed-rate payer simplifies to:
+    * $$\text{Value} = \text{Par Value} - \text{Current Market Value of the Fixed-Rate Bond}$$
+
+</div>
+</div>
 
 -----
+### <span style="color: #1565C0;">Part 3: Formulas Used in This Reading 🧮</span>
 
-### **Quick Exam-Day Pointer ✅**
+#### <span style="color: #6A1B9A;">3.1 Swap Valuation Formulas</span>
 
-  * The **price** of a swap is the **fixed rate**.
-  * The **value** of a swap starts at **zero**.
-  * **Valuation Secret:** A swap is just a portfolio of two bonds (one long, one short).
-  * For a fixed-rate payer, `Value = Value(FRN) - Value(Fixed Bond)`.
-  * Remember the shortcut: On a reset date, the `Value(FRN) = Par`. This makes calculations much faster\!
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Swap Value (Fixed-Rate Payer's Perspective):**
+
+$$V_{swap} = PV(\text{Expected Floating Payments}) - PV(\text{Fixed Payments})$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Swap Value using Bond Analogy (Fixed-Rate Payer's Perspective):**
+
+$$V_{swap} = V_{FRN} - V_{Fixed}$$
+
+</div>
+
+**Where:**
+  * $V_{swap}$ = Value of the swap
+  * $V_{FRN}$ = Value of the floating-rate note
+  * $V_{Fixed}$ = Value of the fixed-rate bond
+  * $PV$ = Present value
+
+-----
+### <span style="color: #00838F;">3.2 Global & Local Context 🌍</span>
+
+**Global Example:**  
+A multinational corporation enters into an interest rate swap to hedge exposure to USD LIBOR.  
+**Local Example (India):**  
+Infosys uses a swap to manage exposure to MIBOR for INR-denominated debt.
+
+-----
+### <span style="color: #1565C0;">Part 4: Quick Exam-Day Pointer ✅</span>
+
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Price of a swap:** The **fixed rate**.
+* **Value of a swap:** Starts at **zero**.
+* **Valuation Secret:** A swap is just a portfolio of two bonds (one long, one short).
+* For a fixed-rate payer:  
+  * $$\text{Value} = \text{Value(FRN)} - \text{Value(Fixed Bond)}$$
+* **Shortcut:** On a reset date, $$\text{Value(FRN)} = \text{Par}$$. This makes calculations much faster!
+
+</div>
+</div>

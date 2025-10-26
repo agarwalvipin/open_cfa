@@ -32,14 +32,14 @@ Differences arise from two main sources:
 <div style="color: #000000; font-weight: 500;">
 
 **💡 MNEMONIC: "DTL = Defer Tax to Later; DTA = Defer Tax Advantage"**
-- **DTL**: Tax **L**ater (pay less now, more later) - when Accounting Income > Taxable Income
-- **DTA**: Tax **A**dvantage later (pay more now, less later) - when Taxable Income > Accounting Income
-- Think: **L**ater vs **A**dvantage
+- **DTL**: Tax Later (pay less now, more later) - when Accounting Income > Taxable Income
+- **DTA**: Tax Advantage later (pay more now, less later) - when Taxable Income > Accounting Income
+- Think: Later vs Advantage
 
 </div>
 </div>
 
-#### <span style="color: #E65100;">Deferred Tax Liabilities (DTLs): Paying Less Tax Now, More Later ⏳</span>
+##### <span style="color: #E65100;">1.2.1 Deferred Tax Liabilities (DTLs): Paying Less Tax Now, More Later ⏳</span>
 
   * A **Deferred Tax Liability (DTL)** arises when:
     * **Income Tax Expense (Income Statement) > Taxes Payable (Tax Return)**
@@ -50,11 +50,11 @@ Differences arise from two main sources:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**Think of it like this:** You got a tax break *today* because the tax rules were more generous upfront than the accounting rules. But you know you'll have to "pay it back" in the form of higher taxes *later*. That future obligation is the DTL.
+**Think of it like this:** You got a tax break today because the tax rules were more generous upfront than the accounting rules. But you know you'll have to "pay it back" in the form of higher taxes later. That future obligation is the DTL.
 </div>
 </div>
 
-#### <span style="color: #E65100;">Deferred Tax Assets (DTAs): Paying More Tax Now, Less Later ✅</span>
+##### <span style="color: #E65100;">1.2.2 Deferred Tax Assets (DTAs): Paying More Tax Now, Less Later ✅</span>
 
   * A **Deferred Tax Asset (DTA)** arises when:
     * **Taxes Payable (Tax Return) > Income Tax Expense (Income Statement)**
@@ -66,7 +66,7 @@ Differences arise from two main sources:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**Think of it like this:** You paid *more* tax today than your income statement suggests you should have, perhaps because tax rules made you recognize income early or delayed an expense deduction. This overpayment creates a future benefit – the DTA – representing expected tax savings later.
+**Think of it like this:** You paid more tax today than your income statement suggests you should have, perhaps because tax rules made you recognize income early or delayed an expense deduction. This overpayment creates a future benefit – the DTA – representing expected tax savings later.
 </div>
 </div>
 
@@ -87,12 +87,13 @@ Where $\Delta$ means "change in".
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Understand the triggers for DTA (Tax > Accrual Income or Accrual Expense > Tax Deduction) and DTL (Accrual Income > Tax or Tax Deduction > Accrual Expense). Remember permanent differences *don't* create deferred taxes, only temporary ones do. The core equation linking tax expense, taxes payable, and changes in DTA/DTL is fundamental.
+**💡 CFA Exam Tip ✍️:** Understand the triggers for DTA (Tax > Accrual Income or Accrual Expense > Tax Deduction) and DTL (Accrual Income > Tax or Tax Deduction > Accrual Expense). Remember permanent differences don't create deferred taxes, only temporary ones do. The core equation linking tax expense, taxes payable, and changes in DTA/DTL is fundamental.
 </div>
 </div>
 
 -----
 
+-----
 ### <span style="color: #1565C0;">Part 2: Building the DTA/DTL Balance Sheet 🏗️ (LOS 35.b)</span>
 
 While the income statement approach helps understand the *change*, the **balance sheet method** is typically used to calculate the actual DTA or DTL amount. This involves comparing the **Carrying Value** (book value) of assets and liabilities on the balance sheet with their **Tax Base**.
@@ -111,7 +112,7 @@ The relationship is:
 | **Liability** | Carrying Value > Tax Base | DTA                         | Settling the liability will require outflows that *are* tax-deductible in the future, but aren't reflected in the tax base now.   |
 | **Liability** | Carrying Value < Tax Base | DTL                         | Settling the liability involves amounts that have already provided a tax benefit (or won't provide one).                             |
 
-#### <span style="color: #E65100;">2.2 Example 🧮</span>
+##### <span style="color: #E65100;">2.2 Example 🧮</span>
 
 Let's revisit the machine from Part 1 (`$30,000` cost).
 * **End of Year 1:**
@@ -155,6 +156,7 @@ Analysts often adjust financial statements for deferred taxes:
 
 -----
 
+-----
 ### <span style="color: #1565C0;">Part 3: Rates, Reconciliations & Disclosures 📊🔍 (LOS 35.c, 35.d)</span>
 
 Understanding a company's tax situation requires looking beyond just the income tax expense line.
@@ -213,6 +215,7 @@ Footnotes provide crucial details about deferred taxes:
 
 -----
 
+-----
 ### 🧪 Formula Summary
 
 * **Core Relationship:**

@@ -1,14 +1,14 @@
-## 🚀 Reading 21: Investors and Other Stakeholders
+## Reading 21: Investors and Other Stakeholders
 
 ### 🎯 Introduction
 
-Welcome, future charterholder\! Think of a company as a massive ship setting sail on a grand voyage for treasure. 🚢 The **shareholders** are the ship's owners; they funded the expedition and hope to find a mountain of gold (unlimited profits). The **debtholders** are the financiers who provided a loan for the ship's supplies; they don't care about the treasure—they just want their loan repaid, with interest, on time.
+Welcome, future charterholder! Think of a company as a massive ship setting sail on a grand voyage for treasure. 🚢 The **shareholders** are the ship's owners; they funded the expedition and hope to find a mountain of gold (unlimited profits). The **debtholders** are the financiers who provided a loan for the ship's supplies; they don't care about the treasure—they just want their loan repaid, with interest, on time.
 
 But who else is on board? You have the captain and officers (**management**), the crew (**employees**), the port authorities (**government**), and the people who supplied the ship with food and cannons (**suppliers**). Everyone has a vested interest—or a "stake"—in the voyage's success. This reading is your guide to understanding the different claims, motivations, and potential conflicts among all these **stakeholders**.
 
 -----
 
-### Part 1: Debtholders vs. Shareholders - The Safe Harbor vs. The Grand Voyage ⛵
+### <span style="color: #1565C0;">Part 1: Debtholders vs. Shareholders - The Safe Harbor vs. The Grand Voyage ⛵</span>
 
 At the core of a company's capital structure are its two primary investors: lenders (**debtholders**) and owners (**shareholders**). Their relationship is defined by a fundamental difference in risk and reward.
 
@@ -21,13 +21,13 @@ At the core of a company's capital structure are its two primary investors: lend
 | **Reward Potential** | Limited to the promised interest and principal.  | Unlimited\! They benefit from all the company's growth. |
 | **Primary Motivation** | Stability and predictable income. They want the company to avoid excessive risk. | Growth and maximizing the company's value. They are more willing to take on risk for higher returns. |
 
-#### **The Conflict Over Risk: How Leverage Changes the Game**
+#### <span style="color: #6A1B9A;">1.1 The Conflict Over Risk: How Leverage Changes the Game</span>
 
 The main conflict between these two groups boils down to risk. Shareholders, especially when a company uses a lot of debt (**leverage**), are incentivized to take big risks. Why? Because if the bet pays off, they get all the upside. If it fails, the debtholders share in the losses.
 
 Let's see how **Return on Equity (ROE)** is impacted by leverage.
 
-##### **Example: The Good Times 😊**
+##### <span style="color: #E65100;">1.1.1 Example: The Good Times 😊</span>
 
 A company has \\$10M in assets and earns a 15% return on those assets ($1.5M profit). The cost of debt is 10%.
 
@@ -47,9 +47,9 @@ A company has \\$10M in assets and earns a 15% return on those assets ($1.5M pro
 
 Look at that\! By using debt, the shareholders juiced their return from 15% to 20%. They love leverage when things are going well. The debtholders? They still just get their 10%. 
 
-##### **Example: The Bad Times 😨**
+##### <span style="color: #E65100;">1.1.2 Example: The Bad Times 😨</span>
 
-Now, what if revenues decrease by 15%, reducing the return on assets to 0%? 
+Now, what if revenues decrease by 15%, reducing the return on assets to 0%?
 
   * **Scenario 1: No Debt (100% Equity)**
 
@@ -65,17 +65,22 @@ Now, what if revenues decrease by 15%, reducing the return on assets to 0%?
 
 Leverage magnifies losses too\! Shareholders get wiped out faster, increasing the risk that debtholders might not get paid. This is why debtholders protect themselves with **covenants** (rules in the debt agreement) that limit the company's risk-taking. 
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** The conflict between debtholders and shareholders is a classic exam topic. Remember: Shareholders love risk because of their unlimited upside. Debtholders hate risk because their upside is capped. This fundamental difference in incentives drives their behavior.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** The conflict between debtholders and shareholders is a classic exam topic. Remember: **Shareholders love risk** because of their unlimited upside. **Debtholders hate risk** because their upside is capped. This fundamental difference in incentives drives their behavior.
+
+</div>
+</div>
 
 -----
 
-### Part 2: Who's on Board? Meet the Stakeholders 🤝
+### <span style="color: #1565C0;">Part 2: Who's on Board? Meet the Stakeholders 🤝</span>
 
 While investors are crucial, they aren't the only group with a stake in the company.
 
-  * **Shareholder Theory:** The traditional view, championed by economist Milton Friedman. It states that the one and only goal of a company is to maximize profits for its shareholders. 
-  * **Stakeholder Theory:** A broader view that argues a company must balance the interests of *all* its stakeholders to be successful in the long run. 
+  * **Shareholder Theory:** The traditional view, championed by economist Milton Friedman. It states that the one and only goal of a company is to maximize profits for its shareholders.
+  * **Stakeholder Theory:** A broader view that argues a company must balance the interests of *all* its stakeholders to be successful in the long run.
 
 <!-- end list -->
 
@@ -92,7 +97,7 @@ graph TD
     end
 ```
 
-#### **Key Stakeholder Groups and Their Interests**
+#### <span style="color: #6A1B9A;">2.1 Key Stakeholder Groups and Their Interests</span>
 
 | Stakeholder Group | Primary Interests |
 | :--- | :--- |
@@ -106,19 +111,19 @@ graph TD
 
 -----
 
-### Part 3: ESG - Navigating by a Modern Compass 🧭
+### <span style="color: #1565C0;">Part 3: ESG - Navigating by a Modern Compass 🧭</span>
 
-In recent years, investors have started looking beyond just financial numbers. They are increasingly focused on **Environmental, Social, and Governance (ESG)** factors, which can have a real impact on a company's long-term value and risk profile. 
+In recent years, investors have started looking beyond just financial numbers. They are increasingly focused on **Environmental, Social, and Governance (ESG)** factors, which can have a real impact on a company's long-term value and risk profile.
 
 Why do investors care about ESG?
 
-  * **Regulatory Risk:** Governments are cracking down on issues like climate change and data privacy. 
-  * **Financial Impact:** A bad environmental record can lead to huge fines. Poor social practices can damage a brand's reputation and lose customers. Weak governance can lead to fraud. 
-  * **Investor Demand:** Many investors, especially younger ones, want their money to align with their values. 
+  * **Regulatory Risk:** Governments are cracking down on issues like climate change and data privacy.
+  * **Financial Impact:** A bad environmental record can lead to huge fines. Poor social practices can damage a brand's reputation and lose customers. Weak governance can lead to fraud.
+  * **Investor Demand:** Many investors, especially younger ones, want their money to align with their values.
 
-ESG analysis also considers **negative externalities**—costs that a company imposes on society but doesn't pay for itself, like pollution. 
+ESG analysis also considers **negative externalities**—costs that a company imposes on society but doesn't pay for itself, like pollution.
 
-#### **The Three Pillars of ESG**
+#### <span style="color: #6A1B9A;">3.1 The Three Pillars of ESG</span>
 
 | Pillar | What It Covers | Examples |
 | :--- | :--- | :--- |
@@ -126,24 +131,46 @@ ESG analysis also considers **negative externalities**—costs that a company im
 | **Social (S)** 🧑‍🤝‍🧑 | The company's relationship with its employees, customers, and community.  | Customer privacy, data protection, employee safety, labor relations, diversity and inclusion, product safety. Tata Group's long history of community building in India is a strong S factor. |
 | **Governance (G)** 🏛️ | How the company is run and who is in charge.  | Board independence, executive compensation, shareholder rights, bribery and corruption policies, internal controls. A company with an independent board chairman and a diverse board scores well on G. |
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** For the exam, understand that ESG is not just a "feel-good" topic. It's about identifying tangible and intangible risks that can materially affect a company’s valuation and creditworthiness. A poor ESG profile can be a major red flag for long-term investors.
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 CFA Exam Tip ✍️:** For the exam, understand that ESG is not just a "feel-good" topic. It's about identifying tangible and intangible risks that can materially affect a company’s valuation and creditworthiness. A poor ESG profile can be a major red flag for long-term investors.
+
+</div>
+</div>
 
 -----
 
 ### 🧪 Formula Summary
 
-This reading is highly conceptual. The key "formula" is understanding the calculation of **Return on Equity (ROE)** to see the impact of leverage:
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Return on Equity (ROE):**
 
 $$\text{Return on Equity (ROE)} = \frac{\text{Net Income}}{\text{Shareholders' Equity}}$$
 
+</div>
+
 -----
 
-> [\!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **Debt vs. Equity is Key:** Know the difference like the back of your hand. **Debt = Contractual Claim** (fixed upside, higher priority). **Equity = Residual Claim** (unlimited upside, last priority).
->   * **Conflict = Risk Appetite:** The main conflict between shareholders and debtholders comes from their different attitudes toward risk. Shareholders often want more risk; debtholders want less.
->   * **Shareholder vs. Stakeholder:** **Shareholder Theory** = Maximize shareholder wealth ONLY. **Stakeholder Theory** = Balance the interests of ALL groups (employees, customers, etc.).
->   * **ESG is a Risk Framework:** Think of ESG factors as non-financial risks that can have very real financial consequences. Environmental fines, social boycotts, and governance scandals can destroy value.
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Debt vs. Equity is Key:**
+  * **Debt = Contractual Claim** → fixed upside, higher priority
+  * **Equity = Residual Claim** → unlimited upside, last priority
+* **Conflict = Risk Appetite:**
+  * Shareholders often want more risk
+  * Debtholders want less
+* **Shareholder vs. Stakeholder:**
+  * **Shareholder Theory** = Maximize shareholder wealth ONLY
+  * **Stakeholder Theory** = Balance the interests of ALL groups (employees, customers, etc.)
+* **ESG is a Risk Framework:**
+  * ESG factors are non-financial risks with real financial consequences
+  * Environmental fines, social boycotts, and governance scandals can destroy value
+
+</div>
+</div>

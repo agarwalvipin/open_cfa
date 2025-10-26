@@ -144,6 +144,36 @@ The lessor also classifies the lease as **finance** or **operating** using the s
   * **Income Statement:** Reports **Lease Revenue** (usually straight-line). Records **Depreciation Expense** on the asset.
   * **Cash Flow Statement:** Entire lease payment received is typically **CFO**.
 
+##### <span style="color: #E65100;">1.7.1 Example 🧾 (Lessor)</span>
+
+CapitalCo leases a machine to Affordable Co for 4 years (annual payments of `$10,000`, implicit rate 5%, PV = `$35,460`). For simplicity assume no residual value.
+
+**Finance Lease (Lessor) — Manufacturer/Dealer example:**
+
+  * **Inception (initial recognition):** Lessor removes the asset (cost basis = `$30,000`) and records a **Lease Receivable** = `$35,460`. Recognizes an **upfront profit** = `$35,460 - $30,000 = $5,460`.
+  * **Year 1 IS:** Interest income = `$35,460 * 5% = $1,773` recognized over the term. No depreciation (asset removed). Total Year 1 income impact (ignoring tax) includes the upfront profit plus interest income.
+  * **Year 1 CF:** Cash received = `$10,000`. Of that, interest portion `$1,773` → **CFO**; principal portion `$8,227` → **CFI** (return of investment / recovery of principal) per conceptual presentation.
+  * **Year 1 BS (after payment):** Lease Receivable ending = `$35,460 - $8,227 = $27,233`.
+
+**Operating Lease (Lessor) example:**
+
+  * **Inception:** Lessor keeps the asset on its books (cost/fair value `$35,460`) and continues to depreciate it over its useful life (4 years).
+  * **Year 1 IS:** Lease revenue = `$10,000` (usually straight-line). Depreciation expense = `$35,460 / 4 = $8,865`. Net operating income effect = `$10,000 - $8,865 = $1,135`.
+  * **Year 1 CF:** Entire lease payment `$10,000` → **CFO**.
+
+> Quick takeaway: A finance lease to the lessor often looks like a sale (upfront profit for a manufacturer/dealer and interest income over time). An operating lease looks like rental income with continuing depreciation of the asset.
+
+##### <span style="color: #6A1B9A;">1.7.2 Lessor Accounting — Comparison Table</span>
+
+| Item | Finance Lease (Lessor) | Operating Lease (Lessor) |
+| :--- | :--------------------- | :------------------------ |
+| Balance Sheet | Remove asset; record **Lease Receivable** (PV of payments ± residual) | Keep asset; record asset and **Accumulated Depreciation** |
+| Income Statement | Upfront **profit** if manufacturer/dealer (sale-like) or no upfront profit if pure financier; **Interest income** over term | **Lease revenue** (usually straight-line) and **Depreciation expense** on the asset |
+| Cash Flow Statement | Interest portion → **CFO**; Principal recovery → **CFI** (return of investment) (note: some texts present principal as CFO) | Entire lease receipts → **CFO** |
+| Recognition of Asset | Derecognize leased asset (if finance) | Asset remains on lessor's books |
+| Initial Profit (when applicable) | Recognize sale profit if lessor is manufacturer/dealer (fair value - cost) | No sale profit; revenue recognized as rental |
+
+
 -----
 
 #### <span style="color: #00838F;">1.8 Global & Local Context 🌍</span>
@@ -203,6 +233,32 @@ Companies often compensate employees not just with salary today, but with promis
           * **Remeasurements (IFRS) / Actuarial Gains/Losses (U.S. GAAP):** Changes due to assumption adjustments (e.g., life expectancy, salary growth) or differences between expected and actual asset returns.
           * **Past Service Costs (U.S. GAAP):** Recorded in OCI and amortized to Income Statement over employee service life.
         * **Key Idea:** The *total* economic cost is the same under both standards, but *where* it's reported (IS vs. OCI) differs, affecting reported Net Income vs. Comprehensive Income.
+
+##### <span style="color: #6A1B9A;">2.1.1 DC vs. DB — Quick Comparison</span>
+
+| Item | Defined Contribution (DC) | Defined Benefit (DB) |
+| :--- | :----------------------- | :------------------- |
+| Nature | Employer makes specified contributions to individual accounts | Employer promises a specified retirement benefit (formula-based) |
+| Employer obligation | Limited to making contributions; no further liability after contribution | Ongoing obligation; present value of future benefits (PBO) recognized |
+| Who bears investment risk? | Employee | Employer |
+| Balance sheet impact | None once contributions are paid (no ongoing liability for employer) | **Funded status**: Plan assets - PBO shown as an asset (overfunded) or liability (underfunded) |
+| Income statement | Expense = employer contribution for the period | Service cost + net interest (remeasurements/actuarial gains or losses typically in OCI under IFRS) |
+| Measurement / key assumptions | N/A for employer beyond expected contributions | Discount rate, salary growth, mortality, expected return on plan assets (inputs matter a lot) |
+| Accounting complexity | Low | High (actuarial valuations, OCI recycling differences between IFRS and U.S. GAAP) |
+| Typical examples | Employer 401(k) matching contributions | Final-salary pension plans, defined-benefit pension schemes |
+
+##### <span style="color: #6A1B9A;">2.1.2 IFRS vs. U.S. GAAP — Pension Accounting Comparison</span>
+
+| Item | IFRS | U.S. GAAP |
+| :--- | :--- | :--- |
+| Measurement of obligation | Uses the **Defined Benefit Obligation (DBO)** measured with the projected unit credit method; discount rate based on high-quality corporate bonds. | Uses the **Projected Benefit Obligation (PBO)** (projected benefit approach); discount rates generally based on corporate bond yields.
+| Recognition of remeasurements / actuarial gains & losses | Remeasurements (actuarial gains/losses and differences between actual and expected returns) are recognized in **OCI** and are **not recycled** to profit or loss. | Actuarial gains/losses are recognized in **OCI**. Certain items (e.g., prior service cost) are recognized in OCI and then **amortized** to profit or loss over future service periods.
+| Past service (plan amendments) | Past service cost generally recognized **immediately in profit or loss** when the plan amendment occurs (IFRS IAS 19). | Prior service cost is recognized in **OCI** when incurred and typically **amortized** to pension expense over employees' remaining service periods.
+| Net interest / pension cost presentation | Net interest on the net defined benefit liability (asset) = net defined liability × discount rate; **service cost** is shown in profit or loss. | Net periodic pension cost typically shows **service cost**, **interest cost** on the PBO and **(expected) return** on plan assets (presentation of components may vary).|
+| Asset recognition limit / surplus | A surplus (plan assets > DBO) is recognized but **limited to the economic benefit available** to the employer (e.g., refunds or reduced future contributions). | An asset is recognized to the extent the plan surplus is recoverable (subject to a recoverability ceiling related to refunds or offsets against future contributions). |
+| OCI recycling | Remeasurements remain in OCI and are **not recycled** to profit or loss under IFRS. | Remeasurements are recorded in OCI; certain items (like prior service cost) are amortized into profit or loss under US GAAP.
+| Key disclosure focus | Detailed reconciliation of funded status, assumptions (discount rate, salary growth, mortality), sensitivity analysis, and allocation of plan assets. | Similar disclosures required: reconciliation of obligation/asset, assumptions, amounts recognized in OCI and P&L, and sensitivity information.
+
 
 #### <span style="color: #6A1B9A;">2.2 Share-Based Compensation: Paying with Stock 📈</span>
 
