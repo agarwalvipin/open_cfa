@@ -41,7 +41,6 @@ The core economic argument is that the gains from trade are greater than the los
 Despite the benefits of free trade, governments often impose **trade restrictions** for various reasons, such as protecting domestic industries or for national security.
 
 #### <span style="color: #6A1B9A;">2.1 Types of Trade Restrictions</span>
-
 | Type of Restriction | What It Is |
 | :--- | :--- |
 | **Tariff** | A tax imposed on imported goods. |
@@ -50,23 +49,25 @@ Despite the benefits of free trade, governments often impose **trade restriction
 | **Minimum Domestic Content** | A requirement that a certain percentage of a product's value must be sourced from domestic producers. |
 | **Voluntary Export Restraint (VER)** | A limit on exports that an exporting country voluntarily agrees to, usually under pressure from an importing country to avoid a tariff or quota. |
 
+**Mnemonic:**  
+**T**igers **Q**uickly **E**at **M**any **V**egetables  
+(Tariff, Quota, Export Subsidy, Minimum Domestic Content, Voluntary Export Restraint)
+
 #### <span style="color: #6A1B9A;">2.2 The Economic Impact of Tariffs and Quotas</span>
 
 Both tariffs and quotas are designed to reduce imports and protect domestic producers. Their effects are very similar.
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-<pre>
+```mermaid
 graph TD
     subgraph Market for an Imported Good
-        A[Price Rises 📈] --> B(Domestic Quantity Supplied Increases);
-        A --> C(Domestic Quantity Demanded Decreases);
-        B & C --> D{Quantity of Imports Falls 📉};
-        D --> E["Domestic Producers Win (Higher Price, More Sales)"];
-        D --> F["Domestic Consumers Lose (Higher Price, Less Choice)"];
-        E & F --> G{"Overall National Welfare Decreases (Deadweight Loss)"};
+        A[Price Rises 📈] --> B(Domestic Quantity Supplied Increases)
+        A --> C(Domestic Quantity Demanded Decreases)
+        B & C --> D{Quantity of Imports Falls 📉}
+        D --> E["Domestic Producers Win (Higher Price, More Sales)"]
+        D --> F["Domestic Consumers Lose (Higher Price, Less Choice)"]
+        E & F --> G{"Overall National Welfare Decreases (Deadweight Loss)"}
     end
-</pre>
-</div>
+```
 
 * **Who Wins?** Domestic producers (they get a higher price and sell more) and the domestic government (it collects tariff revenue).
 * **Who Loses?** Domestic consumers (they pay a higher price and get less of the good) and foreign exporters.
@@ -92,22 +93,28 @@ Besides restricting goods, countries sometimes impose **capital restrictions** o
 
 Countries often form **trading blocs** (also called Regional Trading Agreements or RTAs) to increase trade and economic welfare among the members. There are different levels of economic integration.
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-<pre>
-graph TD
-    direction LR
-    A(Free Trade Area) --> B(Customs Union);
-    B --> C(Common Market);
-    C --> D(Economic Union);
-    D --> E(Monetary Union);
-</pre>
-</div>
+```mermaid
+graph LR
+    A(Free Trade Area) --> B(Customs Union)
+    B --> C(Common Market)
+    C --> D(Economic Union)
+    D --> E(Monetary Union)
+```
+
+#### <span style="color: #6A1B9A;">3.1 Levels of Economic Integration</span>
 
 * **Free Trade Area (FTA):** Members remove all trade barriers (like tariffs) among themselves, but each country keeps its own separate trade policies with non-member countries. Example: USMCA (formerly NAFTA).
 * **Customs Union:** This is an FTA *plus* all members adopt a common set of trade barriers and tariffs with non-member countries.
 * **Common Market:** This is a Customs Union *plus* members allow the free movement of labor and capital between their countries. Example: MERCOSUR in South America.
 * **Economic Union:** This is a Common Market *plus* members coordinate their economic policies and institutions. Example: The European Union (EU).
 * **Monetary Union:** This is the deepest form of integration—an Economic Union *plus* members adopt a common currency. Example: The Eurozone countries within the EU.
+
+**Mnemonic:**  
+**F**riends **C**an **C**reate **E**xcellent **M**oney  
+(Free Trade Area, Customs Union, Common Market, Economic Union, Monetary Union)
+
+Or think: **F**rom **C**asual **C**ollaboration to **E**ventual **M**arriage 💍  
+(Each step deepens the economic relationship!)
 
 
 -----

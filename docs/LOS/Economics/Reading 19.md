@@ -1,18 +1,21 @@
------
-### <span style="color: #1565C0;">Part 1: The Two-Step Trade - Calculating Cross Rates 💱 (LOS 19.a)</span>
+## Reading 19: Currency Exchange Rates and Currency Forward Markets
 
-#### <span style="color: #6A1B9A;">1.1 Introduction</span>
+### 🎯 Introduction
 
 Welcome, future charterholder! Imagine you're at a giant, chaotic airport currency exchange. You have Indian Rupees (INR) and want to buy Thai Baht (THB), but the booth only has prices for INR to USD and USD to THB. What do you do? You do a two-step trade! This is the essence of a **cross rate**.
 
 Now, what if you need that Baht in 90 days, not today? You'd want to lock in a price now for a future exchange. That's a **forward rate**. This reading is your calculator and your rulebook for that currency exchange. You'll master the math of cross rates and learn the "no free lunch" principle that governs how forward rates are set, ensuring you can navigate the global currency markets like a pro.
 
-#### <span style="color: #6A1B9A;">1.2 Cross Rate Theory 🧠</span>
+-----
+
+### <span style="color: #1565C0;">Part 1: The Two-Step Trade - Calculating Cross Rates 💱 (LOS 19.a)</span>
+
+#### <span style="color: #6A1B9A;">1.1 Cross Rate Theory 🧠</span>
 
 * A **cross rate** is an exchange rate between two currencies that is derived from their individual exchange rates with a common third currency (usually the US dollar). It's how we price less common currency pairs.
 * The key is to set up the calculation so that the common currency "cancels out."
 
-##### <span style="color: #E65100;">1.2.1 Formula</span>
+##### <span style="color: #E65100;">1.1.1 Formula</span>
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
@@ -21,7 +24,7 @@ $$\left( \frac{A}{B} \right) \times \left( \frac{B}{C} \right) = \frac{A}{C}$$
 </div>
 The 'B' term cancels out!
 
-##### <span style="color: #E65100;">1.2.2 Example 🧮</span>
+##### <span style="color: #E65100;">1.1.2 Example 🧮</span>
 
 You are given the following quotes:
 
@@ -47,6 +50,7 @@ The cross rate is 6.42 Mexican pesos per Australian dollar.
 </div>
 
 -----
+
 ### <span style="color: #1565C0;">Part 2: Pricing the Future - Forward Rates and the No-Arbitrage Rule ⚖️ (LOS 19.b)</span>
 
 #### <span style="color: #6A1B9A;">2.1 Forward Exchange Rate & Interest Rate Parity</span>
@@ -93,6 +97,7 @@ Because the ABE interest rate is higher, the DUB (base currency) must trade at a
 </div>
 
 -----
+
 ### <span style="color: #1565C0;">Part 3: Reading the Quotes - Points, Percentages, Premiums, and Discounts 📊 (LOS 19.c)</span>
 
 #### <span style="color: #6A1B9A;">3.1 Forward Quotes in Points</span>
@@ -143,8 +148,14 @@ $$\left( \frac{1.320}{1.312} \right) - 1 = 0.0061 = \boldsymbol{+0.61\%}$$
 
 The euro is trading at a 0.61% forward premium for 90 days.
 
+#### <span style="color: #00838F;">3.4 Global & Local Context 🌍</span>
+
+* **Global Example:** Cross rates are essential for multinational corporations hedging currency risk across multiple countries. For example, a European company trading with India and Australia will use cross rates to price contracts.
+* **Indian Example:** Indian exporters often use forward contracts to lock in exchange rates for future USD/INR payments, applying interest rate parity to avoid arbitrage.
+
 -----
-### <span style="color: #1565C0;">Part 4: Formula Summary (LOS 19.d)</span>
+
+### 🧪 Formula Summary
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
@@ -164,13 +175,14 @@ $$Forward = Spot \times \frac{(1 + i_{\text{price currency}})}{(1 + i_{\text{bas
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Forward Premium/Discount (%):** 
+**Forward Premium/Discount (%):**
 
-$$\% \text{ Premium/Discount} = \left( \frac{Forward}{Spot} \right) - 1$$
+$$\text{Premium/Discount (%)} = \left( \frac{\text{Forward}}{\text{Spot}} \right) - 1$$
 
 </div>
 
 -----
+
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
@@ -189,8 +201,3 @@ $$\% \text{ Premium/Discount} = \left( \frac{Forward}{Spot} \right) - 1$$
 </div>
 </div>
 
------
-#### <span style="color: #00838F;">Global & Local Context 🌍</span>
-
-* **Global Example:** Cross rates are essential for multinational corporations hedging currency risk across multiple countries. For example, a European company trading with India and Australia will use cross rates to price contracts.
-* **Indian Example:** Indian exporters often use forward contracts to lock in exchange rates for future USD/INR payments, applying interest rate parity to avoid arbitrage.
