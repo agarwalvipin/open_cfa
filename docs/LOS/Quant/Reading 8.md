@@ -1,36 +1,40 @@
 ## <span style="color: #1565C0;">Reading 8: Hypothesis Testing</span>
 
-### 🎯 Introduction
+### <span style="color: #1565C0;">🎯 Introduction</span>
 
 Welcome, future charterholder! Imagine you're a detective in a courtroom drama. 🏛️ A claim has been made—for example, "This mutual fund has an average return of zero." Your job is to challenge that claim. The starting assumption, the "innocent until proven guilty," is called the **null hypothesis** ($H_0$). You then gather evidence (your sample data) and perform a statistical test. If your evidence is strong enough (a high test statistic), you can **reject the null hypothesis** and declare that the fund's return is likely not zero. If the evidence is weak, you **fail to reject** it, meaning you didn't have enough proof. This reading is your guide to conducting these financial trials, from setting up the case to making the final verdict!
 
 -----
 
-### <span style="color: #1565C0;">Part 1: The Rules of the Courtroom: Hypothesis Testing Basics ⚖️</span>
+### <span style="color: #1565C0;">Part 1: The Rules of the Courtroom: Hypothesis Testing Basics (LOS 8.a, 8.b) ⚖️</span>
 
 **Hypothesis testing** is a formal procedure for deciding between two competing statements about a population parameter. The process follows a clear set of steps.
 
-* **1. State the Hypotheses:** Null vs Alternative  
-* **2. Choose the test statistic** (e.g., z-stat, t-stat)  
-* **3. Set the significance level** (alpha)  
-* **4. State the decision rule** (critical value)  
-* **5. Collect data and calculate the test statistic**  
-* **6. Make a decision:** reject or fail to reject $H_0$  
+#### <span style="color: #6A1B9A;">1.1 Hypothesis Testing Procedure</span>
+
+* **State the Hypotheses:** Null vs Alternative
+* **Choose the test statistic** (e.g., z-stat, t-stat)
+* **Set the significance level** (alpha)
+* **State the decision rule** (critical value)
+* **Collect data and calculate the test statistic**
+* **Make a decision:** reject or fail to reject $H_0$
 
   * **Null Hypothesis ($H_0$):** This is the initial belief or the "statement of no effect" that you are trying to disprove. It **always** includes the "equal to" sign (=, ≤, or ≥). Example: $H_0: \mu = 0$.
   * **Alternative Hypothesis ($H_a$):** This is what you conclude if you reject the null. It's usually what you're trying to prove. Example: $H_a: \mu \neq 0$.
 
-#### <span style="color: #6A1B9A;">1.1 Making a Decision: Test Statistic vs. Critical Value</span>
+#### <span style="color: #6A1B9A;">1.2 Making a Decision: Test Statistic vs. Critical Value</span>
 
 Your **test statistic** is calculated from your sample data. It measures how far your sample result is from the value claimed in the null hypothesis.
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+
 $$\text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$
+
 </div>
 
 The **critical value** is your threshold for proof. It's determined by your chosen **significance level ($\alpha$)**, which is the probability of making a Type I error. Common levels are 5% (0.05) or 1% (0.01). If your test statistic is more extreme than your critical value, you have enough evidence to reject the null hypothesis.
 
-#### <span style="color: #6A1B9A;">1.2 Errors in Judgment: Type I and Type II Errors</span>
+#### <span style="color: #6A1B9A;">1.3 Errors in Judgment: Type I and Type II Errors</span>
 
 Just like in a real trial, you can make mistakes.
 
@@ -47,13 +51,20 @@ There's a trade-off: decreasing your chance of a Type I error (e.g., moving from
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:The exam will definitely test the relationship between **Type I**, **Type II**, and **Power**. Remember: for a given sample size, **Power and Type I error ($\alpha$) move together**. If you increase your significance level (e.g., from 1% to 5%), you make it easier to reject the null, which increases the power of the test but also increases the chance of a Type I error.
+
+💡 CFA Exam Tip ✍️: The exam will test the relationship between **Type I error**, **Type II error**, and **Power**. For a given sample size, Power and Type I error ($\alpha$) move together: increasing $\alpha$ (e.g., from 1% to 5%) makes it easier to reject the null, which raises the test's power but also increases the chance of a Type I error.
+
 </div>
 </div>
+
+#### <span style="color: #00838F;">1.4 Global & Local Context 🌍</span>
+
+* **Global Example:** Financial institutions worldwide use hypothesis testing to validate investment strategy performance claims.
+* **Local Example (India):** SEBI requires mutual funds to validate risk metrics using statistical tests for regulatory compliance.
 
 -----
 
-### <span style="color: #1565C0;">Part 2: Choosing Your Weapon: Types of Hypothesis Tests ⚔️</span>
+### <span style="color: #1565C0;">Part 2: Choosing Your Weapon: Types of Hypothesis Tests (LOS 8.c, 8.d) ⚔️</span>
 
 Different questions require different statistical tools. Here are the main tests you need to know for Level 1, along with their test statistic formulas.
 
@@ -70,7 +81,9 @@ Different questions require different statistical tools. Here are the main tests
     * *Question*: "Is the average monthly return of this fund significantly different from zero?"
     * *Test Statistic*:
       <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      
       $$t_{n-1} = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}$$
+      
       </div>
       Where $\bar{x}$ = sample mean, $\mu_0$ = hypothesized population mean, $s$ = sample standard deviation, $n$ = sample size.
 
@@ -78,8 +91,11 @@ Different questions require different statistical tools. Here are the main tests
     * *Question*: "Is the average return of growth stocks different from the average return of value stocks?"
     * *Test Statistic*:
       <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      
       $$t_{n_1+n_2-2} = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}}$$
+      
       $$s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}$$
+      
       </div>
       Where $\bar{x}_1, \bar{x}_2$ = sample means, $(\mu_1 - \mu_2)$ = hypothesized difference (often 0), $n_1, n_2$ = sample sizes, and $s_p^2$ is the pooled variance.
 
@@ -87,7 +103,9 @@ Different questions require different statistical tools. Here are the main tests
     * *Question*: "Did the average beta of companies in the Indian telecom sector change *after* the introduction of 5G?"
     * *Test Statistic*:
       <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      
       $$t_{n-1} = \frac{\bar{d} - \mu_{dz}}{s_{\bar{d}}}$$
+      
       </div>
       Where $\bar{d}$ = sample mean of differences, $\mu_{dz}$ = hypothesized mean difference (often 0), $s_{\bar{d}} = s_d / \sqrt{n}$ is the standard error of the mean difference, $s_d$ is the sample standard deviation of the differences, and $n$ = number of pairs.
 
@@ -97,7 +115,9 @@ Different questions require different statistical tools. Here are the main tests
     * *Question*: "An ETF prospectus claims its annual return volatility (standard deviation) is 15%. Based on our sample from the last 3 years, is this claim still valid?"
     * *Test Statistic*:
       <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      
       $$\chi^2_{n-1} = \frac{(n-1)s^2}{\sigma_0^2}$$
+      
       </div>
       Where $n$ = sample size, $s^2$ = sample variance, $\sigma_0^2$ = hypothesized population variance.
 
@@ -105,68 +125,100 @@ Different questions require different statistical tools. Here are the main tests
     * *Question*: "Is the volatility of earnings for the Indian IT industry the same as the volatility of earnings for the US IT industry?"
     * *Test Statistic*:
       <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      
       $$F_{n_1-1, n_2-1} = \frac{s_1^2}{s_2^2}$$
+      
       </div>
       Where $s_1^2$ and $s_2^2$ are the sample variances (conventionally, place the larger $s^2$ in the numerator). $n_1-1$ are the numerator degrees of freedom, and $n_2-1$ are the denominator degrees of freedom.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:Focus on **identifying which test is appropriate for a given scenario**. If the question involves two separate groups (e.g., men vs. women, US vs. India) and compares means, it's a difference-in-means t-test. If it involves a "before-and-after" on a single group, it's a paired comparisons t-test. Comparing two variances requires an F-test. Testing a single variance uses a Chi-square test.
+
+💡 CFA Exam Tip ✍️: Identify the appropriate test for the question. Two independent groups comparing means → difference-in-means t-test. Same group before-and-after → paired comparisons t-test. Comparing two variances → F-test. Testing a single variance → Chi-square test.
+
 </div>
 </div>
+
+#### <span style="color: #00838F;">2.3 Global & Local Context 🌍</span>
+
+* **Global Example:** U.S. mutual funds use t-tests to validate claims about average returns or volatility in prospectuses.
+* **Local Example (India):** Indian portfolio managers use F-tests to compare volatility across different market sectors (IT vs. Pharma).
 
 -----
 
-### <span style="color: #1565C0;">Part 3: Parametric vs. Nonparametric Tests: Picky vs. Flexible Tools 🛠️</span>
+### <span style="color: #1565C0;">Part 3: Parametric vs. Nonparametric Tests: Picky vs. Flexible Tools (LOS 8.e) 🛠️</span>
 
-  * **Parametric Tests** (like the t-test, F-test, and $\chi^2$-test) are powerful but picky. They rely on **assumptions** about the population's distribution, most commonly that the population is **normally distributed**. If the assumptions hold, these tests are the most powerful.
-  * **Nonparametric Tests** are the flexible "multi-tools" of statistics. They make few or no assumptions about the population's distribution. You would use a nonparametric test when:
-    *  The assumptions for a parametric test are violated (e.g., the data is clearly not normal).
-    *  The data are **ranks** (ordinal) instead of values (e.g., ranking mutual funds from 1st to 10th based on performance).
-    *  The hypothesis itself doesn't involve a parameter (e.g., testing if data is random).
+#### <span style="color: #6A1B9A;">3.1 Parametric Tests</span>
+
+**Parametric Tests** (like the t-test, F-test, and $\chi^2$-test) are powerful but picky. They rely on **assumptions** about the population's distribution, most commonly that the population is **normally distributed**. If the assumptions hold, these tests are the most powerful.
+
+#### <span style="color: #6A1B9A;">3.2 Nonparametric Tests</span>
+
+**Nonparametric Tests** are the flexible "multi-tools" of statistics. They make few or no assumptions about the population's distribution. You would use a nonparametric test when:
+
+* The assumptions for a parametric test are violated (e.g., the data is clearly not normal).
+* The data are **ranks** (ordinal) instead of values (e.g., ranking mutual funds from 1st to 10th based on performance).
+* The hypothesis itself doesn't involve a parameter (e.g., testing if data is random).
 
 While less powerful than parametric tests when assumptions are met, they are essential when your data doesn't play by the normal rules.
 
------
+#### <span style="color: #00838F;">3.3 Global & Local Context 🌍</span>
 
-### <span style="color: #00838F;">Global & Local Context 🌍</span>
-
-* **Global Example:** U.S. mutual funds often use hypothesis testing to validate claims about average returns or volatility.
-* **Local Example (India):** Indian regulators may require hypothesis tests to validate risk disclosures for domestic funds.
+* **Global Example:** International hedge funds use nonparametric tests when analyzing non-normal return distributions.
+* **Local Example (India):** Indian analysts may use nonparametric tests for small-cap stocks where return distributions are highly skewed.
 
 -----
 
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">🧪 Formula Summary</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**General Test Statistic Structure:**  
+
+**General Test Statistic Structure:**
+
 $$\text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Hypothesized Value}}{\text{Standard Error of the Sample Statistic}}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Single Mean t-test:**  
+
+**Single Mean t-test:**
+
 $$t_{n-1} = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Difference in Means t-test:**  
-$$t_{n_1+n_2-2} = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}}$$  
+
+**Difference in Means t-test:**
+
+$$t_{n_1+n_2-2} = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}}$$
+
 $$s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Paired Comparisons t-test:**  
+
+**Paired Comparisons t-test:**
+
 $$t_{n-1} = \frac{\bar{d} - \mu_{dz}}{s_{\bar{d}}}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Chi-Square Test:**  
+
+**Chi-Square Test:**
+
 $$\chi^2_{n-1} = \frac{(n-1)s^2}{\sigma_0^2}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**F-Test:**  
+
+**F-Test:**
+
 $$F_{n_1-1, n_2-1} = \frac{s_1^2}{s_2^2}$$
+
 </div>
 
 -----
@@ -177,18 +229,11 @@ $$F_{n_1-1, n_2-1} = \frac{s_1^2}{s_2^2}$$
 
 <div style="color: #000000; font-weight: 500;">
 
-* **$H_0$ Always Has the "Equals" Sign.**  
-  → The null hypothesis is what you assume to be true and try to reject. It always contains some form of equality (=, ≤, ≥).
-* **Reject if Extreme.**  
-  → You reject the null hypothesis if your calculated **test statistic** falls in the "rejection region"—that is, it's more extreme than your **critical value**.
-* **Know Your Errors.**  
-  → A **Type I error** (probability = $\alpha$) is rejecting a true null.  
-  → A **Type II error** (probability = $\beta$) is failing to reject a false null.  
-  → **Power** = 1 - $\beta$.
-* **Match the Test to the Question!**  
-  → Know which test (t, Chi-square, F) applies to means vs. variances, and for one vs. two populations.
-* **Parametric tests need assumptions** (especially normality).  
-  → **Nonparametric tests** are used when those assumptions fail or the data isn't suited for them.
+* **$H_0$ always includes an equality.** The null hypothesis contains =, ≤, or ≥.
+* **Reject if extreme.** Reject the null when the calculated test statistic lies in the rejection region (more extreme than the critical value).
+* **Know your errors.** Type I error (probability = $\alpha$): rejecting a true null. Type II error (probability = $\beta$): failing to reject a false null. Power = $1 - \beta$.
+* **Match the test to the question.** Choose t, Chi-square, or F based on means vs variances and one vs two populations.
+* **Parametric tests need assumptions (especially normality).** Use nonparametric tests when assumptions fail.
 
 </div>
 </div>

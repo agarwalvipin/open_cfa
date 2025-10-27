@@ -12,13 +12,16 @@ See `docs/LOS/FRA/Reading 33.md` for a complete implementation of these formatti
 
 ### Header Levels:
 ```markdown
-## Reading XX: [Title]                    # Main reading title
-### 🎯 Introduction                       # Introduction section
-### Part X: [Topic] (LOS XX.x)           # Main parts with colored spans
-#### X.X [Subtopic]                       # Major subsections
-##### X.X.X [Detail]                      # Detailed sub-subsections
-#### X.X Global & Local Context 🌍        # Context sections
+## <span style="color: #1565C0;">Reading XX: [Title]</span>                    # Main reading title (with color span)
+### <span style="color: #1565C0;">🎯 Introduction</span>                       # Introduction section (with color span)
+### <span style="color: #1565C0;">Part X: [Topic] (LOS XX.x)</span>           # Main parts with colored spans
+#### <span style="color: #6A1B9A;">X.X [Subtopic]</span>                       # Major subsections (with color span)
+##### <span style="color: #E65100;">X.X.X [Detail]</span>                      # Detailed sub-subsections (with color span)
+#### <span style="color: #00838F;">X.X Global & Local Context 🌍</span>        # Context sections (with color span)
+### <span style="color: #1565C0;">🧪 Formula Summary</span>                   # Formula summary section (with color span)
 ```
+
+**IMPORTANT: All major headers (Reading title, Introduction, Part headers, Formula Summary) MUST use color spans, not just section headers.**
 
 ### Numbering System:
 - **Parts**: Use "Part 1", "Part 2", "Part 3" with colored spans
@@ -100,6 +103,8 @@ Replace all blockquotes (`> [!TIP]`, `> [!IMPORTANT]`) with styled div elements 
 ```
 
 ### 🎯 IMPORTANT Boxes (Soft Yellow):
+
+**Format A - With nested sub-bullets (for complex FRA topics):**
 ```markdown
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
@@ -107,7 +112,7 @@ Replace all blockquotes (`> [!TIP]`, `> [!IMPORTANT]`) with styled div elements 
 
 <div style="color: #000000; font-weight: 500;">
 
-* **Key Point 1:** 
+* **Key Point 1:**
   * **Sub-point** → **Action**
   * **IFRS:** Details
   * **U.S. GAAP:** Details
@@ -119,6 +124,25 @@ Replace all blockquotes (`> [!TIP]`, `> [!IMPORTANT]`) with styled div elements 
 </div>
 </div>
 ```
+
+**Format B - Simple bullets without nesting (for Quant/simpler topics):**
+```markdown
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
+### 🎯 Quick Exam-Day Pointers
+
+<div style="color: #000000; font-weight: 500;">
+
+* **Key Point 1.** Main idea followed by supporting details in the same line.
+* **Key Point 2.** Another concept explained directly without sub-bullets.
+* **Calculator is Your Best Friend.** Master the TVM keys (N, I/Y, PV, PMT, FV).
+
+</div>
+</div>
+```
+
+**Use Format A** when covering complex accounting topics with IFRS vs GAAP comparisons or multi-year impact analysis.
+**Use Format B** for quantitative topics, simpler concepts, or when points don't require hierarchical sub-structure.
 
 **Styling Principles:**
 - Always use `color: #000000; font-weight: 500;` for text inside divs (ensures dark print)
@@ -156,11 +180,11 @@ $$\text{Remaining Life} \approx \frac{\text{Ending Net Investment}}{\text{Annual
 
 ### Formula Summary Section:
 ```markdown
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">🧪 Formula Summary</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Formula Name 1:** 
+**Formula Name 1:**
 
 $$\text{Formula} = \text{Expression}$$
 
@@ -168,14 +192,18 @@ $$\text{Formula} = \text{Expression}$$
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Formula Name 2:** 
+**Formula Name 2:**
 
 $$\text{Formula} = \text{Expression}$$
 
 </div>
 ```
 
-**Formula Background:** `#F5F5F5` (Light gray) - subtle, professional, print-friendly
+**IMPORTANT:**
+- Formula Summary header MUST use color span
+- Formula Background: `#F5F5F5` (Light gray) - subtle, professional, print-friendly
+- Blank lines required after opening `<div>` and before closing `</div>` tags
+- Blank line required between formula label and the actual formula
 
 ---
 
@@ -278,16 +306,21 @@ Use consistent 2-space indentation for nested bullets:
 
 Before considering a reading complete, verify:
 
+- [ ] **Main reading title** uses color span (`#1565C0`)
+- [ ] **Introduction header** uses color span (`#1565C0`)
+- [ ] **Formula Summary header** uses color span (`#1565C0`)
 - [ ] All major Parts use colored span headers
 - [ ] Horizontal rules (`-----`) separate major Parts
 - [ ] All subsection headers use the correct color scheme
 - [ ] All blockquotes converted to styled divs
-- [ ] All formulas have light gray backgrounds
+- [ ] All formulas have light gray backgrounds with **blank lines** after `<div>` and before `</div>`
 - [ ] All callout boxes have black text (`#000000`)
+- [ ] CFA Exam Tip boxes have single blank line spacing (not double)
 - [ ] Bullet indentation is consistent (2-space increments)
+- [ ] Quick Exam-Day Pointers use appropriate format (nested for FRA, simple for Quant)
 - [ ] Important concepts are **bolded**
 - [ ] Visual indicators (✅❌→⬇️⬆️) used where appropriate
-- [ ] Formula Summary section properly formatted
+- [ ] Formula Summary section properly formatted with color span
 - [ ] Print preview shows dark, readable text (not light gray)
 - [ ] Color scheme is balanced and professional throughout
 
@@ -340,13 +373,16 @@ Brief introduction to this part...
 
 ## 10. Reference Files
 
-**Primary Reference:** `docs/LOS/FRA/Reading 33.md`
+**Primary References:**
+- `docs/LOS/FRA/Reading 33.md` - Complex FRA topic with nested Quick Exam-Day Pointers
+- `docs/LOS/Quant/Reading 2.md` - Quant topic with simple Quick Exam-Day Pointers format
 
-This file demonstrates:
-- Complete header hierarchy with colors
+These files demonstrate:
+- Complete header hierarchy with colors (including main title, introduction, formula summary)
 - All three types of callout boxes (TIP, MNEMONIC, IMPORTANT)
-- Formula backgrounds in context and summary sections
+- Formula backgrounds in context and summary sections with proper blank lines
 - Proper bullet indentation
+- Both styles of Quick Exam-Day Pointers (nested vs simple)
 - Professional color scheme throughout
 - Excellent print quality
 
