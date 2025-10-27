@@ -111,13 +111,6 @@ The economy's direction depends on the combined moves of fiscal and monetary pol
 * **Global Example:** The U.S. Federal Reserve's use of Quantitative Easing after the 2008 financial crisis is a classic case of unconventional monetary policy at the zero lower bound.
 * **Indian Example:** The RBI's use of OMOs and repo rate adjustments to manage inflation and stimulate growth during periods of economic slowdown.
 
------
-
-### 🧪 Formula Summary
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**This reading is highly conceptual. There are no key formulas you need to memorize. The focus is on understanding the roles, tools, and effects of central bank actions.**
-</div>
 
 -----
 

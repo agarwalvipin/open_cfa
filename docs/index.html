@@ -55,6 +55,17 @@
       left: 340px !important;
     }
 
+    /* Handle collapsed sidebar state */
+    body.close .sidebar {
+      width: 0 !important;
+      border-right: none !important;
+      transform: translateX(-340px);
+    }
+
+    body.close .content {
+      left: 0 !important;
+    }
+
     /* Responsive design for smaller screens */
     @media screen and (max-width: 768px) {
       .sidebar {
@@ -63,6 +74,10 @@
 
       body .content {
         left: 280px !important;
+      }
+
+      body.close .sidebar {
+        transform: translateX(-280px);
       }
     }
 
@@ -74,6 +89,10 @@
 
       body .content {
         left: 0 !important;
+      }
+
+      body.close .sidebar {
+        transform: translateX(-300px);
       }
     }
   </style>

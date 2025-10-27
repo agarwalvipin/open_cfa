@@ -84,15 +84,12 @@ The government has two types of tools in its fiscal toolbox.
 
 A key Keynesian concept is the **fiscal multiplier**. It says that an initial change in government spending has a magnified final impact on the economy.
 
-```mermaid
-graph TD
-    A[Gov't spends $100 on a new road] --> B[Road builder earns $100];
-    B --> C["Builder spends a portion (e.g., $80) at a local shop"];
-    C --> D[Shopkeeper earns $80];
-    D --> E["Shopkeeper spends a portion (e.g., $64)... and so on"];
-    F((Initial $100 spending<br/>leads to a much larger<br/>total increase in GDP!));
-    E --> F;
-```
+**Flow of Fiscal Multiplier Effect:**
+
+1. Gov't spends `$100` on a new road &rarr; Road builder earns `$100`  
+2. Road builder spends a portion (e.g., `$80`) at a local shop &rarr; Shopkeeper earns `$80`  
+3. Shopkeeper spends a portion (e.g., `$64`) ... and so on  
+4. Initial `$100` spending leads to a much larger total increase in GDP!
 
 The size of this ripple effect is determined by the formula:
 

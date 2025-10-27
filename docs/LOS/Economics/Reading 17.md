@@ -109,15 +109,6 @@ graph TD
 * **Economic Union:** This is a Common Market *plus* members coordinate their economic policies and institutions. Example: The European Union (EU).
 * **Monetary Union:** This is the deepest form of integration—an Economic Union *plus* members adopt a common currency. Example: The Eurozone countries within the EU.
 
------
-
-### 🧪 Formula Summary
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
-**This reading is conceptual. There are no key formulas you need to memorize. The focus is on understanding the economic concepts and their implications.**
-
-</div>
 
 -----
 

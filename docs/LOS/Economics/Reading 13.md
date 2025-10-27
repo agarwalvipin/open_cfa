@@ -121,19 +121,8 @@ Economists use specific data points, called **economic indicators**, to track th
 </div>
 </div>
 
------
-
-### <span style="color: #1565C0;">Part 5: Formula Summary (LOS 13.e)</span>
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
-This reading is primarily conceptual; no specific formulas are required. Your focus should be on understanding the relationships and characteristics of each phase of the business cycle.
-
-</div>
 
 -----
-
-### <span style="color: #1565C0;">Part 6: Quick Exam-Day Pointers (LOS 13.f)</span>
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
