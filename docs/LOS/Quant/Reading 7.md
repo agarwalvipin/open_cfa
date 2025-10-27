@@ -115,10 +115,12 @@ $$s_{\bar{x}} = \frac{s}{\sqrt{n}}$$
 ### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
-* <b>CLT is your best friend.</b> If sample size <b>n ≥ 30</b>, you can assume the distribution of sample <i>means</i> is normal. This unlocks many statistical tests.
+
+* <b>CLT is Your Best Friend.</b> If sample size <b>n ≥ 30</b>, you can assume the distribution of sample <i>means</i> is normal. This unlocks many statistical tests.
 * <b>Bigger is Better.</b> Increasing your sample size <b>n</b> makes your estimates more precise by <b>decreasing</b> the standard error of the sample mean.
-* <b>Stratified vs. Cluster.</b> Know the difference! <b>Stratified</b> samples from <i>every</i> group; <b>Cluster</b> randomly selects <i>the groups</i>. Stratified is generally more precise.
+* <b>Stratified vs. Cluster.</b> <b>Stratified</b> samples from <i>every</i> group; <b>Cluster</b> randomly selects <i>the groups</i>. Stratified is generally more precise.
 * <b>Don't Confuse Standard Deviation and Standard Error.</b> Standard deviation measures the volatility of the data points. Standard error measures the precision of your <i>sample mean</i>.
-* <b>Resampling Methods.</b> Remember the key phrases: <b>Jackknife</b> is "leave one out." <b>Bootstrap</b> is "sample with replacement."
+* <b>Resampling Methods.</b> <b>Jackknife</b> is "leave one out." <b>Bootstrap</b> is "sample with replacement."
+
 </div>
 </div>

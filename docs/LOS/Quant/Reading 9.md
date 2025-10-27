@@ -132,15 +132,18 @@ $$E_{ij} = \frac{(\text{Row i Total}) \times (\text{Column j Total})}{\text{Gran
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
 ### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
-* <b>Purpose of the Tests:</b> These tests determine if a relationship observed in a <b>sample</b> is statistically significant and likely exists in the <b>population</b>.
-* <b>Testing Correlation:</b> Use the <b>t-test</b> for normally distributed data. Use the <b>Spearman rank test</b> for ranked (ordinal) data or when normality is not assumed. The null is always that the true correlation is zero.
-* <b>Testing Categorical Data:</b> Use the <b>Chi-Square ($\chi^2$) test</b> with a <b>contingency table</b>. The null is that the variables are independent.
-* <b>Degrees of Freedom are Key:</b>
+
+* <b>Purpose of the Tests.</b> These tests determine if a relationship observed in a <b>sample</b> is statistically significant and likely exists in the <b>population</b>.
+* <b>Testing Correlation.</b> Use the <b>t-test</b> for normally distributed data. Use the <b>Spearman rank test</b> for ranked (ordinal) data or when normality is not assumed. The null is always that the true correlation is zero.
+* <b>Testing Categorical Data.</b> Use the <b>Chi-Square ($\chi^2$) test</b> with a <b>contingency table</b>. The null is that the variables are independent.
+* <b>Degrees of Freedom are Key.</b>
   * For the correlation t-test: <b>df = n - 2</b>.
   * For the chi-square test: <b>df = (rows - 1) x (columns - 1)</b>.
-* <b>Chi-Square Logic:</b> A large $\chi^2$ value means <b>Observed</b> is far from <b>Expected</b>, so you <b>REJECT</b> independence. The variables are likely related.
+* <b>Chi-Square Logic.</b> A large $\chi^2$ value means <b>Observed</b> is far from <b>Expected</b>, so you <b>REJECT</b> independence. The variables are likely related.
+
 </div>
 </div>

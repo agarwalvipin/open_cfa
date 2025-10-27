@@ -174,13 +174,16 @@ $$P(A|B) = \frac{P(B|A)}{P(B)} \times P(A)$$
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
 ### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
-* <b>Expected Value is a Weighted Average.</b> ✅ It's your single best guess, calculated by weighting each possible outcome by its probability.
-* <b>Probability Trees are Your Friend.</b> 🌳 Use them to visually map out scenarios. To get the final probability of any branch, multiply the probabilities along the path.
-* <b>Variance is Different for Samples vs. Models.</b> Remember, for forward-looking probability models, you use the probabilities as weights to calculate variance, you <b>DO NOT</b> divide by <code>n-1</code>.
-* <b>Bayes' Formula = Updating Your Priors.</b> 💡 It's the formal way to answer the question: "Now that I know <i>this</i>, what is the probability of <i>that</i>?"
-* <b>Solve Bayes' with a Tree!</b> The easiest way to handle a Bayes' question is to draw a tree, find the probability of all paths where the "new information" occurs, and then use the formula: <b>(Probability of your desired path) / (Sum of probabilities of ALL paths where the new info occurs)</b>.
+
+* <b>Expected Value is a Weighted Average.</b> It's your single best guess, calculated by weighting each possible outcome by its probability.
+* <b>Probability Trees are Your Friend.</b> Use them to visually map out scenarios. To get the final probability of any branch, multiply the probabilities along the path.
+* <b>Variance is Different for Samples vs. Models.</b> For forward-looking probability models, you use the probabilities as weights to calculate variance—you <b>DO NOT</b> divide by <code>n-1</code>.
+* <b>Bayes' Formula = Updating Your Priors.</b> It's the formal way to answer: "Now that I know <i>this</i>, what is the probability of <i>that</i>?"
+* <b>Solve Bayes' with a Tree!</b> The easiest way to handle a Bayes' question is to draw a tree, find the probability of all paths where the "new information" occurs, and use the formula: <b>(Probability of your desired path) / (Sum of probabilities of ALL paths where the new info occurs)</b>.
+
 </div>
 </div>
