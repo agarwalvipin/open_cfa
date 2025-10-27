@@ -72,17 +72,6 @@ You should immediately recognize this as the **Freemium** model.
 
 -----
 
-### <span style="color: #1565C0;">Part 3: Formula Summary</span>
-
-This reading is entirely conceptual. There are **no formulas** you need to memorize. Your focus should be on understanding the definitions, frameworks, and different types of business models.
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Formula Summary:**  
-No formulas required for this reading.
-</div>
-
------
-
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers

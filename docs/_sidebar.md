@@ -9,7 +9,7 @@
     - [Fixed Income](Formulas/Fixed%20Income.md)
     - [Quants](Formulas/Quants.md)
 - LOS
-  - Quantitative Methods
+  - [Quantitative Methods](LOS/Quant/index.md)
     - [Reading 1: Rates and Returns](LOS/Quant/Reading%201.md)
     - [Reading 2: The Time Value of Money in Finance](LOS/Quant/Reading%202.md)
     - [Reading 3: Statistical Measures of Asset Returns](LOS/Quant/Reading%203.md)
@@ -21,7 +21,7 @@
     - [Reading 9: Parametric and Non-Parametric Tests of Independence](LOS/Quant/Reading%209.md)
     - [Reading 10: Simple Linear Regression](LOS/Quant/Reading%2010.md)
     - [Reading 11: Introduction to Big Data Techniques](LOS/Quant/Reading%2011.md)
-  - Economics
+  - [Economics](LOS/Economics/index.md)
     - [Reading 12: Firms and Market Structures](LOS/Economics/Reading%2012.md)
     - [Reading 13: Understanding Business Cycles](LOS/Economics/Reading%2013.md)
     - [Reading 14: Fiscal Policy](LOS/Economics/Reading%2014.md)
@@ -30,7 +30,7 @@
     - [Reading 17: International Trade](LOS/Economics/Reading%2017.md)
     - [Reading 18: Capital Flows and the FX Market](LOS/Economics/Reading%2018.md)
     - [Reading 19: Exchange Rate Calculations](LOS/Economics/Reading%2019.md)
-  - Corporate Issuers
+  - [Corporate Issuers](LOS/Corporate%20Issuer/index.md)
     - [Reading 20: Organizational Forms, Corporate Issuer Features, and Ownership](LOS/Corporate%20Issuer/Reading%2020.md)
     - [Reading 21: Investors and Other Stakeholders](LOS/Corporate%20Issuer/Reading%2021.md)
     - [Reading 22: Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits](LOS/Corporate%20Issuer/Reading%2022.md)
@@ -38,7 +38,7 @@
     - [Reading 24: Capital Investments and Capital Allocation](LOS/Corporate%20Issuer/Reading%2024.md)
     - [Reading 25: Capital Structure](LOS/Corporate%20Issuer/Reading%2025.md)
     - [Reading 26: Business Models](LOS/Corporate%20Issuer/Reading%2026.md)
-  - Financial Statement Analysis
+  - [Financial Statement Analysis](LOS/FRA/index.md)
     - [Reading 27: Introduction to Financial Statement Analysis](LOS/FRA/Reading%2027.md)
     - [Reading 28: Analyzing Income Statements](LOS/FRA/Reading%2028.md)
     - [Reading 29: Analyzing Balance Sheets](LOS/FRA/Reading%2029.md)
@@ -65,7 +65,7 @@
       - [Module 8](LOS/FRA/CFAI/Module%208.md)
       - [Module 9](LOS/FRA/CFAI/Module%209.md)
       - [Module 10](LOS/FRA/CFAI/Module%2010.md)
-  - Equity Investments
+  - [Equity Investments](LOS/Equity/index.md)
     - [Reading 39: Market Organization and Structure](LOS/Equity/Reading%2039.md)
     - [Reading 40: Security Market Indexes](LOS/Equity/Reading%2040.md)
     - [Reading 41: Market Efficiency](LOS/Equity/Reading%2041.md)
@@ -74,7 +74,7 @@
     - [Reading 44: Industry and Competitive Analysis](LOS/Equity/Reading%2044.md)
     - [Reading 45: Company Analysis: Forecasting](LOS/Equity/Reading%2045.md)
     - [Reading 46: Equity Valuation: Concepts and Basic Tools](LOS/Equity/Reading%2046.md)
-  - Fixed Income
+  - [Fixed Income](LOS/Fixed%20Income/index.md)
     - [Reading 47: Fixed-Income Instrument Features](LOS/Fixed%20Income/Reading%2047.md)
     - [Reading 48: Fixed-Income Cash Flows and Types](LOS/Fixed%20Income/Reading%2048.md)
     - [Reading 49: Fixed-Income Issuance and Trading](LOS/Fixed%20Income/Reading%2049.md)
@@ -96,7 +96,7 @@
     - [Reading 65: Mortgage-Backed Security (MBS) Instrument and Market Features](LOS/Fixed%20Income/Reading%2065.md)
   - Formulas
     - [Fixed Income](Formulas/Fixed%20Income.md)
-  - Derivatives
+  - [Derivatives](LOS/Derivatives/index.md)
     - [Reading 66: Derivative Instrument and Derivative Market Features](LOS/Derivatives/Reading%2066.md)
     - [Reading 67: Forward Commitment and Contingent Claim Features and Instruments](LOS/Derivatives/Reading%2067.md)
     - [Reading 68: Derivative Benefits, Risks, and Issuer and Investor Uses](LOS/Derivatives/Reading%2068.md)
@@ -107,7 +107,7 @@
     - [Reading 73: Pricing and Valuation of Options](LOS/Derivatives/Reading%2073.md)
     - [Reading 74: Option Replication Using Put–Call Parity](LOS/Derivatives/Reading%2074.md)
     - [Reading 75: Valuing a Derivative Using a One-Period Binomial Model](LOS/Derivatives/Reading%2075.md)
-  - Alternative Investments
+  - [Alternative Investments](LOS/Alts/index.md)
     - [Reading 76: Alternative Investment Features, Methods, and Structures](LOS/Alts/Reading%2076.md)
     - [Reading 77: Alternative Investment Performance and Returns](LOS/Alts/Reading%2077.md)
     - [Reading 78: Investments in Private Capital: Equity and Debt](LOS/Alts/Reading%2078.md)
@@ -115,14 +115,14 @@
     - [Reading 80: Natural Resources](LOS/Alts/Reading%2080.md)
     - [Reading 81: Hedge Funds](LOS/Alts/Reading%2081.md)
     - [Reading 82: Introduction to Digital Assets](LOS/Alts/Reading%2082.md)
-  - Portfolio Management
+  - [Portfolio Management](LOS/PM/index.md)
     - [Reading 83: Portfolio Risk and Return: Part I](LOS/PM/Reading%2083.md)
     - [Reading 84: Portfolio Risk and Return: Part II](LOS/PM/Reading%2084.md)
     - [Reading 85: Portfolio Management: An Overview](LOS/PM/Reading%2085.md)
     - [Reading 86: Basics of Portfolio Planning and Construction](LOS/PM/Reading%2086.md)
     - [Reading 87: The Behavioral Biases of Individuals](LOS/PM/Reading%2087.md)
     - [Reading 88: Introduction to Risk Management](LOS/PM/Reading%2088.md)
-  - Ethical and Professional Standards
+  - [Ethical and Professional Standards](LOS/Ethics/index.md)
     - [Reading 89: Professionalism and Standard I(D) Misconduct](LOS/Ethics/Reading%2089.md)
     - [Reading 90: The Code of Ethics and Standards of Professional Conduct](LOS/Ethics/Reading%2090.md)
     - [Reading 91.1: GIPS - Introduction](LOS/Ethics/Reading%2091.1.md)

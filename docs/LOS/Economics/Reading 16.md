@@ -112,16 +112,6 @@ Countries use a variety of tools to achieve their geopolitical goals.
 
 -----
 
-### 🧪 Formula Summary
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
-This reading is entirely conceptual. There are **no formulas** you need to memorize. Your focus should be on understanding the frameworks and definitions.
-
-</div>
-
------
-
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers

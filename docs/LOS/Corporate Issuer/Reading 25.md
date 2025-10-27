@@ -23,24 +23,23 @@ $$WACC = (w_d \times r_d \times (1-t)) + (w_e \times r_e)$$
 </div>
 
 Where:
+* **$w_d$** = Weight of debt in the capital structure  
+* **$r_d$** = Cost of debt (interest rate paid on debt)  
+* **$w_e$** = Weight of equity in the capital structure  
+* **$r_e$** = Cost of equity (expected return for shareholders)  
+* **$t$** = Corporate tax rate
 
-  * **wₑ** = Weight of equity in the capital structure
-  * **rₑ** = **Cost of equity** (the return shareholders expect)
-  * **w_d** = Weight of debt in the capital structure
-  * **r_d** = **Cost of debt** (the interest rate the company pays on its debt)
-  * **t** = The company's corporate tax rate
-
-Notice the special term: **(1 - t)**. This is the **tax shield**. Because interest payments on debt are usually tax-deductible, the government effectively subsidizes debt financing. The true cost of debt is its after-tax cost.
+The term **$(1 - t)$** represents the **tax shield**—since interest on debt is tax-deductible, the actual cost of debt is reduced by the tax rate.
 
 ##### <span style="color: #E65100;">1.1.1 Example 🧮</span>
 
-ABC, Inc., is funded with 50% debt and 50% equity. Its cost of debt is 8%, and its cost of equity is 11%. The corporate tax rate is 30%. What's the WACC?
+ABC, Inc. is funded with 50% debt and 50% equity. Its cost of debt is 8%, cost of equity is 11%, and the corporate tax rate is 30%. What's the WACC?
 
-  * w_d = 0.50
-  * r_e = 11% or 0.11
-  * w_d = 0.50
-  * r_d = 8% or 0.08
-  * t = 30% or 0.30
+* $w_d = 0.50$
+* $r_d = 8\%$ or $0.08$
+* $w_e = 0.50$
+* $r_e = 11\%$ or $0.11$
+* $t = 30\%$ or $0.30$
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 

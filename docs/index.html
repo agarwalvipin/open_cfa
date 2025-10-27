@@ -29,6 +29,53 @@
     h6 {
       margin-top: 0.5em !important;
     }
+
+    /* Sidebar width adjustments for long reading names */
+    .sidebar {
+      width: 340px !important;
+    }
+
+    .sidebar-nav {
+      padding-right: 10px;
+    }
+
+    .sidebar-nav li {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .sidebar-nav a {
+      white-space: normal !important;
+      line-height: 1.4 !important;
+      padding: 6px 0 !important;
+    }
+
+    /* Adjust main content to account for wider sidebar */
+    body .content {
+      left: 340px !important;
+    }
+
+    /* Responsive design for smaller screens */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 280px !important;
+      }
+
+      body .content {
+        left: 280px !important;
+      }
+    }
+
+    /* For mobile devices, use default Docsify responsive behavior */
+    @media screen and (max-width: 600px) {
+      .sidebar {
+        width: 300px !important;
+      }
+
+      body .content {
+        left: 0 !important;
+      }
+    }
   </style>
 </head>
 
@@ -42,6 +89,7 @@
       repo: '',
       loadSidebar: true,
       subMaxLevel: 3,
+      sidebarDisplayLevel: 1,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
