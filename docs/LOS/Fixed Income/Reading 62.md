@@ -45,7 +45,7 @@ Credit analysts use a core set of financial ratios to assess a company's capacit
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** By comparing these key ratios between two companies in the same industry, an analyst can quickly get a sense of their relative creditworthiness. A company with higher margins, better interest coverage, and lower leverage is generally the better credit risk.
+💡 CFA Exam Tip ✍️:By comparing these key ratios between two companies in the same industry, an analyst can quickly get a sense of their relative creditworthiness. A company with higher margins, better interest coverage, and lower leverage is generally the better credit risk.
 
 </div>
 </div>
@@ -80,7 +80,7 @@ The general seniority ranking from highest priority (safest) to lowest priority 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The concept of **structural subordination** is also a reason for notching. If a parent holding company has debt, its claim on a subsidiary's cash flows is *subordinate* to the subsidiary's own debt. Therefore, the parent company's bonds are effectively junior to the subsidiary's bonds.
+💡 CFA Exam Tip ✍️:The concept of **structural subordination** is also a reason for notching. If a parent holding company has debt, its claim on a subsidiary's cash flows is *subordinate* to the subsidiary's own debt. Therefore, the parent company's bonds are effectively junior to the subsidiary's bonds.
 
 </div>
 </div>

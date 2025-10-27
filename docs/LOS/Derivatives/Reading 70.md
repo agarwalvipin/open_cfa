@@ -58,7 +58,7 @@ It's crucial to distinguish between the forward <span style="color: #1976D2; fon
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Calculating the value of a forward contract *during its life* is a very common exam question. Memorize the formula $V_t(T) = S_t - PV(F_0(T))$ and understand its logic.
+💡 CFA Exam Tip ✍️:Calculating the value of a forward contract *during its life* is a very common exam question. Memorize the formula $V_t(T) = S_t - PV(F_0(T))$ and understand its logic.
 
 </div>
 </div>

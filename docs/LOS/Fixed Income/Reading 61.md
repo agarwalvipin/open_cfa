@@ -51,7 +51,7 @@ There are two main types of non-sovereign bonds:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The distinction between **GO bonds** and **Revenue bonds** is critical. For **GO bonds**, think about the overall economic health of the municipality (**the tax base**). For **Revenue bonds**, think like a corporate analyst and focus on the **cash flows** of the specific project.
+💡 CFA Exam Tip ✍️:The distinction between **GO bonds** and **Revenue bonds** is critical. For **GO bonds**, think about the overall economic health of the municipality (**the tax base**). For **Revenue bonds**, think like a corporate analyst and focus on the **cash flows** of the specific project.
 
 </div>
 </div>

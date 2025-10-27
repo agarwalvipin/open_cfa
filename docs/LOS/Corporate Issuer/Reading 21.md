@@ -68,7 +68,7 @@ Leverage magnifies losses too\! Shareholders get wiped out faster, increasing th
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The conflict between debtholders and shareholders is a classic exam topic. Remember: **Shareholders love risk** because of their unlimited upside. **Debtholders hate risk** because their upside is capped. This fundamental difference in incentives drives their behavior.
+💡 CFA Exam Tip ✍️:The conflict between debtholders and shareholders is a classic exam topic. Remember: **Shareholders love risk** because of their unlimited upside. **Debtholders hate risk** because their upside is capped. This fundamental difference in incentives drives their behavior.
 
 </div>
 </div>
@@ -134,7 +134,7 @@ ESG analysis also considers **negative externalities**—costs that a company im
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For the exam, understand that ESG is not just a "feel-good" topic. It's about identifying tangible and intangible risks that can materially affect a company’s valuation and creditworthiness. A poor ESG profile can be a major red flag for long-term investors.
+💡 CFA Exam Tip ✍️:For the exam, understand that ESG is not just a "feel-good" topic. It's about identifying tangible and intangible risks that can materially affect a company’s valuation and creditworthiness. A poor ESG profile can be a major red flag for long-term investors.
 
 </div>
 </div>

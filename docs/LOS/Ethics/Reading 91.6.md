@@ -25,7 +25,7 @@ Welcome back, CFA Samurai! Think of your career as a three-legged stool: one leg
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Exam questions on Standard IV(A) often involve scenarios about employees preparing to leave a firm. <b>Key rule:</b> ✅ You can <b>prepare</b> to leave (e.g., make arrangements for office space), but ❌ you cannot <b>solicit</b> clients or <b>compete</b> with your employer until your resignation is effective.
+💡 CFA Exam Tip ✍️:Exam questions on Standard IV(A) often involve scenarios about employees preparing to leave a firm. <b>Key rule:</b> ✅ You can <b>prepare</b> to leave (e.g., make arrangements for office space), but ❌ you cannot <b>solicit</b> clients or <b>compete</b> with your employer until your resignation is effective.
 </div>
 </div>
 

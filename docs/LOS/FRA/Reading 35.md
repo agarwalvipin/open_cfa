@@ -87,7 +87,7 @@ Where $\Delta$ means "change in".
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Understand the triggers for DTA (Tax > Accrual Income or Accrual Expense > Tax Deduction) and DTL (Accrual Income > Tax or Tax Deduction > Accrual Expense). Remember permanent differences don't create deferred taxes, only temporary ones do. The core equation linking tax expense, taxes payable, and changes in DTA/DTL is fundamental.
+💡 CFA Exam Tip ✍️:Understand the triggers for DTA (Tax > Accrual Income or Accrual Expense > Tax Deduction) and DTL (Accrual Income > Tax or Tax Deduction > Accrual Expense). Remember permanent differences don't create deferred taxes, only temporary ones do. The core equation linking tax expense, taxes payable, and changes in DTA/DTL is fundamental.
 </div>
 </div>
 
@@ -150,7 +150,7 @@ Analysts often adjust financial statements for deferred taxes:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Know the Balance Sheet Method (CV vs. Tax Base) rules for creating DTA/DTL. Understand the purpose and impact of the Valuation Allowance (U.S. GAAP). Be ready to explain when an analyst might treat a DTL as equity (stable/growing balance due to recurring source like capex) versus a liability (expected reversal).
+💡 CFA Exam Tip ✍️:Know the Balance Sheet Method (CV vs. Tax Base) rules for creating DTA/DTL. Understand the purpose and impact of the Valuation Allowance (U.S. GAAP). Be ready to explain when an analyst might treat a DTL as equity (stable/growing balance due to recurring source like capex) versus a liability (expected reversal).
 </div>
 </div>
 
@@ -209,7 +209,7 @@ Footnotes provide crucial details about deferred taxes:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Understand the difference between statutory, effective, and cash tax rates. Know the common items found in a tax rate reconciliation (permanent diffs, foreign rates, credits, VA changes) and how they affect the ETR relative to the statutory rate. Be aware of the key footnote disclosures related to deferred taxes.
+💡 CFA Exam Tip ✍️:Understand the difference between statutory, effective, and cash tax rates. Know the common items found in a tax rate reconciliation (permanent diffs, foreign rates, credits, VA changes) and how they affect the ETR relative to the statutory rate. Be aware of the key footnote disclosures related to deferred taxes.
 </div>
 </div>
 

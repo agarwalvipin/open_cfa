@@ -94,7 +94,7 @@ While NPV and IRR are for <i>projects</i>, <b>Return on Invested Capital (ROIC)<
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** <b>NPV IS KING!</b> This is one of the most important takeaways in all of corporate finance. If a question asks you to choose between two mutually exclusive projects and NPV and IRR give different answers, <b>always choose the project with the higher NPV</b>.
+💡 CFA Exam Tip ✍️:<b>NPV IS KING!</b> This is one of the most important takeaways in all of corporate finance. If a question asks you to choose between two mutually exclusive projects and NPV and IRR give different answers, <b>always choose the project with the higher NPV</b>.
 
 </div>
 </div>
@@ -127,7 +127,7 @@ Even with the right tools, managers can make mistakes.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves to test your understanding of what to include in your analysis. Remember this simple rule: <b>Include opportunity costs and externalities. Exclude sunk costs and financing costs</b> (interest is already captured in the discount rate).
+💡 CFA Exam Tip ✍️:The exam loves to test your understanding of what to include in your analysis. Remember this simple rule: <b>Include opportunity costs and externalities. Exclude sunk costs and financing costs</b> (interest is already captured in the discount rate).
 
 </div>
 </div>
@@ -149,7 +149,7 @@ Sometimes, a project's simple NPV doesn't tell the whole story. Many projects co
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** A key insight is that real options can turn a negative NPV project into a positive one. If a project has an NPV of `-$1 million` but contains an expansion option valued at `+$3 million`, the total project value is `+$2 million` and it should be accepted.
+💡 CFA Exam Tip ✍️:A key insight is that real options can turn a negative NPV project into a positive one. If a project has an NPV of `-$1 million` but contains an expansion option valued at `+$3 million`, the total project value is `+$2 million` and it should be accepted.
 
 </div>
 </div>

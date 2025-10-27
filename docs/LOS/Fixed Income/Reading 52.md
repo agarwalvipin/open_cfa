@@ -76,7 +76,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves testing the difference between **flat** and **full** price. Always remember: the price you *actually pay* is the full (dirty) price. Financial calculators give you the full price when you value a bond on a non-coupon date, so be prepared to calculate and subtract the accrued interest to find the flat (clean) price. Also, pay attention to the day-count conventions (**30/360** for corporate bonds, **actual/actual** for government bonds).
+💡 CFA Exam Tip ✍️:The exam loves testing the difference between **flat** and **full** price. Always remember: the price you *actually pay* is the full (dirty) price. Financial calculators give you the full price when you value a bond on a non-coupon date, so be prepared to calculate and subtract the accrued interest to find the flat (clean) price. Also, pay attention to the day-count conventions (**30/360** for corporate bonds, **actual/actual** for government bonds).
 
 </div>
 </div>
@@ -163,7 +163,7 @@ Now we can use this 4.6% YTM to price our 3-year bond!
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You won't need to do complex matrix pricing, but you absolutely need to understand the concept and how to perform simple linear interpolation. It’s a very practical and testable skill.
+💡 CFA Exam Tip ✍️:You won't need to do complex matrix pricing, but you absolutely need to understand the concept and how to perform simple linear interpolation. It’s a very practical and testable skill.
 
 </div>
 </div>

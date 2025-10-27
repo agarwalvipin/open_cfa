@@ -123,7 +123,7 @@ Digital assets are fundamentally different from traditional assets like stocks a
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The main investment case for adding digital assets to a traditional portfolio is their **low correlation** with stocks and bonds. In theory, this provides a powerful diversification benefit, though this correlation can rise during times of market stress.
+💡 CFA Exam Tip ✍️:The main investment case for adding digital assets to a traditional portfolio is their **low correlation** with stocks and bonds. In theory, this provides a powerful diversification benefit, though this correlation can rise during times of market stress.
 
 </div>
 </div>

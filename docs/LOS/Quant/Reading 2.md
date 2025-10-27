@@ -88,7 +88,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The relationship between a bond's price and its yield is **inverse**. If the market interest rate (yield) goes up, the bond's price goes down. If the yield goes down, the price goes up. This is a fundamental concept you *must* know.
+💡 CFA Exam Tip ✍️:The relationship between a bond's price and its yield is **inverse**. If the market interest rate (yield) goes up, the bond's price goes down. If the yield goes down, the price goes up. This is a fundamental concept you *must* know.
 
 </div>
 </div>
@@ -171,7 +171,7 @@ This principle is the bedrock for pricing many financial instruments.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You don't need to be an expert on arbitrage strategies for Level 1, but you *must* understand the concept of no-arbitrage. Questions will test your ability to use the no-arbitrage formulas for forward rates and FX rates to find the correct price or rate.
+💡 CFA Exam Tip ✍️:You don't need to be an expert on arbitrage strategies for Level 1, but you *must* understand the concept of no-arbitrage. Questions will test your ability to use the no-arbitrage formulas for forward rates and FX rates to find the correct price or rate.
 
 </div>
 </div>

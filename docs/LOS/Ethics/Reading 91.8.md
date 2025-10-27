@@ -29,7 +29,7 @@ Imagine a referee at a World Cup final who also happens to be the star player's 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Standard VI(A) is about **all** potential conflicts, not just those that cause harm. The mere **appearance** of a conflict is enough to require disclosure. The exam will test your ability to spot subtle conflicts, like a family member's ownership in a stock you recommend.
+💡 CFA Exam Tip ✍️:Standard VI(A) is about **all** potential conflicts, not just those that cause harm. The mere **appearance** of a conflict is enough to require disclosure. The exam will test your ability to spot subtle conflicts, like a family member's ownership in a stock you recommend.
 </div>
 </div>
 

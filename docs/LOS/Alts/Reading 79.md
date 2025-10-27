@@ -72,7 +72,7 @@ graph LR
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The Real Estate Risk–Return Spectrum (Core → Value‑Add → Opportunistic) is critical. Know each strategy's primary return driver (income vs appreciation) and remember REITs provide a liquid way to access real estate.
+💡 CFA Exam Tip ✍️:The Real Estate Risk–Return Spectrum (Core → Value‑Add → Opportunistic) is critical. Know each strategy's primary return driver (income vs appreciation) and remember REITs provide a liquid way to access real estate.
 
 </div>
 </div>
@@ -109,7 +109,7 @@ graph LR
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize development stages and their risk ordering: **Greenfield** (highest), **Brownfield** (medium), **Secondary** (lowest). Infrastructure's appeal: stable, inflation‑linked cash flows and low correlation with equities.
+💡 CFA Exam Tip ✍️:Memorize development stages and their risk ordering: **Greenfield** (highest), **Brownfield** (medium), **Secondary** (lowest). Infrastructure's appeal: stable, inflation‑linked cash flows and low correlation with equities.
 
 </div>
 </div>

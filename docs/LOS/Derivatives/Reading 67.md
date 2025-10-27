@@ -135,7 +135,7 @@ A **contingent claim** is a contract where the payoff is *contingent* on a futur
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The easiest way to distinguish them is to ask: <b>Does a party have a choice to act?</b> If yes, it's a contingent claim. If no (both are obligated), it's a forward commitment.
+💡 CFA Exam Tip ✍️:The easiest way to distinguish them is to ask: <b>Does a party have a choice to act?</b> If yes, it's a contingent claim. If no (both are obligated), it's a forward commitment.
 </div>
 </div>
 

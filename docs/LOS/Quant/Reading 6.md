@@ -36,7 +36,7 @@ If $r_{0,T}$ is normally distributed, then $P_T$ must be lognormally distributed
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The exam will test why the <b>lognormal distribution</b> is used for asset prices. The answer has two parts:
+💡 CFA Exam Tip ✍️:The exam will test why the <b>lognormal distribution</b> is used for asset prices. The answer has two parts:
   * Asset prices cannot be negative, and the lognormal distribution is bounded by zero.
   * It's the natural result of applying a normally distributed continuously compounded return to an initial price.
 </div>
@@ -92,7 +92,7 @@ The main difference from Monte Carlo is that bootstrap resampling is limited by 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The key difference to remember for the exam is the source of the data.
+💡 CFA Exam Tip ✍️:The key difference to remember for the exam is the source of the data.
   * <b>Monte Carlo</b> uses <i>assumed theoretical probability distributions</i>.
   * <b>Bootstrap resampling</b> uses the <i>actual historical data, sampled with replacement</i>.
 </div>

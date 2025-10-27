@@ -129,7 +129,7 @@ $$DFL = \frac{\% \Delta \text{Net Income}}{\% \Delta \text{Operating Profit}} = 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be prepared to calculate and interpret DOL and DFL. Remember:
+💡 CFA Exam Tip ✍️:Be prepared to calculate and interpret DOL and DFL. Remember:
 * **DOL** is about **fixed operating costs** (like rent and machinery).
 * **DFL** is about **fixed financing costs** (interest on debt).
 * **Total Leverage** = DOL × DFL

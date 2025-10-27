@@ -35,7 +35,7 @@ This chapter provides the specific formulas and methods for calculating returns.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves to test the requirement for **time-weighted returns**. Remember this is crucial for comparability, as it reflects the manager's skill, not the timing of client contributions or withdrawals.
+💡 CFA Exam Tip ✍️:The exam loves to test the requirement for **time-weighted returns**. Remember this is crucial for comparability, as it reflects the manager's skill, not the timing of client contributions or withdrawals.
 
 </div>
 </div>

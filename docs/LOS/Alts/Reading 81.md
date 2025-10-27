@@ -98,7 +98,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be able to classify strategies quickly:
+💡 CFA Exam Tip ✍️:Be able to classify strategies quickly:
 * If a question mentions a corporate merger → think **Event-Driven**.
 * Small pricing gap between related bonds → **Relative Value**.
 * Big macro bet on a currency → **Global Macro**.

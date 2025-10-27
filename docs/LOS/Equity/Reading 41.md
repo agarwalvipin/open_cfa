@@ -67,7 +67,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the implications for each form!
+💡 CFA Exam Tip ✍️:Memorize the implications for each form!
 
   * Weak-Form Efficiency → **Technical Analysis** is useless.
   * Semi-Strong-Form Efficiency → **Fundamental Analysis** is useless.

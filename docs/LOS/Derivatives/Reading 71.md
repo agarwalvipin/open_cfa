@@ -57,7 +57,7 @@ Interest rate futures, like those based on the Mumbai Interbank Offered Rate (MI
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Remember the inverse relationship for interest rate futures: as interest rates go <b>up</b> 📈, the futures price goes <b>down</b> 📉, and vice-versa.
+💡 CFA Exam Tip ✍️:Remember the inverse relationship for interest rate futures: as interest rates go <b>up</b> 📈, the futures price goes <b>down</b> 📉, and vice-versa.
 </div>
 </div>
 

@@ -28,7 +28,7 @@ A solid **business model** provides clear answers to five fundamental questions.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The **value proposition** is the heart and soul of any business model. For the exam, always ask yourself, "**What fundamental problem is this company solving for its customer, and why is its solution better than the competition's?**"
+💡 CFA Exam Tip ✍️:The **value proposition** is the heart and soul of any business model. For the exam, always ask yourself, "**What fundamental problem is this company solving for its customer, and why is its solution better than the competition's?**"
 
 </div>
 </div>
@@ -62,7 +62,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Expect scenario-based questions where you'll be given a short description of a company and asked to identify its business model.  
+💡 CFA Exam Tip ✍️:Expect scenario-based questions where you'll be given a short description of a company and asked to identify its business model.  
 For example:  
 "A company gives away its software for free but charges for customer support and advanced features."  
 You should immediately recognize this as the **Freemium** model.

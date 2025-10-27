@@ -54,7 +54,7 @@ The company's blended cost of capital is 8.3%.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The most common mistake on WACC questions is forgetting to adjust the cost of debt for taxes. The `(1 - t)` only applies to the debt component! The cost of equity is *not* tax-deductible. **Burn this into your memory.**
+💡 CFA Exam Tip ✍️:The most common mistake on WACC questions is forgetting to adjust the cost of debt for taxes. The `(1 - t)` only applies to the debt component! The cost of equity is *not* tax-deductible. **Burn this into your memory.**
 
 </div>
 </div>
@@ -182,7 +182,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the *evolution* of the theories:
+💡 CFA Exam Tip ✍️:Understand the *evolution* of the theories:
   * **MM (No Tax):** Irrelevant.
   * **MM (With Tax):** 100% debt is optimal.
   * **Static Tradeoff:** Optimal structure balances the tax shield against bankruptcy costs. This is the most realistic and important theory for the exam.

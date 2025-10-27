@@ -155,7 +155,7 @@ The **standard auditor's opinion** states:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Know the different types of audit opinions and what they imply. An unqualified opinion is good, but not a guarantee against fraud. Qualified, Adverse, or Disclaimer opinions are signals that require further investigation. Going concern uncertainty is a major red flag.
+💡 CFA Exam Tip ✍️:Know the different types of audit opinions and what they imply. An unqualified opinion is good, but not a guarantee against fraud. Qualified, Adverse, or Disclaimer opinions are signals that require further investigation. Going concern uncertainty is a major red flag.
 
 </div>
 </div>
@@ -184,7 +184,7 @@ Financial reporting standards are constantly evolving due to new business transa
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam often tests differences between IFRS and U.S. GAAP. Remember key distinctions like LIFO inventory being disallowed under IFRS, and the differing treatments for development costs and certain cash flows (interest/dividends).
+💡 CFA Exam Tip ✍️:The exam often tests differences between IFRS and U.S. GAAP. Remember key distinctions like LIFO inventory being disallowed under IFRS, and the differing treatments for development costs and certain cash flows (interest/dividends).
 
 </div>
 </div>

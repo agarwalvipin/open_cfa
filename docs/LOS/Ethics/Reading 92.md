@@ -23,7 +23,7 @@ Initially designed for investment management firms, the **GIPS 2020 update** exp
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Remember the distinction between what's <b>required</b> and what's <b>recommended</b>. <b>Verification</b> by a third party is strongly recommended to add credibility, but it is <b>not required</b> for a firm to claim GIPS compliance. ✅
+💡 CFA Exam Tip ✍️:Remember the distinction between what's <b>required</b> and what's <b>recommended</b>. <b>Verification</b> by a third party is strongly recommended to add credibility, but it is <b>not required</b> for a firm to claim GIPS compliance. ✅
 </div>
 </div>
 

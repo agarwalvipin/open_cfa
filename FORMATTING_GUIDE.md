@@ -79,7 +79,7 @@ Replace all blockquotes (`> [!TIP]`, `> [!IMPORTANT]`) with styled div elements 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Your tip content here with **bold** text for emphasis.
+💡 CFA Exam Tip ✍️:Your tip content here with **bold** text for emphasis.
 
 </div>
 </div>
@@ -320,7 +320,7 @@ Brief introduction to this part...
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Remember: **Key point** here with proper **emphasis**.
+💡 CFA Exam Tip ✍️:Remember: **Key point** here with proper **emphasis**.
 
 </div>
 </div>

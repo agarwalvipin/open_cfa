@@ -73,7 +73,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the functions of the three key board committees: **Audit** (financials & controls), **Compensation** (executive pay), and **Governance** (board structure & ethics). These are very frequent topics for exam questions.
+💡 CFA Exam Tip ✍️:Memorize the functions of the three key board committees: **Audit** (financials & controls), **Compensation** (executive pay), and **Governance** (board structure & ethics). These are very frequent topics for exam questions.
 
 </div>
 </div>
@@ -99,7 +99,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The link between governance and value is crucial. Think of it this way: Good Governance → Higher Trust → Lower Perceived Risk → Lower Cost of Capital → Higher Firm Value. The exam will test this relationship in various scenarios.
+💡 CFA Exam Tip ✍️:The link between governance and value is crucial. Think of it this way: Good Governance → Higher Trust → Lower Perceived Risk → Lower Cost of Capital → Higher Firm Value. The exam will test this relationship in various scenarios.
 
 </div>
 </div>

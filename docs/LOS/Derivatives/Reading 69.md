@@ -48,7 +48,7 @@ $$F_0(T) = 3000 \times (1.07) = 3210$$
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** This is a cornerstone formula. For an underlying asset with no costs or benefits of holding, the no-arbitrage forward price is simply the spot price compounded at the risk-free rate.
+💡 CFA Exam Tip ✍️:This is a cornerstone formula. For an underlying asset with no costs or benefits of holding, the no-arbitrage forward price is simply the spot price compounded at the risk-free rate.
 </div>
 </div>
 
@@ -103,7 +103,7 @@ Notice the forward price is lower than the 3,210 we calculated earlier because t
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Understand the intuition behind the cost of carry model. Don't just memorize the formula. **Costs of holding the asset increase the forward price, while benefits of holding it decrease the forward price.** This is a very testable concept. The exam might ask you to identify which factor would increase or decrease a forward price.
+💡 CFA Exam Tip ✍️:Understand the intuition behind the cost of carry model. Don't just memorize the formula. **Costs of holding the asset increase the forward price, while benefits of holding it decrease the forward price.** This is a very testable concept. The exam might ask you to identify which factor would increase or decrease a forward price.
 </div>
 </div>
 

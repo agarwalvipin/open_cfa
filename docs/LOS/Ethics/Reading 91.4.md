@@ -58,7 +58,7 @@ Examples:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** For the exam, understand the **conceptual shift** of GIPS 2020. The key theme is increased flexibility and broader applicability. Know that GIPS now explicitly covers asset owners and provides simpler reporting options for pooled funds. ✅
+💡 CFA Exam Tip ✍️:For the exam, understand the **conceptual shift** of GIPS 2020. The key theme is increased flexibility and broader applicability. Know that GIPS now explicitly covers asset owners and provides simpler reporting options for pooled funds. ✅
 </div>
 </div>
 

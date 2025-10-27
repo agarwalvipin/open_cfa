@@ -45,7 +45,7 @@ graph TD
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The CFA exam loves to test the nuances between what GIPS <b>requires</b> versus what it <b>recommends</b>. Verification is <b>recommended</b> but not required. Including non-fee-paying portfolios in a composite is <b>recommended</b> but not required. However, using time-weighted returns and applying compliance firm-wide are <b>required</b>.
+💡 CFA Exam Tip ✍️:The CFA exam loves to test the nuances between what GIPS <b>requires</b> versus what it <b>recommends</b>. Verification is <b>recommended</b> but not required. Including non-fee-paying portfolios in a composite is <b>recommended</b> but not required. However, using time-weighted returns and applying compliance firm-wide are <b>required</b>.
 </div>
 </div>
 

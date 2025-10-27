@@ -60,7 +60,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The role of the **Special Purpose Entity (SPE)** is a critical concept. You must understand that its legal separation from the originator is what makes the structure **bankruptcy remote**, which is a key benefit that allows the ABS to potentially have a higher credit rating than the originator itself.
+💡 CFA Exam Tip ✍️:The role of the **Special Purpose Entity (SPE)** is a critical concept. You must understand that its legal separation from the originator is what makes the structure **bankruptcy remote**, which is a key benefit that allows the ABS to potentially have a higher credit rating than the originator itself.
 
 </div>
 </div>

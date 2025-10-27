@@ -69,7 +69,7 @@ $$
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The exam loves to test the gray areas. Remember that **Standard I(D)** applies to conduct *outside* the workplace. Look for keywords like **dishonesty**, **fraud**, **deceit**, **integrity**, and **reputation**. If an action involves these, even if it seems unrelated to finance, it's likely a violation of I(D).
+💡 CFA Exam Tip ✍️:The exam loves to test the gray areas. Remember that **Standard I(D)** applies to conduct *outside* the workplace. Look for keywords like **dishonesty**, **fraud**, **deceit**, **integrity**, and **reputation**. If an action involves these, even if it seems unrelated to finance, it's likely a violation of I(D).
 </div>
 </div>
 
@@ -89,7 +89,7 @@ Compliance with **Standard I(D)** is straightforward. It's about being a good, h
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** For exam questions, the best course of action when you encounter misconduct is often to **report it to your supervisor or compliance department**. Simply stopping the activity isn't enough; you must take steps to dissociate and protect the integrity of the capital markets.
+💡 CFA Exam Tip ✍️:For exam questions, the best course of action when you encounter misconduct is often to **report it to your supervisor or compliance department**. Simply stopping the activity isn't enough; you must take steps to dissociate and protect the integrity of the capital markets.
 </div>
 </div>
 

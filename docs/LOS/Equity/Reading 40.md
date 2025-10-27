@@ -106,7 +106,7 @@ A **market capitalization-weighted index** gives more weight to companies with a
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 A variation is the **float-adjusted market capitalization-weighted index**, which only considers shares available for public trading (**market float**) and excludes shares held by controlling shareholders or governments. This is considered a better measure of the actual investment opportunity. The S&P 500 and Nifty 50 are both float-adjusted.
 
 </div>
@@ -128,7 +128,7 @@ A **fundamental-weighted index** weights stocks based on fundamental measures li
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 Remember the key difference: **Rebalancing** adjusts weights, while **Reconstitution** changes the members. You'll likely be tested on which index type needs the most frequent rebalancing (Answer: Equal-weighted).
 
 </div>

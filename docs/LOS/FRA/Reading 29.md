@@ -55,7 +55,7 @@ graph TD
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Remember the key IFRS vs. U.S. GAAP difference for R&D: IFRS *can* capitalize development costs if criteria are met; U.S. GAAP generally expenses both research and development. Know that indefinite-lived intangibles (like goodwill) are *not* amortized but *are* tested for impairment annually.
+💡 CFA Exam Tip ✍️:Remember the key IFRS vs. U.S. GAAP difference for R&D: IFRS *can* capitalize development costs if criteria are met; U.S. GAAP generally expenses both research and development. Know that indefinite-lived intangibles (like goodwill) are *not* amortized but *are* tested for impairment annually.
 </div>
 </div>
 
@@ -138,7 +138,7 @@ $$\text{Goodwill} = \text{Purchase Price} - \text{Fair Value of Identifiable Net
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Focus on where *unrealized* gains and losses go:
+💡 CFA Exam Tip ✍️:Focus on where *unrealized* gains and losses go:
   * Trading (U.S. GAAP) / FVPL (IFRS): Income Statement.
   * Available-for-Sale Debt (U.S. GAAP) / FVOCI (IFRS): Other Comprehensive Income (Equity).
     Remember IFRS has the FVOCI option for equity (if elected), which U.S. GAAP generally lacks.

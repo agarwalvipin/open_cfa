@@ -41,7 +41,7 @@ A fund manager wants to create a portfolio of 100 bonds that tracks a global bon
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The exam loves to test the difference between <b>stratified</b> and <b>cluster</b> sampling. In <b>stratified</b>, you take a sample from <i>every</i> group. In <b>cluster</b>, you take a sample of the <i>groups</i> themselves. Stratified sampling generally has a lower sampling error because it's more representative.
+💡 CFA Exam Tip ✍️:The exam loves to test the difference between <b>stratified</b> and <b>cluster</b> sampling. In <b>stratified</b>, you take a sample from <i>every</i> group. In <b>cluster</b>, you take a sample of the <i>groups</i> themselves. Stratified sampling generally has a lower sampling error because it's more representative.
 </div>
 </div>
 
@@ -75,7 +75,7 @@ Notice the <b>$\sqrt{n}$</b> in the denominator. This is huge! It means that as 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Do not confuse the <b>standard deviation of the sample (s)</b> with the <b>standard error of the sample mean ($s_{\bar{x}}$)</b>. The standard deviation measures the dispersion of the data points in your sample. The standard error measures how much the sample <i>mean</i> is likely to vary from the true population mean.
+💡 CFA Exam Tip ✍️:Do not confuse the <b>standard deviation of the sample (s)</b> with the <b>standard error of the sample mean ($s_{\bar{x}}$)</b>. The standard deviation measures the dispersion of the data points in your sample. The standard error measures how much the sample <i>mean</i> is likely to vary from the true population mean.
 </div>
 </div>
 
@@ -90,7 +90,7 @@ What if your sample size is small (less than 30) or you have doubts about the da
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The key difference to remember is the method. <b>Jackknife</b> = "leave one out." <b>Bootstrap</b> = "sample with replacement." Bootstrap is generally considered more powerful and versatile.
+💡 CFA Exam Tip ✍️:The key difference to remember is the method. <b>Jackknife</b> = "leave one out." <b>Bootstrap</b> = "sample with replacement." Bootstrap is generally considered more powerful and versatile.
 </div>
 </div>
 

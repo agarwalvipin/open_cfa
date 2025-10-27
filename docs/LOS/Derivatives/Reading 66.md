@@ -50,7 +50,7 @@ These are private contracts negotiated directly between two parties, away from a
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** This comparison between ETD and OTC markets is a very common exam topic. Know the trade-offs: **ETDs offer security and liquidity at the cost of flexibility. OTC markets offer flexibility at the cost of higher counterparty risk and lower liquidity.**
+💡 CFA Exam Tip ✍️:This comparison between ETD and OTC markets is a very common exam topic. Know the trade-offs: **ETDs offer security and liquidity at the cost of flexibility. OTC markets offer flexibility at the cost of higher counterparty risk and lower liquidity.**
 </div>
 </div>
 

@@ -38,7 +38,7 @@ It works by converting the data for each variable into ranks and then testing if
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The key takeaway is knowing <b>when</b> to use each test. See normally distributed data? Use the standard <b>t-test for correlation</b>. See data that is ranked or does not meet the normality assumption? Think <b>Spearman rank correlation</b>. And remember, the degrees of freedom for the standard correlation t-test is <b>n-2</b>.
+💡 CFA Exam Tip ✍️:The key takeaway is knowing <b>when</b> to use each test. See normally distributed data? Use the standard <b>t-test for correlation</b>. See data that is ranked or does not meet the normality assumption? Think <b>Spearman rank correlation</b>. And remember, the degrees of freedom for the standard correlation t-test is <b>n-2</b>.
 </div>
 </div>
 
@@ -99,7 +99,7 @@ An e-commerce giant like Amazon (global) or Flipkart (India) could use a chi-squ
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** You probably won't have to calculate a full, large chi-square statistic on the exam. However, you absolutely must know the <b>logic</b>: it's a test of <b>Observed vs. Expected</b> frequencies for categorical data. A large test statistic implies the variables are <b>dependent</b>. Also, remember the formula for degrees of freedom: <b>(rows - 1) x (columns - 1)</b>.
+💡 CFA Exam Tip ✍️:You probably won't have to calculate a full, large chi-square statistic on the exam. However, you absolutely must know the <b>logic</b>: it's a test of <b>Observed vs. Expected</b> frequencies for categorical data. A large test statistic implies the variables are <b>dependent</b>. Also, remember the formula for degrees of freedom: <b>(rows - 1) x (columns - 1)</b>.
 </div>
 </div>
 

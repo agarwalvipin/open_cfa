@@ -82,7 +82,7 @@ Things the issuer *is restricted from doing*:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The distinction between **affirmative (must do)** and **negative (cannot do)** covenants is a classic exam topic. **Negative covenants** are the primary way bondholders protect themselves from the issuer taking on more risk after the bond has been issued.
+💡 CFA Exam Tip ✍️:The distinction between **affirmative (must do)** and **negative (cannot do)** covenants is a classic exam topic. **Negative covenants** are the primary way bondholders protect themselves from the issuer taking on more risk after the bond has been issued.
 
 </div>
 </div>

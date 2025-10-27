@@ -67,7 +67,7 @@ This is a super important, and often misunderstood, part of the cycle. The **inv
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves testing the inventory-sales ratio. An analyst looking only at rising GDP might think the economy is strong. But if that GDP growth is from an *unplanned* buildup of inventories (a high inventory-sales ratio), it's actually a sign of weakness ahead!
+💡 CFA Exam Tip ✍️:The exam loves testing the inventory-sales ratio. An analyst looking only at rising GDP might think the economy is strong. But if that GDP growth is from an *unplanned* buildup of inventories (a high inventory-sales ratio), it's actually a sign of weakness ahead!
 
 </div>
 </div>
@@ -116,7 +116,7 @@ Economists use specific data points, called **economic indicators**, to track th
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be ready to classify indicators! The CFA exam will likely ask you to identify whether an indicator is leading, lagging, or coincident. The unemployment rate is a classic *lagging* indicator—companies wait until they are sure a recovery is solid before they start hiring again in large numbers.
+💡 CFA Exam Tip ✍️:Be ready to classify indicators! The CFA exam will likely ask you to identify whether an indicator is leading, lagging, or coincident. The unemployment rate is a classic *lagging* indicator—companies wait until they are sure a recovery is solid before they start hiring again in large numbers.
 
 </div>
 </div>

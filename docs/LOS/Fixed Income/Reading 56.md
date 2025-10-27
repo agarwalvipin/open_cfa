@@ -47,7 +47,7 @@ Macaulay duration is the investment horizon at which a bond investor is **immuni
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You must understand the interpretation of **Macaulay duration**. The exam will test your understanding of it as the investment horizon that eliminates interest rate risk. Being able to calculate it is important, but knowing what it *means* is critical.
+💡 CFA Exam Tip ✍️:You must understand the interpretation of **Macaulay duration**. The exam will test your understanding of it as the investment horizon that eliminates interest rate risk. Being able to calculate it is important, but knowing what it *means* is critical.
 
 </div>
 </div>

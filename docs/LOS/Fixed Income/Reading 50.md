@@ -91,7 +91,7 @@ Think of a younger, highly leveraged company, or a company in a cyclical industr
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Know the key differences between **Investment Grade (IG)** and **High Yield (HY)** debt.  
+💡 CFA Exam Tip ✍️:Know the key differences between **Investment Grade (IG)** and **High Yield (HY)** debt.  
 ✅ IG investors worry about **downgrades**; ❌ HY investors worry about **default**.  
 IG debt has ⬇️ low spreads and few covenants; HY debt has ⬆️ high spreads and many covenants.
 

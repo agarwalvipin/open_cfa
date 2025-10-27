@@ -148,7 +148,7 @@ An analyst believes there's a <b>60%</b> chance the economy will outperform (Eve
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Bayes' formula questions on the exam can look intimidating. Don't panic! The best way to solve them is to draw a quick probability tree. It helps you visualize the paths and easily calculate the joint probabilities needed for the numerator and the total probability for the denominator.
+💡 CFA Exam Tip ✍️: Bayes' formula questions on the exam can look intimidating. Don't panic! The best way to solve them is to draw a quick probability tree. It helps you visualize the paths and easily calculate the joint probabilities needed for the numerator and the total probability for the denominator.
 </div>
 </div>
 

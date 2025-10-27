@@ -67,7 +67,7 @@ Want to invest in a company outside your home country? Here's how:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Depository Receipts simplify foreign investing by allowing you to trade in your local currency on a local exchange. However, you are still exposed to **currency risk**! If the foreign currency weakens against your home currency, the value of your DR will fall, all else being equal.
+💡 CFA Exam Tip ✍️:Depository Receipts simplify foreign investing by allowing you to trade in your local currency on a local exchange. However, you are still exposed to **currency risk**! If the foreign currency weakens against your home currency, the value of your DR will fall, all else being equal.
 
 </div>
 </div>

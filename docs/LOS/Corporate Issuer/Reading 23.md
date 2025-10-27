@@ -52,7 +52,7 @@ A lower CCC means the company needs less capital tied up in **working capital**.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the CCC formula and what it represents. The exam will likely ask you to interpret a company's CCC relative to its peers or its own history. Remember: Shorter is better. DOH↓ + DSO↓ - DPO↑ = Shorter CCC.
+💡 CFA Exam Tip ✍️:Memorize the CCC formula and what it represents. The exam will likely ask you to interpret a company's CCC relative to its peers or its own history. Remember: Shorter is better. DOH↓ + DSO↓ - DPO↑ = Shorter CCC.
 
 </div>
 </div>
@@ -130,7 +130,7 @@ Analysts use several ratios to measure a company's liquidity, each one stricter 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the risk/return trade-off. **Aggressive = Higher Profitability, Higher Risk.** **Conservative = Lower Profitability, Lower Risk.** The exam may ask you to identify a company's strategy based on its financing mix.
+💡 CFA Exam Tip ✍️:Understand the risk/return trade-off. **Aggressive = Higher Profitability, Higher Risk.** **Conservative = Lower Profitability, Lower Risk.** The exam may ask you to identify a company's strategy based on its financing mix.
 
 </div>
 </div>

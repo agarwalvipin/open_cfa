@@ -128,7 +128,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** **Contango vs. Backwardation** is core. Visual: Contango's curve goes **up** (C**up**), Backwardation goes **down**. Know drivers (cost of carry vs. convenience yield) and the impact on long futures investors. Remember: **Commodities** = best inflation hedge; **Farmland/Timberland** = best diversifiers.
+💡 CFA Exam Tip ✍️:**Contango vs. Backwardation** is core. Visual: Contango's curve goes **up** (C**up**), Backwardation goes **down**. Know drivers (cost of carry vs. convenience yield) and the impact on long futures investors. Remember: **Commodities** = best inflation hedge; **Farmland/Timberland** = best diversifiers.
 
 </div>
 </div>

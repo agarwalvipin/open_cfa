@@ -70,7 +70,7 @@ At expiration, there is no time left, so the **time value is zero**. The option'
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** For the CFA Level 1 exam, you must be able to instantly identify an option's moneyness and calculate its exercise value and time value from its premium. This is a foundational concept that gets tested frequently.
+💡 CFA Exam Tip ✍️:For the CFA Level 1 exam, you must be able to instantly identify an option's moneyness and calculate its exercise value and time value from its premium. This is a foundational concept that gets tested frequently.
 </div>
 </div>
 
@@ -99,7 +99,7 @@ These boundaries define the "rules" for option prices. If an option's price fall
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** You are unlikely to be asked to derive these bounds on the exam. However, you should **memorize the formulas for the bounds** and understand the logic behind them. A common question might test whether you can identify if an option is mispriced based on these rules.
+💡 CFA Exam Tip ✍️:You are unlikely to be asked to derive these bounds on the exam. However, you should **memorize the formulas for the bounds** and understand the logic behind them. A common question might test whether you can identify if an option is mispriced based on these rules.
 </div>
 </div>
 
@@ -124,7 +124,7 @@ Think about options on Infosys (INFY) versus options on Adani Enterprises (ADANI
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** This table is pure gold for the exam. Questions asking "what happens to a call/put value if X increases?" are extremely common. Memorize this table and the logic behind each relationship. The effect of volatility is a particularly important and frequently tested concept.
+💡 CFA Exam Tip ✍️:This table is pure gold for the exam. Questions asking "what happens to a call/put value if X increases?" are extremely common. Memorize this table and the logic behind each relationship. The effect of volatility is a particularly important and frequently tested concept.
 </div>
 </div>
 

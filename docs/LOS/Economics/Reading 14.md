@@ -29,7 +29,7 @@ While both policies aim to achieve economic targets like stable growth and low i
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam will definitely test your ability to distinguish between fiscal and monetary policy. Remember: **Fiscal = Government (Spending/Taxes)**. **Monetary = Central Bank (Money Supply/Interest Rates)**. It's a fundamental distinction.
+💡 CFA Exam Tip ✍️:The exam will definitely test your ability to distinguish between fiscal and monetary policy. Remember: **Fiscal = Government (Spending/Taxes)**. **Monetary = Central Bank (Money Supply/Interest Rates)**. It's a fundamental distinction.
 
 </div>
 </div>
@@ -121,7 +121,7 @@ By the time a fiscal stimulus package actually starts working, the recession mig
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The three lags (**Recognition, Action, Impact**) are a classic exam topic. Understand that these long and variable lags are the biggest argument against using discretionary fiscal policy to fine-tune the economy.
+💡 CFA Exam Tip ✍️:The three lags (**Recognition, Action, Impact**) are a classic exam topic. Understand that these long and variable lags are the biggest argument against using discretionary fiscal policy to fine-tune the economy.
 
 </div>
 </div>

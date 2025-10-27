@@ -45,7 +45,7 @@ Here are the key players and instruments you'll encounter.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Know the fundamental difference between brokers and dealers. <b>Brokers</b> are agents who find a counterparty for you. <b>Dealers</b> are principals who trade with you from their own account. Think of a real estate broker (agent) vs. a car dealer (principal).
+💡 CFA Exam Tip ✍️:Know the fundamental difference between brokers and dealers. <b>Brokers</b> are agents who find a counterparty for you. <b>Dealers</b> are principals who trade with you from their own account. Think of a real estate broker (agent) vs. a car dealer (principal).
 </div>
 </div>
 
@@ -94,7 +94,7 @@ $$\text{Margin Call Price} = P_0 \times \left( \frac{1 - \text{Initial Margin \%
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The margin call formula is a favorite for exam questions. Practice it! If you buy 100 shares at $40 with a 50% initial margin and a 25% maintenance margin, the margin call price is $40 * ( (1-0.50)/(1-0.25) ) = $26.67.
+💡 CFA Exam Tip ✍️:The margin call formula is a favorite for exam questions. Practice it! If you buy 100 shares at $40 with a 50% initial margin and a 25% maintenance margin, the margin call price is $40 * ( (1-0.50)/(1-0.25) ) = $26.67.
 </div>
 </div>
 

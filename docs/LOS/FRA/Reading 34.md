@@ -184,7 +184,7 @@ CapitalCo leases a machine to Affordable Co for 4 years (annual payments of `$10
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Master the lessee accounting differences between IFRS (mostly finance) and U.S. GAAP (finance vs. operating). Know the impact on BS (Assets/Liabilities), IS (Expense timing & type), and CFS (CFO vs. CFF classification). Remember the 5 criteria for finance lease classification.
+💡 CFA Exam Tip ✍️:Master the lessee accounting differences between IFRS (mostly finance) and U.S. GAAP (finance vs. operating). Know the impact on BS (Assets/Liabilities), IS (Expense timing & type), and CFS (CFO vs. CFF classification). Remember the 5 criteria for finance lease classification.
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Aligns employee and shareholder interests.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Distinguish DC (simple, employee risk) vs. DB (complex, company risk, BS asset/liability). Know the basic components of DB cost and the key IFRS vs. U.S. GAAP reporting differences (esp. Past Service Cost and Actuarial Gains/Losses → IS vs. OCI). For stock comp, understand Grants vs. Options and that expense is recognized over the vesting period based on grant-date fair value.
+💡 CFA Exam Tip ✍️:Distinguish DC (simple, employee risk) vs. DB (complex, company risk, BS asset/liability). Know the basic components of DB cost and the key IFRS vs. U.S. GAAP reporting differences (esp. Past Service Cost and Actuarial Gains/Losses → IS vs. OCI). For stock comp, understand Grants vs. Options and that expense is recognized over the vesting period based on grant-date fair value.
 
 </div>
 </div>
@@ -341,7 +341,7 @@ The footnotes provide the necessary details to understand these complex liabilit
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Don't just look at the face of the financial statements for leases and pensions. The *disclosures* are essential. Pay close attention to DB pension assumptions (especially the discount rate) and the reconciliation of the funded status. For stock options, scrutinize the valuation inputs disclosed.
+💡 CFA Exam Tip ✍️:Don't just look at the face of the financial statements for leases and pensions. The *disclosures* are essential. Pay close attention to DB pension assumptions (especially the discount rate) and the reconciliation of the funded status. For stock options, scrutinize the valuation inputs disclosed.
 
 </div>
 </div>

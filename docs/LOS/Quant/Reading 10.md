@@ -112,7 +112,7 @@ Does our independent variable actually have a significant relationship with the 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You must be able to read an ANOVA table. Know that <b>$R^2 = SSR / SST$</b> and <b>$SEE = \sqrt{MSE}$</b>. Also, remember that for simple linear regression, the F-statistic is just the square of the slope's t-statistic (<b>$F = t^2$</b>).
+💡 CFA Exam Tip ✍️:You must be able to read an ANOVA table. Know that <b>$R^2 = SSR / SST$</b> and <b>$SEE = \sqrt{MSE}$</b>. Also, remember that for simple linear regression, the F-statistic is just the square of the slope's t-statistic (<b>$F = t^2$</b>).
 
 </div>
 </div>
@@ -153,7 +153,7 @@ What if the relationship isn't a straight line? We can often transform the varia
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The log-log model is important. If you see a regression where both Y and X have been transformed with natural logs, the slope coefficient ($\hat{b}_1$) can be directly interpreted as an elasticity. For example, if $\ln(\text{Demand}) = 2.5 - 1.5\ln(\text{Price})$, the price elasticity of demand is -1.5.
+💡 CFA Exam Tip ✍️:The log-log model is important. If you see a regression where both Y and X have been transformed with natural logs, the slope coefficient ($\hat{b}_1$) can be directly interpreted as an elasticity. For example, if $\ln(\text{Demand}) = 2.5 - 1.5\ln(\text{Price})$, the price elasticity of demand is -1.5.
 
 </div>
 </div>

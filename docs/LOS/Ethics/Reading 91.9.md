@@ -25,7 +25,7 @@ Think of the **CFA designation** as the jersey of a prestigious global sports te
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The most common exam trap for Standard VII(A) involves **sharing confidential exam information**. Remember, the prohibition is absolute. You cannot share questions or content with anyone, including your tutors, friends, or online study groups.
+💡 CFA Exam Tip ✍️:The most common exam trap for Standard VII(A) involves **sharing confidential exam information**. Remember, the prohibition is absolute. You cannot share questions or content with anyone, including your tutors, friends, or online study groups.
 </div>
 </div>
 

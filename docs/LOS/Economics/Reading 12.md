@@ -23,7 +23,7 @@ Every business, regardless of its market, faces two critical questions:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Remember the short-run shutdown rule: **Price < Average Variable Cost (AVC)** or **Total Revenue < Total Variable Cost (TVC)**. If you can't even cover your per-unit variable costs, it's time to close up shop for now. This is a very testable concept.
+💡 CFA Exam Tip ✍️:Remember the short-run shutdown rule: **Price < Average Variable Cost (AVC)** or **Total Revenue < Total Variable Cost (TVC)**. If you can't even cover your per-unit variable costs, it's time to close up shop for now. This is a very testable concept.
 
 </div>
 </div>
@@ -87,7 +87,7 @@ Because firms are interdependent, we need different models to predict their beha
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For oligopoly, **interdependence** is the keyword. The exam will test your understanding of the strategic decision-making involved. Be familiar with the logic of the **Nash equilibrium** and why collusion is tempting but difficult to maintain.
+💡 CFA Exam Tip ✍️:For oligopoly, **interdependence** is the keyword. The exam will test your understanding of the strategic decision-making involved. Be familiar with the logic of the **Nash equilibrium** and why collusion is tempting but difficult to maintain.
 
 </div>
 </div>

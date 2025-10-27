@@ -57,7 +57,7 @@ Imagine a company is like a factory. 🏭 **Long-term assets** are the big, impo
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Know the IFRS vs. U.S. GAAP R&D difference cold! IFRS splits R&D (expense Research, capitalize Development if criteria met), while U.S. GAAP generally expenses both (except software). Also, remember Goodwill arises *only* from acquisitions and is the 'plug' figure representing the premium paid over fair value of net identifiable assets.
+💡 CFA Exam Tip ✍️:Know the IFRS vs. U.S. GAAP R&D difference cold! IFRS splits R&D (expense Research, capitalize Development if criteria met), while U.S. GAAP generally expenses both (except software). Also, remember Goodwill arises *only* from acquisitions and is the 'plug' figure representing the premium paid over fair value of net identifiable assets.
 
 </div>
 </div>
@@ -175,7 +175,7 @@ This happens when an asset is sold, abandoned, exchanged, or spun off.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Focus on the IFRS vs. U.S. GAAP impairment differences: IFRS uses a one-step test (Carrying Value vs. Recoverable Amount) and allows reversals (except goodwill). U.S. GAAP uses a two-step test (Recoverability first, then measure loss vs. Fair Value) and *never* allows reversals for assets held for use. Understand the ratio impacts in *both* the impairment year and subsequent years.
+💡 CFA Exam Tip ✍️:Focus on the IFRS vs. U.S. GAAP impairment differences: IFRS uses a one-step test (Carrying Value vs. Recoverable Amount) and allows reversals (except goodwill). U.S. GAAP uses a two-step test (Recoverability first, then measure loss vs. Fair Value) and *never* allows reversals for assets held for use. Understand the ratio impacts in *both* the impairment year and subsequent years.
 
 </div>
 </div>
@@ -232,7 +232,7 @@ The footnotes are where the real details about long-term assets hide. Analysts n
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand what each disclosure tells you. Be prepared to calculate the approximate age/life ratios and interpret them. Recognize that management choices regarding useful lives and salvage values directly impact reported depreciation expense and net income. High fixed asset turnover suggests efficient use of assets.
+💡 CFA Exam Tip ✍️:Understand what each disclosure tells you. Be prepared to calculate the approximate age/life ratios and interpret them. Recognize that management choices regarding useful lives and salvage values directly impact reported depreciation expense and net income. High fixed asset turnover suggests efficient use of assets.
 
 </div>
 </div>

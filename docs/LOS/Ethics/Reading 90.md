@@ -48,7 +48,7 @@ This standard is all about your personal integrity and competence.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** For Standard I(A) Knowledge of the Law, exam questions often test the <strong>follow the stricter law</strong> rule. They might present a scenario where a country's local law is less strict than the CFA Code and Standards. The correct answer is always to adhere to the more stringent rule! ✅
+💡 CFA Exam Tip ✍️:For Standard I(A) Knowledge of the Law, exam questions often test the <strong>follow the stricter law</strong> rule. They might present a scenario where a country's local law is less strict than the CFA Code and Standards. The correct answer is always to adhere to the more stringent rule! ✅
 </div>
 </div>
 
@@ -93,7 +93,7 @@ This section is huge on the exam. It's all about loyalty, prudence, and care.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The difference between Standard III(A) Loyalty and Standard VI(A) Disclosure of Conflicts is critical. <strong>Loyalty</strong> means putting clients first. <strong>Disclosure</strong> means being transparent about potential conflicts. Sometimes, even with full disclosure, a conflict is so great that you cannot proceed because it would violate your duty of loyalty. ❌
+💡 CFA Exam Tip ✍️:The difference between Standard III(A) Loyalty and Standard VI(A) Disclosure of Conflicts is critical. <strong>Loyalty</strong> means putting clients first. <strong>Disclosure</strong> means being transparent about potential conflicts. Sometimes, even with full disclosure, a conflict is so great that you cannot proceed because it would violate your duty of loyalty. ❌
 </div>
 </div>
 

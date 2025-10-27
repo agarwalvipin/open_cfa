@@ -71,7 +71,7 @@ The process for a put option is almost identical, but our hedged portfolio consi
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Notice the hedge ratio for a put will be negative. This means you should *short* `h` shares for every put option you buy to create the risk-free hedge. For the exam, focus on understanding the *process* of creating a risk-free portfolio and discounting its value.
+💡 CFA Exam Tip ✍️:Notice the hedge ratio for a put will be negative. This means you should *short* `h` shares for every put option you buy to create the risk-free hedge. For the exam, focus on understanding the *process* of creating a risk-free portfolio and discounting its value.
 
 </div>
 </div>

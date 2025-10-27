@@ -28,7 +28,7 @@ Think of yourself as a master chef in a world-class kitchen. 🧑‍🍳 Your cl
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Questions on V(A) often test the use of third-party or quantitative research. Remember, you are responsible for the recommendations you make, even if they are based on someone else's model or report. You must understand the model's limitations and assumptions before relying on it.
+💡 CFA Exam Tip ✍️:Questions on V(A) often test the use of third-party or quantitative research. Remember, you are responsible for the recommendations you make, even if they are based on someone else's model or report. You must understand the model's limitations and assumptions before relying on it.
 </div>
 </div>
 

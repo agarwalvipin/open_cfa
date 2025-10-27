@@ -44,7 +44,7 @@ The cross rate is 6.42 Mexican pesos per Australian dollar.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Getting the cross rate right is all about lining up the units. Write out the fractions like in the example above. If one of your quotes is "upside down" (e.g., you need `USD/AUD` but you're given `AUD/USD`), just take the inverse (1 / given rate) to flip it before you multiply.
+💡 CFA Exam Tip ✍️:Getting the cross rate right is all about lining up the units. Write out the fractions like in the example above. If one of your quotes is "upside down" (e.g., you need `USD/AUD` but you're given `AUD/USD`), just take the inverse (1 / given rate) to flip it before you multiply.
 
 </div>
 </div>
@@ -91,7 +91,7 @@ Because the ABE interest rate is higher, the DUB (base currency) must trade at a
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The logic is more important than memorizing the formula's p's and b's. Just remember: to prevent a free lunch, the higher interest rate currency *must* lose value in the forward market to offset its higher yield. So it will trade at a discount.
+💡 CFA Exam Tip ✍️:The logic is more important than memorizing the formula's p's and b's. Just remember: to prevent a free lunch, the higher interest rate currency *must* lose value in the forward market to offset its higher yield. So it will trade at a discount.
 
 </div>
 </div>

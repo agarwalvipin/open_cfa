@@ -84,7 +84,7 @@ Here’s how they stack up in different market environments:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the relationship for a **normal, upward-sloping yield curve: Forward > Spot > Par**. This is the most commonly tested scenario. The forward curve leads the way, and the other curves are smoother averages that lag behind it.
+💡 CFA Exam Tip ✍️:Memorize the relationship for a **normal, upward-sloping yield curve: Forward > Spot > Par**. This is the most commonly tested scenario. The forward curve leads the way, and the other curves are smoother averages that lag behind it.
 
 </div>
 </div>

@@ -69,7 +69,7 @@ Notice the percentages are not mirror images!
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam will test your ability to distinguish between nominal and real rates and to correctly calculate appreciation/depreciation. Always be clear about which currency is the base currency. If the `A/B` rate goes up, currency B has appreciated.
+💡 CFA Exam Tip ✍️:The exam will test your ability to distinguish between nominal and real rates and to correctly calculate appreciation/depreciation. Always be clear about which currency is the base currency. If the `A/B` rate goes up, currency B has appreciated.
 
 </div>
 </div>
@@ -154,7 +154,7 @@ In simple terms: **A country that runs a trade deficit is spending more than it 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The link between the current account (trade) and the capital account is a crucial, frequently tested concept. Remember: **Current Account Deficit = Capital Account Surplus**. They are two sides of the same coin.
+💡 CFA Exam Tip ✍️:The link between the current account (trade) and the capital account is a crucial, frequently tested concept. Remember: **Current Account Deficit = Capital Account Surplus**. They are two sides of the same coin.
 
 </div>
 </div>

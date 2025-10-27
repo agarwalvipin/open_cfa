@@ -76,7 +76,7 @@ Due to the irregular timing of cash flows, we need special metrics.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 Master the logic for IRR and MOIC. IRR is superior for timing, MOIC is intuitive but ignores time value. Know the J-curve phases and why Level 3 assets can distort reported returns.
 
 </div>
@@ -133,7 +133,7 @@ Hedge fund index performance often looks better than reality due to two key bias
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 Fee calculations involving a **High-Water Mark (HWM)** and **hurdle rates** are very common on the exam. Practice the step-by-step logic. The order of operations matters! Also, be able to define and differentiate **Survivorship Bias** from **Backfill Bias**.
 
 </div>

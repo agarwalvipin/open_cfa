@@ -57,7 +57,7 @@ This is the most intuitive way to think about swap valuation. A swap is equivale
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 This bond analogy is the key to understanding swap valuation on the exam. If you remember that a swap is just a portfolio of two bonds, the valuation logic becomes much simpler.
 
 </div>

@@ -53,7 +53,7 @@ To facilitate global cooperation and trade, several key international organizati
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** A simple way to remember the difference: **IMF** = Financial Stability (the world's emergency fund). **World Bank** = Development & Poverty Reduction (the world's development fund). **WTO** = Trade Rules (the world's trade referee).
+💡 CFA Exam Tip ✍️:A simple way to remember the difference: **IMF** = Financial Stability (the world's emergency fund). **World Bank** = Development & Poverty Reduction (the world's development fund). **WTO** = Trade Rules (the world's trade referee).
 
 </div>
 </div>
@@ -98,7 +98,7 @@ Countries use a variety of tools to achieve their geopolitical goals.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be able to classify different actions. For example, if a country imposes tariffs on imports, you should recognize that as a non-cooperative economic tool. If two countries form a free trade area, that's a cooperative economic tool.
+💡 CFA Exam Tip ✍️:Be able to classify different actions. For example, if a country imposes tariffs on imports, you should recognize that as a non-cooperative economic tool. If two countries form a free trade area, that's a cooperative economic tool.
 
 </div>
 </div>

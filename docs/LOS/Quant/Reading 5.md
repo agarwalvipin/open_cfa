@@ -103,7 +103,7 @@ $$Cov(R_A, R_B) = \sum P(R_{A_i}, R_{B_i})[R_{A_i} - E(R_A)][R_{B_i} - E(R_B)]$$
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The key to these problems is being systematic. First, calculate the expected returns for each asset individually. Then, carefully go through each scenario, multiplying the probability by the product of the two assets' deviations from their respective means.
+💡 CFA Exam Tip ✍️:The key to these problems is being systematic. First, calculate the expected returns for each asset individually. Then, carefully go through each scenario, multiplying the probability by the product of the two assets' deviations from their respective means.
 
 </div>
 </div>
@@ -142,7 +142,7 @@ A pension fund in Europe has a legal obligation to earn at least a 3% return to 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The goal is to **MAXIMIZE** the Safety-First Ratio. The exam will often give you three portfolio choices with their expected returns and standard deviations, along with a minimum required return. Your job is to calculate the SFR for all three and pick the winner.
+💡 CFA Exam Tip ✍️:The goal is to **MAXIMIZE** the Safety-First Ratio. The exam will often give you three portfolio choices with their expected returns and standard deviations, along with a minimum required return. Your job is to calculate the SFR for all three and pick the winner.
 
 </div>
 </div>

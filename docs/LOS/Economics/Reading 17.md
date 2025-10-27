@@ -82,7 +82,7 @@ Besides restricting goods, countries sometimes impose **capital restrictions** o
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves to test the effects of tariffs and quotas. Remember this simple framework: **Price ↑, Imports ↓, Domestic Production ↑**. The key winners are **domestic producers**, and the key losers are **domestic consumers**. The country as a whole almost always loses.
+💡 CFA Exam Tip ✍️:The exam loves to test the effects of tariffs and quotas. Remember this simple framework: **Price ↑, Imports ↓, Domestic Production ↑**. The key winners are **domestic producers**, and the key losers are **domestic consumers**. The country as a whole almost always loses.
 
 </div>
 </div>

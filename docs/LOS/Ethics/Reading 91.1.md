@@ -27,7 +27,7 @@ The primary goal of GIPS is to create a standardized, industry-wide approach to 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Remember that **GIPS is voluntary**! No law forces a firm to comply. However, for a firm that *does* claim compliance, it is an **all or nothing** deal. They must apply the GIPS standards on a **firm-wide** basis, not just to their best-performing products.
+💡 CFA Exam Tip ✍️:Remember that **GIPS is voluntary**! No law forces a firm to comply. However, for a firm that *does* claim compliance, it is an **all or nothing** deal. They must apply the GIPS standards on a **firm-wide** basis, not just to their best-performing products.
 </div>
 </div>
 

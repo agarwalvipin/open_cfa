@@ -71,7 +71,7 @@ Analysts are now looking far beyond traditional financial reports. These new <b>
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For the exam, focus on the <b>definitions</b> and <b>distinctions</b>. You must know the <b>3 V's of Big Data</b> (<b>Volume</b>, <b>Velocity</b>, <b>Variety</b>) and the difference between <b>supervised</b> (labeled data) and <b>unsupervised</b> (unlabeled data) machine learning. Also, understand the risk of <b>overfitting</b>—when a model is too complex and performs poorly on new data.
+💡 CFA Exam Tip ✍️:For the exam, focus on the <b>definitions</b> and <b>distinctions</b>. You must know the <b>3 V's of Big Data</b> (<b>Volume</b>, <b>Velocity</b>, <b>Variety</b>) and the difference between <b>supervised</b> (labeled data) and <b>unsupervised</b> (unlabeled data) machine learning. Also, understand the risk of <b>overfitting</b>—when a model is too complex and performs poorly on new data.
 
 </div>
 </div>

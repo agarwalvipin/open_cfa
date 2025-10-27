@@ -30,7 +30,7 @@ It's crucial to understand that high-quality *reporting* doesn't automatically m
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the distinction! A company can perfectly follow GAAP (high reporting quality) but report earnings driven by unsustainable, one-time gains (low earnings quality). Conversely, a company might have solid, sustainable earnings but obscure them through poor, confusing disclosure (low reporting quality).
+💡 CFA Exam Tip ✍️:Understand the distinction! A company can perfectly follow GAAP (high reporting quality) but report earnings driven by unsustainable, one-time gains (low earnings quality). Conversely, a company might have solid, sustainable earnings but obscure them through poor, confusing disclosure (low reporting quality).
 
 </div>
 </div>
@@ -74,7 +74,7 @@ graph LR
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The key difference between levels 3/4 and levels 5/6 is compliance with accounting standards. Earnings management (level 4) might be unethical but still technically *within* the rules, while non-compliance (level 5) and fraud (level 6) are clear violations.
+💡 CFA Exam Tip ✍️:The key difference between levels 3/4 and levels 5/6 is compliance with accounting standards. Earnings management (level 4) might be unethical but still technically *within* the rules, while non-compliance (level 5) and fraud (level 6) are clear violations.
 
 </div>
 </div>
@@ -99,7 +99,7 @@ Within the bounds of GAAP/IFRS, managers have choices. These choices can lean to
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be able to identify examples of conservative vs. aggressive accounting choices. Remember that *both* can be used for earnings smoothing, just with opposite timing effects. Neutral, unbiased reporting is the theoretical ideal.
+💡 CFA Exam Tip ✍️:Be able to identify examples of conservative vs. aggressive accounting choices. Remember that *both* can be used for earnings smoothing, just with opposite timing effects. Neutral, unbiased reporting is the theoretical ideal.
 
 </div>
 </div>
@@ -153,7 +153,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Remember the fraud triangle: Motivation, Opportunity, Rationalization. Questions might describe a situation and ask which element is most prominent or which conditions are conducive to low-quality reporting.
+💡 CFA Exam Tip ✍️:Remember the fraud triangle: Motivation, Opportunity, Rationalization. Questions might describe a situation and ask which element is most prominent or which conditions are conducive to low-quality reporting.
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Several mechanisms help discipline financial reporting quality, although none ar
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the roles and limitations of regulators and auditors. Remember that an audit provides *reasonable*, not absolute, assurance.
+💡 CFA Exam Tip ✍️:Understand the roles and limitations of regulators and auditors. Remember that an audit provides *reasonable*, not absolute, assurance.
 
 </div>
 </div>
@@ -204,7 +204,7 @@ Regulators (like the SEC) require companies using non-GAAP measures to:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be skeptical of non-GAAP measures. Always check the reconciliation back to the GAAP numbers and understand *what* management excluded and *why*. Does their explanation make sense, or are they just trying to hide bad news?
+💡 CFA Exam Tip ✍️:Be skeptical of non-GAAP measures. Always check the reconciliation back to the GAAP numbers and understand *what* management excluded and *why*. Does their explanation make sense, or are they just trying to hide bad news?
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Managers can use various accounting choices and estimates to manage earnings, ca
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Focus on *how* specific accounting choices affect the timing of revenue/expense recognition and their impact on net income, assets, liabilities, and cash flow classifications. Questions often test the directional impact (increase/decrease) on financials and ratios.
+💡 CFA Exam Tip ✍️:Focus on *how* specific accounting choices affect the timing of revenue/expense recognition and their impact on net income, assets, liabilities, and cash flow classifications. Questions often test the directional impact (increase/decrease) on financials and ratios.
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Be alert for these warning signs of potential low-quality reporting or earnings 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** No single red flag proves manipulation, but a pattern of them warrants deeper investigation. Understand *why* each item is a potential warning sign (e.g., rising DSO might indicate channel stuffing or aggressive revenue recognition).
+💡 CFA Exam Tip ✍️:No single red flag proves manipulation, but a pattern of them warrants deeper investigation. Understand *why* each item is a potential warning sign (e.g., rising DSO might indicate channel stuffing or aggressive revenue recognition).
 
 </div>
 </div>

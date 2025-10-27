@@ -29,7 +29,7 @@ The relationship between these two margins determines whether the FRN trades at 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** This is a crucial concept. Think of it just like a fixed-rate bond. If the required yield (YTM) is greater than the coupon rate, the bond trades at a discount. For an FRN, the **Discount Margin (DM)** is the "required" part and the **Quoted Margin (QM)** is the "coupon" part. The logic is identical!
+💡 CFA Exam Tip ✍️:This is a crucial concept. Think of it just like a fixed-rate bond. If the required yield (YTM) is greater than the coupon rate, the bond trades at a discount. For an FRN, the **Discount Margin (DM)** is the "required" part and the **Quoted Margin (QM)** is the "coupon" part. The logic is identical!
 </div>
 </div>
 

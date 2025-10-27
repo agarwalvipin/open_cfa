@@ -63,7 +63,7 @@ Notice how reinvesting profits instead of paying them all out as dividends lower
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves to test the trade-offs between business forms. Remember the core conflict for a corporation: you get the amazing benefit of **limited liability**, but you have to deal with the headache of **double taxation**. This is a fundamental concept.
+💡 CFA Exam Tip ✍️:The exam loves to test the trade-offs between business forms. Remember the core conflict for a corporation: you get the amazing benefit of **limited liability**, but you have to deal with the headache of **double taxation**. This is a fundamental concept.
 
 </div>
 </div>
@@ -124,7 +124,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be able to clearly distinguish between an IPO, a direct listing, and a SPAC. The key difference is how capital is raised and whose shares are being sold. **IPO** = new shares, new capital. **Direct Listing** = existing shares, no new capital. **SPAC** = a merger with an already-public shell company.
+💡 CFA Exam Tip ✍️:Be able to clearly distinguish between an IPO, a direct listing, and a SPAC. The key difference is how capital is raised and whose shares are being sold. **IPO** = new shares, new capital. **Direct Listing** = existing shares, no new capital. **SPAC** = a merger with an already-public shell company.
 
 </div>
 </div>

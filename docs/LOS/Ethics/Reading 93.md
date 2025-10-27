@@ -86,7 +86,7 @@ Ethics questions often revolve around a few classic situations. Here’s how to 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The most difficult ethics questions often involve multiple, subtle issues. Your job is to identify the **primary violation**. Read the question carefully: is it asking what the member *did* wrong, or what they *should do* next? The answer might change depending on the question's focus.
+💡 CFA Exam Tip ✍️:The most difficult ethics questions often involve multiple, subtle issues. Your job is to identify the **primary violation**. Read the question carefully: is it asking what the member *did* wrong, or what they *should do* next? The answer might change depending on the question's focus.
 
 </div>
 </div>

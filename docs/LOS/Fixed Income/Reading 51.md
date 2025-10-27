@@ -64,7 +64,7 @@ There are two types of auctions:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The auction process is a key topic. Understand the difference between **competitive** (sets the price) and **non-competitive** (accepts the price) bids. Also, remember that **on-the-run** securities are the most important for establishing benchmark yields.
+💡 CFA Exam Tip ✍️:The auction process is a key topic. Understand the difference between **competitive** (sets the price) and **non-competitive** (accepts the price) bids. Also, remember that **on-the-run** securities are the most important for establishing benchmark yields.
 
 </div>
 </div>

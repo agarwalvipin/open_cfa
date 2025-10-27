@@ -116,7 +116,7 @@ Within an industry, how does a company compete? Michael Porter identified three 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:**  
+💡 CFA Exam Tip ✍️: 
 Be able to identify a company's strategy based on a description of its operations.  
 - A company that invests heavily in branding and R&D is likely pursuing **differentiation**.  
 - A company obsessed with process efficiency and scale is likely a **cost leader**.

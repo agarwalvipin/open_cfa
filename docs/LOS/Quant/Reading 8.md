@@ -47,7 +47,7 @@ There's a trade-off: decreasing your chance of a Type I error (e.g., moving from
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The exam will definitely test the relationship between **Type I**, **Type II**, and **Power**. Remember: for a given sample size, **Power and Type I error ($\alpha$) move together**. If you increase your significance level (e.g., from 1% to 5%), you make it easier to reject the null, which increases the power of the test but also increases the chance of a Type I error.
+💡 CFA Exam Tip ✍️:The exam will definitely test the relationship between **Type I**, **Type II**, and **Power**. Remember: for a given sample size, **Power and Type I error ($\alpha$) move together**. If you increase your significance level (e.g., from 1% to 5%), you make it easier to reject the null, which increases the power of the test but also increases the chance of a Type I error.
 </div>
 </div>
 
@@ -111,7 +111,7 @@ Different questions require different statistical tools. Here are the main tests
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** Focus on **identifying which test is appropriate for a given scenario**. If the question involves two separate groups (e.g., men vs. women, US vs. India) and compares means, it's a difference-in-means t-test. If it involves a "before-and-after" on a single group, it's a paired comparisons t-test. Comparing two variances requires an F-test. Testing a single variance uses a Chi-square test.
+💡 CFA Exam Tip ✍️:Focus on **identifying which test is appropriate for a given scenario**. If the question involves two separate groups (e.g., men vs. women, US vs. India) and compares means, it's a difference-in-means t-test. If it involves a "before-and-after" on a single group, it's a paired comparisons t-test. Comparing two variances requires an F-test. Testing a single variance uses a Chi-square test.
 </div>
 </div>
 

@@ -66,7 +66,7 @@ A PE investment isn't forever. The whole point is to exit at a higher valuation.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Know the key differences between **LBO** (mature companies, high debt, operational improvements) and **VC** (startups, high growth, nurturing innovation). Also, be ready to compare and contrast the main exit strategies: **Trade Sale, IPO, and SPAC**.
+💡 CFA Exam Tip ✍️:Know the key differences between **LBO** (mature companies, high debt, operational improvements) and **VC** (startups, high growth, nurturing innovation). Also, be ready to compare and contrast the main exit strategies: **Trade Sale, IPO, and SPAC**.
 
 </div>
 </div>
@@ -96,7 +96,7 @@ Private debt isn't one-size-fits-all. It ranges from safer senior loans to riski
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Remember the hierarchy of private debt: Direct Lending is the safest, and Mezzanine/Distressed are the riskiest.
+💡 CFA Exam Tip ✍️:Remember the hierarchy of private debt: Direct Lending is the safest, and Mezzanine/Distressed are the riskiest.
 
 </div>
 </div>
@@ -128,7 +128,7 @@ Private capital returns are correlated with public markets, but not perfectly (c
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Remember that **vintage year** is crucial for comparing PE fund performance and that **diversifying across vintage years** is a key risk management strategy for LPs.
+💡 CFA Exam Tip ✍️:Remember that **vintage year** is crucial for comparing PE fund performance and that **diversifying across vintage years** is a key risk management strategy for LPs.
 
 </div>
 </div>

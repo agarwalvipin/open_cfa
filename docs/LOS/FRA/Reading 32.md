@@ -78,7 +78,7 @@ When inventory is written down (because Market or NRV is lower than Cost):
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Know the key difference: **IFRS allows reversals of write-downs (up to original cost)**, while **U.S. GAAP never allows reversals**. Also, remember the **LCNRV vs. LCM distinction** based on standards and inventory method (**LIFO/Retail gets the trickier 'Market' definition under US GAAP**).
+💡 CFA Exam Tip ✍️:Know the key difference: **IFRS allows reversals of write-downs (up to original cost)**, while **U.S. GAAP never allows reversals**. Also, remember the **LCNRV vs. LCM distinction** based on standards and inventory method (**LIFO/Retail gets the trickier 'Market' definition under US GAAP**).
 
 </div>
 </div>
@@ -181,7 +181,7 @@ This occurs when a LIFO firm sells more units than it purchases, causing older, 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the effects of **FIFO vs. LIFO during inflation** (it's very common). A helpful mnemonic: **LIFO = Last-In, First-Out = Lower Income, Lower Inventory, Lower Taxes (during inflation).** Also, know how to use the **LIFO Reserve** to make LIFO firms comparable to FIFO firms. Be alert for **LIFO liquidation** scenarios!
+💡 CFA Exam Tip ✍️:Memorize the effects of **FIFO vs. LIFO during inflation** (it's very common). A helpful mnemonic: **LIFO = Last-In, First-Out = Lower Income, Lower Inventory, Lower Taxes (during inflation).** Also, know how to use the **LIFO Reserve** to make LIFO firms comparable to FIFO firms. Be alert for **LIFO liquidation** scenarios!
 
 </div>
 </div>
@@ -231,7 +231,7 @@ An analyst might see inventory turnover dramatically increase. Instead of just a
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Disclosures are key! They allow you to:
+💡 CFA Exam Tip ✍️:Disclosures are key! They allow you to:
 
   * Understand the *quality* of reported inventory and COGS.
   * Compare firms using different methods (especially LIFO vs. FIFO via the LIFO reserve).

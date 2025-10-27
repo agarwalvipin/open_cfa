@@ -51,7 +51,7 @@ A hedge fund might invest in plain old stocks and bonds, but their flexible mand
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The exam loves to test the *distinguishing features* of alternatives. Remember: **illiquidity**, **long horizons**, **low correlation**, and the need for **specialized knowledge** are what set them apart from traditional investments.
+💡 CFA Exam Tip ✍️:The exam loves to test the *distinguishing features* of alternatives. Remember: **illiquidity**, **long horizons**, **low correlation**, and the need for **specialized knowledge** are what set them apart from traditional investments.
 
 </div>
 </div>
@@ -111,7 +111,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the trade-off here: As you move from Fund Investing to Direct Investing, your **control increases** and your **fees decrease**, but the required **expertise and capital increase** dramatically.
+💡 CFA Exam Tip ✍️:Understand the trade-off here: As you move from Fund Investing to Direct Investing, your **control increases** and your **fees decrease**, but the required **expertise and capital increase** dramatically.
 
 </div>
 </div>
@@ -235,7 +235,7 @@ The GP gets paid only after *all* LPs have received their entire initial capital
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The fee structures are a BIG deal for the exam. Master the difference between **hard vs. soft hurdles** and be able to calculate them. Also, remember: **High-Water Mark is for Hedge Funds**, and **Clawback is for Private Equity**. Finally, know that the **American waterfall favors the GP**, while the **European waterfall favors the LPs**.
+💡 CFA Exam Tip ✍️:The fee structures are a BIG deal for the exam. Master the difference between **hard vs. soft hurdles** and be able to calculate them. Also, remember: **High-Water Mark is for Hedge Funds**, and **Clawback is for Private Equity**. Finally, know that the **American waterfall favors the GP**, while the **European waterfall favors the LPs**.
 
 </div>
 </div>

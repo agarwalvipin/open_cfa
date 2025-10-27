@@ -77,7 +77,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorize the core put-call parity formula: **c + PV(X) = S + p**. A simple mnemonic is "cops," but with the stock and put together: **c + bond = Stock + p**. You will be tested on your ability to rearrange this formula to solve for any of the four components or to identify arbitrage opportunities if the equation doesn't hold.
+💡 CFA Exam Tip ✍️:Memorize the core put-call parity formula: **c + PV(X) = S + p**. A simple mnemonic is "cops," but with the stock and put together: **c + bond = Stock + p**. You will be tested on your ability to rearrange this formula to solve for any of the four components or to identify arbitrage opportunities if the equation doesn't hold.
 
 </div>
 </div>

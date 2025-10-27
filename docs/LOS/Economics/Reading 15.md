@@ -58,7 +58,7 @@ $$
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** **Open Market Operations are the star of the show.** The exam will almost certainly test your understanding of how OMOs work. Remember: **Buy = Bigger** (money supply). **Sell = Smaller** (money supply).
+💡 CFA Exam Tip ✍️:**Open Market Operations are the star of the show.** The exam will almost certainly test your understanding of how OMOs work. Remember: **Buy = Bigger** (money supply). **Sell = Smaller** (money supply).
 
 </div>
 </div>
@@ -99,7 +99,7 @@ The economy's direction depends on the combined moves of fiscal and monetary pol
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The four policy mix scenarios are a classic topic. The most interesting (and most tested) are scenarios 3 and 4, where the policies are working against each other. Understand who wins and who loses in these situations (e.g., in scenario 3, the government crowds out private companies).
+💡 CFA Exam Tip ✍️:The four policy mix scenarios are a classic topic. The most interesting (and most tested) are scenarios 3 and 4, where the policies are working against each other. Understand who wins and who loses in these situations (e.g., in scenario 3, the government crowds out private companies).
 
 </div>
 </div>

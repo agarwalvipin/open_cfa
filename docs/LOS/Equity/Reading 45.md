@@ -24,7 +24,7 @@ Analysts rarely use just one method. They typically combine these four approache
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** A good forecast isn't about being overly complex. It's about being logical, consistent, and transparent with your assumptions. Avoid making a model more detailed than necessary if it doesn't materially improve the forecast's accuracy.
+💡 CFA Exam Tip ✍️:A good forecast isn't about being overly complex. It's about being logical, consistent, and transparent with your assumptions. Avoid making a model more detailed than necessary if it doesn't materially improve the forecast's accuracy.
 
 </div>
 </div>

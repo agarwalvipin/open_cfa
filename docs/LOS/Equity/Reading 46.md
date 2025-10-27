@@ -105,7 +105,7 @@ Most companies don't grow at a constant rate forever. They often have a high-gro
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The Gordon Growth Model is extremely testable. Pay close attention to whether the question gives you **D₀** (the dividend *just paid*) or **D₁** (the dividend *expected next year*). You MUST use **D₁** in the numerator.
+💡 CFA Exam Tip ✍️:The Gordon Growth Model is extremely testable. Pay close attention to whether the question gives you **D₀** (the dividend *just paid*) or **D₁** (the dividend *expected next year*). You MUST use **D₁** in the numerator.
 </div>
 </div>
 

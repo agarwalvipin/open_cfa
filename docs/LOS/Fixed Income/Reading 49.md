@@ -83,7 +83,7 @@ This is where previously issued bonds are traded among investors.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For the exam, know the key distinction between the **primary market** (**new issuance**, **underwriting**) and the **secondary market** (**trading between investors**, **OTC**, **dealer spreads**). Also, remember that **government bonds** are typically sold via **auction**.
+💡 CFA Exam Tip ✍️:For the exam, know the key distinction between the **primary market** (**new issuance**, **underwriting**) and the **secondary market** (**trading between investors**, **OTC**, **dealer spreads**). Also, remember that **government bonds** are typically sold via **auction**.
 
 </div>
 </div>

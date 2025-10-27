@@ -67,7 +67,7 @@ Investors (like mutual funds, hedge funds, and insurance companies) use derivati
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** A very common exam question will present a scenario and ask you to identify the primary motivation or the most appropriate derivative strategy.  
+💡 CFA Exam Tip ✍️:A very common exam question will present a scenario and ask you to identify the primary motivation or the most appropriate derivative strategy.  
 **Key distinction:** **Issuers hedge business operations risk. Investors modify portfolio risk.**
 
 </div>

@@ -91,7 +91,7 @@ Besides mortgages, many other types of debt are securitized.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The defining feature of a CDO (especially a CLO) that sets it apart from a standard ABS is that its collateral pool is **actively managed**. A standard auto loan or credit card ABS has a static or semi-static pool.
+💡 CFA Exam Tip ✍️:The defining feature of a CDO (especially a CLO) that sets it apart from a standard ABS is that its collateral pool is **actively managed**. A standard auto loan or credit card ABS has a static or semi-static pool.
 
 </div>
 </div>

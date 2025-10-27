@@ -43,7 +43,7 @@ Imagine Company A has Sales of ₹1,000 Cr and Net Income of ₹100 Cr. Company 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the *purpose* of each tool. Common-size analysis is great for comparing companies of different sizes or tracking internal trends. Ratio analysis provides specific insights into liquidity, solvency, profitability, etc. Be aware of the limitations – they are favorite exam topics!
+💡 CFA Exam Tip ✍️:Understand the *purpose* of each tool. Common-size analysis is great for comparing companies of different sizes or tracking internal trends. Ratio analysis provides specific insights into liquidity, solvency, profitability, etc. Be aware of the limitations – they are favorite exam topics!
 
 </div>
 </div>
@@ -142,7 +142,7 @@ These measure the company's ability to generate profits from its sales and inves
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Memorizing the formulas is essential, but *understanding what each ratio measures* and whether a higher/lower value is generally better is more important. Be prepared to calculate ratios and interpret their meaning in context (e.g., comparing to industry averages or historical trends). Watch out for slight variations in definitions (e.g., "Total Debt").
+💡 CFA Exam Tip ✍️:Memorizing the formulas is essential, but *understanding what each ratio measures* and whether a higher/lower value is generally better is more important. Be prepared to calculate ratios and interpret their meaning in context (e.g., comparing to industry averages or historical trends). Watch out for slight variations in definitions (e.g., "Total Debt").
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Let's say Company X has:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Exam questions often present a set of ratios and ask for an overall assessment or explanation of trends. Focus on identifying *conflicting signals* (like rising current ratio but falling quick ratio) and synthesizing the information to draw a conclusion.
+💡 CFA Exam Tip ✍️:Exam questions often present a set of ratios and ask for an overall assessment or explanation of trends. Focus on identifying *conflicting signals* (like rising current ratio but falling quick ratio) and synthesizing the information to draw a conclusion.
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Company Y has: Net Income = `$10M`, Revenue = `$100M`, Avg Assets = `$50M`, Avg 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be comfortable calculating and interpreting both the 3-part and 5-part DuPont equations. Understand what each component represents (profitability, efficiency, leverage, tax burden, interest burden). Questions often ask *why* ROE changed by analyzing changes in the DuPont components.
+💡 CFA Exam Tip ✍️:Be comfortable calculating and interpreting both the 3-part and 5-part DuPont equations. Understand what each component represents (profitability, efficiency, leverage, tax burden, interest burden). Questions often ask *why* ROE changed by analyzing changes in the DuPont components.
 
 </div>
 </div>
@@ -279,7 +279,7 @@ While the core ratios apply broadly, some industries have specific metrics analy
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You don't need to memorize dozens of obscure industry ratios for Level 1, but be aware that specific industries have key performance indicators beyond the standard set. Understand how historical ratio analysis forms the basis for forecasting future results.
+💡 CFA Exam Tip ✍️:You don't need to memorize dozens of obscure industry ratios for Level 1, but be aware that specific industries have key performance indicators beyond the standard set. Understand how historical ratio analysis forms the basis for forecasting future results.
 
 </div>
 </div>

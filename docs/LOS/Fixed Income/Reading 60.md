@@ -29,7 +29,7 @@ This Expected Loss serves as a good approximation for the **credit spread** an i
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For the exam, clearly distinguish between the two components. **POD** is about *if* a default will happen. **LGD** is about *how bad* it will be if it does. The greatest risk for an **investment-grade** bond is a rising POD (credit deterioration), while for **high-yield** bonds, both POD and LGD are major concerns.
+💡 CFA Exam Tip ✍️:For the exam, clearly distinguish between the two components. **POD** is about *if* a default will happen. **LGD** is about *how bad* it will be if it does. The greatest risk for an **investment-grade** bond is a rising POD (credit deterioration), while for **high-yield** bonds, both POD and LGD are major concerns.
 
 </div>
 </div>

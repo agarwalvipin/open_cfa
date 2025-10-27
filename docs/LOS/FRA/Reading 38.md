@@ -41,7 +41,7 @@ graph TD
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the sequence! Revenue is the driver. COGS and SG&A typically follow revenue. Balance sheet items link to income statement activity (e.g., retained earnings) and operational assumptions (e.g., DSO for receivables). The cash flow statement is usually derived last.
+💡 CFA Exam Tip ✍️:Understand the sequence! Revenue is the driver. COGS and SG&A typically follow revenue. Balance sheet items link to income statement activity (e.g., retained earnings) and operational assumptions (e.g., DSO for receivables). The cash flow statement is usually derived last.
 
 </div>
 </div>
@@ -84,7 +84,7 @@ Analysts are human, and psychological biases can creep into forecasts, making th
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Be able to identify these common behavioral biases from a description of an analyst's forecasting process or thinking. Understand the recommended remedial actions for each bias.
+💡 CFA Exam Tip ✍️:Be able to identify these common behavioral biases from a description of an analyst's forecasting process or thinking. Understand the recommended remedial actions for each bias.
 
 </div>
 </div>
@@ -106,7 +106,7 @@ Understanding the industry structure helps ground forecasts in economic reality.
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** You don't need to redo a full Porter analysis here, but understand the *link* between competitive forces and the reasonableness of your price and cost forecasts. Strong competitive position supports higher margins; intense competition pressures them.
+💡 CFA Exam Tip ✍️:You don't need to redo a full Porter analysis here, but understand the *link* between competitive forces and the reasonableness of your price and cost forecasts. Strong competitive position supports higher margins; intense competition pressures them.
 
 </div>
 </div>
@@ -145,7 +145,7 @@ If a company can pass cost increases to customers, its **gross profit amount** m
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Focus on the pass-through effect. Can the company raise prices to cover cost increases? How will this affect volume? Understand the difference between gross *profit* (absolute amount) and gross *margin* (percentage) when prices change.
+💡 CFA Exam Tip ✍️:Focus on the pass-through effect. Can the company raise prices to cover cost increases? How will this affect volume? Understand the difference between gross *profit* (absolute amount) and gross *margin* (percentage) when prices change.
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Detailed forecasts eventually become less reliable. Analysts often transition to
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Understand the factors influencing the *choice* of forecast horizon (cyclicality is key). Know the two main methods (multiples, constant growth DCF) for estimating terminal value beyond the detailed forecast period.
+💡 CFA Exam Tip ✍️:Understand the factors influencing the *choice* of forecast horizon (cyclicality is key). Know the two main methods (multiples, constant growth DCF) for estimating terminal value beyond the detailed forecast period.
 
 </div>
 </div>

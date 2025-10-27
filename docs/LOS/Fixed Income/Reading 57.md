@@ -36,7 +36,7 @@ While **Macaulay duration** is measured in years, **Modified Duration (ModDur)**
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** Modified Duration is your go-to metric for price sensitivity. Always remember the negative sign—price and yield move in opposite directions! ✅
+💡 CFA Exam Tip ✍️:Modified Duration is your go-to metric for price sensitivity. Always remember the negative sign—price and yield move in opposite directions! ✅
 
 </div>
 </div>
@@ -111,7 +111,7 @@ A bond's duration (i.e., its interest rate risk) is not random. It is directly i
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** The three drivers of duration are frequently tested. Duration (**interest rate risk**) is higher for bonds with **longer maturity**, **lower coupons**, and **lower yields**. ✅
+💡 CFA Exam Tip ✍️:The three drivers of duration are frequently tested. Duration (**interest rate risk**) is higher for bonds with **longer maturity**, **lower coupons**, and **lower yields**. ✅
 
 </div>
 </div>

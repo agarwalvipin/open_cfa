@@ -76,7 +76,7 @@ $$\text{Harmonic Mean} = \frac{3}{\frac{1}{10} + \frac{1}{12} + \frac{1}{14}} = 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** For returns over time, the <b>geometric mean</b> is the more accurate measure of past performance. The <b>arithmetic mean</b> is statistically the best estimator of the <b>next</b> period's return. The exam loves to test this distinction. Also, remember the hierarchy: For volatile returns, <b>Arithmetic Mean</b> > <b>Geometric Mean</b> > <b>Harmonic Mean</b>.
+💡 CFA Exam Tip ✍️:For returns over time, the <b>geometric mean</b> is the more accurate measure of past performance. The <b>arithmetic mean</b> is statistically the best estimator of the <b>next</b> period's return. The exam loves to test this distinction. Also, remember the hierarchy: For volatile returns, <b>Arithmetic Mean</b> > <b>Geometric Mean</b> > <b>Harmonic Mean</b>.
 
 </div>
 </div>
@@ -114,7 +114,7 @@ A global investment firm like BlackRock must report <b>time-weighted returns</b>
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip ✍️:** If a portfolio manager has <b>no control</b> over the timing of cash flows, the <b>time-weighted return</b> is the appropriate measure of their performance. If the investor <b>does</b> have control (e.g., managing their own personal account), the <b>money-weighted return</b> is more appropriate to measure their personal result.
+💡 CFA Exam Tip ✍️:If a portfolio manager has <b>no control</b> over the timing of cash flows, the <b>time-weighted return</b> is the appropriate measure of their performance. If the investor <b>does</b> have control (e.g., managing their own personal account), the <b>money-weighted return</b> is more appropriate to measure their personal result.
 
 </div>
 </div>
