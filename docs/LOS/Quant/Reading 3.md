@@ -51,7 +51,7 @@ $$CV = \frac{\text{Standard Deviation of X}}{\text{Average Value of X}}$$
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The <b>standard deviation</b> is the single most important measure of risk in the Level 1 curriculum. You must be able to calculate it and understand what it represents. The <b>CV</b> is the go-to tool for comparing risk between two investments on an "apples-to-apples" basis.
+💡 CFA Exam Tip ✍️: The <b>standard deviation</b> is the single most important measure of risk in the Level 1 curriculum. You must be able to calculate it and understand what it represents. The <b>CV</b> is the go-to tool for comparing risk between two investments on an "apples-to-apples" basis.
 </div>
 </div>
 
@@ -99,7 +99,7 @@ An analyst might find that the stock price of Maruti Suzuki (an Indian car compa
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-**💡 CFA Exam Tip ✍️:** The exam will test your understanding of what skewness and kurtosis mean for risk. <b>Negative skew</b> and <b>positive excess kurtosis (fat tails)</b> are a dangerous combination for investors, indicating a higher-than-normal probability of large losses. This is a key concept in risk management.
+💡 CFA Exam Tip ✍️: The exam will test your understanding of what skewness and kurtosis mean for risk. <b>Negative skew</b> and <b>positive excess kurtosis (fat tails)</b> are a dangerous combination for investors, indicating a higher-than-normal probability of large losses. This is a key concept in risk management.
 </div>
 </div>
 
@@ -116,7 +116,14 @@ $$\bar{X} = \frac{\sum\_{i=1}^{n} X\_i}{n}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-<b>Sample Variance:</b> 
+<b>Mean Absolute Deviation (MAD):</b>
+
+$$MAD = \frac{\sum_{i=1}^{n} |X_i - \bar{X}|}{n}$$
+
+</div>
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+<b>Sample Variance:</b>
 
 $$s^2 = \frac{\sum\_{i=1}^{n} (X\_i - \bar{X})^2}{n-1}$$
 

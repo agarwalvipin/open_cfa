@@ -162,7 +162,7 @@ This principle is the bedrock for pricing many financial instruments.
 
     <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
     
-    $$\frac{Forward}{Spot} = \frac{1 + r_{price~currency}}{1 + r_{base~currency}}$$
+    $$\frac{Forward}{Spot} = \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base currency}}}$$
 
     </div>
 
@@ -224,7 +224,7 @@ $$(1+S_2)^2 = (1+S_1)(1+1y1y)$$
 
 **No-Arbitrage Forward Exchange Rate:**
 
-$$Forward = Spot \times \frac{1 + r_{price~currency}}{1 + r_{base~currency}}$$
+$$Forward = Spot \times \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base currency}}}$$
 
 </div>
 
