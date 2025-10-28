@@ -64,7 +64,9 @@ It's crucial to separate revenue that is stable and predictable (**recurring**) 
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$\text{Forecast COGS} = (1 – \text{Forecast Gross Margin}) \times \text{Forecast Revenue}$$
+$$
+\text{Forecast COGS} = (1 - \text{Forecast Gross Margin}) \times \text{Forecast Revenue}
+$$
 
 </div>
 
@@ -112,7 +114,9 @@ A single-point forecast is almost guaranteed to be wrong. The real world is unce
 
 **Revenue Forecast (Top-Down):**
 
-$$\text{Revenue} = \text{Market Size} \times \text{Market Share}$$
+$$
+\text{Revenue} = \text{Market Size} \times \text{Market Share}
+$$
 
 </div>
 
@@ -120,7 +124,9 @@ $$\text{Revenue} = \text{Market Size} \times \text{Market Share}$$
 
 **COGS Forecast:**
 
-$$\text{COGS} = (1 - \text{Gross Margin}) \times \text{Revenue}$$
+$$
+\text{COGS} = (1 - \text{Gross Margin}) \times \text{Revenue}
+$$
 
 </div>
 
@@ -128,7 +134,9 @@ $$\text{COGS} = (1 - \text{Gross Margin}) \times \text{Revenue}$$
 
 **Net PP&E Forecast:**
 
-$$\text{Ending PP\&E} = \text{Beginning PP\&E} + \text{Capex} - \text{Depreciation}$$
+$$
+\text{Ending PP\&E} = \text{Beginning PP\&E} + \text{Capex} - \text{Depreciation}
+$$
 
 </div>
 
@@ -136,13 +144,13 @@ $$\text{Ending PP\&E} = \text{Beginning PP\&E} + \text{Capex} - \text{Depreciati
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-### 🎯 Quick Exam-Day Pointers
+**🎯 Quick Exam-Day Pointers**
 
 <div style="color: #000000; font-weight: 500;">
 
-* **Top-Down vs. Bottom-Up:**  
-  * **Top-down** → Starts with the economy and ends with the company  
-  * **Bottom-up** → Starts with the company's segments and builds up  
+* **Top-Down vs. Bottom-Up:**
+  * **Top-down** – Starts with the economy and ends with the company
+  * **Bottom-up** – Starts with the company's segments and builds up
   * Most analysts use a blend of both approaches
 
 * **Separate Recurring from Nonrecurring:**  

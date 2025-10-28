@@ -11,8 +11,8 @@ A thorough **company research report** is the final output of your analysis. It'
 
 An **initial report** (when an analyst starts "initiating coverage") is typically very detailed.
 
-| Key Elements of an Initial Research Report | Description |
-| :--- | :--- |
+| **Key Elements of an Initial Research Report** | **Description** |
+| --- | --- |
 | **Recommendation & Price Target** 🎯 | The final call: Buy, Hold, or Sell, with a specific target price. |
 | **Company Description** 🏢 | What does the company *do*? Explains its business model, products, and strategy. |
 | **Industry Overview** 🏭 | How does the company stack up against its competitors? This includes market share and competitive positioning. |
@@ -39,12 +39,14 @@ A company's **business model** is its blueprint for making money. Understanding 
 <div style="color: #000000; font-weight: 500;">
 
 **Example 🌍**
+
 **Apple's Business Model:**
-* **Products:** Sells premium hardware (iPhone, Mac) and services (App Store, Apple Music).
-* **Customers:** Targets consumers who value design, user experience, and a strong brand ecosystem.
-* **Channels:** Sells through its own retail stores, website, and third-party retailers.
-* **Pricing:** Uses a premium pricing strategy due to its strong brand loyalty.
-* **Suppliers:** Relies on a global supply chain (e.g., Foxconn in Asia for manufacturing).
+
+- **Products:** Sells premium hardware (iPhone, Mac) and services (App Store, Apple Music).
+- **Customers:** Targets consumers who value design, user experience, and a strong brand ecosystem.
+- **Channels:** Sells through its own retail stores, website, and third-party retailers.
+- **Pricing:** Uses a premium pricing strategy due to its strong brand loyalty.
+- **Suppliers:** Relies on a global supply chain (e.g., Foxconn in Asia for manufacturing).
 
 </div>
 </div>
@@ -84,7 +86,9 @@ The **degree of operating leverage (DOL)** measures how much a company's operati
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$DOL = \frac{\% \Delta \text{Operating Profit}}{\% \Delta \text{Sales}} = \frac{Q \times (P-VC)}{Q \times (P-VC) - FC}$$
+$$
+DOL = \frac{\% \Delta \text{Operating Profit}}{\% \Delta \text{Sales}} = \frac{Q \times (P-VC)}{Q \times (P-VC) - FC}
+$$
 
 </div>
 
@@ -99,7 +103,9 @@ Analyzing working capital tells you how efficiently a company is managing its da
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$CCC = \text{Days of Inventory on Hand} + \text{Days of Sales Outstanding} - \text{Number of Days of Payables}$$
+$$
+CCC = \text{Days of Inventory on Hand} + \text{Days of Sales Outstanding} - \text{Number of Days of Payables}
+$$
 
 </div>
 
@@ -116,7 +122,9 @@ The **degree of financial leverage (DFL)** measures how much a company's net inc
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$DFL = \frac{\% \Delta \text{Net Income}}{\% \Delta \text{Operating Profit}} = \frac{EBIT}{EBIT - \text{Interest}}$$
+$$
+DFL = \frac{\% \Delta \text{Net Income}}{\% \Delta \text{Operating Profit}} = \frac{EBIT}{EBIT - \text{Interest}}
+$$
 
 </div>
 
@@ -129,10 +137,10 @@ $$DFL = \frac{\% \Delta \text{Net Income}}{\% \Delta \text{Operating Profit}} = 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:Be prepared to calculate and interpret DOL and DFL. Remember:
-* **DOL** is about **fixed operating costs** (like rent and machinery).
-* **DFL** is about **fixed financing costs** (interest on debt).
-* **Total Leverage** = DOL × DFL
+**💡 CFA Exam Tip ✍️:** Be prepared to calculate and interpret DOL and DFL. Remember:
+- **DOL** is about **fixed operating costs** (like rent and machinery).
+- **DFL** is about **fixed financing costs** (interest on debt).
+- **Total Leverage** = DOL × DFL
 
 </div>
 </div>
@@ -149,36 +157,51 @@ $$DFL = \frac{\% \Delta \text{Net Income}}{\% \Delta \text{Operating Profit}} = 
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Contribution Margin (CM):**  
-$$CM = \text{Price} - \text{Variable Cost per unit}$$
+**Contribution Margin (CM):**
+
+$$
+CM = \text{Price} - \text{Variable Cost per unit}
+$$
 
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Operating Profit:**  
-$$\text{Operating Profit} = (Q \times CM) - \text{Fixed Costs}$$
+**Operating Profit:**
+
+$$
+\text{Operating Profit} = (Q \times CM) - \text{Fixed Costs}
+$$
 
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Degree of Operating Leverage (DOL):**  
-$$DOL = \frac{Q \times (P-VC)}{Q \times (P-VC) - FC}$$
+**Degree of Operating Leverage (DOL):**
+
+$$
+DOL = \frac{Q \times (P-VC)}{Q \times (P-VC) - FC}
+$$
 
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Cash Conversion Cycle (CCC):**  
-$$CCC = DOH + DSO - \text{Days of Payables}$$
+**Cash Conversion Cycle (CCC):**
+
+$$
+CCC = DOH + DSO - \text{Days of Payables}
+$$
 
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Degree of Financial Leverage (DFL):**  
-$$DFL = \frac{EBIT}{EBIT - \text{Interest}}$$
+**Degree of Financial Leverage (DFL):**
+
+$$
+DFL = \frac{EBIT}{EBIT - \text{Interest}}
+$$
 
 </div>
 
@@ -186,7 +209,7 @@ $$DFL = \frac{EBIT}{EBIT - \text{Interest}}$$
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-### 🎯 Quick Exam-Day Pointers
+**🎯 Quick Exam-Day Pointers**
 
 <div style="color: #000000; font-weight: 500;">
 

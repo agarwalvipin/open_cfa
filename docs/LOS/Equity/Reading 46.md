@@ -1,6 +1,6 @@
-## Reading 46: Equity Valuation: Concepts and Basic Tools 🚀
+## <span style="color: #1565C0;">Reading 46: Equity Valuation: Concepts and Basic Tools 🚀</span>
 
-### 🎯 Introduction
+### <span style="color: #1565C0;">🎯 Introduction</span>
 
 Imagine you're buying a mango tree. How much should you pay for it? You could estimate the value of all the mangoes it will produce in the future and discount that back to today's value (a **Discounted Cash Flow Model**). You could see what similar mango trees in the neighborhood are selling for (a **Price Multiple Model**). Or, you could calculate what the tree would be worth if you cut it down and sold the wood (an **Asset-Based Model**). Equity valuation is just like this. It's the art and science of determining a stock's **intrinsic value** using a toolkit of different models to decide if it's a bargain, overpriced, or fairly valued.
 
@@ -48,14 +48,19 @@ $$V_p = \frac{D_p}{k_p}$$
 </div>
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+
 <div style="color: #000000; font-weight: 500;">
+
 **Example 🧮**
-* **Preferred Stock Valuation:**  
-  * A preferred stock from Tata Steel pays a fixed annual dividend of ₹80.  
-  * Required return ($k_p$) is 10%.  
-  * Calculation: ₹80 / 0.10 = ₹800  
+
+* **Preferred Stock Valuation:**
+  * A preferred stock from Tata Steel pays a fixed annual dividend of ₹80.
+  * Required return ($k_p$) is 10%.
+  * Calculation: ₹80 / 0.10 = ₹800
   * **Key takeaway:** Value of a perpetuity is dividend divided by required return.
+
 </div>
+
 </div>
 
 #### <span style="color: #6A1B9A;">2.2 The Gordon Growth Model (Constant Growth DDM)</span>
@@ -76,14 +81,19 @@ Where:
 2.  The growth rate (g) is less than the required return (kₑ). If g ≥ kₑ, the model breaks and gives a nonsensical negative or infinite value!
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+
 <div style="color: #000000; font-weight: 500;">
+
 **Example 🧮**
-* A stock just paid a dividend of $2.00 ($D_0$).  
-* Dividends are expected to grow at 5% forever (g), and the required return is 10% (kₑ).  
-* Step 1: Find next year's dividend: $D_1 = \$2.00 \times (1.05) = \$2.10$  
-* Step 2: Plug into the model: $V_0 = \frac{\$2.10}{0.10 - 0.05} = \frac{\$2.10}{0.05} = \textbf{\$42.00}$  
+
+* A stock just paid a dividend of $2.00 ($D_0$).
+* Dividends are expected to grow at 5% forever (g), and the required return is 10% (kₑ).
+* Step 1: Find next year's dividend: $D_1 = \$2.00 \times (1.05) = \$2.10$
+* Step 2: Plug into the model: $V_0 = \frac{\$2.10}{0.10 - 0.05} = \frac{\$2.10}{0.05} = \textbf{\$42.00}$
 * **Key takeaway:** Always use next year's dividend ($D_1$) in the numerator.
+
 </div>
+
 </div>
 
 The **sustainable growth rate (SGR)** can be estimated as:
@@ -104,9 +114,13 @@ Most companies don't grow at a constant rate forever. They often have a high-gro
 4.  Sum the present values from steps 1 and 3.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+
 <div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:The Gordon Growth Model is extremely testable. Pay close attention to whether the question gives you **D₀** (the dividend *just paid*) or **D₁** (the dividend *expected next year*). You MUST use **D₁** in the numerator.
+
+💡 CFA Exam Tip ✍️: The Gordon Growth Model is extremely testable. Pay close attention to whether the question gives you **D₀** (the dividend *just paid*) or **D₁** (the dividend *expected next year*). You MUST use **D₁** in the numerator.
+
 </div>
+
 </div>
 
 -----
@@ -154,71 +168,78 @@ This method values a company's equity by subtracting the market value of its lia
 
 ### <span style="color: #1565C0;">Part 5: Choosing Your Weapon: Pros and Cons of Each Model ⚖️</span>
 
-| Model Category | Advantages 👍 | Disadvantages 👎 |
-| :--- | :--- | :--- |
-| **Present Value (DCF)** | Based on solid finance theory; forces you to think about underlying drivers of value. | Very sensitive to assumptions (especially growth and discount rates); less useful for non-dividend paying firms. |
-| **Price Multiples** | Easy to calculate and understand; widely used; good for cross-sectional comparisons. | Can be skewed by accounting differences; difficult for cyclical firms; doesn't tell you if the *entire* industry is overvalued. |
-| **Asset-Based** | Provides a "floor" value; useful for valuing distressed companies or those rich in tangible assets. | Market values of assets can be hard to find; ignores future growth potential and intangible assets. |
+| **Model Category**      | **Advantages 👍**                                                                 | **Disadvantages 👎**                                                                                   |
+|-------------------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Present Value (DCF)     | Based on solid finance theory; forces you to think about underlying drivers of value. | Very sensitive to assumptions (especially growth and discount rates); less useful for non-dividend paying firms. |
+| Price Multiples         | Easy to calculate and understand; widely used; good for cross-sectional comparisons. | Can be skewed by accounting differences; difficult for cyclical firms; doesn't tell you if the *entire* industry is overvalued. |
+| Asset-Based             | Provides a "floor" value; useful for valuing distressed companies or those rich in tangible assets. | Market values of assets can be hard to find; ignores future growth potential and intangible assets.     |
 
 -----
 
-### <span style="color: #00838F;">Global & Local Context 🌍</span>
+#### <span style="color: #00838F;">Global & Local Context 🌍</span>
 * **Global Example:** U.S. equity markets often rely heavily on price multiples (P/E, EV/EBITDA), while emerging markets may see more asset-based valuations due to less reliable earnings data.
 * **Indian Example:** Asset-based models are frequently used for valuing companies in sectors like real estate and natural resources, where tangible assets dominate.
 
 -----
 
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">🧪 Formula Summary</span>
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Preferred Stock Value:**  
-$$V_p = \frac{D_p}{k_p}$$
-</div>
+**Preferred Stock Value:**
+$$
+V_p = \frac{D_p}{k_p}
+$$
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Gordon Growth Model (GGM):**  
-$$V_0 = \frac{D_1}{k_e - g}$$
-</div>
+**Gordon Growth Model (GGM):**
+$$
+V_0 = \frac{D_1}{k_e - g}
+$$
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Next Year's Dividend:**  
-$$D_1 = D_0 \times (1+g)$$
-</div>
+**Next Year's Dividend:**
+$$
+D_1 = D_0 \times (1+g)
+$$
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Sustainable Growth Rate (SGR):**  
-$$g = (1 - \text{Payout Ratio}) \times ROE$$
-</div>
+**Sustainable Growth Rate (SGR):**
+$$
+g = (1 - \text{Payout Ratio}) \times ROE
+$$
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Justified Leading P/E:**  
-$$\frac{P_0}{E_1} = \frac{\text{Payout Ratio}}{k_e - g}$$
-</div>
+**Justified Leading P/E:**
+$$
+\frac{P_0}{E_1} = \frac{\text{Payout Ratio}}{k_e - g}
+$$
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Enterprise Value (EV):**  
-$$EV = \text{Mkt Cap} + \text{Mkt Value of Debt} - \text{Cash}$$
-</div>
+**Enterprise Value (EV):**
+$$
+EV = \text{Market Value of Equity} + \text{Market Value of Debt} - \text{Cash \& Cash Equivalents}
+$$
 
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
 ### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
-* **D₀ vs. D₁:**  
-  * The Gordon Growth Model formula requires **D₁** (next year's dividend).  
-  * If you're given D₀ (the last dividend), you MUST grow it by `(1+g)` first.
-* **k > g:**  
-  * The required return (**k**) *must* be greater than the growth rate (**g**) for the Gordon Growth Model to work.  
-  * If g is higher, the formula is invalid.
-* **Multiples Need Context:**  
-  * A P/E of 30 isn't inherently "high."  
+
+* **D₀ vs. D₁:**
+  * The Gordon Growth Model formula requires **D₁** (next year's dividend).
+  * If you're given **D₀** (the last dividend), you **must** grow it by $(1+g)$ first.
+
+* **k > g:**
+  * The required return (**k**) **must** be greater than the growth rate (**g**) for the Gordon Growth Model to work.
+  * If $g \geq k$, the formula is invalid.
+
+* **Multiples Need Context:**
+  * A P/E of 30 isn't inherently "high."
   * It depends on the company's growth prospects, risk, and what peers are trading at.
-* **Use EV/EBITDA for Different Capital Structures:**  
-  * When comparing a company with a lot of debt to one with no debt, P/E can be misleading.  
+
+* **Use EV/EBITDA for Different Capital Structures:**
+  * When comparing a company with a lot of debt to one with no debt, P/E can be misleading.
   * EV/EBITDA provides a better apples-to-apples comparison.
-* **Asset-Based is for "Hard" Assets:**  
+
+* **Asset-Based is for "Hard" Assets:**
   * This model works best for companies where the value is in tangible assets (real estate, oil reserves), not intangibles (brand value, R&D).
+
 </div>
 </div>

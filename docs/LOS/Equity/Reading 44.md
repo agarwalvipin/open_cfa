@@ -29,7 +29,9 @@ Imagine you're deciding which sports league to play in. Your success depends not
 
   <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
   
-  $$HHI = \sum_{i=1}^{n} (MS_i)^2 \times 10,000$$
+  $$
+  HHI = \sum_{i=1}^{n} (MS_i)^2 \times 10{,}000
+  $$
   
   where $MS_i$ is the market share of firm *i*.
   
@@ -40,8 +42,8 @@ Imagine you're deciding which sports league to play in. Your success depends not
 
 **🧮 Example:**  
 An industry has three firms with market shares of 50%, 30%, and 20%.  
-HHI = (0.50² + 0.30² + 0.20²) × 10,000  
-HHI = (0.25 + 0.09 + 0.04) × 10,000 = **3,800**  
+$HHI = (0.50^2 + 0.30^2 + 0.20^2) \times 10{,}000$
+$HHI = (0.25 + 0.09 + 0.04) \times 10{,}000 = 3{,}800$
 Since this is greater than 2,500, the industry is considered **highly concentrated**. High concentration often implies less competition and higher pricing power for the dominant firms.
 
 </div>
@@ -152,21 +154,21 @@ $$HHI = \sum_{i=1}^{n} (MS_i)^2 \times 10,000$$
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-### 🎯 Quick Exam-Day Pointers
+### **Quick Exam-Day Pointers**
 
 <div style="color: #000000; font-weight: 500;">
 
-* **Industry Matters:**  
-  * **A company's long-term profitability is heavily influenced by the structure and attractiveness of its industry.**
-* **Porter's Five Forces is Key:**  
-  * **Understand each of the five forces and how they impact industry profitability.**  
-  * **Weak competitive forces mean higher profit potential.**
-* **Barriers to Entry are a Moat:**  
-  * **High barriers to entry protect existing firms from new competitors and are a sign of a potentially attractive industry.**
-* **Concentration & Profitability:**  
-  * **Highly concentrated industries (high HHI, dominated by a few firms) tend to be more profitable than fragmented industries (low HHI, many small firms).**
-* **Pick a Strategy, Any Strategy:**  
-  * **To succeed, a company needs a clear competitive strategy: be the cheapest (**cost leadership**), be unique (**differentiation**), or own a niche (**focus**). Being stuck in the middle is dangerous.**
+* **Industry Matters:**
+  * A company's long-term profitability is heavily influenced by the structure and attractiveness of its industry.
+* **Porter's Five Forces is Key:**
+  * Understand each of the five forces and how they impact industry profitability.
+  * Weak competitive forces mean higher profit potential.
+* **Barriers to Entry are a Moat:**
+  * High barriers to entry protect existing firms from new competitors and are a sign of a potentially attractive industry.
+* **Concentration & Profitability:**
+  * Highly concentrated industries (high HHI, dominated by a few firms) tend to be more profitable than fragmented industries (low HHI, many small firms).
+* **Pick a Strategy, Any Strategy:**
+  * To succeed, a company needs a clear competitive strategy: be the cheapest (**cost leadership**), be unique (**differentiation**), or own a niche (**focus**). Being stuck in the middle is dangerous.
 
 </div>
 </div>

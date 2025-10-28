@@ -1,6 +1,6 @@
-## Reading 42: Overview of Equity Securities 🚀
+## <span style="color: #1565C0;">Reading 42: Overview of Equity Securities 🚀</span>
 
-### 🎯 Introduction
+### <span style="color: #1565C0;">🎯 Introduction</span>
 
 Imagine you own a tiny slice of your favorite coffee shop. That slice is **equity**. It gives you a claim to a share of the profits (your dividend!) and a say in the big decisions (your vote!). In the corporate world, **equity securities** represent this ownership stake in a company. They are the engine of wealth creation for investors and a vital source of capital for businesses to grow and innovate. This reading breaks down the different types of equity, how they're traded, and how we measure their performance.
 
@@ -41,7 +41,7 @@ Some equity securities come with extra bells and whistles:
 * **Private Equity:** These are shares of companies that are not publicly traded. They are typically held by the company's founders, management, or private investors.
 
 | Feature | Public Equity (e.g., Tesla, HDFC Bank) | Private Equity (e.g., A start-up funded by Sequoia) |
-| :--- | :--- | :--- |
+|:---|:---|:---|
 | **Liquidity** 💧 | High; easy to buy and sell. | Low; very difficult to sell your stake. |
 | **Regulation** 📜 | Highly regulated; must disclose financials. | Lightly regulated; less disclosure required. |
 | **Reporting Costs** 💸 | High due to compliance. | Low. |
@@ -65,11 +65,13 @@ Want to invest in a company outside your home country? Here's how:
   * A **sponsored DR** is one where the company is involved and provides financial information to investors. An **unsponsored DR** is created by the bank without the company's involvement.
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:Depository Receipts simplify foreign investing by allowing you to trade in your local currency on a local exchange. However, you are still exposed to **currency risk**! If the foreign currency weakens against your home currency, the value of your DR will fall, all else being equal.
+💡 CFA Exam Tip ✍️: Depository Receipts simplify foreign investing by allowing you to trade in your local currency on a local exchange. However, you are still exposed to **currency risk**! If the foreign currency weakens against your home currency, the value of your DR will fall, all else being equal.
 
 </div>
+
 </div>
 
 -----
@@ -110,27 +112,31 @@ If **ROE > Cost of Equity**, the company is creating value, and its market value
 
 <div style="color: #000000; font-weight: 500;">
 
-* **Common vs. Preferred:** 
-  * **Common shares** have votes and variable dividends. 
-  * **Preferred shares** have no votes but fixed, priority dividends. 
-  * **Cumulative** is a key protective feature for preferred stock.
-* **Callable vs. Putable:** 
-  * **Callable** → Benefits the company (more investor risk). 
-  * **Putable** → Benefits the investor (less investor risk).
-* **Book Value is the Past, Market Value is the Future:** 
-  * **Book value** is a historical accounting number. 
-  * **Market value** is what investors think the company's future cash flows are worth.
-* **ROE is Key:** 
-  * A company creates value when its Return on Equity (ROE) is greater than its cost of equity.
-* **Depository Receipts (DRs):** 
-  * They are an easy way to get foreign stock exposure, but they **do not** eliminate currency risk.
+**Common vs. Preferred:**
+  - **Common shares** have votes and variable dividends.
+  - **Preferred shares** have no votes but fixed, priority dividends.
+  - **Cumulative** is a key protective feature for preferred stock.
+
+**Callable vs. Putable:**
+  - **Callable** → Benefits the company (more investor risk).
+  - **Putable** → Benefits the investor (less investor risk).
+
+**Book Value is the Past, Market Value is the Future:**
+  - **Book value** is a historical accounting number.
+  - **Market value** is what investors think the company's future cash flows are worth.
+
+**ROE is Key:**
+  - A company creates value when its Return on Equity (ROE) is greater than its cost of equity.
+
+**Depository Receipts (DRs):**
+  - They are an easy way to get foreign stock exposure, but they **do not** eliminate currency risk.
 
 </div>
 </div>
 
 -----
 
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">🧪 Formula Summary</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
@@ -166,7 +172,7 @@ $$P/B = \frac{\text{Market Price per Share}}{\text{Book Value per Share}}$$
 
 -----
 
-### <span style="color: #00838F;">5.1 Global & Local Context 🌍</span>
+#### <span style="color: #00838F;">5.1 Global & Local Context 🌍</span>
 
 * **Global Example:** U.S. companies like Apple and Microsoft often trade at price-to-book ratios well above 1, reflecting investor optimism about future growth. 
 * **Indian Example:** Reliance Industries' market value has historically exceeded its book value, indicating strong investor confidence in its future earnings potential.
