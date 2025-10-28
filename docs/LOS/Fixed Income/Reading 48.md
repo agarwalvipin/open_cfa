@@ -27,8 +27,9 @@ Not all bonds pay back their principal at the end. The structure of cash flows c
 A 5-year, $1,000 bond with a 5% interest rate.  
 * **Fully Amortizing:** The issuer would make 5 equal annual payments of $230.97. After the last payment, the loan is fully paid off.  
   (Calculator: N=5, I/Y=5, PV=1000, FV=0, CPT PMT)
-* **Partially Amortizing (with $200 balloon):** The issuer would make 5 smaller annual payments of $194.78, and the final payment would also include the $200 balloon payment.  
-  (Calculator: N=5, I/Y=5, PV=1000, FV=-200, CPT PMT)
+* **Partially Amortizing (with $200 balloon):** The issuer would make 5 smaller annual payments of $194.78$, and the final payment would also include the $200$ balloon payment.
+
+(Calculator: $N=5$, $I/Y=5$, $PV=1000$, $FV=-200$, CPT $PMT$)
 
 </div>
 
@@ -115,8 +116,11 @@ Bonds are categorized based on the currency they're denominated in and where the
 
 **To find the payment for a fully amortizing loan:**
 
-$$N = \text{number of periods},\ I/Y = \text{interest rate per period},\ PV = \text{loan amount},\ FV = 0$$  
-Compute $PMT$.
+Parameters: $N$ (number of periods), $I/Y$ (interest rate per period), $PV$ (loan amount), $FV = 0$
+
+$$
+PMT = \text{Periodic Payment}
+$$
 
 </div>
 
@@ -124,9 +128,13 @@ Compute $PMT$.
 
 **To find the payment for a partially amortizing loan:**
 
-$$N = \text{number of periods},\ I/Y = \text{interest rate per period},\ PV = \text{loan amount},\ FV = \text{balloon payment}$$  
-(Enter $FV$ as negative if $PV$ is positive.)  
-Compute $PMT$.
+Parameters: $N$ (number of periods), $I/Y$ (interest rate per period), $PV$ (loan amount), $FV$ (balloon payment)
+
+(Enter $FV$ as negative if $PV$ is positive.)
+
+$$
+PMT = \text{Periodic Payment}
+$$
 
 </div>
 

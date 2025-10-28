@@ -29,6 +29,24 @@ Short-term funding is the lifeblood for a company's working capital needs, like 
   * **Central Bank Funds Market:** In countries like the US, banks can borrow from other banks' excess reserves held at the central bank to meet their own reserve requirements.
   * **Asset-Backed Commercial Paper (ABCP):** Banks can package up short-term loans (like auto loans) into a separate legal entity (an SPE) and then issue commercial paper backed by the cash flows from those loans.
 
+| Source of Cash         | Description                                       |
+|------------------------|---------------------------------------------------|
+| Bank Lines of Credit   | Borrowing from banks as needed                    |
+| Commercial Paper (CP)  | Short-term unsecured IOU issued by corporations   |
+| Deposits               | Main source for banks (checking/savings/CDs)      |
+| Interbank Funds        | Banks lending to each other for short periods     |
+| Central Bank Funds     | Borrowing from other banks' excess reserves       |
+| ABCP                   | Asset-backed commercial paper via SPEs            |
+
+
+| Feature                | Investment Grade (IG)         | High Yield (HY)             |
+|------------------------|-------------------------------|-----------------------------|
+| Typical Maturity       | 3–30 years                    | Up to 10 years              |
+| Covenants              | Few                           | Many                        |
+| Collateral             | Usually unsecured             | Often secured               |
+| Callable Bonds         | Rare                          | Common                      |
+| Yield Spread           | Low                           | High                        |
+
 -----
 
 ### <span style="color: #1565C0;">Part 2: The Repo Market: A Deep Dive 🔄</span>
@@ -91,9 +109,9 @@ Think of a younger, highly leveraged company, or a company in a cyclical industr
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:Know the key differences between **Investment Grade (IG)** and **High Yield (HY)** debt.  
-✅ IG investors worry about **downgrades**; ❌ HY investors worry about **default**.  
-IG debt has ⬇️ low spreads and few covenants; HY debt has ⬆️ high spreads and many covenants.
+💡 CFA Exam Tip ✍️: Know the key differences between **Investment Grade (IG)** and **High Yield (HY)** debt.
+✅ IG investors worry about **downgrades**; ❌ HY investors worry about **default**.
+**IG debt** has ⬇️ low spreads and few covenants; **HY debt** has ⬆️ high spreads and many covenants.
 
 </div>
 </div>
@@ -106,7 +124,9 @@ IG debt has ⬇️ low spreads and few covenants; HY debt has ⬆️ high spread
 
 **Repo Purchase Price (Loan Amount):**
 
-$$\text{Purchase Price} = \frac{\text{Market Value of Securities}}{\text{Initial Margin}}$$
+$$
+\text{Purchase Price} = \dfrac{\text{Market Value of Securities}}{\text{Initial Margin}}
+$$
 
 </div>
 
@@ -114,9 +134,15 @@ $$\text{Purchase Price} = \frac{\text{Market Value of Securities}}{\text{Initial
 
 **Repo Haircut:**
 
-$$\text{Haircut} = 1 - \frac{1}{\text{Initial Margin}}$$  
-or  
-$$\frac{\text{Market Value} - \text{Purchase Price}}{\text{Market Value}}$$
+$$
+\text{Haircut} = 1 - \dfrac{\text{Purchase Price}}{\text{Market Value of Securities}}
+$$
+
+or
+
+$$
+\text{Haircut} = \dfrac{\text{Market Value} - \text{Purchase Price}}{\text{Market Value}}
+$$
 
 </div>
 
@@ -124,7 +150,9 @@ $$\frac{\text{Market Value} - \text{Purchase Price}}{\text{Market Value}}$$
 
 **Repurchase Price (Loan + Interest):**
 
-$$\text{Repurchase Price} = \text{Purchase Price} \times \left(1 + \text{Repo Rate} \times \frac{\text{Days}}{360 \text{ or } 365}\right)$$
+$$
+\text{Repurchase Price} = \text{Purchase Price} \times \left(1 + \text{Repo Rate} \times \dfrac{\text{Days}}{360\ \text{or}\ 365}\right)
+$$
 
 </div>
 

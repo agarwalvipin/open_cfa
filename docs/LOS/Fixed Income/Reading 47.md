@@ -29,7 +29,7 @@ Every bond, whether issued by a government or a corporation, has a set of core f
 #### <span style="color: #6A1B9A;">1.4 Coupon Rate & Frequency</span>
 * **Coupon Rate & Frequency:** The **coupon rate** is the annual interest rate paid on the bond's par value.
   * **Fixed-Coupon:** Pays a constant interest rate throughout its life.  
-    *Example:* A $1,000 par value bond with a 5% coupon paid semi-annually pays $25 every six months.
+    *Example:* A $1{,}000$ par value bond with a $5\%$ coupon paid semi-annually pays $25$ every six months.
   * **Floating-Rate Notes (FRNs):** Interest rate resets periodically based on a **market reference rate (MRR)** (like SOFR) plus a fixed margin. Protects investors when rates rise.
   * **Zero-Coupon Bonds:** Pay no interest. Sold at a deep discount; return comes from the difference between purchase price and par value at maturity.
 
@@ -46,7 +46,7 @@ A bond's **yield** is the total return if held to maturity. For fixed-coupon bon
 * If a bond's price goes **UP** ⬆️, its yield goes **DOWN** ⬇️.
 * If a bond's price goes **DOWN** ⬇️, its yield goes **UP** ⬆️.
 
-Why? If you buy a bond paying a fixed $50 coupon for a cheaper price ($950 vs $1,000), your overall return (yield) is higher.
+Why? If you buy a bond paying a fixed $50$ coupon for a cheaper price ($950$ vs $1{,}000$), your overall return (yield) is higher.
 
 This relationship is visualized in a **yield curve**, which plots yields against maturities.  
 * **Normal yield curve:** Slopes upward—longer-term bonds have higher yields (higher risk).
@@ -82,7 +82,7 @@ Things the issuer *is restricted from doing*:
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:The distinction between **affirmative (must do)** and **negative (cannot do)** covenants is a classic exam topic. **Negative covenants** are the primary way bondholders protect themselves from the issuer taking on more risk after the bond has been issued.
+**💡 CFA Exam Tip ✍️:** The distinction between **affirmative (must do)** and **negative (cannot do)** covenants is a classic exam topic. **Negative covenants** are the primary way bondholders protect themselves from the issuer taking on more risk after the bond has been issued.
 
 </div>
 </div>
@@ -104,14 +104,14 @@ This reading is foundational and focuses on concepts. There are **no calculation
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-### 🎯 Quick Exam-Day Pointers
+**🎯 Quick Exam-Day Pointers**
 
 <div style="color: #000000; font-weight: 500;">
 
-* **The Core Features:** Be able to describe the 7 key features of a bond: **Issuer**, **Maturity**, **Par Value**, **Coupon**, **Seniority**, **Contingency Provisions**, and **Yield**.
-* **Price-Yield Seesaw:** The most important relationship in fixed income is **INVERSE**. When price goes up ⬆️, yield goes down ⬇️, and vice versa. This is a guaranteed concept on the exam.
-* **Covenants:** Know the difference between **affirmative covenants** (what the issuer MUST do ✅) and **negative covenants** (what the issuer CANNOT do ❌). Negative covenants are the bondholder's main defense.
-* **Secured vs. Unsecured:** **Secured bonds** are backed by collateral and are safer ✅ than **unsecured bonds**, which are backed only by the issuer's promise ❌.
+- **The Core Features:** Be able to describe the 7 key features of a bond: **Issuer**, **Maturity**, **Par Value**, **Coupon**, **Seniority**, **Contingency Provisions**, and **Yield**.
+- **Price-Yield Seesaw:** The most important relationship in fixed income is **INVERSE**. When price goes up ⬆️, yield goes down ⬇️, and vice versa. This is a guaranteed concept on the exam.
+- **Covenants:** Know the difference between **affirmative covenants** (what the issuer MUST do ✅) and **negative covenants** (what the issuer CANNOT do ❌). Negative covenants are the bondholder's main defense.
+- **Secured vs. Unsecured:** **Secured bonds** are backed by collateral and are safer ✅ than **unsecured bonds**, which are backed only by the issuer's promise ❌.
 
 </div>
 </div>

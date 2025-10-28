@@ -19,8 +19,8 @@ A security index has a numerical value calculated from the prices of its constit
 **Example 🧮**
 
 Imagine an index with two stocks, A and B.  
-  * Stock A's price goes from $90 to $95.  
-  * Stock B's price goes from $110 to $112, and it pays a $3 dividend.
+  * Stock A's price goes from `$90` to `$95`.  
+  * Stock B's price goes from `$110` to `$112`, and it pays a `$3` dividend.
 
 **Price Return calculation:**  
 $$\frac{95 + 112}{90 + 110} - 1 = \frac{207}{200} - 1 = 3.5\%$$
@@ -40,15 +40,34 @@ Creating an index involves several key decisions. It's like deciding the rules f
 
 #### <span style="color: #6A1B9A;">2.1 Index Construction Decisions</span>
 
-| Decision Point | Description |
-| :--- | :--- |
-| **Target Market** 🎯 | What market is the index supposed to measure? The entire US stock market? Or something specific like Indian banking stocks?  |
-| **Security Selection** 🧐 | Which specific stocks or bonds will be included? All of them, or just a representative sample?  |
-| **Weighting Method** ⚖️ | How much influence does each security have on the index's value? This is the most crucial decision.  |
-| **Rebalancing** 🔄 | How often are the weights adjusted to maintain the target weighting scheme?  |
-| **Reconstitution** 📋 | When are securities added or removed from the index? |
+| Decision Point | Description | Mnemonic 🧠 |
+| :--- | :--- | :--- |
+| **Target Market** 🎯 | What market is the index supposed to measure? The entire US stock market? Or something specific like Indian banking stocks? | **T**arget |
+| **Security Selection** 🧐 | Which specific stocks or bonds will be included? All of them, or just a representative sample? | **S**election |
+| **Weighting Method** ⚖️ | How much influence does each security have on the index's value? This is the most crucial decision. | **W**eighting |
+| **Rebalancing** 🔄 | How often are the weights adjusted to maintain the target weighting scheme? | **R**ebalancing |
+| **Reconstitution** 📋 | When are securities added or removed from the index? | **R**econstitution |
+
+**Remember: "T-S-W-R-R" → Think: "The Smart Way Requires Rigor" 💡**
 
 #### <span style="color: #6A1B9A;">2.2 Weighting Methods: The Heart of the Index ❤️</span>
+
+**Weighting Methods - Quick Memorization 🧠**
+
+Remember the four main weighting methods with the acronym **"PEMF"** → Think: **"Price, Equal, Market, Fundamental"**
+
+* **P** = Price-Weighted (DJIA, BSE Sensex)
+* **E** = Equal-Weighted (S&P 500 Equal Weight)
+* **M** = Market-Cap Weighted (S&P 500, Nifty 50)
+* **F** = Fundamental-Weighted (Based on sales, earnings, dividends)
+
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+💡 Pro Tip: On exam day, if asked about weighting methods, quickly jot down "PEMF" to ensure you don't miss any method in your answer!
+
+</div>
+</div>
 
 ##### <span style="color: #E65100;">2.2.1 Price-Weighted</span>
 
@@ -67,12 +86,12 @@ A **price-weighted index** gives more weight to stocks with higher prices. It's 
 
 Price-Weighted Index Impact:
 
-* Stock A: $90 price  
-* Stock B: $10 price
+* Stock A: `$90` price  
+* Stock B: `$10` price
 
 If both stocks move by $1:  
-  * Stock A: $90 → $91 (1.11% change)  
-  * Stock B: $10 → $11 (10% change)
+  * Stock A: `$90` → `$91` (1.11% change)  
+  * Stock B: `$10` → `$11` (10% change)
 
 **Index Impact:**  
   * Stock A contributes 9x more to the index value than Stock B  
@@ -154,14 +173,14 @@ Security market indexes are incredibly useful tools for investors and analysts.
 
 Indexes can be categorized based on the assets they track.
 
-#### <span style="color: #6A1B9A;">4.1 Equity Indexes 株式</span>
+#### <span style="color: #6A1B9A;">4.1 Equity Indexes</span>
 
 * **Broad Market Index:** Covers more than 90% of a market's value, like the Wilshire 5000 for the US market.
 * **Multi-Market Index:** Tracks multiple countries, like the MSCI World Index.
 * **Sector Index:** Focuses on a specific industry, like technology or healthcare, which is useful for sector-based investment strategies.
 * **Style Index:** Groups stocks by characteristics like market cap (large-cap vs. small-cap) or valuation (value vs. growth).
 
-#### <span style="color: #6A1B9A;">4.2 Fixed-Income Indexes 債券</span>
+#### <span style="color: #6A1B9A;">4.2 Fixed-Income Indexes</span>
 
 Fixed-income indexes are more complex than equity indexes due to the vast universe of bonds, their varying maturities, credit qualities, and features.
 
