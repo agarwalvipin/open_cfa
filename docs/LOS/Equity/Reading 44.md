@@ -74,6 +74,21 @@ graph TD
 4. **Bargaining Power of Suppliers 🚚:** How much power do suppliers have to raise their prices? If there are only a few suppliers for a critical component (e.g., Intel for high-end CPUs), they have high power, which squeezes the industry's profits.
 5. **Rivalry Among Existing Competitors 🔥:** How intense is the competition between existing firms? Industries with many players, high fixed costs, and low product differentiation (like the global airline industry) tend to have intense rivalry, leading to price wars and lower profitability.
 
+<div style="background-color: #FFF3E0; border-left: 5px solid #FF6F00; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**🧠 Mnemonic: "Never Stop Being Super Rich"**
+
+* **N**ew entrants (Threat of)
+* **S**ubstitutes (Threat of)
+* **B**uyers (Bargaining power of)
+* **S**uppliers (Bargaining power of)
+* **R**ivalry (among existing competitors)
+
+</div>
+</div>
+
+
 -----
 
 ### <span style="color: #1565C0;">Part 3: Beyond the Industry: External Influences (PESTLE Analysis) 🌍</span>
