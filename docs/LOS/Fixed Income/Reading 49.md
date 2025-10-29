@@ -18,14 +18,40 @@ The global bond market isn't one single entity; it's a collection of smaller mar
 
 #### <span style="color: #6A1B9A;">1.2 Credit Quality</span>
 **How likely is the borrower to pay the money back?**
+  - **Risk Free:** Government bonds from stable countries (e.g., U.S. Treasuries, German Bunds).
   - **Investment Grade:** Safer bonds from stable, financially sound issuers (**rated BBB-/Baa3 or higher**). Think of a company like **Microsoft**.
   - **High-Yield (or "Junk Bonds"):** Riskier bonds from less stable issuers (**rated BB+/Ba1 or lower**). They offer higher yields to compensate for the higher risk.
 
 #### <span style="color: #6A1B9A;">1.3 Maturity</span>
 **How long is the loan for?**
-  - **Money Market** ($< 1$ year): For short-term funding needs (e.g., **Commercial Paper**).
-  - **Intermediate-Term** ($1 \text{–} 10$ years): The most common maturity range.
+  - **Money Market** ($< 1$ year): For short-term funding needs (e.g., **Commercial Paper**, **Repos**).
+  - **Intermediate-Term** ($1 \text{–} 10$ years): The most common maturity range (e.g., **Unsecured Corporate Bonds**, **ABS**).
   - **Long-Term** ($> 10$ years): For long-term projects and funding.
+
+#### <span style="color: #6A1B9A;">Cross-Sectional View: Market Segments with Examples</span>
+
+The table below shows how different bond characteristics intersect in practice:
+
+| **Issuer Type** | **Credit Quality** | **Maturity** | **Example Security** |
+|-----------------|-------------------|--------------|---------------------|
+| Government | Risk-Free | Short-term (<1 year) | U.S. Treasury Bills |
+| Government | Risk-Free | Intermediate (1-10 years) | 5-Year U.S. Treasury Notes |
+| Government | Risk-Free | Long-term (>10 years) | 30-Year U.S. Treasury Bonds |
+| Corporate | Investment Grade | Short-term (<1 year) | Apple Commercial Paper |
+| Corporate | Investment Grade | Intermediate (1-10 years) | Microsoft 5-Year Corporate Bond |
+| Corporate | Investment Grade | Long-term (>10 years) | Johnson & Johnson 20-Year Bond |
+| Corporate | High-Yield | Intermediate (1-10 years) | Tesla 7-Year High-Yield Bond |
+| Corporate | High-Yield | Long-term (>10 years) | Distressed Retailer 15-Year Bond |
+| SPE/ABS | Investment Grade | Intermediate (1-10 years) | Auto Loan ABS (AAA-rated tranche) |
+| SPE/ABS | High-Yield | Intermediate (1-10 years) | Subprime Mortgage ABS (BB-rated) |
+
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+💡 **Key Insight:** Notice how the same issuer (e.g., Government or Corporate) can issue securities across different maturities and credit qualities. This cross-sectional view helps you understand that the bond market is a multi-dimensional space where issuer type, credit quality, and maturity all interact.
+
+</div>
+</div>
 
 #### <span style="color: #6A1B9A;">1.4 Who Buys What? Investor Positioning</span>
 Different investors have different goals, so they invest in different segments of the market.
@@ -63,7 +89,7 @@ Indexes can also be more specialized, focusing on a specific geography (e.g., em
 
 This is where an issuer sells a brand-new bond to investors for the first time to raise capital.
 
-- **How it's done:** The sale can be a **public offering** (open to all) or a **private placement** (sold to a select group of investors).
+- **How it's done:** The sale can be a **public offering** (open to all), a **private placement** (sold to a select group of investors), debut issuance (first-time bond offering), reopening an existing bond, or shelf registration (pre-approving a large amount to issue over time).
 - **The Role of Investment Banks:**
   - **Underwritten Offering:** An investment bank *guarantees* the sale by buying the entire issue from the issuer and then reselling it to investors. The bank takes on the risk that it might not be able to sell all the bonds. This is common for large, investment-grade companies.
   - **Best-Efforts Offering:** The bank acts only as an agent, promising to do its best to sell the bonds but providing no guarantee. The issuer bears the risk. This is more common for smaller, riskier issues.
@@ -86,16 +112,6 @@ This is where previously issued bonds are traded among investors.
 💡 CFA Exam Tip ✍️: For the exam, know the key distinction between the **primary market** (**new issuance**, **underwriting**) and the **secondary market** (**trading between investors**, **OTC**, **dealer spreads**). Also, remember that **government bonds** are typically sold via **auction**.
 
 </div>
-</div>
-
------
-
-### 🧪 Formula Summary
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
-**This reading is conceptual and does not contain any formulas to memorize.**
-
 </div>
 
 -----

@@ -156,6 +156,23 @@ $$
 
 </div>
 
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Repo Interest (Repurchase Agreement):**
+
+The interest earned on a repurchase agreement:
+
+$$
+\text{Repo Interest} = \text{Principal} \times \text{Repo Rate} \times \frac{\text{Term (days)}}{360}
+$$
+
+Where:
+* **Principal** = Initial purchase/loan amount
+* **Repo Rate** = Annualized interest rate (as a decimal)
+* **Term** = Number of days of the repo agreement
+* **360** = Day count convention (typically used in repo markets)
+
+</div>
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">

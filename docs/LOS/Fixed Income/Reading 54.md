@@ -6,7 +6,7 @@ If a regular fixed-rate bond is like a salaried job with a predictable, steady i
 
 -----
 
-### <span style="color: #1565C0;">Part 1: Understanding Floating-Rate Note (FRN) Yields ⛵</span>
+### <span style="color: #1565C0;">Part 1: Understanding Floating-Rate Note (FRN) Yields (LOS 54.a) ⛵</span>
 
 The magic of an FRN is its stability. Unlike a fixed-rate bond whose value gets hammered when interest rates rise, an FRN's coupon payment adjusts upward, keeping its price close to **par value**.
 
@@ -18,24 +18,23 @@ $$\text{Coupon Rate} = \text{Market Reference Rate (MRR)} + \text{Quoted Margin 
 
 There are two key **margins** you must know:
 
-* **Quoted Margin (QM):** This is the **fixed spread** the FRN pays over the MRR. It is set when the bond is issued and **does not change**.
-* **Required Margin (or Discount Margin, DM):** This is the spread that investors **demand today** to compensate for the issuer's current credit risk. This **can change** based on the market's perception of the issuer's health.
+* **Quoted Margin** (**QM**): This is the **fixed spread** the FRN pays over the MRR. It is set when the bond is issued and **does not change**.
+* **Required Margin** (or **Discount Margin**, **DM**): This is the spread that investors **demand today** to compensate for the issuer's current credit risk. This **can change** based on the market's perception of the issuer's health.
 
 The relationship between these two margins determines whether the FRN trades at a premium, par, or discount on its coupon reset dates.
-
-* If **DM > QM** 😟: The market demands more spread than the bond is paying. This means the issuer's credit has worsened. The FRN will trade at a **discount** (Price < Par).
-* If **DM < QM** 😊: The market demands less spread than the bond is paying. This means the issuer's credit has improved. The FRN will trade at a **premium** (Price > Par).
-* If **DM = QM** 😐: The market's required spread matches the bond's paid spread. The FRN will trade at **par** (Price = Par).
+* If **DM > QM**: The market demands more spread than the bond is paying. This means the issuer's credit has worsened. The FRN will trade at a **discount** (Price < Par).
+* If **DM < QM**: The market demands less spread than the bond is paying. This means the issuer's credit has improved. The FRN will trade at a **premium** (Price > Par).
+* If **DM = QM**: The market's required spread matches the bond's paid spread. The FRN will trade at **par** (Price = Par).
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:This is a crucial concept. Think of it just like a fixed-rate bond. If the required yield (YTM) is greater than the coupon rate, the bond trades at a discount. For an FRN, the **Discount Margin (DM)** is the "required" part and the **Quoted Margin (QM)** is the "coupon" part. The logic is identical!
-</div>
+
+**💡 CFA Exam Tip:** This is a crucial concept. Think of it just like a fixed-rate bond. If the required yield (YTM) is greater than the coupon rate, the bond trades at a discount. For an FRN, the **Discount Margin** (**DM**) is the "required" part and the **Quoted Margin** (**QM**) is the "coupon" part. The logic is identical!
+
 </div>
 
 -----
 
-### <span style="color: #1565C0;">Part 2: Decoding the Money Market Dialect 🗣️</span>
+### <span style="color: #1565C0;">Part 2: Decoding the Money Market Dialect (LOS 54.b) 🗣️</span>
 
 **Money market securities** are debt instruments that mature in one year or less. They have their own peculiar set of yield conventions that you must be able to translate for comparison purposes.
 
@@ -64,7 +63,7 @@ This method quotes the yield as an annualized interest rate that is added on to 
 To compare these different money market instruments fairly, we must convert their yields to a single standard: the **bond equivalent yield**.
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Bond Equivalent Yield (BEY)} = \text{Add-on Yield (365-day year)}$$
+$$\text{Bond Equivalent Yield} \text{ (BEY)} = \text{Add-on Yield (365-day year)}$$
 </div>
 
 -----
@@ -73,13 +72,13 @@ $$\text{Bond Equivalent Yield (BEY)} = \text{Add-on Yield (365-day year)}$$
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 **Example:**  
-A 90-day U.S. T-bill with a $1,000 face value is quoted at a discount yield of 1.2%. What is its bond equivalent yield?
+A 90-day U.S. T-bill with a $1{,}000 face value is quoted at a discount yield of 1.2%. What is its bond equivalent yield?
 
 1. **Calculate the Dollar Discount:**  
-   $$\text{Discount} = \$1,000 \times 1.2\% \times \frac{90}{360} = \$3.00$$
+   $$\text{Discount} = \$1{,}000 \times 1.2\% \times \frac{90}{360} = \$3.00$$
 
 2. **Calculate the Price of the T-bill:**  
-   $$\text{Price} = \$1,000 - \$3.00 = \$997.00$$
+   $$\text{Price} = \$1{,}000 - \$3.00 = \$997.00$$
 
 3. **Calculate the Holding Period Yield (HPY):**  
    $$\text{HPY} = \frac{\$3.00}{\$997.00} = 0.3009\%$$
@@ -92,32 +91,43 @@ Notice that the BEY (1.22%) is higher than the initial discount yield (1.2%), be
 
 -----
 
-### 🧪 Formula Summary
+### <span style="color: #1565C0;">Part 3: Formula Summary 📐</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**FRN Price Rule:**  
-If **Discount Margin > Quoted Margin**, then **Price < Par**.
+
+**FRN Price Rule:**
+
+If **Discount Margin** > **Quoted Margin**, then **Price** < **Par**.
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Holding Period Yield (HPY):**  
+
+**Holding Period Yield (HPY):**
+
 $$\text{HPY} = \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Bond Equivalent Yield from HPY:**  
+
+**Bond Equivalent Yield from HPY:**
+
 $$\text{BEY} = \text{HPY} \times \frac{365}{\text{Days to Maturity}}$$
+
 </div>
 
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
-### 🎯 Quick Exam-Day Pointers
+
+**🎯 Quick Exam-Day Pointers**
 
 <div style="color: #000000; font-weight: 500;">
-* **FRN Pricing is about Margins:** The price of a floating-rate note on its reset date is determined by the relationship between the market's **Required/Discount Margin (DM)** and the bond's fixed **Quoted Margin (QM)**.
-* **Money Market Language:** Know the difference between **discount yields** (based on face value, 360 days) and **add-on yields** (based on price, 360 or 365 days).
-* **BEY is the Standard:** To compare any two money market instruments, always convert their yields to the **bond equivalent yield**, which is an **add-on yield** based on a **365-day year**.
-* **Discount yields will always understate the true return (the BEY).** ❌
+
+- **FRN Pricing is about Margins:** The price of a floating-rate note on its reset date is determined by the relationship between the market's **Required/Discount Margin** (**DM**) and the bond's fixed **Quoted Margin** (**QM**).
+- **Money Market Language:** Know the difference between **discount yields** (based on face value, 360 days) and **add-on yields** (based on price, 360 or 365 days).
+- **BEY is the Standard:** To compare any two money market instruments, always convert their yields to the **bond equivalent yield**, which is an **add-on yield** based on a **365-day year**.
+- **Discount yields will always understate the true return (the BEY).** ❌
 </div>
 </div>

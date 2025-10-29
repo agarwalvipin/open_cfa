@@ -91,6 +91,20 @@ Some bonds come with special features called **embedded options** that give eith
     * **Conversion Value:** The market value of the shares received (`Conversion Ratio × Current Share Price`).
   * **❌ Compensation:** Because this is a valuable feature, convertible bonds are issued with lower yields than non-convertible bonds.
 
+  #### <span style="color: #6A1B9A;">3.4 Contingent Convertible Bonds (CoCos)</span>
+  * **Contingent Convertible Bonds (CoCos)** are hybrid debt securities that automatically convert to equity or are written down if a pre-specified trigger event occurs.
+    * **Common Triggers:** Bank's capital ratio falls below a certain threshold, or a regulatory authority declares the bank is non-viable.
+    * **Purpose:** Primarily issued by financial institutions to strengthen their capital base. In times of distress, these bonds absorb losses by converting to equity, helping the bank meet regulatory capital requirements.
+    * **⚠️ Risk:** Investors face the risk of forced conversion at the worst possible time—when the issuer is in financial trouble and the stock price is likely depressed.
+    * **✅ Compensation:** Due to their high risk, CoCos typically offer higher yields than traditional convertible bonds.
+
+#### <span style="color: #6A1B9A;">3.5 Warrants (Benefit the Investor)</span>
+* **Warrants** are long-term call options that give the *bondholder* the right to buy the issuer's common stock at a fixed price (the **exercise price**) during a specified period.
+  * **Key Difference from Convertibles:** Warrants are detachable and can be traded separately from the bond. When exercised, the bondholder keeps the bond and pays additional cash to purchase the shares.
+  * **✅ Investor Impact:** Provides upside potential if the company's stock price rises, while maintaining bond ownership and coupon payments.
+  * **❌ Compensation:** Like convertibles, bonds with attached warrants offer lower yields than otherwise identical straight bonds because of this valuable feature.
+  * **Dilution Effect:** When warrants are exercised, new shares are issued, which dilutes existing shareholders' ownership.
+
 -----
 
 ### <span style="color: #1565C0;">Part 4: Where Are Bonds Issued and How Are They Taxed? 🌍⚖️</span>
@@ -102,6 +116,11 @@ Bonds are categorized based on the currency they're denominated in and where the
 * **Foreign Bonds:** Issued by a foreign entity in a domestic market's currency. (e.g., Toyota issuing a US-dollar bond in the United States).
 * **Eurobonds:** Issued outside the jurisdiction of any single country and denominated in a currency different from the country where they are issued. This is the largest and least regulated market. (e.g., a US company issuing a US-dollar bond in London).
 * **Global Bonds:** Bonds that are issued simultaneously in the Eurobond market and at least one domestic bond market.
+* **Sukuk (Islamic Bonds):** Bonds structured to comply with Islamic law (Sharia), which prohibits interest (riba). Instead of paying interest, sukuk holders receive a share of profits from an underlying asset or project. Common structures include:
+  * **Ijara (Lease):** Investors own an asset and lease it back to the issuer, receiving rental payments.
+  * **Mudaraba (Profit-sharing):** Investors provide capital and share in the profits of a venture.
+  * **Musharaka (Joint venture):** Both issuer and investors contribute capital and share profits and losses.
+  * **✅ Key Difference:** Sukuk represent ownership interest in tangible assets or projects, not debt obligations.
 
 #### <span style="color: #6A1B9A;">4.2 Taxation of Bond Income</span>
 * **Coupon Interest:** Typically taxed at an investor's ordinary income tax rate.
