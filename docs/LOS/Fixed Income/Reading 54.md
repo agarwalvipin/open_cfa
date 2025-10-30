@@ -1,103 +1,159 @@
-## Reading 54: Yield and Yield Spread Measures for Floating-Rate Instruments 🌊
+## Reading 54: Yield and Yield Spread Measures for Floating-Rate Instruments 🚀
 
 ### 🎯 Introduction
 
-If a regular fixed-rate bond is like a salaried job with a predictable, steady income, then a **floating-rate note (FRN)** is like being a freelance consultant whose pay adjusts based on current market rates. Because their income adjusts, their value stays remarkably stable. This reading dives into these "freelancers" of the bond world. We'll learn why their prices don't fluctuate much and how to measure the extra **margin** they pay above a benchmark rate. We will also step into the fast-paced world of the **money market**, decoding the unique language and calculations used for ultra-short-term debt.
+Alright, future CFA charterholder, let's switch gears! We've tackled fixed-rate bonds, but the debt world isn't always static. Welcome to **Floating-Rate Notes (FRNs)** – bonds whose coupon payments move with market rates – and the unique realm of **Money Market Instruments**, the short-term sprinters of the fixed-income world 🏃💨.
+
+Think of FRNs as bonds that adapt to changing interest rate weather 🌦️. Their yields reset periodically. Money market instruments, on the other hand, mature in less than a year, but figuring out their *true* yield can feel like navigating a maze due to different quoting conventions 🧭. This reading equips you to understand how FRNs are priced relative to their risk and how to accurately compare yields on various short-term debt instruments. Let's decode these dynamic yields!
 
 -----
 
-### <span style="color: #1565C0;">Part 1: Understanding Floating-Rate Note (FRN) Yields (LOS 54.a) ⛵</span>
+### <span style="color: #1565C0;">Part 1: Floating-Rate Notes (FRNs) - Riding the Rate Wave 🌊 (LOS 54.a)</span>
 
-The magic of an FRN is its stability. Unlike a fixed-rate bond whose value gets hammered when interest rates rise, an FRN's coupon payment adjusts upward, keeping its price close to **par value**.
+FRNs are bonds whose coupon payments aren't fixed forever. Instead, they adjust based on a market benchmark plus a little extra.
 
-The coupon of an FRN is made of two parts:
+#### <span style="color: #6A1B9A;">1.1 FRN Basics</span>
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Coupon Rate} = \text{Market Reference Rate (MRR)} + \text{Quoted Margin (QM)}$$
+* **Coupon Structure:** The coupon rate on an FRN typically resets periodically (e.g., quarterly or semi-annually) based on a specified **Market Reference Rate (MRR)**, like SOFR or EURIBOR, plus a fixed **spread** or **margin**. 
+    * Formula: `Coupon Rate = MRR + Quoted Margin (QM)`
+* **Why FRNs?** They offer investors protection against rising interest rates (coupons go up) and issuers often use them when they prefer floating-rate funding.
+* **Price Stability:** Because the coupon resets to current market rates (plus the margin), the price of an FRN tends to stay much closer to par value compared to fixed-rate bonds of similar maturity, especially around reset dates. 
+
+#### <span style="color: #6A1B9A;">1.2 Quoted Margin vs. Discount Margin - The Spread Showdown!</span>
+
+This is crucial for understanding FRN pricing *between* reset dates or if the issuer's creditworthiness changes.
+
+* **Quoted Margin (QM):** The fixed spread *specified in the bond indenture* that is added to the MRR to calculate the coupon payment. 
+* **Required Margin / Discount Margin (DM):** The spread *required by the market* to compensate for the issuer's current credit risk (and liquidity, etc.). This is the spread that would make the FRN trade at par *today*. 
+
+**The Relationship Dictates Price:** 
+
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 MNEMONIC: "QM vs DM = Coupon vs Yield"**
+  - Think of QM like the bond's stated coupon spread and DM like the market's required yield spread.
+  - If **QM = DM**: Market requires what the bond offers -> **Price = Par** (Happy equilibrium!) 😊
+  - If **QM < DM**: Market requires *more* spread than the bond offers (coupon spread is deficient) -> **Price < Par** (Discount) 😟
+  - If **QM > DM**: Market requires *less* spread than the bond offers (coupon spread is generous) -> **Price > Par** (Premium) 😎
+
+</div>
 </div>
 
-There are two key **margins** you must know:
+* **Why does the price change?** If an issuer's credit quality worsens after issuance, investors will demand a higher spread (DM increases). Since the QM is fixed, the bond must trade at a discount to offer the higher required yield. The opposite happens if credit quality improves. 
 
-* **Quoted Margin** (**QM**): This is the **fixed spread** the FRN pays over the MRR. It is set when the bond is issued and **does not change**.
-* **Required Margin** (or **Discount Margin**, **DM**): This is the spread that investors **demand today** to compensate for the issuer's current credit risk. This **can change** based on the market's perception of the issuer's health.
+#### <span style="color: #6A1B9A;">1.3 Valuing an FRN (Simplified Method on Reset Date)</span>
 
-The relationship between these two margins determines whether the FRN trades at a premium, par, or discount on its coupon reset dates.
-* If **DM > QM**: The market demands more spread than the bond is paying. This means the issuer's credit has worsened. The FRN will trade at a **discount** (Price < Par).
-* If **DM < QM**: The market demands less spread than the bond is paying. This means the issuer's credit has improved. The FRN will trade at a **premium** (Price > Par).
-* If **DM = QM**: The market's required spread matches the bond's paid spread. The FRN will trade at **par** (Price = Par).
+While complex models exist, a common way to *estimate* an FRN's value involves using the current MRR + QM for future coupons and discounting them back at the current MRR + DM. 
+
+*Example: FRN Valuation*
+A $100,000 face value FRN pays semi-annually: 180-day MRR + 1.20% (QM).
+Today is a reset date, 5 years (10 periods) left.
+Current 180-day MRR = 3.0% (annualized).
+Current Discount Margin (DM) = 1.5% (annualized).
+
+1.  **Calculate the next coupon payment (per $100 par):**
+    * Annualized Coupon Rate = MRR + QM = 3.0% + 1.2% = 4.2% 
+    * Semi-annual Coupon Payment (PMT) = (4.2% / 2) * $100 = $2.10 
+2.  **Calculate the periodic discount rate (per $100 par):**
+    * Annualized Required Rate = MRR + DM = 3.0% + 1.5% = 4.5% 
+    * Semi-annual Discount Rate (I/Y) = 4.5% / 2 = 2.25% 
+3.  **Calculate the FRN Price (PV using financial calculator):**
+    * N = 10 (5 years * 2 periods/year)
+    * I/Y = 2.25
+    * PMT = 2.10
+    * FV = 100
+    * CPT PV = -98.67 
+    * Estimated Value = $98.67 per $100 par, or $98,670 for the $100k note. 
+    * *Interpretation:* Because the required margin (DM = 1.5%) is higher than the quoted margin (QM = 1.2%), the FRN trades at a discount. 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-**💡 CFA Exam Tip:** This is a crucial concept. Think of it just like a fixed-rate bond. If the required yield (YTM) is greater than the coupon rate, the bond trades at a discount. For an FRN, the **Discount Margin** (**DM**) is the "required" part and the **Quoted Margin** (**QM**) is the "coupon" part. The logic is identical!
+💡 CFA Exam Tip ✍️: Understand the QM vs. DM relationship and its impact on the FRN's price relative to par. This is a common exam concept! Remember QM is fixed, DM reflects current market requirements.
 
+</div>
 </div>
 
 -----
 
-### <span style="color: #1565C0;">Part 2: Decoding the Money Market Dialect (LOS 54.b) 🗣️</span>
+### <span style="color: #1565C0;">Part 2: Money Market Instruments - Short-Term Yield Maze 🧭 (LOS 54.b)</span>
 
-**Money market securities** are debt instruments that mature in one year or less. They have their own peculiar set of yield conventions that you must be able to translate for comparison purposes.
+Money market instruments are debt securities maturing in one year or less.  Their yields seem simple, but watch out! They are quoted using different conventions, making direct comparison tricky. 
 
-#### <span style="color: #6A1B9A;">2.1 Discount Yields</span>
+#### <span style="color: #6A1B9A;">2.1 The Quoting Conventions Chaos</span>
 
-This method quotes the yield as an annualized percentage discount from the bond's face value.
+Key differences to watch for: 
+* **Basis:** 360-day year vs. 365-day year.
+* **Yield Type:** Discount Yield vs. Add-on Yield.
 
-* **Who uses it?** U.S. Treasury Bills (T-bills) and Commercial Paper.
-* **Key Features:**
-  * It's based on the **face value**, not the price paid.
-  * It's typically annualized using a **360-day year**.
-* **Bottom Line:** A discount yield is *not* a true measure of an investor's return. It **understates** the actual yield. ❌
+| Convention        | Instruments Typically Using It         | Calculation Basis                                  |
+| :---------------- | :------------------------------------- | :------------------------------------------------- |
+| **Discount Yield (DR)** | U.S. T-bills, Commercial Paper (CP)  | Annualized % discount from *face value*. Usually uses a *360-day* year.  |
+| **Add-on Yield (AOR)** | Bank CDs, Repos, MRRs        | Annualized % interest added to *purchase price*. Can use *360 or 365* days.  |
 
-#### <span style="color: #6A1B9A;">2.2 Add-on Yields</span>
+#### <span style="color: #6A1B9A;">2.2 Key Yield Measures Defined</span>
 
-This method quotes the yield as an annualized interest rate that is added on to the amount invested.
+* **Holding Period Yield (HPY):** The *actual* unannualized return earned over the holding period. The foundation for other calculations.
+    * `HPY = (Maturity Value - Purchase Price + Interest Received) / Purchase Price`
+    * For discount instruments: `HPY = (Face Value / Purchase Price) - 1`
+    * For add-on instruments: `HPY = Interest Received / Purchase Price`
+* **Discount Yield (DR):** As defined above. Formula: 
+    * `DR = ( (Face Value - Purchase Price) / Face Value ) * (360 / Days to Maturity)`
+    * Note: It uses Face Value in the denominator, understating the true return.
+* **Add-on Yield (AOR):** As defined above. Formula: 
+    * `AOR (365 basis) = HPY * (365 / Days to Maturity)`
+    * `AOR (360 basis) = HPY * (360 / Days to Maturity)`
+* **Bond Equivalent Yield (BEY):** The standard convention used to make money market yields comparable to semi-annual U.S. Treasury note yields. It's simply an **Add-on Yield based on a 365-day year**. 
+    * `BEY = HPY * (365 / Days to Maturity)`
 
-* **Who uses it?** Bank Certificates of Deposit (CDs) and Repos.
-* **Key Features:**
-  * It's based on the **principal invested**, not the face value.
-  * It can be annualized using a 360-day or 365-day year.
-* **Bottom Line:** An add-on yield is a more accurate representation of an investor's return. ✅
+#### <span style="color: #6A1B9A;">2.3 Converting Between Yields - The Rosetta Stone! 💎</span>
 
-#### <span style="color: #6A1B9A;">2.3 The Universal Translator: Bond Equivalent Yield</span>
+You *must* be able to convert between these yields. The key is often to first find the HPY.
 
-To compare these different money market instruments fairly, we must convert their yields to a single standard: the **bond equivalent yield**.
+*Example: Money Market Conversions*
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Bond Equivalent Yield} \text{ (BEY)} = \text{Add-on Yield (365-day year)}$$
+1.  **T-Bill (Discount Yield -> Price & BEY):** 
+    * $1,000 face value, 90-day T-bill, 1.2% discount yield (360-day basis).
+    * *Actual Discount* = Face Value * DR * (Days / 360) = $1,000 * 0.012 * (90 / 360) = $3.00 
+    * *Purchase Price* = Face Value - Discount = $1,000 - $3.00 = $997.00 
+    * *HPY* = (Face Value / Price) - 1 = ($1,000 / $997) - 1 = 0.3009% 
+    * *BEY* = HPY * (365 / Days) = 0.003009 * (365 / 90) = 1.2203% 
+
+2.  **CD (Add-on Yield -> Maturity Payment & BEY):** 
+    * $1 million face value, 120-day CD, 1.4% add-on yield (365-day basis).
+    * *HPY* = AOR * (Days / 365) = 0.014 * (120 / 365) = 0.4603% 
+    * *Interest* = Face Value * HPY = $1,000,000 * 0.004603 = $4,603
+    * *Maturity Payment* = Face Value + Interest = $1,000,000 + $4,603 = $1,004,603 
+    * *BEY:* Since the quote was already an add-on yield on a 365-day basis, BEY = 1.4%. 
+
+3.  **Bank Deposit (360-day AOR -> BEY & Semiannual Bond Basis):**
+    * 100-day deposit, 1.5% add-on yield (360-day basis).
+    * *BEY* = AOR * (365 / 360) = 0.015 * (365 / 360) = 1.5208% 
+    * *To compare with a semi-annual bond:*
+        * *HPY* = AOR * (Days / 360) = 0.015 * (100 / 360) = 0.4167% 
+        * *Effective Annual Yield (EAY)* = (1 + HPY)^(365 / Days) - 1 = (1.004167)^(365 / 100) - 1 = 1.5294% 
+        * *Convert EAY to Semiannual Bond Basis:*
+            * Periodic Semiannual Rate = (1 + EAY)^0.5 - 1 = (1.015294)^0.5 - 1 = 0.7618% 
+            * Yield (Semiannual Bond Basis) = Periodic Rate * 2 = 0.7618% * 2 = 1.5236% 
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+💡 CFA Exam Tip ✍️: Practice these conversions! Know that BEY (Bond Equivalent Yield) is the standard for comparison and is an Add-on Yield using 365 days. To convert anything to BEY, first find the HPY, then annualize using `(365 / Days)`. Be careful with discount yields – they use face value in the denominator.
+
+</div>
 </div>
 
 -----
 
-#### <span style="color: #E65100;">2.4 Example: From Discount to BEY 🧮</span>
-
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-**Example:**  
-A 90-day U.S. T-bill with a $1{,}000 face value is quoted at a discount yield of 1.2%. What is its bond equivalent yield?
-
-1. **Calculate the Dollar Discount:**  
-   $$\text{Discount} = \$1{,}000 \times 1.2\% \times \frac{90}{360} = \$3.00$$
-
-2. **Calculate the Price of the T-bill:**  
-   $$\text{Price} = \$1{,}000 - \$3.00 = \$997.00$$
-
-3. **Calculate the Holding Period Yield (HPY):**  
-   $$\text{HPY} = \frac{\$3.00}{\$997.00} = 0.3009\%$$
-
-4. **Convert to Bond Equivalent Yield (annualize for 365 days):**  
-   $$\text{BEY} = 0.3009\% \times \frac{365}{90} = 1.2203\%$$
-
-Notice that the BEY (1.22%) is higher than the initial discount yield (1.2%), because it's based on the actual price paid and a 365-day year.
-</div>
-
------
-
-### <span style="color: #1565C0;">Part 3: Formula Summary 📐</span>
+### 🧪 Formula Summary
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**FRN Price Rule:**
+**FRN Coupon:**
 
-If **Discount Margin** > **Quoted Margin**, then **Price** < **Par**.
+$$\text{Coupon Rate} = \text{MRR} + \text{Quoted Margin (QM)}$$
 
 </div>
 
@@ -105,15 +161,53 @@ If **Discount Margin** > **Quoted Margin**, then **Price** < **Par**.
 
 **Holding Period Yield (HPY):**
 
-$$\text{HPY} = \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}}$$
+$$\text{HPY} = \frac{\text{Maturity Value}}{\text{Purchase Price}} - 1 \quad \text{(For discount instruments)}$$
+
+$$\text{HPY} = \frac{\text{Interest} + \text{Price Change}}{\text{Purchase Price}} \quad \text{(General)}$$
 
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Bond Equivalent Yield from HPY:**
+**Discount Yield (DR) (usually 360 days):**
 
-$$\text{BEY} = \text{HPY} \times \frac{365}{\text{Days to Maturity}}$$
+$$\text{DR} = \frac{\text{Discount}}{\text{Face Value}} \times \frac{360}{\text{Days}}$$
+
+$$\text{Price} = \text{Face Value} \times \left[1 - \text{DR} \times \frac{\text{Days}}{360}\right]$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Add-on Yield (AOR) (360 or 365 days):**
+
+$$\text{AOR} = \text{HPY} \times \frac{\text{Year Basis}}{\text{Days}}$$
+
+$$\text{Interest} = \text{Face Value} \times \text{AOR} \times \frac{\text{Days}}{\text{Year Basis}}$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Bond Equivalent Yield (BEY):**
+
+$$\text{BEY} = \text{HPY} \times \frac{365}{\text{Days}}$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Effective Annual Yield (EAY) from HPY:**
+
+$$\text{EAY} = (1 + \text{HPY})^{\frac{365}{\text{Days}}} - 1$$
+
+</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Convert EAY to Semiannual Bond Basis Yield:**
+
+$$\text{Semiannual Yield} = \left[(1 + \text{EAY})^{0.5} - 1\right] \times 2$$
 
 </div>
 
@@ -121,13 +215,17 @@ $$\text{BEY} = \text{HPY} \times \frac{365}{\text{Days to Maturity}}$$
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
-**🎯 Quick Exam-Day Pointers**
+### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
 
-- **FRN Pricing is about Margins:** The price of a floating-rate note on its reset date is determined by the relationship between the market's **Required/Discount Margin** (**DM**) and the bond's fixed **Quoted Margin** (**QM**).
-- **Money Market Language:** Know the difference between **discount yields** (based on face value, 360 days) and **add-on yields** (based on price, 360 or 365 days).
-- **BEY is the Standard:** To compare any two money market instruments, always convert their yields to the **bond equivalent yield**, which is an **add-on yield** based on a **365-day year**.
-- **Discount yields will always understate the true return (the BEY).** ❌
+* **FRN Pricing:** Remember QM vs. DM. If Market Requires More (DM > QM), Price is Discount (< Par). If Market Requires Less (DM < QM), Price is Premium (> Par).
+* **Money Market Maze:** Different instruments use different quote conventions (Discount vs. Add-on, 360 vs. 365 days).
+* **HPY is Key:** Calculate the actual Holding Period Yield first before annualizing.
+* **BEY is the Standard:** Bond Equivalent Yield = HPY * (365 / Days). It's an Add-on rate using 365 days.
+* **Discount Yield Quirks:** Based on Face Value, not price. Usually uses 360 days. DR < HPY < BEY (for discount instruments).
+* **Add-on Yield:** Based on Purchase Price. Can use 360 or 365 days. AOR (365) *is* the BEY.
+* **Comparisons:** Always convert yields to a common basis (like BEY or EAY) before comparing returns.
+
 </div>
 </div>

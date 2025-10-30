@@ -25,18 +25,13 @@ While **Macaulay duration** is measured in years, **Modified Duration (ModDur)**
 
 * The real power of ModDur is in estimating price changes. The formula is simple but essential:
 
-  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
-  $$\%\Delta \text{Price} \approx -\text{ModDur} \times \Delta\text{YTM}$$
-  
-  </div>
+$$\text{% } \Delta \text{Price} \approx -\text{ModDur} \times \Delta\text{YTM}$$
 
 * The **negative sign** is crucial! It captures the inverse relationship between price and yield. If yields go up, the price change is negative (it falls).
-
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:Modified Duration is your go-to metric for price sensitivity. Always remember the negative sign—price and yield move in opposite directions! ✅
+💡 CFA Exam Tip ✍️: Modified Duration is your go-to metric for price sensitivity. Always remember the negative sign—price and yield move in opposite directions! ✅
 
 </div>
 </div>
@@ -45,11 +40,7 @@ While **Macaulay duration** is measured in years, **Modified Duration (ModDur)**
 
 * A bond has a **Modified Duration** of **3.50**. If its YTM increases by 0.50% (50 basis points), what is the estimated percentage change in its price?
 
-  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
-  $$\% \Delta \text{Price} \approx -3.50 \times (+0.005) = -0.0175 = -1.75\%$$
-  
-  </div>
+$$\text{% } \Delta \text{Price} \approx -3.50 \times (+0.005) = -0.0175 = -1.75\%$$
 
 * The bond's price is expected to fall by approximately **1.75%**. ⬇️
 
@@ -111,7 +102,7 @@ A bond's duration (i.e., its interest rate risk) is not random. It is directly i
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
 
-💡 CFA Exam Tip ✍️:The three drivers of duration are frequently tested. Duration (**interest rate risk**) is higher for bonds with **longer maturity**, **lower coupons**, and **lower yields**. ✅
+💡 CFA Exam Tip ✍️: The three drivers of duration are frequently tested. Duration (**interest rate risk**) is higher for bonds with **longer maturity**, **lower coupons**, and **lower yields**. ✅
 
 </div>
 </div>
@@ -119,6 +110,16 @@ A bond's duration (i.e., its interest rate risk) is not random. It is directly i
 -----
 
 ### 🧪 Formula Summary
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Macaulay Duration of a Perpetuity:**
+
+$$\text{MacDur}_{\text{Perpetuity}} = \frac{1 + r}{r}$$
+
+where $r$ is the yield per period.
+
+</div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
@@ -132,7 +133,7 @@ $$\text{ModDur} = \frac{\text{MacDur}}{1 + \text{Periodic YTM}}$$
 
 **Approximate Percentage Price Change:**
 
-$$\%\Delta \text{Price} \approx -\text{ModDur} \times \Delta\text{YTM}$$
+$$\text{% } \Delta \text{Price} \approx -\text{ModDur} \times \Delta\text{YTM}$$
 
 </div>
 

@@ -43,7 +43,7 @@ To get a much more precise estimate of a bond's price change, we combine the lin
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$\%\Delta \text{Price} \approx [- \text{ModDur} \times \Delta\text{YTM}] + [ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]$$
+$$\text{% } \Delta \text{Price} \approx [- \text{ModDur} \times \Delta\text{YTM}] + [ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]$$
 
 </div>
 
@@ -112,7 +112,7 @@ $$\text{Convexity} = \frac{V_- + V_+ - (2V_0)}{(\Delta\text{YTM})^2 \times V_0}$
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
 **Percentage Price Change (with Convexity):**  
-$$\%\Delta \text{Price} \approx [- \text{ModDur} \times \Delta\text{YTM}] + [ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]$$
+$$\text{% } \Delta \text{Price} \approx [- \text{ModDur} \times \Delta\text{YTM}] + [ \frac{1}{2} \times \text{Convexity} \times (\Delta\text{YTM})^2 ]$$
 
 </div>
 
