@@ -155,9 +155,11 @@ where:
 #### <span style="color: #6A1B9A;">3.2 Quick Exam-Day Pointers</span>
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+<div style="color: #000000; font-weight: 500;">
+<br />
+
 ### 🎯 Quick Exam-Day Pointers
 
-<div style="color: #000000; font-weight: 500;">
 * **No-Arbitrage is King:** All derivative pricing is built on the foundation of no-arbitrage. The correct price is the one that prevents a risk-free profit. For this reason, the **risk-free rate ($R_f$)** is the appropriate rate to use in pricing models, not an investor's required return.
 * **Price vs. Value:** Do not confuse these! The **price** of a forward contract (the agreed-upon transaction price, $F_0(T)$) is set at the beginning. The **value** of the contract is what it's worth at any point in time. At initiation, the forward price is set so that the contract's **value is zero** to both parties.
 * **Cost of Carry Intuition:** Don't just memorize the formula, understand the logic.
@@ -165,6 +167,7 @@ where:
   * Anything that provides a **benefit to holding the physical asset** (like dividends or convenience yield) will **decrease** the forward price. ⬇️
 * **Replicate to Price:** The core of no-arbitrage pricing is replication. A long forward position can be perfectly replicated by buying the underlying asset today and borrowing the money to do so at the risk-free rate.
 * **Forward Price $\neq$ Future Spot Price:** The forward price is not a forecast. It's a mathematically derived price based on today's spot price and the cost of carry. The market's expectation of the future spot price can be higher, lower, or the same as the forward price.
+
 </div>
 </div>
 

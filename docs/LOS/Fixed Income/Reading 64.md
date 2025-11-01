@@ -24,6 +24,14 @@ A covered bond is a senior debt obligation issued directly by a financial instit
 
 Because covered bonds are so safe, they are often rated AAA and are a key funding tool for banks.
 
+**Types of Covered Bonds (Based on Default Treatment):**
+
+Covered bonds have different rules for what happens if the issuer fails to make a scheduled payment:
+
+  * **Hard-Bullet Covered Bond:** This is the strictest type. It is considered in default immediately if the issuer fails to make a scheduled payment.
+  * **Soft-Bullet Covered Bond:** This type has more flexibility. It allows the issuer to postpone the original maturity date (by up to a year, for example) if they miss the payment. This effectively postpones the default.
+  * **Conditional Pass-Through Covered Bond:** This type converts into a pass-through security on its maturity date if payments are still due. This means any cash flows subsequently recovered from the cover pool are simply "passed through" to the investors as they are received.
+
 -----
 
 ### <span style="color: #1565C0;">Part 2: Building a Safer Bond - Credit Enhancements (LOS 64.b)</span>
@@ -43,7 +51,7 @@ These are the most common and important.
 
 2.  **Overcollateralization:** The SPE issues bonds with a face value *less than* the value of the collateral.
 
-      * *Example:* The SPE buys $100 million in auto loans but only issues $90 million in ABS bonds. That $10 million "equity" cushion is overcollateralization, protecting investors from the first 10% of defaults.
+      * *Example:* The SPE buys `$100` million in auto loans but only issues `$90` million in ABS bonds. That `$10` million "equity" cushion is overcollateralization, protecting investors from the first 10% of defaults.
 
 3.  **Excess Spread (or Excess Interest):** This is the "first-loss" buffer, built in every month.
 
@@ -118,7 +126,7 @@ CLOs are a *type* of CDO, but they are very different from the "CDOs" that famou
   * **Covered Bonds vs. ABS:** Know the key difference! Covered bonds have **dual recourse** (pool + issuer) and stay **on the balance sheet**. ABS have **single recourse** (pool only) and are **off the balance sheet**.
   * **Internal Credit Enhancements:** You *must* know these.
       * **Subordination:** Creates the "waterfall" where junior tranches take first losses.
-      * **Overcollateralization:** More assets than bonds ($100M in loans backing $90M in bonds).
+      * **Overcollateralization:** More assets than bonds (`$100M` in loans backing `$90M` in bonds).
       * **Excess Spread:** Collateral interest (9%) > Bond coupon (5%). The 4% difference is the first buffer against losses.
   * **Auto vs. Credit Card ABS:**
       * **Auto:** Amortizing pool.
