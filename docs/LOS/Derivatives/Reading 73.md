@@ -1,4 +1,3 @@
------
 ### <span style="color: #1565C0;">Part 1: Option Valuation (LOS 73.a)</span>
 
 This module dives into the fundamental building blocks of an option's price and the key factors that influence its value.
@@ -130,41 +129,62 @@ Think about options on Infosys (INFY) versus options on Adani Enterprises (ADANI
 
 -----
 
-### <span style="color: #1565C0;">Part 4: Formula Summary for Reading 73</span>
+### <span style="color: #1565C0;">🧪 Formula Summary (LOS 73)</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Call Exercise Value:** 
+
+**Call Exercise Value:**
+
 $$\max(0, S - X)$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Put Exercise Value:** 
+
+**Put Exercise Value:**
+
 $$\max(0, X - S)$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Option Premium:** 
+
+**Option Premium:**
+
 $$\text{Option Premium} = \text{Exercise Value} + \text{Time Value}$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Lower Bound (European Call):** 
+
+**Lower Bound (European Call):**
+
 $$c_0 \ge \max[0, S_0 - X(1 + R_f)^{-T}]$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Upper Bound (European Call):** 
+
+**Upper Bound (European Call):**
+
 $$c_0 \le S_0$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Lower Bound (European Put):** 
+
+**Lower Bound (European Put):**
+
 $$p_0 \ge \max[0, X(1 + R_f)^{-T} - S_0]$$
+
 </div>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-**Upper Bound (European Put):** 
+
+**Upper Bound (European Put):**
+
 $$p_0 \le X(1 + R_f)^{-T}$$
+
 </div>
 
 -----

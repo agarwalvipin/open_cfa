@@ -2,7 +2,7 @@
 
 ### 🎯 Introduction
 
-Welcome to one of the most elegant concepts in finance! Think of financial assets like LEGO® bricks. You can build the exact same model in different ways using different combinations of bricks. **Put-Call Parity** shows us how we can build the exact same financial payoff using two different sets of "bricks": one combination using a call option, and another using a put option. Because they build the same thing, they must cost the same. If they don't, there's a risk-free profit opportunity, and in finance, those don't last long! This reading unlocks the magic of how options, stocks, and bonds are all mathematically linked. 🔗
+Welcome to one of the most elegant concepts in finance! Think of financial assets like LEGO® bricks. You can build the exact same model in different ways using different combinations of bricks. **Put-Call Parity** shows us how we can build the exact same financial payoff using two different sets of "bricks": one combination using a call option, and another using a put option. Because they build the same thing, they must cost the same. If they don't, there's a risk-free profit opportunity, and in finance, those don't last long! This reading unlocks the magic of how options, stocks, and bonds are all mathematically linked.
 
 -----
 

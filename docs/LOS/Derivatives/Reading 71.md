@@ -133,7 +133,9 @@ This difference in payoff structure is called <b>convexity bias</b>. The attract
 
 **Interest Rate Futures Price:**
 
-$$\text{Price} = 100 - \text{Annualized Interest Rate} (\%)$$
+```
+Price = 100 - Annualized Interest Rate (%)
+```
 
 </div>
 
