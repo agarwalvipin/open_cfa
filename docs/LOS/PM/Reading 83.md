@@ -12,11 +12,11 @@ But a warrior is not defined by one weapon. This reading teaches you the art of 
 
 -----
 
-### <span style="color: \#1565C0;">Part 1: The Battlefield - Risk, Return, and Investors (LOS 83.a, 83.b)</span>
+### <span style="color: #1565C0;">Part 1: The Battlefield - Risk, Return, and Investors (LOS 83.a, 83.b)</span>
 
 First, we must understand the terrain and the warrior's mindset.
 
-#### <span style="color: \#6A1B9A;">1.1 The Lay of the Land (LOS 83.a)</span>
+#### <span style="color: #6A1B9A;">1.1 The Lay of the Land (LOS 83.a)</span>
 
   * **The Risk-Return Tradeoff:** The battlefield has one unbreakable rule: **to seek higher returns, you must accept higher risk**. History shows that high-return assets like stocks also have the highest standard deviation (risk).
   * **Beyond Normality:** Asset returns are not perfectly "normal" (like a bell curve). They often show:
@@ -24,7 +24,7 @@ First, we must understand the terrain and the warrior's mindset.
       * **Kurtosis (Fatter Tails):** Extreme events (both good and bad) happen more often than a normal distribution would predict.
   * **Liquidity:** Don't forget this\! Liquidity is your ability to sell an asset quickly without losing money. It's a key concern for assets like low-quality bonds or emerging market stocks.
 
-#### <span style="color: \#6A1B9A;">1.2 The Mind of the Warrior (LOS 83.b)</span>
+#### <span style="color: #6A1B9A;">1.2 The Mind of the Warrior (LOS 83.b)</span>
 
 How do you *feel* about risk?
 
@@ -36,11 +36,11 @@ In finance, we assume all rational investors are **risk-averse samurai**.
 
 -----
 
-### <span style="color: \#1565C0;">Part 2: Forging the First Portfolio (LOS 83.c, 83.d, 83.e)</span>
+### <span style="color: #1565C0;">Part 2: Forging the First Portfolio (LOS 83.c, 83.d, 83.e)</span>
 
 Now, we combine our weapons and see what happens.
 
-#### <span style="color: \#6A1B9A;">2.1 Measuring the Steel: Risk & Return Math (LOS 83.d, 83.e)</span>
+#### <span style="color: #6A1B9A;">2.1 Measuring the Steel: Risk & Return Math (LOS 83.d, 83.e)</span>
 
 To build a portfolio, you first need the stats on your individual assets.
 
@@ -54,8 +54,8 @@ To build a portfolio, you first need the stats on your individual assets.
       * \-1 = Perfect negative correlation. They always move in opposite directions.
       * 0 = No *linear* relationship.
 
-<div style="background-color: \#E3F2FD; border-left: 5px solid \#1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: \#000000; font-weight: 500;">
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
 **🧮 2-Asset Portfolio Standard Deviation (The Blueprint):**
 This is the most important formula in this section.
@@ -68,7 +68,7 @@ $$\sigma_{portfolio} = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,
 </div>
 </div>
 
-#### <span style="color: \#6A1B9A;">2.2 Indifference Curves & The CAL (LOS 83.c)</span>
+#### <span style="color: #6A1B9A;">2.2 Indifference Curves & The CAL (LOS 83.c)</span>
 
   * **Indifference Curves:** These are maps of your "risk aversion." Each curve shows all combinations of risk (standard deviation) and return that give you the *same level of happiness* (utility).
       * They slope **upward** (you need more return to take more risk).
@@ -78,17 +78,17 @@ $$\sigma_{portfolio} = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,
 
 -----
 
-### <span style="color: \#1565C0;">Part 3: The Secret of Diversification & The Efficient Frontier (LOS 83.f, 83.g)</span>
+### <span style="color: #1565C0;">Part 3: The Secret of Diversification & The Efficient Frontier (LOS 83.f, 83.g)</span>
 
 This is the magic. Look back at the portfolio risk formula. The *only* term that can be negative is the correlation, $\rho$.
 
-#### <span style="color: \#6A1B9A;">3.1 The Power of Correlation ($\rho$) (LOS 83.f)</span>
+#### <span style="color: #6A1B9A;">3.1 The Power of Correlation ($\rho$) (LOS 83.f)</span>
 
   * **If $\rho = +1.0$ (Perfectly Correlated):** There is **NO diversification benefit**. The risk of the portfolio is just the weighted average of the individual risks. This is like having two katanas that are tied together—they don't help you parry.
   * **If $\rho < +1.0$ (Anything Less Than Perfect):** You get a diversification benefit\! The portfolio's risk will be *less* than the weighted average risk. This is the "free lunch."
   * **The Golden Rule:** **The lower the correlation, the greater the risk reduction**. A correlation of -0.5 is much better than +0.5.
 
-#### <span style="color: \#6A1B9A;">3.2 The Efficient Frontier (LOS 83.g)</span>
+#### <span style="color: #6A1B9A;">3.2 The Efficient Frontier (LOS 83.g)</span>
 
 Imagine you plotted every *possible* portfolio of risky assets on your risk-return map.
 
@@ -110,11 +110,11 @@ A risk-averse samurai **will only ever choose a portfolio that lies on the Effic
 
 -----
 
-<div style="background-color: \#E8F5E9; border-left: 5px solid \#4CAF50; padding: 15px; margin: 20px 0;">
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
 
-<div style="color: \#000000; font-weight: 500;">
+<div style="color: #000000; font-weight: 500;">
 
   * **Risk-Return Tradeoff:** More return requires more risk. This is the fundamental law.
   * **Correlation is Key:** The *only* way to get a diversification benefit is if correlation is **less than +1**. The *lower* the correlation, the *better* the risk reduction.
