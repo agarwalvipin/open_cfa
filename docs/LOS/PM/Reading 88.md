@@ -14,11 +14,11 @@ This reading is the **foundation** for understanding how firms and individuals a
 
 -----
 
-### <span style="color: \#1565C0;">Part 1: The Philosophy and Framework of Risk (LOS 88.a, b, c, d)</span>
+### <span style="color: #1565C0;">Part 1: The Philosophy and Framework of Risk (LOS 88.a, b, c, d)</span>
 
 Before we can manage risk, we have to define what we're even doing. This section covers the "why" and "what" of risk management.
 
-#### <span style="color: \#6A1B9A;">1.1 What is Risk Management? (LOS 88.a)</span>
+#### <span style="color: #6A1B9A;">1.1 What is Risk Management? (LOS 88.a)</span>
 
 First, let's clear up a common misconception.
 
@@ -34,7 +34,7 @@ Instead, risk management is a three-step process:
 
 The ultimate goal is to **align the risks you take with your tolerance for those risks**. You're deciding which risks to take on because you believe you'll be rewarded for them.
 
-#### <span style="color: \#6A1B9A;">1.2 The Risk Management Framework (LOS 88.b)</span>
+#### <span style="color: #6A1B9A;">1.2 The Risk Management Framework (LOS 88.b)</span>
 
 The "framework" is the scaffolding that holds the whole process together. It’s the set of policies and procedures that ensures risk is managed in a structured way.
 
@@ -48,8 +48,8 @@ An effective framework includes:
   * **Communication:** Reporting on risk across the organization.
   * **Strategic Risk Analysis:** Aligning risk with the firm's long-term strategy.
 
-<div style="background-color: \#F3E5F5; border-left: 5px solid \#7B1FA2; padding: 12px; margin: 15px 0;">
-<div style="color: \#000000; font-weight: 500;">
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
 **🧠 Samurai Mnemonic: "Good Teams Identify, Manage, Monitor, & Communicate Strategy"**
 
@@ -64,7 +64,7 @@ An effective framework includes:
 </div>
 </div>
 
-#### <span style="color: \#6A1B9A;">1.3 Risk Governance vs. Risk Tolerance (LOS 88.c, 88.d)</span>
+#### <span style="color: #6A1B9A;">1.3 Risk Governance vs. Risk Tolerance (LOS 88.c, 88.d)</span>
 
 This is a crucial distinction:
 
@@ -73,11 +73,11 @@ This is a crucial distinction:
 
 -----
 
-### <span style="color: \#1565C0;">Part 2: The "How" - Tools and Techniques (LOS 88.e, f, g)</span>
+### <span style="color: #1565C0;">Part 2: The "How" - Tools and Techniques (LOS 88.e, f, g)</span>
 
 Now that we have our philosophy, let's look at the tools.
 
-#### <span style="color: \#6A1B9A;">2.1 Risk Budgeting (LOS 88.e)</span>
+#### <span style="color: #6A1B9A;">2.1 Risk Budgeting (LOS 88.e)</span>
 
 If **risk tolerance** is your total *amount* of risk, **risk budgeting** is *how you spend it*.
 
@@ -89,7 +89,7 @@ A risk budget can be allocated based on:
   * **Asset categories:** 60% of the risk budget to equities, 40% to bonds.
   * **Risk factors:** Allocating risk to interest rate changes, equity market movements, currency risk, etc.
 
-#### <span style="color: \#6A1B9A;">2.2 Sources of Risk: The Rogues' Gallery (LOS 88.f)</span>
+#### <span style="color: #6A1B9A;">2.2 Sources of Risk: The Rogues' Gallery (LOS 88.f)</span>
 
 To manage risk, you must first identify it. Risks are broadly split into two camps:
 
@@ -113,8 +113,8 @@ mindmap
       Accounting Risk
 ```
 
-<div style="background-color: \#E3F2FD; border-left: 5px solid \#1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: \#000000; font-weight: 500;">
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
 **💡 Exam Tip: Individual Risks**
 
@@ -126,7 +126,7 @@ For individuals, two unique non-financial risks are critical:
 </div>
 </div>
 
-#### <span style="color: \#6A1B9A;">2.3 Measuring Risk: The Toolkit (LOS 88.g)</span>
+#### <span style="color: #6A1B9A;">2.3 Measuring Risk: The Toolkit (LOS 88.g)</span>
 
 Here's how we quantify some of those risks:
 
@@ -143,8 +143,8 @@ Here's how we quantify some of those risks:
 | **Tail Risk** | **Value at Risk (VaR)** | The **minimum loss** expected over a period at a given probability. |
 | | **Conditional VaR (CVaR)** | The *expected* loss, *given that* the loss is worse than the VaR. |
 
-<div style="background-color: \#FFF9E6; border-left: 5px solid \#F57C00; padding: 15px; margin: 20px 0;">
-<div style="color: \#000000; font-weight: 500;">
+<div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+<div style="color: #000000; font-weight: 500;">
 
 **⚠️ Classic Exam Tripwire: Value at Risk (VaR)**
 
@@ -156,7 +156,7 @@ This is a **critical** definition. If a bank has a 1-day VaR of $1 million with 
 </div>
 </div>
 
-#### <span style="color: \#6A1B9A;">2.4 Modifying Risk: The 4 Choices (LOS 88.g)</span>
+#### <span style="color: #6A1B9A;">2.4 Modifying Risk: The 4 Choices (LOS 88.g)</span>
 
 Once you've measured your risk, you have four main ways to modify it:
 
@@ -192,11 +192,11 @@ This reading is highly qualitative\! There are no complex formulas to memorize. 
 
 -----
 
-<div style="background-color: \#E8F5E9; border-left: 5px solid \#4CAF50; padding: 15px; margin: 20px 0;">
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
 
-<div style="color: \#000000; font-weight: 500;">
+<div style="color: #000000; font-weight: 500;">
 
   * **Main Goal:** Risk management is **NOT** risk elimination. It is **optimizing** the risk/return trade-off based on your **risk tolerance**.
   * **Governance vs. Tolerance:** **Governance** is the *process* (by senior management). **Tolerance** is the *level* (the output of governance).

@@ -149,7 +149,7 @@ graph TD
 >
 > ### 🎯 Quick Exam-Day Pointers
 >
->   * **Diversification is your \#1 tool for risk reduction.** It works whenever the correlation between assets is less than +1.0. The lower the correlation, the better\!
+>   * **Diversification is your #1 tool for risk reduction.** It works whenever the correlation between assets is less than +1.0. The lower the correlation, the better\!
 >   * The **Efficient Frontier** is the "menu" of the best possible portfolios of risky assets. All rational investors will choose a portfolio that lies on this frontier.
 >   * A **more risk-averse** investor has **steeper** indifference curves and will choose a portfolio on the lower-left part of the efficient frontier (lower risk, lower return).
 >   * An investor's **optimal portfolio** is the one that combines the risk-free asset with the risky portfolio on the efficient frontier to create the CAL that is tangent to their highest indifference curve.

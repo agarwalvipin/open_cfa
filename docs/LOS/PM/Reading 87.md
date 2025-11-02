@@ -14,7 +14,7 @@ Understanding these biases is your secret weapon. By recognizing them in *yourse
 
 -----
 
-### <span style="color: \#1565C0;">Part 1: The Two Types of Flaws: Cognitive vs. Emotional (LOS 87.a)</span>
+### <span style="color: #1565C0;">Part 1: The Two Types of Flaws: Cognitive vs. Emotional (LOS 87.a)</span>
 
 Every bias you'll learn stems from one of two sources. Knowing the source is critical because it tells you how to fight it.
 
@@ -32,11 +32,11 @@ Every bias you'll learn stems from one of two sources. Knowing the source is cri
 
 -----
 
-### <span style="color: \#1565C0;">Part 2: The Arsenal of Biases - Cognitive Errors (LOS 87.b)</span>
+### <span style="color: #1565C0;">Part 2: The Arsenal of Biases - Cognitive Errors (LOS 87.b)</span>
 
 Let's break down the "faulty software." Cognitive errors fall into two main groups.
 
-#### <span style="color: \#6A1B9A;">2.1 Belief Perseverance Biases (Stubbornness)</span>
+#### <span style="color: #6A1B9A;">2.1 Belief Perseverance Biases (Stubbornness)</span>
 
 These biases make you cling to your old beliefs, even when new evidence screams that you're wrong. They stem from **cognitive dissonance**—the mental stress you feel when new information conflicts with a core belief.
 
@@ -49,7 +49,7 @@ These biases make you cling to your old beliefs, even when new evidence screams 
   * **Illusion of Control Bias:** You believe you can control or influence random outcomes. (e.g., "I'll trade this stock better because I use a special chart," or "I'll wait to buy my lotto ticket until the 'lucky' cashier is working.")
   * **Hindsight Bias:** After an event happens, you believe it was predictable all along ("I knew it\!"). This makes you overconfident about *future* predictions.
 
-#### <span style="color: \#6A1B9A;">2.2 Information-Processing Biases (Faulty Calculation)</span>
+#### <span style="color: #6A1B9A;">2.2 Information-Processing Biases (Faulty Calculation)</span>
 
 These biases cause you to miscalculate or misinterpret information.
 
@@ -64,7 +64,7 @@ These biases cause you to miscalculate or misinterpret information.
 
 -----
 
-### <span style="color: \#1565C0;">Part 3: The Arsenal of Biases - Emotional Biases (LOS 87.b)</span>
+### <span style="color: #1565C0;">Part 3: The Arsenal of Biases - Emotional Biases (LOS 87.b)</span>
 
 Now we enter the realm of feelings. These are much harder to control.
 
@@ -86,7 +86,7 @@ Now we enter the realm of feelings. These are much harder to control.
 
 -----
 
-### <span style="color: \#1565C0;">Part 4: Biases in Action - Market Bubbles & Anomalies (LOS 87.c)</span>
+### <span style="color: #1565C0;">Part 4: Biases in Action - Market Bubbles & Anomalies (LOS 87.c)</span>
 
 Behavioral finance can help explain market behavior that traditional finance calls "anomalies".
 
@@ -124,11 +124,11 @@ Behavioral finance can help explain market behavior that traditional finance cal
 
 <br>
 
-<div style="background-color: \#E8F5E9; border-left: 5px solid \#4CAF50; padding: 15px; margin: 20px 0;">
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
 
-<div style="color: \#000000; font-weight: 500;">
+<div style="color: #000000; font-weight: 500;">
 
   * **Cognitive vs. Emotional:** This is a critical distinction. Cognitive = Flawed *Thinking* (Correct with education). Emotional = Flawed *Feeling* (Harder to fix; must adapt).
   * **Loss Aversion is Key:** Know the scenarios. We are **risk-averse** when facing **gains**, but **risk-seeking** when facing **losses**. This leads to holding losers and selling winners.
