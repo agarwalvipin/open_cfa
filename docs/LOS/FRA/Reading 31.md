@@ -1,4 +1,3 @@
------
 ### <span style="color: #1565C0;">Reading 31: Analyzing Statements of Cash Flows II 🔍</span>
 
 ### <span style="color: #1565C0;">🎯 Introduction</span>
@@ -54,6 +53,7 @@ Just like with the Income Statement and Balance Sheet, creating **common-size ca
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
+
 **Interpretation:** Triple Y's overall cash generation relative to sales is shrinking. The main culprit appears to be a significant build-up in inventory, which is dragging down CFO. Combined with slightly higher investment spending (CFI), the company's ability to increase its cash pile from each dollar of revenue is weakening. An analyst should investigate *why* inventory is piling up – is it strategic stocking for growth, or a sign of slowing sales and potential obsolescence? 🤔
 </div>
 </div>
@@ -66,6 +66,7 @@ Just like with the Income Statement and Balance Sheet, creating **common-size ca
 
 <div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
+
 **💡 MNEMONIC: "FCFF vs FCFE - Firm First, Equity Ends"**
 - **FCFF** = Free Cash to **FIRM** (all capital providers - debt & equity)
 - **FCFE** = Free Cash to **EQUITY** (only common shareholders)
@@ -195,62 +196,78 @@ These ratios use cash flow data (mainly CFO) to provide insights comparable to t
 ### <span style="color: #1565C0;">🧪 Formula Summary</span>
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **FCFF (from NI):**
 $$\text{FCFF} = \text{NI} + \text{NCC} + [\text{Int} \times (1 - \text{Tax Rate})] - \text{FCInv} - \text{WCInv}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **FCFF (from CFO):**
 $$\text{FCFF} = \text{CFO} + [\text{Int} \times (1 - \text{Tax Rate})] - \text{FCInv}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **FCFE (from CFO):**
 $$\text{FCFE} = \text{CFO} - \text{FCInv} + \text{Net Borrowing}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **FCFE (from FCFF):**
 $$\text{FCFE} = \text{FCFF} - [\text{Int} \times (1 - \text{Tax Rate})] + \text{Net Borrowing}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Cash Flow-to-Revenue:**
 $$\text{CFO} / \text{Net Revenue}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Cash ROA:**
 $$\text{CFO} / \text{Average Total Assets}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Cash ROE:**
 $$\text{CFO} / \text{Average Total Equity}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Cash-to-Income:**
 $$\text{CFO} / \text{Operating Income}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Cash Flow per Share:**
 $$(\text{CFO} - \text{Preferred Dividends}) / \text{Weighted Avg. Common Shares}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Debt Coverage:**
 $$\text{CFO} / \text{Total Debt}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+
 **Interest Coverage (Cash):**
 $$(\text{CFO} + \text{Interest Paid} + \text{Taxes Paid}) / \text{Interest Paid}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Reinvestment:**
 $$\text{CFO} / \text{Cash Paid for Long-term Assets}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Debt Payment:**
 $$\text{CFO} / \text{Cash Long-term Debt Repayment}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Dividend Payment:**
 $$\text{CFO} / \text{Dividends Paid}$$
 </div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
 **Investing & Financing Coverage:**
 $$\text{CFO} / \text{Cash Outflows from Investing & Financing}$$
 </div>
@@ -258,9 +275,11 @@ $$\text{CFO} / \text{Cash Outflows from Investing & Financing}$$
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
 ### 🎯 Quick Exam-Day Pointers
 
 <div style="color: #000000; font-weight: 500;">
+
 * **Analyze, Don't Just Read:** Look for patterns in CFO, CFI, CFF across time and compare to peers. Consider the company's life cycle stage.
 * **CFO is Key:** Is it positive and sustainable? Does it come from core operations or unsustainable working capital changes? How does it compare to Net Income (Earnings Quality)?
 * **CFI Shows Investment:** High CapEx = Growth? Asset Sales = Restructuring or Cash Need?
