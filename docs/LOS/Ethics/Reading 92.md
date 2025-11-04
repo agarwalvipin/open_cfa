@@ -1,5 +1,3 @@
-Here is a detailed summary of Reading 92.
-
 ## Reading 92: Introduction to the Global Investment Performance Standards (GIPS) 📊
 
 ### 🎯 Introduction
@@ -95,26 +93,26 @@ A **composite** is an aggregation of one or more discretionary portfolios manage
 
 ```mermaid
 graph TD
-    subgraph Firm "Firm's Total Assets"
-        A[Discretionary Portfolio 1 (Large Cap)]
-        B[Discretionary Portfolio 2 (Large Cap)]
-        C[Discretionary Portfolio 3 (Fixed Income)]
-        D[Discretionary Portfolio 4 (Terminated Large Cap)]
-        E[Nondiscretionary Portfolio (Client Restricted)]
-        F[Non-Fee-Paying Portfolio (Charity)]
+    subgraph Firm[Firms_Total_Assets]
+        A[Discretionary1]
+        B[Discretionary2]
+        C[FixedIncome]
+        D[TerminatedLargeCap]
+        E[Nondiscretionary]
+        F[CharityNonFee]
     end
 
     subgraph Composites
-        G[Large Cap Composite]
-        H[Fixed Income Composite]
+        G[LargeCapComposite]
+        H[FixedIncomeComposite]
     end
 
-    A -- Must be Included --> G
-    B -- Must be Included --> G
-    C -- Must be Included --> H
-    D -- Must be Included (until termination) --> G
-    E -- Excluded --> X(Not in any composite)
-    F -- Excluded --> X
+    A -->|Included| G
+    B -->|Included| G
+    C -->|Included| H
+    D -->|Included until termination| G
+    E -->|Excluded| X[NotInComposite]
+    F -->|Excluded| X
 
     style G fill:#E3F2FD,stroke:#1976D2
     style H fill:#E3F2FD,stroke:#1976D2
