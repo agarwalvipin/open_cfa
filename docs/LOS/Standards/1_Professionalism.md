@@ -1,175 +1,191 @@
-## Standard I: Professionalism
+### <span style="color: #1565C0;">Part 1: Standard I(A) - Knowledge of the Law 📜</span>
 
-### 🎯 Introduction
+**The Standard:** "Members and Candidates must understand and comply with all applicable laws, rules, and regulations (including the CFA Institute Code of Ethics and Standards of Professional Conduct) of any government, regulatory organization, licensing agency, or professional association governing their professional activities. In the event of conflict, Members and Candidates must comply with the **more strict** law, rule, or regulation. Members and Candidates must not **knowingly** participate or assist in and must **dissociate** from any violation of such laws, rules, or regulations." 
 
-Welcome, future charterholder\! Think of the CFA Code and Standards as the ultimate rulebook for the investment world. Standard I, **Professionalism**, is the very first chapter, and for good reason—it’s the foundation of everything we do. 🏛️ Just like a doctor must first swear the Hippocratic Oath to "do no harm," an investment professional's first duty is to uphold the integrity of the profession. This standard isn't just a set of rules; it's about building and maintaining trust with clients, employers, and the market itself. Let's dive into the five key pillars that make up this crucial foundation\!
+#### 1.1 The Golden Rule: Follow the "More Strict" Law
 
------
+This is the most critical part of I(A). You are held to the highest possible standard, whether it's from your local regulator or from CFA Institute.
 
-### Standard I(A): Knowledge of the Law 🤔
+  * If your country's law is *stricter* than the Code and Standards, **you must follow the country's law**.
+  * If the Code and Standards are *stricter* than your country's law, **you must follow the Code and Standards**.
+  * If your country has *no law* on a particular subject, **you must follow the Code and Standards**.
 
-At its heart, this standard is simple: know the rules and play by them. As an investment professional, you operate in a world governed by laws, regulations, and the CFA Institute Code and Standards. Your job is to understand and comply with all of them.
-
-The golden rule here is the **"more strict" rule**. If your country's law and the CFA Code disagree, you **must** follow the one that imposes greater restrictions or demands a higher degree of action to protect clients.
-
-<!-- tabs:start -->
-
-#### **Theory 🧠**
-
-Imagine you're working in a country where insider trading laws are weak (Country LS: Less Strict), but the CFA Code and Standards have a very strong prohibition against it. You must follow the CFA Code.
-
-Now, imagine you're in a country where the law on IPO allocations is incredibly stringent (Country MS: More Strict), even more so than the CFA Code. In this case, you must follow the country's law.
-
-#### **Global & Local Context 🌍**
-
-  * **Global Example:** Suppose you are a portfolio manager in a country with lax regulations on disclosing referral fees. However, the CFA Code [Standard VI(C)] requires full disclosure. You **must** follow the CFA Code and disclose those fees.
-  * **Indian Example:** SEBI (Securities and Exchange Board of India) has very specific rules about how research reports are published and what disclosures are required. If these SEBI rules are stricter than the general guidance in the CFA Code, an analyst in India must follow SEBI's regulations to the letter.
-
-<!-- tabs:end -->
-
-What if you see something illegal happening at your firm? 🧐 You can't just look the other way. You must **dissociate** from the activity. This means you have to take steps to separate yourself from the wrongdoing.
+Here is a simple decision path:
 
 ```mermaid
 graph TD
-    A[You have reasonable grounds to believe an activity is illegal or unethical] --> B{Confront the person responsible?};
-    B --> C[Attempt to stop the behavior by reporting to your supervisor or compliance dept.];
-    C --> D{Does the activity stop?};
-    D -- No --> E[Dissociate from the activity. This could mean removing your name from a report, asking for a different assignment, or even resigning in extreme cases.];
-    D -- Yes --> F[Activity corrected. No further action needed. ✅];
-    E --> G[Document everything and consider seeking legal counsel.];
+    A[Start: You face an ethical choice] --> B{Is there an applicable local law/rule?};
+    B -->|Yes| C{Is the Local Law stricter than the CFA Code?};
+    B -->|No| D[Follow the CFA Code & Standards];
+    C -->|Yes| E[You MUST follow the Local Law];
+    C -->|No| D;
+    E --> F[End];
+    D --> F[End];
 ```
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** The exam *loves* to test the "more strict" rule. You'll likely see a scenario question where you need to compare a local law to the CFA Code and Standards and pick the correct course of action. Remember: **Highest Standard Applies\!** Also, "dissociate" is a keyword to remember; it's your required action when you can't stop an unethical activity.
+#### 1.2 "Knowing" Participation and Dissociation
+
+You are responsible for violations in which you "knowingly" participate or assist. If you know—or *should know*—that your actions are helping to commit a violation, you are just as guilty.
+
+If you find yourself in a situation where your colleagues or firm are violating the law or the Code, you **must** take action.
+
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 Your Duty to Dissociate (A 3-Step Process)**
+
+This is a classic exam topic. If you suspect illegal or unethical activity, you must:
+
+1.  **Attempt to Stop It:** First, report the activity to your supervisor or your firm's compliance department.
+2.  **Step Away (Dissociate):** If the firm does not stop the activity, you have a duty to dissociate. This could mean:
+      * Removing your name from research reports or recommendations.
+      * Asking for a different assignment.
+      * Refusing to continue advising a client.
+3.  **Leave (In Extreme Cases):** In extreme cases, dissociation may require you to leave your employment.
+
+**Key Point:** Simply doing nothing ("inaction") while knowing about the violation can be construed as participating in the unethical conduct.
+
+</div>
+</div>
 
 -----
 
-### Standard I(B): Independence and Objectivity ⚖️
+### <span style="color: #1565C0;">Part 2: Standard I(B) - Independence and Objectivity ⚖️</span>
 
-This standard is all about ensuring your work and opinions are your own, untainted by outside influences. Your analysis and investment actions should be based on facts and your professional judgment, not on gifts, pressure from your company, or any other factor that could compromise your **independence and objectivity**.
+**The Standard:** "Members and Candidates must use reasonable care and judgment to achieve and maintain independence and objectivity in their professional activities. Members and Candidates must not offer, solicit, or accept any **gift, benefit, compensation, or consideration** that reasonably could be expected to compromise their own or another's independence and objectivity." 
 
-Think of yourself as an impartial judge. 👨‍⚖️ Your verdict (your investment recommendation) should be based only on the evidence (your research).
+This standard means your work and opinions must be your own, unaffected by outside pressures.
 
-Key pressures to watch out for:
+#### 2.1 Common Threats to Your Objectivity
 
-  * **Gifts and Entertainment 🎁:** Modest gifts and entertainment are okay, but anything lavish or intended to influence your decisions is a major red flag. Accepting a simple business lunch is fine; accepting an all-expenses-paid trip to Mauritius from a company you cover is not.
-      * **Gifts from Clients vs. Third Parties:** Gifts from clients are viewed differently. If a happy client gives you a bonus or a nice gift, it's considered supplemental compensation. You **must**, however, get written permission from your employer *before* accepting it (or disclose it immediately after) to ensure it doesn't create partiality towards that client.
-  * **Investment Banking Pressure 🏦:** If you're a research analyst, your firm's investment banking department might pressure you to write a favorable report on a company they want to take public. You must resist this pressure. Your report must be objective.
-  * **Issuer Pressure 🗣️:** Companies you cover might threaten to cut off your access to management if you issue a negative report. This is a direct threat to your objectivity.
-  * **Issuer-Paid Research 💰:** If a company pays you to write a research report on them, this is a massive conflict. Best practice is to only accept a flat fee that isn't tied to your conclusion and to **fully disclose** the nature of your compensation in the report.
+  * **Gifts from Companies/Brokers:** You must reject any gift or entertainment that is lavish or could be seen as an attempt to influence you. Modest, customary business entertainment is acceptable.
+  * **Investment Banking Pressure:** This is a classic conflict. Your firm's investment banking department may pressure you (an analyst) to write a favorable report on a company to win their business. This is a violation. Your recommendation must be based on facts.
+  * **Issuer-Paid Research:** This is when an analyst is paid *by the company* to write a research report on it. This is a high-risk area.
+      * **To comply:** The analyst should *only* accept a flat, fixed fee that is not tied to the conclusions of the report. The analyst *must* fully disclose the nature of the compensation in the report.
+  * **Travel Funding:**
+      * **Best Practice:** Always pay your own way, or have your firm pay for travel.
+      * **Exception:** If commercial transport is unavailable (e.g., a trip to a remote mine), you *may* accept "modestly arranged travel". Example 1 in the text shows that a chartered flight and "Spartan" motel for a mine tour was acceptable, but a lavish trip would not be.
 
-<!-- tabs:start -->
+#### 2.2 The Special Case: Gifts from Clients
 
-#### **Acceptable vs. Unacceptable ✅/❌**
+What if a *client* gives you a gift to thank you for good performance?
 
-| Action | Acceptable? | Why? |
-| :--- | :--- | :--- |
-| Accepting a coffee mug from a company | ✅ | Modest, token gift. Not likely to compromise objectivity. |
-| Analyst's firm pays for their flight to visit a company | ✅ | Standard business practice. No compromise. |
-| A company charters a private jet for an analyst to visit | ❌ | Lavish travel. Creates an appearance of compromised objectivity. |
-| A client offers you tickets to an IPL final after a great year | ✅ (with disclosure) | Must get written consent from your employer first. |
-
-#### **Global & Local Context 🌍**
-
-  * **Global Example:** During the dot-com bubble, analysts at major Wall Street banks were often pressured to maintain "buy" ratings on tech companies that were also lucrative investment banking clients. This is a classic violation of Standard I(B).
-  * **Indian Example:** An analyst covering a large conglomerate like the Adani Group might face pressure to maintain a favorable rating to help the firm's investment banking division secure a deal for a new bond issuance. The analyst must remain objective, regardless of this internal pressure.
-
-<!-- tabs:end -->
-
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Pay close attention to the source of the gift or pressure. A gift from a client is a **Standard IV(B) - Additional Compensation** issue that requires disclosure to your *employer*. A gift from a third party trying to influence your future work is a **Standard I(B)** issue. The exam will test your ability to differentiate.
+  * This is viewed differently from a gift from a third party seeking to influence you. It can be considered "supplementary compensation".
+  * **Your Duty:** You *must* get permission from your employer *before* accepting the gift, or, if that's not possible, disclose it immediately after.
+  * **Why?** Your employer needs to know about it to ensure this gift doesn't cause you to favor this one client over other clients (e.g., by giving them better trade allocations).
 
 -----
 
-### Standard I(C): Misrepresentation 🤥
+### <span style="color: #1565C0;">Part 3: Standard I(C) - Misrepresentation 🎭</span>
 
-This standard boils down to one simple concept: **Don't lie.** You must not knowingly make any **misrepresentations** related to your professional activities. This includes lying, omitting crucial facts, or presenting information in a misleading way. Trust is the currency of our profession, and misrepresentation destroys it.
+**The Standard:** "Members and Candidates must not **knowingly** make any misrepresentations relating to investment analysis, recommendations, actions, or other professional activities." 
 
-Common areas of misrepresentation include:
+A misrepresentation is any untrue statement, omission of fact, or any statement that is false or misleading. "Knowingly" means you either knew it was false or *should have known*.
 
-  * **Your Credentials:** Don't claim to have a degree you didn't earn or exaggerate your qualifications.
-  * **Firm Performance:** Don't "cherry-pick" your best-performing accounts and present them as representative of your overall performance. You must present a fair, accurate, and complete picture.
-  * **Guarantees:** Never guarantee a specific rate of return. Investing involves risk, and guaranteeing outcomes is fundamentally misleading.
-  * **Plagiarism:** This is a huge one. **Plagiarism** is presenting someone else's work, ideas, or data as your own without giving them credit. Always acknowledge your sources\!
+#### 3.1 Key Forms of Misrepresentation
 
-<!-- end list -->
+  * **Plagiarism:** This is a major violation. You cannot copy or use materials prepared by others without acknowledging the source. This includes:
+      * Using excerpts from reports without attribution.
+      * Using charts or graphs without citing the source.
+      * Presenting someone else's ideas as your own.
+  * **Performance Reporting:**
+      * You cannot **guarantee** a specific rate of return (unless the product itself has a guarantee, like a bank CD).
+      * You cannot state or imply that past performance will be repeated.
+      * You cannot engage in "cherry-picking"—presenting only your best-performing accounts as representative of your strategy.
+  * **Omissions:** Leaving out key risks, limitations, or negative scenarios from a model can be a misrepresentation.
+  * **Credentials & Social Media:** This standard applies to all forms of communication, including websites, social media, and resumes. Lying about your credentials (like in Example 4 ) or your firm's abilities (Example 1 ) is a clear violation.
 
-```mermaid
-graph TD
-    subgraph "Plagiarism Violation"
-        A[Analyst Jane reads a report by Analyst Bob] --> B[Jane copies large parts of Bob's report];
-        B --> C[She changes a few words and puts her name on it];
-        C --> D[VIOLATION ❌];
-    end
-    subgraph "Proper Attribution"
-        E[Jane reads Bob's report] --> F["She quotes a key section and writes, 'According to Bob...'"];
-        F --> G[She then adds her own analysis and conclusions];
-        G --> H[NO VIOLATION ✅];
-    end
-```
+<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Plagiarism is a frequently tested topic. Remember the two key actions: **Maintain copies** of your source materials and **attribute** everything that isn't your own original thought—quotations, summaries, charts, and ideas. The exam might test a scenario where an analyst uses charts from another source without citing it. That's a clear violation\!
+**🧠 Memory Aid: The "P.O.P." Quiz for Misrepresentation**
 
------
+Before you publish or speak, check your "P.O.P.":
 
-### Standard I(D): Misconduct 🚫
+  * **P** = **Plagiarism:** Did I credit all my sources? 
+  * **O** = **Omissions:** Did I leave out any critical facts, risks, or limitations? 
+  * **P** = **Performance:** Am I presenting performance fairly, or am I "cherry-picking"  or guaranteeing future results? 
 
-This standard requires you to not engage in any professional conduct involving **dishonesty, fraud, or deceit**. It also says you must not commit any act that reflects adversely on your **professional reputation, integrity, or competence**.
-
-The key here is the focus on **professional conduct**. This standard isn't about your personal life, unless your personal actions are so severe they call your professional integrity into question.
-
-  * **What's covered?** Conduct that is related to your role in the investment industry. Examples include cheating on your expense reports, falsifying company records, or being intoxicated at work while making investment decisions.
-  * **What's generally not covered?** Personal activities that don't reflect on your professional abilities. For example, getting a speeding ticket or participating in a peaceful political protest would typically not be a violation. However, being convicted of a serious crime like tax fraud *would* be a violation because it involves dishonesty and reflects directly on your integrity.
-
-<!-- tabs:start -->
-
-#### **Global & Local Context 🌍**
-
-  * **Global Example:** The case of Bernie Madoff is an extreme example of misconduct. He ran a massive Ponzi scheme, a clear act of fraud and deceit that devastated his clients and damaged the reputation of the entire industry.
-  * **Indian Example:** The Satyam Computers scandal, where the company's founder Ramalinga Raju admitted to falsifying accounts to the tune of crores, is a prime example of professional misconduct involving fraud that had a massive negative impact on shareholders and the market's perception of corporate governance in India.
-
-<!-- tabs:end -->
-
-> [\!TIP]
-> **CFA Exam Tip ✍️:** The line between professional and personal life can be tricky. The exam will test your judgment. Ask yourself: "Does this action involve dishonesty, and does it damage the person's trustworthiness or ability to do their job?" Abusing alcohol *during business hours* is a violation because it affects competence. A DUI on a weekend might not be, unless it leads to a conviction for a crime involving deceit.
+</div>
+</div>
 
 -----
 
-### Standard I(E): Competence 🧠
+### <span style="color: #1565C0;">Part 4: Standard I(D) - Misconduct 🚫</span>
 
-This is the newest addition to Standard I, and its message is powerful: You must **act with and maintain the competence** necessary to do your job. It's not enough to be smart or have a degree; you need the specific knowledge, skills, and abilities to fulfill your professional responsibilities effectively.
+**The Standard:** "Members and Candidates must not engage in any **professional conduct** involving dishonesty, fraud, or deceit or commit any act that reflects adversely on their professional reputation, integrity, or competence." 
 
-This standard has two parts:
+This is the "character" standard. It covers any act of lying, cheating, or stealing that reflects poorly on your professional self.
 
-1.  **Act with Competence:** Don't take on tasks you're not qualified for. If a client wants to invest in complex derivatives and you're not an expert, you have a duty to either educate yourself, bring in an expert, or decline the task.
-2.  **Maintain Competence:** The financial world is always changing. You have a duty to keep learning and stay current. This is the principle of lifelong learning in action\! 📚
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-<!-- tabs:start -->
+**💡 The CRITICAL Difference: "Professional" vs. "Personal" Conduct**
 
-#### **Theory 🧠**
+This standard does *not* govern your entire personal life. It applies to "professional conduct".
 
-A portfolio manager who has only ever managed Indian equities cannot suddenly start managing a global macro hedge fund without first acquiring the necessary skills and knowledge in currency markets, international economics, and complex derivatives. To do so would be a violation of this standard.
+  * **What is "Professional Conduct"?**
 
-#### **Global & Local Context 🌍**
+      * Any conduct at your workplace.
+      * Any conduct *outside* the workplace *if* it relates to the investment profession (e.g., writing an investment blog, even personally).
+      * Any conduct where you use your CFA designation or membership to lend credibility.
+      * Volunteering for CFA Institute or a local society.
 
-  * **Global Example:** An advisor in the US who starts recommending cryptocurrencies like Bitcoin to clients without deeply understanding blockchain technology, wallet security, and the regulatory landscape would not be acting with competence.
-  * **Indian Example:** With the rise of ESG (Environmental, Social, and Governance) investing in India, a fund manager must become competent in analyzing ESG factors for companies like Tata Power or Reliance Industries. Simply ignoring these new, relevant factors or applying old models without adaptation would be a failure to maintain competence.
+  * **Examples:**
 
-<!-- tabs:end -->
+      * **Violation:** Abusing alcohol *during business hours* impairs your competence and is misconduct.
+      * **Violation:** Submitting fraudulent reimbursement forms to your employer is dishonesty in the workplace.
+      * **Violation:** Lying on a resume or in a CFA Institute Professional Conduct Statement.
+      * **NOT a Violation:** Generally, acts of civil disobedience (Example 4 ) or personal failings that are not related to your job or the industry (like faking a disability parking permit in Example 8 ) are not covered, *even if they are dishonest*. The act must reflect adversely on your *professional* reputation, integrity, or competence.
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** Since this is a newer standard, the exam questions will likely be foundational. Expect scenarios that test whether a professional is qualified for a specific task they are undertaking or if they are keeping their skills up-to-date with market changes. The core idea is simple: **Know your stuff, and keep knowing your stuff.**
+</div>
+</div>
 
 -----
 
-> [\!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **KIM-MC Mnemonic:** A great way to remember the five parts of Standard I is **K**nowledge, **I**ndependence, **M**isrepresentation, **M**isconduct, **C**ompetence.
->   * **Rule \#1:** When law and the Code conflict, the **stricter** one always wins. No exceptions.
->   * **Objectivity is Key:** Don't let gifts, company politics, or personal relationships cloud your judgment. Disclose any potential conflict, or better yet, avoid it.
->   * **Honesty First:** Never misrepresent your skills, your firm's performance, or an investment's characteristics. And absolutely no **plagiarism**.
->   * **Professionalism Extends Beyond the Desk:** Your conduct must uphold the integrity of the profession. Dishonesty in a professional capacity is a clear violation.
->   * **Stay Sharp:** The markets evolve, and so must you. Always maintain and improve your **competence**.
+### <span style="color: #1565C0;">Part 5: Standard I(E) - Competence 🎓</span>
+
+**The Standard:** "Members and Candidates must act with and **maintain** the competence necessary to fulfill their professional responsibilities." 
+
+This standard demands that you have the "sufficient knowledge, skills, and abilities" to do your job successfully.
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 Key Exam Tip: A New Standard**
+
+Standard I(E) is a relatively new addition to the Standards of Professional Conduct. It makes the requirement for competence—which was always in the Code of Ethics—an explicit, testable standard.
+
+</div>
+</div>
+
+#### 5.1 The Two Pillars of Competence
+
+1.  **Act with Competence (Today):**
+
+      * You must not take on professional responsibilities if you are not qualified to handle them.
+      * If you don't understand an investment (like cryptocurrency in Example 6), you are *not competent* to recommend it or invest in it for clients.
+      * This standard does *not* mean you can never make a mistake or lose money. A competent manager can have a bad outcome; an *incompetent* one didn't have the skills to begin with.
+
+2.  **Maintain Competence (Tomorrow):**
+
+      * Competence is not static. You have a duty to "continuously maintain or improve" your skills.
+      * The industry evolves (e.g., new products, ESG factors, new models), and you must evolve with it.
+      * The standard does *not* require a specific program. You can maintain competence by attending conferences, webinars, earning other certifications, or even diligent self-study.
+
+-----
+
+### 🎯 Quick Exam-Day Pointers
+
+Here is your samurai's cheat sheet for Standard I. Know these cold\!
+
+  * **I(A) - Law:** Always follow the **more strict** rule (local law vs. CFA Code). **Dissociation is mandatory** ; merely reporting a violation to CFA Institute is "strongly encouraged" but not required (unless the law says so).
+  * **I(B) - Objectivity:** Watch for **gifts**. Modest is okay. Gifts from *clients* are viewed as supplementary pay, but you *must* disclose them to your *employer* to get permission.
+  * **I(B) - Objectivity:** For **issuer-paid research**, the only compliant path is to accept a **flat fee** (not tied to your conclusion) and **fully disclose** the arrangement.
+  * **I(C) - Misrepresentation:** Don't **plagiarize**. Remember, you *can* use research and models created by others *at your own firm* without attribution (it's firm property). Don't "cherry-pick" performance  or guarantee returns.
+  * **I(D) - Misconduct:** This standard applies to **"professional conduct"**. Being drunk *at work* is a violation. Lying on a resume is a violation. Getting a speeding ticket is not.
+  * **I(E) - Competence:** This is a *new* standard. It has two parts: 1) Be competent (don't do work you can't handle)  and 2) **Maintain** competence (keep learning as the industry changes).
+
+-----
+
+Would you like to drill down into the application examples for any of these standards?

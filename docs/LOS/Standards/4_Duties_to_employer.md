@@ -1,105 +1,105 @@
-## Standard IV: Duties to Employers
+### <span style="color: #1565C0;">Part 1: Standard IV(A) - Loyalty 🤝</span>
 
-### 🎯 Introduction
+**The Standard:** "In matters related to their employment, Members and Candidates must act for the benefit of their employer and not deprive their employer of the advantage of their skills and abilities, divulge confidential information, or otherwise cause harm to their employer." 
 
-So far, we've established that the client is king. But what about the company that signs your paycheck? Standard IV, **Duties to Employers**, addresses this crucial relationship. Think of it as a balancing act. You are a trusted employee, and you owe your employer your loyalty and hard work. 🏢 At the same time, your duty to the client and the market remains supreme. This standard provides the rules of engagement for how to be a good employee without ever compromising your ethical obligations to your clients or the integrity of capital markets. Let's explore the three key duties you have to your employer.
+This standard means you must be a trustworthy and loyal employee. You can't engage in any activity that would "injure the firm, deprive it of profit, or deprive it of the member’s or candidate’s skills and ability." 
 
------
+#### 1.1 Leaving Your Employer: The Most-Tested Area
 
-### Standard IV(A): Loyalty 🤔
+This is the critical battleground for Standard IV(A). You are free to seek other employment, but you must not breach your duty of loyalty *while you are still employed*.
 
-This standard says that in matters related to your employment, you must act for the benefit of your employer and not deprive your employer of the advantage of your skills and abilities, divulge confidential information, or otherwise cause harm to your employer.
+**What you CANNOT do *while employed*:**
 
-Simply put: while you're on the clock, work for your employer. Don't engage in any activities that would create a conflict of interest with their business.
+  * **Solicit Clients:** You must not solicit or "promote" your new employer to your current firm's clients *before* you leave.
+  * **Take Property:** You cannot take any employer records or files, period. This includes:
+      * Client lists.
+      * Copies of research reports or supporting documents.
+      * Computer models or algorithms.
+      * This applies to hard copies, files on your personal computer, or any other medium. All work done for your employer is your employer's property.
+  * **Disparage Your Employer:** You cannot disparage your current firm to clients in an attempt to get them to follow you (Example 4).
 
-**The Most Tested Area: Preparing to Leave Your Firm**
-This is where it gets tricky. You are allowed to prepare for a new job or to start your own firm, but there are strict lines you cannot cross *before* you resign.
+**What you CAN do *while employed*:**
 
-<!-- tabs:start -->
+  * You are "generally free" to make preparations to go into a competitive business *as long as* those preparations do not breach your duty of loyalty.
+  * For example, you can register a new company with regulators, but you cannot start soliciting clients or competing.
 
-#### **What's Allowed vs. Not Allowed (Before Resigning) ✅/❌**
+**What you CAN do *after you leave*:**
 
-| Action | Permitted? | Why? |
-| :--- | :--- | :--- |
-| Making arrangements to start a new firm (e.g., registering the company name, leasing office space). | ✅ | These are preparatory steps and do not directly compete with your employer's business *yet*. |
-| Contacting clients to solicit their business for your new firm. | ❌ | This is direct competition and a breach of loyalty. You can only do this *after* you have left. |
-| Printing your employer's client list from the company CRM. | ❌ | This is **theft** of employer property. Client lists are confidential and belong to the firm. |
-| Using your own memory to recall who your former clients were. | ✅ | Your knowledge and experience are your own. You can use your memory to rebuild a client list after you leave. |
-| Taking research reports you wrote with you. | ❌ | The work you produce for your employer belongs to them. |
+  * You *can* contact clients from your previous firm, **BUT** you must use publicly available information (like a phone directory or LinkedIn) to get their contact info. You cannot use a stolen client list.
+  * You *can* use the **skills, knowledge, and experience** you gained at your old firm. These belong to you.
+  * (This is all assuming you did not sign a non-compete agreement, which is a separate legal matter) .
 
-<!-- tabs:end -->
+#### 1.2 Other Key Loyalty Issues
 
-**Whistleblowing 🌬️**
-Your duty of loyalty to your employer does not mean you must sit by and watch them engage in illegal or unethical activities. In fact, your duty to protect the integrity of the capital markets and your clients is higher. Protecting your employer from the legal and reputational damage of such activities *is* an act of loyalty.
-
-> [\!TIP]
-> **CFA Exam Tip ✍️:** The exam questions on this topic are almost always about an employee leaving a firm. The key is the timing. **Before leaving:** prepare, but do not compete or take property. **After leaving:** you are free to compete fairly, using your own knowledge and publicly available information. Memorizing the client list is not a violation; taking the physical or electronic list is.
-
------
-
-### Standard IV(B): Additional Compensation Arrangements ⚖️
-
-This standard is very direct: you must not accept any gifts, benefits, compensation, or consideration that competes with, or might reasonably be expected to create a conflict of interest with, your employer's interest unless you obtain **written consent** from **all parties involved**.
-
-Think of it this way: your employer pays you to do a job. If someone else wants to pay you for that same job, your employer needs to know about it and approve it in writing.
-
-This is different from Standard I(B) - Independence and Objectivity:
-
-  * **Standard I(B)** deals with gifts from third parties trying to influence your future behavior (e.g., a company you cover sends you on a lavish trip).
-  * **Standard IV(B)** deals with compensation for services rendered that are outside your normal employment agreement (e.g., a client pays you a bonus directly).
-
-<!-- tabs:start -->
-
-#### **Global & Local Context 🌍**
-
-  * **Global Example:** A portfolio manager is invited to serve on the board of directors of a company. This position comes with a fee. Before accepting, the manager **must** get written permission from her employer, as serving on a board could create conflicts of interest and takes up time that would otherwise be dedicated to her employer.
-  * **Indian Example:** An equity analyst who covers the Indian IT sector is asked by a university to teach a weekend course on financial modeling for a fee. Even though this is on his own time, it relates to his professional expertise. He must disclose this arrangement to his employer in writing and get their consent before proceeding. The employer needs to ensure it doesn't interfere with his primary job or create any conflicts.
-
-<!-- tabs:end -->
-
-> [\!TIP]
-> **CFA Exam Tip ✍️:** The key phrase here is **"written consent."** Verbal notification is not enough. If you see a scenario where an employee accepts money or a benefit from a third party without getting prior written approval from their employer, it's a clear violation of Standard IV(B).
+  * **Independent Business:** If you plan to start an independent business (a "side hustle") that *competes* with your employer, you **must** notify your employer and get their consent *before* doing so.
+  * **Social Media:** Be careful. Accounts created for firm business are firm property. It's best practice to keep personal and professional accounts separate. Simply updating your LinkedIn profile *after* you leave to show your new job is *not* a violation (Example 9).
+  * **Whistle-Blowing (The Exception):** Your duty to the market and your clients is **higher** than your duty to your employer. If your employer is engaged in illegal or unethical activity, you may be justified in acting contrary to their interests (e.g., "whistle-blowing") **if** your intent is to protect clients or market integrity, *not* for personal gain.
 
 -----
 
-### Standard IV(C): Responsibilities of Supervisors 🎯
+### <span style="color: #1565C0;">Part 2: Standard IV(B) - Additional Compensation Arrangements 💰</span>
 
-With great power comes great responsibility. This standard says that if you are in a supervisory role, you must make reasonable efforts to ensure that anyone subject to your supervision or authority complies with applicable laws, rules, regulations, and the Code and Standards.
+**The Standard:** "Members and Candidates must not accept gifts, benefits, compensation, or consideration that competes with or might reasonably be expected to create a conflict of interest with their **employer’s interest** unless they obtain **written consent from all parties** involved." 
 
-You don't have to be a mind reader, but you can't be negligent either. You must take steps to **prevent and detect** violations. This means having an effective compliance system.
+This standard is about managing conflicts with your *employer*, just as Standard I(B) was about managing conflicts with your *clients*.
 
-An adequate compliance system should include:
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1B9A; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-  * **Clear Policies:** The rules should be written down and easy to understand.
-  * **Education & Training:** Employees should be regularly trained on the policies.
-  * **Enforcement:** When a violation occurs, the supervisor must investigate promptly and take firm disciplinary action.
+**💡 Exam Tip: Standard I(B) vs. IV(B)**
 
-<!-- end list -->
+  * **Standard I(B) (Objectivity):** A *company* offers you a gift to influence your research. This is a conflict with your **clients**.
+  * **Standard IV(B) (This one):** A *client* offers you a bonus or gift for good performance (Example 1). This is a conflict with your **employer**.
+  * **Why?** Your employer needs to know. This "side-pay" could tempt you to favor that one client over other clients (e.g., give them more time, better trade allocations), which harms the employer's business and other clients.
 
-```mermaid
-graph TD
-    A[Supervisor's Responsibility] --> B{Establish a Compliance System};
-    B --> C[Draft clear, understandable policies and procedures];
-    B --> D[Distribute and train all employees on these policies];
-    B --> E[Implement review procedures to detect violations];
-    B --> F{Violation Detected};
-    F -- Yes --> G[Investigate immediately];
-    G --> H[Take firm corrective action];
-    F -- No --> I[Continue to monitor and review];
-```
+</div>
+</div>
 
-What if a supervisor delegates a task? They are still ultimately responsible. You can delegate the work, but not the responsibility.
+**The Rule:** If you are offered *any* additional compensation or benefit (cash or non-cash, like a vacation or a gym membership) for your services, you **must**:
 
-> [\!TIP]
-> **CFA Exam Tip ✍️:** A supervisor is not automatically guilty just because someone on their team commits a violation. The exam question will focus on whether the supervisor made **"reasonable efforts"** to prevent such a violation from occurring. If they have a good compliance system in place and an employee goes to great lengths to hide their wrongdoing, the supervisor may not be in violation. If the system is weak or they ignored red flags, they are in violation.
+1.  **Inform your employer** of the proposed arrangement *in writing*.
+2.  Describe the nature of the compensation and its duration.
+3.  Obtain **written permission** from your employer *before* you accept.
 
 -----
 
-> [\!IMPORTANT]
->
-> ### 🎯 Quick Exam-Day Pointers
->
->   * **Leaving a Job:** Remember the bright line. **Prepare, don't compete.** Don't take any property—client lists, research, or models. Your brain is the only thing you're allowed to take with you.
->   * **Side Gigs Need Permission:** If you're getting paid by anyone other than your employer for your professional services, you need **written consent** first. Verbal approval is not sufficient.
->   * **Supervisors Must Supervise:** A manager's job is to build a system to **prevent and detect** violations. If a violation occurs, they must investigate and act. Ignoring a problem is a violation in itself.
->   * **Client vs. Employer:** If there is a conflict between your duty to your client and your duty to your employer, your duty to the client always comes first (as long as it's legal).
+### <span style="color: #1565C0;">Part 3: Standard IV(C) - Responsibilities of Supervisors 🧑‍✈️</span>
+
+**The Standard:** "Members and Candidates must make **reasonable efforts** to ensure that anyone subject to their supervision or authority complies with applicable laws, rules, regulations, and the Code and Standards." 
+
+If you are a manager, team lead, or compliance officer, this standard is for you. You are responsible for the conduct of those you supervise.
+
+#### 3.1 Your Two-Fold Duty: Prevent & Detect
+
+You must make "reasonable efforts" to both **prevent** and **detect** violations by your team.
+
+This requires you to:
+
+1.  **Establish an Effective Compliance System:** You must ensure your firm has adequate, written compliance procedures.
+2.  **Educate Your Team:** You must ensure your team is trained on these procedures and the Code.
+3.  **Enforce the System:** You must monitor your employees' actions to ensure they are following the rules.
+
+#### 3.2 What to Do If You Find a Violation
+
+  * You must **promptly initiate an investigation**.
+  * Relying on an employee's "assurance" that it won't happen again is **not enough**.
+  * You must take steps to ensure the violation won't be repeated, such as **increasing supervision** or **placing limits** on the employee's activities.
+
+#### 3.3 The "Inadequate System" Trap
+
+This is a critical point. What if your *firm's* compliance system is terrible?
+
+  * You have a duty to bring the inadequate system to the attention of senior management and recommend corrective action.
+  * If your firm *refuses* to fix the system and you feel you cannot adequately discharge your supervisory duties, you **must decline supervisory responsibility in writing** until the firm adopts reasonable procedures.
+
+-----
+
+### 🎯 Quick Exam-Day Pointers
+
+  * **IV(A) - Loyalty:** This is all about **leaving your job**. Don't solicit clients or take *any* firm property (lists, models) *before* you leave. After you leave, you can compete fairly using public info.
+  * **IV(B) - Extra Pay:** Got offered a bonus from a client? A trip? You **must** get **written consent from your employer** first. This is a conflict with your *employer's* interests.
+  * **IV(C) - Supervisors:** Your job is to **PREVENT and DETECT** violations. If you find one, you *must* investigate. If your firm's system is broken and they won't fix it, you *must* **decline to supervise** in writing.
+
+-----
+
+Would you like to move on to Standard V: Investment Analysis, Recommendations, and Actions?

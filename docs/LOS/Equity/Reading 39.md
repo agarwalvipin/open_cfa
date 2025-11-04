@@ -1,227 +1,189 @@
-## Reading 39: Market Organization and Structure 🚀
+## Reading 39: Market Organization and Structure 🏛️
 
 ### 🎯 Introduction
 
-Think of the financial system as the ultimate city infrastructure for money. It's a network of roads, power grids, and communication lines that connects those who have extra money (savers/investors) with those who need it (borrowers/companies). This reading is your city map! We'll explore the different types of assets you can trade (the vehicles), the places you trade them (the markets and exchanges), the people who help you (the intermediaries), and the rules of the road that keep everything moving smoothly.
+Welcome to the marketplace\! Think of the financial system as the world's most complex and gigantic market. It's the "where" and "how" for every single transaction we'll study. Before you can analyze a security (like a stock or bond), you must first understand the *arena* in which it trades.
+
+This reading is your map of that arena. We'll learn the system's functions, identify the different assets you can trade, meet the key players (intermediaries), and learn the rules of engagement—from how you place an order to the risks of borrowing (leverage). This is the foundational plumbing of all financial markets.
 
 -----
 
-### <span style="color: #1565C0;">Part 1: What is the Financial System & What's In It? 🏛️ (LOS 39.a, 39.b, 39.c, 39.d)</span>
+### <span style="color: #1565C0;">Part 1: The System & Its Players (LOS 39.a, 39.b, 39.c, 39.d)</span>
 
-The **financial system** has three core jobs:
-  1.  Help people and companies save, borrow, raise capital, manage risk, and trade assets.
-  2.  Set the rates of return (like interest rates) that balance the supply of savings with the demand for borrowing.
-  3.  Funnel money to where it can be used most effectively and efficiently.
+#### <span style="color: #6A1B9A;">1.1 Functions of the Financial System (LOS 39.a)</span>
 
-#### <span style="color: #6A1B9A;">1.1 Assets vs. Markets: What's Being Traded and Where?</span>
+The financial system isn't just "where stocks trade." It has three core functions:
 
-Assets and markets can be classified in several ways:
+1.  **To Allow Entities to...** save, borrow, raise equity capital, manage risks, trade assets, and utilize information.
+2.  **To Determine Returns:** It's the mechanism that finds the equilibrium interest rate—the price that equates the total supply of savings with the total demand for borrowing.
+3.  **To Allocate Capital:** It channels money from those who have it (savers) to those who can use it most productively (e.g., companies building factories, governments building roads).
 
-#### <span style="color: #6A1B9A;">1.2 The Cast of Characters: Securities, Contracts, and Intermediaries</span>
+#### <span style="color: #6A1B9A;">1.2 Classifying Assets and Markets (LOS 39.b)</span>
 
-Here are the key players and instruments you'll encounter.
+  * **Securities:**
+      * **Debt vs. Equity:** Debt securities are loans (e.g., bonds) ; equity securities represent ownership (e.g., stocks).
+      * **Public vs. Private:** Public securities (like S\&P 500 stocks) trade on exchanges and are regulated. Private securities (like venture capital stakes) are non-public, illiquid, and less regulated.
+  * **Derivatives vs. Physical Assets:**
+      * **Physical (Real) Assets:** Tangible assets like real estate, equipment, or commodities.
+      * **Derivative Contracts:** Their value is *derived* from an underlying asset (e.g., stock options, commodity futures).
+  * **Markets:**
+      * **Spot vs. Future/Forward:** Spot markets are for immediate delivery (e.g., buying a stock *now*). Forward/futures markets are for delivery at a future date.
+      * **Money vs. Capital:** Money markets are for short-term debt (<1 year). Capital markets are for long-term debt and equity.
 
-  * **Securities & Currencies:**
-    * **Fixed Income:** These are essentially IOUs. They range from **bonds** (long-term) and **notes** (medium-term) to **commercial paper** (short-term corporate debt).
-    * **Equities:** Represent ownership.
-      * **Common Stock:** The most common type, with voting rights and a residual claim on assets.
-      * **Preferred Stock:** A hybrid security, usually with no voting rights but with priority over common stock for dividends and in liquidation.
-      * **Warrants:** Give the holder the right to buy a firm's stock at a specific price in the future.
-    * **Pooled Investments:** Vehicles like **Mutual Funds** and **Exchange-Traded Funds (ETFs)** that hold a portfolio of securities. **Asset-backed securities (ABS)** are created by bundling loans (like mortgages or car loans) and selling claims to their cash flows.
-    * **Currencies:** Issued by central banks, like the US Dollar (USD), Euro (EUR), or Indian Rupee (INR).
+#### <span style="color: #6A1B9A;">1.3 The "What": Assets, Contracts, & Currencies (LOS 39.c)</span>
 
-  * **Contracts (Derivatives):**
-    * **Forwards & Futures:** Agreements to buy/sell an asset at a future date at a preset price. **Futures** are standardized and trade on an exchange, while **forwards** are customized private contracts.
-    * **Swaps:** An agreement to exchange a series of cash flows in the future (e.g., swapping a fixed interest rate for a floating one).
-    * **Options:** Give the *right* (but not the obligation) to buy (**call option**) or sell (**put option**) an asset at a set price.
-    * **Insurance & Credit Default Swaps (CDS):** An **insurance contract** pays out if a specific event occurs. A **CDS** is a type of insurance against a bond issuer defaulting.
+  * **Securities:**
+      * **Fixed Income:** Bonds (long-term), Notes (intermediate-term), Commercial Paper (short-term corporate debt), Bills (short-term government debt), CDs, Repos.
+      * **Equity:** Common Stock (residual claim, voting rights) , Preferred Stock (fixed dividend, no voting rights), Warrants (options issued by a firm).
+      * **Pooled Investments:** Mutual Funds, ETFs, Hedge Funds, Asset-Backed Securities.
+  * **Contracts:** Futures, Forwards, Options, Swaps, and Insurance contracts (including Credit Default Swaps).
+  * **Currencies:** Issued by central banks, traded in spot and derivative markets.
+  * **Commodities:** Precious metals, energy, agricultural products.
+  * **Real Assets:** Real estate, machinery, etc.
 
-  * **Financial Intermediaries (The Helpers):**
-    * **Brokers & Dealers:** **Brokers** connect buyers and sellers. **Dealers** trade from their own inventory. **Investment banks** (like Goldman Sachs) help companies raise capital. **Exchanges** (like the BSE) provide the venue for trading.
-    * **Securitizers:** Bundle assets into pools and sell securities representing claims on those assets (e.g., creating mortgage-backed securities).
-    * **Depository Institutions:** These are traditional banks (like State Bank of India or JPMorgan Chase) that take deposits and make loans.
-    * **Insurance Companies:** Sell contracts to protect against future risks.
-    * **Arbitrageurs:** Exploit tiny price differences for the same asset in different markets, effectively connecting them and making markets more efficient.
+#### <span style="color: #6A1B9A;">1.4 The "Who": Financial Intermediaries (LOS 39.d)</span>
 
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:Know the fundamental difference between brokers and dealers. <b>Brokers</b> are agents who find a counterparty for you. <b>Dealers</b> are principals who trade with you from their own account. Think of a real estate broker (agent) vs. a car dealer (principal).
-</div>
-</div>
+These are the "middlemen" who make the market work.
 
------
-
-### <span style="color: #1565C0;">Part 2: Taking Your Position - Long vs. Short & Using Leverage 📈🆚📉 (LOS 39.e, 39.f)</span>
-
-#### <span style="color: #6A1B9A;">2.1 Long vs. Short Positions</span>
-
-Taking a position is how you bet on an asset's future price movement.
-
-  * **Long Position:** You buy an asset hoping its price will go up. This is the most common type of investment. If you own shares of Reliance Industries, you have a **long position**.
-  * **Short Position:** You borrow an asset, sell it, and hope its price will go down so you can buy it back cheaper later and return it. This is a bet *against* an asset.
-    * **Example 🧮:** You think Kingfisher Airlines stock is overvalued at ₹10. You borrow 100 shares from your broker and sell them for ₹1,000. The stock price falls to ₹2. You buy back 100 shares for ₹200 and return them to your broker. Your profit is ₹800 (minus commissions and fees).
-    * **Risk:** The biggest risk of a **short sale** is that the stock price could rise indefinitely, meaning your potential loss is unlimited!
-
-#### <span style="color: #6A1B9A;">2.2 Using Leverage to Amplify Returns (and Risks!)</span>
-
-**Leverage** means using borrowed money to buy assets. When you buy stocks using funds borrowed from your broker, it's called **buying on margin**.
-
-  * **Leverage Ratio** = Value of the Asset / Value of the Equity Position. A ratio of 2 means for every $1 of your own money, you control $2 worth of the asset.
-  * **Initial Margin Requirement:** The minimum percentage of the purchase price you must provide as your own equity.
-  * **Maintenance Margin:** The minimum equity percentage you must maintain in your account. If your equity drops below this level, you'll get a **margin call** from your broker, demanding you add more cash or sell the position.
-
-**Example: Calculating Margin Return 🧮**
-
-You buy 100 shares of a stock at $50/share ($5,000 total).
-  * Your broker has a 50% initial margin requirement, so you pay $2,500 (equity) and borrow $2,500.
-  * The call money rate (interest on the loan) is 4%.
-  * After one year, the stock price rises to $60/share.
-  * Your position is now worth $6,000. You sell it.
-  * **Profit Calculation:**
-    * Gain on stock: $1,000 ($6,000 - $5,000)
-    * Interest paid: $100 (4% of $2,500)
-    * Net Profit: $900
-    * **Return on Equity:** $900 / $2,500 = **36%**
-  * Without leverage, your return would have been $1,000 / $5,000 = **20%**. Leverage amplified your return! But if the stock had dropped, it would have amplified your loss too.
-
-**Calculating the Margin Call Price**
-
-This is a critical formula to know. It tells you the stock price at which you'll get that dreaded call.
-
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Margin Call Price} = P_0 \times \left( \frac{1 - \text{Initial Margin \%}}{1 - \text{Maintenance Margin \%}} \right)$$
-</div>
-
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:The margin call formula is a favorite for exam questions. Practice it! If you buy 100 shares at $40 with a 50% initial margin and a 25% maintenance margin, the margin call price is $40 * ( (1-0.50)/(1-0.25) ) = $26.67.
-</div>
-</div>
+  * **Brokers:** Agents who find counterparties for their clients' trades (they don't trade themselves).
+  * **Dealers (Market Makers):** Principals who trade with their clients. They *hold an inventory* of securities and profit from the **bid-ask spread**.
+  * **Investment Banks:** Help corporations raise capital (e.g., in an IPO) and provide advice on mergers.
+  * **Securitizers:** Pool assets (like mortgages), create securities based on them (tranches), and sell them to investors.
+  * **Depository Institutions (Banks):** Take deposits and make loans.
+  * **Arbitrageurs:** Exploit price differences for the *same asset* in different markets, enforcing price consistency.
 
 -----
 
-### <span style="color: #1565C0;">Part 3: Placing Your Order - The Nuts & Bolts of Trading ⚙️ (LOS 39.g, 39.h)</span>
+### <span style="color: #1565C0;">Part 2: Placing a Trade (LOS 39.e, 39.f, 39.g, 39.h)</span>
 
-When you trade, you provide instructions on *how*, *when*, and *how* to settle.
+#### <span style="color: #6A1B9A;">2.1 Positions: Long vs. Short (LOS 39.e)</span>
 
-  1.  **Execution Instructions (How to trade):**
-      * **Market Orders:** Buy or sell *immediately* at the best available price. You get speed but no price certainty.
-      * **Limit Orders:** Buy or sell at a *specific price or better*. You get price certainty but no guarantee of execution. A **limit buy order** is placed below the current market price, and a **limit sell order** is placed above it.
-  2.  **Validity Instructions (When to trade):**
-      * **Day orders:** Expire at the end of the trading day if not filled.
-      * **Good-'til-canceled (GTC) orders:** Remain active until you cancel them.
-      * **Stop Orders (or Stop-Loss Orders):** A crucial risk management tool. A **stop-sell order** is placed *below* the current price and becomes a market order to sell if the price drops to that level. A **stop-buy order** is placed *above* the current price to limit losses on a short sale.
-  3.  **Clearing Instructions (How to settle):** Specifies how the trade is settled (e.g., who is responsible for the final transfer of securities and cash).
+  * **Long Position:** You *own* an asset. You profit if the price **goes up**. (Buy low, sell high) .
+  * **Short Position (Short Sale):** You *sell an asset you don't own*. You do this by borrowing it from a broker, selling it, and hoping to buy it back later at a lower price to return it. You profit if the price **goes down**.
 
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-**Market Order vs. Limit Order**
-<ul>
-  <li><b>Market Order ✅</b>
-    <ul>
-      <li><b>Goal:</b> Execute ASAP.</li>
-      <li><b>Guaranteed?:</b> Execution is guaranteed (if there's a market), but the price is not.</li>
-      <li><b>Best for:</b> Liquid stocks where you prioritize speed over the exact price.</li>
-    </ul>
-  </li>
-  <li><b>Limit Order ✋</b>
-    <ul>
-      <li><b>Goal:</b> Get a specific price or better.</li>
-      <li><b>Guaranteed?:</b> Price is guaranteed (if it executes), but execution is not.</li>
-      <li><b>Best for:</b> Less liquid stocks or when you have a specific target price and are willing to wait.</li>
-    </ul>
-  </li>
-</ul>
-</div>
-</div>
+#### <span style="color: #6A1B9A;">2.2 Leveraged Positions: Margin (LOS 39.f)</span>
 
------
+  * **Leverage:** Using *borrowed funds* to purchase an asset. This **magnifies both gains and losses**.
+  * **Buying on Margin:** Borrowing money from your broker to buy a stock. The loan is called a **margin loan**, and the interest rate is the **call money rate**.
+  * **Initial Margin Requirement:** The *minimum* percentage of the purchase price that you must provide as your own equity (e.g., 50%).
+  * **Maintenance Margin:** The *minimum* equity percentage you must maintain in your account. If your equity drops below this (because the stock price fell), you get a **Margin Call**—a demand from your broker to deposit more cash or sell the stock.
 
-### <span style="color: #1565C0;">Part 4: Where Does Trading Happen? Primary vs. Secondary Markets 🏢 (LOS 39.i, 39.j)</span>
+#### <span style="color: #6A1B9A;">2.3 Order Instructions (LOS 39.g, 39.h)</span>
 
-  * **Primary Market:** This is where securities are created and sold for the first time. Think of an **Initial Public Offering (IPO)**, where a company like Zomato or PayTM first sells its shares to the public. Other primary market transactions include a seasoned offering (a company that's already public selling more new shares) or a government bond auction.
-  * **Secondary Market:** This is where existing securities are traded among investors. When you buy or sell shares of Microsoft on the Nasdaq, you're trading in the **secondary market**. This market provides crucial **liquidity** and **price discovery** for investors.
+How you tell your broker *what* to do, *when* to do it, and *how* to settle it.
 
-#### <span style="color: #6A1B9A;">4.1 How Secondary Markets are Structured</span>
+  *
 
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-**Quote-Driven vs. Order-Driven vs. Brokered Markets**
-<ul>
-  <li><b>Quote-Driven Markets (Dealer Markets) 🗣️</b>
-    <ul>
-      <li><b>How it works:</b> Dealers (market makers) post <b>bid prices</b> (what they'll pay to buy) and <b>ask prices</b> (what they'll accept to sell). You trade with the dealer.</li>
-      <li><b>The Dealer's Profit:</b> The <b>bid-ask spread</b>.</li>
-      <li><b>Common for:</b> Bonds, currencies, and most over-the-counter (OTC) products.</li>
-    </ul>
-  </li>
-  <li><b>Order-Driven Markets (Exchanges) 💻</b>
-    <ul>
-      <li><b>How it works:</b> An electronic system matches buy and sell orders using rules. The most common rule is <b>price priority</b> (highest bid and lowest ask get priority).</li>
-      <li><b>Types:</b>
-        <ul>
-          <li><b>Call Markets:</b> Orders are gathered, and all trades happen at a single price at a specific time.</li>
-          <li><b>Continuous Markets:</b> Trades can happen at any time the market is open.</li>
-        </ul>
-      </li>
-      <li><b>Common for:</b> Stocks on major exchanges like the NYSE and NSE.</li>
-    </ul>
-  </li>
-  <li><b>Brokered Markets 🤝</b>
-    <ul>
-      <li><b>How it works:</b> Brokers find a counterparty for a trade, especially for unique or illiquid assets where a traditional market doesn't exist.</li>
-      <li><b>Common for:</b> Real estate, large blocks of stock, or private equity transactions.</li>
-    </ul>
-  </li>
-</ul>
-</div>
-</div>
+      * **Market Order:** "Get it done NOW at the best available price." Guarantees execution, not price.
+      * **Limit Order:** "Execute only at *this price or better*." Guarantees price, not execution.
+          * A **Limit Buy** order is placed *below* the current price.
+          * A **Limit Sell** order is placed *above* the current price.
+          * An order with a limit price between the best bid and ask is "making a new market".
+
+  * **Validity Instructions:**
+
+      * **Day Order:** Good for this trading day only.
+      * **Good-'til-Canceled (GTC):** Stays active until you cancel it.
+      * **Stop Order (or Stop-Loss):** An order that triggers a *market order* once a "stop price" is hit. Used to limit losses or lock in profits.
+          * **Stop-Sell:** Placed *below* the current price. If the stock falls to $45, it triggers a market order to sell.
+          * **Stop-Buy:** Placed *above* the current price. Used by short sellers to cover their position if the price rises against them.
+
+  * **Clearing Instructions:** How to settle the trade (e.g., "sell short").
 
 -----
 
-### <span style="color: #1565C0;">Part 5: What Makes a Good Market & Why We Need Rules ⚖️ (LOS 39.k, 39.l)</span>
+### <span style="color: #1565C0;">Part 3: Market Arenas & Rules (LOS 39.i, 39.j, 39.k, 39.l)</span>
 
-A **well-functioning financial system** is like a well-run city:
-  * It has **complete markets** where you can save, borrow, and hedge easily.
-  * It's **operationally efficient**, meaning transaction costs are low.
-  * It's **informationally efficient**, meaning prices quickly reflect all available information. When this happens, capital is allocated to its most productive uses (**allocational efficiency**).
+#### <span style="color: #6A1B9A;">3.1 Primary vs. Secondary Markets (LOS 39.i)</span>
 
-**Market regulation** acts as the law enforcement to protect citizens and ensure fairness. Key objectives include:
-  * Protecting unsophisticated investors from fraud and theft.
-  * Promoting fairness by preventing practices like **insider trading**.
-  * Setting minimum standards for competency and information disclosure.
-  * Preventing defaults and ensuring parties honor their commitments.
+  * **Primary Market:** Where securities are **created and sold for the first time**. The company (issuer) receives the cash.
+      * **Initial Public Offering (IPO):** A private company sells shares to the public for the first time.
+      * **Private Placement:** A company sells securities directly to a small group of qualified investors.
+  * **Secondary Market:** Where **existing securities** are traded among investors (e.g., the NYSE). The company is *not* involved in the transaction.
+  * **Why does the Secondary Market matter?** It provides **liquidity** and **price discovery**. Without a liquid secondary market to sell in, investors would be unwilling to buy in the primary market.
 
-Global bodies like the **International Organization of Securities Commissions (IOSCO)** and national regulators like the **SEC** in the US and **SEBI** in India work to achieve these goals.
+#### <span style="color: #6A1B9A;">3.2 How Markets are Structured (LOS 39.j)</span>
+
+1.  **Quote-Driven Markets (Dealer Markets):** Investors trade with *dealers (market makers)* who post "bid" and "ask" prices. Most bonds and currencies trade this way.
+2.  **Order-Driven Markets:** All buyers and sellers post their orders, and an exchange's computer *matches* them using rules (e.g., "best price priority, then earliest order priority"). This is how most stock exchanges (like NYSE) work.
+3.  **Brokered Markets:** Brokers find a counterparty for a trade, usually for unique or illiquid assets (e.g., large blocks of stock, real estate).
+
+<!-- end list -->
+
+  * **Call vs. Continuous Markets:** **Call markets** trade only at specific times (e.g., an opening auction). **Continuous markets** trade any time the market is open.
+
+#### <span style="color: #6A1B9A;">3.3 A Well-Functioning Financial System (LOS 39.k)</span>
+
+A good system is:
+
+  * **Complete:** Lets you save, borrow, hedge, and trade easily.
+  * **Operationally Efficient:** Trading costs (commissions, bid-ask spreads) are low.
+  * **Informationally Efficient:** Prices reflect all available information quickly and accurately.
+  * **Allocationally Efficient:** Capital gets directed to its highest-value use.
+
+#### <span style="color: #6A1B9A;">3.4 Objectives of Market Regulation (LOS 39.l)</span>
+
+Regulators (like the SEC in the U.S.) aim to:
+
+  * **Protect Investors:** Prevent fraud and theft.
+  * **Ensure Market Fairness:** Prohibit insider trading, which erodes market confidence.
+  * **Promote Efficiency:** Require disclosures so investors have information.
+  * **Reduce Systemic Risk:** Prevent the failure of one firm from collapsing the whole system.
 
 -----
 
-### 🧪 Formula Summary
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Leverage Ratio} = \frac{\text{Value of the Asset}}{\text{Value of the Equity Position}}$$
+### <span style="color: #1565C0;">🧪 Formula Summary</span>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Leverage Ratio:**
+
+$$
+\text{Leverage Ratio} = \frac{\text{Value of the Asset}}{\text{Value of the Equity Position}}
+$$
+
 </div>
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Return} = \frac{\text{Ending Value} - \text{Loan Repayment} - \text{Interest Paid} - \text{Commissions}}{\text{Initial Equity Investment}}$$
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Return on Margin Transaction:**
+
+$$
+\text{Return} = \frac{\text{Ending Value} - \text{Loan Payoff} - \text{Interest} - \text{Commissions}}{\text{Initial Equity Investment}}
+$$
+
 </div>
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-$$\text{Margin Call Price} = P_0 \times \left( \frac{1 - \text{Initial Margin \%}}{1 - \text{Maintenance Margin \%}} \right)$$
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Margin Call Price (for a Long Position):**
+
+$$
+\text{Price} = \frac{(\text{Original Price}) \times (1 - \text{Initial Margin})}{1 - \text{Maintenance Margin}}
+$$
+
 </div>
 
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
-<div style="color: #000000; font-weight: 500;">
+
 ### 🎯 Quick Exam-Day Pointers
-<ul>
-  <li><b>Primary Market = New Securities.</b> This is the IPO market where companies raise fresh capital.</li>
-  <li><b>Secondary Market = Trading Existing Securities.</b> This is where investors trade with each other. It provides liquidity.</li>
-  <li><b>Long = Bet price will go UP.</b> <b>Short = Bet price will go DOWN.</b> Remember, short selling has unlimited risk!</li>
-  <li><b>Leverage magnifies BOTH gains and losses.</b> It's a double-edged sword. Be sure you can calculate the return on a margin trade and the margin call price.</li>
-  <li><b>Market Order = Speed.</b> <b>Limit Order = Price.</b> Know which to use in different scenarios.</li>
-  <li>The main job of a <b>dealer</b> is to provide liquidity by buying and selling from their own inventory, profiting from the bid-ask spread.</li>
-</ul>
+
+<div style="color: #000000; font-weight: 500;">
+
+  * **Intermediaries:** Know the difference: **Brokers** are *agents* (no inventory). **Dealers** are *principals* (hold inventory, profit from bid-ask spread).
+  * **Positions:** **Long = Profit from Price Up**. **Short = Profit from Price Down**.
+  * **Margin:** **Leverage magnifies gains AND losses**. A **Margin Call** happens when your equity % drops below the **Maintenance Margin**.
+  * **Orders:**
+      * **Market Order:** Guarantees *execution*, not price.
+      * **Limit Order:** Guarantees *price*, not execution.
+      * **Stop-Sell Order:** Triggers a *market sell* when the price *falls* to your stop price.
+  * **Markets:**
+      * **Primary vs. Secondary:** Primary = *New* securities (IPO). Secondary = *Existing* securities (NYSE).
+      * **Order-Driven:** *Matches* orders (stocks). **Quote-Driven:** *Dealers* provide liquidity (bonds).
+  * **Regulation:** Its main goals are investor protection, fairness (no insider trading), and preventing systemic risk.
+
 </div>
 </div>

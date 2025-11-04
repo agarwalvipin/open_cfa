@@ -122,6 +122,12 @@ Think of a younger, highly leveraged company, or a company in a cyclical industr
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
+**Repo Rate:**
+$$
+\text{Repo Rate} = \dfrac{\text{Repurchase Price} - \text{Purchase Price}}{\text{Purchase Price}} \times \dfrac{360\ \text{or}\ 365}{\text{Days}}
+$$
+
+
 **Repo Purchase Price (Loan Amount):**
 
 $$
