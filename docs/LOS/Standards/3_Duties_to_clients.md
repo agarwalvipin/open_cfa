@@ -76,15 +76,15 @@ This standard has two distinct paths:
 
 ```mermaid
 graph TD
-    A[Start: What is your role?] --> B{Advisory Relationship? (e.g., Financial Advisor)};
+    A[Start: What is your role?] --> B{Advisory Relationship?};
     B -- Yes --> C[MUST create an IPS];
-    C --> D[1. Make reasonable inquiry into client's situation (risk, return, etc)];
-    D --> E[2. Judge investments in context of TOTAL portfolio];
-    E --> F[3. UPDATE the IPS regularly (at least annually)];
+    C --> D[Make reasonable inquiry into client situation];
+    D --> E[Judge investments in context of TOTAL portfolio];
+    E --> F[Update the IPS regularly];
     
-    B -- No --> G{Managing to a Mandate? (e.g., Fund Manager)};
-    G -- Yes --> H[MUST invest *only* in a way that is consistent with the stated mandate];
-    H --> I[E.g., A 'Large-Cap Income Fund' CANNOT buy speculative, zero-dividend stocks (Example 4)];
+    B -- No --> G{Managing to a Mandate?};
+    G -- Yes --> H[MUST invest only in a way consistent with the stated mandate];
+    H --> I[Large-Cap Income Fund cannot buy speculative zero-dividend stocks];
 ```
 
 #### 3.1 The Bedrock: The Investment Policy Statement (IPS)
@@ -177,7 +177,3 @@ This is *not* a violation. Standard III(E) **does not** prevent you from coopera
   * **III(D) - Performance:** Must be **Fair, Accurate, and Complete.** Complying with **GIPS** is the best way. Don't cherry-pick; *always* include terminated accounts.
   * **III(E) - Confidentiality:** Keep it secret\! This applies to **current, former, and prospective** clients.
   * **III(E) Exceptions (Know these\!):** You *can* talk if: 1) Client is **illegal**, 2) **Law** requires it, or 3) Client gives **permission**. Cooperating with a CFA investigation is *not* a violation.
-
------
-
-Would you like to proceed to Standard IV: Duties to Employers?

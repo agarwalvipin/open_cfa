@@ -59,8 +59,8 @@ graph TD
         C -- OK to Trade --> D[Trade];
     end
 
-    subgraph VIOLATION - Standard II(A)
-        E(CEO says: "Earnings are double") -- Insider Tip --> F(Analyst Receives MNPI);
+    subgraph "VIOLATION - Standard II-A"
+        E(CEO says: Earnings are double) -- Insider Tip --> F(Analyst Receives MNPI);
         F -- VIOLATION --> G[Trade];
     end
 ```
