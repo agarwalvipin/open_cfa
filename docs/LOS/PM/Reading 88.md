@@ -1,7 +1,3 @@
-Here is a detailed summary of Reading 88, crafted in the style of your "CFA Samurai" persona.
-
------
-
 ## Reading 88: Introduction to Risk Management 🛡️
 
 ### 🎯 Introduction
@@ -148,10 +144,10 @@ Here's how we quantify some of those risks:
 
 **⚠️ Classic Exam Tripwire: Value at Risk (VaR)**
 
-This is a **critical** definition. If a bank has a 1-day VaR of $1 million with 5% probability, what does that mean?
+This is a **critical** definition. If a bank has a 1-day VaR of `$1 million` with 5% probability, what does that mean?
 
-  * It means there is a 5% chance of losing **AT LEAST** $1 million.
-  * It does **NOT** mean the *maximum* loss is $1 million. The loss could be $10 million. VaR only tells you the minimum loss for that 5% tail.
+  * It means there is a 5% chance of losing **AT LEAST** `$1 million`.
+  * It does **NOT** mean the *maximum* loss is `$1 million`. The loss could be `$10 million`. VaR only tells you the minimum loss for that 5% tail.
 
 </div>
 </div>
@@ -168,10 +164,10 @@ graph TD
     B --> E(Risk Transfer);
     B --> F(Risk Shifting);
 
-    C[Stop the activity];
-    D[Self-insure / Bear the risk];
-    E[Pay a premium to an Insurer <br> e.g., Insurance, Surety Bonds , Fidelity Bonds ];
-    F[Change the outcome distribution <br> e.g., Use Derivatives (futures, options) ];
+    C("Stop the activity");
+    D("Self-insure / Bear the risk");
+    E("Pay a premium to an Insurer <br/> e.g., Insurance, Surety Bonds, Fidelity Bonds");
+    F("Change the outcome distribution <br/> e.g., Use Derivatives (futures, options)");
 ```
 
   * **Risk Avoidance:** Don't do the risky activity.
@@ -192,7 +188,7 @@ This reading is highly qualitative\! There are no complex formulas to memorize. 
 
 -----
 
-<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 15px; margin: 20px 0;">
+<div style="background-color: #E8F5E9; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
 

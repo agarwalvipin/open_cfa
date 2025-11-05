@@ -8,7 +8,7 @@
     - [Equity](Formulas/Equity.md)
     - [Fixed Income](Formulas/Fixed%20Income.md)
     - [Quants](Formulas/Quants.md)
-- LOS
+- [All Readings](LOS/index.md)
   - [Quantitative Methods](LOS/Quant/index.md)
     - [Reading 1: Rates and Returns](LOS/Quant/Reading%201.md)
     - [Reading 2: The Time Value of Money in Finance](LOS/Quant/Reading%202.md)

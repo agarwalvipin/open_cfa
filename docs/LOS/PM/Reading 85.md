@@ -128,7 +128,7 @@ Pooled investments are vehicles that combine funds from many investors into a si
 
 -----
 
-<div style="background-color: #E8F5E9; border-left: 5px solid #4CAF50; padding: 15px; margin: 20px 0;">
+<div style="background-color: #E8F5E9; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
 
 ### 🎯 Quick Exam-Day Pointers
 
