@@ -50,6 +50,7 @@ Differences arise from two main sources:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
+
 **Think of it like this:** You got a tax break today because the tax rules were more generous upfront than the accounting rules. But you know you'll have to "pay it back" in the form of higher taxes later. That future obligation is the DTL.
 </div>
 </div>
@@ -66,6 +67,7 @@ Differences arise from two main sources:
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
+
 **Think of it like this:** You paid more tax today than your income statement suggests you should have, perhaps because tax rules made you recognize income early or delayed an expense deduction. This overpayment creates a future benefit – the DTA – representing expected tax savings later.
 </div>
 </div>
