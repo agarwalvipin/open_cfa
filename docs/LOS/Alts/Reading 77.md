@@ -28,23 +28,40 @@ For illiquid funds like private equity, returns are typically negative in the ea
 **The J-Curve Effect:**
 
 ```mermaid
-graph LR
-    A["Year 0<br/>0%<br/>Start"] --> B["Year 1-2<br/>-15%<br/>Fees & Setup"]
-    B --> C["Year 3-4<br/>-5%<br/>Deployment"]
-    C --> D["Year 5-6<br/>+10%<br/>Early Returns"]
-    D --> E["Year 7-10<br/>+25%<br/>Strong Exits"]
+graph TB
+    subgraph P1["PHASE 1: COMMITMENT"]
+        A["Year 0<br/>Return: 0%<br/>Initial commitment"] --> B["Year 1-2<br/>Return: -15%<br/>Fees & setup costs paid"]
+    end
+    
+    subgraph P2["PHASE 2: DEPLOYMENT"]
+        C["Year 3-4<br/>Return: -5%<br/>Capital invested in companies"]
+    end
+    
+    subgraph P3["PHASE 3: DISTRIBUTION"]
+        D["Year 5-6<br/>Return: +10%<br/>Early exits begin"] --> E["Year 7-10<br/>Return: +25%<br/>Successful exits generate profits"]
+    end
+    
+    B --> C
+    C --> D
     
     style A fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
-    style B fill:#f8d7da,stroke:#c82333,stroke-width:2px
-    style C fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style B fill:#f8d7da,stroke:#c82333,stroke-width:3px
+    style C fill:#fff3cd,stroke:#ffc107,stroke-width:3px
     style D fill:#d4edda,stroke:#28a745,stroke-width:2px
     style E fill:#d1f2eb,stroke:#17a673,stroke-width:3px
+    
+    style P1 fill:#ffe6e6,stroke:#c82333,stroke-width:2px
+    style P2 fill:#fff9e6,stroke:#ffc107,stroke-width:2px
+    style P3 fill:#e6f7f0,stroke:#28a745,stroke-width:2px
 ```
 
-**Key Phases:**
-- 📉 **Years 1-2**: Initial negative returns (-15%) due to management fees and setup costs
-- ⚖️ **Years 3-4**: Returns still negative/flat (-5%) as capital is deployed
-- 📈 **Years 5+**: Sharp positive returns (+10% to +25%) as investments mature and are sold for profit
+**Investment Lifecycle Phases:**
+
+| Phase | Timeline | Returns | What's Happening |
+|-------|----------|---------|------------------|
+| 📉 **Phase 1: Capital Commitment** | Years 0-2 | 0% → -15% | Initial negative returns due to management fees and setup costs |
+| ⚖️ **Phase 2: Capital Deployment** | Years 3-4 | -5% | Returns still negative/flat as capital is deployed into companies |
+| 📈 **Phase 3: Capital Distribution** | Years 5-10 | +10% → +25% | Sharp positive returns as investments mature and are sold for profit |
 
 #### <span style="color: #6A1B9A;">1.2 Valuation: The Fair Value Hierarchy</span>
 
