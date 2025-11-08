@@ -97,6 +97,7 @@ The daily cash settlement of futures gains and losses is the key.
   * <span style="color: #D32F2F;">❌ This is disadvantageous.</span> Therefore, the <b>futures price will be lower than the forward price.</b>
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
+
 ### 🎯 Quick Exam-Day Pointers
 <div style="color: #000000; font-weight: 500;">
 <ul>
