@@ -85,6 +85,8 @@ When companies can't get loans from traditional banks, they turn to the **privat
 
 Private debt isn't one-size-fits-all. It ranges from safer senior loans to riskier, higher-return strategies.
 
+Mnemonic to remember the hierarchy from safest to riskiest: **DUVMD - Direct Lending → Unitranche → Venture Debt → Mezzanine Debt → Distressed Debt**.
+
 | Category | Who It's For | Seniority in Capital Structure | Key Features |
 | :--- | :--- | :--- | :--- |
 | **Direct Lending** | Mature, stable companies needing capital for growth or acquisitions. | **Senior & Secured** (first in line to get paid) | Similar to a bank loan, with fixed payment schedules. Can include **leveraged loans**. |
