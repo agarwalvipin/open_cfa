@@ -25,8 +25,6 @@ Appraising the performance of alternative investments is a different ball game f
 
 For illiquid funds like private equity, returns are typically negative in the early years before turning positive, creating a "J" shape on a graph.
 
-<div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
 ```mermaid
 graph LR
     subgraph Investment Life Cycle & The J-Curve
@@ -39,7 +37,6 @@ graph LR
     style C fill:#fff3cd
     style D fill:#d4edda
 ```
-</div>
 
 #### <span style="color: #6A1B9A;">1.2 Valuation: The Fair Value Hierarchy</span>
 
