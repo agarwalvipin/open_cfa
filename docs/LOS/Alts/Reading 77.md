@@ -27,11 +27,17 @@ For illiquid funds like private equity, returns are typically negative in the ea
 
 ```mermaid
 graph LR
-    subgraph Investment Life Cycle & The J-Curve
+    subgraph "Investment Life Cycle & The J-Curve"
         direction LR
-        A(Start) --> B["Phase 1: Capital Commitment<br/>Initial Negative Returns<br/>Fees & setup costs are paid"]
-        B --> C["Phase 2: Capital Deployment<br/>Returns still negative/flat<br/>Capital is invested in companies"]
-        C --> D["Phase 3: Capital Distribution<br/>Sharp Positive Returns<br/>Successful investments are sold for a profit"]
+        A(Start) --> B["Phase 1: Capital Commitment
+        Initial Negative Returns
+        Fees & setup costs are paid"]
+        B --> C["Phase 2: Capital Deployment
+        Returns still negative/flat
+        Capital is invested in companies"]
+        C --> D["Phase 3: Capital Distribution
+        Sharp Positive Returns
+        Successful investments are sold for a profit"]
     end
     style B fill:#f8d7da
     style C fill:#fff3cd
