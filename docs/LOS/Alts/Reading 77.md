@@ -25,23 +25,26 @@ Appraising the performance of alternative investments is a different ball game f
 
 For illiquid funds like private equity, returns are typically negative in the early years before turning positive, creating a "J" shape on a graph.
 
-**Investment Life Cycle & The J-Curve:**
+**The J-Curve Effect:**
 
 ```mermaid
 graph LR
-    A(Start) --> B["Phase 1: Capital Commitment
-    Initial Negative Returns
-    Fees & setup costs are paid"]
-    B --> C["Phase 2: Capital Deployment
-    Returns still negative/flat
-    Capital is invested in companies"]
-    C --> D["Phase 3: Capital Distribution
-    Sharp Positive Returns
-    Successful investments are sold for a profit"]
-    style B fill:#f8d7da
-    style C fill:#fff3cd
-    style D fill:#d4edda
+    A["Year 0<br/>0%<br/>Start"] --> B["Year 1-2<br/>-15%<br/>Fees & Setup"]
+    B --> C["Year 3-4<br/>-5%<br/>Deployment"]
+    C --> D["Year 5-6<br/>+10%<br/>Early Returns"]
+    D --> E["Year 7-10<br/>+25%<br/>Strong Exits"]
+    
+    style A fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style B fill:#f8d7da,stroke:#c82333,stroke-width:2px
+    style C fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style D fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style E fill:#d1f2eb,stroke:#17a673,stroke-width:3px
 ```
+
+**Key Phases:**
+- 📉 **Years 1-2**: Initial negative returns (-15%) due to management fees and setup costs
+- ⚖️ **Years 3-4**: Returns still negative/flat (-5%) as capital is deployed
+- 📈 **Years 5+**: Sharp positive returns (+10% to +25%) as investments mature and are sold for profit
 
 #### <span style="color: #6A1B9A;">1.2 Valuation: The Fair Value Hierarchy</span>
 
