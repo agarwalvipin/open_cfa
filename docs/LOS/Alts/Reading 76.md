@@ -166,42 +166,30 @@ A **hurdle rate** is a minimum rate of return the fund must achieve before the G
 
 The GP's performance fee is calculated *only* on the returns **in excess of** the hurdle rate. It's tougher for the GP.
 
-  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+**Example:**
+- Fund Return $(r) = 18\%$
+- Hurdle Rate $(r_h) = 8\%$
+- Performance Fee $(p) = 20\%$
 
-  $$
-  \begin{align*}
-  \text{Fund Return} \ (r) &= 18\% \\
-  \text{Hurdle Rate} \ (r_h) &= 8\% \\
-  \text{Performance Fee} \ (p) &= 20\% \\
-  \\
-  \text{Excess Return} &= r - r_h = 10\% \\
-  \text{GP's Fee} &= p \times \text{Excess Return} = 2\% \\
-  \text{LP Keeps} &= r_h + (r - r_h - \text{GP's Fee}) = 16\%
-  \end{align*}
-  $$
-
-  </div>
+**Calculation:**
+- Excess Return $= r - r_h = 10\%$
+- GP's Fee $= p \times \text{Excess Return} = 2\%$
+- LP Keeps $= r_h + (r - r_h - \text{GP's Fee}) = 16\%$
 
 ###### Soft Hurdle
 
 Once the hurdle rate is cleared, the GP's performance fee is calculated on the *entire* return. It's more generous for the GP. Often includes a **catch-up clause**.
 
-  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
+**Example:**
+- Fund Return $(r) = 18\%$
+- Hurdle Rate $(r_h) = 8\%$
+- Performance Fee $(p) = 20\%$
 
-  $$
-  \begin{align*}
-  \text{Fund Return} \ (r) &= 18\% \\
-  \text{Hurdle Rate} \ (r_h) &= 8\% \\
-  \text{Performance Fee} \ (p) &= 20\% \\
-  \\
-  \text{GP's Fee} &= p \times r = 3.6\% \\
-  \text{LP Keeps} &= r - \text{GP's Fee} = 14.4\%
-  \end{align*}
-  $$
+**Calculation:**
+- GP's Fee $= p \times r = 3.6\%$
+- LP Keeps $= r - \text{GP's Fee} = 14.4\%$
 
-  The catch-up works like this: The first 8% goes to the LP. Then, the next chunk of profits goes 100% to the GP until they have "caught up" to their 20% share of the total profits generated so far. After that, remaining profits are split 80/20.
-
-  </div>
+**Catch-up mechanism:** The first 8% goes to the LP. Then, the next chunk of profits goes 100% to the GP until they have "caught up" to their 20% share of the total profits generated so far. After that, remaining profits are split 80/20.
 
 ##### <span style="color: #E65100;">3.2.2 High-Water Mark & Clawback Provision</span>
 
@@ -245,19 +233,15 @@ The GP gets paid only after *all* LPs have received their entire initial capital
 
 ### 🧪 Formula Summary
 
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
 **GP Performance Fee with a Hard Hurdle (no catch-up):**
 
 $$r_{GP} = \max[0, p(r - r_h)]$$
 
 Where:
-* $r_{GP}$ = General Partner's rate of return from the performance fee
-* $p$ = Performance fee percentage (e.g., 20% or 0.20)
-* $r$ = The fund's total return for the period
-* $r_h$ = The hard hurdle rate
-
-</div>
+  * $r_{GP}$ = General Partner's rate of return from the performance fee
+  * $p$ = Performance fee percentage (e.g., 20% or 0.20)
+  * $r$ = The fund's total return for the period
+  * $r_h$ = The hard hurdle rate
 
 -----
 #### <span style="color: #00838F;">3.3 Global & Local Context 🌍</span>

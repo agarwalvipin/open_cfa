@@ -57,7 +57,8 @@ To build a portfolio, you first need the stats on your individual assets.
 
 **🧮 2-Asset Portfolio Standard Deviation (The Blueprint):**
 This is the most important formula in this section.
-$$\sigma_{portfolio} = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,2}\sigma_1\sigma_2}$$ 
+
+$$\sigma_{portfolio} = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,2}\sigma_1\sigma_2}$$
 
   * $w_1$, $w_2$ = Portfolio weights
   * $\sigma_1$, $\sigma_2$ = Standard deviations (risk) of each asset
@@ -101,9 +102,7 @@ A risk-averse samurai **will only ever choose a portfolio that lies on the Effic
 ### 🧪 Formula Summary
 
   * **Sample Standard Deviation:** $s = \sqrt{\frac{\sum_{t=1}^{T}(R_t - \overline{R})^2}{T-1}}$ 
-  * **Sample Covariance:** $$
-Cov_{1,2} = \frac{\sum_{t=1}^{n} \left[R_{t,1} - \overline{R}_1\right] \left[R_{t,2} - \overline{R}_2\right]}{n-1}
-$$ 
+  * **Sample Covariance:** $Cov_{1,2} = \frac{\sum_{t=1}^{n} \left[R_{t,1} - \overline{R}_1\right] \left[R_{t,2} - \overline{R}_2\right]}{n-1}$
   * **Correlation:** $\rho_{1,2} = \frac{Cov_{1,2}}{\sigma_1\sigma_2}$ 
   * **2-Asset Portfolio Standard Deviation:** $\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,2}\sigma_1\sigma_2}$ 
   * **Portfolio StDev (with risk-free asset):** $\sigma_p = w_{risky} \times \sigma_{risky}$ 
