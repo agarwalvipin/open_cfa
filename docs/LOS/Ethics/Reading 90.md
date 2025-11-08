@@ -1,5 +1,3 @@
-Here is a detailed summary of Reading 90.
-
 ## Reading 90: Code of Ethics and Standards of Professional Conduct ⚖️
 
 ### 🎯 Introduction

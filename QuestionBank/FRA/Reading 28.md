@@ -1,11 +1,3 @@
-Of course, Vipin. Let's move on to Reading 28, "Analyzing Income Statements." This is a foundational topic, and mastering it is essential. A solid understanding of how to dissect an income statement will serve you well throughout your CFA journey.
-
-Here is a new set of 25 questions covering revenue recognition, expense recognition, non-recurring items, EPS, and common-size analysis, all formatted in markdown as you requested.
-
-Good luck with your studies\!
-
------
-
 ### Reading 28: Analyzing Income Statements - Practice Questions
 
 #### Vignette 1

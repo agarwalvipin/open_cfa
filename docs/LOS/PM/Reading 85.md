@@ -1,7 +1,3 @@
-Here is a detailed summary of Reading 85, crafted in the style of your "CFA Samurai" persona.
-
------
-
 ## Reading 85: Portfolio Management: An Overview ⛩️
 
 ### 🎯 Introduction
@@ -147,5 +143,3 @@ Pooled investments are vehicles that combine funds from many investors into a si
 
 </div>
 </div>
-
-Would you like to review the specific characteristics of any investor type, or compare any of the pooled investment vehicles in more detail?

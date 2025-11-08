@@ -1,5 +1,3 @@
-Here is a detailed summary of Reading 83, crafted in the style of your "CFA Samurai" persona.
-
 -----
 
 ## Reading 83: Portfolio Risk and Return: Part I 🛡️
@@ -103,7 +101,9 @@ A risk-averse samurai **will only ever choose a portfolio that lies on the Effic
 ### 🧪 Formula Summary
 
   * **Sample Standard Deviation:** $s = \sqrt{\frac{\sum_{t=1}^{T}(R_t - \overline{R})^2}{T-1}}$ 
-  * **Sample Covariance:** $Cov_{1,2} = \frac{\sum_{t=1}^{n}\{[R_{t,1} - \overline{R}_[R_{t,2} - \overline{R}_\}}{n-1}$ 
+  * **Sample Covariance:** $$
+Cov_{1,2} = \frac{\sum_{t=1}^{n} \left[R_{t,1} - \overline{R}_1\right] \left[R_{t,2} - \overline{R}_2\right]}{n-1}
+$$ 
   * **Correlation:** $\rho_{1,2} = \frac{Cov_{1,2}}{\sigma_1\sigma_2}$ 
   * **2-Asset Portfolio Standard Deviation:** $\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{1,2}\sigma_1\sigma_2}$ 
   * **Portfolio StDev (with risk-free asset):** $\sigma_p = w_{risky} \times \sigma_{risky}$ 
@@ -125,5 +125,3 @@ A risk-averse samurai **will only ever choose a portfolio that lies on the Effic
 
 </div>
 </div>
-
-Would you like to review the calculation for a 2-asset portfolio's standard deviation with a specific example?

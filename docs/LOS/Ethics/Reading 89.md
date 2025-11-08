@@ -1,5 +1,3 @@
-Here is a detailed summary of Reading 89.
-
 ## Reading 89: Ethics and Trust in the Investment Profession 🏛️
 
 ### 🎯 Introduction

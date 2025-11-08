@@ -185,7 +185,3 @@ Here is your samurai's cheat sheet for Standard I. Know these cold\!
   * **I(C) - Misrepresentation:** Don't **plagiarize**. Remember, you *can* use research and models created by others *at your own firm* without attribution (it's firm property). Don't "cherry-pick" performance  or guarantee returns.
   * **I(D) - Misconduct:** This standard applies to **"professional conduct"**. Being drunk *at work* is a violation. Lying on a resume is a violation. Getting a speeding ticket is not.
   * **I(E) - Competence:** This is a *new* standard. It has two parts: 1) Be competent (don't do work you can't handle)  and 2) **Maintain** competence (keep learning as the industry changes).
-
------
-
-Would you like to drill down into the application examples for any of these standards?

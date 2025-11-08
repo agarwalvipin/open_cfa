@@ -275,7 +275,3 @@ Here's a focused, exam-aligned **CFA Level I Tips Sheet** for **Economics Readin
   $$
   \frac{F - S}{S} \times \frac{360}{\text{Days}} \times 100
   $$
-
----
-
-Would you like me to export this tips sheet to PDF or combine it with your formula sheet into one master study doc?

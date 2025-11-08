@@ -1,7 +1,3 @@
-Here is a detailed summary of Reading 86, crafted in the style of your "CFA Samurai" persona.
-
------
-
 ## Reading 86: Basics of Portfolio Planning and Construction 🗺️
 
 ### 🎯 Introduction
@@ -193,5 +189,3 @@ This reading is **100% qualitative**\! There are no formulas to memorize. Your b
 
 </div>
 </div>
-
-Would you like me to create a mini-case study for you to practice identifying the objectives and constraints for a hypothetical client?

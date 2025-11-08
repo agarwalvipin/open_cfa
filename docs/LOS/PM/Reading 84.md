@@ -1,7 +1,3 @@
-Here is a detailed summary of Reading 84, crafted in the style of your "CFA Samurai" persona.
-
------
-
 ## Reading 84: Portfolio Risk and Return: Part II ⚔️
 
 ### 🎯 Introduction
@@ -222,5 +218,3 @@ Now that we have the SML as our benchmark for a "fair" return, we can *finally* 
 
 </div>
 </div>
-
-Would you like to run through a practice problem to identify a mispriced security using the SML?

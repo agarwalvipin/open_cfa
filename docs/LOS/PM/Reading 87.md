@@ -1,7 +1,3 @@
-Here is a detailed summary of Reading 87, crafted in the style of your "CFA Samurai" persona.
-
------
-
 ## Reading 87: The Behavioral Biases of Individuals 🧠
 
 ### 🎯 Introduction
@@ -141,7 +137,3 @@ Behavioral finance can help explain market behavior that traditional finance cal
 
 </div>
 </div>
-
-This is a powerful set of tools, Samurai. Master them, and you will not only be a better analyst but a more disciplined and self-aware warrior.
-
-Would you like to drill down into any of these biases with more examples?

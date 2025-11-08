@@ -117,7 +117,3 @@ You must disclose the **nature** of the benefit (cash, soft dollars, in-kind) an
   * **VI(A) - Avoid or Disclose:** Best practice is to **AVOID**. If you can't, disclose in **prominent, plain language**. Know the key conflicts: firm relationships (IB, market-making) and your own personal stock ownership or board seats.
   * **VI(B) - Priority:** Remember the "CEP" pecking order: **Clients FIRST, Employer SECOND, Personal LAST**. This applies to all "beneficial owner" accounts. A fee-paying family account is a CLIENT.
   * **VI(C) - Referrals:** If you **pay or get paid** for a client referral, you **must disclose** it to the client *before* they sign on. This allows them to judge your partiality.
-
------
-
-Would you like to move on to the final standard, Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate?

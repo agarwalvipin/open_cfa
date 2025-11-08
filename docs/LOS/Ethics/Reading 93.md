@@ -1,5 +1,3 @@
-Here is a detailed summary of Reading 93.
-
 ## Reading 93: Ethics Application 👨‍⚖️
 
 ### 🎯 Introduction

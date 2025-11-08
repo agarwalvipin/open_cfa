@@ -207,5 +207,3 @@ This reading is highly qualitative\! There are no complex formulas to memorize. 
 
 </div>
 </div>
-
-Would you like me to dive deeper into any of these risk types, such as the "Greeks" or the different non-financial risks?

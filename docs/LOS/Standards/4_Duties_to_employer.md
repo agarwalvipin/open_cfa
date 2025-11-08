@@ -99,7 +99,3 @@ This is a critical point. What if your *firm's* compliance system is terrible?
   * **IV(A) - Loyalty:** This is all about **leaving your job**. Don't solicit clients or take *any* firm property (lists, models) *before* you leave. After you leave, you can compete fairly using public info.
   * **IV(B) - Extra Pay:** Got offered a bonus from a client? A trip? You **must** get **written consent from your employer** first. This is a conflict with your *employer's* interests.
   * **IV(C) - Supervisors:** Your job is to **PREVENT and DETECT** violations. If you find one, you *must* investigate. If your firm's system is broken and they won't fix it, you *must* **decline to supervise** in writing.
-
------
-
-Would you like to move on to Standard V: Investment Analysis, Recommendations, and Actions?

@@ -113,7 +113,3 @@ Here is your samurai's cheat sheet for Standard II.
   * **Two Types of Manipulation:**
     1.  **Information-Based:** Spreading false rumors (e.g., "pump and dump").
     2.  **Transaction-Based:** Making trades to create a false picture of price or volume.
-
------
-
-Would you like to move on to Standard III: Duties to Clients?

@@ -110,7 +110,3 @@ This is the most-tested part of Standard V(C).
   * **V(B) - Communication:** Disclose your investment process, its risks, and (new\!) the **nature and cost of your services**.
   * **V(B) - Fact vs. Opinion:** **NEVER** state an opinion (like a forecast) as a fact.
   * **V(C) - Records:** This is the big one. Records are your **FIRM'S PROPERTY**. You *cannot* take them when you leave. The recommended retention period is **7 years** if no other rule applies.
-
------
-
-Would you like to move on to Standard VI: Conflicts of Interest?
