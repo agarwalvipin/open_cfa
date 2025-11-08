@@ -25,20 +25,19 @@ Appraising the performance of alternative investments is a different ball game f
 
 For illiquid funds like private equity, returns are typically negative in the early years before turning positive, creating a "J" shape on a graph.
 
+**Investment Life Cycle & The J-Curve:**
+
 ```mermaid
 graph LR
-    subgraph "Investment Life Cycle & The J-Curve"
-        direction LR
-        A(Start) --> B["Phase 1: Capital Commitment
-        Initial Negative Returns
-        Fees & setup costs are paid"]
-        B --> C["Phase 2: Capital Deployment
-        Returns still negative/flat
-        Capital is invested in companies"]
-        C --> D["Phase 3: Capital Distribution
-        Sharp Positive Returns
-        Successful investments are sold for a profit"]
-    end
+    A(Start) --> B["Phase 1: Capital Commitment
+    Initial Negative Returns
+    Fees & setup costs are paid"]
+    B --> C["Phase 2: Capital Deployment
+    Returns still negative/flat
+    Capital is invested in companies"]
+    C --> D["Phase 3: Capital Distribution
+    Sharp Positive Returns
+    Successful investments are sold for a profit"]
     style B fill:#f8d7da
     style C fill:#fff3cd
     style D fill:#d4edda
