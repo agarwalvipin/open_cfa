@@ -166,24 +166,24 @@ A **hurdle rate** is a minimum rate of return the fund must achieve before the G
 
 The GP's performance fee is calculated *only* on the returns **in excess of** the hurdle rate. It's tougher for the GP.
 
-**Example:**
-- Fund Return $(r) = 18\%$
-- Hurdle Rate $(r_h) = 8\%$
-- Performance Fee $(p) = 20\%$
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Example:** Fund Return $(r) = 18\%$, Hurdle Rate $(r_h) = 8\%$, Performance Fee $(p) = 20\%$
 
 **Calculation:**
 - Excess Return $= r - r_h = 10\%$
-- GP's Fee $= p \times \text{Excess Return} = 2\%$
+- GP's Fee $= p \times \text{Excess Return} = 2\%$  
 - LP Keeps $= r_h + (r - r_h - \text{GP's Fee}) = 16\%$
+
+</div>
 
 ###### Soft Hurdle
 
 Once the hurdle rate is cleared, the GP's performance fee is calculated on the *entire* return. It's more generous for the GP. Often includes a **catch-up clause**.
 
-**Example:**
-- Fund Return $(r) = 18\%$
-- Hurdle Rate $(r_h) = 8\%$
-- Performance Fee $(p) = 20\%$
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Example:** Fund Return $(r) = 18\%$, Hurdle Rate $(r_h) = 8\%$, Performance Fee $(p) = 20\%$
 
 **Calculation:**
 - GP's Fee $= p \times r = 3.6\%$
@@ -191,15 +191,17 @@ Once the hurdle rate is cleared, the GP's performance fee is calculated on the *
 
 **Catch-up mechanism:** The first 8% goes to the LP. Then, the next chunk of profits goes 100% to the GP until they have "caught up" to their 20% share of the total profits generated so far. After that, remaining profits are split 80/20.
 
+</div>
+
 ##### <span style="color: #E65100;">3.2.2 High-Water Mark & Clawback Provision</span>
 
 These are two crucial mechanisms to protect investors (LPs).
 
   * **High-Water Mark (HWM)** 🌊: Primarily used by **hedge funds**. A GP cannot earn a performance fee on gains that are simply recovering prior losses. The fund's value must exceed its previous peak before the GP can take a performance fee again.
-    * *Year 1*: Fund goes from $100 to $120. HWM is now $120. GP gets a fee.
-    * *Year 2*: Fund drops to $110. No fee for the GP.
-    * *Year 3*: Fund goes up to $118. Still below the $120 HWM, so *still no performance fee!*
-    * *Year 4*: Fund goes up to $130. The GP can only take a fee on the profit *above* the $120 HWM (i.e., on the $10 gain). The new HWM is $130.
+    * *Year 1*: Fund goes from `$100` to `$120`. HWM is now `$120`. GP gets a fee.
+    * *Year 2*: Fund drops to `$110`. No fee for the GP.
+    * *Year 3*: Fund goes up to `$118`. Still below the `$120` HWM, so *still no performance fee!*
+    * *Year 4*: Fund goes up to `$130`. The GP can only take a fee on the profit *above* the `$120` HWM (i.e., on the `$10` gain). The new HWM is `$130`.
   * **Clawback Provision** ↩️: Primarily used in **private equity**. PE funds realize gains over many years. A clawback allows LPs to reclaim performance fees paid to a GP on early, successful deals if later deals in the same fund turn out to be losers, dragging down the fund's overall profitability. This ensures the GP is rewarded based on the entire fund's performance, not just the early wins.
 
 ##### <span style="color: #E65100;">3.2.3 Profit Distribution: The Waterfall 🏞️</span>
