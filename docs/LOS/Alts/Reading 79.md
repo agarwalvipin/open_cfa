@@ -99,6 +99,9 @@ graph LR
 
   * **Economic infrastructure:** Transport, power, telecom (e.g., Delhi–Mumbai Expressway, Jio 5G, Adani power plants).
   * **Social infrastructure:** Hospitals, schools, public housing.
+  * **Utilities infrastructure:** Water, waste management, .
+  * **Digital infrastructure:** Data centers, fiber networks (e.g., Tata Communications' global network).
+  * **Energy infrastructure:** Renewables, grids, storage (e.g., ReNew Power's wind/solar farms).
 
 #### <span style="color: #6A1B9A;">2.3 Development Stages</span>
 
