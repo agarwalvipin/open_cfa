@@ -1,5 +1,3 @@
-Here is the fully updated study summary for Reading 2, incorporating the missing concepts and ensuring all topics from the source file are covered.
-
 ## <span style="color: #1565C0;">Reading 2: The Time Value of Money in Finance ⏳</span>
 
 ### <span style="color: #1565C0;">🎯 Introduction</span>
