@@ -1,180 +1,165 @@
-## <span style="color: #1565C0;">Reading 2: The Time Value of Money in Finance</span>
+Here is the fully updated study summary for Reading 2, incorporating the missing concepts and ensuring all topics from the source file are covered.
+
+## <span style="color: #1565C0;">Reading 2: The Time Value of Money in Finance ⏳</span>
 
 ### <span style="color: #1565C0;">🎯 Introduction</span>
 
-Welcome, future charterholder! Imagine you have a magical seed. 🌱 You can either keep it as a seed today or plant it and watch it grow into a massive, fruit-bearing tree in the future. Which is more valuable? The tree, of course! The **Time Value of Money (TVM)** is the same idea: money you have today is worth more than the same amount of money in the future because you can invest it and make it grow. This reading is your ultimate gardener's guide. We'll learn how to calculate exactly what that future tree (future cash) is worth today (present value) for everything from simple bonds to complex stocks. Let's start digging!
+Welcome, future charterholder, to the single most important concept in finance. This is it. The bedrock. The "karate kata" from which all other moves are built.
+
+The **Time Value of Money (TVM)** is the simple, powerful idea that a dollar today is worth more than a dollar tomorrow. Why? Because you can invest that dollar today and watch it grow. This reading is your toolkit for "time travel"—learning how to perfectly value any future cash flow (a bond payment, a company's dividend) in today's terms.
+
+Let's sharpen our pencils (and warm up our calculators)—this is the foundation of valuation.
 
 -----
 
-### <span style="color: #1565C0;">Part 1: How Do We Value Future Cash? The Art of Discounting 💰</span>
+### <span style="color: #1565C0;">Part 1: Your Calculator is Your Sword ⚔️ (Warm-Up)</span>
 
-The core of finance is valuing assets, and the value of any asset is simply the **present value (PV)** of all the cash it's expected to give you in the future. The process of finding that present value is called **discounting**.
+You cannot and *will not* solve these problems by hand on the exam. You **must** master your financial calculator (TI BA II Plus or HP 12C).
 
-* **Basic Formulas:**
-  
-  <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-  
-  $$\text{Future Value (FV)} = PV(1+r)^t$$
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
 
-  $$\text{Present Value (PV)} = \frac{FV}{(1+r)^t}$$
+**🧠 Mnemonic: Your 5 TVM Keys**
+Think: **"N-I/Y-PV-PMT-FV"**
 
-  </div>
+  * **N** = **N**umber of Periods (e.g., 10 years annual = 10; 10 years semi-annual = 20)
+  * **I/Y** = **I**nterest Rate *per Period* (e.g., 8% annual = 8; 8% semi-annual = 4)
+  * **PV** = **P**resent **V**alue (Cash *outflow* is negative, *inflow* is positive) 
+  * **PMT** = **P**ay**m**en**t** (The recurring, equal cash flow)
+  * **FV** = **F**uture **V**alue (The lump sum at the end)
 
-Let's see how this applies to different types of securities.
+</div>
+</div>
 
-#### <span style="color: #6A1B9A;">1.1 Fixed-Income Securities (Bonds)</span>
+**CRITICAL SETUP: THE SCHWESER WAY**
+All examples in the SchweserNotes (and this summary) assume you've made one crucial setting:
 
-Think of a bond as a formal loan. You lend money, and in return, you get interest payments and your original loan amount back.
+> **Set P/Y = 1** (Payments Per Year = 1) 
+>
+> \* **How:** [2nd] [P/Y] $\rightarrow$ 1 [ENTER] $\rightarrow$ [2nd] [QUIT] 
+>
+>   * **Why:** This forces you to handle the periods yourself. **N** becomes the *total number of periods*, and **I/Y** becomes the *interest rate per period*. This simplifies complex problems and prevents errors.
 
-  * **Zero-Coupon Bond:** This is the simplest bond. It pays no interest. You buy it at a discount today and get its full face value back at maturity. The interest is the difference between what you paid and what you get back.
-  * **Fixed-Coupon Bond:** This is the classic bond. It pays a fixed interest payment (the **coupon**) every period (usually annually or semi-annually) and repays the principal (**face value**) at maturity.
-  * **Perpetuity:** A super rare bond that never matures! It pays a fixed coupon forever. Its value is incredibly simple to calculate:
-    
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$PV_{Perpetuity} = \frac{\text{Payment}}{r}$$
+**BGN vs. END Mode (The Annuity Switch):**
+Your calculator defaults to **END** mode, assuming payments happen at the *end* of each period. This is called an **Ordinary Annuity**.
+If a problem states payments happen at the *beginning* of the period, you must switch to **BGN** mode (for an **Annuity Due**).
 
-    </div>
+  * **How:** [2nd] [BGN] $\rightarrow$ [2nd] [SET] $\rightarrow$ [2nd] [QUIT]. (A "BGN" will appear on your screen). **Remember to switch it back to END when you're done\!**
 
-#### <span style="color: #E65100;">1.1.1 Example 🧮</span>
+-----
 
-Let's value a 10-year, ₹1,000 face value bond from an Indian company like Reliance Industries. It pays a 10% annual coupon, and the required yield (the market's discount rate, `r`) is 8%.
+### <span style="color: #1565C0;">Part 2: The Core Concepts: Single Sums & Annuities (LOS 2.a)</span>
 
-  * **N** = 10 (years)
-  * **I/Y** = 8% (the discount rate)
-  * **PMT** = ₹100 (10% of ₹1,000)
-  * **FV** = ₹1,000 (the face value returned at the end)
+#### <span style:="color: #6A1B9A;">2.1 Single Sums (Zero-Coupon Bonds)</span>
 
-Using a financial calculator, you'd compute **PV**.
+This is about moving a *single* amount of money through time. A **zero-coupon bond** is a perfect example: you pay a price today (PV) and get the face value (FV) at maturity.
 
-`CPT PV` → **-₹1,134.20**
+  * **Future Value (FV):** $FV = PV \times (1 + r)^t$ 
+  * **Present Value (PV):** $PV = \frac{FV}{(1 + r)^t}$ 
 
-The bond is worth ₹1,134.20 today. Because the coupon rate (10%) is higher than the market yield (8%), the bond trades at a premium (above its face value).
+#### <span style:="color: #6A1B9A;">2.2 Annuities (Loans, Coupons, & Savings)</span>
 
-#### <span style="color: #00838F;">1.2 Global & Local Context 🌍</span>
+An **annuity** is a stream of *equal cash flows* (PMT) for a *fixed number of periods* (N).
 
-A US Treasury bond is a classic example of a fixed-coupon bond, considered one of the safest investments globally. A **zero-coupon bond** is like a US Treasury STRIP. In India, a government bond (G-Sec) also works like a fixed-coupon bond. The concept of a **perpetuity** is rare, but some bonds issued in the UK, called consols, have this feature.
+  * **Present Value of an Annuity:** What is this stream worth today? This is used to value a bond's coupons or determine a loan's principal.
+    $$PV = PMT \times \left[ \frac{1 - (1 + r)^{-t}}{r} \right]$$
+  * **Future Value of an Annuity:** What will this stream be worth in the future? This is used for retirement savings.
+    $$FV = PMT \times \left[ \frac{(1+r)^t - 1}{r} \right]$$
 
-#### <span style="color: #6A1B9A;">1.3 Equity Securities (Stocks)</span>
+#### <span style:="color: #6A1B9A;">2.3 Perpetuities (Preferred Stock)</span>
 
-Stocks are trickier because their cash flows (dividends) are not guaranteed and they have no maturity date. We use **dividend discount models (DDMs)** to estimate their value.
+A **perpetuity** is a special annuity that pays a fixed amount (PMT) **forever**. **Preferred stock**, with its fixed dividend, is often valued this way.
 
-  * **Constant Dividend Model:** If we assume a company will pay the same dividend forever (like a **preferred stock**), we can value it as a perpetuity.
-  * **Constant Growth DDM (Gordon Growth Model):** This is a cornerstone of equity valuation. It assumes dividends will grow at a constant rate (`g`) forever.
+  * **Present Value of a Perpetuity:**
+    $$PV_{\text{Perpetuity}} = \frac{PMT}{r}$$ 
 
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$V_0 = \frac{D_1}{k_e - g_c}$$
+-----
 
-    </div>
+### <span style="color: #1565C0;">Part 3: Applying TVM to Securities (LOS 2.a)</span>
 
-    Where:
+#### <span style:="color: #6A1B9A;">3.1 Fixed-Income (Bonds)</span>
+
+A standard **fixed-coupon bond** is just two TVM components added together:
+
+1.  **PV of an Annuity** (the stream of future coupon payments)
+2.  **PV of a Single Sum** (the future face value, or "par," paid at maturity)
+
+**Example:** Value a 10-year, $1,000 face value bond with a 10% annual coupon. The market discount rate (yield) is 8%.
+
+  * **N** = 10
+  * **I/Y** = 8
+  * **PMT** = 100 (10% of $1,000) 
+  * **FV** = 1000 
+  * **CPT PV** = **-$1,134.20** 
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 The Bond See-Saw: Price vs. Yield**
+This is a fundamental concept. Bond prices and yields move in **opposite directions**.
+
+  * If Market Yield < Coupon Rate (8% < 10%) $\rightarrow$ Bond Price > Par (Premium) 
+  * If Market Yield > Coupon Rate $\rightarrow$ Bond Price < Par (Discount)
+  * If Market Yield = Coupon Rate $\rightarrow$ Bond Price = Par
+
+</div>
+</div>
+
+#### <span style:="color: #6A1B9A;">3.2 Equity (Stocks)</span>
+
+Stocks are harder to value: their cash flows (dividends) are uncertain and they have no maturity date. We use **Dividend Discount Models (DDMs)**.
+
+  * **Constant Growth DDM (Gordon Growth Model):** Assumes dividends grow at a **constant rate ($g$)** forever.
+    $$V_0 = \frac{D_1}{k_e - g}$$
+
       * $V_0$ = Value of the stock today
-      * $D_1$ = Expected dividend *next year*
-      * $k_e$ = Required return on equity
-      * $g_c$ = Constant growth rate of dividends
+      * $D_1$ = Expected dividend *next year* ($D_0 \times (1+g)$) 
+      * $k_e$ = Required return on equity (the discount rate)
+      * $g$ = The constant growth rate
 
-  * **Multistage DDM:** This is more realistic. It assumes a company goes through different growth phases: a high-growth "supernormal" period, followed by a stable, mature growth rate forever. You calculate the PV of dividends in the high-growth phase and then use the Gordon Growth Model for the stable phase.
+  * **Multistage DDM:** More realistic. Assumes a short "supernormal" growth phase, followed by a stable "terminal" growth phase (which uses the Gordon model).
+
+<!-- end list -->
 
 ```mermaid
 graph TD
-    A[Start] --> B{"Value Stock"};
-    B --> C["Forecast Dividends for High-Growth Period (e.g., D1, D2)"];
-    C --> D["Calculate Terminal Value (P2) at the end of high growth using Gordon Growth Model: P2 = D3 / (k-g)"];
-    D --> E["Discount all high-growth dividends (D1, D2) and the Terminal Value (P2) back to today"];
-    E --> F["Sum the Present Values to get Stock Value (V0)"];
+    A(Start: Value Stock V0) --> B[Step 1: Forecast Dividends<br/>in High-Growth Phase e.g., D1, D2]
+    B --> C(Discount D1 and D2<br/>back to today's PV)
+    A --> D[Step 2: Calculate Terminal Value<br/>at the end of high growth e.g., P2<br/>using Gordon Model: P2 = D3 / k - g]
+    D --> E(Discount the entire P2<br/>lump sum back to today's PV)
+    C --> F(Step 3: Add all PVs together<br/>V0 = PV_D1 + PV_D2 + PV_P2)
+    E --> F
 ```
 
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
+-----
 
-💡 CFA Exam Tip ✍️:The relationship between a bond's price and its yield is **inverse**. If the market interest rate (yield) goes up, the bond's price goes down. If the yield goes down, the price goes up. This is a fundamental concept you *must* know.
+### <span style="color: #1565C0;">Part 4: Working Backwards: Implied Returns (LOS 2.b)</span>
 
-</div>
-</div>
+Sometimes we *know* the price and cash flows, but need to find the market's implied discount rate.
+
+  * **For Bonds: Yield-to-Maturity (YTM):** This is the `I/Y` that makes the PV of all future cash flows equal to the current market price. You *always* solve this with your calculator.
+  * **For Stocks: Implied Return or Growth:** We just rearrange the Gordon Growth Model.
+      * **Implied Required Return ($k_e$):**
+        $$k_e = \frac{D_1}{V_0} + g$$
+        (Required Return = Dividend Yield + Growth Rate) 
+      * **Implied Growth Rate ($g$):**
+        $$g = k_e - \frac{D_1}{V_0}$$
 
 -----
 
-### <span style="color: #1565C0;">Part 2: Working Backwards: What's the Implied Return? 🕵️‍♂️</span>
+### <span style="color: #1565C0;">Part 5: The Law of One Price: No-Arbitrage (LOS 2.c)</span>
 
-Sometimes, we know the price of an asset and its cash flows, but we want to figure out the **implied return** (or yield) the market is demanding. This just means rearranging our PV formulas to solve for `r`.
+This section is built on two powerful ideas:
 
-#### <span style="color: #6A1B9A;">2.1 For Bonds</span>
+1.  **Cash Flow Additivity Principle:** The PV of a portfolio is just the sum of the PVs of its individual assets/cash flows.
+2.  **No-Arbitrage Principle:** This is the "no free lunch" law. It states that two assets with the *exact same* future cash flows **must** have the same price today. If they don't, you can make a risk-free profit.
 
-For a bond, the implied return is its **yield to maturity (YTM)**. This is the single discount rate that makes the present value of all future cash flows (coupons + principal) equal to the bond's current market price. You almost always solve for this using a financial calculator.
+This principle is the bedrock for pricing forwards and options.
 
-**Example 🧮**: Our ₹1,000 face value, 10-year, 10% coupon bond is now trading at ₹1,085. What is its YTM?
-
-  * **N** = 10
-  * **PV** = -1,085 (what you pay)
-  * **PMT** = 100
-  * **FV** = 1,000
-
-  `CPT I/Y` → **8.69%**
-
-The implied return, or YTM, is 8.69%.
-
-#### <span style="color: #6A1B9A;">2.2 For Stocks</span>
-
-For a stock, we can use the market price to back out the **implied required return** or the **implied growth rate**. Using the Gordon Growth Model:
-
-  * **Implied Required Return ($k_e$):**
-    
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$k_e = \frac{D_1}{V_0} + g_c$$
-
-    </div>
-
-    This is a hugely important formula! It says the required return on a stock is its **dividend yield** ($D_1/V_0$) plus its **growth rate**.
-
-  * **Implied Growth Rate ($g_c$):**
-    
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$g_c = k_e - \frac{D_1}{V_0}$$
-
-    </div>
-
-#### <span style="color: #00838F;">2.3 Global & Local Context 🌍</span>
-
-An analyst covering Apple Inc. might observe its current stock price, forecast its next dividend, and assume a long-term growth rate. By plugging these into the formula, they can calculate the market's **implied required return** on Apple stock. Similarly, an analyst in India could do the same for a company like Infosys to see what return investors are implicitly demanding.
-
------
-
-### <span style="color: #1565C0;">Part 3: The Law of One Price: No-Arbitrage and Its Magic Tricks ✨</span>
-
-The **cash flow additivity principle** is a simple but powerful idea: the present value of a stream of cash flows is just the sum of the present values of each individual cash flow. This leads to the **no-arbitrage principle**, also known as the "law of one price." It states that two assets (or portfolios) with the exact same future cash flows must have the same price today. If they don't, an **arbitrage** opportunity exists to make a risk-free profit.
-
-This principle is the bedrock for pricing many financial instruments.
-
-  * **Implied Forward Interest Rates:** A 2-year investment should have the same return whether you buy a 2-year bond today, or you buy a 1-year bond today and simultaneously lock in a rate for another 1-year bond a year from now. This "locked-in" future rate is the **implied forward rate**. If the rates don't align, arbitrage is possible.
-
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$(1+S_2)^2 = (1+S_1)(1+1y1y)$$
-
-    </div>
-
-    (Where $S_2$ is the 2-year spot rate, $S_1$ is the 1-year spot rate, and $1y1y$ is the 1-year forward rate one year from now).
-
-  * **Forward Exchange Rates:** The relationship between spot and forward exchange rates is determined by the interest rates of the two currencies involved. This is known as **interest rate parity**. If it doesn't hold, you could borrow in the low-interest-rate currency, convert it, invest it in the high-interest-rate currency, and lock in a forward rate to convert it back for a risk-free profit.
-
-    <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
-    
-    $$\frac{Forward}{Spot} = \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base currency}}}$$
-
-    </div>
-
-  * **Option Pricing (Binomial Model):** This model values an option by creating a risk-free portfolio. You combine a specific number of shares of the underlying stock (long) and an option (short) in such a way that the portfolio's value is the same no matter if the stock price goes up or down. Since the future value is certain, its present value must be that future value discounted at the risk-free rate. This allows us to solve for the option's price today.
-
-<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
-<div style="color: #000000; font-weight: 500;">
-
-💡 CFA Exam Tip ✍️:You don't need to be an expert on arbitrage strategies for Level 1, but you *must* understand the concept of no-arbitrage. Questions will test your ability to use the no-arbitrage formulas for forward rates and FX rates to find the correct price or rate.
-
-</div>
-</div>
+  * **Implied Forward Interest Rates:** A 2-year investment must have the same return as a 1-year investment rolled over into a second 1-year investment at a rate locked in today (the **forward rate**).
+  * **Forward Exchange Rates:** The relationship between spot and forward FX rates is locked in by the interest rates of the two currencies. This is **interest rate parity**.
+    $$\frac{\text{Forward}}{\text{Spot}} = \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base currency}}}$$ 
+  * **Option Pricing (Binomial Model):** We can create a **risk-free hedge portfolio** by combining a specific number of shares of the stock with a written call option. This portfolio has the *same* value whether the stock goes up or down. Since its future payoff is certain, its PV must be that payoff discounted at the **risk-free rate**, which lets us solve for the option's price.
 
 -----
 
@@ -182,49 +167,50 @@ This principle is the bedrock for pricing many financial instruments.
 
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**Present Value (PV):**
-
-$$PV = \frac{FV}{(1+r)^t}$$
+**PV of a Single Sum:**
+$$PV = \frac{FV}{(1 + r)^t}$$ 
 
 </div>
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
+**FV of a Single Sum:**
+$$FV = PV \times (1 + r)^t$$ 
+
+</div>
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**PV of an Ordinary Annuity:**
+$$PV = PMT \times \left[ \frac{1 - (1 + r)^{-t}}{r} \right]$$
+
+</div>
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**FV of an Ordinary Annuity:**
+$$FV = PMT \times \left[ \frac{(1+r)^t - 1}{r} \right]$$
+
+</div>
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
 **PV of a Perpetuity:**
-
-$$PV = \frac{Payment}{r}$$
+$$PV = \frac{PMT}{r}$$ 
 
 </div>
-
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
 **Gordon Growth Model (Stock Value):**
-
-$$V_0 = \frac{D_1}{k_e - g_c}$$
+$$V_0 = \frac{D_1}{k_e - g}$$ 
 
 </div>
-
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
 **Implied Required Return on Equity:**
-
-$$k_e = \frac{D_1}{V_0} + g_c$$
-
-</div>
-
-<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
-
-**Implied Forward Interest Rate Relation:**
-
-$$(1+S_2)^2 = (1+S_1)(1+1y1y)$$
+$$k_e = \frac{D_1}{V_0} + g$$ 
 
 </div>
-
 <div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
 
-**No-Arbitrage Forward Exchange Rate:**
-
-$$Forward = Spot \times \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base currency}}}$$
+**No-Arbitrage FX Forward Rate:**
+$$Forward = Spot \times \frac{1 + r_{\text{price}}}{1 + r_{\text{base}}}$$ 
 
 </div>
 
@@ -236,12 +222,12 @@ $$Forward = Spot \times \frac{1 + r_{\text{price currency}}}{1 + r_{\text{base c
 
 <div style="color: #000000; font-weight: 500;">
 
-* **Valuation is PV!** The value of ANY asset is the present value of its expected future cash flows, discounted at a rate that reflects its risk. This is the central idea of this reading.
-* **Calculator is Your Best Friend:** Master the TVM keys on your financial calculator (N, I/Y, PV, PMT, FV) and the cash flow (CF) worksheet. You do not have time to solve these problems by hand. Remember to use opposite signs for inflows (what you get) and outflows (what you pay).
-* TODO - know the Begin and END concept in calculator for Annuity
-* **Price vs. Yield is a See-Saw:** Bond prices and yields move in opposite directions. This relationship is fundamental.
-* **Gordon Growth Model is a Must-Know:** The formula $V_0 = D_1 / (k-g)$ and its rearrangement $k = (D_1/V_0) + g$ are tested frequently. Know what each variable means and how to solve for any of them.
-* **No Free Lunch:** The **no-arbitrage principle** is the logic behind forward rate and FX calculations. Understand that identical future cash flows must have identical present values.
+  * **P/Y = 1, ALWAYS\!** Set your calculator to P/Y=1 and manage `N` and `I/Y` manually. It's safer.
+  * **SIGN CONVENTION:** Cash *outflows* (what you pay, like buying a bond or making a loan payment) are **negative PV** or **negative PMT**. Cash *inflows* (what you receive, like coupons or face value) are **positive**.
+  * **BGN vs. END:** Check if the problem mentions payments at the **beginning** of a period (an annuity *due*). If it does, switch your calculator to **BGN** mode. If not, leave it in **END** mode (ordinary annuity).
+  * **BOND SEE-SAW:** This is a fundamental truth. Bond prices and yields move in **opposite directions**.
+  * **GORDON MODEL IS KEY:** The formula $V_0 = D_1 / (k-g)$ and its rearrangement $k = (D_1/V_0) + g$ are tested constantly. Know them cold.
+  * **NO FREE LUNCH:** The **no-arbitrage principle** is the logic behind forward rate and FX calculations. Understand that identical future cash flows must have identical present values.
 
 </div>
 </div>
