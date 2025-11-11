@@ -59,22 +59,22 @@ graph TD
         A --> D(CFF - Financing);
     end
 
-    subgraph CFO [Cash Flow from Operations (CFO)]
+    subgraph CFO ["Cash Flow from Operations CFO"]
         direction TB
         B --> E{Two Methods};
-        E --> F[Direct Method<br/>(Cash in from customers<br/>Cash out to suppliers)];
-        E --> G[Indirect Method<br/>(Net Income<br/>+ Non-Cash Charges<br/>- Δ Working Capital)];
+        E --> F["Direct Method<br/>Cash in from customers<br/>Cash out to suppliers"];
+        E --> G["Indirect Method<br/>Net Income<br/>+ Non-Cash Charges<br/>- Δ Working Capital"];
         F --> H(Same CFO Value);
         G --> H;
     end
     
-    subgraph CFI [Cash Flow from Investing (CFI)]
+    subgraph CFI ["Cash Flow from Investing CFI"]
         direction TB
         C --> I(Buy/Sell PP&E);
         C --> J(Buy/Sell Securities);
     end
 
-    subgraph CFF [Cash Flow from Financing (CFF)]
+    subgraph CFF ["Cash Flow from Financing CFF"]
         direction TB
         D --> K(Issue/Repay Debt);
         D --> L(Issue/Repurchase Stock);
