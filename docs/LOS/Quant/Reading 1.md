@@ -59,7 +59,7 @@ Let's say you invested in a stock with the following annual returns:
 
 <div style="background-color: #F5F5F5; padding: 10px; border-radius: 5px; margin: 10px 0;">
 
-$$\text{Geometric Mean} = \sqrt[3]{(1+0.20)(1-0.10)(1+0.15)} - 1 = \sqrt[3]{(1.2)(0.9)(1.15)} - 1 = 7.46\%$$
+$$\text{Geometric Mean} = \sqrt[{(1+0.20)(1-0.10)(1+0.15)} - 1 = \sqrt[{(1.2)(0.9)(1.15)} - 1 = 7.46\%$$
 
 </div>
 

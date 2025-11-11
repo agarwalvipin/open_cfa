@@ -128,6 +128,26 @@ xychart-beta
 
 No matter if a bond starts its life as a premium or discount bond, as it gets closer to its maturity date, its price will always converge toward its **par value**. Think of par value as a powerful magnet that pulls the bond's price towards it as time runs out.
 
+```mermaid
+---
+title: The Pull to Par Effect Over Time
+---
+xychart-beta
+  x-axis "Time to Maturity (Years)" ["5", "4", "3", "2", "1", "0"]
+  y-axis "Bond Price" 80 --> 120
+  line "Premium Bond (Coupon > YTM)" [115, 111, 106, 103, 101, 100]
+  line "Par Value" [100, 100, 100, 100, 100, 100]
+  line "Discount Bond (Coupon < YTM)" [85, 89, 94, 97, 99, 100]
+```
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 See the Magnetic Pull:** Notice how both the premium bond (starting at ₹115) and the discount bond (starting at ₹85) gradually move toward ₹100 as time passes, following a **convex path**. The premium bond decreases at a slower rate as it approaches par, while the discount bond increases at a faster rate initially, then slows down. By maturity (Year 0), both bonds are worth exactly their par value of ₹100. This is the "pull to par" effect—it's inevitable! 🧲
+
+</div>
+</div>
+
 -----
 
 ### <span style="color: #1565C0;">Part 3: What if a Bond Doesn't Trade? The Art of Matrix Pricing 🖼️ (LOS 52.c)</span>
