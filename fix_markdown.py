@@ -6,6 +6,7 @@ This script replaces:
 - '\>' with '>'
 - '\<' with '<'
 - '\_' with '_'
+- '\#' with '#'
 - Removes citation markers like '[cite_start]', '[cite: 1234]', etc.
 
 Usage: python fix_markdown.py <markdown_file>
@@ -45,6 +46,7 @@ def fix_markdown(file_path):
         content = content.replace("\\>", ">")
         content = content.replace("\\<", "<")
         content = content.replace("\\_", "_")
+        content = content.replace("\\#", "#")
 
         # Remove citation markers
         # Pattern matches [cite_start] and [cite: 1234] including incomplete ones like [cite: 2835
@@ -82,6 +84,7 @@ def main():
         print("  '\\>' with '>'")
         print("  '\\<' with '<'")
         print("  '\\_' with '_'")
+        print("  '\\#' with '#'")
         print("And removes citation markers like:")
         print("  '[cite_start]'")
         print("  '[cite: 1234]'")

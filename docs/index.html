@@ -95,11 +95,94 @@
         transform: translateX(-300px);
       }
     }
+
+    /* Text Highlighting Styles */
+    .highlight {
+      background-color: #ffeb3b;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.2s;
+    }
+
+    .highlight.yellow {
+      background-color: #ffeb3b;
+    }
+
+    .highlight.green {
+      background-color: #a5d6a7;
+    }
+
+    .highlight.pink {
+      background-color: #f48fb1;
+    }
+
+    .highlight.blue {
+      background-color: #90caf9;
+    }
+
+    .highlight:hover {
+      opacity: 0.8;
+    }
+
+    /* Highlight Toolbar */
+    #highlight-toolbar {
+      position: absolute;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 4px;
+      display: none;
+      z-index: 9999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #highlight-toolbar button {
+      border: none;
+      padding: 6px 10px;
+      margin: 0 2px;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 12px;
+      transition: background-color 0.2s;
+    }
+
+    #highlight-toolbar button:hover {
+      background-color: #f0f0f0;
+    }
+
+    #highlight-toolbar button.yellow {
+      background-color: #ffeb3b;
+    }
+
+    #highlight-toolbar button.green {
+      background-color: #a5d6a7;
+    }
+
+    #highlight-toolbar button.pink {
+      background-color: #f48fb1;
+    }
+
+    #highlight-toolbar button.blue {
+      background-color: #90caf9;
+    }
+
+    #highlight-toolbar button.clear {
+      background-color: #ffcdd2;
+      color: #c62828;
+    }
   </style>
 </head>
 
 <body>
   <div id="app"></div>
+  <!-- Highlight Toolbar -->
+  <div id="highlight-toolbar">
+    <button class="yellow" data-color="yellow" title="Yellow highlight">⬛</button>
+    <button class="green" data-color="green" title="Green highlight">⬛</button>
+    <button class="pink" data-color="pink" title="Pink highlight">⬛</button>
+    <button class="blue" data-color="blue" title="Blue highlight">⬛</button>
+    <button class="clear" id="clear-highlights" title="Clear all highlights">🗑️</button>
+  </div>
   <!-- Dark/Light mode toggle button -->
   <div id="docsify-darklight-theme"></div>
   <script>
@@ -138,6 +221,10 @@
             // Re-render MathJax after each page load
             if (window.MathJax && window.MathJax.typesetPromise) {
               window.MathJax.typesetPromise();
+            }
+            // Restore highlights after page load
+            if (window.restoreHighlights) {
+              window.restoreHighlights();
             }
           });
         }
@@ -201,6 +288,255 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- Docsify tabs plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1.4.4/dist/docsify-tabs.min.js"></script>
+  <!-- Text Highlighting Script -->
+  <script>
+    (function () {
+      const STORAGE_KEY = 'docsify-highlights';
+      let currentSelection = null;
+      const toolbar = document.getElementById('highlight-toolbar');
+
+      // Load highlights from localStorage
+      function loadHighlights() {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : {};
+      }
+
+      // Save highlights to localStorage
+      function saveHighlights(highlights) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(highlights));
+      }
+
+      // Get current page path
+      function getCurrentPath() {
+        return window.location.hash.replace('#/', '') || 'README';
+      }
+
+      // Generate unique ID for highlight
+      function generateId() {
+        return 'h-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+      }
+
+      // Apply highlight to selected text
+      function applyHighlight(color) {
+        if (!currentSelection || currentSelection.isCollapsed) return;
+
+        const range = currentSelection.getRangeAt(0);
+        const selectedText = range.toString().trim();
+        
+        if (!selectedText) return;
+
+        // Create highlight span
+        const highlightSpan = document.createElement('span');
+        highlightSpan.className = `highlight ${color}`;
+        highlightSpan.dataset.highlightId = generateId();
+        highlightSpan.dataset.color = color;
+
+        try {
+          range.surroundContents(highlightSpan);
+
+          // Save to localStorage
+          const highlights = loadHighlights();
+          const path = getCurrentPath();
+          if (!highlights[path]) highlights[path] = [];
+
+          highlights[path].push({
+            id: highlightSpan.dataset.highlightId,
+            text: selectedText,
+            color: color,
+            xpath: getXPath(highlightSpan),
+            timestamp: Date.now()
+          });
+
+          saveHighlights(highlights);
+
+          // Add click listener to remove highlight
+          highlightSpan.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (confirm('Remove this highlight?')) {
+              removeHighlight(this.dataset.highlightId);
+            }
+          });
+        } catch (e) {
+          console.warn('Could not apply highlight:', e);
+        }
+
+        // Clear selection and hide toolbar
+        window.getSelection().removeAllRanges();
+        hideToolbar();
+      }
+
+      // Remove highlight
+      function removeHighlight(highlightId) {
+        const element = document.querySelector(`[data-highlight-id="${highlightId}"]`);
+        if (element) {
+          const parent = element.parentNode;
+          while (element.firstChild) {
+            parent.insertBefore(element.firstChild, element);
+          }
+          parent.removeChild(element);
+          parent.normalize();
+        }
+
+        // Remove from storage
+        const highlights = loadHighlights();
+        const path = getCurrentPath();
+        if (highlights[path]) {
+          highlights[path] = highlights[path].filter(h => h.id !== highlightId);
+          if (highlights[path].length === 0) {
+            delete highlights[path];
+          }
+          saveHighlights(highlights);
+        }
+      }
+
+      // Get XPath for element
+      function getXPath(element) {
+        if (element.id) return `//*[@id="${element.id}"]`;
+        
+        const path = [];
+        while (element && element.nodeType === Node.ELEMENT_NODE) {
+          let index = 0;
+          let sibling = element.previousSibling;
+          while (sibling) {
+            if (sibling.nodeType === Node.ELEMENT_NODE && sibling.nodeName === element.nodeName) {
+              index++;
+            }
+            sibling = sibling.previousSibling;
+          }
+          const tagName = element.nodeName.toLowerCase();
+          const pathIndex = index ? `[${index + 1}]` : '';
+          path.unshift(tagName + pathIndex);
+          element = element.parentNode;
+        }
+        return '/' + path.join('/');
+      }
+
+      // Restore highlights for current page
+      window.restoreHighlights = function () {
+        const highlights = loadHighlights();
+        const path = getCurrentPath();
+        const pageHighlights = highlights[path] || [];
+
+        pageHighlights.forEach(h => {
+          try {
+            const walker = document.createTreeWalker(
+              document.querySelector('.markdown-section'),
+              NodeFilter.SHOW_TEXT,
+              null,
+              false
+            );
+
+            let node;
+            while (node = walker.nextNode()) {
+              const text = node.textContent;
+              const index = text.indexOf(h.text);
+              
+              if (index !== -1 && !node.parentElement.classList.contains('highlight')) {
+                const range = document.createRange();
+                range.setStart(node, index);
+                range.setEnd(node, index + h.text.length);
+
+                const highlightSpan = document.createElement('span');
+                highlightSpan.className = `highlight ${h.color}`;
+                highlightSpan.dataset.highlightId = h.id;
+                highlightSpan.dataset.color = h.color;
+
+                try {
+                  range.surroundContents(highlightSpan);
+
+                  highlightSpan.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (confirm('Remove this highlight?')) {
+                      removeHighlight(this.dataset.highlightId);
+                    }
+                  });
+                } catch (e) {
+                  console.warn('Could not restore highlight:', e);
+                }
+                break;
+              }
+            }
+          } catch (e) {
+            console.warn('Error restoring highlight:', e);
+          }
+        });
+      };
+
+      // Show toolbar at selection
+      function showToolbar(x, y) {
+        toolbar.style.display = 'block';
+        toolbar.style.left = x + 'px';
+        toolbar.style.top = (y - 45) + 'px';
+      }
+
+      // Hide toolbar
+      function hideToolbar() {
+        toolbar.style.display = 'none';
+      }
+
+      // Handle text selection
+      document.addEventListener('mouseup', function (e) {
+        setTimeout(() => {
+          const selection = window.getSelection();
+          const selectedText = selection.toString().trim();
+
+          if (selectedText && selection.rangeCount > 0) {
+            const range = selection.getRangeAt(0);
+            const rect = range.getBoundingClientRect();
+            
+            // Check if selection is within markdown content
+            const container = selection.anchorNode.parentElement;
+            if (container && container.closest('.markdown-section')) {
+              currentSelection = selection;
+              showToolbar(
+                rect.left + (rect.width / 2) - 75,
+                rect.top + window.scrollY
+              );
+            }
+          } else {
+            hideToolbar();
+          }
+        }, 10);
+      });
+
+      // Hide toolbar when clicking outside
+      document.addEventListener('mousedown', function (e) {
+        if (!toolbar.contains(e.target)) {
+          hideToolbar();
+        }
+      });
+
+      // Add event listeners to toolbar buttons
+      document.querySelectorAll('#highlight-toolbar button[data-color]').forEach(button => {
+        button.addEventListener('click', function (e) {
+          e.stopPropagation();
+          applyHighlight(this.dataset.color);
+        });
+      });
+
+      // Clear all highlights button
+      document.getElementById('clear-highlights').addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (confirm('Clear all highlights on this page?')) {
+          const highlights = loadHighlights();
+          const path = getCurrentPath();
+          delete highlights[path];
+          saveHighlights(highlights);
+          
+          document.querySelectorAll('.highlight').forEach(el => {
+            const parent = el.parentNode;
+            while (el.firstChild) {
+              parent.insertBefore(el.firstChild, el);
+            }
+            parent.removeChild(el);
+            parent.normalize();
+          });
+          
+          hideToolbar();
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
