@@ -116,7 +116,39 @@ Also known as **Management Discussion and Analysis (MD&A)** or Operating and Fin
 * Off-balance-sheet obligations and contractual commitments.
 * Critical accounting policies requiring significant judgment. ⚠️ *Be aware that some parts of MD&A might be unaudited.*
 
-#### <span style="color: #6A1B9A;">3.5 The Audit Report 🧐✅</span>
+#### <span style="color: #6A1B9A;">3.5 Key Differences: Footnotes vs. MD&A 🔍</span>
+
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 MNEMONIC: "Footnotes = Facts, MD&A = Management's Discussion & Analysis"**
+- **Footnotes:** *Facts about Figures* (the "F"s) – quantitative, audited details behind numbers
+- **MD&A:** *Management's Discussion & Analysis* (the "M"s) – qualitative, forward-looking narrative
+
+**Quick Remember:**
+- **Footnotes = What** (details, numbers, policies)
+- **MD&A = Why/How/Where Next** (management's view, explanations, risks, future outlook)
+
+</div>
+</div>
+
+| Aspect | Financial Statement Notes (Footnotes) | Management Commentary (MD&A) |
+|:-------|:--------------------------------------|:-----------------------------|
+| **Purpose** | Provide details *behind the numbers*; explain *how* figures are prepared/derived | Management's *narrative view* on business, performance, and risks |
+| **Content** | • Accounting policies/methods<br>• Critical assumptions/estimates<br>• Segment info<br>• Transactions (acquisitions, legal, related party)<br>• Basis of presentation | • Business nature/objectives<br>• Performance analysis<br>• Risks, trends<br>• Future outlook<br>• Off-balance-sheet obligations<br>• Inflation impact<br>• Critical policies |
+| **Audit Status** | **Audited** (part of audited financials) | **Partially unaudited** (some sections may not be audited) |
+| **Regulation** | Required as part of main statements by standards (IFRS, GAAP) | Mandated by regulators (SEC, others); required for annual filings |
+| **Focus** | Numbers, *quantitative details* | Discussion, *qualitative explanation* |
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+💡 CFA Exam Tip ✍️: A typical exam question: "Which section of the annual report is most likely fully audited?" Answer: Financial Statement Notes (Footnotes) ✅. MD&A may contain unaudited forward-looking statements and management estimates. Remember: Footnotes give you the *factual breakdown* and audit trail, while MD&A gives you *management's perspective* and forward-looking discussion.
+
+</div>
+</div>
+
+#### <span style="color: #6A1B9A;">3.6 The Audit Report 🧐✅</span>
 
 An **audit** is an independent review of the financial statements by a certified public accounting firm. Its goal is to provide an opinion on the **fairness and reliability** of the statements.
 
