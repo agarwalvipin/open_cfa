@@ -231,7 +231,149 @@ While GAAP/IFRS encourage the Direct Method for its clarity on actual cash movem
 
 -----
 
-### <span style="color: #1565C0;">Part 3: Converting Indirect to Direct CFO 🔄➡️ (LOS 30.c)</span>
+### <span style="color: #1565C0;">Part 3: Decoding CFI & CFF - The Rest of the Story 📈💰 (LOS 30.b)</span>
+
+CFO is the most complex, but we must complete the statement. CFI and CFF are calculated the same way regardless of the CFO method.
+
+#### <span style="color: #6A1B9A;">3.1 Cash Flow from Investing (CFI)</span>
+
+CFI shows cash spent or received from **investments in long-term assets** (and some short-term ones). Think of it as the company's "building and acquiring" budget.
+
+* **Common Inflows (+):**
+  * Sale of Property, Plant & Equipment (PP&E)
+  * Sale of securities (e.g., stocks/bonds of other companies)
+  * Receiving principal from loans made to others
+* **Common Outflows (-):**
+  * Purchase of PP&E (Capital Expenditures or "CapEx")
+  * Purchase of securities
+  * Making loans to others
+  * Acquiring other businesses (check for Goodwill!)
+
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 Tricky Calculation: Finding Cash from Asset Sales**
+
+This is a classic exam trap! The Income Statement shows the *Gain or Loss*, not the *cash received*.
+
+1.  **Find Book Value (BV) of Asset Sold:** You need to do a "T-account" reconciliation.
+    * `Ending Net PP&E = Beg. Net PP&E + CapEx - Depr. Expense - BV of Asset Sold`
+    * Rearrange: **`BV of Asset Sold = Beg. Net PP&E + CapEx - Depr. Expense - Ending Net PP&E`**
+2.  **Calculate Cash Proceeds:**
+    * **`Cash Proceeds = BV of Asset Sold + Gain on Sale`**
+    * **`Cash Proceeds = BV of Asset Sold - Loss on Sale`**
+
+</div>
+</div>
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**🧮 Example: Calculating CFI**
+
+Using the same data:
+
+* **Land Sale:**
+  * `Beg. Land = $40k`, `End. Land = $35k`. No purchases mentioned.
+  * `BV of Land Sold = $40k - $35k = $5,000`
+  * `Gain on Sale (I/S) = $10,000`
+  * **Cash from Land Sale = $5k (BV) + $10k (Gain) = +$15,000**
+* **PP&E Sale:**
+  * `Beg. Net PP&E = $51k`, `End. Net PP&E = $57k`
+  * `CapEx (Purchases) = $25,000` (from text footnote)
+  * `Depr. Expense (I/S) = $7,000`
+  * `BV of PP&E Sold = $51k + $25k - $7k - $57k = $12,000`
+  * `Loss on Sale (I/S) = $2,000`
+  * **Cash from PP&E Sale = $12k (BV) - $2k (Loss) = +$10,000**
+* **Goodwill:**
+  * `Beg. Goodwill = $10k`, `End. Goodwill = $20k`. Increase = `$10,000`.
+  * This implies a **cash purchase/acquisition = -$10,000** (This was missed in the textbook's example but is needed for the B/S to balance!)
+* **Total CFI:**
+  * `-$25,000` (Purchase of PP&E)
+  * `+$15,000` (Sale of Land)
+  * `+$10,000` (Sale of PP&E)
+  * `-$10,000` (Acquisition/Goodwill)
+  * **Total CFI = -$10,000**
+
+</div>
+</div>
+
+#### <span style="color: #6A1B9A;">3.2 Cash Flow from Financing (CFF)</span>
+
+CFF shows cash movements between the company and its **owners (equity) and lenders (debt)**.
+
+* **Common Inflows (+):**
+  * Issuing new stock
+  * Issuing new bonds or other debt (long-term or short-term)
+* **Common Outflows (-):**
+  * Repurchasing stock (Treasury Stock)
+  * Repaying debt principal (not the interest!)
+  * Paying dividends
+
+<div style="background-color: #F3E5F5; border-left: 5px solid #7B1FA2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**💡 Tricky Calculation: Finding Dividends *Paid***
+
+The Income Statement doesn't show dividends! You need the Retained Earnings (RE) and Dividends Payable (DP) accounts.
+
+1.  **Find Dividends *Declared*:**
+    * `Ending RE = Beg. RE + Net Income - Dividends Declared`
+    * Rearrange: **`Dividends Declared = Beg. RE + Net Income - Ending RE`**
+2.  **Find Dividends *Paid*:**
+    * `Ending DP = Beg. DP + Dividends Declared - Dividends Paid`
+    * Rearrange: **`Dividends Paid = Dividends Declared - Δ Dividends Payable`**
+
+</div>
+</div>
+
+<div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
+<div style="color: #000000; font-weight: 500;">
+
+**🧮 Example: Calculating CFF**
+
+Using the same data:
+
+* **Debt (Bonds Payable):**
+  * `Beg. Bonds = $15k`, `End. Bonds = $20k`.
+  * **Cash from new bonds = +$5,000**
+* **Equity (Common Stock + APIC):**
+  * `Beg. (CS + APIC) = $45k`, `End. (CS + APIC) = $55k`.
+  * **Cash from stock issuance = +$10,000**
+* **Dividends Paid:**
+  * *Step 1 (Find Declared):* `Beg RE ($30.8k) + NI ($39k) - End RE ($61.3k) = $8,500` (This matches the `$8.5k` dividend declared in the text's I/S).
+  * *Step 2 (Find Paid):* `Beg. Div Payable = $1k`, `End. Div Payable = $2k`. `Δ Div Payable = +$1,000`.
+  * `Dividends Paid = $8,500 (Declared) - $1,000 (ΔDP) = $7,500`
+  * **Cash for Dividends Paid = -$7,500**
+* **Total CFF:**
+  * `+$5,000` (From Bonds)
+  * `+$10,000` (From Stock)
+  * `-$7,500` (Dividends Paid)
+  * **Total CFF = +$7,500**
+
+</div>
+</div>
+
+#### <span style="color: #6A1B9A;">3.3 The Final Check: Does It Balance?</span>
+
+Let's assemble all our calculated pieces and see if they match the change in cash on the Balance Sheet.
+
+* **CFO** (from Part 2) = **+$50,000**
+* **CFI** (from Part 3.1) = **-$10,000**
+* **CFF** (from Part 3.2) = **+$7,500**
+* **Total Change in Cash** = `$50,000 - $10,000 + $7,500` = **`+$47,500`**
+
+*Check against Balance Sheet:*
+
+* `Ending Cash = $59,000`
+* `Beginning Cash = $11,500`
+* **Actual Change in Cash** = `$59,000 - $11,500` = **`+$47,500`**
+
+It balances perfectly! 💯 This confirms our calculations for CFO, CFI, and CFF are correct.
+
+-----
+
+### <span style="color: #1565C0;">Part 4: Converting Indirect to Direct CFO 🔄➡️ (LOS 30.c)</span>
 
 Sometimes analysts want the detail of the Direct Method even if the company reports using the Indirect Method. You can convert\! It involves using the Income Statement and the changes in Balance Sheet accounts (often available from the Indirect CFO section or the Balance Sheet itself).
 
@@ -270,7 +412,7 @@ Using the same data:
 
 -----
 
-### <span style="color: #1565C0;">Part 4: IFRS vs. US GAAP Differences 🌍🇺🇸 (LOS 30.d)</span>
+### <span style="color: #1565C0;">Part 5: IFRS vs. US GAAP Differences 🌍🇺🇸 (LOS 30.d)</span>
 
 While the overall structure is similar, IFRS allows more flexibility than US GAAP in classifying certain cash flows, especially for interest and dividends. Taxes also get different treatment.
 
@@ -355,6 +497,24 @@ $$
 $$*(Where Investment in WC = ΔOperating Assets - ΔOperating Liabilities)*
 </div>
 
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Cash from Asset Sale (CFI):**
+
+$$
+\text{Cash Proceeds} = \text{Book Value of Asset Sold} + \text{Gain (or} - \text{Loss)}
+$$</div>
+
+<div style="background-color: #F5F5F5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+
+**Dividends Paid (CFF):**
+
+$$
+\text{Dividends Declared} = \text{Beg. RE} + \text{Net Income} - \text{End. RE}
+$$$$
+\text{Dividends Paid} = \text{Dividends Declared} - \Delta \text{Dividends Payable}
+$$</div>
+
 -----
 
 <div style="background-color: #FFF9E6; border-left: 5px solid #F57C00; padding: 15px; margin: 20px 0;">
@@ -364,10 +524,12 @@ $$*(Where Investment in WC = ΔOperating Assets - ΔOperating Liabilities)*
 <div style="color: #000000; font-weight: 500;">
 
   * **Cash is King:** The cash flow statement reveals the *real* cash movements, crucial for assessing liquidity, solvency, and earnings quality.
-  * **The Core Equation:** Beg Cash + CFO +/- CFI +/- CFF = End Cash. Master this\!
-  * **Asset/Liability Rules:** ↑Asset = Use (-) Cash; ↓Asset = Source (+) Cash. ↑Liability/Equity = Source (+) Cash; ↓Liability/Equity = Use (-) Cash. Drill this\!
+  * **The Core Equation:** Beg Cash + CFO +/- CFI +/- CFF = End Cash. Master this!
+  * **Asset/Liability Rules:** ↑Asset = Use (-) Cash; ↓Asset = Source (+) Cash. ↑Liability/Equity = Source (+) Cash; ↓Liability/Equity = Use (-) Cash. Drill this!
   * **Direct vs. Indirect CFO:** Direct shows actual cash paid/received (more intuitive). Indirect starts with Net Income and adjusts (better links profit to cash, shows earnings quality). Both yield the **SAME** CFO number.
   * **Indirect Adjustments:** Remember `NI + NCC - WCInv`. Add back noncash expenses (like depreciation), subtract noncash gains. Adjust for changes in *operating* working capital accounts.
+  * **Tricky CFI:** To find cash from an asset sale, calculate `Cash Proceeds = Book Value of Asset Sold +/- Gain/Loss`. You often have to find the `BV of Asset Sold` first using the PP&E reconciliation. Don't forget non-PP&E assets like Goodwill!
+  * **Tricky CFF:** To find Dividends *Paid*, you must use the two-step process: 1) Find Dividends *Declared* from the RE reconciliation, then 2) Adjust for changes in *Dividends Payable*.
   * **IFRS vs. US GAAP:** Know the classification flexibility IFRS allows for **Interest (Paid/Received)** and **Dividends (Paid/Received)**, compared to the stricter US GAAP rules. Taxes can also be allocated under IFRS. 🇮🇳 Most Indian companies follow Ind AS, which is largely converged with IFRS, so this flexibility often applies.
     </div>
     </div>
