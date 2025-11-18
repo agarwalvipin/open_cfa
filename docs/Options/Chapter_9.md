@@ -35,29 +35,70 @@ The goal is for the stock price to finish **above the higher strike ($X_H)$** so
 
 <div style="text-align: center; margin: 20px 0;">
 <p style="font-weight: bold;">Bull Put Spread Profit Profile (Credit Received)</p>
-<pre>
-<code class="mermaid">
-graph TD
-A[Loss Zone] --> B(Break-Even Point)
-B --> C(Max Profit Zone)
-
-```
-  style A fill:#FADBD8,stroke:#CB4335,stroke-width:2px
-  style C fill:#E8F8F5,stroke:#2ECC71,stroke-width:2px
-  
-  subgraph Profit
-      L[Max Loss] --> M(0)
-      M --> N(Max Credit)
-      L & M & N
-  end
-  
-  B -.-> M
-  
-  classDef hidden stroke-opacity:0
-  class L,M,N hidden
-```
-
-</code>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Bull Put Spread profit profile (credit received) — example values",
+    "data": {
+        "values": [
+            { "S": 80, "profit": -3 },
+            { "S": 90, "profit": -3 },
+            { "S": 95, "profit": -3 },
+            { "S": 98, "profit": 0 },
+            { "S": 100, "profit": 2 },
+            { "S": 110, "profit": 2 },
+            { "S": 120, "profit": 2 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 100 }, "opacity": { "value": 0.6 } }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 95 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
 </pre>
 *You receive the maximum profit (the credit) if the stock is above the higher strike at expiration.*
 </div>
@@ -91,6 +132,85 @@ This is the most critical point for a beginner:
 
   * **R**atio **P**ut = **U**nlimited Downside Risk.
 
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Ratio Put Spread Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Ratio Put Spread (1x2) profit profile",
+    "data": {
+        "values": [
+            { "S": 70, "profit": -18 },
+            { "S": 80, "profit": -8 },
+            { "S": 88, "profit": 0 },
+            { "S": 90, "profit": 2 },
+            { "S": 92, "profit": 0 },
+            { "S": 100, "profit": -8 },
+            { "S": 108, "profit": 0 },
+            { "S": 110, "profit": 2 },
+            { "S": 120, "profit": 2 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": {
+            "field": "S",
+            "type": "quantitative",
+            "title": "Stock Price at Expiration ($)"
+        },
+        "y": {
+            "field": "profit",
+            "type": "quantitative",
+            "title": "Profit ($)"
+        },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [4, 2] },
+            "encoding": { "x": { "datum": 90 }, "opacity": { "value": 0.6 } }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [4, 2] },
+            "encoding": { "x": { "datum": 100 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
+</pre>
+</div>
+
 -----
 
 ### 🎯 Part 3: Put Spread Combinations
@@ -102,9 +222,146 @@ Chapter 9 also explores ways to combine Put Spreads with other instruments to ac
       * **Goal:** To buy stock but offset the cost and protect against a downturn.
       * **Strategy:** Buy Stock + Buy Bear Put Spread. This is generally equivalent to selling a Bull Put Spread, but it's a way to actively manage an existing stock position.
 
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Stock + Bear Put Spread Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Stock + Bear Put Spread profit profile",
+    "data": {
+        "values": [
+            { "S": 80, "profit": -5 },
+            { "S": 90, "profit": -5 },
+            { "S": 95, "profit": -5 },
+            { "S": 100, "profit": 0 },
+            { "S": 105, "profit": 5 },
+            { "S": 110, "profit": 10 },
+            { "S": 120, "profit": 20 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": {
+            "field": "S",
+            "type": "quantitative",
+            "title": "Stock Price at Expiration ($)"
+        },
+        "y": {
+            "field": "profit",
+            "type": "quantitative",
+            "title": "Profit ($)"
+        },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        }
+    ]
+}
+</pre>
+</div>
+
 2.  **Using Ratio Puts to Lower Cost of Stock Ownership:**
 
       * **Goal:** To lower the effective purchase price of stock.
       * **Strategy:** Buy Stock + Sell Ratio Put Spread (1x2). If the stock stays above $X_L$, you keep the credit, effectively lowering your cost basis.
+
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Stock + Ratio Put Spread Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Stock + Ratio Put Spread profit profile",
+    "data": {
+        "values": [
+            { "S": 70, "profit": -20 },
+            { "S": 80, "profit": -10 },
+            { "S": 90, "profit": 0 },
+            { "S": 100, "profit": 10 },
+            { "S": 110, "profit": 12 },
+            { "S": 120, "profit": 22 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": {
+            "field": "S",
+            "type": "quantitative",
+            "title": "Stock Price at Expiration ($)"
+        },
+        "y": {
+            "field": "profit",
+            "type": "quantitative",
+            "title": "Profit ($)"
+        },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        }
+    ]
+}
+</pre>
+</div>
 
 Mastering these put strategies gives you the flexibility to manage risk and generate income, whether you are betting on a subtle upward move (Bull Put) or attempting a complex, high-risk, high-reward bet on a price settling within a specific range (Ratio Put).

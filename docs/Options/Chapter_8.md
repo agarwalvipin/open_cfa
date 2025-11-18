@@ -32,32 +32,25 @@ The Bear Call Spread is the exact functional equivalent of the Bear Put Spread b
 | **Buy (Go Long)** | A Call Option at a **Higher Striking Price** ($X_H$). | This is the **protection** leg; it caps your risk. |
 | **Net Result** | You receive a **Net Credit**. | Your risk is the difference between the strikes minus the credit received. |
 
-<div style="text-align: center; margin: 20px 0;">
-<p style="font-weight: bold;">Bear Spread Structure: The Mirror Image</p>
-<pre>
-<code class="mermaid">
-graph LR
-subgraph Bear Put Spread (Debit)
-A[Buy $X_H$ Put] --> B(Net Debit)
-C[Sell $X_L$ Put]
-A & C
-end
+**Bear Spread Structure: The Mirror Image**
 
-```
-  subgraph Bear Call Spread (Credit)
-      D[Sell $X_L$ Call] --> E(Net Credit)
-      F[Buy $X_H$ Call]
-      D & F
+```mermaid
+graph LR
+  subgraph "Bear Put Spread - Debit"
+    A["Buy X<sub>H</sub> Put"] --> B(Net Debit)
+    C["Sell X<sub>L</sub> Put"]
   end
-  
+
+  subgraph "Bear Call Spread - Credit"
+    D["Sell X<sub>L</sub> Call"] --> E(Net Credit)
+    F["Buy X<sub>H</sub> Call"]
+  end
+
   style B fill:#FADBD8,stroke:#CB4335
   style E fill:#E8F8F5,stroke:#2ECC71
 ```
 
-</code>
-</pre>
 *Both spreads profit from a falling stock, but one is a Debit, and one is a Credit.*
-</div>
 
 -----
 
