@@ -441,7 +441,7 @@ While the overall structure is similar, IFRS allows more flexibility than US GAA
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
-💡 CFA Exam Tip ✍️:Memorize this table\! The classification differences for **Interest Paid/Received** and **Dividends Paid/Received** are classic exam questions. Know the US GAAP rule and the IFRS flexibility.
+💡 CFA Exam Tip ✍️: Memorize this table! The classification differences for **Interest Paid/Received** and **Dividends Paid/Received** are classic exam questions. Know the US GAAP rule and the IFRS flexibility.
 </div>
 </div>
 
