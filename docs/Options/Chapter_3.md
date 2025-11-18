@@ -18,6 +18,69 @@ Why would a Samurai buy a call instead of just buying the stock? Two words: **Le
 
   * **Leverage:** You can realize huge percentage profits from a modest rise in the stock price.
   * **Limited Risk:** You can never lose more than the price you paid for the option (the premium), even if the stock goes to zero\! 
+  
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Long Call Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Long Call Profit Profile",
+    "data": {
+        "values": [
+            { "S": 40, "profit": -3 },
+            { "S": 50, "profit": -3 },
+            { "S": 53, "profit": 0 },
+            { "S": 60, "profit": 7 },
+            { "S": 70, "profit": 17 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 53 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
+</pre>
+</div> 
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
@@ -105,18 +168,68 @@ If the stock falls, do not simply hope.
 
 <!-- end list -->
 
-```mermaid
-graph TD
-    Status{You have a Profit}
-    
-    Status -->|I want out| Liquidate[Sell Call & Take Cash]
-    Status -->|I want to play with House Money| Roll_Up[Sell Call -> Buy Higher Strike Call]
-    Status -->|I want to hedge| Spread[Sell Higher Strike Call against current position]
-    
-    style Liquidate fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
-    style Roll_Up fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
-    style Spread fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px
-```
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Bull Call Spread Profit Profile (Follow-Up Action)</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Bull Call Spread Profit Profile",
+    "data": {
+        "values": [
+            { "S": 40, "profit": -2 },
+            { "S": 50, "profit": -2 },
+            { "S": 52, "profit": 0 },
+            { "S": 60, "profit": 8 },
+            { "S": 70, "profit": 8 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 52 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
+</pre>
+</div>
 
 -----
 

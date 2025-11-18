@@ -1,0 +1,102 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "title": "The Three Option Spread Types",
+    "data": {
+        "values": [
+            {
+                "Expiration": "Same",
+                "Strike": "Different",
+                "Type": "Vertical Spread",
+                "Color": "#F4D03F",
+                "Desc": "Same Expiration, Different Strikes"
+            },
+            {
+                "Expiration": "Different",
+                "Strike": "Same",
+                "Type": "Horizontal Spread",
+                "Color": "#5DADE2",
+                "Desc": "Different Expiration, Same Strikes"
+            },
+            {
+                "Expiration": "Different",
+                "Strike": "Different",
+                "Type": "Diagonal Spread",
+                "Color": "#A93226",
+                "Desc": "Different Expiration, Different Strikes"
+            },
+            {
+                "Expiration": "Same",
+                "Strike": "Same",
+                "Type": "Not a Spread",
+                "Color": "#E0E0E0",
+                "Desc": "Same Expiration, Same Strike (Just a Position)"
+            }
+        ]
+    },
+    "width": "container",
+    "height": 300,
+    "encoding": {
+        "x": {
+            "field": "Expiration",
+            "type": "nominal",
+            "title": "Expiration Date",
+            "sort": [
+                "Same",
+                "Different"
+            ],
+            "axis": {
+                "labelFontSize": 12,
+                "titleFontSize": 14
+            }
+        },
+        "y": {
+            "field": "Strike",
+            "type": "nominal",
+            "title": "Strike Price",
+            "sort": [
+                "Same",
+                "Different"
+            ],
+            "axis": {
+                "labelFontSize": 12,
+                "titleFontSize": 14
+            }
+        }
+    },
+    "layer": [
+        {
+            "mark": "rect",
+            "encoding": {
+                "color": {
+                    "field": "Color",
+                    "type": "nominal",
+                    "scale": null
+                },
+                "tooltip": [
+                    {
+                        "field": "Type",
+                        "title": "Spread Type"
+                    },
+                    {
+                        "field": "Desc",
+                        "title": "Description"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "fill": "black"
+            },
+            "encoding": {
+                "text": {
+                    "field": "Type"
+                }
+            }
+        }
+    ]
+}

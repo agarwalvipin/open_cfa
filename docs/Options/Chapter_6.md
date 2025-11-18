@@ -39,39 +39,93 @@ The diagram below shows how the ratio write's profit (the peak) is aligned with 
 <div style="text-align: center; margin: 20px 0;">
 <p style="font-weight: bold;">Ratio Write Profit Profile vs. Stock Price Probability</p>
 
-```mermaid
-graph TD
-  A[Stock Price] --> B(Downside Break-Even)
-  C(Max Profit Price)
-  D(Upside Break-Even)
-  A --> E[Profit/Loss]
-  A --> F[Probability]
 
-  subgraph Profit Graph
-    B -.- G(Loss)
-    C -.- H(Max Profit)
-    D -.- I(Unlimited Loss)
-    G & H & I -.- E
-    style Profit Graph fill:#fff,stroke:#6C3483,stroke-width:2px
-  end
 
-  subgraph Probability Curve
-    J(Low Probability)
-    K(High Probability)
-    L(Low Probability)
-    J & K & L -.- F
-    style Probability Curve fill:#fff,stroke:#1A5276,stroke-width:2px,stroke-dasharray: 5 5
-  end
-
-  C -.-> K
-
-  style G fill:#FADBD8,stroke:#CB4335
-  style H fill:#E8F8F5,stroke:#2ECC71
-  style I fill:#FADBD8,stroke:#CB4335
-
-  classDef hidden stroke-opacity:0
-  class A,E,F hidden
-```
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Ratio Call Write Profit Profile</p>
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Ratio Call Write Profit vs Probability</p>
+<pre data-lang="vega-lite">
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#f9f9f9",
+  "description": "Ratio Call Write Profit vs Probability",
+  "width": "container",
+  "height": 320,
+  "layer": [
+    {
+      "data": { "sequence": { "start": 30, "stop": 70, "step": 0.5, "as": "S" } },
+      "transform": [
+        { "calculate": "14 * exp(-0.5 * pow((datum.S - 50) / 5, 2))", "as": "probability_scaled" }
+      ],
+      "mark": { "type": "area", "color": "#cbd5e1", "opacity": 0.4, "interpolate": "monotone" },
+      "encoding": {
+        "x": { "field": "S", "type": "quantitative" },
+        "y": { "field": "probability_scaled", "type": "quantitative", "axis": null },
+        "tooltip": [
+            { "field": "S", "title": "Stock Price" },
+            { "field": "probability_scaled", "title": "Relative Probability", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+            { "S": 37, "profit": 0 },
+            { "S": 40, "profit": 3 },
+            { "S": 49, "profit": 12 },
+            { "S": 50, "profit": 13 },
+            { "S": 60, "profit": 3 },
+            { "S": 63, "profit": 0 },
+            { "S": 70, "profit": -7 }
+        ]
+      },
+      "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" }
+      },
+      "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        { "mark": { "type": "rule", "color": "black" }, "encoding": { "y": { "datum": 0 } } },
+        { "mark": { "type": "line", "color": "#1f77b4" } },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                },
+                "tooltip": [
+                    { "field": "S", "type": "quantitative", "title": "Stock Price" },
+                    { "field": "profit", "type": "quantitative", "title": "Profit" }
+                ]
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 50 }, "opacity": { "value": 0.5 } }
+        },
+        {
+            "mark": { "type": "text", "align": "left", "dx": 5, "dy": -10, "text": "Peak Probability" },
+            "encoding": { "x": { "datum": 50 }, "y": { "datum": 14 } }
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</div>
 
 *The "peak" of maximum profit is in the range of most likely stock prices.*
 </div>
@@ -156,26 +210,46 @@ Chapter 6 concludes with a peek into the world of spreads, which are combination
 
 <div style="text-align: center; margin: 20px 0;">
 <p style="font-weight: bold;">The Three Option Spread Types</p>
-
-```mermaid
-flowchart LR
-  A[Spread Types] --> B{Vertical Spread}
-  A --> C{Horizontal Spread}
-  A --> D{Diagonal Spread}
-
-  B --> B1[Same Expiration]
-  B --> B2[Different Strikes]
-
-  C --> C1[Different Expiration]
-  C --> C2[Same Strike]
-
-  D --> D1[Different Expiration]
-  D --> D2[Different Strikes]
-
-  style B fill:#F4D03F,stroke:#9B59B6
-  style C fill:#5DADE2,stroke:#2980B9
-  style D fill:#A93226,stroke:#7B241C
-```
+<pre data-lang="vega-lite">
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#f9f9f9",
+  "title": "The Three Option Spread Types",
+  "data": {
+    "values": [
+      {"Expiration": "Same", "Strike": "Different", "Type": "Vertical Spread", "Color": "#F4D03F", "Desc": "Same Expiration, Different Strikes"},
+      {"Expiration": "Different", "Strike": "Same", "Type": "Horizontal Spread", "Color": "#5DADE2", "Desc": "Different Expiration, Same Strikes"},
+      {"Expiration": "Different", "Strike": "Different", "Type": "Diagonal Spread", "Color": "#A93226", "Desc": "Different Expiration, Different Strikes"},
+      {"Expiration": "Same", "Strike": "Same", "Type": "Not a Spread", "Color": "#E0E0E0", "Desc": "Same Expiration, Same Strike (Just a Position)"}
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "encoding": {
+    "x": {"field": "Expiration", "type": "nominal", "title": "Expiration Date", "sort": ["Same", "Different"], "axis": {"labelFontSize": 12, "titleFontSize": 14}},
+    "y": {"field": "Strike", "type": "nominal", "title": "Strike Price", "sort": ["Same", "Different"], "axis": {"labelFontSize": 12, "titleFontSize": 14}}
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {"field": "Color", "type": "nominal", "scale": null},
+        "tooltip": [
+          {"field": "Type", "title": "Spread Type"},
+          {"field": "Desc", "title": "Description"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "fontSize": 16, "fontWeight": "bold", "fill": "black"},
+      "encoding": {
+        "text": {"field": "Type"}
+      }
+    }
+  ]
+}
+</pre>
+</div>
 
 </div>
 

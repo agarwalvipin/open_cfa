@@ -27,6 +27,69 @@ Because the profit and loss profile is **identical** to buying a Put option\!.
 
   * **If Stock Falls:** You profit on the short stock (Call expires worthless).
   * **If Stock Rises:** The Call allows you to buy the stock back at a fixed price (Strike Price), stopping the bleeding.
+  
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Synthetic Put Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Synthetic Put Profit Profile",
+    "data": {
+        "values": [
+            { "S": 30, "profit": 7 },
+            { "S": 37, "profit": 0 },
+            { "S": 40, "profit": -3 },
+            { "S": 50, "profit": -3 },
+            { "S": 60, "profit": -3 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 37 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
+</pre>
+</div>
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
@@ -61,16 +124,73 @@ What if you don't know which way the enemy (the market) will move, but you know 
 
 This is essentially a **"Simulated Straddle"** because it profits from volatility in *either* direction.
 
-```mermaid
-graph TD
-    Market_Outlook{Market Outlook: VOLATILE?}
-    
-  Market_Outlook -->|Action| Rev_Hedge["Reverse Hedge (Short 100 Stock + Buy 2 Calls)"]
-
-  Rev_Hedge -->|Stock Crashes 📉| Win_Short["Profit on Short Stock (Calls expire)"]
-  Rev_Hedge -->|Stock Rockets 🚀| Win_Calls["Profit on 2 Calls (Overcomes Short Loss)"]
-  Rev_Hedge -->|Stock Stays Still 😐| Loss["Max Risk: Loss of Option Premiums"]
-```
+<div style="text-align: center; margin: 20px 0;">
+<p style="font-weight: bold;">Reverse Hedge Profit Profile</p>
+<pre data-lang="vega-lite">
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f9f9f9",
+    "description": "Reverse Hedge Profit Profile",
+    "data": {
+        "values": [
+            { "S": 30, "profit": 4 },
+            { "S": 34, "profit": 0 },
+            { "S": 40, "profit": -6 },
+            { "S": 46, "profit": 0 },
+            { "S": 50, "profit": 4 },
+            { "S": 60, "profit": 14 }
+        ]
+    },
+    "width": "container",
+    "height": 320,
+    "encoding": {
+        "x": { "field": "S", "type": "quantitative", "title": "Stock Price at Expiration ($)" },
+        "y": { "field": "profit", "type": "quantitative", "title": "Profit ($)" },
+        "tooltip": [
+            { "field": "S", "type": "quantitative", "title": "Stock Price" },
+            { "field": "profit", "type": "quantitative", "title": "Profit" }
+        ]
+    },
+    "layer": [
+        {
+            "mark": { "type": "area", "color": "#94f0a6", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit >= 0" } ]
+        },
+        {
+            "mark": { "type": "area", "color": "#ffc7ce", "opacity": 0.2 },
+            "transform": [ { "filter": "datum.profit <= 0" } ]
+        },
+        {
+            "mark": { "type": "rule", "color": "black" },
+            "encoding": { "y": { "datum": 0 } }
+        },
+        {
+            "mark": { "type": "line", "color": "#1f77b4" }
+        },
+        {
+            "mark": { "type": "point", "filled": true, "size": 80 },
+            "encoding": {
+                "color": {
+                    "condition": [
+                        { "test": "datum.profit > 0", "value": "#2ca02c" },
+                        { "test": "datum.profit < 0", "value": "#d62728" }
+                    ],
+                    "value": "gray"
+                }
+            }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 34 }, "opacity": { "value": 0.6 } }
+        },
+        {
+            "mark": { "type": "rule", "color": "gray", "strokeDash": [ 4, 2 ] },
+            "encoding": { "x": { "datum": 46 }, "opacity": { "value": 0.6 } }
+        }
+    ]
+}
+</pre>
+</div>
 
 #### <span style="color: #6A1B9A;">2.2 Risk vs. Reward</span>
 
