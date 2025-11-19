@@ -6,15 +6,15 @@ This chapter combines the concepts of directional spread betting (like Chapter 7
 
 -----
 
-## Chapter 9: Put Spreads, Ratio Put Spreads, and Put Spread Combinations — The Defensive Mirror 🛡️
+## <span style="color: #1565C0;">Chapter 9: Put Spreads, Ratio Put Spreads, and Put Spread Combinations — The Defensive Mirror 🛡️</span>
 
-### 🎯 Part 1: Bull Put Spreads (The "Credit" Play)
+### <span style="color: #1565C0;">🎯 Part 1: Bull Put Spreads (The "Credit" Play)</span>
 
 The **Bull Put Spread** is one of the most popular strategies for income generation. It is used when you are **Bullish or Neutral** on a stock—you believe the price will *not fall* below a certain level.
 
 It is often called a **Credit Spread** because you receive money (a credit) when you open the position.
 
-#### **The Structure (Selling Protection)**
+#### <span style="color: #6A1B9A;">**The Structure (Selling Protection)**</span>
 
 You create a Bull Put Spread by:
 
@@ -23,7 +23,7 @@ You create a Bull Put Spread by:
 
 Since the higher strike Put ($X_H$) is more expensive than the lower strike Put ($X_L$), you receive a **Net Credit** when the spread is established.
 
-#### **The Samurai’s Profit Metrics**
+#### <span style="color: #6A1B9A;">**The Samurai’s Profit Metrics**</span>
 
 | Metric | Formula | Mnemonic: **B.P.C. = Bullish, Profit Credit** |
 | :--- | :--- | :--- |
@@ -105,11 +105,11 @@ The goal is for the stock price to finish **above the higher strike ($X_H)$** so
 
 -----
 
-### 🎯 Part 2: Ratio Put Spreads (The "Double-Barrel" Bear)
+### <span style="color: #1565C0;">🎯 Part 2: Ratio Put Spreads (The "Double-Barrel" Bear)</span>
 
 Just as the Ratio Call Write (Chapter 6) combined covered and naked calls, the **Ratio Put Spread** combines a long put with one or more short puts. This is a higher-risk strategy used when you are **Neutral to Slightly Bearish** on a stock.
 
-#### **The Structure**
+#### <span style="color: #6A1B9A;">**The Structure**</span>
 
 The most common version is the **1x2 Ratio Put Spread**:
 
@@ -120,7 +120,7 @@ The most common version is the **1x2 Ratio Put Spread**:
 
   * **Net Result:** This is often established for a **Net Credit** or near zero debit.
 
-#### **Risk/Reward Profile: Unlimited Downside Risk**
+#### <span style="color: #6A1B9A;">**Risk/Reward Profile: Unlimited Downside Risk**</span>
 
 This is the most critical point for a beginner:
 
@@ -206,14 +206,17 @@ This is the most critical point for a beginner:
             "mark": { "type": "rule", "color": "gray", "strokeDash": [4, 2] },
             "encoding": { "x": { "datum": 100 }, "opacity": { "value": 0.6 } }
         }
-    ]
+    ],
+    "config": {
+        "view": {"stroke": null}
+    }
 }
 </pre>
 </div>
 
 -----
 
-### 🎯 Part 3: Put Spread Combinations
+### <span style="color: #1565C0;">🎯 Part 3: Put Spread Combinations</span>
 
 Chapter 9 also explores ways to combine Put Spreads with other instruments to achieve specific goals, often involving portfolio risk management:
 
@@ -286,7 +289,10 @@ Chapter 9 also explores ways to combine Put Spreads with other instruments to ac
                 }
             }
         }
-    ]
+    ],
+    "config": {
+        "view": {"stroke": null}
+    }
 }
 </pre>
 </div>
@@ -359,7 +365,10 @@ Chapter 9 also explores ways to combine Put Spreads with other instruments to ac
                 }
             }
         }
-    ]
+    ],
+    "config": {
+        "view": {"stroke": null}
+    }
 }
 </pre>
 </div>
