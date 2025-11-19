@@ -52,13 +52,30 @@ The diagram below shows how the ratio write's profit (the peak) is aligned with 
   "description": "Ratio Call Write Profit vs Probability",
   "width": "container",
   "height": 320,
+  "params": [
+    {
+      "name": "curveColor",
+      "value": "#cbd5e1",
+      "bind": { "input": "color", "name": "Curve Color: " }
+    },
+    {
+      "name": "curveOpacity",
+      "value": 0.4,
+      "bind": { "input": "range", "min": 0, "max": 1, "step": 0.1, "name": "Curve Opacity: " }
+    }
+  ],
   "layer": [
     {
       "data": { "sequence": { "start": 30, "stop": 70, "step": 0.5, "as": "S" } },
       "transform": [
         { "calculate": "14 * exp(-0.5 * pow((datum.S - 50) / 5, 2))", "as": "probability_scaled" }
       ],
-      "mark": { "type": "area", "color": "#cbd5e1", "opacity": 0.4, "interpolate": "monotone" },
+      "mark": { 
+        "type": "area", 
+        "interpolate": "monotone",
+        "color": { "expr": "curveColor" },
+        "opacity": { "expr": "curveOpacity" }
+      },
       "encoding": {
         "x": { "field": "S", "type": "quantitative" },
         "y": { "field": "probability_scaled", "type": "quantitative", "axis": null },
