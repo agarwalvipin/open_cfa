@@ -107,7 +107,7 @@ The **Receiver Operating Characteristic (ROC)** curve plots **True Positive Rate
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "ROC Curves: Model Performance Comparison",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "values": [

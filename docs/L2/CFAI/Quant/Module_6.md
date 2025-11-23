@@ -54,7 +54,7 @@ As model complexity increases, training error drops (bias decreases), but eventu
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "The Bias-Variance Trade-off",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "values": [
@@ -166,7 +166,7 @@ Reduces the number of variables (Dimension Reduction). It creates new, uncorrela
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Scree Plot (Variance Explained)",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "values": [

@@ -46,7 +46,7 @@ Notice how the **Linear Trend** (Blue) increases by a constant amount, while the
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Linear vs. Log-Linear (Exponential) Trends",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "sequence": {"start": 0, "stop": 20, "step": 1, "as": "Time"}
@@ -139,7 +139,7 @@ If a series is stationary, it always pulls back to its long-run average.
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Mean Reversion (Stationary Series)",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "sequence": {"start": 0, "stop": 100, "as": "t"}
@@ -240,7 +240,7 @@ Sometimes the *variance* (volatility) of the errors changes over time. This is *
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Volatility Clustering (ARCH Effect)",
-"width": 600,
+"width": "container",
 "height": 300,
 "data": {
 "values": [

@@ -49,7 +49,7 @@ This chart illustrates how regular \\(R^2\\) keeps climbing, while Adjusted \\(R
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "R-Squared vs. Adjusted R-Squared",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "values": [

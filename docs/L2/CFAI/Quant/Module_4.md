@@ -87,23 +87,42 @@ The chart below shows how Dummies can shift the line (Intercept Dummy) or rotate
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Visualizing Dummy Variables",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "sequence": {"start": 0, "stop": 10, "step": 0.5, "as": "X"}
 },
 "transform": [
-{"calculate": "2 + 1 * datum.X", "as": "Base Case (D=0)"},
-{"calculate": "(2 + 3) + 1 * datum.X", "as": "Intercept Shift (d0=3)"},
-{"calculate": "2 + (1 + 0.5) * datum.X", "as": "Slope Shift (d1=0.5)"}
+{"calculate": "2 + 1 * datum.X", "as": "Base_Case"},
+{"calculate": "(2 + 3) + 1 * datum.X", "as": "Intercept_Shift"},
+{"calculate": "2 + (1 + 0.5) * datum.X", "as": "Slope_Shift"}
 ],
-"fold": ["Base Case (D=0)", "Intercept Shift (d0=3)", "Slope Shift (d1=0.5)"],
+"layer": [
+{
 "mark": "line",
 "encoding": {
 "x": {"field": "X", "type": "quantitative"},
-"y": {"field": "value", "type": "quantitative", "title": "Y Value"},
-"color": {"field": "key", "type": "nominal", "title": "Scenario"}
+"y": {"field": "Base_Case", "type": "quantitative", "title": "Y Value"},
+"color": {"datum": "Base Case (D=0)", "title": "Scenario"}
 }
+},
+{
+"mark": "line",
+"encoding": {
+"x": {"field": "X", "type": "quantitative"},
+"y": {"field": "Intercept_Shift", "type": "quantitative"},
+"color": {"datum": "Intercept Shift (d0=3)"}
+}
+},
+{
+"mark": "line",
+"encoding": {
+"x": {"field": "X", "type": "quantitative"},
+"y": {"field": "Slope_Shift", "type": "quantitative"},
+"color": {"datum": "Slope Shift (d1=0.5)"}
+}
+}
+]
 }
 </pre>
 

@@ -44,7 +44,7 @@ In the chart below, notice how the dots (errors) fan out as X increases. This is
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": "Visualizing Heteroskedasticity (The Cone Shape)",
-"width": 600,
+"width": "container",
 "height": 400,
 "data": {
 "sequence": {"start": 1, "stop": 100, "as": "x"}
