@@ -89,8 +89,8 @@ Why would a Samurai buy a call instead of just buying the stock? Two words: **Le
 
   * **Scenario:** Stock XYZ is at **$48**. You buy a **July 50 Call** for **$3** ($300 investment).
   * **Stock Rises:** XYZ goes to **$58** (+20%).
-  * **Option Result:** The call is now worth at least \*\*$8** ($800).
-  * **Profit:** You turned **$300** into **$800**. That is a **167% gain** on a 20% stock move\! 
+  * **Option Result:** The call is now worth at least **$8** ($800).
+  * **Profit:** You turned **$300** into **$800**. That is a **167% gain** on a 20% stock move!
 
 </div>
 </div>

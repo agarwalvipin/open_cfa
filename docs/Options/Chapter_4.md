@@ -1,7 +1,3 @@
-Here is the summary of Chapter 4, crafted for the aspiring Options Samurai.
-
------
-
 ## Chapter 4: Other Call Buying Strategies - Advanced Combat ⚔️
 
 ### 🎯 Introduction
@@ -106,7 +102,7 @@ You can calculate your worst-case scenario before you even enter the battle:
 `Max Risk = Strike Price + Call Price - Stock Price` 
 
   * **Example:** Short stock at $40, Buy July 40 Call for $3.
-  * **Risk:** $40 (Strike) + $3 (Premium) - $40 (Stock) = **$3 Max Risk\*\*.
+  * **Risk:** $40 (Strike) + $3 (Premium) - $40 (Stock) = $3 Max Risk.
   * Without the call, your risk would be infinite\!.
 
 -----

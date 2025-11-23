@@ -92,10 +92,10 @@ Let's look at the battlefield with an example:
 
 | Scenario | Stock Price at Expiration | Result | Samurai Analysis |
 | :--- | :--- | :--- | :--- |
-| **Stock Falls** 📉 | Below $50 | **Max Profit ($5)\*\* | The option expires worthless. You keep the full $500 premium. |
-| **Stock Stays** 😐 | At $50 | **Max Profit ($5)\*\* | Same as above. Time decay is your ally. |
-| **Stock Rises** 🚀 | To $60 | **Loss ($5)\*\* | You must sell at $50 but buy at $60. Loss = $10 - $5 premium = $5 loss. |
-| **Stock Rockets** 💥 | To $100 | **Huge Loss ($45)\*\* | Loss = $50 stock loss - $5 premium = $45 loss\! Risk is theoretically infinite. |
+| **Stock Falls** 📉 | Below $50 | **Max Profit ($5)** | The option expires worthless. You keep the full $500 premium. |
+| **Stock Stays** 😐 | At $50 | **Max Profit ($5)** | Same as above. Time decay is your ally. |
+| **Stock Rises** 🚀 | To $60 | **Loss ($5)** | You must sell at $50 but buy at $60. Loss = $10 - $5 premium = $5 loss. |
+| **Stock Rockets** 💥 | To $100 | **Huge Loss ($45)** | Loss = $50 stock loss - $5 premium = $45 loss\! Risk is theoretically infinite. |
 
 <div style="background-color: #E3F2FD; border-left: 5px solid #1976D2; padding: 12px; margin: 15px 0;">
 <div style="color: #000000; font-weight: 500;">
